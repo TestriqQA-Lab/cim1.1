@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+/* Put global tokens & body styles in Tailwind's base layer */
+@layer base {
+  :root {
+    /* Brand Colors */
+    --brand-black: #000000;
+    --brand-yellow: #e7b00a;
+    --brand-purple: #bc3feb;
+    --brand-cyan: #00efd6;
+    --brand-blue: #008ac1;
+    --brand-orange: #ee6500;
+    --brand-teal: #00b5ca;
+    --brand-chatbot: #4e51d2;
+    --brand-seo: #6db75c;
+
+    /* Light Mode Colors */
+    --background: #f0f0f0;
+    --foreground: #000000;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+    --hover-bg: #f9fafb;
+    --secondary-text: #4b5563;
+  }
+
+  /* Dark mode driven by [data-theme="dark"] on <html> */
+  [data-theme="dark"] {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --card-bg: #1a1a1a;
+    --border-color: #2d2d2d;
+    --hover-bg: #262626;
+    --secondary-text: #9ca3af;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Cursor pointer for all interactive elements */
+  a,
+  button,
+  [role="button"],
+  [type="button"],
+  [type="submit"],
+  [type="reset"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select,
+  label[for],
+  summary,
+  [onclick],
+  [tabindex]:not([tabindex="-1"]) {
+    cursor: pointer;
+  }
+}
+
+/* Connect CSS vars to Tailwind tokens (Tailwind v4 style) */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --animate-slideInLeft: slideInLeft 1s ease-out;
+  --animate-slideInRight: slideInRight 1s ease-out;
+  --animate-fadeIn: fadeIn 0.7s ease-out;
+}
+
+/* Animations & global transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes particle {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.6);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-40px) scale(1);
+  }
+}
+
+/* Smooth transitions for theme switching - applied to key elements only */
+body,
+.theme-transition {
+  transition-property: background-color, border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
