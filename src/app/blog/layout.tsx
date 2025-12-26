@@ -1,5 +1,9 @@
 import { Suspense } from "react";
+import { Metadata } from "next";
+import { blogMetadata } from "@/lib/metadata";
 import BlogNavbar from "@/components/blog/BlogNavbar";
+
+export const metadata: Metadata = blogMetadata;
 
 function BlogNavbarFallback() {
     return (

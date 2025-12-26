@@ -1,0 +1,52 @@
+﻿
+C:\Project\cim1.1\src\app\blog\BlogClient.tsx
+   22:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Project\cim1.1\src\app\blog\BlogClient.tsx:22:13
+  20 |         const searchFromUrl = searchParams.get("search");
+  21 |         if (searchFromUrl) {
+> 22 |             setSearchQuery(searchFromUrl);
+     |             ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  23 |             setIsTagSearch(true);
+  24 |             setTimeout(() => {
+  25 |                 contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });  react-hooks/set-state-in-effect
+  321:41  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react/no-unescaped-entities
+  321:79  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       react/no-unescaped-entities
+
+C:\Project\cim1.1\src\app\blog\[slug]\BlogDetailClient.tsx
+  139:22  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\author\[name]\AuthorClient.tsx
+   16:11  warning  'authorSlug' is assigned a value but never used                  @typescript-eslint/no-unused-vars
+  271:45  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\app\blog\categories\page.tsx
+    8:3   warning  'getCategorySlug' is defined but never used         @typescript-eslint/no-unused-vars
+    9:3   warning  'getCategoryDetails' is defined but never used      @typescript-eslint/no-unused-vars
+  318:25  warning  'uniqueAuthors' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\category\[slug]\CategoryClient.tsx
+   3:10  warning  'categories' is defined but never used              @typescript-eslint/no-unused-vars
+   3:46  warning  'getCategoryDetails' is defined but never used      @typescript-eslint/no-unused-vars
+   3:66  warning  'categoryDetails' is defined but never used         @typescript-eslint/no-unused-vars
+   3:83  warning  'getCategorySlug' is defined but never used         @typescript-eslint/no-unused-vars
+  16:5   warning  'Sparkles' is defined but never used                @typescript-eslint/no-unused-vars
+  19:5   warning  'ChevronRight' is defined but never used            @typescript-eslint/no-unused-vars
+  21:8   warning  'Link' is defined but never used                    @typescript-eslint/no-unused-vars
+  37:7   warning  'smallIconMap' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  65:11  warning  'uniqueAuthors' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\category\[slug]\page.tsx
+  36:9  warning  'posts' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\page.tsx
+  5:10  warning  'generateBlogCollectionSchema' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 20 problems (4 errors, 16 warnings)
+

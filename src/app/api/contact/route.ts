@@ -189,10 +189,10 @@ export async function POST(request: Request) {
         console.log('Admin notification and user confirmation emails sent successfully');
         return NextResponse.json({ success: true }, { status: 200 });
 
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error('Error sending email:', error);
         return NextResponse.json(
-            { error: error.message || 'Failed to send email' },
+            { error: error instanceof Error ? error.message : 'Failed to send email' },
             { status: 500 }
         );
     }

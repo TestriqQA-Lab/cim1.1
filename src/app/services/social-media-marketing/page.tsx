@@ -22,33 +22,44 @@ const CTA = dynamic(() => import('@/components/services/social-media-marketing/C
     loading: () => <div className="py-20" />,
 });
 
-export const metadata = {
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
     title: 'Social Media Marketing Services | Data-Driven SMM Agency',
-    description: 'Elevate your brand with our expert Social Media Marketing Services. We are a top Social Media Management Company specializing in Instagram Marketing, Paid Social Media Advertising, and full-service digital strategy. Drive growth, engagement, and measurable ROI.',
+    description: 'Elevate your brand with our expert Social Media Marketing Services. Specialized in Instagram Marketing, Paid Social Advertising, and full-service digital strategy.',
+    url: '/services/social-media-marketing',
     keywords: [
         'Social Media Marketing Services',
         'Social Media Management Company',
         'Instagram Marketing',
         'Paid Social Media Advertising',
-        'Digital Marketing Agency',
-        'Social Media Strategy',
-        'Lead Generation',
-        'Brand Awareness',
-        'Social Media Marketing Agency',
-        'Facebook Marketing',
-        'LinkedIn Marketing',
-        'YouTube Marketing',
     ],
-    openGraph: {
-        title: 'Social Media Marketing Services | CIM',
-        description: 'Expert Social Media Marketing solutions for businesses. Data-driven strategies, multi-platform expertise, and proven ROI.',
-        type: 'website',
-    },
-};
+});
 
 export default function SocialMediaMarketingPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'Social Media Marketing',
+        description: 'Comprehensive social media growth and management services.',
+        urlPath: '/services/social-media-marketing',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Social Media Marketing', url: '/services/social-media-marketing' },
+    ]);
+
     return (
         <main className="bg-white dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <ServiceOverview />
             <WhyChooseUs />

@@ -22,31 +22,44 @@ const CTA = dynamic(() => import('@/components/services/ai-workflows-automations
     loading: () => <div className="py-20" />,
 });
 
-export const metadata = {
-    title: 'AI Workflows & Automations | Intelligent Business Process Automation',
-    description: 'Transform your operations with AI-powered workflows and intelligent automation. Reduce costs, eliminate errors, and scale your business with our enterprise-grade automation solutions.',
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
+    title: 'AI Workflows & Automations | Intelligent Business Automation',
+    description: 'Transform your operations with AI-powered workflows and intelligent automation. Reduce costs, eliminate errors, and scale your business.',
+    url: '/services/ai-workflows-automations',
     keywords: [
         'AI Workflow Automation',
         'Business Process Automation',
         'AI Automation Services',
         'Intelligent Automation Solutions',
-        'Workflow Automation',
-        'Business Automation',
-        'AI-Powered Workflows',
-        'Enterprise Automation',
-        'Process Automation',
-        'Intelligent Business Processes',
     ],
-    openGraph: {
-        title: 'AI Workflows & Automations | CIM',
-        description: 'Transform your operations with AI-powered workflows and intelligent automation solutions.',
-        type: 'website',
-    },
-};
+});
 
 export default function AIWorkflowsAutomationsPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'AI Workflows & Automations',
+        description: 'Intelligent automation for modern business operations.',
+        urlPath: '/services/ai-workflows-automations',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'AI Workflows', url: '/services/ai-workflows-automations' },
+    ]);
+
     return (
         <main className="bg-white dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <ServiceOverview />
             <WhyChooseUs />

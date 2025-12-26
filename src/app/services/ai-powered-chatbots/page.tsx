@@ -22,31 +22,44 @@ const CTA = dynamic(() => import('@/components/services/ai-powered-chatbots/CTA'
     loading: () => <div className="py-20" />,
 });
 
-export const metadata = {
-    title: 'AI-Powered Chatbots | Intelligent Customer Support & Conversational AI Solutions',
-    description: 'Deploy intelligent AI chatbots for 24/7 customer support, lead generation, and engagement. Our conversational AI solutions reduce costs by 60% while improving customer satisfaction. Get started today.',
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
+    title: 'AI-Powered Chatbots | Intelligent Conversational AI Solutions',
+    description: 'Deploy intelligent AI chatbots for 24/7 customer support, lead generation, and engagement. Our conversational AI solutions improve customer satisfaction and reduce costs.',
+    url: '/services/ai-powered-chatbots',
     keywords: [
         'AI Chatbot Development',
         'AI-Powered Chatbots',
         'Conversational AI Solutions',
         'Chatbot Development Company',
-        'Customer Support Chatbots',
-        'AI Customer Service',
-        'Intelligent Chatbots',
-        'Chatbot Solutions',
-        'AI Conversation Platform',
-        'Enterprise Chatbots',
     ],
-    openGraph: {
-        title: 'AI-Powered Chatbots | CIM',
-        description: 'Deploy intelligent AI chatbots for 24/7 customer support, lead generation, and engagement. Reduce costs by 60% while improving customer satisfaction.',
-        type: 'website',
-    },
-};
+});
 
 export default function AIPoweredChatbotsPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'AI-Powered Chatbots',
+        description: 'Custom AI chatbot solutions for business.',
+        urlPath: '/services/ai-powered-chatbots',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'AI Chatbots', url: '/services/ai-powered-chatbots' },
+    ]);
+
     return (
         <main className="bg-white dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <ServiceOverview />
             <WhyChooseUs />

@@ -10,29 +10,44 @@ const CTA = dynamic(() => import('@/components/services/additional-support-servi
     loading: () => <div className="py-20" />,
 });
 
-export const metadata = {
-    title: 'Additional Support Services | Ongoing Maintenance & Technical Support',
-    description: 'Comprehensive additional support services including 24/7 technical support, system monitoring, security management, backup solutions, and dedicated account management. Keep your digital solutions running at peak performance.',
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
+    title: 'Additional Support Services | Ongoing Maintenance & Support',
+    description: 'Comprehensive additional support services including 24/7 technical support, system monitoring, security management, and backup solutions.',
+    url: '/services/additional-support-services',
     keywords: [
         'Technical Support Services',
         '24/7 IT Support',
         'System Monitoring',
-        'Security Management',
-        'Backup and Recovery',
-        'Cloud Management',
-        'Dedicated Support Team',
         'Maintenance Services',
     ],
-    openGraph: {
-        title: 'Additional Support Services | CIM',
-        description: 'Expert ongoing support and maintenance services to keep your digital solutions thriving. 24/7 availability, proactive monitoring, and dedicated success teams.',
-        type: 'website',
-    },
-};
+});
 
 export default function AdditionalSupportServicesPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'Additional Support Services',
+        description: 'Ongoing technical maintenance and support.',
+        urlPath: '/services/additional-support-services',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Support Services', url: '/services/additional-support-services' },
+    ]);
+
     return (
         <main className="bg-white dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <SupportServices />
             <SupportPlans />

@@ -1,26 +1,94 @@
 import { Metadata } from "next";
 
-export const blogMetadata: Metadata = {
-  title: "Blog & Insights | CIM - Digital Solutions",
-  description:
-    "Discover the latest trends, strategies, and insights in web development, digital marketing, UI/UX design, and business growth.",
-  keywords: [
-    "blog",
-    "web development",
-    "digital marketing",
-    "UI/UX design",
-    "SEO",
-    "mobile apps",
-    "AI automation",
-  ],
+const siteUrl = "https://www.cinuteinfomedia.com";
+
+const defaultMetadata: Partial<Metadata> = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "CIM - Digital Solutions | Cinute Infomedia",
+    template: "%s | Cinute Infomedia"
+  },
+  description: "Web Design, Mobile App Development, UI/UX Branding, and Digital Marketing Services",
+  keywords: ["Web Design", "Mobile App Development", "UI/UX Branding", "Digital Marketing", "SEO", "AI Automation"],
+  authors: [{ name: "Cinute Infomedia" }],
+  creator: "Cinute Infomedia",
+  publisher: "Cinute Infomedia",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: "Blog & Insights | CIM",
-    description:
-      "Discover the latest trends, strategies, and insights in web development, digital marketing, UI/UX design, and business growth.",
     type: "website",
-    url: "https://cim.com/blog",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Cinute Infomedia",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cinute Infomedia - Digital Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cinute Infomedia - Digital Solutions",
+    description: "Web Design, Mobile App Development, UI/UX Branding, and Digital Marketing Services",
+    images: ["/images/og-image.png"],
+    creator: "@cim",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
+
+export function getPageMetadata(params: {
+  title: string;
+  description: string;
+  url: string;
+  keywords?: string[];
+  image?: string;
+}): Metadata {
+  return {
+    ...defaultMetadata,
+    title: params.title,
+    description: params.description,
+    keywords: [...(defaultMetadata.keywords as string[]), ...(params.keywords || [])],
+    alternates: {
+      canonical: `${siteUrl}${params.url}`,
+    },
+    openGraph: {
+      ...defaultMetadata.openGraph,
+      title: params.title,
+      description: params.description,
+      url: `${siteUrl}${params.url}`,
+      images: params.image ? [{ url: params.image }] : defaultMetadata.openGraph?.images,
+    },
+    twitter: {
+      ...defaultMetadata.twitter,
+      title: params.title,
+      description: params.description,
+      images: params.image ? [params.image] : defaultMetadata.twitter?.images,
+    },
+  };
+}
+
+export const blogMetadata: Metadata = getPageMetadata({
+  title: "Blog & Insights | Cinute Infomedia",
+  description: "Discover the latest trends, strategies, and insights in web development, digital marketing, UI/UX design, and business growth.",
+  url: "/blog",
+  keywords: ["blog", "web development insights", "digital marketing trends", "AI automation blog"],
+});
 
 export function generateBlogPostMetadata(
   title: string,
@@ -30,18 +98,23 @@ export function generateBlogPostMetadata(
   publishedAt: string,
   author: string
 ): Metadata {
-  const url = `https://cim.com/blog/${slug}`;
+  const url = `/blog/${slug}`;
 
   return {
-    title: `${title} | CIM Blog`,
+    ...defaultMetadata,
+    title: title,
     description: excerpt,
-    keywords: ["blog", "article", "insights"],
+    keywords: ["blog", "article", "insights", ...excerpt.split(" ").slice(0, 5)],
     authors: [{ name: author }],
+    alternates: {
+      canonical: `${siteUrl}${url}`,
+    },
     openGraph: {
+      ...defaultMetadata.openGraph,
       title: title,
       description: excerpt,
       type: "article",
-      url: url,
+      url: `${siteUrl}${url}`,
       images: [
         {
           url: image,
@@ -54,29 +127,23 @@ export function generateBlogPostMetadata(
       authors: [author],
     },
     twitter: {
-      card: "summary_large_image",
+      ...defaultMetadata.twitter,
       title: title,
       description: excerpt,
       images: [image],
-      creator: "@cim",
     },
   };
 }
 
-export function generateCategoryMetadata(category: string, postCount: number): Metadata {
-  const url = `https://cim.com/blog/category/${category.toLowerCase().replace(/\s+/g, "-")}`;
+export function generateCategoryMetadata(category: string, postCount: number, slug: string): Metadata {
+  const url = `/blog/category/${slug}`;
 
-  return {
-    title: `${category} Articles | CIM Blog`,
+  return getPageMetadata({
+    title: `${category} Articles | Cinute Infomedia Blog`,
     description: `Explore ${postCount} articles about ${category}. Learn from our experts on the latest trends and best practices.`,
+    url: url,
     keywords: [category, "blog", "articles"],
-    openGraph: {
-      title: `${category} Articles | CIM Blog`,
-      description: `Explore ${postCount} articles about ${category}.`,
-      type: "website",
-      url: url,
-    },
-  };
+  });
 }
 
 export function generateAuthorMetadata(
@@ -85,25 +152,13 @@ export function generateAuthorMetadata(
   image: string,
   postCount: number
 ): Metadata {
-  const url = `https://cim.com/blog/author/${name.toLowerCase().replace(/\s+/g, "-")}`;
+  const url = `/blog/author/${name.toLowerCase().replace(/\s+/g, "-")}`;
 
-  return {
-    title: `${name} | CIM Blog`,
-    description: `${bio} Read ${postCount} articles by ${name}.`,
+  return getPageMetadata({
+    title: `${name} | Author at Cinute Infomedia`,
+    description: bio,
+    url: url,
+    image: image,
     keywords: [name, "author", "blog"],
-    openGraph: {
-      title: `${name} | CIM Blog`,
-      description: bio,
-      type: "profile",
-      url: url,
-      images: [
-        {
-          url: image,
-          width: 400,
-          height: 400,
-          alt: name,
-        },
-      ],
-    },
-  };
+  });
 }

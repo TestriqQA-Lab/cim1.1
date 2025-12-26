@@ -22,28 +22,45 @@ const CTA = dynamic(() => import('@/components/services/mobile-app-development/C
     loading: () => <div className="py-20" />,
 });
 
-export const metadata = {
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
     title: 'Custom Mobile App Development Services | iOS & Android App Company',
-    description: 'As a leading Mobile App Development Company, we build high-performance, secure, and user-centric Custom Mobile App Solutions for iOS, Android, and Cross-Platform needs. Get a free consultation.',
+    description: 'Expert Mobile App Development Company building high-performance, secure, and user-centric Custom Mobile App Solutions for iOS, Android, and Cross-Platform needs.',
+    url: '/services/mobile-app-development',
     keywords: [
         'Mobile App Development Company',
         'Android App Development Services',
         'iOS App Development',
         'Cross Platform Mobile Apps',
         'Custom Mobile App Solutions',
-        'MVP App Development',
-        'Enterprise Mobile Applications',
     ],
-    openGraph: {
-        title: 'Mobile App Development | CIM',
-        description: 'Expert Mobile App Development solutions for businesses. Fast, scalable, and secure apps for all platforms.',
-        type: 'website',
-    },
-};
+});
 
 export default function MobileAppDevelopmentPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'Mobile App Development',
+        description: 'Native and cross-platform mobile application development.',
+        urlPath: '/services/mobile-app-development',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Mobile App Development', url: '/services/mobile-app-development' },
+    ]);
+
     return (
         <main className="bg-white dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <ServiceOverview />
             <WhyChooseUs />

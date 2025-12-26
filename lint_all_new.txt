@@ -1,0 +1,442 @@
+﻿
+> cim-1.0@0.1.0 lint
+> eslint
+
+
+C:\Project\cim1.1\src\app\api\contact\route.ts
+  192:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Project\cim1.1\src\app\blog\BlogClient.tsx
+  30:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Project\cim1.1\src\app\blog\BlogClient.tsx:30:13
+  28 |             }, 100);
+  29 |         } else {
+> 30 |             setSearchQuery("");
+     |             ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  31 |             setIsTagSearch(false);
+  32 |         }
+  33 |     }, [searchParams]);  react-hooks/set-state-in-effect
+
+C:\Project\cim1.1\src\app\blog\[slug]\BlogDetailClient.tsx
+  139:22  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\author\[name]\AuthorClient.tsx
+  16:11  warning  'authorSlug' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\categories\page.tsx
+    8:3   warning  'getCategorySlug' is defined but never used         @typescript-eslint/no-unused-vars
+    9:3   warning  'getCategoryDetails' is defined but never used      @typescript-eslint/no-unused-vars
+  318:25  warning  'uniqueAuthors' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\category\[slug]\CategoryClient.tsx
+   3:10  warning  'categories' is defined but never used              @typescript-eslint/no-unused-vars
+   3:46  warning  'getCategoryDetails' is defined but never used      @typescript-eslint/no-unused-vars
+   3:66  warning  'categoryDetails' is defined but never used         @typescript-eslint/no-unused-vars
+   3:83  warning  'getCategorySlug' is defined but never used         @typescript-eslint/no-unused-vars
+  16:5   warning  'Sparkles' is defined but never used                @typescript-eslint/no-unused-vars
+  19:5   warning  'ChevronRight' is defined but never used            @typescript-eslint/no-unused-vars
+  21:8   warning  'Link' is defined but never used                    @typescript-eslint/no-unused-vars
+  37:7   warning  'smallIconMap' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  65:11  warning  'uniqueAuthors' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\category\[slug]\page.tsx
+  37:9  warning  'posts' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\blog\page.tsx
+  5:10  warning  'generateBlogCollectionSchema' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\cookies-policy\page.tsx
+  3:10  warning  'Metadata' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\get-in-touch\page.tsx
+  128:13  error    Error: Cannot access variable before it is declared
+
+`handleSubmit` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Project\cim1.1\src\app\get-in-touch\page.tsx:128:13
+  126 |
+  127 |         if (countdown <= 0) {
+> 128 |             handleSubmit();
+      |             ^^^^^^^^^^^^ `handleSubmit` accessed before it is declared
+  129 |             return;
+  130 |         }
+  131 |
+
+C:\Project\cim1.1\src\app\get-in-touch\page.tsx:139:5
+  137 |     }, [currentStep, countdown]);
+  138 |
+> 139 |     const handleSubmit = () => {
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 140 |         console.log("Form Data:", formData);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 141 |         setShowSuccess(true);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 142 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 143 |         setTimeout(() => {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 144 |             window.location.href = "https://www.cinuteinfomedia.com/";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 145 |         }, 2000);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 146 |     };
+      | ^^^^^^^ `handleSubmit` is declared here
+  147 |
+  148 |     const gradient = `linear-gradient(135deg, ${BRAND.primary}, ${BRAND.secondary})`;
+  149 |  react-hooks/immutability
+  137:8   warning  React Hook useEffect has a missing dependency: 'handleSubmit'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/exhaustive-deps
+  184:35  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react/no-unescaped-entities
+  244:40  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react/no-unescaped-entities
+  244:62  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react/no-unescaped-entities
+  254:63  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react/no-unescaped-entities
+  383:73  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react/no-unescaped-entities
+  409:54  error    Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/ban-ts-comment
+  434:45  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react/no-unescaped-entities
+  555:43  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react/no-unescaped-entities
+
+C:\Project\cim1.1\src\app\privacy-policy\page.tsx
+  3:10  warning  'Metadata' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\app\terms-of-service\page.tsx
+  3:10  warning  'Metadata' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\Footer.tsx
+   8:20  warning  'Twitter' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+  36:21  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Project\cim1.1\src\components\Footer.tsx:36:21
+  34 |
+  35 |     // avoid hydration mismatch
+> 36 |     useEffect(() => setMounted(true), []);
+     |                     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  37 |
+  38 |     const currentTheme = theme === "system" ? resolvedTheme : theme;
+  39 |     const isDark = currentTheme === "dark";  react-hooks/set-state-in-effect
+
+C:\Project\cim1.1\src\components\Navbar.tsx
+   65:19  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Project\cim1.1\src\components\Navbar.tsx:65:19
+  63 |
+  64 |   // avoid hydration mismatch
+> 65 |   useEffect(() => setMounted(true), []);
+     |                   ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  66 |
+  67 |   const currentTheme = theme === "system" ? resolvedTheme : theme;
+  68 |   const isDark = currentTheme === "dark";  react-hooks/set-state-in-effect
+  254:34  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\about\Hero.tsx
+   11:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Project\cim1.1\src\components\about\Hero.tsx:11:9
+   9 |
+  10 |     useEffect(() => {
+> 11 |         setIsVisible(true);
+     |         ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  12 |     }, []);
+  13 |
+  14 |     return (  react-hooks/set-state-in-effect
+  101:39  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\about\LeadJourney.tsx
+  30:62   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  68:105  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\about\Process.tsx
+  3:10  warning  'useState' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\about\Services.tsx
+  204:70  warning  'brandText' is assigned a value but never used                   @typescript-eslint/no-unused-vars
+  212:31  warning  'isHovered' is assigned a value but never used                   @typescript-eslint/no-unused-vars
+  284:96  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\blog\BlogCard.tsx
+  1:8   warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+  4:27  warning  'User' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\blog\BlogContentRenderer.tsx
+  111:13  warning  'isInList' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\blog\BlogFilters.tsx
+  27:5  warning  'isTagSearch' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\blog\BlogNavbar.tsx
+  115:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Project\cim1.1\src\components\blog\BlogNavbar.tsx:115:13
+  113 |         const searchFromUrl = searchParams.get("search");
+  114 |         if (searchFromUrl) {
+> 115 |             setSearchQuery(searchFromUrl);
+      |             ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  116 |         } else {
+  117 |             setSearchQuery("");
+  118 |         }  react-hooks/set-state-in-effect
+
+C:\Project\cim1.1\src\components\blog\BlogSidebar.tsx
+  13:39  warning  'currentPostSlug' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\blog\SearchBar.tsx
+  234:9    warning  The attribute aria-expanded is not supported by the role textbox. This role is implicit on the element input  jsx-a11y/role-supports-aria-props
+  466:28   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                               react/no-unescaped-entities
+  466:116  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                               react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\contact\ContactForm.tsx
+   21:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Project\cim1.1\src\components\contact\ContactForm.tsx:21:9
+  19 |     useEffect(() => {
+  20 |         const newParticles = Array.from({ length: 12 }, (_, i) => ({ x: Math.random() * 100, y: Math.random() * 100, delay: i * 0.15 }));
+> 21 |         setParticles(newParticles);
+     |         ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  22 |     }, []);
+  23 |
+  24 |     const messages = [  react-hooks/set-state-in-effect
+  206:47  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\contact\Hero.tsx
+   10:5   warning  'ArrowRight' is defined but never used                                                                                                                 @typescript-eslint/no-unused-vars
+   11:5   warning  'Sparkles' is defined but never used                                                                                                                   @typescript-eslint/no-unused-vars
+   13:5   warning  'Users' is defined but never used                                                                                                                      @typescript-eslint/no-unused-vars
+   17:5   warning  'Paperclip' is defined but never used                                                                                                                  @typescript-eslint/no-unused-vars
+   18:5   warning  'Calendar' is defined but never used                                                                                                                   @typescript-eslint/no-unused-vars
+   19:5   warning  'DollarSign' is defined but never used                                                                                                                 @typescript-eslint/no-unused-vars
+   20:5   warning  'X' is defined but never used                                                                                                                          @typescript-eslint/no-unused-vars
+   42:12  warning  'mousePosition' is assigned a value but never used                                                                                                     @typescript-eslint/no-unused-vars
+   44:12  warning  'messageIndex' is assigned a value but never used                                                                                                      @typescript-eslint/no-unused-vars
+   45:12  warning  'particles' is assigned a value but never used                                                                                                         @typescript-eslint/no-unused-vars
+  122:11  warning  'messages' is assigned a value but never used                                                                                                          @typescript-eslint/no-unused-vars
+  128:11  warning  'features' is assigned a value but never used                                                                                                          @typescript-eslint/no-unused-vars
+  159:12  warning  'consentError' is assigned a value but never used                                                                                                      @typescript-eslint/no-unused-vars
+  164:11  warning  'fileRef' is assigned a value but never used                                                                                                           @typescript-eslint/no-unused-vars
+  220:41  error    Unexpected any. Specify a different type                                                                                                               @typescript-eslint/no-explicit-any
+  240:11  warning  'handleFile' is assigned a value but never used                                                                                                        @typescript-eslint/no-unused-vars
+  295:25  error    Unexpected any. Specify a different type                                                                                                               @typescript-eslint/no-explicit-any
+  354:44  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                        react/no-unescaped-entities
+  378:59  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                        react/no-unescaped-entities
+  503:56  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                        react/no-unescaped-entities
+  517:45  error    Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+C:\Project\cim1.1\src\components\home\BlogInsights.tsx
+  6:49  warning  'User' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\home\CTA.tsx
+  13:147  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\home\CaseStudies.tsx
+  4:8   warning  'Link' is defined but never used        @typescript-eslint/no-unused-vars
+  5:17  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\home\Hero.tsx
+    5:34  warning  'Play' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+    5:62  warning  'ArrowRight' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+   12:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Project\cim1.1\src\components\home\Hero.tsx:12:9
+  10 |
+  11 |     useEffect(() => {
+> 12 |         setIsVisible(true);
+     |         ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  13 |     }, []);
+  14 |
+  15 |     useEffect(() => {  react-hooks/set-state-in-effect
+  137:45  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @next/next/no-img-element
+  183:45  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @next/next/no-img-element
+
+C:\Project\cim1.1\src\components\home\Testimonials.tsx
+  69:141  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  69:180  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\additional-support-services\CTA.tsx
+   4:35  warning  'MessageSquare' is defined but never used          @typescript-eslint/no-unused-vars
+   4:70  warning  'Send' is defined but never used                   @typescript-eslint/no-unused-vars
+   4:76  warning  'CheckCircle' is defined but never used            @typescript-eslint/no-unused-vars
+   8:12  warning  'formState' is assigned a value but never used     @typescript-eslint/no-unused-vars
+   8:23  warning  'setFormState' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  14:12  warning  'isSubmitted' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  16:11  warning  'handleSubmit' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\ai-powered-chatbots\CTA.tsx
+  40:32  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\ai-powered-chatbots\IndustriesAndUseCases.tsx
+  16:5  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\ai-powered-chatbots\Process.tsx
+   5:5  warning  'CheckCircle2' is defined but never used  @typescript-eslint/no-unused-vars
+  13:5  warning  'ArrowRight' is defined but never used    @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\ai-powered-chatbots\ServiceOverview.tsx
+  3:63  warning  'Users' is defined but never used       @typescript-eslint/no-unused-vars
+  3:70  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\ai-powered-chatbots\TypesOfChatbots.tsx
+    4:22  warning  'TrendingUp' is defined but never used                           @typescript-eslint/no-unused-vars
+    4:34  warning  'FileText' is defined but never used                             @typescript-eslint/no-unused-vars
+    4:56  warning  'MessageSquare' is defined but never used                        @typescript-eslint/no-unused-vars
+  396:48  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\ai-powered-chatbots\WhyChooseUs.tsx
+  3:61  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\ai-workflows-automations\CTA.tsx
+  38:32  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\ai-workflows-automations\IndustriesAndUseCases.tsx
+  151:94   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  336:111  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  338:136  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\ai-workflows-automations\ServiceOverview.tsx
+  3:50  warning  'Clock' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\ai-workflows-automations\Technologies.tsx
+  399:104  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\ai-workflows-automations\TypesOfAutomations.tsx
+    3:10   warning  'MessageSquare' is defined but never used                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+    3:70   warning  'Lightbulb' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+    3:96   warning  'Database' is defined but never used                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+    3:106  warning  'Mail' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+    3:112  warning  'GitBranch' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+    4:8    warning  'Link' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  327:57   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Project\cim1.1\src\components\services\ai-workflows-automations\WhyChooseUs.tsx
+  3:42  warning  'Shield' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\brand-identity-design\ServiceOverview.tsx
+  50:187  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  55:41   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\mobile-app-development\CTA.tsx
+  52:32  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\mobile-app-development\Hero.tsx
+  3:10  warning  'Sparkles' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\mobile-app-development\Process.tsx
+  4:10  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\mobile-app-development\SecurityAndSEO.tsx
+  3:16  warning  'Zap' is defined but never used            @typescript-eslint/no-unused-vars
+  3:29  warning  'Award' is defined but never used          @typescript-eslint/no-unused-vars
+  3:44  warning  'Key' is defined but never used            @typescript-eslint/no-unused-vars
+  3:49  warning  'Server' is defined but never used         @typescript-eslint/no-unused-vars
+  3:57  warning  'AlertCircle' is defined but never used    @typescript-eslint/no-unused-vars
+  4:10  warning  'MdSecurity' is defined but never used     @typescript-eslint/no-unused-vars
+  4:38  warning  'MdSpeed' is defined but never used        @typescript-eslint/no-unused-vars
+  5:38  warning  'FaCheckCircle' is defined but never used  @typescript-eslint/no-unused-vars
+  5:53  warning  'FaRocket' is defined but never used       @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\mobile-app-development\ServiceOverview.tsx
+  3:32  warning  'FaRocket' is defined but never used          @typescript-eslint/no-unused-vars
+  4:10  warning  'MdOutlineDevices' is defined but never used  @typescript-eslint/no-unused-vars
+  5:10  warning  'IoLogoApple' is defined but never used       @typescript-eslint/no-unused-vars
+  5:23  warning  'IoLogoAndroid' is defined but never used     @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\organic-growth-seo\CTA.tsx
+  43:140  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\organic-growth-seo\Hero.tsx
+  3:62  warning  'Target' is defined but never used  @typescript-eslint/no-unused-vars
+  3:70  warning  'Zap' is defined but never used     @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\organic-growth-seo\Industries.tsx
+  5:56  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\organic-growth-seo\Techniques.tsx
+  6:19  warning  'Zap' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\organic-growth-seo\ToolsReporting.tsx
+  6:14  warning  'LineChart' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\performance-marketing\CampaignTypes.tsx
+  4:78  warning  'DollarSign' is defined but never used  @typescript-eslint/no-unused-vars
+  4:90  warning  'Users' is defined but never used       @typescript-eslint/no-unused-vars
+  4:97  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\performance-marketing\CaseStudies.tsx
+  119:35  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\social-media-marketing\Analytics.tsx
+   6:5  warning  'Users' is defined but never used              @typescript-eslint/no-unused-vars
+   8:5  warning  'BarChart3' is defined but never used          @typescript-eslint/no-unused-vars
+  14:5  warning  'Eye' is defined but never used                @typescript-eslint/no-unused-vars
+  15:5  warning  'MousePointerClick' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\social-media-marketing\CTA.tsx
+  81:32  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\social-media-marketing\Platforms.tsx
+    9:5   warning  'Pin' is defined but never used                                  @typescript-eslint/no-unused-vars
+   11:5   warning  'ArrowRight' is defined but never used                           @typescript-eslint/no-unused-vars
+   13:5   warning  'TwitterIcon' is defined but never used                          @typescript-eslint/no-unused-vars
+  120:99  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\social-media-marketing\TypesOfServices.tsx
+  12:5  warning  'ArrowUpRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\web-design-development\CTA.tsx
+  81:32  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\web-design-development\SEOPerformance.tsx
+  188:68  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\components\services\web-design-development\ServiceOverview.tsx
+  6:5  warning  'Search' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\components\services\web-design-development\WhyChooseUs.tsx
+  231:68  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Project\cim1.1\src\lib\formValidation.ts
+  1:53  warning  'parsePhoneNumber' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Project\cim1.1\src\lib\metadata.ts
+  153:3  warning  'postCount' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 162 problems (51 errors, 111 warnings)
+
