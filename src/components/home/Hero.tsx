@@ -48,7 +48,7 @@ export default function Hero() {
                             style={{ background: "linear-gradient(90deg, var(--brand-purple), var(--brand-cyan))" }}
                         >
                             <Sparkles className="w-4 h-4 animate-spin-slow" />
-                            <span>Digital Presence & Growth Studio</span>
+                            <span>Digital Presence & Digital Growth</span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
