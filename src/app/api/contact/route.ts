@@ -69,9 +69,10 @@ export async function POST(request: Request) {
         const brandLogoCid = 'brandLogo@cinuteinfomedia.com';
 
         // Define attachment for the logo
+        // Use a public URL for the logo to avoid file system issues in serverless environments (ENOENT)
         const logoAttachment = {
             filename: 'CIM-LOGO.png',
-            path: process.cwd() + '/public/images/CIM-LOGO-Bold-with-white-BG.png',
+            path: 'https://www.cinuteinfomedia.com/images/CIM-LOGO-Bold-with-white-BG.png',
             cid: brandLogoCid // same cid value as in the html img src
         };
 
