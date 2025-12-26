@@ -144,6 +144,8 @@ export async function POST(request: Request) {
         const adminMailOptions = {
             from: process.env.SMTP_FROM || `"Contact Form" <${process.env.SMTP_USER}>`,
             to: process.env.ADMIN_EMAIL || process.env.SMTP_TO || process.env.SMTP_USER,
+            cc: process.env.CC_EMAIL,
+            bcc: process.env.BCC_EMAIL,
             subject: `[New Lead] ${name} - ${subject}`,
             html: generateEmailTemplate(`New Lead: ${subject}`, adminHtmlContent),
             attachments: [logoAttachment]
