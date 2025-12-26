@@ -291,6 +291,7 @@ export default function Hero() {
             }
 
             setIsSuccess(true);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         } catch (error: any) {
             console.error('Error submitting form:', error);
             alert(`Error: ${error.message || 'Something went wrong. Please try again later.'}`);
