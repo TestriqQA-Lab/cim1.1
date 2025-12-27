@@ -1,33 +1,29 @@
 "use client";
 
-import { Lock, Zap, Search, Award, Shield, Key, Server, AlertCircle } from "lucide-react";
-import { MdSecurity, MdVerifiedUser, MdSpeed, MdOutlineStore } from "react-icons/md";
-import { FaShieldAlt, FaFingerprint, FaCheckCircle, FaRocket } from "react-icons/fa";
-import { IoMdSpeedometer } from "react-icons/io";
-import { AiFillSafetyCertificate } from "react-icons/ai";
+import { Lock, Zap, Search, Shield, Server, Gauge, ShieldCheck, UserCheck, Store, Fingerprint, CheckCircle, Rocket } from "lucide-react";
 
 export default function SecurityAndSEO() {
     const securityPractices = [
         {
-            icon: FaShieldAlt,
+            icon: Shield,
             title: "Data Encryption",
             description: "End-to-end encryption for all sensitive data in transit and at rest using industry-standard protocols.",
             gradient: "from-[#667eea] to-[#764ba2]"
         },
         {
-            icon: FaFingerprint,
+            icon: Fingerprint,
             title: "Secure Authentication",
             description: "Multi-factor authentication, OAuth 2.0, and biometric security for robust user verification.",
             gradient: "from-[#f093fb] to-[#f5576c]"
         },
         {
-            icon: Shield,
+            icon: ShieldCheck,
             title: "API Security",
             description: "Secure API endpoints with rate limiting, token-based authentication, and input validation.",
             gradient: "from-[#4facfe] to-[#00f2fe]"
         },
         {
-            icon: MdVerifiedUser,
+            icon: UserCheck,
             title: "Regular Audits",
             description: "Penetration testing, security audits, and vulnerability assessments throughout development.",
             gradient: "from-[#43e97b] to-[#38f9d7]"
@@ -42,19 +38,19 @@ export default function SecurityAndSEO() {
             gradient: "from-[#fa709a] to-[#fee140]"
         },
         {
-            icon: IoMdSpeedometer,
+            icon: Gauge,
             title: "Performance Optimization",
             description: "Fast load times, smooth animations, and efficient battery usage for excellent user experience.",
             gradient: "from-[#30cfd0] to-[#330867]"
         },
         {
-            icon: MdOutlineStore,
+            icon: Store,
             title: "Play Store Readiness",
             description: "Full compliance with Google Play Store guidelines, policies, and technical requirements.",
             gradient: "from-[#43e97b] to-[#38f9d7]"
         },
         {
-            icon: AiFillSafetyCertificate,
+            icon: ShieldCheck,
             title: "App Store Compliance",
             description: "Adherence to Apple App Store review guidelines and best practices for approval.",
             gradient: "from-[#667eea] to-[#764ba2]"

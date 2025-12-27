@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { FaArrowLeft, FaArrowRight, FaCheck } from "react-icons/fa";
+import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 interface FormData {
     name: string;
@@ -365,7 +365,7 @@ export default function OutreachLandingPage() {
                                     className="flex items-center justify-center w-full font-bold py-4 px-6 rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg gap-4"
                                     style={{ background: BRAND.primary, color: "#ffffffff" }}
                                 >
-                                    Next <FaArrowRight />
+                                    Next <ArrowRight />
                                 </button>
                             </div>
                         </div>
@@ -545,7 +545,7 @@ export default function OutreachLandingPage() {
                                     className="flex items-center gap-2 sm:w-auto px-6 py-3 font-semibold rounded-xl transition-all"
                                     style={{ background: "var(--hover-bg)", color: "var(--foreground)" }}
                                 >
-                                    <FaArrowLeft /> Back
+                                    <ArrowLeft /> Back
                                 </button>
                                 <button
                                     onClick={() => handleNext(3)}
@@ -610,7 +610,7 @@ export default function OutreachLandingPage() {
                                     className="flex items-center gap-2 font-bold py-4 px-6 rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg"
                                     style={{ background: BRAND.primary, color: "#ffffffff" }}
                                 >
-                                    <FaCheck /> Done
+                                    <Check /> Done
                                 </button>
                             </div>
                         </div>

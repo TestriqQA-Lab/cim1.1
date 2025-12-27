@@ -54,16 +54,16 @@ export default function Hero() {
                     className="flex items-center gap-1.5 md:gap-2 text-xs md:text-sm mb-5 justify-center lg:justify-start flex-wrap"
                     aria-label="Breadcrumb"
                 >
-                    <Link href="/" className="flex items-center gap-1 hover:underline transition-colors" style={{ color: "var(--secondary-text)" }}>
+                    <Link href="/" className="flex items-center gap-1 hover:underline transition-colors p-2" style={{ color: "var(--secondary-text)" }}>
                         <Home className="w-4 h-4" />
                         Home
                     </Link>
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
-                    <Link href="/services" className="hover:underline transition-colors" style={{ color: "var(--secondary-text)" }}>
+                    <Link href="/services" className="hover:underline transition-colors p-2" style={{ color: "var(--secondary-text)" }}>
                         Services
                     </Link>
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
-                    <span className="font-semibold" style={{ color: "#fab900" }}>
+                    <span className="font-semibold p-2" style={{ color: "#fab900" }}>
                         Additional Support Services
                     </span>
                 </nav>
@@ -176,7 +176,7 @@ export default function Hero() {
                                 <Headphones className="w-8 h-8 md:w-10 md:h-10 text-white" />
                             </div>
 
-                            <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-5" style={{ color: "#4b277a" }}>Why Choose Our Support?</h3>
+                            <h2 className="text-lg md:text-xl font-bold mb-4 md:mb-5" style={{ color: "#4b277a" }}>Why Choose Our Support?</h2>
 
                             <div className="space-y-3">
                                 {[

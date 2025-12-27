@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { MousePointerClick, RefreshCw, Share2, Layers, ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -151,14 +152,15 @@ export default function ServiceOverview() {
 
                 {/* CTA */}
                 <div className="mt-16 text-center">
-                    <a
+                    <Link
                         href="/contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-semibold hover:scale-105 transition-transform shadow-lg"
                         style={{ backgroundColor: "var(--brand-orange)" }}
+                        aria-label="Start your performance marketing campaign"
                     >
                         Start Your Campaign
                         <ArrowRight className="w-5 h-5" />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

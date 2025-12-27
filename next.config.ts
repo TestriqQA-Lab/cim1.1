@@ -19,10 +19,18 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
+  modularizeImports: {
+    "react-icons": {
+      transform: "react-icons/{{member}}",
+    },
+  },
+
   // Experimental features for better performance
   experimental: {
     optimizeCss: true,
   },
+
+  productionBrowserSourceMaps: true,
 };
 
 export default nextConfig;

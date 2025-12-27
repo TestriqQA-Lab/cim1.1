@@ -204,6 +204,7 @@ export default function BlogNavbar() {
                                         borderColor: "var(--border-color)",
                                         color: "var(--secondary-text)",
                                     }}
+                                    aria-label="Clear filters"
                                 >
                                     <X className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                                     <span className="hidden xs:inline sm:inline">Clear</span>
@@ -339,6 +340,7 @@ export default function BlogNavbar() {
                                 backgroundColor: showMobileMenu ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent",
                                 color: "var(--foreground)"
                             }}
+                            aria-label="Toggle mobile menu"
                         >
                             <Menu className="w-4 h-4 sm:w-5 sm:h-5" />
                             <ChevronDown

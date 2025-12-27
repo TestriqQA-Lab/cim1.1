@@ -1,6 +1,7 @@
 "use client";
 
 import { Eye, Globe, TrendingUp, Users, CheckCircle2, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const features = [
@@ -107,14 +108,15 @@ export default function ServiceOverview() {
                             <CheckCircle2 className="w-6 h-6" style={{ color: "var(--brand-seo)" }} />
                             <span className="text-lg font-semibold">Ready to grow organically?</span>
                         </div>
-                        <a
+                        <Link
                             href="/contact"
                             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold hover:scale-105 transition-transform"
                             style={{ backgroundColor: "var(--brand-seo)" }}
+                            aria-label="Get started with organic growth"
                         >
                             Get Started
                             <ArrowRight className="w-5 h-5" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

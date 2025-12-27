@@ -1,57 +1,56 @@
 "use client";
 
-import { IoLogoApple, IoLogoAndroid } from "react-icons/io5";
 import {
     Clock,
-    IndianRupee
+    IndianRupee,
+    Globe,
+    Rocket,
+    Paintbrush,
+    GitMerge,
+    Building2
 } from "lucide-react";
-
-import { MdWeb } from "react-icons/md";
-import { HiOfficeBuilding } from "react-icons/hi";
-import { FaRocket, FaPaintBrush } from "react-icons/fa";
-import { BiGitMerge } from "react-icons/bi";
-import { SiHuawei } from "react-icons/si";
+import { Android, Apple, Huawei } from "../../Icons";
 
 
 export default function AppTypes() {
     const appTypes = [
         {
-            icon: IoLogoApple,
+            icon: Apple,
             title: "iOS App Development",
             description: "Native iOS apps built with Swift and SwiftUI. We create beautiful, performant apps that leverage Apple's latest technologies and frameworks.",
             features: ["Swift & SwiftUI", "App Store Optimization", "iCloud Integration", "Push Notifications"],
             gradient: "from-[#000000] to-[#434343]"
         },
         {
-            icon: IoLogoAndroid,
+            icon: Android,
             title: "Android App Development",
             description: "Robust Android applications using Kotlin and Jetpack. Our apps are optimized for the diverse Android ecosystem and device variations.",
             features: ["Kotlin & Jetpack", "Play Store Optimization", "Firebase Integration", "Material Design"],
             gradient: "from-[#3ddc84] to-[#07c160]"
         },
         {
-            icon: BiGitMerge,
+            icon: GitMerge,
             title: "Cross-Platform App Development",
             description: "React Native and Flutter solutions that work seamlessly across iOS and Android. Reduce development time while maintaining native performance.",
             features: ["React Native", "Flutter", "Code Reusability", "Faster Time-to-Market"],
             gradient: "from-[#667eea] to-[#764ba2]"
         },
         {
-            icon: MdWeb,
+            icon: Globe,
             title: "Hybrid App Development",
             description: "Web-based mobile apps using technologies like Ionic and Cordova. Perfect for rapid prototyping and MVP development.",
             features: ["Ionic Framework", "Cordova", "Web Technologies", "Quick Deployment"],
             gradient: "from-[#f093fb] to-[#f5576c]"
         },
         {
-            icon: HiOfficeBuilding,
+            icon: Building2,
             title: "Enterprise Mobile Applications",
             description: "Large-scale, mission-critical applications for enterprises. We handle complex requirements, security, and integration with existing systems.",
             features: ["Enterprise Security", "Legacy System Integration", "Scalability", "Compliance & Governance"],
             gradient: "from-[#4facfe] to-[#00f2fe]"
         },
         {
-            icon: SiHuawei,
+            icon: Huawei,
             title: "HarmonyOS App Development",
             description: "Custom HarmonyOS applications built for Huawei’s ecosystem. We develop seamless, distributed apps that run smoothly across phones, tablets, wearables, and IoT devices.",
             features: [
@@ -63,14 +62,14 @@ export default function AppTypes() {
             gradient: "from-[#ff4b4b] to-[#d6001c]"
         },
         {
-            icon: FaRocket,
+            icon: Rocket,
             title: "MVP App Development",
             description: "Rapid development of minimum viable products to validate your business idea. Get to market quickly with essential features.",
             features: ["Agile Development", "Cost-Effective", "Rapid Prototyping", "Quick Iterations"],
             gradient: "from-[#fa709a] to-[#fee140]"
         },
         {
-            icon: FaPaintBrush,
+            icon: Paintbrush,
             title: "UI/UX Focused Mobile Apps",
             description: "Apps designed with user experience at the core. Beautiful interfaces combined with intuitive navigation and delightful interactions.",
             features: ["User Research", "Wireframing & Prototyping", "Interactive Design", "Accessibility"],
@@ -194,7 +193,7 @@ export default function AppTypes() {
                                 {[
                                     {
                                         approach: "Native (iOS)",
-                                        icon: IoLogoApple,
+                                        icon: Apple,
                                         gradient: "from-[#000000] to-[#434343]",
                                         best: "Premium iOS experience",
                                         time: "Moderate",
@@ -202,7 +201,7 @@ export default function AppTypes() {
                                     },
                                     {
                                         approach: "Native (Android)",
-                                        icon: IoLogoAndroid,
+                                        icon: Android,
                                         gradient: "from-[#3ddc84] to-[#07c160]",
                                         best: "Android optimization",
                                         time: "Moderate",
@@ -210,7 +209,7 @@ export default function AppTypes() {
                                     },
                                     {
                                         approach: "Cross-Platform",
-                                        icon: BiGitMerge,
+                                        icon: GitMerge,
                                         gradient: "from-[#667eea] to-[#764ba2]",
                                         best: "Multi-platform reach",
                                         time: "Fast",
@@ -218,7 +217,7 @@ export default function AppTypes() {
                                     },
                                     {
                                         approach: "Hybrid",
-                                        icon: MdWeb,
+                                        icon: Globe,
                                         gradient: "from-[#f093fb] to-[#f5576c]",
                                         best: "Rapid prototyping",
                                         time: "Very Fast",
@@ -226,7 +225,7 @@ export default function AppTypes() {
                                     },
                                     {
                                         approach: "Enterprise",
-                                        icon: HiOfficeBuilding,
+                                        icon: Building2,
                                         gradient: "from-[#4facfe] to-[#00f2fe]",
                                         best: "Complex & large-scale systems",
                                         time: "Variable",

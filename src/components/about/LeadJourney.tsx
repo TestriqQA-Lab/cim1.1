@@ -43,7 +43,7 @@ export default function LeadJourney() {
                                             <span className="text-white font-bold text-xl">{index + 1}</span>
                                         </div>
 
-                                        <h4 className="text-lg font-bold mb-2 text-[var(--foreground)]">{item.stage}</h4>
+                                        <h3 className="text-lg font-bold mb-2 text-[var(--foreground)]">{item.stage}</h3>
                                         <p className="text-sm text-[var(--secondary-text)] leading-relaxed">{item.desc}</p>
                                     </div>
                                 </div>

@@ -1,43 +1,42 @@
 "use client";
 
-import { FaMobileAlt, FaReact, FaRocket, FaPalette, FaServer, FaShieldAlt } from "react-icons/fa";
-import { MdOutlineDevices, MdSpeed } from "react-icons/md";
-import { IoLogoApple, IoLogoAndroid } from "react-icons/io";
+import { Smartphone, Rocket, Palette, Server, Shield, Zap, MonitorSmartphone } from "lucide-react";
+import { ReactLogo, Android, Apple } from "../../Icons";
 
 export default function ServiceOverview() {
     const services = [
         {
-            icon: FaMobileAlt,
+            icon: Smartphone,
             title: "Native App Development",
             description: "Build high-performance iOS and Android apps with native technologies for optimal user experience and platform-specific features.",
             gradient: "from-[#667eea] to-[#764ba2]"
         },
         {
-            icon: FaReact,
+            icon: ReactLogo,
             title: "Cross-Platform Solutions",
             description: "Develop once, deploy everywhere with React Native and Flutter technologies for cost-effective multi-platform coverage.",
             gradient: "from-[#f093fb] to-[#f5576c]"
         },
         {
-            icon: MdSpeed,
+            icon: Zap,
             title: "Performance Optimization",
             description: "Ensure lightning-fast apps with optimized code, efficient databases, and advanced caching strategies.",
             gradient: "from-[#4facfe] to-[#00f2fe]"
         },
         {
-            icon: FaPalette,
+            icon: Palette,
             title: "User-Centric Design",
             description: "Create intuitive, beautiful interfaces that users love with our expert UI/UX design team.",
             gradient: "from-[#43e97b] to-[#38f9d7]"
         },
         {
-            icon: FaServer,
+            icon: Server,
             title: "Scalable Backend",
             description: "Build robust backend infrastructure that scales with your app's growth and user base.",
             gradient: "from-[#fa709a] to-[#fee140]"
         },
         {
-            icon: FaShieldAlt,
+            icon: Shield,
             title: "Enterprise Security",
             description: "Implement industry-leading security practices including encryption, authentication, and data protection.",
             gradient: "from-[#30cfd0] to-[#330867]"

@@ -2,22 +2,34 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Sparkles, ChevronRight, Play, BarChart3, Lightbulb, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
-    const [isVisible, setIsVisible] = useState(false);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
-        setIsVisible(true);
-    }, []);
+        // Only enable mouse effect on devices that support hover and have a fine pointer (mouse)
+        const mediaQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
+        if (!mediaQuery.matches) return;
 
-    useEffect(() => {
+        let animationFrameId: number;
+
         const handleMouseMove = (e: MouseEvent) => {
-            setMousePosition({ x: e.clientX, y: e.clientY });
+            // Use requestAnimationFrame to debounce updates and prevent layout thrashing
+            if (animationFrameId) return;
+
+            animationFrameId = requestAnimationFrame(() => {
+                setMousePosition({ x: e.clientX, y: e.clientY });
+                animationFrameId = 0;
+            });
         };
+
         window.addEventListener("mousemove", handleMouseMove);
-        return () => window.removeEventListener("mousemove", handleMouseMove);
+        return () => {
+            window.removeEventListener("mousemove", handleMouseMove);
+            if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        };
     }, []);
 
     return (
@@ -28,13 +40,13 @@ export default function Hero() {
                     className="absolute w-[800px] h-[800px] rounded-full mix-blend-multiply filter blur-3xl opacity-16 transition-all duration-500 ease-out"
                     style={{
                         background: `radial-gradient(circle, var(--brand-purple) 0%, transparent 70%)`,
-                        left: `${mousePosition.x - 400}px`,
-                        top: `${mousePosition.y - 400}px`,
+                        transform: `translate(${mousePosition.x - 400}px, ${mousePosition.y - 400}px)`,
+                        willChange: "transform",
                     }}
                 />
-                <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-16 animate-blob" style={{ backgroundColor: "var(--brand-cyan)" }} />
-                <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-16 animate-blob animation-delay-2000" style={{ backgroundColor: "var(--brand-yellow)" }} />
-                <div className="absolute bottom-0 left-1/3 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-16 animate-blob animation-delay-4000" style={{ backgroundColor: "var(--brand-purple)" }} />
+                <div className="hidden md:block absolute top-0 left-1/4 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-16 animate-blob" style={{ backgroundColor: "var(--brand-cyan)" }} />
+                <div className="hidden md:block absolute top-0 right-1/4 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-16 animate-blob animation-delay-2000" style={{ backgroundColor: "var(--brand-yellow)" }} />
+                <div className="hidden md:block absolute bottom-0 left-1/3 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-16 animate-blob animation-delay-4000" style={{ backgroundColor: "var(--brand-purple)" }} />
 
                 <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.02), transparent)" }} />
             </div>
@@ -42,7 +54,8 @@ export default function Hero() {
             <div className="relative z-10 mx-auto px-6 md:px-12 xl:px-20 py-12">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     {/* Left Content */}
-                    <div className={`lg:col-span-7 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    {/* Left Content */}
+                    <div className="lg:col-span-7 relative z-10 animate-[fadeIn_0.5s_ease-out]">
                         <div
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-semibold mb-6 shadow-lg animate-fade-in"
                             style={{ background: "linear-gradient(90deg, var(--brand-purple), var(--brand-cyan))" }}
@@ -94,7 +107,7 @@ export default function Hero() {
                                         <BarChart3 className="w-5 h-5" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold mb-1">Data-first growth</h3>
+                                        <h2 className="font-bold mb-1">Data-first growth</h2>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Continuous testing, analytics & dashboards</p>
                                     </div>
                                 </div>
@@ -106,7 +119,7 @@ export default function Hero() {
                                         <Lightbulb className="w-5 h-5" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold mb-1">Human-centered design</h3>
+                                        <h2 className="font-bold mb-1">Human-centered design</h2>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>UX backed by research</p>
                                     </div>
                                 </div>
@@ -115,7 +128,8 @@ export default function Hero() {
                     </div>
 
                     {/* Right Side - Case Studies */}
-                    <aside className={`lg:col-span-5 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    {/* Right Side - Case Studies */}
+                    <aside className="lg:col-span-5 relative z-10 animate-[fadeIn_0.8s_ease-out]">
                         <div className="space-y-6">
                             {/* Testriq Case Study Card */}
                             <div
@@ -134,11 +148,12 @@ export default function Hero() {
                                             className="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden"
                                             style={{ backgroundColor: "var(--background)", border: "1px solid var(--border-color)" }}
                                         >
-                                            <img
+                                            <Image
                                                 src="/images/logos/testriq-logo.png"
                                                 alt="Testriq"
+                                                width={40}
+                                                height={40}
                                                 className="w-10 h-10 object-contain"
-                                                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; (e.target as HTMLImageElement).parentElement!.innerHTML = '<span style="font-weight:700;font-size:14px;">T</span>'; }}
                                             />
                                         </div>
                                         <div>
@@ -180,11 +195,12 @@ export default function Hero() {
                                             className="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden"
                                             style={{ backgroundColor: "var(--background)", border: "1px solid var(--border-color)" }}
                                         >
-                                            <img
+                                            <Image
                                                 src="/images/logos/cdpl-logo.png"
                                                 alt="CDPL"
+                                                width={40}
+                                                height={40}
                                                 className="w-10 h-10 object-contain"
-                                                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; (e.target as HTMLImageElement).parentElement!.innerHTML = '<span style="font-weight:700;font-size:14px;">C</span>'; }}
                                             />
                                         </div>
                                         <div>

@@ -204,13 +204,13 @@ export default function BlogDetailPage() {
         <div className="relative px-6 md:px-12 xl:px-16 py-8 md:py-12">
           {/* Breadcrumb */}
           <nav className="hidden md:flex items-center gap-2 text-sm mb-8" style={{ color: "var(--secondary-text)" }}>
-            <Link href="/blog" className="hover:text-[var(--brand-purple)] transition-colors">
+            <Link href="/blog" className="hover:text-[var(--brand-purple)] transition-colors p-2">
               Blog
             </Link>
             <span>/</span>
             <Link
               href={`/blog/category/${getCategorySlug(post.category)}`}
-              className="hover:text-[var(--brand-purple)] transition-colors"
+              className="hover:text-[var(--brand-purple)] transition-colors p-2"
             >
               {post.category}
             </Link>

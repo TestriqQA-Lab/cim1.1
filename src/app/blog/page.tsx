@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { blogPosts, getCategorySlug } from "@/data/blog";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
-import { ChevronRight, Sparkles, ArrowRight } from "lucide-react";
+import { ChevronRight, Sparkles, ArrowRight, Home } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
@@ -86,6 +86,30 @@ function BlogPageContent() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                   {/* Hero Content - Left Side */}
                   <div>
+                    {/* Breadcrumbs */}
+                    <nav
+                      className="flex items-center gap-2 text-sm mb-6"
+                      aria-label="Breadcrumb"
+                    >
+                      <Link
+                        href="/"
+                        className="flex items-center gap-1 hover:underline transition-colors p-2"
+                        style={{ color: "var(--secondary-text)" }}
+                      >
+                        <Home className="w-4 h-4" />
+                        Home
+                      </Link>
+
+                      <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+                      <span
+                        className="font-semibold"
+                        style={{ color: "var(--brand-purple)" }}
+                      >
+                        Blog
+                      </span>
+                    </nav>
+
                     <span
                       className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
                       style={{
@@ -160,9 +184,9 @@ function BlogPageContent() {
                         borderColor: "var(--border-color)",
                       }}
                     >
-                      <h3 className="text-sm font-bold mb-3" style={{ color: "var(--foreground)" }}>
+                      <h2 className="text-sm font-bold mb-3" style={{ color: "var(--foreground)" }}>
                         Popular Topics
-                      </h3>
+                      </h2>
                       <div className="flex flex-wrap gap-2">
                         {["SEO Tips", "Web Design", "Social Media", "Analytics", "E-commerce", "AI & Tech"].map((topic) => (
                           <span
@@ -363,7 +387,7 @@ function BlogPageContent() {
                       borderColor: "var(--border-color)",
                     }}
                   >
-                    <h3 className="text-xl font-semibold mb-2">No posts found</h3>
+                    <h2 className="text-xl font-semibold mb-2">No posts found</h2>
                     <p className="mb-4" style={{ color: "var(--secondary-text)" }}>
                       Try a different search term
                     </p>

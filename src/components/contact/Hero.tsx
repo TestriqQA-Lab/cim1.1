@@ -21,11 +21,15 @@ import {
     Info,
     Loader2,
     CheckCircle2,
+    Home,
+    ChevronRight,
 } from "lucide-react";
 
 // Phone input with country codes
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+
+import Link from "next/link";
 
 // Validation utilities
 import {
@@ -39,18 +43,12 @@ import { useFormErrorReset } from '@/hooks/useFormErrorReset';
 
 export default function Hero() {
     // small helpers & state used by hero animations
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    // small helpers & state used by hero animations
     const [activeCard, setActiveCard] = useState(0);
-    const [messageIndex, setMessageIndex] = useState(0);
-    const [particles, setParticles] = useState<Array<{ x: number; y: number; delay: number }>>([]);
+    // const [messageIndex, setMessageIndex] = useState(0); // Unused
+    // const [particles, setParticles] = useState<Array<{ x: number; y: number; delay: number }>>([]); // Unused
 
-    useEffect(() => {
-        const handleMouseMove = (e: MouseEvent) => {
-            setMousePosition({ x: e.clientX, y: e.clientY });
-        };
-        window.addEventListener("mousemove", handleMouseMove);
-        return () => window.removeEventListener("mousemove", handleMouseMove);
-    }, []);
+    /* Optimized: Removed mousemove listener and particle effects to reduce main thread blocking (TBT) */
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -59,21 +57,8 @@ export default function Hero() {
         return () => clearInterval(interval);
     }, []);
 
-    useEffect(() => {
-        const msgInterval = setInterval(() => {
-            setMessageIndex((prev) => (prev + 1) % 3);
-        }, 4000);
-        return () => clearInterval(msgInterval);
-    }, []);
-
-    useEffect(() => {
-        const newParticles = Array.from({ length: 20 }, (_, i) => ({
-            x: Math.random() * 100,
-            y: Math.random() * 100,
-            delay: i * 0.2,
-        }));
-        setParticles(newParticles);
-    }, []);
+    /* Removed unused message interval */
+    /* Removed unused particle effect */
 
     // Contact methods (used in left column originally)
     const contactMethods = [
@@ -323,6 +308,30 @@ export default function Hero() {
             </div>
 
             <div className="mx-auto relative">
+                {/* Breadcrumbs */}
+                <nav
+                    className="flex items-center gap-2 text-sm mb-6"
+                    aria-label="Breadcrumb"
+                >
+                    <Link
+                        href="/"
+                        className="flex items-center gap-1 hover:underline transition-colors p-2"
+                        style={{ color: "var(--secondary-text)" }}
+                    >
+                        <Home className="w-4 h-4" />
+                        Home
+                    </Link>
+
+                    <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+                    <span
+                        className="font-semibold p-2"
+                        style={{ color: "var(--brand-blue)" }}
+                    >
+                        Contact Us
+                    </span>
+                </nav>
+
                 {/* Badge */}
                 <div
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full border transition-colors mb-4"
@@ -417,9 +426,9 @@ export default function Hero() {
                                                 </div>
 
                                                 <div className="flex-1">
-                                                    <h3 className="text-xl font-bold" style={{ color: "var(--foreground)" }}>
+                                                    <h2 className="text-xl font-bold" style={{ color: "var(--foreground)" }}>
                                                         {method.title}
-                                                    </h3>
+                                                    </h2>
                                                     <p className="text-base font-semibold" style={{ color: "var(--foreground)" }}>
                                                         {method.info}
                                                     </p>
@@ -441,12 +450,12 @@ export default function Hero() {
                                 borderColor: "var(--border-color)",
                             }}
                         >
-                            <h3
+                            <h2
                                 className="text-xl font-bold mb-3"
                                 style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-teal))", WebkitBackgroundClip: "text", color: "transparent" }}
                             >
                                 Why People Choose Us
-                            </h3>
+                            </h2>
 
                             <ul className="space-y-3">
                                 <li className="flex items-start gap-3">
@@ -499,9 +508,9 @@ export default function Hero() {
                                         <div className="mx-auto w-24 h-24 rounded-full flex items-center justify-center mb-6" style={{ background: gradient("--brand-teal", "--brand-blue") }}>
                                             <CheckCircle2 className="w-12 h-12" style={{ color: "white" }} />
                                         </div>
-                                        <h3 className="text-2xl font-bold mb-2" style={{ color: "var(--foreground)" }}>
+                                        <h2 className="text-2xl font-bold mb-2" style={{ color: "var(--foreground)" }}>
                                             Thanks - we'll be in touch!
-                                        </h3>
+                                        </h2>
                                         <p style={{ color: "var(--secondary-text)" }}>We received your message and will respond within 24 hours.</p>
                                         <div className="flex justify-center gap-3 mt-6">
                                             <button
@@ -599,6 +608,7 @@ export default function Hero() {
                                                             onChange={handlePhoneChange}
                                                             placeholder="Enter phone number"
                                                             className="phone-input-field"
+                                                            numberInputProps={{ 'aria-label': 'Phone number' }}
                                                         />
                                                     </div>
                                                     {phoneError && <p className="text-sm mt-2" style={{ color: "var(--brand-orange)" }}>{phoneError}</p>}
@@ -637,11 +647,12 @@ export default function Hero() {
                                             {/* row 3 */}
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                                 <div>
-                                                    <label className="text-sm font-medium" style={{ color: "var(--secondary-text)" }}>
+                                                    <label htmlFor="budget" className="text-sm font-medium" style={{ color: "var(--secondary-text)" }}>
                                                         Budget (est.)
                                                     </label>
                                                     <div className="mt-2 relative">
                                                         <select
+                                                            id="budget"
                                                             value={form.budget}
                                                             onChange={(e) => handleChange("budget", e.target.value)}
                                                             className="w-full px-4 py-3 rounded-xl border focus:ring-2 outline-none transition"
@@ -657,11 +668,12 @@ export default function Hero() {
                                                 </div>
 
                                                 <div>
-                                                    <label className="text-sm font-medium" style={{ color: "var(--secondary-text)" }}>
+                                                    <label htmlFor="timeframe" className="text-sm font-medium" style={{ color: "var(--secondary-text)" }}>
                                                         Timeframe
                                                     </label>
                                                     <div className="mt-2">
                                                         <select
+                                                            id="timeframe"
                                                             value={form.timeframe}
                                                             onChange={(e) => handleChange("timeframe", e.target.value)}
                                                             className="w-full px-4 py-3 rounded-xl border focus:ring-2 outline-none transition"

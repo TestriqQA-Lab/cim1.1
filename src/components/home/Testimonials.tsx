@@ -122,23 +122,6 @@ export default function Testimonials() {
                             </button>
                         </div>
 
-                        {/* Dot Indicators */}
-                        <div style={{ display: "flex", gap: 8 }}>
-                            {testimonials.map((_, i) => (
-                                <button
-                                    key={i}
-                                    onClick={() => setTestimonialIndex(i)}
-                                    style={{
-                                        width: i === testimonialIndex ? 40 : 8,
-                                        height: 8,
-                                        borderRadius: 999,
-                                        backgroundColor: i === testimonialIndex ? "var(--brand-blue)" : "var(--border-color)",
-                                        transition: "all .2s"
-                                    }}
-                                    aria-label={`Go to testimonial ${i + 1}`}
-                                />
-                            ))}
-                        </div>
                     </div>
                 </div>
             </div>

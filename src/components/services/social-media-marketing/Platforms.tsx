@@ -10,10 +10,8 @@ import {
     TrendingUp,
     ArrowRight,
     Zap,
-    TwitterIcon,
 } from "lucide-react";
-import { BsTwitterX } from "react-icons/bs";
-import { FaPinterest } from "react-icons/fa";
+import { TwitterX, Pinterest } from "../../Icons";
 
 export default function Platforms() {
     const platforms = [
@@ -50,7 +48,7 @@ export default function Platforms() {
             name: "X (Twitter)",
             description: "Real-time engagement, trend-jacking, and building a strong, authoritative brand voice through concise and impactful messaging.",
             gradient: "linear-gradient(135deg, #000000, #333333)",
-            icon: BsTwitterX,
+            icon: TwitterX,
             accentColor: "#000000",
         },
 
@@ -58,7 +56,7 @@ export default function Platforms() {
             name: "Pinterest",
             description: "Strategy focused on visual discovery, driving traffic to e-commerce sites, and capturing users in the early stages of the buying journey.",
             gradient: "linear-gradient(135deg, #E60023, #AD081B)",
-            icon: FaPinterest,
+            icon: Pinterest,
             accentColor: "#E60023",
         },
     ];

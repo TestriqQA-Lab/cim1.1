@@ -3,9 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { BsTwitterX } from "react-icons/bs";
+import { TwitterX } from "./Icons";
 import { useEffect, useState } from "react";
-import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone, ArrowRight } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, ArrowRight } from "lucide-react";
 
 export default function Footer() {
     const services = [
@@ -124,7 +124,7 @@ export default function Footer() {
                                     style={styles.iconBg}
                                     aria-label="Visit our Twitter profile"
                                 >
-                                    <BsTwitterX className="h-6 w-6 text-[var(--foreground)] group-hover:text-white transition-colors" />
+                                    <TwitterX className="h-6 w-6 text-[var(--foreground)] group-hover:text-white transition-colors" />
                                 </Link>
 
 
@@ -158,7 +158,7 @@ export default function Footer() {
                             <ul className="space-y-3">
                                 {services.map((service, index) => (
                                     <li key={index}>
-                                        <Link href={`/services/${service.toLowerCase().replace(/[&\s]+/g, "-")}`} className="text-sm flex items-center group py-1" style={styles.link}>
+                                        <Link href={`/services/${service.toLowerCase().replace(/[&\s]+/g, "-")}`} className="text-sm flex items-center group py-2" style={styles.link}>
                                             <ArrowRight className="h-3 w-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" />
                                             {service}
                                         </Link>
@@ -175,7 +175,7 @@ export default function Footer() {
                             <ul className="space-y-3 mb-6">
                                 {quickLinks.map((link, index) => (
                                     <li key={index}>
-                                        <Link href={link.href} className="text-sm flex items-center group py-1" style={styles.link}>
+                                        <Link href={link.href} className="text-sm flex items-center group py-2" style={styles.link}>
                                             <ArrowRight className="h-3 w-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" />
                                             {link.name}
                                         </Link>
@@ -192,17 +192,17 @@ export default function Footer() {
                             <ul className="space-y-4">
                                 <li className="flex items-start text-sm" style={styles.text}>
                                     <Mail className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
-                                    <a href="mailto:contact@cinuteinfomedia.com" className="hover:underline" style={styles.link}>
+                                    <a href="mailto:contact@cinuteinfomedia.com" className="hover:underline py-2 inline-block" style={styles.link}>
                                         contact@cinuteinfomedia.com
                                     </a>
                                 </li>
                                 <li className="flex items-start text-sm" style={styles.text}>
                                     <Phone className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0" style={{ color: "var(--brand-teal)" }} />
                                     <div className="flex flex-col">
-                                        <a href="tel:+919004988859" className="hover:underline" style={styles.link}>
+                                        <a href="tel:+919004988859" className="hover:underline py-1 inline-block" style={styles.link}>
                                             +91 9004988859
                                         </a>
-                                        <a href="tel:+917700995410" className="hover:underline" style={styles.link}>
+                                        <a href="tel:+917700995410" className="hover:underline py-1 inline-block" style={styles.link}>
                                             +91 7700995410
                                         </a>
                                     </div>
@@ -228,15 +228,15 @@ export default function Footer() {
                             © {year} CIM. All rights reserved.
                         </p>
                         <div className="flex flex-col md:flex-row items-center justify-center space-x-6 text-sm">
-                            <Link href="/privacy-policy" className="hover:underline" style={styles.link}>
+                            <Link href="/privacy-policy" className="hover:underline py-2" style={styles.link}>
                                 Privacy Policy
                             </Link>
                             <span className="hidden md:block" style={{ color: "var(--border-color)" }}>|</span>
-                            <Link href="/terms-of-service" className="hover:underline" style={styles.link}>
+                            <Link href="/terms-of-service" className="hover:underline py-2" style={styles.link}>
                                 Terms of Service
                             </Link>
                             <span className="hidden md:block" style={{ color: "var(--border-color)" }}>|</span>
-                            <Link href="/cookies-policy" className="hover:underline" style={styles.link}>
+                            <Link href="/cookies-policy" className="hover:underline py-2" style={styles.link}>
                                 Cookies Policy
                             </Link>
                             {/* <span className="hidden md:block" style={{ color: "var(--border-color)" }}>|</span>

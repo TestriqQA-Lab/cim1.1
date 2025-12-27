@@ -38,13 +38,12 @@ export default function Hero() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 py-12 relative">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-2 text-sm mb-5 justify-center lg:justify-start animate-fadeIn"
+                    className="flex items-center gap-1 text-sm mb-5 justify-center lg:justify-start"
                     aria-label="Breadcrumb"
-                    style={{ animationDelay: "0.1s", animationFillMode: "both" }}
                 >
                     <Link
                         href="/"
-                        className="flex items-center gap-1 hover:underline transition-colors"
+                        className="flex items-center gap-1 hover:underline transition-colors p-2"
                         style={{ color: "var(--secondary-text)" }}
                     >
                         <Home className="w-4 h-4" />
@@ -55,7 +54,7 @@ export default function Hero() {
 
                     <Link
                         href="/services"
-                        className="hover:underline transition-colors"
+                        className="hover:underline transition-colors p-2"
                         style={{ color: "var(--secondary-text)" }}
                     >
                         Services
@@ -64,7 +63,7 @@ export default function Hero() {
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
 
                     <span
-                        className="font-semibold"
+                        className="font-semibold p-2"
                         style={{ color: "var(--brand-blue)" }}
                     >
                         Web Design & Development
@@ -75,8 +74,7 @@ export default function Hero() {
 
                     {/* LEFT CONTENT */}
                     <div
-                        className="text-center lg:text-left animate-fadeIn"
-                        style={{ animationDelay: "0.2s", animationFillMode: "both" }}
+                        className="text-center lg:text-left"
                     >
                         {/* Badge */}
                         <div

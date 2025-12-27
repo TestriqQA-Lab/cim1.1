@@ -1,16 +1,11 @@
 "use client";
 
-import { Sparkles } from "lucide-react";
+import { Sparkles, Home, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import Link from "next/link";
+// Optimized for LCP: Removed client-side fade-in delay
 
 export default function Hero() {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        setIsVisible(true);
-    }, []);
-
     return (
         <section
             className="relative overflow-hidden transition-colors duration-300"
@@ -45,9 +40,32 @@ export default function Hero() {
 
                     {/* LEFT CONTENT */}
                     <div
-                        className={`text-center lg:text-left transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-                            }`}
+                        className="text-center lg:text-left"
                     >
+                        {/* Breadcrumbs */}
+                        <nav
+                            className="flex items-center gap-2 text-sm mb-6 justify-center lg:justify-start"
+                            aria-label="Breadcrumb"
+                        >
+                            <Link
+                                href="/"
+                                className="flex items-center gap-1 hover:underline transition-colors p-2"
+                                style={{ color: "var(--secondary-text)" }}
+                            >
+                                <Home className="w-4 h-4" />
+                                Home
+                            </Link>
+
+                            <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+                            <span
+                                className="font-semibold p-2"
+                                style={{ color: "var(--brand-blue)" }}
+                            >
+                                About Us
+                            </span>
+                        </nav>
+
                         {/* Badge */}
                         <div
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4 border transition-colors"
@@ -140,8 +158,7 @@ export default function Hero() {
 
                     {/* RIGHT LOGO SECTION */}
                     <div
-                        className={`relative flex items-center justify-center transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-                            }`}
+                        className="relative flex items-center justify-center"
                     >
                         <div
                             className="absolute inset-0 rounded-3xl blur-2xl"

@@ -10,11 +10,11 @@ export const metadata = {
 
 export default function ContactPage() {
     return (
-        <div className="bg-white">
+        <main className="bg-white">
             <Hero />
             {/* <ContactInfo /> */}
             <ContactForm />
             <Location />
-        </div>
+        </main>
     );
 }

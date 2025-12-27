@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, Sparkles, Rocket } from 'lucide-react';
+import { ArrowRight, Sparkles, Rocket, Home, ChevronRight } from 'lucide-react';
 
 export default function Hero() {
     return (
@@ -28,6 +28,31 @@ export default function Hero() {
 
             <div className="relative z-10">
                 <div className="max-w-4xl mx-auto text-center">
+                    {/* Breadcrumbs */}
+                    <nav
+                        className="flex items-center gap-2 text-sm mb-6 justify-center animate-fadeIn"
+                        aria-label="Breadcrumb"
+                        style={{ animationDelay: "0.1s", animationFillMode: "both" }}
+                    >
+                        <Link
+                            href="/"
+                            className="flex items-center gap-1 hover:underline transition-colors"
+                            style={{ color: "var(--secondary-text)" }}
+                        >
+                            <Home className="w-4 h-4" />
+                            Home
+                        </Link>
+
+                        <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+                        <span
+                            className="font-semibold"
+                            style={{ color: "var(--brand-purple)" }}
+                        >
+                            Services
+                        </span>
+                    </nav>
+
                     {/* Badge */}
                     <div
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"

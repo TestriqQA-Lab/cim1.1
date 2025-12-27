@@ -17,7 +17,8 @@ import {
   Sparkles,
   Tag,
   Clock,
-  ChevronRight
+  ChevronRight,
+  Home
 } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -135,15 +136,51 @@ export default function CategoryPage() {
         }}
         className="min-h-screen pb-16"
       >
-        {/* Back Button */}
+        {/* Breadcrumb */}
         <div className="px-6 md:px-12 xl:px-16 py-6">
-          <Link
-            href="/blog"
-            className="inline-flex items-center space-x-2 text-[var(--brand-purple)] hover:underline transition-all"
+          <nav
+            className="flex items-center gap-2 text-sm animate-fadeIn"
+            aria-label="Breadcrumb"
+            style={{ animationDelay: "0.1s", animationFillMode: "both" }}
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Back to Blog</span>
-          </Link>
+            <Link
+              href="/"
+              className="flex items-center gap-1 hover:underline transition-colors"
+              style={{ color: "var(--secondary-text)" }}
+            >
+              <Home className="w-4 h-4" />
+              Home
+            </Link>
+
+            <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+            <Link
+              href="/blog"
+              className="hover:underline transition-colors"
+              style={{ color: "var(--secondary-text)" }}
+            >
+              Blog
+            </Link>
+
+            <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+            <Link
+              href="/blog/categories"
+              className="hover:underline transition-colors"
+              style={{ color: "var(--secondary-text)" }}
+            >
+              Categories
+            </Link>
+
+            <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+            <span
+              className="font-semibold"
+              style={{ color: categoryInfo.color }}
+            >
+              {categoryInfo.name}
+            </span>
+          </nav>
         </div>
 
         {/* Hero Section with Category Details */}

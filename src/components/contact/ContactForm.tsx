@@ -114,7 +114,7 @@ export default function ContactForm() {
                                                 <div className="absolute py-4 px-4 left-0 right-0 bottom-3">
                                                     <div className="flex gap-2 rounded-full p-2 border" style={{ background: "var(--card-bg)", borderColor: "var(--border-color)", boxShadow: "0 6px 18px rgba(0,0,0,0.06)" }}>
                                                         <input type="text" placeholder="Type your message..." className="flex-1 px-4 py-2 text-sm bg-transparent outline-none w-[80%]" readOnly style={{ color: "var(--foreground)" }} />
-                                                        <button className="w-10 h-10 rounded-full flex items-center justify-center transition-transform" style={{ background: gradient("--brand-blue", "--brand-teal", "135deg") }}>
+                                                        <button aria-label="Send message" className="w-10 h-10 rounded-full flex items-center justify-center transition-transform" style={{ background: gradient("--brand-blue", "--brand-teal", "135deg") }}>
                                                             <Send className="w-5 h-5 text-white" />
                                                         </button>
                                                     </div>

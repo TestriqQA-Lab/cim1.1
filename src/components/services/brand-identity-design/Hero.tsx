@@ -43,19 +43,19 @@ export default function Hero() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 py-12 relative">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-2 text-sm mb-5 justify-center lg:justify-start"
+                    className="flex items-center gap-1 text-sm mb-5 justify-center lg:justify-start"
                     aria-label="Breadcrumb"
                 >
-                    <Link href="/" className="flex items-center gap-1 hover:underline transition-colors" style={{ color: "var(--secondary-text)" }}>
+                    <Link href="/" className="flex items-center gap-1 hover:underline transition-colors p-2" style={{ color: "var(--secondary-text)" }}>
                         <Home className="w-4 h-4" />
                         Home
                     </Link>
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
-                    <Link href="/services" className="hover:underline transition-colors" style={{ color: "var(--secondary-text)" }}>
+                    <Link href="/services" className="hover:underline transition-colors p-2" style={{ color: "var(--secondary-text)" }}>
                         Services
                     </Link>
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
-                    <span className="font-semibold" style={{ color: "var(--brand-yellow)" }}>
+                    <span className="font-semibold p-2" style={{ color: "var(--brand-yellow)" }}>
                         Brand Identity & Design
                     </span>
                 </nav>

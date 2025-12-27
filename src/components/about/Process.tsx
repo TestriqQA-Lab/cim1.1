@@ -362,7 +362,7 @@ export default function Process() {
                                             </div>
 
                                             <div>
-                                                <h4 className="text-lg font-semibold text-[var(--foreground)]">{step.title}</h4>
+                                                <h3 className="text-lg font-semibold text-[var(--foreground)]">{step.title}</h3>
                                                 <p className="text-sm text-[var(--secondary-text)]">{step.description}</p>
 
                                                 <div className="mt-3 space-y-1 opacity-100">

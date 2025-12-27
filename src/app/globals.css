@@ -20,7 +20,8 @@
     --card-bg: #ffffff;
     --border-color: #e5e7eb;
     --hover-bg: #f9fafb;
-    --secondary-text: #4b5563;
+    --secondary-text: #374151;
+    /* Darkened from #4b5563 for better contrast on #f0f0f0 */
   }
 
   /* Dark mode driven by [data-theme="dark"] on <html> */
@@ -153,4 +154,27 @@ body,
   transition-property: background-color, border-color, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
+}
+
+/* Optimized Blob Animation */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
 }
