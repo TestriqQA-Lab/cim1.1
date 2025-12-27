@@ -22,29 +22,45 @@ const CTA = dynamic(() => import('@/components/services/brand-identity-design/CT
     loading: () => <div className="py-20" />,
 });
 
-export const metadata = {
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
     title: 'Brand Identity & Design Services | Creative Branding Agency',
-    description: 'Transform your business with professional brand identity design. We create powerful logos, visual identities, brand guidelines, and complete branding solutions that captivate and convert.',
+    description: 'Transform your business with professional brand identity design. We create powerful logos, visual identities, brand guidelines, and complete branding solutions.',
+    url: '/services/brand-identity-design',
     keywords: [
         'Brand Identity Design',
         'Logo Design',
         'Visual Identity',
         'Brand Guidelines',
-        'Corporate Branding',
-        'Brand Strategy',
         'Creative Design Agency',
-        'Rebranding Services',
     ],
-    openGraph: {
-        title: 'Brand Identity & Design Services | CIM',
-        description: 'Professional brand identity design that captures your essence and connects with your audience.',
-        type: 'website',
-    },
-};
+});
 
 export default function BrandIdentityDesignPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'Brand Identity Design',
+        description: 'Professional visual identity and branding services.',
+        urlPath: '/services/brand-identity-design',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Brand Identity', url: '/services/brand-identity-design' },
+    ]);
+
     return (
         <main className="bg-white dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <ServiceOverview />
             <BrandElements />

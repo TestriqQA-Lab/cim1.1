@@ -33,7 +33,9 @@ export default function Footer() {
     const [mounted, setMounted] = useState(false);
 
     // avoid hydration mismatch
-    useEffect(() => setMounted(true), []);
+    useEffect(() => {
+        requestAnimationFrame(() => setMounted(true));
+    }, []);
 
     const currentTheme = theme === "system" ? resolvedTheme : theme;
     const isDark = currentTheme === "dark";

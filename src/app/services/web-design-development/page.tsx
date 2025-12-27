@@ -22,29 +22,45 @@ const CTA = dynamic(() => import('@/components/services/web-design-development/C
     loading: () => <div className="py-20" />,
 });
 
-export const metadata = {
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
     title: 'Web Design & Development Services | Custom Website Development Company',
-    description: 'Partner with a leading Web Development Company for Custom Website Development, Responsive Web Design, and enterprise-grade Web Design Services. We build fast, scalable, and SEO-optimized web solutions that drive business growth.',
+    description: 'Partner with a leading Web Development Company for Custom Website Development, Responsive Web Design, and enterprise-grade Web Design Services. We build fast, scalable, and SEO-optimized web solutions.',
+    url: '/services/web-design-development',
     keywords: [
         'Web Design Services',
         'Web Development Company',
         'Custom Website Development',
         'Responsive Web Design',
-        'Web Design Agency',
-        'Professional Website Design',
         'E-commerce Web Development',
-        'Website Development Services',
     ],
-    openGraph: {
-        title: 'Web Design & Development Services | CIM',
-        description: 'Expert Web Design & Development solutions for businesses. Fast, scalable, and SEO-optimized websites.',
-        type: 'website',
-    },
-};
+});
 
 export default function WebDesignDevelopmentPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'Web Design & Development',
+        description: 'Custom, high-performance web development solutions.',
+        urlPath: '/services/web-design-development',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Web Design & Development', url: '/services/web-design-development' },
+    ]);
+
     return (
         <main className="bg-white dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <ServiceOverview />
             <WhyChooseUs />

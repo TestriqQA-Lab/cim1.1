@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeProviderClient from "@/components/ThemeProviderClient"; // client wrapper
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProviderClient>
+        <GoogleAnalytics gaId="G-X378ZPPV30" />
       </body>
     </html>
   );

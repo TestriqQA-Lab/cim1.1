@@ -22,29 +22,44 @@ const CTA = dynamic(() => import('@/components/services/performance-marketing/CT
     loading: () => <div className="py-20" />,
 });
 
-export const metadata = {
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
     title: 'Performance Marketing Services | Data-Driven Advertising Agency',
-    description: 'Maximize your ROI with our data-driven Performance Marketing Services. Expert PPC, paid social, programmatic advertising, and conversion optimization for measurable business growth.',
+    description: 'Maximize your ROI with our data-driven Performance Marketing Services. Expert PPC, paid social, programmatic advertising, and conversion optimization.',
+    url: '/services/performance-marketing',
     keywords: [
         'Performance Marketing',
         'PPC Advertising',
         'Paid Social Media',
         'Google Ads Management',
-        'Facebook Ads',
-        'Programmatic Advertising',
-        'Conversion Rate Optimization',
-        'ROI Marketing',
     ],
-    openGraph: {
-        title: 'Performance Marketing Services | CIM',
-        description: 'Data-driven advertising solutions that deliver measurable ROI and scalable growth.',
-        type: 'website',
-    },
-};
+});
 
 export default function PerformanceMarketingPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'Performance Marketing',
+        description: 'ROI-focused digital advertising and performance marketing.',
+        urlPath: '/services/performance-marketing',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Performance Marketing', url: '/services/performance-marketing' },
+    ]);
+
     return (
         <main className="bg-white dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <ServiceOverview />
             <AdPlatforms />

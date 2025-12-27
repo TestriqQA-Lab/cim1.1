@@ -185,7 +185,7 @@ export default function SEOPerformance() {
                 {/* Bottom CTA */}
                 <div className="text-center">
                     <p className="text-lg mb-8" style={{ color: "var(--secondary-text)" }}>
-                        Ready to build a website that performs? Let's create something exceptional together.
+                        Ready to build a website that performs? Let&apos;s create something exceptional together.
                     </p>
 
                     <Link

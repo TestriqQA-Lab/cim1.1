@@ -9,10 +9,13 @@ const Impact = dynamic(() => import('@/components/about/Impact'));
 const LeadJourney = dynamic(() => import('@/components/about/LeadJourney'));
 const CTA = dynamic(() => import('@/components/about/CTA'));
 
-export const metadata = {
-    title: 'About Us | Cinute InfoMedia',
+import { getPageMetadata } from '@/lib/metadata';
+
+export const metadata = getPageMetadata({
+    title: 'About Us | Cinute InfoMedia - Digital Growth Agency',
     description: 'Learn about Cinute InfoMedia (CIM), a digital growth agency helping businesses build, market, and scale with creativity, data, and technology.',
-};
+    url: '/about',
+});
 
 export default function AboutPage() {
     return (

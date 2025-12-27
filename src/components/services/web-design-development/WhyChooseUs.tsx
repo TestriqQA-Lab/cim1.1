@@ -228,7 +228,7 @@ export default function WhyChooseUs() {
                 {/* Bottom CTA */}
                 <div className="mt-8 text-center">
                     <p className="text-lg mb-8" style={{ color: "var(--secondary-text)" }}>
-                        Ready to experience the CIM difference? Let's build something extraordinary together.
+                        Ready to experience the CIM difference? Let&apos;s build something extraordinary together.
                     </p>
 
                     <Link

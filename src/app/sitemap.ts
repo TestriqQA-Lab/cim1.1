@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
+import { blogPosts, authors, categoryDetails } from '@/data/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://cim-10.vercel.app';
+    const baseUrl = 'https://www.cinuteinfomedia.com';
 
     // Static routes
     const routes = [
@@ -9,7 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/about',
         '/contact',
         '/blog',
-        '/careers',
+        '/blog/categories',
+        '/services',
         '/privacy-policy',
         '/terms-of-service',
         '/cookies-policy',
@@ -39,5 +41,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }));
 
-    return [...routes, ...services];
+    // Blog Dynamic Routes
+    const postRoutes = blogPosts.map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.publishedAt),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
+    // Category Dynamic Routes
+    const catRoutes = categoryDetails.map((category) => ({
+        url: `${baseUrl}/blog/category/${category.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.6,
+    }));
+
+    // Author Dynamic Routes
+    const authorRoutes = authors.map((author) => ({
+        url: `${baseUrl}/blog/author/${author.name.toLowerCase().replace(/\s+/g, '-')}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.5,
+    }));
+
+    return [...routes, ...services, ...postRoutes, ...catRoutes, ...authorRoutes];
 }
