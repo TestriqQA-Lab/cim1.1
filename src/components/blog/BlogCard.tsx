@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BlogPost } from "@/data/blog";
-import { Calendar, Clock, User, ArrowRight } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -10,7 +9,6 @@ interface BlogCardProps {
 }
 
 export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
-  const router = useRouter();
   const formattedDate = new Date(post.publishedAt).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -19,24 +17,16 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
 
   const authorSlug = post.author.name.toLowerCase().replace(/\s+/g, "-");
 
-  const handleCardClick = () => {
-    router.push(`/blog/${post.slug}`);
-  };
-
-  const handleAuthorClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    router.push(`/blog/author/${authorSlug}`);
-  };
-
   if (variant === "featured") {
     return (
-      <article
-        onClick={handleCardClick}
-        className="group cursor-pointer rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-xl hover:border-[var(--brand-purple)]"
+      <Link
+        href={`/blog/${post.slug}`}
+        className="group block rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-xl hover:border-[var(--brand-purple)] text-inherit"
         style={{
           backgroundColor: "var(--card-bg)",
           borderColor: "var(--border-color)",
         }}
+        aria-label={`Read more about ${post.title}`}
       >
         <div className="relative h-64 md:h-80 overflow-hidden">
           <Image
@@ -48,8 +38,10 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           <div className="absolute bottom-4 left-4 right-4">
-            <span className="inline-block px-3 py-1 rounded-full text-sm font-medium text-white"
-              style={{ backgroundColor: "var(--brand-purple)" }}>
+            <span
+              className="inline-block px-3 py-1 rounded-full text-sm font-medium text-white"
+              style={{ backgroundColor: "var(--brand-purple)" }}
+            >
               {post.category}
             </span>
           </div>
@@ -61,7 +53,10 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
           <p className="text-sm mb-4 line-clamp-2" style={{ color: "var(--secondary-text)" }}>
             {post.excerpt}
           </p>
-          <div className="flex items-center justify-between flex-wrap gap-4 mb-4 pb-4 border-b" style={{ borderColor: "var(--border-color)" }}>
+          <div
+            className="flex items-center justify-between flex-wrap gap-4 mb-4 pb-4 border-b"
+            style={{ borderColor: "var(--border-color)" }}
+          >
             <div className="flex items-center space-x-4 text-xs" style={{ color: "var(--secondary-text)" }}>
               <div className="flex items-center space-x-1">
                 <Calendar className="w-4 h-4" />
@@ -74,37 +69,42 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
             </div>
           </div>
           <div className="flex items-center justify-between">
-            <div
-              onClick={handleAuthorClick}
-              className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
-            >
-              <Image
-                src={post.author.image}
-                alt={post.author.name}
-                width={32}
-                height={32}
-                className="w-8 h-8 rounded-full object-cover"
-              />
-              <span className="text-sm font-medium hover:text-[var(--brand-purple)] transition-colors">
-                {post.author.name}
-              </span>
-            </div>
+            <object>
+              <Link
+                href={`/blog/author/${authorSlug}`}
+                className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+                onClick={(e) => e.stopPropagation()}
+                aria-label={`View posts by ${post.author.name}`}
+              >
+                <Image
+                  src={post.author.image}
+                  alt={post.author.name}
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 rounded-full object-cover"
+                />
+                <span className="text-sm font-medium hover:text-[var(--brand-purple)] transition-colors">
+                  {post.author.name}
+                </span>
+              </Link>
+            </object>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform text-[var(--brand-purple)]" />
           </div>
         </div>
-      </article>
+      </Link>
     );
   }
 
   if (variant === "compact") {
     return (
-      <article
-        onClick={handleCardClick}
-        className="group cursor-pointer flex gap-4 p-4 rounded-lg border transition-all duration-300 hover:bg-[var(--hover-bg)]"
+      <Link
+        href={`/blog/${post.slug}`}
+        className="group block flex gap-4 p-4 rounded-lg border transition-all duration-300 hover:bg-[var(--hover-bg)] text-inherit"
         style={{
           backgroundColor: "var(--card-bg)",
           borderColor: "var(--border-color)",
         }}
+        aria-label={`Read more about ${post.title}`}
       >
         <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
           <Image
@@ -124,19 +124,20 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
             <span>{post.readTime} min read</span>
           </div>
         </div>
-      </article>
+      </Link>
     );
   }
 
   // Default variant
   return (
-    <article
-      onClick={handleCardClick}
-      className="group cursor-pointer rounded-xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:border-[var(--brand-purple)]"
+    <Link
+      href={`/blog/${post.slug}`}
+      className="group block rounded-xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:border-[var(--brand-purple)] text-inherit"
       style={{
         backgroundColor: "var(--card-bg)",
         borderColor: "var(--border-color)",
       }}
+      aria-label={`Read more about ${post.title}`}
     >
       <div className="relative h-48 overflow-hidden">
         <Image
@@ -149,10 +150,13 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
       </div>
       <div className="p-5">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xs font-semibold px-2 py-1 rounded-full" style={{
-            backgroundColor: "color-mix(in srgb, var(--brand-purple) 15%, transparent)",
-            color: "var(--brand-purple)",
-          }}>
+          <span
+            className="text-xs font-semibold px-2 py-1 rounded-full"
+            style={{
+              backgroundColor: "color-mix(in srgb, var(--brand-purple) 15%, transparent)",
+              color: "var(--brand-purple)",
+            }}
+          >
             {post.category}
           </span>
           <span className="text-xs flex items-center space-x-1" style={{ color: "var(--secondary-text)" }}>
@@ -166,28 +170,34 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
         <p className="text-sm mb-4 line-clamp-2" style={{ color: "var(--secondary-text)" }}>
           {post.excerpt}
         </p>
-        <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: "var(--border-color)" }}>
-          <div
-            onClick={handleAuthorClick}
-            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
-          >
-            <Image
-              src={post.author.image}
-              alt={post.author.name}
-              width={24}
-              height={24}
-              className="w-6 h-6 rounded-full object-cover"
-            />
-            <span className="text-xs font-medium hover:text-[var(--brand-purple)] transition-colors">
-              {post.author.name}
-            </span>
-          </div>
+        <div
+          className="flex items-center justify-between pt-4 border-t"
+          style={{ borderColor: "var(--border-color)" }}
+        >
+          <object>
+            <Link
+              href={`/blog/author/${authorSlug}`}
+              className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+              onClick={(e) => e.stopPropagation()}
+              aria-label={`View posts by ${post.author.name}`}
+            >
+              <Image
+                src={post.author.image}
+                alt={post.author.name}
+                width={24}
+                height={24}
+                className="w-6 h-6 rounded-full object-cover"
+              />
+              <span className="text-xs font-medium hover:text-[var(--brand-purple)] transition-colors">
+                {post.author.name}
+              </span>
+            </Link>
+          </object>
           <span className="text-xs" style={{ color: "var(--secondary-text)" }}>
             {formattedDate}
           </span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }
-

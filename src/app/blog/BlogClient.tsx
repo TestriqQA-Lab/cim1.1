@@ -2,14 +2,18 @@
 
 import { useState, useMemo, useRef, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { blogPosts, getCategorySlug } from "@/data/blog";
+import { BlogPost, getCategorySlug } from "@/data/blog";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
-import { ChevronRight, Sparkles, ArrowRight } from "lucide-react";
+import { ChevronRight, Sparkles, ArrowRight, Home } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function BlogClient() {
+interface BlogClientProps {
+    initialPosts: BlogPost[];
+}
+
+export default function BlogClient({ initialPosts }: BlogClientProps) {
     const searchParams = useSearchParams();
     const [searchQuery, setSearchQuery] = useState("");
     const [isTagSearch, setIsTagSearch] = useState(false);
@@ -19,24 +23,20 @@ export default function BlogClient() {
     useEffect(() => {
         const searchFromUrl = searchParams.get("search");
         if (searchFromUrl) {
-            requestAnimationFrame(() => {
-                setSearchQuery(searchFromUrl);
-                setIsTagSearch(true);
-            });
+            setSearchQuery(searchFromUrl);
+            setIsTagSearch(true);
             setTimeout(() => {
                 contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
             }, 100);
         } else {
-            requestAnimationFrame(() => {
-                setSearchQuery("");
-                setIsTagSearch(false);
-            });
+            setSearchQuery("");
+            setIsTagSearch(false);
         }
     }, [searchParams]);
 
     // Filter posts based on search query
     const filteredPosts = useMemo(() => {
-        let posts = blogPosts;
+        let posts = initialPosts;
 
         if (searchQuery) {
             const query = searchQuery.toLowerCase();
@@ -51,7 +51,7 @@ export default function BlogClient() {
         }
 
         return posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
-    }, [searchQuery]);
+    }, [searchQuery, initialPosts]);
 
     const latestPost = filteredPosts[0];
     const remainingPosts = filteredPosts.slice(1);
@@ -79,6 +79,30 @@ export default function BlogClient() {
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
                                 {/* Hero Content - Left Side */}
                                 <div>
+                                    {/* Breadcrumbs */}
+                                    <nav
+                                        className="flex items-center gap-2 text-sm mb-6"
+                                        aria-label="Breadcrumb"
+                                    >
+                                        <Link
+                                            href="/"
+                                            className="flex items-center gap-1 hover:underline transition-colors p-2"
+                                            style={{ color: "var(--secondary-text)" }}
+                                        >
+                                            <Home className="w-4 h-4" />
+                                            Home
+                                        </Link>
+
+                                        <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+                                        <span
+                                            className="font-semibold"
+                                            style={{ color: "var(--brand-purple)" }}
+                                        >
+                                            Blog
+                                        </span>
+                                    </nav>
+
                                     <span
                                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
                                         style={{
@@ -109,7 +133,7 @@ export default function BlogClient() {
                                             }}
                                         >
                                             <div className="text-2xl lg:text-3xl font-bold" style={{ color: "var(--brand-purple)" }}>
-                                                {blogPosts.length}+
+                                                {initialPosts.length}+
                                             </div>
                                             <div className="text-xs font-medium" style={{ color: "var(--secondary-text)" }}>
                                                 Articles
@@ -153,9 +177,9 @@ export default function BlogClient() {
                                             borderColor: "var(--border-color)",
                                         }}
                                     >
-                                        <h3 className="text-sm font-bold mb-3" style={{ color: "var(--foreground)" }}>
+                                        <h2 className="text-sm font-bold mb-3" style={{ color: "var(--foreground)" }}>
                                             Popular Topics
-                                        </h3>
+                                        </h2>
                                         <div className="flex flex-wrap gap-2">
                                             {["SEO Tips", "Web Design", "Social Media", "Analytics", "E-commerce", "AI & Tech"].map((topic) => (
                                                 <span
@@ -322,7 +346,7 @@ export default function BlogClient() {
                 <section ref={contentRef} className="px-6 md:px-12 xl:px-16 py-8 scroll-mt-24">
                     <div className="max-w-7xl mx-auto">
                         <h2 className="text-2xl font-bold mb-2">
-                            Results for &quot;{isTagSearch ? '#' : ''}{searchQuery}&quot;
+                            Results for "{isTagSearch ? '#' : ''}{searchQuery}"
                         </h2>
                         <p style={{ color: "var(--secondary-text)" }}>
                             Found <span className="font-semibold text-[var(--brand-purple)]">{filteredPosts.length}</span>{" "}
@@ -356,7 +380,7 @@ export default function BlogClient() {
                                         borderColor: "var(--border-color)",
                                     }}
                                 >
-                                    <h3 className="text-xl font-semibold mb-2">No posts found</h3>
+                                    <h2 className="text-xl font-semibold mb-2">No posts found</h2>
                                     <p className="mb-4" style={{ color: "var(--secondary-text)" }}>
                                         Try a different search term
                                     </p>

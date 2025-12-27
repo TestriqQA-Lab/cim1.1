@@ -1,9 +1,11 @@
 // /components/about/Location.tsx
 "use client";
 
+import { useState } from "react";
 import { MapPin } from "lucide-react";
 
 export default function Location() {
+    const [isMapLoaded, setIsMapLoaded] = useState(false);
     const address = encodeURIComponent(
         "Cinute InfoMedia, Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park, Mira Road, Mira Bhayandar, Mumbai, Maharashtra 401107"
     );
@@ -38,20 +40,39 @@ export default function Location() {
                             border: `1px solid var(--border-color)`,
                         }}
                     >
-                        {/* Embedded interactive map */}
-                        <iframe
-                            title="Cinute InfoMedia Office Map"
-                            src={embedUrl}
-                            className="absolute inset-0 w-full h-full border-0"
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            aria-label="Interactive map showing Cinute InfoMedia office location"
-                        />
+                        {/* Interactive Facade / Map */}
+                        {!isMapLoaded ? (
+                            <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                                <button
+                                    onClick={() => setIsMapLoaded(true)}
+                                    className="group relative flex items-center gap-3 px-6 py-3 rounded-xl font-semibold text-white shadow-lg transition-transform hover:scale-105"
+                                    style={{
+                                        background: gradient("--brand-blue", "--brand-teal", "90deg"),
+                                    }}
+                                    aria-label="Load Interactive Google Map"
+                                >
+                                    <MapPin className="w-5 h-5" />
+                                    <span>Load Interactive Map</span>
+                                </button>
+                                <p className="absolute bottom-4 text-xs opacity-60 px-4 text-center">
+                                    Click to load map. This prevents third-party cookies from loading automatically.
+                                </p>
+                            </div>
+                        ) : (
+                            <iframe
+                                title="Cinute InfoMedia Office Map"
+                                src={embedUrl}
+                                className="absolute inset-0 w-full h-full border-0"
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                aria-label="Interactive map showing Cinute InfoMedia office location"
+                            />
+                        )}
 
                         {/* Floating info card (keeps CTA on top of iframe) */}
                         <div
-                            className="absolute bottom-6 left-6 rounded-xl p-4 shadow-lg max-w-xs"
+                            className="absolute bottom-6 left-6 rounded-xl p-4 shadow-lg max-w-xs pointer-events-auto"
                             style={{
                                 // was bg-white/90 backdrop-blur-sm border border-gray-100
                                 background: "color-mix(in srgb, var(--card-bg) 90%, transparent)",

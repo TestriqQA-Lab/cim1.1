@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import {
     Lightbulb,
@@ -60,20 +57,20 @@ export default function Process() {
             {/* Animated Background (dark/light adaptive via CSS vars) */}
             <div className="absolute inset-0 pointer-events-none">
                 <div
-                    className="absolute top-0 left-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
+                    className="absolute top-0 left-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse-scale"
                     style={{
                         backgroundColor: "color-mix(in srgb, var(--brand-blue) 12%, transparent)",
                     }}
                 />
                 <div
-                    className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
+                    className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse-scale"
                     style={{
                         backgroundColor: "color-mix(in srgb, var(--brand-purple) 12%, transparent)",
                         animationDelay: "1s",
                     }}
                 />
                 <div
-                    className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full blur-3xl animate-pulse"
+                    className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full blur-3xl animate-pulse-scale"
                     style={{
                         backgroundColor: "color-mix(in srgb, var(--brand-cyan) 12%, transparent)",
                         animationDelay: "2s",
@@ -398,21 +395,6 @@ export default function Process() {
                     </Link>
                 </div>
             </div>
-
-            {/* small keyframes kept local to component */}
-            <style jsx>{`
-        @keyframes pulse {
-          0% { transform: scale(1); opacity: 0.92; }
-          50% { transform: scale(1.03); opacity: 1; }
-          100% { transform: scale(1); opacity: 0.92; }
-        }
-        .animate-pulse { animation: pulse 6s ease-in-out infinite; }
-
-        @keyframes slideInLeft {
-          from { opacity: 0; transform: translateX(-10px); }
-          to { opacity: 1; transform: translateX(0); }
-        }
-      `}</style>
         </section >
     );
 }

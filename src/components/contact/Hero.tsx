@@ -765,7 +765,7 @@ export default function Hero() {
         }
         .phone-input-field .PhoneInputInput::placeholder {
           color: var(--secondary-text);
-          opacity: 0.7;
+          opacity: 1;
         }
         .phone-input-field .PhoneInputCountry {
           margin-right: 0.75rem;

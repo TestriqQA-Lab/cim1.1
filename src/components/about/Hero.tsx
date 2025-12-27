@@ -1,4 +1,4 @@
-"use client";
+
 
 import { Sparkles, Home, ChevronRight } from "lucide-react";
 import Image from "next/image";

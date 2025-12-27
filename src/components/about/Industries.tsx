@@ -1,4 +1,4 @@
-"use client";
+
 
 import { CheckCircle2 } from "lucide-react";
 
@@ -74,20 +74,6 @@ export default function Industries() {
                     ))}
                 </div>
             </div>
-
-            {/* local keyframes used via arbitrary animation name above (kept small & component-scoped) */}
-            <style jsx>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(12px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
         </section>
     );
 }

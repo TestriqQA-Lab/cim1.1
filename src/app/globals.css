@@ -178,3 +178,24 @@ body,
 .animate-blob {
   animation: blob 7s infinite;
 }
+
+@keyframes pulse-scale {
+  0% {
+    transform: scale(1);
+    opacity: 0.92;
+  }
+
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.92;
+  }
+}
+
+.animate-pulse-scale {
+  animation: pulse-scale 6s ease-in-out infinite;
+}
