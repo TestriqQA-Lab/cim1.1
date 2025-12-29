@@ -56,15 +56,15 @@ export default function GetInTouchClient() {
     const [submitError, setSubmitError] = useState<string | null>(null);
 
     const services = [
-        { value: "web-dev", label: "Web/App Development", icon: "💻" },
-        { value: "social-media", label: "Social Media Management", icon: "📱" },
-        { value: "paid-ads", label: "Paid Ads (Google/Meta/LinkedIn)", icon: "🎯" },
-        { value: "seo", label: "SEO Optimization", icon: "🔍" },
-        { value: "ai-chatbots", label: "AI Chatbots", icon: "🤖" },
-        { value: "automation", label: "Automated Workflows", icon: "⚡" },
-        { value: "virtual-assistance", label: "Virtual Assistance", icon: "👤" },
-        { value: "data-processing", label: "Data Processing", icon: "📊" },
-        { value: "not-sure", label: "Not Sure, need guidance", icon: "🤔" },
+        { value: "web-design", label: "Web Design & Development", icon: "🌐" },
+        { value: "mobile-app", label: "Mobile App Development", icon: "📱" },
+        { value: "social-media", label: "Social Media Marketing", icon: "📣" },
+        { value: "ai-workflows", label: "AI Workflows & Automations", icon: "⚡" },
+        { value: "ai-chatbots", label: "AI-Powered Chatbots", icon: "🤖" },
+        { value: "seo", label: "Organic Growth & SEO", icon: "📈" },
+        { value: "performance-marketing", label: "Performance Marketing", icon: "🎯" },
+        { value: "brand-identity", label: "Brand Identity & Design", icon: "🎨" },
+        { value: "support-services", label: "Additional Support Services", icon: "🎧" },
     ];
 
     const budgetOptions = [

@@ -15,15 +15,15 @@ interface GetInTouchFormData {
 
 // Map service values to human-readable labels
 const serviceLabels: Record<string, string> = {
-    'web-dev': 'Web/App Development',
-    'social-media': 'Social Media Management',
-    'paid-ads': 'Paid Ads (Google/Meta/LinkedIn)',
-    'seo': 'SEO Optimization',
-    'ai-chatbots': 'AI Chatbots',
-    'automation': 'Automated Workflows',
-    'virtual-assistance': 'Virtual Assistance',
-    'data-processing': 'Data Processing',
-    'not-sure': 'Not Sure, need guidance',
+    'web-design': 'Web Design & Development',
+    'mobile-app': 'Mobile App Development',
+    'social-media': 'Social Media Marketing',
+    'ai-workflows': 'AI Workflows & Automations',
+    'ai-chatbots': 'AI-Powered Chatbots',
+    'seo': 'Organic Growth & SEO',
+    'performance-marketing': 'Performance Marketing',
+    'brand-identity': 'Brand Identity & Design',
+    'support-services': 'Additional Support Services',
 };
 
 // Map budget values to human-readable labels
