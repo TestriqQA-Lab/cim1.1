@@ -14,9 +14,9 @@ import FAQ from '@/components/home/FAQ';
 import CTA from '@/components/home/CTA';
 
 export default function HomeClient() {
-    return (
-        <main style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }} className="min-h-screen overflow-hidden">
-            <style jsx global>{`
+  return (
+    <main style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }} className="min-h-screen overflow-hidden">
+      <style jsx global>{`
         @keyframes blob {
           0%, 100% { transform: translate(0, 0) scale(1); }
           33% { transform: translate(30px, -50px) scale(1.05); }
@@ -47,17 +47,17 @@ export default function HomeClient() {
         .animate-spin-slow { animation: spin 3s linear infinite; }
       `}</style>
 
-            <Hero />
-            <Stats />
-            <CoreValues />
-            <Services />
-            <Process />
-            <CaseStudies />
-            <Industries />
-            <BlogInsights />
-            <Testimonials />
-            <FAQ />
-            <CTA />
-        </main>
-    );
+      <Hero />
+      <Stats />
+      <CoreValues />
+      <Services />
+      <Process />
+      <CaseStudies />
+      <Industries />
+      <BlogInsights />
+      <Testimonials />
+      <FAQ />
+      <CTA />
+    </main>
+  );
 }

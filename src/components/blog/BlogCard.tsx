@@ -78,10 +78,11 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
               >
                 <Image
                   src={post.author.image}
-                  alt={post.author.name}
+                  alt=""
                   width={32}
                   height={32}
                   className="w-8 h-8 rounded-full object-cover"
+                  aria-hidden="true"
                 />
                 <span className="text-sm font-medium hover:text-[var(--brand-purple)] transition-colors">
                   {post.author.name}

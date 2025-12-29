@@ -192,8 +192,9 @@ export default function BlogNavbar() {
                                         pathname === "/blog" && !hasActiveFilters ? "white" : "var(--foreground)",
                                 }}
                             >
-                                <Home className="w-4 h-4 xl:w-5 xl:h-5" />
+                                <Home className="w-4 h-4 xl:w-5 xl:h-5" aria-hidden="true" />
                                 <span className="hidden sm:inline">Blog</span>
+                                <span className="sr-only sm:not-sr-only">Blog Home</span>
                             </Link>
 
                             {hasActiveFilters && (
