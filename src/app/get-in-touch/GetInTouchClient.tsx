@@ -2,7 +2,20 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Loader2 } from "lucide-react";
+
+// Phone input with country codes
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
+
+// Validation utilities
+import {
+    validateFullName,
+    validateEmail,
+    validatePhone,
+    validateMessage,
+    validateRequired
+} from '@/lib/formValidation';
 
 interface FormData {
     name: string;
@@ -39,9 +52,11 @@ export default function GetInTouchClient() {
     const [errors, setErrors] = useState<Record<string, string>>({});
     const [showSuccess, setShowSuccess] = useState<boolean>(false);
     const [countdown, setCountdown] = useState<number>(8);
+    const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+    const [submitError, setSubmitError] = useState<string | null>(null);
 
     const services = [
-        { value: "web-dev", label: "Web/App Development", icon: "", image: "/images/Web-dev-icon.png" },
+        { value: "web-dev", label: "Web/App Development", icon: "💻" },
         { value: "social-media", label: "Social Media Management", icon: "📱" },
         { value: "paid-ads", label: "Paid Ads (Google/Meta/LinkedIn)", icon: "🎯" },
         { value: "seo", label: "SEO Optimization", icon: "🔍" },
@@ -70,12 +85,26 @@ export default function GetInTouchClient() {
     const validateStep1 = (): boolean => {
         const newErrors: Record<string, string> = {};
 
-        if (!formData.name.trim()) newErrors.name = "Please enter your name";
-        if (!formData.website.trim()) newErrors.website = "Please enter your website";
-        else if (!isValidURL(formData.website)) newErrors.website = "Please enter a valid URL";
-        if (!formData.email.trim()) newErrors.email = "Please enter your email";
-        else if (!isValidEmail(formData.email)) newErrors.email = "Please enter a valid email";
-        if (!formData.phone.trim()) newErrors.phone = "Please enter your phone number";
+        // Name validation
+        const nameError = validateFullName(formData.name);
+        if (nameError) newErrors.name = nameError;
+
+        // Website validation
+        if (!formData.website.trim()) {
+            newErrors.website = "Please enter your website";
+        } else if (!isValidURL(formData.website)) {
+            newErrors.website = "Please enter a valid URL";
+        }
+
+        // Email validation
+        const emailError = validateEmail(formData.email);
+        if (emailError) newErrors.email = emailError;
+
+        // Phone validation
+        const phoneError = validatePhone(formData.phone);
+        if (phoneError) newErrors.phone = phoneError;
+
+        // Referral validation
         if (!formData.referral) newErrors.referral = "Please select how you found us";
 
         setErrors(newErrors);
@@ -92,10 +121,6 @@ export default function GetInTouchClient() {
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
-    };
-
-    const isValidEmail = (email: string): boolean => {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     };
 
     const isValidURL = (url: string): boolean => {
@@ -119,13 +144,35 @@ export default function GetInTouchClient() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    const handleSubmit = () => {
-        console.log("Form Data:", formData);
-        setShowSuccess(true);
+    const handleSubmit = async () => {
+        if (isSubmitting) return;
+        setIsSubmitting(true);
+        setSubmitError(null);
 
-        setTimeout(() => {
-            window.location.href = "https://www.cinuteinfomedia.com/";
-        }, 2000);
+        try {
+            const response = await fetch('/api/get-in-touch', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) {
+                const data = await response.json();
+                throw new Error(data.error || 'Failed to submit form');
+            }
+
+            setShowSuccess(true);
+            setTimeout(() => {
+                window.location.href = "https://www.cinuteinfomedia.com/";
+            }, 2000);
+        } catch (error: any) {
+            console.error('Error submitting form:', error);
+            setSubmitError(error.message || 'Something went wrong. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     useEffect(() => {
@@ -284,9 +331,12 @@ export default function GetInTouchClient() {
 
                                     <div className="flex flex-col md:flex-row gap-8">
                                         <div className="flex flex-col w-full md:w-1/2">
+                                            <label className="block text-sm font-medium mb-1" style={{ color: "var(--secondary-text)" }}>
+                                                Email <span style={{ color: BRAND.accent }}>*</span>
+                                            </label>
                                             <input
                                                 type="email"
-                                                placeholder="Email*"
+                                                placeholder="Enter your email"
                                                 value={formData.email}
                                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                                 className="w-full px-4 py-3 rounded-xl border-2 outline-none transition-all focus:ring-4"
@@ -299,18 +349,26 @@ export default function GetInTouchClient() {
                                             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                                         </div>
                                         <div className="flex flex-col w-full md:w-1/2">
-                                            <input
-                                                type="tel"
-                                                placeholder="Phone / WhatsApp*"
-                                                value={formData.phone}
-                                                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                                                className="w-full px-4 py-3 rounded-xl border-2 outline-none transition-all focus:ring-4"
+                                            <label className="block text-sm font-medium mb-1" style={{ color: "var(--secondary-text)" }}>
+                                                Phone / WhatsApp <span style={{ color: BRAND.accent }}>*</span>
+                                            </label>
+                                            <div
+                                                className="phone-input-wrapper"
                                                 style={{
-                                                    background: "var(--hover-bg)",
                                                     borderColor: errors.phone ? "#ef4444" : "var(--border-color)",
-                                                    color: "var(--foreground)",
+                                                    background: "var(--hover-bg)"
                                                 }}
-                                            />
+                                            >
+                                                <PhoneInput
+                                                    international
+                                                    defaultCountry="IN"
+                                                    value={formData.phone}
+                                                    onChange={(value) => setFormData({ ...formData, phone: value || "" })}
+                                                    placeholder="Enter phone number"
+                                                    className="phone-input-field"
+                                                    numberInputProps={{ 'aria-label': 'Phone number' }}
+                                                />
+                                            </div>
                                             {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                                         </div>
                                     </div>
@@ -543,10 +601,25 @@ export default function GetInTouchClient() {
                                 No spam. No pressure. Just real solutions.
                             </p>
                             <div className="mb-8 p-4 rounded-xl" style={{ background: `linear-gradient(90deg, ${BRAND.primary}15, ${BRAND.secondary}15)` }}>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Redirecting automatically in <span className="font-bold text-lg" style={{ color: BRAND.primary }}>{countdown}</span> seconds...
-                                </p>
+                                {isSubmitting ? (
+                                    <p className="text-sm flex items-center justify-center gap-2" style={{ color: "var(--secondary-text)" }}>
+                                        <Loader2 className="w-4 h-4 animate-spin" />
+                                        Sending your inquiry...
+                                    </p>
+                                ) : (
+                                    <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
+                                        Redirecting automatically in <span className="font-bold text-lg" style={{ color: BRAND.primary }}>{countdown}</span> seconds...
+                                    </p>
+                                )}
                             </div>
+
+                            {submitError && (
+                                <div className="mb-6 p-4 rounded-xl border-2" style={{ borderColor: '#ef4444', background: 'rgba(239, 68, 68, 0.1)' }}>
+                                    <p className="text-sm text-center" style={{ color: '#ef4444' }}>
+                                        {submitError}
+                                    </p>
+                                </div>
+                            )}
 
                             <div className="space-y-4 max-w-md mx-auto mb-8">
                                 <a
@@ -578,10 +651,20 @@ export default function GetInTouchClient() {
                             <div className="flex justify-center flex-col sm:flex-row gap-4">
                                 <button
                                     onClick={handleSubmit}
-                                    className="flex items-center gap-2 font-bold py-4 px-6 rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg"
+                                    disabled={isSubmitting}
+                                    className="flex items-center justify-center gap-2 font-bold py-4 px-6 rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0"
                                     style={{ background: BRAND.primary, color: "#ffffffff" }}
                                 >
-                                    <Check /> Done
+                                    {isSubmitting ? (
+                                        <>
+                                            <Loader2 className="w-5 h-5 animate-spin" />
+                                            Submitting...
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Check /> Done
+                                        </>
+                                    )}
                                 </button>
                             </div>
                         </div>
@@ -681,6 +764,60 @@ export default function GetInTouchClient() {
 
                 .animate-scale-in {
                     animation: scale-in 0.5s ease-out;
+                }
+
+                /* Phone Input Styles */
+                .phone-input-wrapper {
+                    border: 2px solid var(--border-color);
+                    border-radius: 0.75rem;
+                    padding: 0.65rem 1rem;
+                    transition: all 0.2s ease;
+                }
+                .phone-input-wrapper:focus-within {
+                    border-color: #4b277a;
+                    box-shadow: 0 0 0 4px rgba(75, 39, 122, 0.1);
+                }
+                .phone-input-field {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                .phone-input-field .PhoneInputInput {
+                    flex: 1;
+                    border: none !important;
+                    background: transparent;
+                    outline: none !important;
+                    box-shadow: none !important;
+                    font-size: 1rem;
+                    color: var(--foreground);
+                    padding: 0.25rem 0;
+                }
+                .phone-input-field .PhoneInputInput:focus {
+                    outline: none !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+                .phone-input-field .PhoneInputInput::placeholder {
+                    color: var(--secondary-text);
+                    opacity: 1;
+                }
+                .phone-input-field .PhoneInputCountry {
+                    margin-right: 0.75rem;
+                }
+                .phone-input-field .PhoneInputCountryIcon {
+                    width: 1.5rem;
+                    height: 1.125rem;
+                    border-radius: 0.125rem;
+                    overflow: hidden;
+                }
+                .phone-input-field .PhoneInputCountrySelectArrow {
+                    margin-left: 0.25rem;
+                    color: var(--secondary-text);
+                }
+                .phone-input-field .PhoneInputCountrySelect {
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
                 }
             `}</style>
         </main>
