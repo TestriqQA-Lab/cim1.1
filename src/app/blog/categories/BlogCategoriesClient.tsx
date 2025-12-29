@@ -354,12 +354,12 @@ function CategoriesContent() {
                                                     </div>
 
                                                     {/* Title & Description */}
-                                                    <h3
+                                                    <h2
                                                         className="text-xl font-bold mb-2 transition-colors"
                                                         style={{ color: "var(--foreground)" }}
                                                     >
                                                         <span className="group-hover:text-[var(--brand-purple)]">{category.name}</span>
-                                                    </h3>
+                                                    </h2>
                                                     <p
                                                         className="text-sm mb-4 line-clamp-2"
                                                         style={{ color: "var(--secondary-text)" }}
@@ -425,7 +425,7 @@ function CategoriesContent() {
                                 >
                                     <Search className="w-8 h-8 text-[var(--brand-purple)]" />
                                 </div>
-                                <h3 className="text-xl font-bold mb-2">No categories found</h3>
+                                <h2 className="text-xl font-bold mb-2">No categories found</h2>
                                 <p style={{ color: "var(--secondary-text)" }}>
                                     Try adjusting your search criteria
                                 </p>

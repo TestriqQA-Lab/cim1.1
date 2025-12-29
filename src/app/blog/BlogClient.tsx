@@ -254,6 +254,7 @@ export default function BlogClient({ initialPosts }: BlogClientProps) {
                                                 src={latestPost.image}
                                                 alt={latestPost.title}
                                                 fill
+                                                sizes="(max-width: 1024px) 100vw, 50vw"
                                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />

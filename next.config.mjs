@@ -6,6 +6,20 @@ const nextConfig = {
     images: {
         formats: ['image/avif', 'image/webp'],
     },
+    async redirects() {
+        return [
+            {
+                source: '/social-media-services',
+                destination: '/services/social-media-marketing',
+                permanent: true,
+            },
+            {
+                source: '/social-media',
+                destination: '/services/social-media-marketing',
+                permanent: true,
+            },
+        ];
+    },
 };
 
 export default nextConfig;

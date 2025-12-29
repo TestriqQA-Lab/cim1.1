@@ -137,7 +137,7 @@ export default function BlogDetailClient({ post }: { post: BlogPost }) {
                     url: window.location.href,
                 });
             } catch (err) {
-                console.log("Share cancelled");
+                // Share cancelled - no action needed
             }
         } else {
             navigator.clipboard.writeText(window.location.href);
@@ -266,6 +266,7 @@ export default function BlogDetailClient({ post }: { post: BlogPost }) {
                                     src={post.image}
                                     alt={post.title}
                                     fill
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="object-fit"
                                     priority
                                 />

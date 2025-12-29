@@ -112,6 +112,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
             src={post.image}
             alt={post.title}
             fill
+            sizes="80px"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
           />
         </div>

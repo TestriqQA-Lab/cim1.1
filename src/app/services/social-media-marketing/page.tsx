@@ -32,8 +32,11 @@ export const metadata = getPageMetadata({
     keywords: [
         'Social Media Marketing Services',
         'Social Media Management Company',
-        'Instagram Marketing',
+        'Instagram Marketing Agency',
+        'Facebook Ad Management',
+        'LinkedIn B2B Marketing',
         'Paid Social Media Advertising',
+        'Social Media Content Strategy',
     ],
 });
 

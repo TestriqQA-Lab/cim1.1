@@ -385,10 +385,10 @@ const PrivacyPolicyClient: React.FC = () => {
                                 <p className="font-semibold mb-1" style={{ color: "var(--foreground)" }}>
                                     Phone:
                                 </p>
-                                <a href="tel:+919004988859" className="text-sm block hover:underline" style={{ color: "var(--secondary-text)" }}>
+                                <a href="tel:+919004988859" className="text-sm block hover:underline py-2" style={{ color: "var(--secondary-text)" }}>
                                     +91-9004988859
                                 </a>
-                                <a href="tel:+917700995410" className="text-sm block hover:underline" style={{ color: "var(--secondary-text)" }}>
+                                <a href="tel:+917700995410" className="text-sm block hover:underline py-2" style={{ color: "var(--secondary-text)" }}>
                                     +91-7700995410
                                 </a>
                             </div>
