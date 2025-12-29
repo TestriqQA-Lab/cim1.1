@@ -163,8 +163,7 @@ export default function Hero() {
                         {/* Stats Section */}
                         <div className="grid grid-cols-3 gap-4 mb-8 p-6 rounded-2xl"
                             style={{
-                                backgroundColor: "color-mix(in srgb, var(--card-bg) 50%, transparent)",
-                                backdropFilter: "blur(10px)",
+                                backgroundColor: "color-mix(in srgb, var(--card-bg) 90%, transparent)",
                                 border: "1px solid var(--border-color)",
                             }}
                         >
@@ -227,8 +226,7 @@ export default function Hero() {
 
                     {/* RIGHT VISUAL ELEMENT */}
                     <div
-                        className="relative flex flex-col items-center gap-12 justify-center animate-fadeIn mt-0 lg:-mt-15"
-                        style={{ animationDelay: "0.3s", animationFillMode: "both" }}
+                        className="relative flex flex-col items-center gap-12 justify-center mt-0 lg:-mt-15"
                     >
                         <div
                             className="absolute inset-0 rounded-3xl blur-2xl"
@@ -244,7 +242,6 @@ export default function Hero() {
                             style={{
                                 backgroundColor: "var(--card-bg)",
                                 borderColor: "var(--border-color)",
-                                backdropFilter: "blur(6px)",
                             }}
                         >
                             <Image
