@@ -245,13 +245,13 @@ export default function Hero() {
                             }}
                         >
                             <Image
-                                src="/images/services-images/social-media-marketing-illustration.svg"
+                                src="/images/services-images/smm-hero-image.png"
                                 alt="Social Media Marketing"
                                 width={638}
                                 height={565}
                                 priority
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 638px"
-                                className="w-[80%] h-[80%] rounded-3xl p-5"
+                                className="w-[90%] h-[90%] rounded-3xl p-5"
                                 placeholder="blur"
                                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgADEf/aAAwDAQACEQMRAD8AzTR9I1C5sY57izt7eKVQ8Ud1KImkU8g7cEgH5nHNWP6Y/EfxSlFNmSuf/9k="
                             />
