@@ -1,8 +1,7 @@
-"use client";
-
 import { Sparkles, ArrowRight, Home, ChevronRight, TrendingUp, Users, Zap, Share2, BarChart3, Target } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import HeroBackground from "./HeroBackground";
 
 export default function Hero() {
     return (
@@ -11,28 +10,7 @@ export default function Hero() {
             style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}
         >
             {/* Animated Background */}
-            <div className="absolute inset-0 pointer-events-none">
-                <div
-                    className="absolute top-0 left-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
-                    style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-teal) 12%, transparent)",
-                    }}
-                />
-                <div
-                    className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
-                    style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-cyan) 12%, transparent)",
-                        animationDelay: "1s",
-                    }}
-                />
-                <div
-                    className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full blur-3xl animate-pulse"
-                    style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-purple) 12%, transparent)",
-                        animationDelay: "2s",
-                    }}
-                />
-            </div>
+            <HeroBackground />
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 py-12 relative">
                 {/* Breadcrumbs */}
