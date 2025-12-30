@@ -195,7 +195,7 @@ export default function GetInTouchClient() {
     return (
         <main
             className="min-h-screen relative overflow-hidden py-8 sm:py-12"
-            style={{ background: "var(--background)", color: "var(--foreground)" }}
+            style={{ background: "var(--background)", color: "var(--foreground)", scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}
         >
             <div className="fixed inset-0 pointer-events-none overflow-hidden">
                 <div

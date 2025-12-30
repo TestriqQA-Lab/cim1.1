@@ -21,7 +21,7 @@ export default function ServicesPage() {
     );
 
     return (
-        <main>
+        <main style={{ scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

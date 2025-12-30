@@ -150,6 +150,8 @@ export default function BlogDetailClient({ post }: { post: BlogPost }) {
             style={{
                 backgroundColor: "var(--background)",
                 color: "var(--foreground)",
+                scrollPaddingTop: "5rem",
+                scrollMarginTop: "5rem"
             }}
             className="min-h-screen pb-16"
         >

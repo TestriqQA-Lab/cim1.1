@@ -246,7 +246,7 @@ const CookiesPolicyClient: React.FC = () => {
     ];
 
     return (
-        <div className="mx-auto py-12 px-6 md:px-12 xl:px-16" style={{ background: "var(--background)", color: "var(--foreground)" }}>
+        <div className="mx-auto py-12 px-6 md:px-12 xl:px-16" style={{ background: "var(--background)", color: "var(--foreground)", scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
             <div className="max-w-4xl mx-auto">
                 {/* Header */}
                 <div className={`text-center mb-12 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>

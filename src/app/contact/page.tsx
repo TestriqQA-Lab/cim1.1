@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
     return (
-        <main className="bg-white">
+        <main className="bg-white" style={{ scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
             <Hero />
             {/* <ContactInfo /> */}
             <Location />

@@ -54,7 +54,7 @@ export default function SocialMediaMarketingPage() {
     ]);
 
     return (
-        <main className="bg-white dark:bg-black">
+        <main className="bg-white dark:bg-black" style={{ scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

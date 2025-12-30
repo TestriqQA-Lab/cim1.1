@@ -15,7 +15,7 @@ import CTA from '@/components/home/CTA';
 
 export default function HomeClient() {
   return (
-    <main style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }} className="min-h-screen overflow-hidden">
+    <main style={{ backgroundColor: "var(--background)", color: "var(--foreground)", scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }} className="min-h-screen overflow-hidden">
       <style jsx global>{`
         @keyframes blob {
           0%, 100% { transform: translate(0, 0) scale(1); }

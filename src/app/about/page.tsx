@@ -19,7 +19,7 @@ export const metadata = getPageMetadata({
 
 export default function AboutPage() {
     return (
-        <div className="bg-white">
+        <div className="bg-white" style={{ scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
             <Hero />
             <Services />
             <Process />
