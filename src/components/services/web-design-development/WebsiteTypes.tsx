@@ -1,10 +1,17 @@
 "use client";
 
-import { Globe, ShoppingCart, Zap, BookOpen, Image as ImageIcon, Layout, Code, Settings } from "lucide-react";
+import { useState } from "react";
+import {
+    Globe, ShoppingCart, Zap, BookOpen, Image as ImageIcon, Layout, Code, Settings,
+    Building2, Stethoscope, GraduationCap, Calculator, Plane, Clapperboard,
+    Server, Database, Smartphone, Laptop
+} from "lucide-react";
 import Link from "next/link";
 
 export default function WebsiteTypes() {
-    const types = [
+    const [activeTab, setActiveTab] = useState<"core" | "industry" | "tech">("core");
+
+    const coreTypes = [
         {
             icon: Layout,
             title: "Static Websites",
@@ -63,20 +70,167 @@ export default function WebsiteTypes() {
         },
     ];
 
+    const industryTypes = [
+        {
+            icon: Building2,
+            title: "Real Estate Platforms",
+            description: "Property listing portals with advanced search, virtual tours, and agent management systems.",
+            features: ["Map integration", "Virtual tours", "Advanced filters", "Lead management"],
+            color: "from-[#008ac1] to-[#00b5ca]",
+        },
+        {
+            icon: Stethoscope,
+            title: "Healthcare Portals",
+            description: "HIPAA-compliant platforms for patient management, appointment booking, and telemedicine.",
+            features: ["Appointment scheduling", "Patient records", "Telemedicine", "Secure messaging"],
+            color: "from-[#00b5ca] to-[#00efd6]",
+        },
+        {
+            icon: GraduationCap,
+            title: "EdTech & LMS",
+            description: "Learning management systems with course delivery, student tracking, and interactive quizzes.",
+            features: ["Course management", "Progress tracking", "Video streaming", "Quizzes & certificates"],
+            color: "from-[#bc3feb] to-[#fab900]",
+        },
+        {
+            icon: Calculator,
+            title: "FinTech Solutions",
+            description: "Secure financial platforms for banking, investment tracking, and payment processing.",
+            features: ["Bank-grade security", "Real-time data", "Encryption", "Payment integration"],
+            color: "from-[#ee6500] to-[#fab900]",
+        },
+        {
+            icon: Plane,
+            title: "Travel & Hospitality",
+            description: "Booking engines for hotels, flights, and tours with dynamic pricing and inventory management.",
+            features: ["Booking engine", "Inventory sync", "Payment gateway", "Reviews & ratings"],
+            color: "from-[#fab900] to-[#00efd6]",
+        },
+        {
+            icon: Clapperboard,
+            title: "Entertainment & Media",
+            description: "Content streaming and media distribution platforms designed for high traffic and engagement.",
+            features: ["Video streaming", "Content delivery", "Subscription models", "Live chat"],
+            color: "from-[#bc3feb] to-[#008ac1]",
+        },
+    ];
+
+    const techTypes = [
+        {
+            icon: Layout,
+            title: "Next.js & React Applications",
+            description: "High-performance, server-rendered applications for maximum speed and SEO.",
+            features: ["Server-side rendering", "Static generation", "Optimized performance", "SEO friendly"],
+            color: "from-[#000000] to-[#333333]",
+        },
+        {
+            icon: ShoppingCart,
+            title: "Shopify & E-commerce",
+            description: "Custom themes and functionality for robust online stores on Shopify or WooCommerce.",
+            features: ["Custom themes", "App integration", "Store setup", "Optimization"],
+            color: "from-[#96bf48] to-[#96bf48]",
+        },
+        {
+            icon: Settings,
+            title: "WordPress & CMS",
+            description: "Flexible content management solutions tailored to your editorial workflow.",
+            features: ["Custom themes", "Plugin development", "Easy editing", "Wide ecosystem"],
+            color: "from-[#21759b] to-[#21759b]",
+        },
+        {
+            icon: Server,
+            title: "Node.js & Backend",
+            description: "Scalable backend systems and APIs to power your web and mobile applications.",
+            features: ["Microservices", "REST/GraphQL APIs", "Real-time data", "Database design"],
+            color: "from-[#339933] to-[#68a063]",
+        },
+        {
+            icon: Database,
+            title: "SaaS Platforms",
+            description: "Multi-tenant software-as-a-service applications with subscription billing and user management.",
+            features: ["Multi-tenancy", "Subscription billing", "Role management", "Dashboard analytics"],
+            color: "from-[#008ac1] to-[#00b5ca]",
+        },
+        {
+            icon: Smartphone,
+            title: "PWA (Progressive Web Apps)",
+            description: "Web apps that provide a native app-like experience on mobile devices.",
+            features: ["Offline access", "Push notifications", "App-like feel", "Installable"],
+            color: "from-[#bc3feb] to-[#fab900]",
+        },
+    ];
+
+    const renderGrid = (data: typeof coreTypes) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
+            {data.map((type, idx) => {
+                const Icon = type.icon;
+                return (
+                    <div
+                        key={idx}
+                        className="group rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:-translate-y-2 h-full flex flex-col"
+                        style={{
+                            backgroundColor: "var(--card-bg)",
+                            borderColor: "var(--border-color)",
+                        }}
+                    >
+                        {/* Header with Icon */}
+                        <div
+                            className={`flex gap-3 p-6 bg-gradient-to-br ${type.color} relative overflow-hidden`}
+                        >
+                            <div className="absolute inset-0 opacity-10" style={{ background: "linear-gradient(135deg, white, transparent)" }} />
+                            <Icon className="w-8 h-8 text-white relative z-10" />
+                            <h3 className="text-lg font-bold mb-3 text-white relative z-10 flex items-center h-8">
+                                {type.title}
+                            </h3>
+                        </div>
+
+                        {/* Content */}
+                        <div className="p-6 flex flex-col flex-1">
+                            <p className="text-sm mb-6 flex-1" style={{ color: "var(--secondary-text)", lineHeight: "1.6" }}>
+                                {type.description}
+                            </p>
+
+                            {/* Features */}
+                            <ul className="space-y-2">
+                                {type.features.map((feature, fidx) => (
+                                    <li key={fidx} className="flex items-start gap-2 text-sm">
+                                        <span
+                                            className={`w-4 h-4 rounded-full flex-shrink-0 mt-0.5 bg-gradient-to-br ${type.color}`}
+                                        />
+                                        <span style={{ color: "var(--secondary-text)" }}>{feature}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    );
+
     return (
         <section
             className="py-10 lg:py-20 transition-colors duration-300"
             style={{ backgroundColor: "var(--background)" }}
         >
+            <style jsx>{`
+                @keyframes fade-in {
+                    from { opacity: 0; transform: translateY(10px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                .animate-fade-in {
+                    animation: fade-in 0.4s ease-out forwards;
+                }
+            `}</style>
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-20">
                 {/* Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Comprehensive <span style={{ color: "var(--brand-blue)", fontWeight: 700 }}>Custom Website Development</span> Solutions
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We offer a full spectrum of web solutions to meet any business need. Our expertise covers every type of website imaginable.
+                        We offer a full spectrum of web solutions to meet any business need. From core web presence to industry-specific platforms and advanced tech stacks.
                     </p>
 
                     <div
@@ -87,53 +241,53 @@ export default function WebsiteTypes() {
                     />
                 </div>
 
-                {/* Website Types Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {types.map((type, idx) => {
-                        const Icon = type.icon;
-                        return (
-                            <div
-                                key={idx}
-                                className="group rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:-translate-y-2 h-full flex flex-col"
-                                style={{
-                                    backgroundColor: "var(--card-bg)",
-                                    borderColor: "var(--border-color)",
-                                }}
-                            >
-                                {/* Header with Icon */}
-                                <div
-                                    className={`flex gap-3 p-6 bg-gradient-to-br ${type.color} relative overflow-hidden`}
-                                >
-                                    <div className="absolute inset-0 opacity-10" style={{ background: "linear-gradient(135deg, white, transparent)" }} />
-                                    <Icon className="w-8 h-8 text-white relative z-10" />
-                                    <h3 className="text-lg font-bold mb-3 text-white">
-                                        {type.title}
-                                    </h3>
-                                </div>
+                {/* Tab Controls */}
+                <div className="flex justify-center mb-12">
+                    <div
+                        className="inline-flex p-1.5 rounded-2xl border bg-[var(--card-bg)]"
+                        style={{ borderColor: "var(--border-color)" }}
+                    >
+                        <button
+                            onClick={() => setActiveTab("core")}
+                            className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ${activeTab === "core" ? "shadow-md scale-105" : "hover:bg-[var(--hover-bg)]"
+                                }`}
+                            style={{
+                                background: activeTab === "core" ? "var(--brand-blue)" : "transparent",
+                                color: activeTab === "core" ? "white" : "var(--secondary-text)"
+                            }}
+                        >
+                            Core Types
+                        </button>
+                        <button
+                            onClick={() => setActiveTab("industry")}
+                            className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ${activeTab === "industry" ? "shadow-md scale-105" : "hover:bg-[var(--hover-bg)]"
+                                }`}
+                            style={{
+                                background: activeTab === "industry" ? "var(--brand-blue)" : "transparent",
+                                color: activeTab === "industry" ? "white" : "var(--secondary-text)"
+                            }}
+                        >
+                            Industry Solutions
+                        </button>
+                        <button
+                            onClick={() => setActiveTab("tech")}
+                            className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ${activeTab === "tech" ? "shadow-md scale-105" : "hover:bg-[var(--hover-bg)]"
+                                }`}
+                            style={{
+                                background: activeTab === "tech" ? "var(--brand-blue)" : "transparent",
+                                color: activeTab === "tech" ? "white" : "var(--secondary-text)"
+                            }}
+                        >
+                            Tech Stack
+                        </button>
+                    </div>
+                </div>
 
-                                {/* Content */}
-                                <div className="p-6 flex flex-col flex-1">
-
-
-                                    <p className="text-sm mb-6 flex-1" style={{ color: "var(--secondary-text)", lineHeight: "1.6" }}>
-                                        {type.description}
-                                    </p>
-
-                                    {/* Features */}
-                                    <ul className="space-y-2">
-                                        {type.features.map((feature, fidx) => (
-                                            <li key={fidx} className="flex items-start gap-2 text-sm">
-                                                <span
-                                                    className={`w-4 h-4 rounded-full flex-shrink-0 mt-0.5 bg-gradient-to-br ${type.color}`}
-                                                />
-                                                <span style={{ color: "var(--secondary-text)" }}>{feature}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-                        );
-                    })}
+                {/* Dynamic Content Grid */}
+                <div key={activeTab}>
+                    {activeTab === "core" && renderGrid(coreTypes)}
+                    {activeTab === "industry" && renderGrid(industryTypes)}
+                    {activeTab === "tech" && renderGrid(techTypes)}
                 </div>
 
                 {/* Info Box */}

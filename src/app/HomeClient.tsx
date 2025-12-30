@@ -1,17 +1,50 @@
 "use client";
 
 import React from 'react';
+import dynamic from 'next/dynamic';
+
 import Hero from '@/components/home/Hero';
-import Stats from '@/components/home/Stats';
-import CoreValues from '@/components/home/CoreValues';
-import Services from '@/components/home/Services';
-import Process from '@/components/home/Process';
-import CaseStudies from '@/components/home/CaseStudies';
-import Industries from '@/components/home/Industries';
-import BlogInsights from '@/components/home/BlogInsights';
-import Testimonials from '@/components/home/Testimonials';
-import FAQ from '@/components/home/FAQ';
-import CTA from '@/components/home/CTA';
+
+const Stats = dynamic(() => import('@/components/home/Stats'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const CoreValues = dynamic(() => import('@/components/home/CoreValues'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const Services = dynamic(() => import('@/components/home/Services'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const Process = dynamic(() => import('@/components/home/Process'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const CaseStudies = dynamic(() => import('@/components/home/CaseStudies'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const Industries = dynamic(() => import('@/components/home/Industries'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const BlogInsights = dynamic(() => import('@/components/home/BlogInsights'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const Testimonials = dynamic(() => import('@/components/home/Testimonials'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const FAQ = dynamic(() => import('@/components/home/FAQ'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
+const CTA = dynamic(() => import('@/components/home/CTA'), {
+  ssr: true,
+  loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
+});
 
 export default function HomeClient() {
   return (
