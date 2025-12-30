@@ -61,6 +61,8 @@ export default function BlogNavbar() {
     const [isHidden, setIsHidden] = useState(false);
     const lastScrollY = useRef(0);
 
+    const [isOverlayMode, setIsOverlayMode] = useState(false);
+
     // Handle scroll effect - hide on scroll down, show on scroll up
     useEffect(() => {
         const handleScroll = () => {
@@ -68,13 +70,25 @@ export default function BlogNavbar() {
 
             setIsScrolled(currentScrollY > 10);
 
-            // Only apply hide behavior on mobile/tablet (less than 1280px)
+            // Always overlay Main Navbar when scrolled down past threshold
+            // This ensures Blog Navbar takes precedence in both scroll directions
+            // Always overlay Main Navbar when scrolled down past threshold
+            // This ensures Blog Navbar takes precedence in both scroll directions
+            if (currentScrollY > 10) {
+                setIsOverlayMode(true);
+            } else {
+                // At the very top, revert to standard stacking (Main Navbar visible)
+                setIsOverlayMode(false);
+            }
+
+            // Existing partial logic for hiding (can be kept or adapted if needed, 
+            // but user specifically requested overlay behavior "on scroll up" and "standard" on scroll down)
             if (window.innerWidth < 1280) {
                 if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-                    // Scrolling down & past threshold - hide
-                    setIsHidden(true);
+                    // specific mobile hide logic if needed, or we can just stick to overlay
+                    // For now, let's keep the overlay logic dominant
+                    setIsHidden(false);
                 } else {
-                    // Scrolling up - show
                     setIsHidden(false);
                 }
             } else {
@@ -164,8 +178,10 @@ export default function BlogNavbar() {
     return (
         <>
             <nav
-                className={`sticky top-0 z-[100] border-b transition-all duration-300 ${isScrolled ? "backdrop-blur-xl shadow-lg" : "backdrop-blur-md"
-                    } ${isHidden ? "xl:translate-y-0 -translate-y-full" : "translate-y-0"}`}
+                className={`sticky transition-all duration-300 border-b 
+                    ${isOverlayMode ? "top-0 z-[200]" : "top-16 lg:top-20 z-[100]"} 
+                    ${isScrolled ? "backdrop-blur-xl shadow-lg" : "backdrop-blur-md"} 
+                    ${isHidden ? "xl:translate-y-0 -translate-y-full" : "translate-y-0"}`}
                 style={{
                     backgroundColor: isScrolled
                         ? "color-mix(in srgb, var(--background) 98%, transparent)"
@@ -193,7 +209,6 @@ export default function BlogNavbar() {
                                 }}
                             >
                                 <Home className="w-4 h-4 xl:w-5 xl:h-5" aria-hidden="true" />
-                                <span className="hidden sm:inline">Blog</span>
                                 <span className="sr-only sm:not-sr-only">Blog Home</span>
                             </Link>
 

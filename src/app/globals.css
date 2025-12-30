@@ -41,6 +41,18 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
+  html {
+    scroll-padding-top: 4rem;
+    /* Match h-16 (64px) */
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      scroll-padding-top: 5rem;
+      /* Match lg:h-20 (80px) */
+    }
+  }
+
   /* Cursor pointer for all interactive elements */
   a,
   button,

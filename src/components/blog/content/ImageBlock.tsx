@@ -16,7 +16,7 @@ export default function ImageBlock({ block }: ImageBlockProps) {
                     alt={block.alt}
                     width={800}
                     height={450}
-                    className="w-full h-auto object-fill"
+                    className="w-full h-full object-fill"
                 />
             </div>
             {block.caption && (
