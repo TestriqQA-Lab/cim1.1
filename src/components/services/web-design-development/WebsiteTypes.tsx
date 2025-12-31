@@ -13,39 +13,28 @@ export default function WebsiteTypes() {
 
     const coreTypes = [
         {
-            icon: Layout,
-            title: "Static Websites",
-            description: "Ideal for simple, fast-loading sites where content rarely changes. Excellent for performance and security.",
-            features: ["Lightning-fast loading", "Minimal maintenance", "High security", "Perfect for portfolios"],
-            color: "from-[#008ac1] to-[#00b5ca]",
-        },
-        {
-            icon: Zap,
-            title: "Dynamic Websites",
-            description: "Perfect for content that updates frequently, such as blogs, news portals, or personalized user dashboards.",
-            features: ["Real-time updates", "User personalization", "Database-driven", "Content management"],
-            color: "from-[#bc3feb] to-[#fab900]",
-        },
-        {
             icon: Globe,
-            title: "Business Websites",
+            title: "Business & Corporate",
             description: "Professional, authoritative sites designed to establish credibility and communicate brand value to stakeholders.",
             features: ["Brand authority", "Lead generation", "Professional design", "Trust building"],
             color: "from-[#fab900] to-[#ee6500]",
+            href: "/services/web-design-development/business-corporate",
         },
         {
             icon: ShoppingCart,
-            title: "E-commerce Websites",
+            title: "E-commerce Stores",
             description: "High-converting online stores with secure payment gateways, inventory management, and seamless checkout flows.",
             features: ["Secure payments", "Inventory management", "Shopping cart", "Order tracking"],
             color: "from-[#00efd6] to-[#00b5ca]",
+            href: "/services/web-design-development/ecommerce-stores",
         },
         {
             icon: Code,
-            title: "Web Applications",
-            description: "Complex, interactive software solutions like CRMs, project management tools, or custom business automation platforms.",
-            features: ["Real-time interactions", "Complex logic", "Scalable", "API integrations"],
+            title: "Web Applications & SaaS",
+            description: "Complex, interactive software solutions and multi-tenant platforms with subscription billing.",
+            features: ["Real-time interactions", "Complex logic", "Scalable", "Subscription ready"],
             color: "from-[#008ac1] to-[#bc3feb]",
+            href: "/services/web-design-development/web-applications-saas",
         },
         {
             icon: BookOpen,
@@ -55,18 +44,18 @@ export default function WebsiteTypes() {
             color: "from-[#ee6500] to-[#fab900]",
         },
         {
+            icon: Zap,
+            title: "Blogs & News Portals",
+            description: "Perfect for content that updates frequently, such as blogs, news portals, or personalized user dashboards.",
+            features: ["Real-time updates", "Content management", "Database-driven", "Reader engagement"],
+            color: "from-[#bc3feb] to-[#fab900]",
+        },
+        {
             icon: ImageIcon,
-            title: "Portfolio Websites",
+            title: "Portfolio & Personal",
             description: "Visually stunning platforms to showcase creative work, case studies, and professional achievements.",
             features: ["Visual showcase", "Case studies", "Professional presentation", "Client testimonials"],
             color: "from-[#bc3feb] to-[#008ac1]",
-        },
-        {
-            icon: Settings,
-            title: "CMS-Based Websites",
-            description: "Easy-to-manage sites built on platforms like WordPress, Strapi, or Contentful, giving you full control over content.",
-            features: ["Easy content updates", "No coding required", "Flexible", "Scalable"],
-            color: "from-[#00b5ca] to-[#00efd6]",
         },
     ];
 
@@ -118,10 +107,17 @@ export default function WebsiteTypes() {
     const techTypes = [
         {
             icon: Layout,
-            title: "Next.js & React Applications",
+            title: "Next.js & React",
             description: "High-performance, server-rendered applications for maximum speed and SEO.",
             features: ["Server-side rendering", "Static generation", "Optimized performance", "SEO friendly"],
             color: "from-[#000000] to-[#333333]",
+        },
+        {
+            icon: Settings,
+            title: "Headless & Traditional CMS",
+            description: "Flexible content management solutions (WordPress, Strapi, Contentful) giving you full control.",
+            features: ["Easy content updates", "No coding required", "Flexible", "Scalable"],
+            color: "from-[#21759b] to-[#00b5ca]",
         },
         {
             icon: ShoppingCart,
@@ -131,25 +127,11 @@ export default function WebsiteTypes() {
             color: "from-[#96bf48] to-[#96bf48]",
         },
         {
-            icon: Settings,
-            title: "WordPress & CMS",
-            description: "Flexible content management solutions tailored to your editorial workflow.",
-            features: ["Custom themes", "Plugin development", "Easy editing", "Wide ecosystem"],
-            color: "from-[#21759b] to-[#21759b]",
-        },
-        {
             icon: Server,
-            title: "Node.js & Backend",
+            title: "Node.js & Backend Systems",
             description: "Scalable backend systems and APIs to power your web and mobile applications.",
             features: ["Microservices", "REST/GraphQL APIs", "Real-time data", "Database design"],
             color: "from-[#339933] to-[#68a063]",
-        },
-        {
-            icon: Database,
-            title: "SaaS Platforms",
-            description: "Multi-tenant software-as-a-service applications with subscription billing and user management.",
-            features: ["Multi-tenancy", "Subscription billing", "Role management", "Dashboard analytics"],
-            color: "from-[#008ac1] to-[#00b5ca]",
         },
         {
             icon: Smartphone,
@@ -158,15 +140,21 @@ export default function WebsiteTypes() {
             features: ["Offline access", "Push notifications", "App-like feel", "Installable"],
             color: "from-[#bc3feb] to-[#fab900]",
         },
+        {
+            icon: Layout,
+            title: "Static & Jamstack",
+            description: "Ideal for simple, fast-loading sites where content rarely changes. Excellent for performance.",
+            features: ["Lightning-fast loading", "Minimal maintenance", "High security", "Perfect for portfolios"],
+            color: "from-[#008ac1] to-[#00b5ca]",
+        },
     ];
 
     const renderGrid = (data: typeof coreTypes) => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
             {data.map((type, idx) => {
                 const Icon = type.icon;
-                return (
+                const cardContent = (
                     <div
-                        key={idx}
                         className="group rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-lg hover:-translate-y-2 h-full flex flex-col"
                         style={{
                             backgroundColor: "var(--card-bg)",
@@ -203,6 +191,14 @@ export default function WebsiteTypes() {
                             </ul>
                         </div>
                     </div>
+                );
+
+                return 'href' in type && type.href ? (
+                    <Link key={idx} href={type.href} className="h-full">
+                        {cardContent}
+                    </Link>
+                ) : (
+                    <div key={idx}>{cardContent}</div>
                 );
             })}
         </div>

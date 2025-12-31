@@ -1,0 +1,131 @@
+"use client";
+
+import Link from "next/link";
+import { ArrowRight, ShoppingCart } from "lucide-react";
+
+export default function CTA() {
+    return (
+        <section
+            className="py-16 transition-colors duration-300"
+            style={{ backgroundColor: "var(--background)" }}
+        >
+            <div className="max-w-6xl mx-auto px-6 md:px-12 xl:px-20">
+                {/* Main CTA Card */}
+                <div
+                    className="relative rounded-3xl p-8 md:p-16 border text-center overflow-hidden"
+                    style={{
+                        backgroundColor: "var(--card-bg)",
+                        borderColor: "var(--border-color)",
+                    }}
+                >
+                    {/* Glow Effect */}
+                    <div
+                        className="absolute inset-0 rounded-3xl"
+                        style={{
+                            opacity: 0.1,
+                            background: "linear-gradient(135deg, #00b5ca, var(--brand-cyan), #00efd6)",
+                            filter: "blur(30px)",
+                        }}
+                    />
+
+                    {/* Content */}
+                    <div className="relative z-10">
+                        {/* Badge */}
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                            style={{
+                                background:
+                                    "linear-gradient(90deg, color-mix(in srgb, #00b5ca 8%, transparent), color-mix(in srgb, #00efd6 8%, transparent))",
+                                borderColor: "color-mix(in srgb, #00b5ca 20%, transparent)",
+                                color: "#00b5ca",
+                            }}
+                        >
+                            <ShoppingCart className="w-4 h-4" />
+                            <span className="text-sm font-semibold">Start Selling Online</span>
+                        </div>
+
+                        {/* Heading */}
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                            <span
+                                className="bg-clip-text text-transparent"
+                                style={{
+                                    background:
+                                        "linear-gradient(90deg, #00b5ca, var(--brand-cyan), #00efd6)",
+                                    WebkitBackgroundClip: "text",
+                                    color: "transparent",
+                                }}
+                            >
+                                Ready to Launch Your High-Converting Store?
+                            </span>
+                        </h2>
+
+                        {/* Description */}
+                        <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12" style={{ color: "var(--secondary-text)" }}>
+                            Join 150+ brands that have increased their online revenue with our conversion-optimized e-commerce solutions. Get a free store audit today.
+                        </p>
+
+                        {/* CTA Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                            >
+                                Launch Your Store
+                                <ArrowRight className="w-5 h-5" />
+                            </Link>
+
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold border transition-all duration-300"
+                                style={{
+                                    borderColor: "var(--border-color)",
+                                    color: "var(--foreground)",
+                                }}
+                            >
+                                Get Free Store Audit
+                                <ArrowRight className="w-5 h-5" />
+                            </Link>
+                        </div>
+
+                        {/* Bottom Text */}
+                        <p className="mt-8" style={{ color: "var(--secondary-text)", fontSize: "0.95rem" }}>
+                            Average time to launch: 6-12 weeks depending on complexity.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Trust Indicators */}
+                <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    {[
+                        {
+                            number: "$50M+",
+                            label: "Revenue Generated",
+                        },
+                        {
+                            number: "35%",
+                            label: "Avg. Conversion Lift",
+                        },
+                        {
+                            number: "150+",
+                            label: "Stores Launched",
+                        },
+                    ].map((indicator, idx) => (
+                        <div key={idx}>
+                            <div
+                                className="text-4xl font-bold mb-2"
+                                style={{
+                                    background: "linear-gradient(90deg, #00b5ca, #00efd6)",
+                                    WebkitBackgroundClip: "text",
+                                    color: "transparent",
+                                }}
+                            >
+                                {indicator.number}
+                            </div>
+                            <p style={{ color: "var(--secondary-text)" }}>{indicator.label}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
