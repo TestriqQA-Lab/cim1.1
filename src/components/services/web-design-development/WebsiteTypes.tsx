@@ -21,14 +21,6 @@ export default function WebsiteTypes() {
             href: "/services/web-design-development/business-corporate",
         },
         {
-            icon: ShoppingCart,
-            title: "E-commerce Stores",
-            description: "High-converting online stores with secure payment gateways, inventory management, and seamless checkout flows.",
-            features: ["Secure payments", "Inventory management", "Shopping cart", "Order tracking"],
-            color: "from-[#00efd6] to-[#00b5ca]",
-            href: "/services/web-design-development/ecommerce-stores",
-        },
-        {
             icon: Code,
             title: "Web Applications & SaaS",
             description: "Complex, interactive software solutions and multi-tenant platforms with subscription billing.",
@@ -60,6 +52,14 @@ export default function WebsiteTypes() {
     ];
 
     const industryTypes = [
+        {
+            icon: ShoppingCart,
+            title: "E-commerce Stores",
+            description: "High-converting online stores with secure payment gateways, inventory management, and seamless checkout flows.",
+            features: ["Secure payments", "Inventory management", "Shopping cart", "Order tracking"],
+            color: "from-[#00efd6] to-[#00b5ca]",
+            href: "/services/web-design-development/ecommerce-stores",
+        },
         {
             icon: Building2,
             title: "Real Estate Platforms",

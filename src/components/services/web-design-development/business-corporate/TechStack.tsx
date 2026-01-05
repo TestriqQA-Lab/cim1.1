@@ -69,7 +69,7 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "#fab900" }}>Enterprise-Grade</span> Technology Stack
+                        <span style={{ color: "#f97316" }}>Enterprise-Grade</span> Technology Stack
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
@@ -79,7 +79,7 @@ export default function TechStack() {
                     <div
                         className="w-24 h-1.5 mx-auto rounded-full"
                         style={{
-                            background: "linear-gradient(90deg, #fab900, #ee6500)",
+                            background: "linear-gradient(90deg, #f97316, #ea580c)",
                         }}
                     />
                 </div>
@@ -101,7 +101,7 @@ export default function TechStack() {
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
                                         style={{
-                                            background: "linear-gradient(135deg, #fab900, #ee6500)",
+                                            background: "linear-gradient(135deg, #f97316, #ea580c)",
                                         }}
                                     >
                                         <Icon className="w-6 h-6 text-white" />
@@ -116,7 +116,7 @@ export default function TechStack() {
                                         <div key={iidx} className="flex items-start gap-3">
                                             <div
                                                 className="w-2 h-2 rounded-full flex-shrink-0 mt-2"
-                                                style={{ backgroundColor: "#fab900" }}
+                                                style={{ backgroundColor: "#f97316" }}
                                             />
                                             <div>
                                                 <p className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>

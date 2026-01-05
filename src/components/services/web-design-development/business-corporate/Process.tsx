@@ -51,13 +51,16 @@ export default function Process() {
     return (
         <section
             className="py-16 transition-colors duration-300"
-            style={{ backgroundColor: "var(--background)" }}
+            style={{
+                backgroundColor: "var(--card-bg)",
+                borderColor: "var(--border-color)",
+            }}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-20">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Our <span style={{ color: "#fab900" }}>Corporate Development</span> Process
+                        Our <span style={{ color: "#f97316" }}>Corporate Development</span> Process
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
@@ -67,7 +70,7 @@ export default function Process() {
                     <div
                         className="w-24 h-1.5 mx-auto rounded-full"
                         style={{
-                            background: "linear-gradient(90deg, #fab900, #ee6500)",
+                            background: "linear-gradient(90deg, #f97316, #ea580c)",
                         }}
                     />
                 </div>
@@ -87,7 +90,7 @@ export default function Process() {
                                     <div
                                         className="w-20 h-20 rounded-2xl flex items-center justify-center mb-4"
                                         style={{
-                                            background: "linear-gradient(135deg, #fab900, #ee6500)",
+                                            background: "linear-gradient(135deg, #f97316, #ea580c)",
                                         }}
                                     >
                                         <Icon className="w-10 h-10 text-white" />
@@ -95,7 +98,7 @@ export default function Process() {
                                     <div
                                         className="text-5xl font-bold mb-2"
                                         style={{
-                                            background: "linear-gradient(90deg, #fab900, #ee6500)",
+                                            background: "linear-gradient(90deg, #f97316, #ea580c)",
                                             WebkitBackgroundClip: "text",
                                             color: "transparent",
                                         }}
@@ -124,8 +127,8 @@ export default function Process() {
                                                 key={didx}
                                                 className="px-4 py-2 rounded-full text-sm font-medium"
                                                 style={{
-                                                    backgroundColor: "color-mix(in srgb, #fab900 10%, transparent)",
-                                                    color: "#fab900",
+                                                    backgroundColor: "color-mix(in srgb, #f97316 10%, transparent)",
+                                                    color: "#f97316",
                                                 }}
                                             >
                                                 {deliverable}

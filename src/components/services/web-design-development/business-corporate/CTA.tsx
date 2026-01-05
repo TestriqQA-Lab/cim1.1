@@ -23,7 +23,7 @@ export default function CTA() {
                         className="absolute inset-0 rounded-3xl"
                         style={{
                             opacity: 0.1,
-                            background: "linear-gradient(135deg, #fab900, var(--brand-cyan), #ee6500)",
+                            background: "linear-gradient(135deg, #f97316, #ea580c, #f97316)",
                             filter: "blur(30px)",
                         }}
                     />
@@ -35,9 +35,9 @@ export default function CTA() {
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
                             style={{
                                 background:
-                                    "linear-gradient(90deg, color-mix(in srgb, #fab900 8%, transparent), color-mix(in srgb, #ee6500 8%, transparent))",
-                                borderColor: "color-mix(in srgb, #fab900 20%, transparent)",
-                                color: "#fab900",
+                                    "linear-gradient(90deg, color-mix(in srgb, #f97316 8%, transparent), color-mix(in srgb, #ea580c 8%, transparent))",
+                                borderColor: "color-mix(in srgb, #f97316 20%, transparent)",
+                                color: "#f97316",
                             }}
                         >
                             <Building2 className="w-4 h-4" />
@@ -50,7 +50,7 @@ export default function CTA() {
                                 className="bg-clip-text text-transparent"
                                 style={{
                                     background:
-                                        "linear-gradient(90deg, #fab900, var(--brand-cyan), #ee6500)",
+                                        "linear-gradient(90deg, #f97316, #ea580c, #f97316)",
                                     WebkitBackgroundClip: "text",
                                     color: "transparent",
                                 }}
@@ -68,7 +68,7 @@ export default function CTA() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#f97316] to-[#ea580c] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                             >
                                 Build Your Corporate Website
                                 <ArrowRight className="w-5 h-5" />
@@ -114,7 +114,7 @@ export default function CTA() {
                             <div
                                 className="text-4xl font-bold mb-2"
                                 style={{
-                                    background: "linear-gradient(90deg, #fab900, #ee6500)",
+                                    background: "linear-gradient(90deg, #f97316, #ea580c)",
                                     WebkitBackgroundClip: "text",
                                     color: "transparent",
                                 }}

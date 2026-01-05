@@ -1,60 +1,139 @@
 "use client";
 
-import { Rocket, Building2, Briefcase, Layers, Users, Cog } from "lucide-react";
+import { Rocket, Building2, Briefcase, Layers, Users, Cog, Zap, TrendingUp, Award, CheckCircle2, ArrowUpRight, Sparkles, DollarSign } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 export default function UseCases() {
+    const [isVisible, setIsVisible] = useState(false);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
     const industries = [
         {
             icon: Rocket,
             title: "Tech Startups & Scale-Ups",
             description: "Early and growth-stage companies building their core product, needing rapid iteration and scalable architecture from day one.",
             example: "B2B SaaS with $5M ARR and 10k users",
+            gradient: "from-purple-600 via-pink-600 to-red-600",
+            bgColor: "#9333ea",
+            stats: "10k+ Users",
+            tags: ["Rapid MVP", "Scalable", "Agile"],
         },
         {
             icon: Building2,
             title: "Enterprise Digital Products",
             description: "Large organizations launching internal tools, customer portals, or new digital product lines alongside existing systems.",
             example: "Fortune 500 internal workflow platform",
+            gradient: "from-blue-600 via-cyan-600 to-teal-600",
+            bgColor: "#2563eb",
+            stats: "Fortune 500",
+            tags: ["Enterprise", "Secure", "Integration"],
         },
         {
             icon: Briefcase,
             title: "Professional Services Firms",
             description: "Consulting, legal, and accounting firms building client portals, collaboration tools, and proprietary software.",
             example: "Law firm client document portal",
+            gradient: "from-amber-600 via-orange-600 to-red-600",
+            bgColor: "#d97706",
+            stats: "Client Portals",
+            tags: ["Professional", "Compliant", "Secure"],
         },
         {
             icon: Layers,
             title: "Marketplace Platforms",
             description: "Two-sided marketplaces connecting buyers with sellers, service providers with clients, or talent with employers.",
             example: "B2B marketplace with 500+ vendors",
+            gradient: "from-green-600 via-emerald-600 to-teal-600",
+            bgColor: "#16a34a",
+            stats: "500+ Vendors",
+            tags: ["Two-Sided", "Payments", "Matching"],
         },
         {
             icon: Users,
             title: "Community & Collaboration Tools",
             description: "Member communities, learning management systems, and collaboration platforms with real-time features.",
             example: "Professional community with 50k members",
+            gradient: "from-indigo-600 via-purple-600 to-pink-600",
+            bgColor: "#4f46e5",
+            stats: "50k Members",
+            tags: ["Real-time", "Social", "Engagement"],
         },
         {
             icon: Cog,
             title: "Workflow & Automation Tools",
             description: "Business process automation, project management, and operational tools that replace spreadsheets and manual processes.",
             example: "Operations platform replacing 15 tools",
+            gradient: "from-orange-600 via-red-600 to-pink-600",
+            bgColor: "#ea580c",
+            stats: "15 Tools",
+            tags: ["Automation", "Efficiency", "Integration"],
         },
     ];
 
     return (
         <section
-            className="py-16 transition-colors duration-300"
-            style={{ backgroundColor: "var(--background)" }}
+            ref={sectionRef}
+            className="py-20 md:py-28 relative overflow-hidden transition-colors duration-300"
+            style={{
+                backgroundColor: "var(--card-bg)",
+                borderColor: "var(--border-color)",
+            }}
         >
-            <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-20">
+            {/* Animated Background */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                {/* Radial Gradients */}
+                <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-gradient-to-br from-[#008ac1]/10 via-[#bc3feb]/5 to-transparent rounded-full blur-3xl animate-pulse" />
+                <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-gradient-to-br from-[#bc3feb]/10 via-[#008ac1]/5 to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+
+                {/* Dot Pattern */}
+                <div className="absolute inset-0 opacity-[0.03]" style={{
+                    backgroundImage: "radial-gradient(circle, var(--foreground) 1px, transparent 1px)",
+                    backgroundSize: "40px 40px",
+                }} />
+            </div>
+
+            <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 {/* Header */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-16 max-w-4xl mx-auto">
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            background:
+                                "linear-gradient(90deg, color-mix(in srgb, #008ac1 8%, transparent), color-mix(in srgb, #bc3feb 8%, transparent))",
+                            borderColor: "color-mix(in srgb, #008ac1 20%, transparent)",
+                            color: "#008ac1",
+                        }}
+                    >
+                        <Users className="w-4 h-4" />
+                        <span className="text-sm font-semibold">Use Cases</span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Who We <span style={{ color: "#008ac1" }}>Build For</span>
                     </h2>
 
-                    <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
+                    <p
+                        className="text-xl max-w-3xl mx-auto mb-8"
+                        style={{ color: "var(--secondary-text)" }}
+                    >
                         We partner with ambitious teams who are building software products that transform their industries.
                     </p>
 
@@ -67,50 +146,269 @@ export default function UseCases() {
                 </div>
 
                 {/* Industries Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {industries.map((industry, idx) => {
                         const Icon = industry.icon;
+                        const isActive = activeIndex === idx;
+
                         return (
                             <div
                                 key={idx}
-                                className="p-6 rounded-2xl border transition-all duration-300 hover:shadow-lg hover:-translate-y-2"
+                                className={`group relative transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
+                                    }`}
                                 style={{
-                                    backgroundColor: "var(--card-bg)",
-                                    borderColor: "var(--border-color)",
+                                    transitionDelay: `${400 + idx * 100}ms`,
                                 }}
+                                onMouseEnter={() => setActiveIndex(idx)}
+                                onMouseLeave={() => setActiveIndex(null)}
                             >
                                 <div
-                                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+                                    className={`relative h-full rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2`}
                                     style={{
-                                        background: "linear-gradient(135deg, color-mix(in srgb, #008ac1 15%, transparent), color-mix(in srgb, #bc3feb 15%, transparent))",
+                                        backgroundColor: "var(--card-bg)",
+                                        border: "1px solid var(--border-color)",
                                     }}
                                 >
-                                    <Icon className="w-7 h-7" style={{ color: "#008ac1" }} />
-                                </div>
+                                    {/* Gradient Header */}
+                                    <div
+                                        className="relative p-8 pb-6 overflow-hidden"
+                                        style={{
+                                            background: "linear-gradient(135deg, rgba(0, 138, 193, 0.05), rgba(188, 63, 235, 0.05))",
+                                            borderBottom: "1px solid var(--border-color)",
+                                        }}
+                                    >
+                                        {/* Icon Container */}
+                                        <div className="relative z-10 flex items-start justify-between mb-4">
+                                            <div
+                                                className="w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-500 group-hover:scale-110"
+                                                style={{
+                                                    background: "linear-gradient(135deg, #008ac1, #bc3feb)",
+                                                    boxShadow: "0 4px 12px rgba(0, 138, 193, 0.2)",
+                                                }}
+                                            >
+                                                <Icon className="w-7 h-7 text-white" />
+                                            </div>
 
-                                <h3 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>
-                                    {industry.title}
-                                </h3>
+                                            {/* Stats Badge */}
+                                            <div
+                                                className="px-3 py-1.5 rounded-full border bg-white/5 backdrop-blur-sm"
+                                                style={{ borderColor: "rgba(0, 138, 193, 0.2)" }}
+                                            >
+                                                <p className="text-xs font-bold" style={{ color: "#008ac1" }}>
+                                                    {industry.stats}
+                                                </p>
+                                            </div>
+                                        </div>
 
-                                <p className="text-sm mb-4" style={{ color: "var(--secondary-text)", lineHeight: "1.6" }}>
-                                    {industry.description}
-                                </p>
+                                        {/* Title */}
+                                        <h3 className="relative z-10 text-xl font-bold mb-2" style={{ color: "var(--foreground)" }}>
+                                            {industry.title}
+                                        </h3>
 
-                                <div
-                                    className="p-3 rounded-xl"
-                                    style={{
-                                        backgroundColor: "color-mix(in srgb, #008ac1 5%, transparent)",
-                                    }}
-                                >
-                                    <p className="text-xs font-medium" style={{ color: "#008ac1" }}>
-                                        Example: {industry.example}
-                                    </p>
+                                        {/* Tags */}
+                                        <div className="relative z-10 flex flex-wrap gap-2">
+                                            {industry.tags.map((tag, tidx) => (
+                                                <span
+                                                    key={tidx}
+                                                    className="px-2.5 py-1 rounded-lg text-xs font-semibold transition-all duration-300 group-hover:bg-[#008ac1]/10 group-hover:text-[#008ac1]"
+                                                    style={{
+                                                        backgroundColor: "var(--background)",
+                                                        color: "var(--secondary-text)",
+                                                        border: "1px solid var(--border-color)",
+                                                    }}
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                    {/* Card Body */}
+                                    <div className="p-8 pt-6">
+                                        {/* Description */}
+                                        <p
+                                            className="text-sm leading-relaxed mb-6"
+                                            style={{ color: "var(--secondary-text)" }}
+                                        >
+                                            {industry.description}
+                                        </p>
+
+                                        {/* Example Card */}
+                                        <div
+                                            className={`relative p-5 rounded-2xl transition-all duration-500 overflow-hidden ${isActive ? "translate-y-0" : "translate-y-2"
+                                                }`}
+                                            style={{
+                                                backgroundColor: `${industry.bgColor}08`,
+                                                border: `1.5px solid ${industry.bgColor}25`,
+                                            }}
+                                        >
+                                            {/* Animated Shine Effect */}
+                                            <div
+                                                className={`absolute inset-0 transition-all duration-1000 ${isActive ? "translate-x-full" : "-translate-x-full"
+                                                    }`}
+                                                style={{
+                                                    background: `linear-gradient(90deg, transparent, ${industry.bgColor}15, transparent)`,
+                                                }}
+                                            />
+
+                                            <div className="relative z-10 flex items-start gap-3">
+                                                {/* Icon */}
+                                                <div
+                                                    className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center transition-transform duration-500 group-hover:rotate-12"
+                                                    style={{
+                                                        backgroundColor: `${industry.bgColor}20`,
+                                                    }}
+                                                >
+                                                    <CheckCircle2 className="w-5 h-5" style={{ color: industry.bgColor }} />
+                                                </div>
+
+                                                <div className="flex-1">
+                                                    <p className="text-xs font-semibold mb-1 uppercase tracking-wide" style={{ color: industry.bgColor }}>
+                                                        Success Story
+                                                    </p>
+                                                    <p className="text-sm font-medium leading-relaxed" style={{ color: "var(--foreground)" }}>
+                                                        {industry.example}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Learn More Link */}
+                                        <button
+                                            className={`mt-6 w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 group/btn ${isActive ? "gap-4" : "gap-2"
+                                                }`}
+                                            style={{
+                                                backgroundColor: isActive ? industry.bgColor : `${industry.bgColor}10`,
+                                                color: isActive ? "white" : industry.bgColor,
+                                                border: `1.5px solid ${industry.bgColor}30`,
+                                            }}
+                                        >
+                                            <span>View Case Studies</span>
+                                            <ArrowUpRight className={`w-4 h-4 transition-transform duration-300 ${isActive ? "translate-x-1 -translate-y-1" : ""
+                                                }`} />
+                                        </button>
+                                    </div>
+
+                                    {/* Corner Glow */}
+                                    <div
+                                        className={`absolute -top-20 -right-20 w-40 h-40 rounded-full blur-3xl transition-opacity duration-500 ${isActive ? "opacity-30" : "opacity-0"
+                                            }`}
+                                        style={{
+                                            background: `radial-gradient(circle, ${industry.bgColor}, transparent 70%)`,
+                                        }}
+                                    />
+
+                                    {/* Bottom Border Glow */}
+                                    <div
+                                        className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${industry.gradient} transition-all duration-500 ${isActive ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
+                                            }`}
+                                        style={{ transformOrigin: "center" }}
+                                    />
+
+                                    {/* Floating Icons */}
+                                    {isActive && (
+                                        <>
+                                            <TrendingUp
+                                                className="absolute top-24 right-6 w-5 h-5 animate-bounce"
+                                                style={{ color: industry.bgColor, opacity: 0.3, animationDelay: "0.5s" }}
+                                            />
+                                            <Sparkles
+                                                className="absolute bottom-40 left-6 w-4 h-4 animate-pulse"
+                                                style={{ color: industry.bgColor, opacity: 0.4 }}
+                                            />
+                                        </>
+                                    )}
                                 </div>
                             </div>
                         );
                     })}
                 </div>
+
+                {/* Bottom CTA Section */}
+                <div
+                    className={`mt-20 transition-all duration-700 delay-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                        }`}
+                >
+                    <div
+                        className="relative overflow-hidden p-12 rounded-3xl"
+                        style={{
+                            background: "linear-gradient(135deg, #008ac115, #bc3feb15)",
+                            border: "2px solid var(--border-color)",
+                        }}
+                    >
+                        {/* Animated Grid Background */}
+                        <div className="absolute inset-0 opacity-[0.03]" style={{
+                            backgroundImage: "linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(90deg, var(--foreground) 1px, transparent 1px)",
+                            backgroundSize: "30px 30px",
+                            animation: "grid-move 20s linear infinite",
+                        }} />
+
+                        <div className="relative z-10 text-center max-w-3xl mx-auto">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{
+                                backgroundColor: "var(--card-bg)",
+                                border: "1px solid var(--border-color)",
+                            }}>
+                                <DollarSign className="w-5 h-5" style={{ color: "#008ac1" }} />
+                                <span className="text-sm font-bold" style={{ color: "#008ac1" }}>
+                                    ROI-FOCUSED DEVELOPMENT
+                                </span>
+                            </div>
+
+                            <h3 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "var(--foreground)" }}>
+                                Don't See Your Industry?
+                            </h3>
+
+                            <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                We've built products across 20+ industries. Let's discuss how we can bring your vision to life with battle-tested development practices.
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                                <button
+                                    className="group flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                                    style={{
+                                        background: "linear-gradient(135deg, #008ac1, #bc3feb)",
+                                    }}
+                                >
+                                    Schedule a Discovery Call
+                                    <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                                </button>
+
+                                <button
+                                    className="flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105"
+                                    style={{
+                                        backgroundColor: "var(--card-bg)",
+                                        color: "#008ac1",
+                                        border: "2px solid var(--border-color)",
+                                    }}
+                                >
+                                    View Portfolio
+                                    <ArrowUpRight className="w-5 h-5" />
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Decorative Elements */}
+                        <Sparkles className="absolute top-8 right-8 w-8 h-8 text-[#008ac1] opacity-20 animate-pulse" />
+                        <Sparkles className="absolute bottom-8 left-8 w-6 h-6 text-[#bc3feb] opacity-20 animate-pulse" style={{ animationDelay: "1s" }} />
+                    </div>
+                </div>
             </div>
+
+            <style jsx>{`
+                @keyframes shine {
+                    to { background-position: 200% center; }
+                }
+                
+                @keyframes pattern-move {
+                    0% { background-position: 0 0; }
+                    100% { background-position: 40px 40px; }
+                }
+                
+                @keyframes grid-move {
+                    0% { transform: translate(0, 0); }
+                    100% { transform: translate(30px, 30px); }
+                }
+            `}</style>
         </section>
     );
 }

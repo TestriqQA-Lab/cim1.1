@@ -45,7 +45,10 @@ export default function WhyChooseUs() {
     return (
         <section
             className="py-16 transition-colors duration-300"
-            style={{ backgroundColor: "var(--background)" }}
+            style={{
+                backgroundColor: "var(--card-bg)",
+                borderColor: "var(--border-color)",
+            }}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-20">
                 {/* Header */}

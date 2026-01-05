@@ -1,6 +1,7 @@
 "use client";
 
 import { Code2, Database, Shield, Cloud, RefreshCw, Puzzle } from "lucide-react";
+import Image from "next/image";
 
 export default function TechStack() {
     const technologies = [
@@ -8,54 +9,54 @@ export default function TechStack() {
             category: "Frontend Frameworks",
             icon: Code2,
             items: [
-                { name: "React/Next.js", description: "SSR & static generation" },
-                { name: "Vue.js/Nuxt", description: "Progressive framework" },
-                { name: "TypeScript", description: "Type-safe development" },
+                { name: "React/Next.js", description: "SSR & static generation", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: "Vue.js/Nuxt", description: "Progressive framework", logos: ["/images/techstack_logos/vuejs-logo.svg", "/images/techstack_logos/nuxt-logo.png"] },
+                { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
             ],
         },
         {
             category: "Backend & APIs",
             icon: Database,
             items: [
-                { name: "Node.js", description: "JavaScript runtime" },
-                { name: "Python/FastAPI", description: "High-performance APIs" },
-                { name: "GraphQL", description: "Flexible data queries" },
+                { name: "Node.js", description: "JavaScript runtime", logos: ["/images/techstack_logos/nodejs-logo.svg"] },
+                { name: "Python/FastAPI", description: "High-performance APIs", logos: ["/images/techstack_logos/python-logo.svg", "/images/techstack_logos/fastapi-logo.webp"] },
+                { name: "GraphQL", description: "Flexible data queries", logos: ["/images/techstack_logos/graphql-logo.svg"] },
             ],
         },
         {
             category: "Authentication & Security",
             icon: Shield,
             items: [
-                { name: "Auth0/Clerk", description: "Identity management" },
-                { name: "OAuth 2.0 / SAML", description: "Enterprise SSO" },
-                { name: "RBAC/ABAC", description: "Access control" },
+                { name: "Auth0/Clerk", description: "Identity management", logos: ["/images/techstack_logos/auth0-logo.png", "/images/techstack_logos/clerk-logo.png"] },
+                { name: "OAuth 2.0 / SAML", description: "Enterprise SSO", logos: [] },
+                { name: "RBAC/ABAC", description: "Access control", logos: [] },
             ],
         },
         {
             category: "Cloud Infrastructure",
             icon: Cloud,
             items: [
-                { name: "AWS/GCP/Azure", description: "Cloud platforms" },
-                { name: "Vercel/Netlify", description: "Edge deployment" },
-                { name: "Docker/Kubernetes", description: "Container orchestration" },
+                { name: "AWS/GCP/Azure", description: "Cloud platforms", logos: ["/images/techstack_logos/amazonwebservices-logo.svg", "/images/techstack_logos/googlecloud-logo.svg", "/images/techstack_logos/azure-logo.svg"] },
+                { name: "Vercel/Netlify", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-icon.svg", "/images/techstack_logos/netlify-logo.svg"] },
+                { name: "Docker/Kubernetes", description: "Container orchestration", logos: ["/images/techstack_logos/docker-logo.svg", "/images/techstack_logos/kubernetes-logo.svg"] },
             ],
         },
         {
             category: "DevOps & CI/CD",
             icon: RefreshCw,
             items: [
-                { name: "GitHub Actions", description: "Automated workflows" },
-                { name: "Terraform", description: "Infrastructure as code" },
-                { name: "Datadog/Sentry", description: "Monitoring & logging" },
+                { name: "GitHub Actions", description: "Automated workflows", logos: ["/images/techstack_logos/github-logo.svg"] },
+                { name: "Terraform", description: "Infrastructure as code", logos: ["/images/techstack_logos/terraform-logo.webp"] },
+                { name: "Datadog/Sentry", description: "Monitoring & logging", logos: ["/images/techstack_logos/datadog-logo.webp", "/images/techstack_logos/sentry-logo.svg"] },
             ],
         },
         {
             category: "Integrations",
             icon: Puzzle,
             items: [
-                { name: "Stripe/Paddle", description: "Payment processing" },
-                { name: "SendGrid/Twilio", description: "Notifications" },
-                { name: "Segment/Mixpanel", description: "Product analytics" },
+                { name: "Stripe/Paddle", description: "Payment processing", logos: ["/images/techstack_logos/Stripe-logo.png", "/images/techstack_logos/paddle-logo.png"] },
+                { name: "SendGrid/Twilio", description: "Notifications", logos: ["/images/techstack_logos/SendGrid-logo.png", "/images/techstack_logos/twilio-icon.webp"] },
+                { name: "Segment/Mixpanel", description: "Product analytics", logos: ["/images/techstack_logos/Segment-logo.png", "/images/techstack_logos/mixpanel-logo.png"] },
             ],
         },
     ];
@@ -65,7 +66,7 @@ export default function TechStack() {
             className="py-16 transition-colors duration-300"
             style={{ backgroundColor: "var(--background)" }}
         >
-            <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-20">
+            <div className="mx-auto px-6 md:px-12 xl:px-20">
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
@@ -113,19 +114,43 @@ export default function TechStack() {
 
                                 <div className="space-y-4">
                                     {tech.items.map((item, iidx) => (
-                                        <div key={iidx} className="flex items-start gap-3">
-                                            <div
-                                                className="w-2 h-2 rounded-full flex-shrink-0 mt-2"
-                                                style={{ backgroundColor: "#008ac1" }}
-                                            />
-                                            <div>
-                                                <p className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>
-                                                    {item.name}
-                                                </p>
-                                                <p className="text-xs" style={{ color: "var(--secondary-text)" }}>
-                                                    {item.description}
-                                                </p>
+                                        <div key={iidx} className="flex items-center justify-between gap-4">
+                                            <div className="flex items-start gap-3 flex-1 min-w-0">
+                                                <div
+                                                    className="w-2 h-2 rounded-full flex-shrink-0 mt-2"
+                                                    style={{ backgroundColor: "#008ac1" }}
+                                                />
+                                                <div className="min-w-0">
+                                                    <p className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>
+                                                        {item.name}
+                                                    </p>
+                                                    <p className="text-xs" style={{ color: "var(--secondary-text)" }}>
+                                                        {item.description}
+                                                    </p>
+                                                </div>
                                             </div>
+                                            {item.logos.length > 0 && (
+                                                <div className="flex items-center gap-2 flex-shrink-0">
+                                                    {item.logos.map((logo, lidx) => (
+                                                        <div
+                                                            key={lidx}
+                                                            className="p-1.5 rounded-lg transition-all duration-300 hover:scale-110"
+                                                            style={{
+                                                                backgroundColor: "var(--background)",
+                                                                border: "1px solid var(--border-color)",
+                                                            }}
+                                                        >
+                                                            <Image
+                                                                src={logo}
+                                                                alt={`${item.name} logo`}
+                                                                width={24}
+                                                                height={24}
+                                                                className="object-contain"
+                                                            />
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            )}
                                         </div>
                                     ))}
                                 </div>

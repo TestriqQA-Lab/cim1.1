@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Home, ChevronRight, Code2, Layers, Database, Zap, Shield, RefreshCw } from "lucide-react";
+import { ArrowRight, Home, ChevronRight, Code2, Layers, Database, Zap, Shield, RefreshCw, Puzzle, CreditCard, BarChart3, Globe } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -182,7 +182,7 @@ export default function Hero() {
                             }}
                         >
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, #bc3feb, #008ac1)",
                                         WebkitBackgroundClip: "text",
@@ -196,7 +196,7 @@ export default function Hero() {
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, #bc3feb, #008ac1)",
                                         WebkitBackgroundClip: "text",
@@ -210,7 +210,7 @@ export default function Hero() {
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, #bc3feb, #008ac1)",
                                         WebkitBackgroundClip: "text",
@@ -258,13 +258,52 @@ export default function Hero() {
                             }}
                         />
                         <Image
-                            src="/images/services-images/web-development-illustration.png"
+                            src="/images/services-images/web-design-development/web-applications-saas.svg"
                             alt="Web Application and SaaS Development"
                             width={500}
                             height={400}
                             className="relative z-10 rounded-2xl"
                             priority
                         />
+
+                        {/* Info Section Below Image */}
+                        <div className="mt-12 flex gap-4 justify-center w-full z-10 relative">
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm transition-all hover:bg-white/10" style={{ borderColor: "rgba(0, 138, 193, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.05)" }}>
+                                <Layers className="w-4 h-4" style={{ color: "#008ac1" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Scalable</span>
+                            </div>
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm transition-all hover:bg-white/10" style={{ borderColor: "rgba(0, 138, 193, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.05)" }}>
+                                <Shield className="w-4 h-4" style={{ color: "#008ac1" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Secure</span>
+                            </div>
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm transition-all hover:bg-white/10" style={{ borderColor: "rgba(0, 138, 193, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.05)" }}>
+                                <Zap className="w-4 h-4" style={{ color: "#008ac1" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Fast</span>
+                            </div>
+                        </div>
+
+                        {/* Seamless Integrations */}
+                        <div className="mt-8 text-center w-full z-10 relative">
+                            <p className="text-xs font-bold uppercase tracking-wider mb-4 opacity-70" style={{ color: "var(--foreground)" }}>Seamless Integrations</p>
+                            <div className="flex flex-wrap justify-center gap-6 opacity-80">
+                                <div className="flex flex-col items-center gap-1 group">
+                                    <Puzzle className="w-5 h-5 transition-transform group-hover:scale-110" style={{ color: "var(--secondary-text)" }} />
+                                    <span className="text-[10px] font-medium" style={{ color: "var(--secondary-text)" }}>CRM</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-1 group">
+                                    <CreditCard className="w-5 h-5 transition-transform group-hover:scale-110" style={{ color: "var(--secondary-text)" }} />
+                                    <span className="text-[10px] font-medium" style={{ color: "var(--secondary-text)" }}>Payments</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-1 group">
+                                    <BarChart3 className="w-5 h-5 transition-transform group-hover:scale-110" style={{ color: "var(--secondary-text)" }} />
+                                    <span className="text-[10px] font-medium" style={{ color: "var(--secondary-text)" }}>Analytics</span>
+                                </div>
+                                <div className="flex flex-col items-center gap-1 group">
+                                    <Globe className="w-5 h-5 transition-transform group-hover:scale-110" style={{ color: "var(--secondary-text)" }} />
+                                    <span className="text-[10px] font-medium" style={{ color: "var(--secondary-text)" }}>Global</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
