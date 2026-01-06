@@ -41,14 +41,16 @@ export default function WebsiteTypes() {
             title: "Blogs & News Portals",
             description: "Perfect for content that updates frequently, such as blogs, news portals, or personalized user dashboards.",
             features: ["Real-time updates", "Content management", "Database-driven", "Reader engagement"],
-            color: "from-[#bc3feb] to-[#fab900]",
+            color: "from-[#a855f7] to-[#ec4899]",
+            href: "/services/web-design-development/blogs-news-portals",
         },
         {
             icon: ImageIcon,
             title: "Portfolio & Personal",
             description: "Visually stunning platforms to showcase creative work, case studies, and professional achievements.",
             features: ["Visual showcase", "Case studies", "Professional presentation", "Client testimonials"],
-            color: "from-[#bc3feb] to-[#008ac1]",
+            color: "from-[#06b6d4] to-[#0891b2]",
+            href: "/services/web-design-development/portfolio-personal",
         },
     ];
 
@@ -150,7 +152,16 @@ export default function WebsiteTypes() {
         },
     ];
 
-    const renderGrid = (data: typeof coreTypes) => (
+    type WebsiteType = {
+        icon: React.ForwardRefExoticComponent<React.SVGProps<SVGSVGElement> & { title?: string; titleId?: string }>;
+        title: string;
+        description: string;
+        features: string[];
+        color: string;
+        href?: string;
+    };
+
+    const renderGrid = (data: WebsiteType[]) => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
             {data.map((type, idx) => {
                 const Icon = type.icon;
