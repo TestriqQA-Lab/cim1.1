@@ -2,6 +2,7 @@
 
 import { Shield, Award, Zap, Clock, Headphones, Lock, CheckCircle2, TrendingUp, Users, FileCheck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [isVisible, setIsVisible] = useState(false);
@@ -238,7 +239,8 @@ export default function WhyChooseUs() {
                     <p className="text-lg mb-6" style={{ color: "var(--secondary-text)" }}>
                         Ready to elevate your corporate digital presence?
                     </p>
-                    <button
+                    <Link
+                        href="/contact"
                         className="group inline-flex items-center gap-3 px-8 py-4 rounded-full font-semibold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                         style={{
                             background: "linear-gradient(135deg, #f97316, #ea580c)",
@@ -246,7 +248,7 @@ export default function WhyChooseUs() {
                     >
                         Let's Build Your Enterprise Solution
                         <Zap className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

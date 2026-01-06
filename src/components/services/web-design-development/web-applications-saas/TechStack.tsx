@@ -37,7 +37,7 @@ export default function TechStack() {
             icon: Cloud,
             items: [
                 { name: "AWS/GCP/Azure", description: "Cloud platforms", logos: ["/images/techstack_logos/amazonwebservices-logo.svg", "/images/techstack_logos/googlecloud-logo.svg", "/images/techstack_logos/azure-logo.svg"] },
-                { name: "Vercel/Netlify", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-icon.svg", "/images/techstack_logos/netlify-logo.svg"] },
+                { name: "Vercel/Netlify", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-logo.webp", "/images/techstack_logos/netlify-logo.svg"] },
                 { name: "Docker/Kubernetes", description: "Container orchestration", logos: ["/images/techstack_logos/docker-logo.svg", "/images/techstack_logos/kubernetes-logo.svg"] },
             ],
         },
@@ -45,7 +45,7 @@ export default function TechStack() {
             category: "DevOps & CI/CD",
             icon: RefreshCw,
             items: [
-                { name: "GitHub Actions", description: "Automated workflows", logos: ["/images/techstack_logos/github-logo.svg"] },
+                { name: "GitHub Actions", description: "Automated workflows", logos: ["/images/techstack_logos/Github-actions-logo.png"] },
                 { name: "Terraform", description: "Infrastructure as code", logos: ["/images/techstack_logos/terraform-logo.webp"] },
                 { name: "Datadog/Sentry", description: "Monitoring & logging", logos: ["/images/techstack_logos/datadog-logo.webp", "/images/techstack_logos/sentry-logo.svg"] },
             ],

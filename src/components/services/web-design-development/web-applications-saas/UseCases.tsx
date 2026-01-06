@@ -2,6 +2,7 @@
 
 import { Rocket, Building2, Briefcase, Layers, Users, Cog, Zap, TrendingUp, Award, CheckCircle2, ArrowUpRight, Sparkles, DollarSign } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function UseCases() {
     const [isVisible, setIsVisible] = useState(false);
@@ -274,7 +275,7 @@ export default function UseCases() {
                                         </div>
 
                                         {/* Learn More Link */}
-                                        <button
+                                        {/* <button
                                             className={`mt-6 w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 group/btn ${isActive ? "gap-4" : "gap-2"
                                                 }`}
                                             style={{
@@ -286,7 +287,7 @@ export default function UseCases() {
                                             <span>View Case Studies</span>
                                             <ArrowUpRight className={`w-4 h-4 transition-transform duration-300 ${isActive ? "translate-x-1 -translate-y-1" : ""
                                                 }`} />
-                                        </button>
+                                        </button> */}
                                     </div>
 
                                     {/* Corner Glow */}
@@ -363,7 +364,8 @@ export default function UseCases() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                                <button
+                                <Link
+                                    href="/contact"
                                     className="group flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                                     style={{
                                         background: "linear-gradient(135deg, #008ac1, #bc3feb)",
@@ -371,9 +373,9 @@ export default function UseCases() {
                                 >
                                     Schedule a Discovery Call
                                     <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-                                </button>
+                                </Link>
 
-                                <button
+                                {/* <button
                                     className="flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105"
                                     style={{
                                         backgroundColor: "var(--card-bg)",
@@ -383,7 +385,7 @@ export default function UseCases() {
                                 >
                                     View Portfolio
                                     <ArrowUpRight className="w-5 h-5" />
-                                </button>
+                                </button> */}
                             </div>
                         </div>
 

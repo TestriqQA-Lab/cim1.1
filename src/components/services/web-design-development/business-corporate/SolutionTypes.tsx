@@ -2,6 +2,7 @@
 
 import { Building2, Users, FileText, ShieldCheck, Globe, Landmark, ArrowRight, CheckCircle, Sparkles, Target } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [isVisible, setIsVisible] = useState(false);
@@ -275,7 +276,7 @@ export default function SolutionTypes() {
                                     </div>
 
                                     {/* Learn More Link */}
-                                    <div
+                                    {/* <div
                                         className="flex items-center gap-2 text-sm font-bold transition-all duration-300 group-hover:gap-4"
                                         style={{ color: solution.accentColor }}
                                     >
@@ -283,7 +284,7 @@ export default function SolutionTypes() {
                                         <ArrowRight
                                             className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-2"
                                         />
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 {/* Corner Accent */}
@@ -323,7 +324,8 @@ export default function SolutionTypes() {
                                 We'll architect a tailored platform that meets your unique enterprise requirements
                             </p>
                         </div>
-                        <button
+                        <Link
+                            href="/contact"
                             className="group flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl whitespace-nowrap"
                             style={{
                                 background: "linear-gradient(135deg, #f97316, #ea580c)",
@@ -331,7 +333,7 @@ export default function SolutionTypes() {
                         >
                             Schedule Consultation
                             <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-2" />
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

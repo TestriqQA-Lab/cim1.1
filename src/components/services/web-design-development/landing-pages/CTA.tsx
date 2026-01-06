@@ -58,7 +58,7 @@ export default function CTA() {
                                 Stop Wasting Ad Spend.
                             </span>
                             <br />
-                            Start Converting.
+                            <span style={{ color: "var(--foreground)" }}>Start Converting.</span>
                         </h2>
 
                         {/* Description */}

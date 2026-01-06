@@ -2,6 +2,7 @@
 
 import { Building2, Briefcase, GraduationCap, Stethoscope, Scale, Landmark, TrendingUp, ArrowUpRight, Sparkle, BadgeCheck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function UseCases() {
     const [isVisible, setIsVisible] = useState(false);
@@ -331,7 +332,8 @@ export default function UseCases() {
                             <p className="text-lg mb-6 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
                                 We've worked with organizations across dozens of sectors. Let's discuss how we can support your unique requirements.
                             </p>
-                            <button
+                            <Link
+                                href="/contact"
                                 className="group inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                                 style={{
                                     background: "linear-gradient(135deg, #f97316, #ea580c)",
@@ -339,7 +341,7 @@ export default function UseCases() {
                             >
                                 Discuss Your Project
                                 <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-                            </button>
+                            </Link>
                         </div>
 
                         {/* Decorative Elements */}

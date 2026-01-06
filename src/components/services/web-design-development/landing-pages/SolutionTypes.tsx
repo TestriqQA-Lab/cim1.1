@@ -153,7 +153,7 @@ export default function SolutionTypes() {
                 </div>
 
                 {/* Solutions Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                     {solutions.map((solution, idx) => {
                         const Icon = solution.icon;
                         const isHovered = hoveredIndex === idx;
@@ -315,7 +315,7 @@ export default function SolutionTypes() {
                                         </div>
 
                                         {/* CTA Button */}
-                                        <button
+                                        {/* <button
                                             className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${isHovered ? "gap-4" : "gap-2"
                                                 }`}
                                             style={{
@@ -326,7 +326,7 @@ export default function SolutionTypes() {
                                         >
                                             <span>Learn More</span>
                                             <ArrowRight className="w-4 h-4" />
-                                        </button>
+                                        </button> */}
                                     </div>
 
                                     {/* Bottom Shine Effect */}

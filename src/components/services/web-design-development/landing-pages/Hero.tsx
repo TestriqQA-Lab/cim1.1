@@ -73,7 +73,7 @@ export default function Hero() {
                     </span>
                 </nav>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-16 items-start">
                     {/* LEFT CONTENT */}
                     <div className="text-center lg:text-left">
                         {/* Badge */}
@@ -119,6 +119,28 @@ export default function Hero() {
                             Turn visitors into customers with lightning-fast, persuasive landing pages. We design for maximum conversion, speed, and ROI.
                         </p>
 
+                        {/* Feature Highlights */}
+                        <div className="flex flex-wrap gap-x-6 gap-y-3 mb-8 justify-center lg:justify-start">
+                            <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <div className="p-1.5 rounded-full bg-emerald-500/10">
+                                    <MousePointerClick className="w-3.5 h-3.5 text-emerald-500" />
+                                </div>
+                                High Conversions
+                            </div>
+                            <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <div className="p-1.5 rounded-full bg-blue-500/10">
+                                    <Zap className="w-3.5 h-3.5 text-blue-500" />
+                                </div>
+                                Instant Load
+                            </div>
+                            <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <div className="p-1.5 rounded-full bg-purple-500/10">
+                                    <Target className="w-3.5 h-3.5 text-purple-500" />
+                                </div>
+                                A/B Optimized
+                            </div>
+                        </div>
+
                         {/* Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <Link
@@ -132,17 +154,7 @@ export default function Hero() {
                                 Start Converting
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
-                            <Link
-                                href="#process"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold transition-all hover:bg-opacity-80"
-                                style={{
-                                    backgroundColor: "var(--card-bg)",
-                                    color: "var(--foreground)",
-                                    border: "1px solid var(--border-color)",
-                                }}
-                            >
-                                How We Work
-                            </Link>
+
                         </div>
 
                         {/* Stats */}
@@ -164,58 +176,64 @@ export default function Hero() {
 
                     {/* RIGHT CONTENT - VISUAL */}
                     <div className="relative hidden lg:block">
-                        <div className="relative z-10 animate-float">
+                        <div className="relative z-10 flex items-center justify-center">
                             <Image
                                 src="/images/services-images/web-design-development/landing-page.svg"
                                 alt="High-Conversion Landing Page"
                                 width={600}
                                 height={450}
-                                className="w-full h-auto drop-shadow-2xl"
-                                priority
+                                className="w-[80%] h-auto drop-shadow-2xl"
                             />
                         </div>
 
-                        {/* Related Content Section */}
-                        <div className="mt-10 pt-8 border-t border-dashed" style={{ borderColor: "var(--border-color)" }}>
-                            <p className="text-xs font-bold uppercase tracking-wider mb-4" style={{ color: "var(--secondary-text)" }}>
-                                Related Content
-                            </p>
-                            <div className="space-y-4">
-                                <Link
-                                    href="/services/web-design-development/web-applications-saas"
-                                    className="flex items-center gap-4 group p-3 rounded-xl transition-colors hover:bg-black/5 dark:hover:bg-white/5"
-                                >
-                                    <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-blue-100/50 dark:bg-blue-900/30 text-blue-600">
-                                        <Zap className="w-5 h-5" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-semibold text-sm group-hover:text-blue-600 transition-colors" style={{ color: "var(--foreground)" }}>
-                                            Web Applications & SaaS
-                                        </h4>
-                                        <p className="text-xs" style={{ color: "var(--secondary-text)" }}>
-                                            Scalable software solutions
-                                        </p>
-                                    </div>
-                                    <ChevronRight className="w-4 h-4 ml-auto opacity-0 group-hover:opacity-100 transition-opacity text-blue-600" />
-                                </Link>
+                        {/* Performance Metrics Card */}
+                        <div
+                            className="mt-8 p-6 rounded-2xl border backdrop-blur-md"
+                            style={{
+                                backgroundColor: "var(--card-bg)",
+                                borderColor: "var(--border-color)",
+                                boxShadow: "0 10px 30px -5px rgba(0,0,0,0.05)",
+                                maxWidth: "500px",
+                                marginInline: "auto"
+                            }}
+                        >
+                            <div className="flex items-center justify-between mb-4">
+                                <div className="flex items-center gap-2">
+                                    <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                                    <span className="text-xs font-bold uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
+                                        Real-Time Analysis
+                                    </span>
+                                </div>
+                                <div className="text-xs font-medium px-2 py-1 rounded-md bg-emerald-500/10 text-emerald-500">
+                                    Mobile Score
+                                </div>
+                            </div>
 
-                                <Link
-                                    href="/services/web-design-development/e-commerce-stores"
-                                    className="flex items-center gap-4 group p-3 rounded-xl transition-colors hover:bg-black/5 dark:hover:bg-white/5"
-                                >
-                                    <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-purple-100/50 dark:bg-purple-900/30 text-purple-600">
-                                        <TrendingUp className="w-5 h-5" />
+                            <div className="flex justify-between gap-2">
+                                {[
+                                    { label: "Performance", score: 100 },
+                                    { label: "Accessibility", score: 100 },
+                                    { label: "Best Practices", score: 100 },
+                                    { label: "SEO", score: 100 },
+                                ].map((metric, i) => (
+                                    <div key={i} className="text-center flex-1">
+                                        <div
+                                            className="w-12 h-12 rounded-full border-4 flex items-center justify-center mb-2 mx-auto"
+                                            style={{
+                                                borderColor: "#10b981",
+                                                borderRightColor: "transparent",
+                                                transform: "rotate(-45deg)"
+                                            }}
+                                        >
+                                            <span className="text-xs font-bold transform rotate-45" style={{ color: "var(--foreground)" }}>
+                                                {metric.score}
+                                            </span>
+                                        </div>
+                                        <div className="text-[10px] font-semibold leading-tight" style={{ color: "var(--secondary-text)" }}>
+                                            {metric.label}
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h4 className="font-semibold text-sm group-hover:text-purple-600 transition-colors" style={{ color: "var(--foreground)" }}>
-                                            E-commerce Stores
-                                        </h4>
-                                        <p className="text-xs" style={{ color: "var(--secondary-text)" }}>
-                                            High-performance online shops
-                                        </p>
-                                    </div>
-                                    <ChevronRight className="w-4 h-4 ml-auto opacity-0 group-hover:opacity-100 transition-opacity text-purple-600" />
-                                </Link>
+                                ))}
                             </div>
                         </div>
                     </div>

@@ -17,7 +17,7 @@ export default function WebsiteTypes() {
             title: "Business & Corporate",
             description: "Professional, authoritative sites designed to establish credibility and communicate brand value to stakeholders.",
             features: ["Brand authority", "Lead generation", "Professional design", "Trust building"],
-            color: "from-[#fab900] to-[#ee6500]",
+            color: "from-[#f97316] to-[#ea580c]",
             href: "/services/web-design-development/business-corporate",
         },
         {
@@ -33,7 +33,8 @@ export default function WebsiteTypes() {
             title: "Landing Pages",
             description: "Single-page sites hyper-focused on a specific campaign goal, designed for maximum conversion rates.",
             features: ["High conversion focus", "Campaign-specific", "Fast loading", "Clear CTA"],
-            color: "from-[#ee6500] to-[#fab900]",
+            color: "from-[#10b981] to-[#0ea5e9]",
+            href: "/services/web-design-development/landing-pages",
         },
         {
             icon: Zap,
@@ -57,7 +58,7 @@ export default function WebsiteTypes() {
             title: "E-commerce Stores",
             description: "High-converting online stores with secure payment gateways, inventory management, and seamless checkout flows.",
             features: ["Secure payments", "Inventory management", "Shopping cart", "Order tracking"],
-            color: "from-[#00efd6] to-[#00b5ca]",
+            color: "from-[#00b5ca] to-[#00efd6]",
             href: "/services/web-design-development/ecommerce-stores",
         },
         {

@@ -2,6 +2,7 @@
 
 import { Code2, Layers, Rocket, LayoutDashboard, CreditCard, Puzzle, Zap, TrendingUp, Star, ArrowRight, Sparkles, Clock } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [isVisible, setIsVisible] = useState(false);
@@ -314,7 +315,7 @@ export default function SolutionTypes() {
                                         </div>
 
                                         {/* CTA Button */}
-                                        <button
+                                        {/* <button
                                             className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${isHovered ? "gap-4" : "gap-2"
                                                 }`}
                                             style={{
@@ -325,7 +326,7 @@ export default function SolutionTypes() {
                                         >
                                             <span>Learn More</span>
                                             <ArrowRight className="w-4 h-4" />
-                                        </button>
+                                        </button> */}
                                     </div>
 
                                     {/* Bottom Shine Effect */}
@@ -394,7 +395,8 @@ export default function SolutionTypes() {
                                     Schedule a consultation to discuss your project requirements and get a tailored solution proposal.
                                 </p>
                             </div>
-                            <button
+                            <Link
+                                href="/contact"
                                 className="group flex items-center gap-3 px-8 py-5 rounded-2xl font-bold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl whitespace-nowrap"
                                 style={{
                                     background: "linear-gradient(135deg, #008ac1, #bc3feb)",
@@ -402,7 +404,7 @@ export default function SolutionTypes() {
                             >
                                 Start Your Project
                                 <ArrowRight className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-2" />
-                            </button>
+                            </Link>
                         </div>
 
                         {/* Corner Accents */}
