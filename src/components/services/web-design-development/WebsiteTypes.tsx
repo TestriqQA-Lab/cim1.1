@@ -68,14 +68,16 @@ export default function WebsiteTypes() {
             title: "Real Estate Platforms",
             description: "Property listing portals with advanced search, virtual tours, and agent management systems.",
             features: ["Map integration", "Virtual tours", "Advanced filters", "Lead management"],
-            color: "from-[#008ac1] to-[#00b5ca]",
+            color: "from-[#0d9488] to-[#14b8a6]",
+            href: "/services/web-design-development/real-estate-platforms",
         },
         {
             icon: Stethoscope,
             title: "Healthcare Portals",
             description: "HIPAA-compliant platforms for patient management, appointment booking, and telemedicine.",
             features: ["Appointment scheduling", "Patient records", "Telemedicine", "Secure messaging"],
-            color: "from-[#00b5ca] to-[#00efd6]",
+            color: "from-[#3b82f6] to-[#6366f1]",
+            href: "/services/web-design-development/healthcare-portals",
         },
         {
             icon: GraduationCap,
