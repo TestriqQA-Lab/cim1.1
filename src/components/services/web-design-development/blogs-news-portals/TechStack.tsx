@@ -44,7 +44,7 @@ export default function TechStack() {
                 { name: "Vercel", logo: "/images/techstack_logos/vercel-logo.webp" },
                 { name: "Netlify", logo: "/images/techstack_logos/netlify-logo.svg" },
                 { name: "Cloudflare", logo: "/images/techstack_logos/Cloudflare-logo.webp" },
-                { name: "AWS", logo: "/images/techstack_logos/amazonwebservices-logo.svg" },
+                { name: "AWS", logo: "/images/techstack_logos/aws-logo.png" },
             ],
         },
         {

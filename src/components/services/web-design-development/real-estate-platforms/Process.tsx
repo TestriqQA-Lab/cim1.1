@@ -3,7 +3,7 @@
 import {
     Search, Palette, Code, TestTube, Rocket, BarChart3,
     TrendingUp, Users, Map, Settings, FileText, Layout,
-    ShoppingCart, CreditCard, Package, Smartphone, Zap,
+    Building, MapPin, Home, Smartphone, Zap,
     Globe, Mail, Share2, Target, LineChart, CheckCircle2,
     ArrowRight
 } from "lucide-react";
@@ -18,86 +18,86 @@ export default function Process() {
         {
             number: "01",
             icon: Search,
-            title: "Commerce Strategy & Discovery",
-            description: "We analyze your products, target audience, competitive landscape, and revenue goals to define a commerce strategy that drives measurable results.",
+            title: "Market Research & Discovery",
+            description: "We analyze your target market, competitor platforms, and user expectations to define a real estate platform strategy that captures leads and drives conversions.",
             deliverables: [
                 { icon: TrendingUp, text: "Market analysis" },
-                { icon: Users, text: "Customer journey mapping" },
-                { icon: Target, text: "Conversion funnel design" },
-                { icon: Settings, text: "Tech stack selection" }
+                { icon: Users, text: "User persona mapping" },
+                { icon: Target, text: "Lead funnel design" },
+                { icon: Settings, text: "Feature prioritization" }
             ],
-            color: "#00b5ca",
-            gradient: "from-[#00b5ca] to-[#00efd6]",
+            color: "#0d9488",
+            gradient: "from-[#0d9488] to-[#14b8a6]",
         },
         {
             number: "02",
             icon: Palette,
-            title: "UX Design & Product Merchandising",
-            description: "Creating visually compelling product presentation with optimized category navigation, search functionality, and mobile-first checkout experiences.",
+            title: "UX Design & Property Presentation",
+            description: "Creating visually stunning property showcases with intuitive search, interactive maps, and mobile-first experiences that engage property seekers.",
             deliverables: [
-                { icon: FileText, text: "Product page wireframes" },
-                { icon: Layout, text: "Collection layouts" },
-                { icon: ShoppingCart, text: "Checkout flow design" },
+                { icon: FileText, text: "Listing page wireframes" },
+                { icon: Layout, text: "Search interface design" },
+                { icon: Map, text: "Interactive map UX" },
                 { icon: Smartphone, text: "Mobile optimization" }
             ],
-            color: "#bc3feb",
-            gradient: "from-[#bc3feb] to-[#fab900]",
+            color: "#14b8a6",
+            gradient: "from-[#14b8a6] to-[#2dd4bf]",
         },
         {
             number: "03",
             icon: Code,
             title: "Platform Development",
-            description: "Building your store on the optimal platform—Shopify, WooCommerce, or custom headless—with payment gateways, inventory systems, and shipping integrations.",
+            description: "Building your platform with MLS/IDX integration, advanced search functionality, virtual tour embedding, and CRM connections for seamless operations.",
             deliverables: [
-                { icon: Settings, text: "Platform setup" },
-                { icon: CreditCard, text: "Payment integration" },
-                { icon: Package, text: "Shipping configuration" },
-                { icon: Zap, text: "Inventory sync" }
+                { icon: Settings, text: "MLS integration" },
+                { icon: MapPin, text: "Map functionality" },
+                { icon: Home, text: "Virtual tour setup" },
+                { icon: Zap, text: "CRM connection" }
             ],
-            color: "#fab900",
-            gradient: "from-[#fab900] to-[#ee6500]",
+            color: "#0891b2",
+            gradient: "from-[#0891b2] to-[#0d9488]",
         },
         {
             number: "04",
             icon: TestTube,
             title: "Testing & Quality Assurance",
-            description: "Comprehensive testing of purchase flows, payment processing, edge cases, and load testing to ensure flawless performance under peak traffic.",
+            description: "Comprehensive testing of search algorithms, listing displays, lead capture forms, and performance across all devices and browsers.",
             deliverables: [
-                { icon: ShoppingCart, text: "Checkout testing" },
-                { icon: CheckCircle2, text: "Payment validation" },
-                { icon: TrendingUp, text: "Load testing" },
+                { icon: Search, text: "Search testing" },
+                { icon: CheckCircle2, text: "Lead form validation" },
+                { icon: TrendingUp, text: "Performance testing" },
                 { icon: Smartphone, text: "Cross-device QA" }
             ],
-            color: "#ee6500",
-            gradient: "from-[#ee6500] to-[#00efd6]",
+            color: "#2dd4bf",
+            gradient: "from-[#2dd4bf] to-[#0d9488]",
         },
         {
             number: "05",
             icon: Rocket,
             title: "Launch & Optimization",
-            description: "Coordinated launch with SEO configuration, analytics setup, and initial marketing integrations to capture early sales momentum.",
+            description: "Coordinated launch with SEO configuration, analytics setup, and initial marketing integrations to capture early leads and maximize visibility.",
             deliverables: [
-                { icon: Globe, text: "SEO setup" },
+                { icon: Globe, text: "Local SEO setup" },
                 { icon: LineChart, text: "Analytics config" },
-                { icon: Mail, text: "Email integration" },
-                { icon: Share2, text: "Social pixels" }
+                { icon: Mail, text: "Lead notifications" },
+                { icon: Share2, text: "Social integration" }
             ],
-            color: "#00efd6",
-            gradient: "from-[#00efd6] to-[#00b5ca]",
+            color: "#0d9488",
+            gradient: "from-[#0d9488] to-[#14b8a6]",
         },
         {
             number: "06",
             icon: BarChart3,
-            title: "Growth & Iteration",
-            description: "Ongoing optimization with A/B testing, conversion analysis, and feature enhancements based on real customer behavior data.",
+            title: "Growth & Analytics",
+            description: "Ongoing optimization with A/B testing, lead conversion analysis, and feature enhancements based on user behavior data.",
             deliverables: [
                 { icon: Target, text: "A/B testing" },
-                { icon: LineChart, text: "Conversion reports" },
+                { icon: LineChart, text: "Lead reports" },
                 { icon: Map, text: "Feature roadmap" },
                 { icon: TrendingUp, text: "Performance monitoring" }
             ],
-            color: "#008ac1",
-            gradient: "from-[#008ac1] to-[#bc3feb]",
+            color: "#14b8a6",
+            gradient: "from-[#14b8a6] to-[#0891b2]",
         },
     ];
 
@@ -111,8 +111,8 @@ export default function Process() {
         >
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-40 right-20 w-96 h-96 bg-[#00b5ca]/5 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-40 left-20 w-96 h-96 bg-[#bc3feb]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+                <div className="absolute top-40 right-20 w-96 h-96 bg-[#0d9488]/5 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-40 left-20 w-96 h-96 bg-[#14b8a6]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
             </div>
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
@@ -120,25 +120,25 @@ export default function Process() {
                 <div className="text-center mb-20">
                     <div className="inline-block mb-4">
                         <div className="flex items-center gap-2 px-4 py-2 rounded-full" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)", border: "1px solid" }}>
-                            <Rocket className="w-4 h-4" style={{ color: "#00b5ca" }} />
-                            <span className="text-sm font-semibold" style={{ color: "#00b5ca" }}>
+                            <Rocket className="w-4 h-4" style={{ color: "#0d9488" }} />
+                            <span className="text-sm font-semibold" style={{ color: "#0d9488" }}>
                                 Our Process
                             </span>
                         </div>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Our <span style={{ color: "#00b5ca" }}>E-commerce Development</span> Process
+                        Our <span style={{ color: "#0d9488" }}>Real Estate Development</span> Process
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        A conversion-focused methodology that prioritizes speed to market while building a foundation for long-term revenue growth.
+                        A lead-focused methodology that prioritizes property presentation while building a foundation for long-term growth.
                     </p>
 
                     <div
                         className="w-24 h-1.5 mx-auto rounded-full"
                         style={{
-                            background: "linear-gradient(90deg, #00b5ca, #00efd6)",
+                            background: "linear-gradient(90deg, #0d9488, #2dd4bf)",
                         }}
                     />
                 </div>
@@ -150,7 +150,7 @@ export default function Process() {
                         <div
                             className="absolute inset-0 rounded-full"
                             style={{
-                                background: "linear-gradient(180deg, #00b5ca, #bc3feb, #fab900, #ee6500, #00efd6, #008ac1)",
+                                background: "linear-gradient(180deg, #0d9488, #14b8a6, #0891b2, #2dd4bf, #0d9488, #14b8a6)",
                                 opacity: 0.2,
                             }}
                         />
@@ -158,7 +158,7 @@ export default function Process() {
                         <div
                             className="absolute inset-0 rounded-full transition-all duration-1000"
                             style={{
-                                background: "linear-gradient(180deg, #00b5ca, #bc3feb, #fab900, #ee6500, #00efd6, #008ac1)",
+                                background: "linear-gradient(180deg, #0d9488, #14b8a6, #0891b2, #2dd4bf, #0d9488, #14b8a6)",
                                 transform: `scaleY(${(activeStep + 1) / steps.length})`,
                                 transformOrigin: "top",
                             }}
@@ -370,16 +370,16 @@ export default function Process() {
                 <div className="text-center mt-20">
                     <div className="inline-block p-8 rounded-2xl border" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
                         <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "var(--foreground)" }}>
-                            Ready to Start Your E-commerce Journey?
+                            Ready to Launch Your Real Estate Platform?
                         </h3>
                         <p className="text-lg mb-6 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Let's discuss how our proven process can bring your online store to life.
+                            Let's discuss how our proven process can bring your property platform to life.
                         </p>
                         <Link
                             href="/contact"
                             className="px-8 py-4 rounded-full font-semibold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl inline-flex items-center gap-2 group"
                             style={{
-                                background: "linear-gradient(135deg, #00b5ca 0%, #00efd6 100%)",
+                                background: "linear-gradient(135deg, #0d9488 0%, #14b8a6 100%)",
                             }}
                         >
                             Schedule a Consultation

@@ -36,7 +36,7 @@ export default function TechStack() {
             category: "Cloud Infrastructure",
             icon: Cloud,
             items: [
-                { name: "AWS/GCP/Azure", description: "Cloud platforms", logos: ["/images/techstack_logos/amazonwebservices-logo.svg", "/images/techstack_logos/googlecloud-logo.svg", "/images/techstack_logos/azure-logo.svg"] },
+                { name: "AWS/GCP/Azure", description: "Cloud platforms", logos: ["/images/techstack_logos/aws-logo.png", "/images/techstack_logos/googlecloud-logo.svg", "/images/techstack_logos/azure-logo.svg"] },
                 { name: "Vercel/Netlify", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-logo.webp", "/images/techstack_logos/netlify-logo.svg"] },
                 { name: "Docker/Kubernetes", description: "Container orchestration", logos: ["/images/techstack_logos/docker-logo.svg", "/images/techstack_logos/kubernetes-logo.svg"] },
             ],
@@ -134,7 +134,7 @@ export default function TechStack() {
                                                     {item.logos.map((logo, lidx) => (
                                                         <div
                                                             key={lidx}
-                                                            className="p-1.5 rounded-lg transition-all duration-300 hover:scale-110"
+                                                            className="p-2 rounded-lg transition-all duration-300 hover:scale-110"
                                                             style={{
                                                                 backgroundColor: "var(--background)",
                                                                 border: "1px solid var(--border-color)",
@@ -143,8 +143,8 @@ export default function TechStack() {
                                                             <Image
                                                                 src={logo}
                                                                 alt={`${item.name} logo`}
-                                                                width={24}
-                                                                height={24}
+                                                                width={32}
+                                                                height={32}
                                                                 className="object-contain"
                                                             />
                                                         </div>

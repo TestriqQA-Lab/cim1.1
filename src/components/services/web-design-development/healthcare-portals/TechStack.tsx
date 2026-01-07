@@ -1,62 +1,62 @@
 "use client";
 
-import { Code2, BarChart, Zap, Globe, Puzzle, Share2 } from "lucide-react";
+import { Code2, Shield, Database, Cloud, Video, Activity } from "lucide-react";
 import Image from "next/image";
 
 export default function TechStack() {
     const technologies = [
         {
-            category: "Frontend & Performance",
+            category: "Frontend Frameworks",
             icon: Code2,
             items: [
-                { name: "Next.js / React", description: "Static generation for speed", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
-                { name: "Tailwind CSS", description: "Utility-first styling", logos: ["/images/techstack_logos/tailwindcss-logo.svg"] },
-                { name: "Framer Motion", description: "Smooth animations", logos: ["/images/techstack_logos/framer-motion-logo.svg"] },
+                { name: "React/Next.js", description: "Fast, accessible apps", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
+                { name: "React Native", description: "Mobile applications", logos: ["/images/techstack_logos/react-logo.svg"] },
             ],
         },
         {
-            category: "Analytics & Tracking",
-            icon: BarChart,
+            category: "Security & Compliance",
+            icon: Shield,
             items: [
-                { name: "Google Analytics 4", description: "Traffic analysis", logos: ["/images/organic_growth_and_seo/google-analytics-logo.webp"] },
-                { name: "Google Tag Manager", description: "Event tracking", logos: ["/images/techstack_logos/google-tag-manager-logo.svg"] },
-                { name: "Mixpanel / Segment", description: "User behavior", logos: ["/images/techstack_logos/mixpanel-logo.png", "/images/techstack_logos/Segment-logo.png"] },
+                { name: "Auth0", description: "Identity management", logos: ["/images/techstack_logos/auth0-logo.png"] },
+                { name: "AWS KMS", description: "Key management", logos: ["/images/techstack_logos/aws-logo.png"] },
+                { name: "Clerk", description: "User authentication", logos: ["/images/techstack_logos/clerk-logo.png"] },
             ],
         },
         {
-            category: "AB Testing & Heatmaps",
-            icon: Zap,
+            category: "Telehealth",
+            icon: Video,
             items: [
-                { name: "VWO / Optimizely", description: "Split testing", logos: ["/images/techstack_logos/vwo-logo.svg", "/images/techstack_logos/Optimizely-logo.webp"] },
-                { name: "Hotjar / Microsoft Clarity", description: "Heatmaps & recordings", logos: ["/images/techstack_logos/Hotjar-logo.png", "/images/techstack_logos/Microsoft-Clarity-logo.png"] },
-                { name: "Google Optimize", description: "Personalization", logos: ["/images/techstack_logos/google-optimize-logo.svg"] },
+                { name: "Twilio", description: "Video & messaging", logos: ["/images/techstack_logos/twilio-icon.webp"] },
+                { name: "Daily.co", description: "Video conferencing", logos: ["/images/techstack_logos/dailyco-logo.png"] },
+                { name: "Vonage", description: "Communications API", logos: ["/images/techstack_logos/Vonage-Logo.webp"] },
             ],
         },
         {
-            category: "Hosting & CDN",
-            icon: Globe,
+            category: "Data & Integration",
+            icon: Database,
             items: [
-                { name: "Vercel / Netlify", description: "Global edge network", logos: ["/images/techstack_logos/vercel-logo.webp", "/images/techstack_logos/netlify-logo.svg"] },
-                { name: "Cloudflare", description: "Security & caching", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
-                { name: "AWS CloudFront", description: "Content delivery", logos: ["/images/techstack_logos/aws-logo.png"] },
+                { name: "HL7 FHIR", description: "Healthcare standards", logos: [] },
+                { name: "PostgreSQL", description: "Secure database", logos: ["/images/techstack_logos/postgresql-logo.svg"] },
+                { name: "Redis", description: "Caching layer", logos: ["/images/techstack_logos/redis-logo.svg"] },
             ],
         },
         {
-            category: "CRM & Email",
-            icon: Share2,
+            category: "Analytics",
+            icon: Activity,
             items: [
-                { name: "HubSpot / Salesforce", description: "Lead management", logos: ["/images/ai_automation_logos/hubspot-logo.png", "/images/ai_automation_logos/salesforce-logo.png"] },
-                { name: "Mailchimp / Klaviyo", description: "Email automation", logos: ["/images/ai_automation_logos/mailchimp-logo.svg", "/images/techstack_logos/Klaviyo-logo.png"] },
-                { name: "Zapier / Make", description: "Workflow automation", logos: ["/images/ai_automation_logos/zapier-logo.svg", "/images/ai_automation_logos/make-logo.png"] },
+                { name: "Mixpanel", description: "Product analytics", logos: ["/images/techstack_logos/mixpanel-logo.png"] },
+                { name: "Segment", description: "Data pipeline", logos: ["/images/techstack_logos/Segment-logo.png"] },
+                { name: "Datadog", description: "Monitoring", logos: ["/images/techstack_logos/datadog-logo.webp"] },
             ],
         },
         {
-            category: "CMS (Optional)",
-            icon: Puzzle,
+            category: "Cloud Infrastructure",
+            icon: Cloud,
             items: [
-                { name: "Sanity / Contentful", description: "Headless CMS", logos: ["/images/techstack_logos/Sanity-square-logo.png", "/images/techstack_logos/Contentful-logo.webp"] },
-                { name: "Strapi", description: "Custom content structures", logos: ["/images/techstack_logos/Strapi-logo.png"] },
-                { name: "WordPress (Headless)", description: "Familiar backend", logos: ["/images/techstack_logos/wordpress-logo.svg"] },
+                { name: "AWS", description: "HIPAA-eligible cloud", logos: ["/images/techstack_logos/aws-logo.png"] },
+                { name: "Azure", description: "Healthcare cloud", logos: ["/images/techstack_logos/azure-logo.svg"] },
+                { name: "Google Cloud", description: "Healthcare API", logos: ["/images/techstack_logos/googlecloud-logo.svg"] },
             ],
         },
     ];
@@ -70,18 +70,14 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "#10b981" }}>Conversion</span> Tech Stack
+                        <span style={{ color: "#3b82f6" }}>Healthcare</span> Tech Stack
                     </h2>
-
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We use a performance-first stack designed to load instantly and integrate seamlessly with your marketing tools.
+                        HIPAA-compliant technologies for secure, scalable healthcare solutions.
                     </p>
-
                     <div
                         className="w-24 h-1.5 mx-auto rounded-full"
-                        style={{
-                            background: "linear-gradient(90deg, #10b981, #0ea5e9)",
-                        }}
+                        style={{ background: "linear-gradient(90deg, #3b82f6, #6366f1)" }}
                     />
                 </div>
 
@@ -101,9 +97,7 @@ export default function TechStack() {
                                 <div className="flex items-center gap-3 mb-6">
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
-                                        style={{
-                                            background: "linear-gradient(135deg, #10b981, #0ea5e9)",
-                                        }}
+                                        style={{ background: "linear-gradient(135deg, #3b82f6, #6366f1)" }}
                                     >
                                         <Icon className="w-6 h-6 text-white" />
                                     </div>
@@ -118,7 +112,7 @@ export default function TechStack() {
                                             <div className="flex items-start gap-3 flex-1 min-w-0">
                                                 <div
                                                     className="w-2 h-2 rounded-full flex-shrink-0 mt-2"
-                                                    style={{ backgroundColor: "#10b981" }}
+                                                    style={{ backgroundColor: "#3b82f6" }}
                                                 />
                                                 <div className="min-w-0">
                                                     <p className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>

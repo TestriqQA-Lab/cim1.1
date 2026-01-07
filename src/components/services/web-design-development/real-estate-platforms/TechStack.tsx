@@ -1,62 +1,62 @@
 "use client";
 
-import { Code2, BarChart, Zap, Globe, Puzzle, Share2 } from "lucide-react";
+import { Code2, Map, Eye, Users, Database, Cloud } from "lucide-react";
 import Image from "next/image";
 
 export default function TechStack() {
     const technologies = [
         {
-            category: "Frontend & Performance",
+            category: "Frontend Frameworks",
             icon: Code2,
             items: [
-                { name: "Next.js / React", description: "Static generation for speed", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
-                { name: "Tailwind CSS", description: "Utility-first styling", logos: ["/images/techstack_logos/tailwindcss-logo.svg"] },
-                { name: "Framer Motion", description: "Smooth animations", logos: ["/images/techstack_logos/framer-motion-logo.svg"] },
+                { name: "React/Next.js", description: "Fast, SEO-friendly apps", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: "Vue.js/Nuxt", description: "Progressive web apps", logos: ["/images/techstack_logos/vuejs-logo.svg", "/images/techstack_logos/nuxt-logo.png"] },
+                { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
             ],
         },
         {
-            category: "Analytics & Tracking",
-            icon: BarChart,
+            category: "Maps & Location",
+            icon: Map,
             items: [
-                { name: "Google Analytics 4", description: "Traffic analysis", logos: ["/images/organic_growth_and_seo/google-analytics-logo.webp"] },
-                { name: "Google Tag Manager", description: "Event tracking", logos: ["/images/techstack_logos/google-tag-manager-logo.svg"] },
-                { name: "Mixpanel / Segment", description: "User behavior", logos: ["/images/techstack_logos/mixpanel-logo.png", "/images/techstack_logos/Segment-logo.png"] },
+                { name: "Google Maps API", description: "Property mapping", logos: ["/images/techstack_logos/googlecloud-logo.svg"] },
+                { name: "Mapbox", description: "Custom map styling", logos: ["/images/techstack_logos/mapbox-logo.webp"] },
+                { name: "OpenStreetMap", description: "Open-source maps", logos: ["/images/techstack_logos/Openstreetmap-logo.png"] },
             ],
         },
         {
-            category: "AB Testing & Heatmaps",
-            icon: Zap,
+            category: "Virtual Tours",
+            icon: Eye,
             items: [
-                { name: "VWO / Optimizely", description: "Split testing", logos: ["/images/techstack_logos/vwo-logo.svg", "/images/techstack_logos/Optimizely-logo.webp"] },
-                { name: "Hotjar / Microsoft Clarity", description: "Heatmaps & recordings", logos: ["/images/techstack_logos/Hotjar-logo.png", "/images/techstack_logos/Microsoft-Clarity-logo.png"] },
-                { name: "Google Optimize", description: "Personalization", logos: ["/images/techstack_logos/google-optimize-logo.svg"] },
+                { name: "Matterport", description: "3D property scans", logos: ["/images/techstack_logos/Matterport-logo.png"] },
+                { name: "3D Vista", description: "Virtual tour creation", logos: ["/images/techstack_logos/3D-Vista-logo.webp"] },
+                { name: "Cloudpano", description: "360° experiences", logos: ["/images/techstack_logos/Cloudpano-logo.png"] },
             ],
         },
         {
-            category: "Hosting & CDN",
-            icon: Globe,
+            category: "CRM Integration",
+            icon: Users,
             items: [
-                { name: "Vercel / Netlify", description: "Global edge network", logos: ["/images/techstack_logos/vercel-logo.webp", "/images/techstack_logos/netlify-logo.svg"] },
-                { name: "Cloudflare", description: "Security & caching", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
-                { name: "AWS CloudFront", description: "Content delivery", logos: ["/images/techstack_logos/aws-logo.png"] },
+                { name: "Salesforce", description: "Enterprise CRM", logos: ["/images/ai_automation_logos/salesforce-logo.png"] },
+                { name: "HubSpot", description: "Marketing automation", logos: ["/images/ai_automation_logos/hubspot-logo.png"] },
+                { name: "Follow Up Boss", description: "Real estate CRM", logos: ["/images/techstack_logos/Follow-Up-Boss-logo.png"] },
             ],
         },
         {
-            category: "CRM & Email",
-            icon: Share2,
+            category: "MLS & Data",
+            icon: Database,
             items: [
-                { name: "HubSpot / Salesforce", description: "Lead management", logos: ["/images/ai_automation_logos/hubspot-logo.png", "/images/ai_automation_logos/salesforce-logo.png"] },
-                { name: "Mailchimp / Klaviyo", description: "Email automation", logos: ["/images/ai_automation_logos/mailchimp-logo.svg", "/images/techstack_logos/Klaviyo-logo.png"] },
-                { name: "Zapier / Make", description: "Workflow automation", logos: ["/images/ai_automation_logos/zapier-logo.svg", "/images/ai_automation_logos/make-logo.png"] },
+                { name: "RETS/RESO", description: "MLS data standards", logos: ["/images/techstack_logos/RESO-logo.png"] },
+                { name: "IDX Integration", description: "Listing syndication", logos: [] },
+                { name: "Zillow API", description: "Property estimates", logos: ["/images/techstack_logos/Zillow-API-logo.png"] },
             ],
         },
         {
-            category: "CMS (Optional)",
-            icon: Puzzle,
+            category: "Cloud & Hosting",
+            icon: Cloud,
             items: [
-                { name: "Sanity / Contentful", description: "Headless CMS", logos: ["/images/techstack_logos/Sanity-square-logo.png", "/images/techstack_logos/Contentful-logo.webp"] },
-                { name: "Strapi", description: "Custom content structures", logos: ["/images/techstack_logos/Strapi-logo.png"] },
-                { name: "WordPress (Headless)", description: "Familiar backend", logos: ["/images/techstack_logos/wordpress-logo.svg"] },
+                { name: "AWS", description: "Scalable infrastructure", logos: ["/images/techstack_logos/aws-logo.png"] },
+                { name: "Vercel", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-logo.webp"] },
+                { name: "Cloudflare", description: "Global CDN", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
             ],
         },
     ];
@@ -70,17 +70,17 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "#10b981" }}>Conversion</span> Tech Stack
+                        <span style={{ color: "#0d9488" }}>Real Estate</span> Tech Stack
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We use a performance-first stack designed to load instantly and integrate seamlessly with your marketing tools.
+                        We leverage industry-leading technologies to build powerful, scalable real estate platforms.
                     </p>
 
                     <div
                         className="w-24 h-1.5 mx-auto rounded-full"
                         style={{
-                            background: "linear-gradient(90deg, #10b981, #0ea5e9)",
+                            background: "linear-gradient(90deg, #0d9488, #2dd4bf)",
                         }}
                     />
                 </div>
@@ -102,7 +102,7 @@ export default function TechStack() {
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
                                         style={{
-                                            background: "linear-gradient(135deg, #10b981, #0ea5e9)",
+                                            background: "linear-gradient(135deg, #0d9488, #14b8a6)",
                                         }}
                                     >
                                         <Icon className="w-6 h-6 text-white" />
@@ -118,7 +118,7 @@ export default function TechStack() {
                                             <div className="flex items-start gap-3 flex-1 min-w-0">
                                                 <div
                                                     className="w-2 h-2 rounded-full flex-shrink-0 mt-2"
-                                                    style={{ backgroundColor: "#10b981" }}
+                                                    style={{ backgroundColor: "#0d9488" }}
                                                 />
                                                 <div className="min-w-0">
                                                     <p className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>

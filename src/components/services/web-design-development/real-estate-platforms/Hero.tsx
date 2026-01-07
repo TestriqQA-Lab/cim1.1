@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, ArrowRight, Home, ChevronRight, ShoppingCart, TrendingUp, CreditCard, Package, BarChart3, Shield } from "lucide-react";
+import { Sparkles, ArrowRight, Home, ChevronRight, Building, MapPin, Search, Users, Shield, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,13 +15,13 @@ export default function Hero() {
                 <div
                     className="absolute top-0 left-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
                     style={{
-                        backgroundColor: "color-mix(in srgb, #00b5ca 12%, transparent)",
+                        backgroundColor: "color-mix(in srgb, #0d9488 12%, transparent)",
                     }}
                 />
                 <div
                     className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
                     style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-cyan) 12%, transparent)",
+                        backgroundColor: "color-mix(in srgb, #14b8a6 12%, transparent)",
                         animationDelay: "1s",
                     }}
                 />
@@ -60,9 +60,9 @@ export default function Hero() {
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
                     <span
                         className="font-semibold p-2"
-                        style={{ color: "#00b5ca" }}
+                        style={{ color: "#0d9488" }}
                     >
-                        E-commerce Stores
+                        Real Estate Platforms
                     </span>
                 </nav>
 
@@ -74,13 +74,13 @@ export default function Hero() {
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border transition-colors"
                             style={{
                                 background:
-                                    "linear-gradient(90deg, color-mix(in srgb, #00b5ca 8%, transparent), color-mix(in srgb, #00efd6 8%, transparent))",
-                                borderColor: "color-mix(in srgb, #00b5ca 20%, transparent)",
-                                color: "#00b5ca",
+                                    "linear-gradient(90deg, color-mix(in srgb, #0d9488 8%, transparent), color-mix(in srgb, #14b8a6 8%, transparent))",
+                                borderColor: "color-mix(in srgb, #0d9488 20%, transparent)",
+                                color: "#0d9488",
                             }}
                         >
-                            <ShoppingCart className="w-4 h-4" style={{ color: "#00b5ca" }} />
-                            <span className="text-sm font-semibold">E-commerce Store Development</span>
+                            <Building className="w-4 h-4" style={{ color: "#0d9488" }} />
+                            <span className="text-sm font-semibold">Real Estate Platform Development</span>
                         </div>
 
                         {/* Heading */}
@@ -88,12 +88,12 @@ export default function Hero() {
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
-                                    background: "#00b5ca",
+                                    background: "linear-gradient(135deg, #0d9488, #14b8a6)",
                                     WebkitBackgroundClip: "text",
                                     color: "transparent",
                                 }}
                             >
-                                Turn Browsers Into Buyers
+                                Transform Your Real Estate Business
                             </span>
                         </h1>
 
@@ -101,75 +101,75 @@ export default function Hero() {
                         <div
                             className="w-32 h-1.5 mb-8 rounded-full lg:mx-0 mx-auto"
                             style={{
-                                background: "linear-gradient(90deg, #00b5ca, #00efd6)",
+                                background: "linear-gradient(90deg, #0d9488, #2dd4bf)",
                             }}
                         />
 
                         {/* Tagline */}
                         <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            Build a <span style={{ color: "#00b5ca", fontWeight: 700 }}>high-converting online store</span> engineered for revenue growth, seamless checkout experiences, and scalable commerce operations.
+                            Build a <span style={{ color: "#0d9488", fontWeight: 700 }}>powerful property platform</span> that captures leads, showcases listings beautifully, and streamlines your real estate operations.
                         </p>
 
                         {/* Feature Highlights */}
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
-                                    backgroundColor: "color-mix(in srgb, #00b5ca 8%, transparent)",
+                                    backgroundColor: "color-mix(in srgb, #0d9488 8%, transparent)",
                                 }}
                             >
-                                <TrendingUp className="w-5 h-5 flex-shrink-0" style={{ color: "#00b5ca" }} />
+                                <MapPin className="w-5 h-5 flex-shrink-0" style={{ color: "#0d9488" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Revenue Growth
+                                    Property Listings
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
-                                    backgroundColor: "color-mix(in srgb, #00b5ca 8%, transparent)",
+                                    backgroundColor: "color-mix(in srgb, #0d9488 8%, transparent)",
                                 }}
                             >
-                                <CreditCard className="w-5 h-5 flex-shrink-0" style={{ color: "#00b5ca" }} />
+                                <Search className="w-5 h-5 flex-shrink-0" style={{ color: "#0d9488" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Secure Payments
+                                    Advanced Search
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
-                                    backgroundColor: "color-mix(in srgb, #00b5ca 8%, transparent)",
+                                    backgroundColor: "color-mix(in srgb, #0d9488 8%, transparent)",
                                 }}
                             >
-                                <Package className="w-5 h-5 flex-shrink-0" style={{ color: "#00b5ca" }} />
+                                <Users className="w-5 h-5 flex-shrink-0" style={{ color: "#0d9488" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Inventory Sync
+                                    Lead Management
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
-                                    backgroundColor: "color-mix(in srgb, #00b5ca 8%, transparent)",
+                                    backgroundColor: "color-mix(in srgb, #0d9488 8%, transparent)",
                                 }}
                             >
-                                <BarChart3 className="w-5 h-5 flex-shrink-0" style={{ color: "#00b5ca" }} />
+                                <Shield className="w-5 h-5 flex-shrink-0" style={{ color: "#0d9488" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Sales Analytics
+                                    MLS Integration
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
-                                    backgroundColor: "color-mix(in srgb, #00b5ca 8%, transparent)",
+                                    backgroundColor: "color-mix(in srgb, #0d9488 8%, transparent)",
                                 }}
                             >
-                                <Shield className="w-5 h-5 flex-shrink-0" style={{ color: "#00b5ca" }} />
+                                <BarChart3 className="w-5 h-5 flex-shrink-0" style={{ color: "#0d9488" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    PCI Compliant
+                                    Agent Portals
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
-                                    backgroundColor: "color-mix(in srgb, #00b5ca 8%, transparent)",
+                                    backgroundColor: "color-mix(in srgb, #0d9488 8%, transparent)",
                                 }}
                             >
-                                <Sparkles className="w-5 h-5 flex-shrink-0" style={{ color: "#00b5ca" }} />
+                                <Sparkles className="w-5 h-5 flex-shrink-0" style={{ color: "#0d9488" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    CRO Optimized
+                                    Virtual Tours
                                 </span>
                             </div>
                         </div>
@@ -184,43 +184,43 @@ export default function Hero() {
                             <div className="text-center">
                                 <div className="text-xl md:text-4xl font-bold mb-1"
                                     style={{
-                                        background: "linear-gradient(90deg, #00efd6, #00b5ca)",
+                                        background: "linear-gradient(90deg, #2dd4bf, #0d9488)",
                                         WebkitBackgroundClip: "text",
                                         color: "transparent",
                                     }}
                                 >
-                                    $50M+
+                                    500K+
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Revenue Generated
+                                    Properties Listed
                                 </div>
                             </div>
                             <div className="text-center">
                                 <div className="text-xl md:text-4xl font-bold mb-1"
                                     style={{
-                                        background: "linear-gradient(90deg, #00efd6, #00b5ca)",
+                                        background: "linear-gradient(90deg, #2dd4bf, #0d9488)",
                                         WebkitBackgroundClip: "text",
                                         color: "transparent",
                                     }}
                                 >
-                                    35%
+                                    2,500+
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Avg. Conversion Lift
+                                    Agents Served
                                 </div>
                             </div>
                             <div className="text-center">
                                 <div className="text-xl md:text-4xl font-bold mb-1"
                                     style={{
-                                        background: "linear-gradient(90deg, #00efd6, #00b5ca)",
+                                        background: "linear-gradient(90deg, #2dd4bf, #0d9488)",
                                         WebkitBackgroundClip: "text",
                                         color: "transparent",
                                     }}
                                 >
-                                    150+
+                                    10M+
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Stores Launched
+                                    Leads Generated
                                 </div>
                             </div>
                         </div>
@@ -229,9 +229,12 @@ export default function Hero() {
                         <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                                className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                                style={{
+                                    background: "linear-gradient(135deg, #0d9488, #14b8a6)",
+                                }}
                             >
-                                Launch Your E-commerce Store
+                                Launch Your Real Estate Platform
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
@@ -242,7 +245,7 @@ export default function Hero() {
                                     color: "var(--foreground)",
                                 }}
                             >
-                                Get a Free Audit
+                                Get a Free Consultation
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
@@ -254,12 +257,12 @@ export default function Hero() {
                             className="absolute inset-0 rounded-3xl blur-2xl"
                             style={{
                                 background:
-                                    "linear-gradient(135deg, color-mix(in srgb, #00b5ca 15%, transparent), color-mix(in srgb, #00efd6 15%, transparent))",
+                                    "linear-gradient(135deg, color-mix(in srgb, #0d9488 15%, transparent), color-mix(in srgb, #14b8a6 15%, transparent))",
                             }}
                         />
                         <Image
-                            src="/images/services-images/web-design-development/ecommerce-stores.svg"
-                            alt="E-commerce Store Development"
+                            src="/images/services-images/web-design-development/real-estate-platforms.svg"
+                            alt="Real Estate Platform Development"
                             width={500}
                             height={400}
                             className="relative w-[90%] h-[90%] z-10 rounded-2xl"
@@ -267,40 +270,40 @@ export default function Hero() {
                         />
 
                         {/* Info Section Below Image */}
-                        <div className="mt-12 flex gap-4 justify-center w-full z-10 relative">
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
-                                <ShoppingCart className="w-4 h-4" style={{ color: "#00b5ca" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Shopify</span>
+                        <div className="flex gap-4 justify-center w-full z-10 relative">
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(13, 148, 136, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                                <MapPin className="w-4 h-4" style={{ color: "#0d9488" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>MLS Ready</span>
                             </div>
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
-                                <Package className="w-4 h-4" style={{ color: "#00b5ca" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>WooCommerce</span>
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(13, 148, 136, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                                <Building className="w-4 h-4" style={{ color: "#0d9488" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>IDX Certified</span>
                             </div>
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
-                                <CreditCard className="w-4 h-4" style={{ color: "#00b5ca" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Stripe Ready</span>
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(13, 148, 136, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                                <Shield className="w-4 h-4" style={{ color: "#0d9488" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>RESO Compliant</span>
                             </div>
                         </div>
 
                         {/* Performance Metrics Section */}
                         <div className="mt-8 text-center w-full z-10 relative">
-                            <p className="text-xs font-bold uppercase tracking-wider mb-4 opacity-70" style={{ color: "var(--foreground)" }}>E-commerce Performance</p>
+                            <p className="text-xs font-bold uppercase tracking-wider mb-4 opacity-70" style={{ color: "var(--foreground)" }}>Platform Performance</p>
                             <div className="flex flex-wrap justify-center gap-4">
-                                <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(0, 181, 202, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>-45%</span>
-                                    <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Cart Abandonment</span>
+                                <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(13, 148, 136, 0.1)" }}>
+                                    <span className="text-xl font-bold" style={{ color: "#0d9488" }}>+85%</span>
+                                    <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Lead Capture</span>
                                 </div>
-                                <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(0, 181, 202, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>&lt;2s</span>
-                                    <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Page Load</span>
+                                <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(13, 148, 136, 0.1)" }}>
+                                    <span className="text-xl font-bold" style={{ color: "#0d9488" }}>&lt;1s</span>
+                                    <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Search Speed</span>
                                 </div>
-                                <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(0, 181, 202, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>+68%</span>
-                                    <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Mobile Conversion</span>
+                                <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(13, 148, 136, 0.1)" }}>
+                                    <span className="text-xl font-bold" style={{ color: "#0d9488" }}>+120%</span>
+                                    <span className="text-xs" style={{ color: "var(--secondary-text)" }}>User Engagement</span>
                                 </div>
-                                <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(0, 181, 202, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>85%</span>
-                                    <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Customer Retention</span>
+                                <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(13, 148, 136, 0.1)" }}>
+                                    <span className="text-xl font-bold" style={{ color: "#0d9488" }}>99.9%</span>
+                                    <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Uptime</span>
                                 </div>
                             </div>
                         </div>

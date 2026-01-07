@@ -1,6 +1,6 @@
 "use client";
 
-import { ShoppingBag, Store, Building2, RefreshCw, Layers, Check, TrendingUp, Users, ShoppingCart, Package, CreditCard, Zap } from "lucide-react";
+import { Building2, Home, Store, Settings, Eye, Map, Users, Search, TrendingUp, Shield, Zap, Key } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -9,69 +9,69 @@ export default function SolutionTypes() {
 
     const solutions = [
         {
-            icon: ShoppingBag,
-            title: "B2C Online Stores",
-            description: "Direct-to-consumer retail experiences with stunning product presentation, seamless checkout, and post-purchase engagement automation.",
+            icon: Building2,
+            title: "Property Listing Portals",
+            description: "Feature-rich property listing websites with advanced search, filtering, and MLS/IDX integration for real-time listing updates.",
             features: [
-                { icon: Package, text: "Product galleries" },
-                { icon: ShoppingCart, text: "Wishlist & favorites" },
-                { icon: TrendingUp, text: "Reviews & ratings" },
-                { icon: Users, text: "Social sharing" }
+                { icon: Search, text: "Advanced property search" },
+                { icon: Map, text: "Interactive map views" },
+                { icon: Shield, text: "MLS/IDX integration" },
+                { icon: TrendingUp, text: "Market analytics" }
             ],
-            color: "from-[#008ac1] to-[#00b5ca]",
-            gradient: "linear-gradient(135deg, #008ac1 0%, #00b5ca 100%)",
+            color: "from-[#0d9488] to-[#14b8a6]",
+            gradient: "linear-gradient(135deg, #0d9488 0%, #14b8a6 100%)",
         },
         {
-            icon: Building2,
-            title: "B2B E-commerce Platforms",
-            description: "Wholesale and trade portals with tiered pricing, quote systems, bulk ordering, and account management for business buyers.",
+            icon: Users,
+            title: "Broker & Agent Platforms",
+            description: "Multi-agent management systems with individual agent profiles, commission tracking, and performance dashboards.",
             features: [
-                { icon: CreditCard, text: "Custom pricing tiers" },
-                { icon: Package, text: "Quote requests" },
-                { icon: Layers, text: "Bulk order tools" },
-                { icon: Users, text: "Account hierarchies" }
+                { icon: Users, text: "Agent profiles" },
+                { icon: TrendingUp, text: "Commission tracking" },
+                { icon: Settings, text: "Lead distribution" },
+                { icon: Shield, text: "Role-based access" }
             ],
-            color: "from-[#bc3feb] to-[#fab900]",
-            gradient: "linear-gradient(135deg, #bc3feb 0%, #fab900 100%)",
+            color: "from-[#14b8a6] to-[#2dd4bf]",
+            gradient: "linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%)",
         },
         {
             icon: Store,
-            title: "Marketplace Solutions",
-            description: "Multi-vendor platforms connecting buyers with multiple sellers, featuring vendor dashboards, commission management, and unified checkout.",
+            title: "Real Estate Marketplaces",
+            description: "Multi-vendor platforms connecting buyers, sellers, agents, and developers with listing management and transaction tools.",
             features: [
-                { icon: Users, text: "Vendor onboarding" },
-                { icon: CreditCard, text: "Split payments" },
-                { icon: TrendingUp, text: "Seller analytics" },
-                { icon: Check, text: "Dispute resolution" }
+                { icon: Store, text: "Multi-vendor support" },
+                { icon: Key, text: "Listing management" },
+                { icon: Users, text: "Buyer/seller matching" },
+                { icon: Shield, text: "Secure transactions" }
             ],
-            color: "from-[#fab900] to-[#ee6500]",
-            gradient: "linear-gradient(135deg, #fab900 0%, #ee6500 100%)",
+            color: "from-[#0891b2] to-[#0d9488]",
+            gradient: "linear-gradient(135deg, #0891b2 0%, #0d9488 100%)",
         },
         {
-            icon: RefreshCw,
-            title: "Subscription Commerce",
-            description: "Recurring revenue models with flexible billing cycles, subscriber portals, and churn reduction tools for subscription-based products.",
+            icon: Home,
+            title: "Property Management Systems",
+            description: "Comprehensive systems for property managers with tenant portals, lease tracking, maintenance requests, and accounting.",
             features: [
-                { icon: RefreshCw, text: "Recurring billing" },
-                { icon: Package, text: "Skip/pause options" },
-                { icon: Users, text: "Subscriber portal" },
-                { icon: Zap, text: "Renewal reminders" }
+                { icon: Users, text: "Tenant portals" },
+                { icon: Settings, text: "Lease management" },
+                { icon: Zap, text: "Maintenance tracking" },
+                { icon: TrendingUp, text: "Financial reporting" }
             ],
-            color: "from-[#00efd6] to-[#00b5ca]",
-            gradient: "linear-gradient(135deg, #00efd6 0%, #00b5ca 100%)",
+            color: "from-[#2dd4bf] to-[#0d9488]",
+            gradient: "linear-gradient(135deg, #2dd4bf 0%, #0d9488 100%)",
         },
         {
-            icon: Layers,
-            title: "Headless Commerce",
-            description: "API-first architectures separating frontend presentation from commerce backend, enabling omnichannel experiences and maximum flexibility.",
+            icon: Eye,
+            title: "Virtual Tours & 3D Showcase",
+            description: "Immersive property experiences with 360° virtual tours, 3D walkthroughs, and interactive floor plans.",
             features: [
-                { icon: Zap, text: "API-first design" },
-                { icon: Layers, text: "Custom frontends" },
-                { icon: ShoppingCart, text: "Omnichannel ready" },
-                { icon: TrendingUp, text: "Future-proof stack" }
+                { icon: Eye, text: "360° virtual tours" },
+                { icon: Map, text: "Interactive floor plans" },
+                { icon: Zap, text: "Matterport integration" },
+                { icon: TrendingUp, text: "Engagement analytics" }
             ],
-            color: "from-[#008ac1] to-[#bc3feb]",
-            gradient: "linear-gradient(135deg, #008ac1 0%, #bc3feb 100%)",
+            color: "from-[#0d9488] to-[#0891b2]",
+            gradient: "linear-gradient(135deg, #0d9488 0%, #0891b2 100%)",
         },
     ];
 
@@ -82,8 +82,8 @@ export default function SolutionTypes() {
         >
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-20 left-10 w-72 h-72 bg-[#00b5ca]/5 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#bc3feb]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+                <div className="absolute top-20 left-10 w-72 h-72 bg-[#0d9488]/5 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#14b8a6]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
             </div>
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
@@ -91,25 +91,25 @@ export default function SolutionTypes() {
                 <div className="text-center mb-16">
                     <div className="inline-block mb-4">
                         <div className="flex items-center gap-2 px-4 py-2 rounded-full" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)", border: "1px solid" }}>
-                            <Zap className="w-4 h-4" style={{ color: "#00b5ca" }} />
-                            <span className="text-sm font-semibold" style={{ color: "#00b5ca" }}>
+                            <Zap className="w-4 h-4" style={{ color: "#0d9488" }} />
+                            <span className="text-sm font-semibold" style={{ color: "#0d9488" }}>
                                 Our Solutions
                             </span>
                         </div>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "#00b5ca" }}>E-commerce Solutions</span> We Build
+                        <span style={{ color: "#0d9488" }}>Real Estate Solutions</span> We Build
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        From single-brand D2C stores to complex multi-vendor marketplaces, we build commerce platforms tailored to your business model.
+                        From property listing portals to comprehensive brokerage platforms, we build solutions tailored to every segment of the real estate industry.
                     </p>
 
                     <div
                         className="w-24 h-1.5 mx-auto rounded-full"
                         style={{
-                            background: "linear-gradient(90deg, #00b5ca, #00efd6)",
+                            background: "linear-gradient(90deg, #0d9488, #2dd4bf)",
                         }}
                     />
                 </div>
@@ -128,7 +128,7 @@ export default function SolutionTypes() {
                                     backgroundColor: "var(--card-bg)",
                                     borderColor: isHovered ? "transparent" : "var(--border-color)",
                                     transform: isHovered ? "translateY(-12px) scale(1.02)" : "translateY(0) scale(1)",
-                                    boxShadow: isHovered ? "0 20px 60px rgba(0, 181, 202, 0.15)" : "0 4px 6px rgba(0, 0, 0, 0.05)",
+                                    boxShadow: isHovered ? "0 20px 60px rgba(13, 148, 136, 0.15)" : "0 4px 6px rgba(0, 0, 0, 0.05)",
                                 }}
                                 onMouseEnter={() => setHoveredCard(idx)}
                                 onMouseLeave={() => setHoveredCard(null)}
@@ -221,7 +221,7 @@ export default function SolutionTypes() {
                                                     <div
                                                         className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 bg-gradient-to-br ${solution.color} transition-transform duration-300 group-hover/feature:scale-110`}
                                                         style={{
-                                                            boxShadow: isHovered ? "0 4px 12px rgba(0, 181, 202, 0.3)" : "none",
+                                                            boxShadow: isHovered ? "0 4px 12px rgba(13, 148, 136, 0.3)" : "none",
                                                         }}
                                                     >
                                                         <FeatureIcon className="w-4 h-4 text-white" />
@@ -257,13 +257,13 @@ export default function SolutionTypes() {
                 {/* Bottom CTA */}
                 <div className="text-center mt-16">
                     <p className="text-lg mb-6" style={{ color: "var(--secondary-text)" }}>
-                        Need a custom solution? We've got you covered.
+                        Need a custom real estate solution? We've got you covered.
                     </p>
                     <Link
                         href="/contact"
                         className="px-8 py-4 rounded-full font-semibold text-white text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl inline-block"
                         style={{
-                            background: "linear-gradient(135deg, #00b5ca 0%, #00efd6 100%)",
+                            background: "linear-gradient(135deg, #0d9488 0%, #14b8a6 100%)",
                         }}
                     >
                         Let's Discuss Your Project
