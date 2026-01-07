@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 py-12 relative">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-2 text-sm mb-8 animate-fadeIn"
+                    className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm mb-8 animate-fadeIn"
                     aria-label="Breadcrumb"
                     style={{ animationDelay: "0.1s", animationFillMode: "both" }}
                 >

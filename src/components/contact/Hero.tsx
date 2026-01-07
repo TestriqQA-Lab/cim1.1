@@ -310,7 +310,7 @@ export default function Hero() {
             <div className="mx-auto relative">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-2 text-sm mb-6"
+                    className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm mb-6"
                     aria-label="Breadcrumb"
                 >
                     <Link

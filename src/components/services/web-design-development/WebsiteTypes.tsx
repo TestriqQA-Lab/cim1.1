@@ -84,7 +84,8 @@ export default function WebsiteTypes() {
             title: "EdTech & LMS",
             description: "Learning management systems with course delivery, student tracking, and interactive quizzes.",
             features: ["Course management", "Progress tracking", "Video streaming", "Quizzes & certificates"],
-            color: "from-[#bc3feb] to-[#fab900]",
+            color: "from-[#a855f7] to-[#ec4899]",
+            href: "/services/web-design-development/edtech-lms",
         },
         {
             icon: Calculator,

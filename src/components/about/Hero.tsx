@@ -44,7 +44,7 @@ export default function Hero() {
                     >
                         {/* Breadcrumbs */}
                         <nav
-                            className="flex items-center gap-2 text-sm mb-6 justify-center lg:justify-start"
+                            className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm mb-6 justify-center lg:justify-start"
                             aria-label="Breadcrumb"
                         >
                             <Link

@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-20 relative text-center">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-2 text-sm mb-8 justify-center animate-fadeIn"
+                    className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm mb-8 justify-center animate-fadeIn"
                     aria-label="Breadcrumb"
                 >
                     <Link

@@ -42,7 +42,7 @@ export default function Hero() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 py-12 relative">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-1 text-sm mb-5 justify-center lg:justify-start"
+                    className="flex flex-wrap items-center gap-x-1 gap-y-1 text-sm mb-5 justify-center lg:justify-start"
                     aria-label="Breadcrumb"
                 >
                     <Link href="/" className="flex items-center gap-1 hover:underline transition-colors p-2" style={{ color: "var(--secondary-text)" }}>
