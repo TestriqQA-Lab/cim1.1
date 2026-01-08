@@ -93,6 +93,7 @@ export default function WebsiteTypes() {
             description: "Secure financial platforms for banking, investment tracking, and payment processing.",
             features: ["Bank-grade security", "Real-time data", "Encryption", "Payment integration"],
             color: "from-[#ee6500] to-[#fab900]",
+            href: "/services/web-design-development/fintech-solutions",
         },
         {
             icon: Plane,
@@ -100,6 +101,7 @@ export default function WebsiteTypes() {
             description: "Booking engines for hotels, flights, and tours with dynamic pricing and inventory management.",
             features: ["Booking engine", "Inventory sync", "Payment gateway", "Reviews & ratings"],
             color: "from-[#fab900] to-[#00efd6]",
+            href: "/services/web-design-development/travel-hospitality",
         },
         {
             icon: Clapperboard,
@@ -107,6 +109,7 @@ export default function WebsiteTypes() {
             description: "Content streaming and media distribution platforms designed for high traffic and engagement.",
             features: ["Video streaming", "Content delivery", "Subscription models", "Live chat"],
             color: "from-[#bc3feb] to-[#008ac1]",
+            href: "/services/web-design-development/entertainment-media",
         },
     ];
 
@@ -117,6 +120,7 @@ export default function WebsiteTypes() {
             description: "High-performance, server-rendered applications for maximum speed and SEO.",
             features: ["Server-side rendering", "Static generation", "Optimized performance", "SEO friendly"],
             color: "from-[#000000] to-[#333333]",
+            href: "/services/web-design-development/nextjs-react",
         },
         {
             icon: Settings,
