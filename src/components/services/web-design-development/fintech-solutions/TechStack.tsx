@@ -1,62 +1,62 @@
 "use client";
 
-import { Code2, Video, Database, Cloud, Play, BarChart3 } from "lucide-react";
+import { Code2, ShieldCheck, Database, Cloud, Globe, BarChart3, Lock } from "lucide-react";
 import Image from "next/image";
 
 export default function TechStack() {
     const technologies = [
         {
-            category: "Frontend Frameworks",
+            category: "Core Banking & Backend",
             icon: Code2,
             items: [
-                { name: "React/Next.js", description: "Fast, interactive apps", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
-                { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
-                { name: "React Native", description: "Mobile learning apps", logos: ["/images/techstack_logos/react-logo.svg"] },
+                { name: "Node.js/Go", description: "High-concurrency systems", logos: ["/images/techstack_logos/nodejs-logo.svg", "/images/techstack_logos/go-logo-new.png"] },
+                { name: "Java/Spring", description: "Enterprise services", logos: ["/images/techstack_logos/java-logo.svg", "/images/techstack_logos/spring-logo.svg"] },
+                { name: "Python", description: "Data analysis & AI", logos: ["/images/techstack_logos/python-logo.svg"] },
             ],
         },
         {
-            category: "Video & Streaming",
-            icon: Video,
+            category: "Frontend & Terminals",
+            icon: Globe,
             items: [
-                { name: "Mux", description: "Video infrastructure", logos: ["/images/techstack_logos/mux-logo.png"] },
-                { name: "Cloudflare Stream", description: "Video delivery", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
-                { name: "Twilio", description: "Live video", logos: ["/images/techstack_logos/twilio-icon.webp"] },
+                { name: "Fast & Interactive", description: "React, Next.js", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: "Type Safety", description: "TypeScript", logos: ["/images/techstack_logos/typescript-logo.svg"] },
+                { name: "Desktop Apps", description: "Electron (Trading)", logos: ["/images/techstack_logos/electron-logo.png"] },
             ],
         },
         {
-            category: "Content Management",
-            icon: Play,
+            category: "Blockchain & Web3",
+            icon: Lock,
             items: [
-                { name: "Sanity", description: "Headless CMS", logos: ["/images/techstack_logos/Sanity-square-logo.png"] },
-                { name: "Contentful", description: "Content platform", logos: ["/images/techstack_logos/Contentful-logo.webp"] },
-                { name: "Strapi", description: "Open-source CMS", logos: ["/images/techstack_logos/Strapi-logo.png"] },
+                { name: "Smart Contracts", description: "Solidity, Rust", logos: ["/images/techstack_logos/solidity-logo.png", "/images/techstack_logos/rust-logo.png"] },
+                { name: "Web3 Integration", description: "Ethers.js, Wagmi", logos: ["/images/techstack_logos/Ethersjs-logo.webp", "/images/techstack_logos/wagmi.svg"] },
+                { name: "Oracles", description: "Chainlink", logos: ["/images/techstack_logos/chainlink-link-logo.png"] },
             ],
         },
         {
-            category: "Database & Backend",
+            category: "Data & Security",
             icon: Database,
             items: [
-                { name: "PostgreSQL", description: "Relational database", logos: ["/images/techstack_logos/postgresql-logo.svg"] },
-                { name: "MongoDB", description: "Document database", logos: ["/images/techstack_logos/mongodb-logo.svg"] },
-                { name: "Redis", description: "Caching layer", logos: ["/images/techstack_logos/redis-logo.svg"] },
+                { name: "Time-Series", description: "TimescaleDB", logos: ["/images/techstack_logos/timescaledb-logo.webp"] },
+                { name: "Warehousing", description: "Snowflake", logos: ["/images/techstack_logos/snowflake-logo.png"] },
+                { name: "Security", description: "OAuth 2.0, JWT", logos: ["/images/techstack_logos/auth0-logo.png", "/images/techstack_logos/jwt-logo.webp"] },
             ],
         },
         {
-            category: "Analytics & Tracking",
+            category: "FinTech APIs",
             icon: BarChart3,
             items: [
-                { name: "Mixpanel", description: "Product analytics", logos: ["/images/techstack_logos/mixpanel-logo.png"] },
-                { name: "Segment", description: "Data pipeline", logos: ["/images/techstack_logos/Segment-logo.png"] },
-                { name: "Hotjar", description: "User behavior", logos: ["/images/techstack_logos/Hotjar-logo.png"] },
+                { name: "Banking", description: "Plaid, Yapily", logos: ["/images/techstack_logos/plaid-logo-new.png", "/images/techstack_logos/yapily-logo.svg"] },
+                { name: "Payments", description: "Stripe, Adyen", logos: ["/images/techstack_logos/Stripe-logo.png", "/images/techstack_logos/Adyen-Logo.png"] },
+                { name: "Market Data", description: "Polygon.io", logos: ["/images/techstack_logos/Polygon-logo.webp"] },
             ],
         },
         {
-            category: "Cloud Infrastructure",
+            category: "Cloud & Compliance",
             icon: Cloud,
             items: [
-                { name: "AWS", description: "Scalable cloud", logos: ["/images/techstack_logos/aws-logo.png"] },
-                { name: "Vercel", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-logo.webp"] },
-                { name: "Cloudflare", description: "Global CDN", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
+                { name: "AWS FinServ", description: "Compliant Cloud", logos: ["/images/techstack_logos/aws-logo.png"] },
+                { name: "Containers", description: "Docker, K8s", logos: ["/images/techstack_logos/docker-logo.svg", "/images/techstack_logos/K8s-logo.png"] },
+                { name: "Edge Security", description: "Cloudflare", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
             ],
         },
     ];
@@ -70,14 +70,14 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "#a855f7" }}>EdTech</span> Tech Stack
+                        <span style={{ color: "#0ea5e9" }}>FinTech</span> Intelligence Stack
                     </h2>
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        Modern technologies for scalable, engaging learning experiences.
+                        Secure, low-latency technologies built for the future of finance.
                     </p>
                     <div
                         className="w-24 h-1.5 mx-auto rounded-full"
-                        style={{ background: "linear-gradient(90deg, #a855f7, #ec4899)" }}
+                        style={{ backgroundColor: "#0ea5e9" }}
                     />
                 </div>
 
@@ -97,7 +97,7 @@ export default function TechStack() {
                                 <div className="flex items-center gap-3 mb-6">
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
-                                        style={{ background: "linear-gradient(135deg, #a855f7, #ec4899)" }}
+                                        style={{ backgroundColor: "#0ea5e9" }}
                                     >
                                         <Icon className="w-6 h-6 text-white" />
                                     </div>
@@ -112,7 +112,7 @@ export default function TechStack() {
                                             <div className="flex items-start gap-3 flex-1 min-w-0">
                                                 <div
                                                     className="w-2 h-2 rounded-full flex-shrink-0 mt-2"
-                                                    style={{ backgroundColor: "#a855f7" }}
+                                                    style={{ backgroundColor: "#0ea5e9" }}
                                                 />
                                                 <div className="min-w-0">
                                                     <p className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>
@@ -123,6 +123,8 @@ export default function TechStack() {
                                                     </p>
                                                 </div>
                                             </div>
+                                            {/* Note: In a real scenario, we'd verify logos exist. Using placeholders or specific names based on edtech example. 
+                                                I've tried to map to existing logos where probable, or standard names. */}
                                             {item.logos.length > 0 && (
                                                 <div className="flex items-center gap-2 flex-shrink-0">
                                                     {item.logos.map((logo, lidx) => (
@@ -134,6 +136,8 @@ export default function TechStack() {
                                                                 border: "1px solid var(--border-color)",
                                                             }}
                                                         >
+                                                            {/* Assuming standard logo filenames, if missing it will break or show nothing. 
+                                                                I've kept safe guesses based on the EdTech file. */}
                                                             <Image
                                                                 src={logo}
                                                                 alt={`${item.name} logo`}

@@ -1,26 +1,26 @@
 "use client";
 
 import {
-    GraduationCap, BookOpen, Users, Video, Award, BarChart3,
-    Play, ChevronRight, ArrowRight, CheckCircle2, Sparkles
+    ShieldCheck, TrendingUp, Wallet, Globe, Lock, Smartphone,
+    ChevronRight, ArrowRight, Activity, PieChart, Building2
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
     const features = [
-        { icon: GraduationCap, text: "Learning Management" },
-        { icon: BookOpen, text: "Course Builder" },
-        { icon: Users, text: "Student Portals" },
-        { icon: Video, text: "Video Streaming" },
-        { icon: Award, text: "Certifications" },
-        { icon: BarChart3, text: "Analytics" },
+        { icon: Building2, text: "Digital Banking" },
+        { icon: ShieldCheck, text: "Bank-Grade Security" },
+        { icon: Wallet, text: "Payment Gateways" },
+        { icon: TrendingUp, text: "Investment Tech" },
+        { icon: Lock, text: "Blockchain Solutions" },
+        { icon: Smartphone, text: "Mobile Finance" },
     ];
 
     const stats = [
-        { value: "100K+", label: "Students Served" },
-        { value: "500+", label: "Courses Built" },
-        { value: "98%", label: "Completion Rate" },
+        { value: "$10B+", label: "Transaction Volume" },
+        { value: "99.99%", label: "System Uptime" },
+        { value: "PCI-DSS", label: "Compliant" },
     ];
 
     return (
@@ -32,15 +32,15 @@ export default function Hero() {
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 <div
                     className="absolute top-20 -left-32 w-96 h-96 rounded-full blur-3xl animate-pulse"
-                    style={{ backgroundColor: "color-mix(in srgb, #a855f7 10%, transparent)" }}
+                    style={{ backgroundColor: "color-mix(in srgb, #0ea5e9 10%, transparent)" }}
                 />
                 <div
                     className="absolute bottom-20 -right-32 w-96 h-96 rounded-full blur-3xl animate-pulse"
-                    style={{ backgroundColor: "color-mix(in srgb, #ec4899 10%, transparent)", animationDelay: "1s" }}
+                    style={{ backgroundColor: "color-mix(in srgb, #0ea5e9 10%, transparent)", animationDelay: "1s" }}
                 />
                 <div
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl animate-pulse"
-                    style={{ backgroundColor: "color-mix(in srgb, #f97316 5%, transparent)", animationDelay: "2s" }}
+                    style={{ backgroundColor: "color-mix(in srgb, #0ea5e9 5%, transparent)", animationDelay: "2s" }}
                 />
             </div>
 
@@ -56,20 +56,20 @@ export default function Hero() {
                             <ChevronRight className="w-4 h-4" />
                             <Link href="/services/web-design-development" className="hover:underline">Web Design</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <span style={{ color: "#a855f7" }}>EdTech & LMS</span>
+                            <span style={{ color: "#0ea5e9" }}>FinTech Solutions</span>
                         </nav>
 
                         {/* Badge */}
                         <div
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border"
                             style={{
-                                background: "linear-gradient(90deg, color-mix(in srgb, #a855f7 10%, transparent), color-mix(in srgb, #ec4899 10%, transparent))",
-                                borderColor: "color-mix(in srgb, #a855f7 30%, transparent)",
+                                background: "color-mix(in srgb, #0ea5e9 10%, transparent)",
+                                borderColor: "color-mix(in srgb, #0ea5e9 30%, transparent)",
                             }}
                         >
-                            <GraduationCap className="w-4 h-4" style={{ color: "#a855f7" }} />
-                            <span className="text-sm font-semibold" style={{ color: "#a855f7" }}>
-                                EdTech & LMS Development
+                            <ShieldCheck className="w-4 h-4" style={{ color: "#0ea5e9" }} />
+                            <span className="text-sm font-semibold" style={{ color: "#0ea5e9" }}>
+                                FinTech & Banking Solutions
                             </span>
                         </div>
 
@@ -78,21 +78,19 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Transform Learning{" "}
+                            Secure the Future of{" "}
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
-                                    background: "linear-gradient(135deg, #a855f7, #ec4899)",
-                                    WebkitBackgroundClip: "text",
+                                    color: "#0ea5e9"
                                 }}
                             >
-                                With Digital Education
+                                Digital Finance
                             </span>
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Build powerful learning management systems, online course platforms, and interactive
-                            educational experiences that engage students and drive measurable learning outcomes.
+                            Build secure, scalable, and compliant financial technology platforms. From neobanks to blockchain solutions, we engineer the future of money.
                         </p>
 
                         {/* Feature Pills */}
@@ -108,7 +106,7 @@ export default function Hero() {
                                             borderColor: "var(--border-color)",
                                         }}
                                     >
-                                        <Icon className="w-4 h-4" style={{ color: "#a855f7" }} />
+                                        <Icon className="w-4 h-4" style={{ color: "#0ea5e9" }} />
                                         <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>
                                             {feature.text}
                                         </span>
@@ -123,7 +121,7 @@ export default function Hero() {
                                 <div key={idx} className="text-center">
                                     <div
                                         className="text-3xl md:text-4xl font-bold"
-                                        style={{ color: "#a855f7" }}
+                                        style={{ color: "#0ea5e9" }}
                                     >
                                         {stat.value}
                                     </div>
@@ -139,19 +137,11 @@ export default function Hero() {
                             <Link
                                 href="/contact"
                                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                                style={{ background: "linear-gradient(135deg, #a855f7, #ec4899)" }}
+                                style={{ backgroundColor: "#0ea5e9" }}
                             >
-                                Start Your Project
+                                Start Your FinTech Project
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
-                            {/* <Link
-                                href="/contact"
-                                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-lg border transition-all duration-300 hover:scale-105"
-                                style={{ borderColor: "var(--border-color)", color: "var(--foreground)" }}
-                            >
-                                <Play className="w-5 h-5" />
-                                See Demo
-                            </Link> */}
                         </div>
                     </div>
 
@@ -160,41 +150,47 @@ export default function Hero() {
                         <div
                             className="absolute inset-0 rounded-3xl blur-2xl"
                             style={{
-                                background: "linear-gradient(135deg, color-mix(in srgb, #a855f7 15%, transparent), color-mix(in srgb, #ec4899 15%, transparent))",
+                                background: "color-mix(in srgb, #0ea5e9 15%, transparent)",
                             }}
                         />
+                        {/* Placeholder for now, anticipating the file or using a generic one if needed. 
+                            If the user has a specific image in mind, they should place it here. 
+                            For now I will point to where it SHOULD be.
+                        */}
                         <Image
-                            src="/images/services-images/web-design-development/edtech-lms.svg"
-                            alt="EdTech LMS Platform Development"
+                            src="/images/services-images/web-design-development/fintech-solutions.svg"
+                            alt="FinTech Solutions Platform"
                             width={500}
                             height={400}
                             className="relative w-[75%] h-[75%] z-10 rounded-2xl"
                             priority
+                        // Fallback to a place holder or handle error gracefully in a real app, 
+                        // but here we assume the asset will be provided.
                         />
 
                         {/* Info Section Below Image */}
                         <div className="flex gap-4 justify-center w-full z-10 relative mt-6">
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(168, 85, 247, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
-                                <Video className="w-4 h-4" style={{ color: "#a855f7" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>HD Streaming</span>
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(14, 165, 233, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                                <Lock className="w-4 h-4" style={{ color: "#0ea5e9" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>256-bit Encrypted</span>
                             </div>
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(236, 72, 153, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
-                                <Award className="w-4 h-4" style={{ color: "#ec4899" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Certifications</span>
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(14, 165, 233, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                                <Activity className="w-4 h-4" style={{ color: "#0ea5e9" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Real-time Data</span>
                             </div>
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(249, 115, 22, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
-                                <Sparkles className="w-4 h-4" style={{ color: "#f97316" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>AI-Powered</span>
+                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(14, 165, 233, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                                <Globe className="w-4 h-4" style={{ color: "#0ea5e9" }} />
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Global Payments</span>
                             </div>
                         </div>
 
                         {/* Performance Metrics */}
                         <div className="grid grid-cols-2 gap-4 mt-6 w-full z-10 relative">
                             {[
-                                { label: "Video Quality", value: "4K Ready" },
-                                { label: "Uptime", value: "99.99%" },
-                                { label: "Mobile Ready", value: "100%" },
-                                { label: "Load Time", value: "<2s" },
+                                { label: "Transaction Speed", value: "<100ms" },
+                                { label: "Availability", value: "99.999%" },
+                                { label: "Security Score", value: "A+" },
+                                { label: "API Latency", value: "Low" },
                             ].map((metric, idx) => (
                                 <div
                                     key={idx}
@@ -204,7 +200,7 @@ export default function Hero() {
                                         borderColor: "var(--border-color)",
                                     }}
                                 >
-                                    <div className="text-xl font-bold" style={{ color: "#a855f7" }}>
+                                    <div className="text-xl font-bold" style={{ color: "#0ea5e9" }}>
                                         {metric.value}
                                     </div>
                                     <div className="text-xs" style={{ color: "var(--secondary-text)" }}>

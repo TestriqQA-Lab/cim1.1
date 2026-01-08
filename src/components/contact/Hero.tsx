@@ -561,7 +561,7 @@ export default function Hero() {
                                                         aria-invalid={!!nameError}
                                                         aria-describedby={nameError ? "name-error" : undefined}
                                                         className={`w-full mt-2 px-4 py-3 rounded-xl border focus:ring-2 outline-none transition`}
-                                                        placeholder="John Doe"
+                                                        placeholder="Aman Sharma"
                                                         style={{ borderColor: nameError ? "var(--brand-orange)" : "var(--border-color)", background: "var(--hover-bg)", color: "var(--foreground)" }}
                                                     />
                                                     {nameError && <p id="name-error" className="text-sm mt-2" style={{ color: "var(--brand-orange)" }}>{nameError}</p>}
@@ -581,7 +581,7 @@ export default function Hero() {
                                                         aria-invalid={!!emailError}
                                                         aria-describedby={emailError ? "email-error" : undefined}
                                                         className={`w-full mt-2 px-4 py-3 rounded-xl border focus:ring-2 outline-none transition`}
-                                                        placeholder="john@example.com"
+                                                        placeholder="aman@example.com"
                                                         style={{ borderColor: emailError ? "var(--brand-orange)" : "var(--border-color)", background: "var(--hover-bg)", color: "var(--foreground)" }}
                                                     />
                                                     {emailError && <p id="email-error" className="text-sm mt-2" style={{ color: "var(--brand-orange)" }}>{emailError}</p>}
@@ -784,6 +784,10 @@ export default function Hero() {
           background: transparent;
           border: none;
           cursor: pointer;
+        }
+        .phone-input-field .PhoneInputCountrySelect option {
+          background-color: var(--card-bg);
+          color: var(--foreground);
         }
         
         /* Animations */
