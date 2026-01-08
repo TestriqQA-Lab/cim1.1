@@ -7,7 +7,7 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Lightning-Fast Performance",
-            description: "Sub-3-second load times optimized for mobile shoppers. Speed directly impacts conversion—every 100ms delay costs 1% in sales.",
+            description: "Sub-3-second load times optimized for mobile shoppers. Speed directly impacts conversion-every 100ms delay costs 1% in sales.",
             color: "from-[#008ac1] to-[#00b5ca]",
         },
         {
@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We don't just build online stores—we engineer revenue engines with measurable ROI and scalable growth potential.
+                        We don't just build online stores-we engineer revenue engines with measurable ROI and scalable growth potential.
                     </p>
 
                     <div

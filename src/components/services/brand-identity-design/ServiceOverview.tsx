@@ -47,7 +47,7 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            Every element we design is purposeful—from the psychology behind your color choices to the personality expressed through typography. We create brands that don't just look beautiful but work strategically to achieve your business objectives.
+                            Every element we design is purposeful-from the psychology behind your color choices to the personality expressed through typography. We create brands that don't just look beautiful but work strategically to achieve your business objectives.
                         </p>
 
                         <div className="pt-4">

@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
                         </h2>
 
                         <p className="text-lg mb-8" style={{ color: "var(--secondary-text)" }}>
-                            We specialize in creating portfolio websites that do more than just look good—they actively help you win clients and grow your career.
+                            We specialize in creating portfolio websites that do more than just look good-they actively help you win clients and grow your career.
                         </p>
 
                         <div className="space-y-4 mb-8">

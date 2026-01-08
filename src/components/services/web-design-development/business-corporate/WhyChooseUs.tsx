@@ -121,7 +121,7 @@ export default function WhyChooseUs() {
                             }`}
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        We understand that corporate websites require a different caliber of expertise—one that balances brand excellence with technical rigor.
+                        We understand that corporate websites require a different caliber of expertise-one that balances brand excellence with technical rigor.
                     </p>
 
                     <div

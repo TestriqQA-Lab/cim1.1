@@ -41,7 +41,7 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            A <span style={{ color: "#10b981", fontWeight: 700 }}>Landing Page</span> is not just another website page—it's a focused destination designed with one singular goal: <span style={{ color: "#0ea5e9", fontWeight: 700 }}>Conversion</span>.
+                            A <span style={{ color: "#10b981", fontWeight: 700 }}>Landing Page</span> is not just another website page-it's a focused destination designed with one singular goal: <span style={{ color: "#0ea5e9", fontWeight: 700 }}>Conversion</span>.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>

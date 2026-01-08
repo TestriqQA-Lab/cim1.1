@@ -61,7 +61,7 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", lineHeight: "1.8" }}>
-                            We understand the unique challenges of real estate marketing—from high-quality visual presentation to complex filtering requirements and lead nurturing workflows. Our platforms are built to help you stand out in a competitive market and convert browsers into buyers.
+                            We understand the unique challenges of real estate marketing-from high-quality visual presentation to complex filtering requirements and lead nurturing workflows. Our platforms are built to help you stand out in a competitive market and convert browsers into buyers.
                         </p>
 
                         {/* CTA */}

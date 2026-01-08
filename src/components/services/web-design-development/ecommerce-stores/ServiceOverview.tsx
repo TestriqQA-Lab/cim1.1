@@ -41,11 +41,11 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            An <span style={{ color: "#00b5ca", fontWeight: 700 }}>e-commerce store</span> isn't just a product catalog—it's a sophisticated sales engine designed to guide shoppers from discovery to checkout with minimal friction and maximum conversion.
+                            An <span style={{ color: "#00b5ca", fontWeight: 700 }}>e-commerce store</span> isn't just a product catalog-it's a sophisticated sales engine designed to guide shoppers from discovery to checkout with minimal friction and maximum conversion.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            We build online stores that combine beautiful product presentation with proven conversion optimization techniques. Every element—from product pages to checkout flows—is engineered to reduce abandonment and increase average order value.
+                            We build online stores that combine beautiful product presentation with proven conversion optimization techniques. Every element-from product pages to checkout flows-is engineered to reduce abandonment and increase average order value.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
@@ -60,7 +60,7 @@ export default function ServiceOverview() {
                                 {[
                                     "Global e-commerce sales reached $5.8 trillion in 2023",
                                     "53% of mobile users abandon sites that take over 3 seconds to load",
-                                    "Cart abandonment rate averages 70%—optimization is critical",
+                                    "Cart abandonment rate averages 70%-optimization is critical",
                                     "Personalized experiences increase revenue by up to 40%",
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3">

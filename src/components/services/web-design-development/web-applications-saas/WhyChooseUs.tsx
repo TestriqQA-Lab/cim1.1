@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
         {
             icon: Layers,
             title: "Scalable Architecture",
-            description: "Microservices, serverless, or modular monolith—we choose the right architecture pattern for your scale and team size.",
+            description: "Microservices, serverless, or modular monolith-we choose the right architecture pattern for your scale and team size.",
             color: "from-[#fab900] to-[#ee6500]",
         },
         {
@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
         {
             icon: Users,
             title: "Product & Engineering Combined",
-            description: "We don't just write code—we contribute to product strategy, UX decisions, and technical architecture to maximize value.",
+            description: "We don't just write code-we contribute to product strategy, UX decisions, and technical architecture to maximize value.",
             color: "from-[#008ac1] to-[#bc3feb]",
         },
         {
@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We're not an agency that deploys and disappears—we're your technical co-founder, invested in your product's long-term success.
+                        We're not an agency that deploys and disappears-we're your technical co-founder, invested in your product's long-term success.
                     </p>
 
                     <div

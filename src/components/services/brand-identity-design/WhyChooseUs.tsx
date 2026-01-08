@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
             icon: Lightbulb,
             decorIcon: Sparkles,
             title: "Strategic Approach",
-            description: "We don't just design—we strategize. Every brand element is backed by research and aligned with your business goals.",
+            description: "We don't just design-we strategize. Every brand element is backed by research and aligned with your business goals.",
             highlight: "Research-Driven",
             color: "#fab900",
         },

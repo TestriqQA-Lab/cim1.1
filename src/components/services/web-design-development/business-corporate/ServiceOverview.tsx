@@ -41,7 +41,7 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            A <span style={{ color: "#f97316", fontWeight: 700 }}>corporate website</span> is more than a digital brochure—it's the foundation of your organization's online identity and the first impression for investors, partners, and potential clients.
+                            A <span style={{ color: "#f97316", fontWeight: 700 }}>corporate website</span> is more than a digital brochure-it's the foundation of your organization's online identity and the first impression for investors, partners, and potential clients.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>

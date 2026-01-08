@@ -66,7 +66,7 @@ export default function SolutionTypes() {
         {
             icon: ShieldCheck,
             title: "Compliance Websites",
-            description: "Regulatory-compliant platforms for industries with strict documentation requirements—healthcare, finance, legal, and government sectors.",
+            description: "Regulatory-compliant platforms for industries with strict documentation requirements-healthcare, finance, legal, and government sectors.",
             features: ["WCAG accessibility", "GDPR compliance", "SOX documentation", "Audit trail logging"],
             color: "from-[#008ac1] to-[#bc3feb]",
             accentColor: "#008ac1",

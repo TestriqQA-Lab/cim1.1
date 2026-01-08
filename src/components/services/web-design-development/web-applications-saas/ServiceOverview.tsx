@@ -41,7 +41,7 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            A <span style={{ color: "#008ac1", fontWeight: 700 }}>web application</span> or <span style={{ color: "#008ac1", fontWeight: 700 }}>SaaS platform</span> is not a website—it's a software product that solves real problems, automates workflows, and generates recurring revenue.
+                            A <span style={{ color: "#008ac1", fontWeight: 700 }}>web application</span> or <span style={{ color: "#008ac1", fontWeight: 700 }}>SaaS platform</span> is not a website-it's a software product that solves real problems, automates workflows, and generates recurring revenue.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>

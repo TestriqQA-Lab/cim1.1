@@ -64,7 +64,7 @@ export default function Process() {
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        A structured methodology designed for enterprise requirements—with stakeholder checkpoints, governance alignment, and executive-level reporting at every stage.
+                        A structured methodology designed for enterprise requirements-with stakeholder checkpoints, governance alignment, and executive-level reporting at every stage.
                     </p>
 
                     <div

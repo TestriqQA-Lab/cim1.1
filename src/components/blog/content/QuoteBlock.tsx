@@ -21,7 +21,7 @@ export default function QuoteBlock({ block }: QuoteBlockProps) {
                     className="text-sm not-italic font-medium"
                     style={{ color: "var(--foreground)" }}
                 >
-                    — {block.author}
+                    - {block.author}
                 </cite>
             )}
         </blockquote>

@@ -48,7 +48,7 @@ export default function ServiceOverview() {
                         The Power of <span style={{ color: "var(--brand-seo)" }}>Organic Growth</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Organic Growth and SEO are not just marketing tactics—they are a fundamental business strategy for long-term visibility and sustainable traffic.
+                        Organic Growth and SEO are not just marketing tactics-they are a fundamental business strategy for long-term visibility and sustainable traffic.
                     </p>
                 </div>
 

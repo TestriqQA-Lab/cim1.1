@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
             icon: BarChart3,
             decorIcon: Sparkles,
             title: "Data-Driven Decisions",
-            description: "Every campaign is backed by deep analytics. We don't guess—we test, measure, and optimize based on real performance data.",
+            description: "Every campaign is backed by deep analytics. We don't guess-we test, measure, and optimize based on real performance data.",
             highlight: "Analytics-First",
             color: "#4285f4",
         },

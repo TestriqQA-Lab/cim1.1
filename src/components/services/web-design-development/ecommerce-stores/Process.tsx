@@ -47,7 +47,7 @@ export default function Process() {
             number: "03",
             icon: Code,
             title: "Platform Development",
-            description: "Building your store on the optimal platform—Shopify, WooCommerce, or custom headless—with payment gateways, inventory systems, and shipping integrations.",
+            description: "Building your store on the optimal platform-Shopify, WooCommerce, or custom headless-with payment gateways, inventory systems, and shipping integrations.",
             deliverables: [
                 { icon: Settings, text: "Platform setup" },
                 { icon: CreditCard, text: "Payment integration" },
