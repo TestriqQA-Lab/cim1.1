@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import {
-    Globe, ShoppingCart, Zap, BookOpen, Image as ImageIcon, Layout, Code, Settings,
+    Globe, ShoppingCart, Zap, BookOpen, Image as ImageIcon, Layout, Code, Code2, Settings,
     Building2, Stethoscope, GraduationCap, Calculator, Plane, Clapperboard,
     Server, Database, Smartphone, Laptop
 } from "lucide-react";
@@ -145,6 +145,14 @@ export default function WebsiteTypes() {
             features: ["Microservices", "REST/GraphQL APIs", "Real-time data", "Database design"],
             color: "from-[#339933] to-[#68a063]",
             href: "/services/web-design-development/nodejs-backend",
+        },
+        {
+            icon: Code2,
+            title: "Laravel & PHP Development",
+            description: "Robust, scalable, and secure web applications built with the PHP ecosystem.",
+            features: ["Custom Web Apps", "SaaS Platforms", "API Development", "Enterprise Solutions"],
+            color: "from-[#FF2D20] to-[#F05340]",
+            href: "/services/web-design-development/laravel-php",
         },
         {
             icon: Smartphone,

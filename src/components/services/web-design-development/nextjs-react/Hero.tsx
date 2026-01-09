@@ -56,9 +56,9 @@ export default function Hero() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* LEFT CONTENT */}
-                    <div className="space-y-8">
+                    <div className="space-y-8 text-center lg:text-left">
                         {/* Breadcrumbs */}
-                        <nav className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm" style={{ color: "var(--secondary-text)" }}>
+                        <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-2 gap-y-1 text-sm" style={{ color: "var(--secondary-text)" }}>
                             <Link href="/" className="hover:underline">Home</Link>
                             <ChevronRight className="w-4 h-4" />
                             <Link href="/services" className="hover:underline">Services</Link>
