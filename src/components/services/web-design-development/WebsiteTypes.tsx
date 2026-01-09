@@ -128,6 +128,7 @@ export default function WebsiteTypes() {
             description: "Flexible content management solutions (WordPress, Strapi, Contentful) giving you full control.",
             features: ["Easy content updates", "No coding required", "Flexible", "Scalable"],
             color: "from-[#21759b] to-[#00b5ca]",
+            href: "/services/web-design-development/headless-traditional-cms",
         },
         {
             icon: ShoppingCart,
@@ -135,6 +136,7 @@ export default function WebsiteTypes() {
             description: "Custom themes and functionality for robust online stores on Shopify or WooCommerce.",
             features: ["Custom themes", "App integration", "Store setup", "Optimization"],
             color: "from-[#96bf48] to-[#96bf48]",
+            href: "/services/web-design-development/shopify-ecommerce",
         },
         {
             icon: Server,
@@ -142,6 +144,7 @@ export default function WebsiteTypes() {
             description: "Scalable backend systems and APIs to power your web and mobile applications.",
             features: ["Microservices", "REST/GraphQL APIs", "Real-time data", "Database design"],
             color: "from-[#339933] to-[#68a063]",
+            href: "/services/web-design-development/nodejs-backend",
         },
         {
             icon: Smartphone,
