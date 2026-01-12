@@ -146,8 +146,21 @@ export default function SolutionTypes() {
                                     backgroundColor: "var(--card-bg)",
                                     borderColor: "var(--border-color)",
                                 }}
-                                onMouseEnter={() => setActiveSolution(idx)}
-                                onMouseLeave={() => setActiveSolution(null)}
+                                onMouseEnter={() => {
+                                    if (window.matchMedia("(hover: hover)").matches) {
+                                        setActiveSolution(idx);
+                                    }
+                                }}
+                                onMouseLeave={() => {
+                                    if (window.matchMedia("(hover: hover)").matches) {
+                                        setActiveSolution(null);
+                                    }
+                                }}
+                                onClick={() => {
+                                    if (!window.matchMedia("(hover: hover)").matches) {
+                                        setActiveSolution(activeSolution === idx ? null : idx);
+                                    }
+                                }}
                             >
                                 {/* Gradient Background on Hover */}
                                 <div

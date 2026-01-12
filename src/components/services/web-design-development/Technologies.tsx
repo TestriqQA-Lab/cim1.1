@@ -54,7 +54,7 @@ export default function Technologies() {
         { name: "Postman", logo: "/images/techstack_logos/postman-logo.svg" },
         { name: "Jira", logo: "/images/techstack_logos/jira-logo.svg" },
         { name: "Slack", logo: "/images/techstack_logos/slack-logo.svg" },
-        { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo.svg" },
+        { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
     ];
 
     const TechCard = ({ tech, idx }: { tech: { name: string; logo: string }; idx: number }) => (

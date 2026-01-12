@@ -176,18 +176,18 @@ export default function Hero() {
                         </div>
 
                         {/* Stats */}
-                        <div className="flex items-center justify-center lg:justify-start gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
-                            <div>
+                        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
+                            <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>500+</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Sites Delivered</p>
                             </div>
-                            <div className="w-px h-10 bg-border" style={{ backgroundColor: "var(--border-color)" }} />
-                            <div>
+                            <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
+                            <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>10+</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Years Experience</p>
                             </div>
-                            <div className="w-px h-10 bg-border" style={{ backgroundColor: "var(--border-color)" }} />
-                            <div>
+                            <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
+                            <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>24/7</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Support & Maint.</p>
                             </div>
@@ -206,7 +206,7 @@ export default function Hero() {
                                 }}
                             >
                                 {/* WordPress Logo - Center */}
-                                <div className="w-48 h-48 md:w-64 md:h-64 animate-float relative">
+                                <div className="w-48 h-48 md:w-64 md:h-64 relative">
                                     <Image
                                         src="/images/techstack_logos/wordpress-logo-hero1.png"
                                         alt="WordPress"

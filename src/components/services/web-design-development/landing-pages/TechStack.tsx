@@ -56,7 +56,7 @@ export default function TechStack() {
             items: [
                 { name: "Sanity / Contentful", description: "Headless CMS", logos: ["/images/techstack_logos/Sanity-square-logo.png", "/images/techstack_logos/Contentful-logo.webp"] },
                 { name: "Strapi", description: "Custom content structures", logos: ["/images/techstack_logos/Strapi-logo.png"] },
-                { name: "WordPress (Headless)", description: "Familiar backend", logos: ["/images/techstack_logos/wordpress-logo.svg"] },
+                { name: "WordPress (Headless)", description: "Familiar backend", logos: ["/images/techstack_logos/wordpress-logo-hero1.png"] },
             ],
         },
     ];

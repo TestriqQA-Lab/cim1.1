@@ -28,7 +28,7 @@ export default function TechStack() {
             icon: Globe,
             description: "Battle-tested content management systems",
             technologies: [
-                { name: "WordPress", description: "World's most popular CMS", logo: "/images/techstack_logos/wordpress-logo.svg" },
+                { name: "WordPress", description: "World's most popular CMS", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
                 { name: "Drupal", description: "Enterprise CMS platform", logo: "/images/techstack_logos/Drupal-logo.png" },
                 { name: "Joomla", description: "Flexible CMS", logo: "/images/techstack_logos/joomla-logo.svg" },
                 { name: "WooCommerce", description: "WordPress commerce", logo: "/images/techstack_logos/WooCommerce-logo.png" },

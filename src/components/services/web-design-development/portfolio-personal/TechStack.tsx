@@ -24,7 +24,7 @@ export default function TechStack() {
                 { name: "Sanity", logo: "/images/techstack_logos/Sanity-square-logo.png" },
                 { name: "Contentful", logo: "/images/techstack_logos/Contentful-logo.webp" },
                 { name: "Strapi", logo: "/images/techstack_logos/Strapi-logo.png" },
-                { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo.svg" },
+                { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
             ],
         },
         {

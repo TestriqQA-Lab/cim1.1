@@ -11,7 +11,7 @@ export default function TechStack() {
             category: "CMS Platforms",
             description: "Powerful content management systems for easy publishing",
             items: [
-                { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo.svg" },
+                { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
                 { name: "Strapi", logo: "/images/techstack_logos/Strapi-logo.png" },
                 { name: "Sanity", logo: "/images/techstack_logos/Sanity-square-logo.png" },
                 { name: "Contentful", logo: "/images/techstack_logos/Contentful-logo.webp" },

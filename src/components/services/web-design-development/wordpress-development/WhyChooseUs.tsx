@@ -137,9 +137,22 @@ export default function WhyChooseUs() {
                         return (
                             <div
                                 key={idx}
-                                className="group relative"
-                                onMouseEnter={() => setHoveredIndex(idx)}
-                                onMouseLeave={() => setHoveredIndex(null)}
+                                className="group relative cursor-pointer"
+                                onMouseEnter={() => {
+                                    if (window.matchMedia("(hover: hover)").matches) {
+                                        setHoveredIndex(idx);
+                                    }
+                                }}
+                                onMouseLeave={() => {
+                                    if (window.matchMedia("(hover: hover)").matches) {
+                                        setHoveredIndex(null);
+                                    }
+                                }}
+                                onClick={() => {
+                                    if (!window.matchMedia("(hover: hover)").matches) {
+                                        setHoveredIndex(hoveredIndex === idx ? null : idx);
+                                    }
+                                }}
                             >
                                 {/* Outer glow effect */}
                                 <div

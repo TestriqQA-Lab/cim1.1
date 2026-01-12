@@ -130,9 +130,22 @@ export default function ServiceOverview() {
                         return (
                             <div
                                 key={idx}
-                                className="group relative"
-                                onMouseEnter={() => setHoveredCard(idx)}
-                                onMouseLeave={() => setHoveredCard(null)}
+                                className="group relative cursor-pointer"
+                                onMouseEnter={() => {
+                                    if (window.matchMedia("(hover: hover)").matches) {
+                                        setHoveredCard(idx);
+                                    }
+                                }}
+                                onMouseLeave={() => {
+                                    if (window.matchMedia("(hover: hover)").matches) {
+                                        setHoveredCard(null);
+                                    }
+                                }}
+                                onClick={() => {
+                                    if (!window.matchMedia("(hover: hover)").matches) {
+                                        setHoveredCard(hoveredCard === idx ? null : idx);
+                                    }
+                                }}
                             >
                                 {/* Glow effect on hover */}
                                 <div
@@ -234,8 +247,8 @@ export default function ServiceOverview() {
                                         }}
                                     />
 
-                                    {/* Hover indicator */}
-                                    <div
+                                    {/* Hover indicator - commented out */}
+                                    {/* <div
                                         className="mt-6 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300"
                                         style={{
                                             color: "#0073AA",
@@ -256,7 +269,7 @@ export default function ServiceOverview() {
                                                 d="M9 5l7 7-7 7"
                                             />
                                         </svg>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         );
