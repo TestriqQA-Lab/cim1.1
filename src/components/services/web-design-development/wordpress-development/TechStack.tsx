@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Code2, Server, Database, Cloud, Globe, Smartphone } from "lucide-react";
+import { Code2, Layout, ShoppingCart, Cloud, Search } from "lucide-react";
 import Image from "next/image";
 
 export default function TechStack() {
@@ -10,68 +10,68 @@ export default function TechStack() {
     const categories = [
         {
             id: "core",
-            title: "Core Ecosystem",
+            title: "Core Technologies",
             icon: Code2,
-            description: "The TALL stack and core PHP technologies",
+            description: "Foundation of WordPress development",
             technologies: [
-                { name: "Laravel", description: "PHP Framework", logo: "/images/techstack_logos/Laravel-logo.png" },
-                { name: "PHP 8.2+", description: "Core Language", logo: "/images/techstack_logos/php-logo.svg" },
-                { name: "Livewire", description: "Full-stack Framework", logo: "/images/techstack_logos/Livewire-logo.png" },
-                { name: "Alpine.js", description: "Minimal JS", logo: "/images/techstack_logos/Alpinejs-logo.svg" },
-                { name: "Filament", description: "Admin Panels", logo: "/images/techstack_logos/Filament-logo.png" },
-                { name: "Tailwind CSS", description: "Utility-first CSS", logo: "/images/techstack_logos/tailwindcss-logo.svg" },
+                { name: "WordPress", description: "Core CMS Platform", logo: "/images/techstack_logos/wordpress-logo.svg" },
+                { name: "PHP 8.2+", description: "Server-side Language", logo: "/images/techstack_logos/php-logo.svg" },
+                { name: "MySQL", description: "Database", logo: "/images/techstack_logos/mysql-logo.svg" },
+                { name: "Gutenberg", description: "Block Editor", logo: "" },
+                { name: "ACF Pro", description: "Custom Fields", logo: "" },
+                { name: "REST API", description: "Headless Capability", logo: "/images/techstack_logos/REST-API-logo.png" },
             ],
         },
         {
-            id: "frontend",
-            title: "Frontend & JS",
-            icon: Globe,
-            description: "Frontend frameworks integrated with Laravel",
+            id: "builders",
+            title: "Page Builders",
+            icon: Layout,
+            description: "Visual design and page building tools",
             technologies: [
-                { name: "Vue.js", description: "Progressive Framework", logo: "/images/techstack_logos/vuejs-logo.svg" },
-                { name: "React", description: "UI Library", logo: "/images/techstack_logos/react-logo.svg" },
-                { name: "Inertia.js", description: "Modern Monolith", logo: "/images/techstack_logos/Inertiajs-logo.png" },
-                { name: "Blade", description: "Templating Engine", logo: "/images/techstack_logos/Blade-logo.png" },
-                { name: "Vite", description: "Build Tool", logo: "/images/techstack_logos/vitejs-logo.svg" },
+                { name: "Elementor", description: "Visual Builder", logo: "" },
+                { name: "Divi", description: "Theme & Builder", logo: "" },
+                { name: "WPBakery", description: "Classic Builder", logo: "" },
+                { name: "Oxygen Builder", description: "Developer Builder", logo: "" },
+                { name: "Bricks Builder", description: "Performance Focused", logo: "" },
             ],
         },
         {
-            id: "database",
-            title: "Data & Cache",
-            icon: Database,
-            description: "Reliable storage and caching solutions",
+            id: "ecommerce",
+            title: "E-commerce",
+            icon: ShoppingCart,
+            description: "Online store solutions and plugins",
             technologies: [
-                { name: "MySQL", description: "Relational DB", logo: "/images/techstack_logos/mysql-logo.svg" },
-                { name: "PostgreSQL", description: "Advanced SQL", logo: "/images/techstack_logos/postgresql-logo.svg" },
-                { name: "Redis", description: "Caching & Queues", logo: "/images/techstack_logos/redis-logo.svg" },
-                { name: "MariaDB", description: "Open Source DB", logo: "/images/techstack_logos/MariaDB-logo.png" },
-                { name: "Meilisearch", description: "Search Engine", logo: "/images/techstack_logos/Meilisearch-logo.webp" },
+                { name: "WooCommerce", description: "E-commerce Platform", logo: "/images/techstack_logos/WooCommerce-logo.png" },
+                { name: "Stripe", description: "Payment Processing", logo: "/images/techstack_logos/Stripe-logo.png" },
+                { name: "PayPal", description: "Payment Gateway", logo: "/images/techstack_logos/paypal-logo.png" },
+                { name: "Easy Digital Downloads", description: "Digital Products", logo: "" },
+                { name: "Shippo", description: "Shipping Integration", logo: "/images/techstack_logos/Shippo-logo.png" },
             ],
         },
         {
-            id: "infrastructure",
-            title: "Infrastructure",
+            id: "hosting",
+            title: "Hosting & Infrastructure",
             icon: Cloud,
-            description: "Deployment and server management",
+            description: "Managed WordPress hosting solutions",
             technologies: [
-                { name: "AWS", description: "Cloud Provider", logo: "/images/techstack_logos/aws-logo.png" },
+                { name: "WP Engine", description: "Managed WP Hosting", logo: "/images/techstack_logos/WP-Engine-logo.png" },
+                { name: "Pantheon", description: "Enterprise Hosting", logo: "/images/techstack_logos/Pantheon-logo.png" },
+                { name: "Cloudflare", description: "CDN & Security", logo: "/images/techstack_logos/Cloudflare-logo.webp" },
+                { name: "AWS", description: "Cloud Infrastructure", logo: "/images/techstack_logos/aws-logo.png" },
                 { name: "DigitalOcean", description: "Cloud VPS", logo: "/images/techstack_logos/DigitalOcean-logo.svg" },
-                { name: "Laravel Forge", description: "Server Management", logo: "" }, // Logo not found in directory
-                { name: "Docker", description: "Containerization", logo: "/images/techstack_logos/docker-logo.svg" },
-                { name: "Nginx", description: "Web Server", logo: "/images/techstack_logos/nginx-logo.svg" },
             ],
         },
         {
-            id: "testing",
-            title: "Testing & Quality",
-            icon: Smartphone, // Using generic icon
-            description: "Ensuring code reliability and quality",
+            id: "seo",
+            title: "SEO & Analytics",
+            icon: Search,
+            description: "Search optimization and tracking tools",
             technologies: [
-                { name: "Pest", description: "Testing Framework", logo: "/images/techstack_logos/Pest-logo.jpg" },
-                { name: "PHPUnit", description: "Unit Testing", logo: "/images/techstack_logos/PHPUnit-logo.png" },
-                { name: "Laravel Dusk", description: "Browser Testing", logo: "/images/techstack_logos/Laravel-Dusk-logo.webp" },
-                { name: "GitHub Actions", description: "CI/CD", logo: "/images/techstack_logos/Github-actions-logo.png" },
-                { name: "Sentry", description: "Error Tracking", logo: "/images/techstack_logos/sentry-logo.svg" },
+                { name: "Yoast SEO", description: "SEO Plugin", logo: "" },
+                { name: "RankMath", description: "SEO Suite", logo: "" },
+                { name: "Google Analytics", description: "Analytics", logo: "" },
+                { name: "Hotjar", description: "User Behavior", logo: "/images/techstack_logos/Hotjar-logo.png" },
+                { name: "Google Tag Manager", description: "Tag Management", logo: "/images/techstack_logos/google-tag-manager-logo.svg" },
             ],
         },
     ];
@@ -94,8 +94,8 @@ export default function TechStack() {
                             borderColor: "var(--border-color)",
                         }}
                     >
-                        <Server className="w-4 h-4" style={{ color: "#FF2D20" }} />
-                        <span className="text-sm font-medium" style={{ color: "#FF2D20" }}>
+                        <Code2 className="w-4 h-4" style={{ color: "#0073AA" }} />
+                        <span className="text-sm font-medium" style={{ color: "#0073AA" }}>
                             Our Tech Stack
                         </span>
                     </div>
@@ -107,12 +107,12 @@ export default function TechStack() {
                         The{" "}
                         <span
                             style={{
-                                background: "linear-gradient(135deg, #FF2D20, #F05340)",
+                                background: "linear-gradient(135deg, #0073AA, #0096D6)",
                                 WebkitBackgroundClip: "text",
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Laravel
+                            WordPress
                         </span>{" "}
                         Ecosystem
                     </h2>
@@ -120,7 +120,7 @@ export default function TechStack() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        We master the modern PHP landscape to build robust solutions.
+                        We leverage the best tools and technologies in the WordPress ecosystem.
                     </p>
                 </div>
 
@@ -140,10 +140,10 @@ export default function TechStack() {
                                     ${isActive ? "scale-105" : "hover:scale-105"}
                                 `}
                                 style={{
-                                    backgroundColor: isActive ? "#FF2D20" : "var(--card-bg)",
+                                    backgroundColor: isActive ? "#0073AA" : "var(--card-bg)",
                                     color: isActive ? "#fff" : "var(--foreground)",
-                                    border: `2px solid ${isActive ? "#FF2D20" : "var(--border-color)"}`,
-                                    boxShadow: isActive ? "0 4px 16px rgba(255, 45, 32, 0.4)" : "none",
+                                    border: `2px solid ${isActive ? "#0073AA" : "var(--border-color)"}`,
+                                    boxShadow: isActive ? "0 4px 16px rgba(0, 115, 170, 0.4)" : "none",
                                 }}
                             >
                                 <Icon className="w-4 h-4" />
@@ -175,7 +175,7 @@ export default function TechStack() {
                                 <div
                                     className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden"
                                     style={{
-                                        backgroundColor: tech.logo ? "transparent" : "rgba(255, 45, 32, 0.1)",
+                                        backgroundColor: tech.logo ? "transparent" : "rgba(0, 115, 170, 0.1)",
                                     }}
                                 >
                                     {tech.logo ? (
@@ -189,7 +189,7 @@ export default function TechStack() {
                                     ) : (
                                         <span
                                             className="text-lg font-bold"
-                                            style={{ color: "#FF2D20" }}
+                                            style={{ color: "#0073AA" }}
                                         >
                                             {tech.name.charAt(0)}
                                         </span>
@@ -200,7 +200,7 @@ export default function TechStack() {
                                 <div className="flex-1 min-w-0">
                                     <p
                                         className="font-semibold truncate"
-                                        style={{ color: "#FF2D20" }}
+                                        style={{ color: "#0073AA" }}
                                     >
                                         {tech.name}
                                     </p>

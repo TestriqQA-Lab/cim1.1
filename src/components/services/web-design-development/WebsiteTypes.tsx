@@ -155,6 +155,14 @@ export default function WebsiteTypes() {
             href: "/services/web-design-development/laravel-php",
         },
         {
+            icon: Globe,
+            title: "WordPress Development",
+            description: "Custom WordPress themes, plugins, and WooCommerce stores for businesses of all sizes.",
+            features: ["Custom Themes", "WooCommerce", "Plugin Development", "Performance Optimization"],
+            color: "from-[#0073AA] to-[#0096D6]",
+            href: "/services/web-design-development/wordpress-development",
+        },
+        {
             icon: Smartphone,
             title: "PWA (Progressive Web Apps)",
             description: "Web apps that provide a native app-like experience on mobile devices.",

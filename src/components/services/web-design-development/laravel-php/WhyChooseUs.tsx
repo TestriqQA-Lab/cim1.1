@@ -53,7 +53,11 @@ export default function WhyChooseUs() {
     ];
 
     return (
-        <section className="py-24 bg-background relative overflow-hidden">
+        <section className="py-24 bg-background relative overflow-hidden"
+            style={{
+                backgroundColor: "var(--card-bg)",
+                borderColor: "var(--border-color)",
+            }}>
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">

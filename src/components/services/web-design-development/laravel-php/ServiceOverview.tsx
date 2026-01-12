@@ -46,7 +46,10 @@ export default function ServiceOverview() {
     return (
         <section
             className="py-24 relative overflow-hidden transition-colors duration-300"
-            style={{ backgroundColor: "var(--background)" }}
+            style={{
+                backgroundColor: "var(--card-bg)",
+                borderColor: "var(--border-color)",
+            }}
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
