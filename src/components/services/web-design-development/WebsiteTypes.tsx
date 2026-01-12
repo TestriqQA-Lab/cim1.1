@@ -4,7 +4,7 @@ import { useState } from "react";
 import {
     Globe, ShoppingCart, Zap, BookOpen, Image as ImageIcon, Layout, Code, Code2, Settings,
     Building2, Stethoscope, GraduationCap, Calculator, Plane, Clapperboard,
-    Server, Database, Smartphone, Laptop
+    Server, Database, Smartphone, Laptop, Rocket
 } from "lucide-react";
 import Link from "next/link";
 
@@ -169,6 +169,14 @@ export default function WebsiteTypes() {
             features: ["Custom Web Apps", "REST APIs", "SaaS Platforms", "Data Dashboards"],
             color: "from-[#306998] to-[#FFD43B]",
             href: "/services/web-design-development/python-django",
+        },
+        {
+            icon: Rocket,
+            title: "Astro Framework Development",
+            description: "Lightning-fast content sites with Islands Architecture and zero JavaScript by default.",
+            features: ["Zero JS Default", "Islands Architecture", "Multi-Framework", "SSG & SSR"],
+            color: "from-[#7C3AED] to-[#FF5D01]",
+            href: "/services/web-design-development/astro-framework",
         },
         {
             icon: Smartphone,
