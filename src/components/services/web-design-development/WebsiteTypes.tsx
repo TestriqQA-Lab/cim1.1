@@ -4,7 +4,7 @@ import { useState } from "react";
 import {
     Globe, ShoppingCart, Zap, BookOpen, Image as ImageIcon, Layout, Code, Code2, Settings,
     Building2, Stethoscope, GraduationCap, Calculator, Plane, Clapperboard,
-    Server, Database, Smartphone, Laptop, Rocket
+    Server, Database, Smartphone, Laptop, Rocket, Coffee
 } from "lucide-react";
 import Link from "next/link";
 
@@ -177,6 +177,14 @@ export default function WebsiteTypes() {
             features: ["Zero JS Default", "Islands Architecture", "Multi-Framework", "SSG & SSR"],
             color: "from-[#7C3AED] to-[#FF5D01]",
             href: "/services/web-design-development/astro-framework",
+        },
+        {
+            icon: Coffee,
+            title: "Java & Spring Boot Development",
+            description: "Enterprise-grade applications with Java and Spring Boot for scalability and security.",
+            features: ["Microservices", "REST APIs", "Enterprise Apps", "Cloud Native"],
+            color: "from-[#6DB33F] to-[#F89820]",
+            href: "/services/web-design-development/java-spring-boot",
         },
         {
             icon: Smartphone,
