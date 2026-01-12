@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
             icon: Target,
             title: "Content Strategy Focus",
             description:
-                "We design systems for how your team actually works—not just what technology allows. Content-first approach.",
+                "We design systems for how your team actually works - not just what technology allows. Content-first approach.",
             gradient: "from-[#a855f7] to-[#c084fc]",
         },
         {

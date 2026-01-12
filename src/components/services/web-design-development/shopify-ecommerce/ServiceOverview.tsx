@@ -88,7 +88,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Your e-commerce store is more than a website—it&apos;s your 24/7 sales engine.
+                        Your e-commerce store is more than a website - it&apos;s your 24/7 sales engine.
                         We build stores designed to convert browsers into buyers.
                     </p>
                 </div>

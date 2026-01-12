@@ -32,7 +32,7 @@ export default function ServiceOverview() {
         {
             icon: RefreshCw,
             title: "Future-Proof Content",
-            description: "Structure content once, deliver everywhere—web, mobile, IoT, and beyond.",
+            description: "Structure content once, deliver everywhere - web, mobile, IoT, and beyond.",
         },
     ];
 
@@ -89,7 +89,7 @@ export default function ServiceOverview() {
                         style={{ color: "var(--secondary-text)" }}
                     >
                         Whether headless or traditional, a great CMS empowers your team to create,
-                        manage, and deliver content efficiently—without technical bottlenecks.
+                        manage, and deliver content efficiently - without technical bottlenecks.
                     </p>
                 </div>
 

@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import {
-    Shield,
-    Gauge,
-    Users,
-    Clock,
+    Layers,
+    Zap,
+    Lock,
+    Globe,
     Award,
     Headphones,
 } from "lucide-react";
@@ -15,57 +15,57 @@ export default function WhyChooseUs() {
 
     const reasons = [
         {
-            icon: Shield,
-            title: "Enterprise Security",
-            description: "Bank-grade security with Spring Security, OAuth2, and comprehensive vulnerability protection.",
-            gradient: "from-green-600 via-emerald-500 to-teal-500",
-            bgColor: "rgba(109, 179, 63, 0.15)",
-            iconColor: "#6DB33F",
+            icon: Layers,
+            title: "Composable Architecture",
+            description: "Build modular, reusable content structures that adapt to any channel or experience without refactoring.",
+            gradient: "from-blue-600 via-cyan-500 to-sky-500",
+            bgColor: "rgba(2, 134, 255, 0.15)",
+            iconColor: "#0286FF",
             particles: 3,
         },
         {
-            icon: Gauge,
-            title: "High Performance",
-            description: "Optimized JVM applications with sub-millisecond response times and massive throughput.",
-            gradient: "from-orange-500 via-amber-500 to-yellow-500",
-            bgColor: "rgba(248, 152, 32, 0.15)",
-            iconColor: "#F89820",
+            icon: Zap,
+            title: "99.99% Uptime SLA",
+            description: "Enterprise-grade reliability with global CDN, automatic failover, and industry-leading uptime guarantees.",
+            gradient: "from-cyan-500 via-blue-500 to-indigo-500",
+            bgColor: "rgba(0, 89, 200, 0.15)",
+            iconColor: "#0059C8",
             particles: 4,
         },
         {
-            icon: Users,
-            title: "Expert Java Team",
-            description: "Certified Spring professionals with 10+ years of enterprise Java experience.",
-            gradient: "from-emerald-500 via-green-500 to-lime-500",
-            bgColor: "rgba(90, 154, 50, 0.15)",
-            iconColor: "#5A9A32",
+            icon: Globe,
+            title: "Global CDN Delivery",
+            description: "Content delivered at the edge with 99ms average response times across 200+ points of presence worldwide.",
+            gradient: "from-sky-500 via-blue-500 to-cyan-500",
+            bgColor: "rgba(77, 163, 255, 0.15)",
+            iconColor: "#4DA3FF",
             particles: 5,
         },
         {
-            icon: Clock,
-            title: "Faster Time-to-Market",
-            description: "Spring Boot&apos;s auto-configuration and our patterns accelerate development cycles.",
-            gradient: "from-blue-500 via-indigo-500 to-purple-500",
-            bgColor: "rgba(59, 130, 246, 0.15)",
-            iconColor: "#3b82f6",
+            icon: Lock,
+            title: "Enterprise Security",
+            description: "SOC 2 Type II certified, GDPR compliant, with SSO, role-based access, and comprehensive audit logs.",
+            gradient: "from-indigo-500 via-blue-500 to-violet-500",
+            bgColor: "rgba(99, 102, 241, 0.15)",
+            iconColor: "#6366f1",
             particles: 3,
         },
         {
             icon: Award,
-            title: "Production Proven",
-            description: "500+ enterprise applications deployed, handling billions of transactions daily.",
-            gradient: "from-rose-500 via-pink-500 to-fuchsia-500",
-            bgColor: "rgba(244, 63, 94, 0.15)",
-            iconColor: "#f43f5e",
+            title: "Developer Experience",
+            description: "Best-in-class APIs, comprehensive SDKs, and extensive documentation for rapid development.",
+            gradient: "from-blue-500 via-sky-500 to-cyan-500",
+            bgColor: "rgba(14, 165, 233, 0.15)",
+            iconColor: "#0ea5e9",
             particles: 4,
         },
         {
             icon: Headphones,
-            title: "24/7 Support",
-            description: "Round-the-clock monitoring and support for mission-critical applications.",
-            gradient: "from-cyan-500 via-sky-500 to-blue-500",
-            bgColor: "rgba(6, 182, 212, 0.15)",
-            iconColor: "#06b6d4",
+            title: "Premium Support",
+            description: "Dedicated success managers, 24/7 support, and professional services for enterprise customers.",
+            gradient: "from-cyan-500 via-teal-500 to-emerald-500",
+            bgColor: "rgba(20, 184, 166, 0.15)",
+            iconColor: "#14b8a6",
             particles: 5,
         },
     ];
@@ -83,14 +83,14 @@ export default function WhyChooseUs() {
                 <div
                     className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full blur-3xl"
                     style={{
-                        background: "radial-gradient(circle, rgba(109, 179, 63, 0.3), transparent)",
+                        background: "radial-gradient(circle, rgba(2, 134, 255, 0.3), transparent)",
                         animation: "float 8s ease-in-out infinite",
                     }}
                 />
                 <div
                     className="absolute bottom-1/4 right-1/3 w-96 h-96 rounded-full blur-3xl"
                     style={{
-                        background: "radial-gradient(circle, rgba(248, 152, 32, 0.3), transparent)",
+                        background: "radial-gradient(circle, rgba(77, 163, 255, 0.3), transparent)",
                         animation: "float 10s ease-in-out infinite",
                         animationDelay: "2s",
                     }}
@@ -102,20 +102,20 @@ export default function WhyChooseUs() {
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
                         style={{
-                            background: "linear-gradient(135deg, rgba(109, 179, 63, 0.1), rgba(90, 154, 50, 0.1))",
-                            border: "1px solid rgba(109, 179, 63, 0.2)",
+                            background: "linear-gradient(135deg, rgba(2, 134, 255, 0.1), rgba(0, 89, 200, 0.1))",
+                            border: "1px solid rgba(2, 134, 255, 0.2)",
                         }}>
-                        <Award className="w-4 h-4" style={{ color: "#6DB33F" }} />
-                        <span className="text-sm font-semibold tracking-wide uppercase" style={{ color: "#6DB33F" }}>
+                        <Award className="w-4 h-4" style={{ color: "#0286FF" }} />
+                        <span className="text-sm font-semibold tracking-wide uppercase" style={{ color: "#0286FF" }}>
                             Why Choose Us
                         </span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Enterprise Java </span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Contentful </span>{" "}
                         <span
                             className="inline-block"
                             style={{
-                                background: "linear-gradient(135deg, #6DB33F, #5A9A32)",
+                                background: "linear-gradient(135deg, #0286FF, #4DA3FF)",
                                 WebkitBackgroundClip: "text",
                                 WebkitTextFillColor: "transparent",
                             }}
@@ -124,7 +124,7 @@ export default function WhyChooseUs() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        Trusted by enterprises worldwide for building robust, scalable applications.
+                        The enterprise composable content platform powering digital experiences at scale.
                     </p>
                 </div>
 

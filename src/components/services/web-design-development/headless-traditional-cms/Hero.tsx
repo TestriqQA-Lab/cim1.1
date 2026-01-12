@@ -101,7 +101,7 @@ export default function Hero() {
 
                         <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
                             From headless platforms like Contentful, Strapi, and Sanity to traditional powerhouses
-                            like WordPress and Drupal—we build CMS solutions that empower your content teams.
+                            like WordPress and Drupal - we build CMS solutions that empower your content teams.
                         </p>
 
                         {/* Feature Pills */}

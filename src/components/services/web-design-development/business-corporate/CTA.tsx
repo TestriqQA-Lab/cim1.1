@@ -106,7 +106,7 @@ export default function CTA() {
                             label: "Uptime Guarantee",
                         },
                         {
-                            number: "Fortune 500",
+                            number: "Enterprise",
                             label: "Client Experience",
                         },
                     ].map((indicator, idx) => (

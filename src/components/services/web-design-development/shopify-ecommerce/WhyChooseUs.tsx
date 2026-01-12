@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
             icon: Layers,
             title: "Full-Stack Capability",
             description:
-                "Frontend, backend, and integrations—we handle everything in-house for seamless delivery.",
+                "Frontend, backend, and integrations - we handle everything in-house for seamless delivery.",
             gradient: "from-[#96bf48] to-[#b4d97c]",
         },
         {

@@ -41,10 +41,10 @@ export default function UseCases() {
             icon: Building2,
             title: "Enterprise Digital Products",
             description: "Large organizations launching internal tools, customer portals, or new digital product lines alongside existing systems.",
-            example: "Fortune 500 internal workflow platform",
+            example: "Enterprise internal workflow platform",
             gradient: "from-blue-600 via-cyan-600 to-teal-600",
             bgColor: "#2563eb",
-            stats: "Fortune 500",
+            stats: "Enterprise",
             tags: ["Enterprise", "Secure", "Integration"],
         },
         {

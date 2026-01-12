@@ -4,7 +4,7 @@ import { useState } from "react";
 import {
     Globe, ShoppingCart, Zap, BookOpen, Image as ImageIcon, Layout, Code, Code2, Settings,
     Building2, Stethoscope, GraduationCap, Calculator, Plane, Clapperboard,
-    Server, Database, Smartphone, Laptop, Rocket, Coffee, Droplets
+    Server, Database, Smartphone, Laptop, Rocket, Coffee, Droplets, Boxes, Layers
 } from "lucide-react";
 import Link from "next/link";
 
@@ -195,18 +195,20 @@ export default function WebsiteTypes() {
             href: "/services/web-design-development/drupal-cms",
         },
         {
-            icon: Smartphone,
-            title: "PWA (Progressive Web Apps)",
-            description: "Web apps that provide a native app-like experience on mobile devices.",
-            features: ["Offline access", "Push notifications", "App-like feel", "Installable"],
-            color: "from-[#bc3feb] to-[#fab900]",
+            icon: Boxes,
+            title: "Strapi Headless CMS Development",
+            description: "API-first headless CMS for omnichannel content delivery with REST and GraphQL.",
+            features: ["API-First", "TypeScript Native", "Open Source", "Customizable"],
+            color: "from-[#4945FF] to-[#7B79FF]",
+            href: "/services/web-design-development/strapi-headless-cms",
         },
         {
-            icon: Layout,
-            title: "Static & Jamstack",
-            description: "Ideal for simple, fast-loading sites where content rarely changes. Excellent for performance.",
-            features: ["Lightning-fast loading", "Minimal maintenance", "High security", "Perfect for portfolios"],
-            color: "from-[#008ac1] to-[#00b5ca]",
+            icon: Layers,
+            title: "Contentful Headless CMS Development",
+            description: "Enterprise composable content platform for omnichannel experiences with GraphQL and REST.",
+            features: ["Composable", "Enterprise SaaS", "99.99% Uptime", "Global CDN"],
+            color: "from-[#0286FF] to-[#4DA3FF]",
+            href: "/services/web-design-development/contentful-headless-cms",
         },
     ];
 

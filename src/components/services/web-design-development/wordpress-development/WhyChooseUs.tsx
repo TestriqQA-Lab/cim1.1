@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
         {
             icon: Sparkles,
             title: "Custom Solutions",
-            description: "No cookie-cutter templates—every site is built to match your unique brand and needs.",
+            description: "No cookie-cutter templates - every site is built to match your unique brand and needs.",
             gradient: "from-purple-500 via-pink-500 to-rose-500",
             bgColor: "rgba(168, 85, 247, 0.15)",
             iconColor: "#a855f7",

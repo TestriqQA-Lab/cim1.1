@@ -802,7 +802,7 @@ Track performance metrics and continuously improve your workflows.
 
 ## Conclusion
 
-AI workflows are no longer a luxury—they're a necessity for competitive businesses. By strategically implementing AI automation, you can focus on high-value activities while AI handles routine tasks.
+AI workflows are no longer a luxury - they're a necessity for competitive businesses. By strategically implementing AI automation, you can focus on high-value activities while AI handles routine tasks.
     `,
     author: authors[0],  // Prakash Mishra
     category: "AI & Automation",
@@ -834,7 +834,7 @@ AI workflows are no longer a luxury—they're a necessity for competitive busine
       { id: "ai-list2", type: "list", style: "bullet", items: ["**Cost Reduction**: Automate repetitive tasks", "**Improved Accuracy**: AI makes fewer errors", "**Faster Processing**: Automate tasks in seconds", "**Better Insights**: Analyze data at scale"] },
       { id: "ai-callout2", type: "callout", variant: "warning", title: "Important", content: "Always ensure AI systems are transparent. Employees should understand how automated decisions are made." },
       { id: "ai-h2-6", type: "text", variant: "h2", content: "Conclusion" },
-      { id: "ai-p10", type: "text", variant: "paragraph", content: "AI workflows are no longer a luxury—they're a necessity for competitive businesses. By strategically implementing AI automation, you can focus on high-value activities while AI handles routine tasks." }
+      { id: "ai-p10", type: "text", variant: "paragraph", content: "AI workflows are no longer a luxury - they're a necessity for competitive businesses. By strategically implementing AI automation, you can focus on high-value activities while AI handles routine tasks." }
     ],
   },
   {
@@ -1160,7 +1160,7 @@ Website performance optimization is an ongoing process. By implementing these te
       { id: "perf-h2-4", type: "text", variant: "h2", content: "Tools for Performance Testing" },
       { id: "perf-list7", type: "list", style: "bullet", items: ["Google PageSpeed Insights", "WebPageTest", "Lighthouse", "GTmetrix"] },
       { id: "perf-tools-img", type: "image", src: "/images/blog/blog-images/web-performance-optimization-speed/Tools-for-Performance-Testing.png", alt: "Performance testing tools", caption: "Use these tools to measure and improve performance" },
-      { id: "perf-callout2", type: "callout", variant: "tip", title: "Quick Win", content: "Start with **image optimization**—it often provides the biggest performance gains." },
+      { id: "perf-callout2", type: "callout", variant: "tip", title: "Quick Win", content: "Start with **image optimization** - it often provides the biggest performance gains." },
       { id: "perf-h2-5", type: "text", variant: "h2", content: "Conclusion" },
       { id: "perf-p6", type: "text", variant: "paragraph", content: "Website performance optimization is an ongoing process. Implement these techniques and monitor regularly for best results." }
     ],
@@ -1520,7 +1520,7 @@ Modern React development is about leveraging the right tools and patterns for ea
       { id: "react-h2-4", type: "text", variant: "h2", content: "Performance Optimization" },
       { id: "react-code", type: "code", language: "typescript", filename: "useMemoExample.tsx", code: "// Use useMemo for expensive calculations\nconst expensiveValue = useMemo(() => {\n  return items.filter(item => item.active)\n    .reduce((sum, item) => sum + item.price, 0);\n}, [items]);" },
       { id: "react-list5", type: "list", style: "bullet", items: ["React.memo for expensive renders", "useMemo for calculations", "useCallback for stable references"] },
-      { id: "react-callout2", type: "callout", variant: "warning", title: "Performance Note", content: "Don't memoize everything—**measure first** to identify actual bottlenecks." },
+      { id: "react-callout2", type: "callout", variant: "warning", title: "Performance Note", content: "Don't memoize everything - **measure first** to identify actual bottlenecks." },
       { id: "react-h2-6", type: "text", variant: "h2", content: "Conclusion" },
       { id: "react-p10", type: "text", variant: "paragraph", content: "Modern React development is about leveraging the right tools and patterns. Follow these best practices for performant, maintainable applications." }
     ],
@@ -2077,7 +2077,7 @@ Email marketing automation is one of the highest-ROI marketing activities availa
       { id: "email-hero-img", type: "image", src: "/images/blog/blog-images/email-marketing-automation-guide/Automated-email-sequences-drive-consistent-engagement.png", alt: "Email automation workflow", caption: "Automated email sequences drive consistent engagement" },
       { id: "email-h2-1", type: "text", variant: "h2", content: "Understanding Email Automation" },
       { id: "email-list1", type: "list", style: "bullet", items: ["User actions (sign-ups, purchases)", "Time-based schedules", "Behavioral triggers", "Date-based events"] },
-      { id: "email-quote", type: "quote", content: "Email has an ability many channels don't: creating valuable, personal touches—at scale.", author: "David Newman" },
+      { id: "email-quote", type: "quote", content: "Email has an ability many channels don't: creating valuable, personal touches - at scale.", author: "David Newman" },
       { id: "email-h2-2", type: "text", variant: "h2", content: "Essential Automated Sequences" },
       { id: "email-table", type: "table", headers: ["Sequence", "Trigger", "Average ROI"], rows: [["Welcome Series", "Sign-up", "320%"], ["Abandoned Cart", "Cart left", "400%"], ["Re-engagement", "Inactivity", "180%"], ["Post-Purchase", "Order placed", "250%"]] },
       { id: "email-h3-3", type: "text", variant: "h3", content: "Welcome Series" },

@@ -89,7 +89,7 @@ export default function ServiceOverview() {
                         style={{ color: "var(--secondary-text)" }}
                     >
                         Build production-ready applications with the most popular React framework,
-                        trusted by Netflix, TikTok, Notion, and thousands of companies worldwide.
+                        trusted by leading startups and enterprises worldwide.
                     </p>
                 </div>
 

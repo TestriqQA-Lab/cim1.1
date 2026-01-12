@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
             icon: TrendingUp,
             title: "Built to Scale",
             description:
-                "Architecture that grows with your business—from MVP to millions of users.",
+                "Architecture that grows with your business - from MVP to millions of users.",
             gradient: "from-[#339933] to-[#68a063]",
         },
     ];

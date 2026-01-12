@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Award,
-            title: "Fortune 500 Experience",
+            title: "Enterprise Experience",
             description: "Proven track record with multinational corporations, understanding the unique requirements of large-scale enterprise websites.",
             color: "from-[#f97316] to-[#ea580c]",
             accentColor: "#f97316",

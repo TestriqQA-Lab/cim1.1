@@ -31,7 +31,7 @@ export default function UseCases() {
             icon: Building2,
             title: "Multinational Corporations",
             description: "Global enterprises requiring multi-region websites with localized content, unified brand standards, and integration with corporate systems.",
-            example: "Fortune 500 manufacturer with 40+ country sites",
+            example: "Global enterprise manufacturer with 40+ country sites",
             gradient: "from-blue-500 via-cyan-500 to-teal-500",
             stats: "50+ Countries",
             color: "#0ea5e9",
