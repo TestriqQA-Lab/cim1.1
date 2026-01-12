@@ -4,7 +4,7 @@ import { useState } from "react";
 import {
     Globe, ShoppingCart, Zap, BookOpen, Image as ImageIcon, Layout, Code, Code2, Settings,
     Building2, Stethoscope, GraduationCap, Calculator, Plane, Clapperboard,
-    Server, Database, Smartphone, Laptop, Rocket, Coffee
+    Server, Database, Smartphone, Laptop, Rocket, Coffee, Droplets
 } from "lucide-react";
 import Link from "next/link";
 
@@ -185,6 +185,14 @@ export default function WebsiteTypes() {
             features: ["Microservices", "REST APIs", "Enterprise Apps", "Cloud Native"],
             color: "from-[#6DB33F] to-[#F89820]",
             href: "/services/web-design-development/java-spring-boot",
+        },
+        {
+            icon: Droplets,
+            title: "Drupal CMS Development",
+            description: "Enterprise-grade CMS for government, education, and large organizations requiring security and scalability.",
+            features: ["Enterprise Security", "Multilingual", "Accessibility", "Multisite"],
+            color: "from-[#0678BE] to-[#29A8DF]",
+            href: "/services/web-design-development/drupal-cms",
         },
         {
             icon: Smartphone,
