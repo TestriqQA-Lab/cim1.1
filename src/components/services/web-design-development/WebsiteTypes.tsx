@@ -163,6 +163,14 @@ export default function WebsiteTypes() {
             href: "/services/web-design-development/wordpress-development",
         },
         {
+            icon: Code2,
+            title: "Python & Django Development",
+            description: "Scalable, secure web applications and APIs built with Python's most powerful framework.",
+            features: ["Custom Web Apps", "REST APIs", "SaaS Platforms", "Data Dashboards"],
+            color: "from-[#306998] to-[#FFD43B]",
+            href: "/services/web-design-development/python-django",
+        },
+        {
             icon: Smartphone,
             title: "PWA (Progressive Web Apps)",
             description: "Web apps that provide a native app-like experience on mobile devices.",
