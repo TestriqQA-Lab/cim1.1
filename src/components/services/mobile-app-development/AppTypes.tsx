@@ -52,7 +52,7 @@ export default function AppTypes() {
         {
             icon: Huawei,
             title: "HarmonyOS App Development",
-            description: "Custom HarmonyOS applications built for Huawei’s ecosystem. We develop seamless, distributed apps that run smoothly across phones, tablets, wearables, and IoT devices.",
+            description: "Custom HarmonyOS applications built for Huawei's ecosystem. We develop seamless, distributed apps that run smoothly across phones, tablets, wearables, and IoT devices.",
             features: [
                 "HarmonyOS SDK",
                 "Distributed App Architecture",
@@ -61,20 +61,20 @@ export default function AppTypes() {
             ],
             gradient: "from-[#ff4b4b] to-[#d6001c]"
         },
-        {
-            icon: Rocket,
-            title: "MVP App Development",
-            description: "Rapid development of minimum viable products to validate your business idea. Get to market quickly with essential features.",
-            features: ["Agile Development", "Cost-Effective", "Rapid Prototyping", "Quick Iterations"],
-            gradient: "from-[#fa709a] to-[#fee140]"
-        },
-        {
-            icon: Paintbrush,
-            title: "UI/UX Focused Mobile Apps",
-            description: "Apps designed with user experience at the core. Beautiful interfaces combined with intuitive navigation and delightful interactions.",
-            features: ["User Research", "Wireframing & Prototyping", "Interactive Design", "Accessibility"],
-            gradient: "from-[#30cfd0] to-[#330867]"
-        }
+        // {
+        //     icon: Rocket,
+        //     title: "MVP App Development",
+        //     description: "Rapid development of minimum viable products to validate your business idea. Get to market quickly with essential features.",
+        //     features: ["Agile Development", "Cost-Effective", "Rapid Prototyping", "Quick Iterations"],
+        //     gradient: "from-[#fa709a] to-[#fee140]"
+        // },
+        // {
+        //     icon: Paintbrush,
+        //     title: "UI/UX Focused Mobile Apps",
+        //     description: "Apps designed with user experience at the core. Beautiful interfaces combined with intuitive navigation and delightful interactions.",
+        //     features: ["User Research", "Wireframing & Prototyping", "Interactive Design", "Accessibility"],
+        //     gradient: "from-[#30cfd0] to-[#330867]"
+        // }
     ];
 
     return (
