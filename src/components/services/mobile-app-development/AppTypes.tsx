@@ -10,6 +10,7 @@ import {
     Building2
 } from "lucide-react";
 import { Android, Apple, Huawei } from "../../Icons";
+import Link from "next/link";
 
 
 export default function AppTypes() {
@@ -19,35 +20,40 @@ export default function AppTypes() {
             title: "iOS App Development",
             description: "Native iOS apps built with Swift and SwiftUI. We create beautiful, performant apps that leverage Apple's latest technologies and frameworks.",
             features: ["Swift & SwiftUI", "App Store Optimization", "iCloud Integration", "Push Notifications"],
-            gradient: "from-[#000000] to-[#434343]"
+            gradient: "from-[#000000] to-[#434343]",
+            link: "/services/mobile-app-development/ios-app-development"
         },
         {
             icon: Android,
             title: "Android App Development",
             description: "Robust Android applications using Kotlin and Jetpack. Our apps are optimized for the diverse Android ecosystem and device variations.",
             features: ["Kotlin & Jetpack", "Play Store Optimization", "Firebase Integration", "Material Design"],
-            gradient: "from-[#3ddc84] to-[#07c160]"
+            gradient: "from-[#3ddc84] to-[#07c160]",
+            link: "/services/mobile-app-development/android-app-development"
         },
         {
             icon: GitMerge,
             title: "Cross-Platform App Development",
             description: "React Native and Flutter solutions that work seamlessly across iOS and Android. Reduce development time while maintaining native performance.",
             features: ["React Native", "Flutter", "Code Reusability", "Faster Time-to-Market"],
-            gradient: "from-[#667eea] to-[#764ba2]"
+            gradient: "from-[#667eea] to-[#764ba2]",
+            link: "/services/mobile-app-development/cross-platform-app-development"
         },
         {
             icon: Globe,
             title: "Hybrid App Development",
             description: "Web-based mobile apps using technologies like Ionic and Cordova. Perfect for rapid prototyping and MVP development.",
             features: ["Ionic Framework", "Cordova", "Web Technologies", "Quick Deployment"],
-            gradient: "from-[#f093fb] to-[#f5576c]"
+            gradient: "from-[#f093fb] to-[#f5576c]",
+            link: "/services/mobile-app-development/hybrid-app-development"
         },
         {
             icon: Building2,
             title: "Enterprise Mobile Applications",
             description: "Large-scale, mission-critical applications for enterprises. We handle complex requirements, security, and integration with existing systems.",
             features: ["Enterprise Security", "Legacy System Integration", "Scalability", "Compliance & Governance"],
-            gradient: "from-[#4facfe] to-[#00f2fe]"
+            gradient: "from-[#4facfe] to-[#00f2fe]",
+            link: "/services/mobile-app-development/enterprise-app-development"
         },
         {
             icon: Huawei,
@@ -59,21 +65,24 @@ export default function AppTypes() {
                 "Huawei AppGallery Deployment",
                 "IoT & Multi-Device Support"
             ],
-            gradient: "from-[#ff4b4b] to-[#d6001c]"
+            gradient: "from-[#ff4b4b] to-[#d6001c]",
+            link: "/services/mobile-app-development/harmonyos-app-development"
         },
         // {
         //     icon: Rocket,
         //     title: "MVP App Development",
         //     description: "Rapid development of minimum viable products to validate your business idea. Get to market quickly with essential features.",
         //     features: ["Agile Development", "Cost-Effective", "Rapid Prototyping", "Quick Iterations"],
-        //     gradient: "from-[#fa709a] to-[#fee140]"
+        //     gradient: "from-[#fa709a] to-[#fee140]",
+        //     link: "#"
         // },
         // {
         //     icon: Paintbrush,
         //     title: "UI/UX Focused Mobile Apps",
         //     description: "Apps designed with user experience at the core. Beautiful interfaces combined with intuitive navigation and delightful interactions.",
         //     features: ["User Research", "Wireframing & Prototyping", "Interactive Design", "Accessibility"],
-        //     gradient: "from-[#30cfd0] to-[#330867]"
+        //     gradient: "from-[#30cfd0] to-[#330867]",
+        //     link: "#"
         // }
     ];
 
@@ -106,48 +115,53 @@ export default function AppTypes() {
                     {appTypes.map((type, index) => {
                         const Icon = type.icon;
                         return (
-                            <div
+                            <Link
                                 key={index}
-                                className="group relative h-full p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:scale-105 border overflow-hidden"
-                                style={{
-                                    backgroundColor: "var(--card-bg)",
-                                    borderColor: "var(--border-color)",
-                                }}
+                                href={type.link}
+                                className="block h-full"
                             >
-                                {/* Gradient Overlay */}
                                 <div
-                                    className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-300 bg-gradient-to-br ${type.gradient}`}
-                                />
-
-                                <div className="relative z-10">
+                                    className="group relative h-full p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:scale-105 border overflow-hidden"
+                                    style={{
+                                        backgroundColor: "var(--card-bg)",
+                                        borderColor: "var(--border-color)",
+                                    }}
+                                >
+                                    {/* Gradient Overlay */}
                                     <div
-                                        className={`w-12 h-12 rounded-lg p-2.5 mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 bg-gradient-to-br ${type.gradient}`}
-                                    >
-                                        <Icon className="w-full h-full text-white" />
-                                    </div>
+                                        className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-300 bg-gradient-to-br ${type.gradient}`}
+                                    />
 
-                                    <h3 className="text-xl font-bold mb-2" style={{ color: "var(--foreground)" }}>
-                                        {type.title}
-                                    </h3>
+                                    <div className="relative z-10">
+                                        <div
+                                            className={`w-12 h-12 rounded-lg p-2.5 mb-4 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6 bg-gradient-to-br ${type.gradient}`}
+                                        >
+                                            <Icon className="w-full h-full text-white" />
+                                        </div>
 
-                                    <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
-                                        {type.description}
-                                    </p>
+                                        <h3 className="text-xl font-bold mb-2" style={{ color: "var(--foreground)" }}>
+                                            {type.title}
+                                        </h3>
 
-                                    {/* Features List */}
-                                    <div className="space-y-2">
-                                        {type.features.map((feature, idx) => (
-                                            <div key={idx} className="flex items-center gap-2 text-sm">
-                                                <span
-                                                    className="w-1.5 h-1.5 rounded-full"
-                                                    style={{ backgroundColor: "var(--brand-purple)" }}
-                                                />
-                                                <span style={{ color: "var(--secondary-text)" }}>{feature}</span>
-                                            </div>
-                                        ))}
+                                        <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
+                                            {type.description}
+                                        </p>
+
+                                        {/* Features List */}
+                                        <div className="space-y-2">
+                                            {type.features.map((feature, idx) => (
+                                                <div key={idx} className="flex items-center gap-2 text-sm">
+                                                    <span
+                                                        className="w-1.5 h-1.5 rounded-full"
+                                                        style={{ backgroundColor: "var(--brand-purple)" }}
+                                                    />
+                                                    <span style={{ color: "var(--secondary-text)" }}>{feature}</span>
+                                                </div>
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         );
                     })}
                 </div>

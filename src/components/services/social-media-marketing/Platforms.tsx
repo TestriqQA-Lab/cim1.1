@@ -21,6 +21,7 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #1877F2, #0A66C2)",
             icon: Facebook,
             accentColor: "#1877F2",
+            link: "/services/social-media-marketing/facebook-advertising",
         },
         {
             name: "Instagram Marketing",
@@ -28,6 +29,7 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #E1306C, #C13584)",
             icon: Instagram,
             accentColor: "#E1306C",
+            link: "/services/social-media-marketing/instagram-marketing",
         },
 
         {
@@ -36,6 +38,7 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #0A66C2, #0A63BC)",
             icon: Linkedin,
             accentColor: "#0A66C2",
+            link: "/services/social-media-marketing/linkedin-marketing",
         },
         {
             name: "YouTube",
