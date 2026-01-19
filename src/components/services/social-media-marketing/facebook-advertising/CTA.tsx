@@ -11,6 +11,9 @@ export default function CTA() {
         "Performance guarantee",
     ];
 
+    const fbBlue = "#1877F2";
+
+
     return (
         <section className="py-24 relative overflow-hidden bg-background">
             {/* Background */}
@@ -79,13 +82,17 @@ export default function CTA() {
                             </div>
 
                             {/* CTA Buttons */}
-                            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                            <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#1877F2] rounded-full font-semibold transition-all hover:shadow-lg hover:scale-105"
+                                    className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                                    style={{
+                                        backgroundColor: fbBlue,
+                                        boxShadow: `0 4px 20px ${fbBlue}40`
+                                    }}
                                 >
-                                    Get Free Audit
-                                    <ArrowRight className="w-5 h-5 ml-2" />
+                                    Get Free Facebook Audit
+                                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                                 </Link>
                             </div>
                         </div>

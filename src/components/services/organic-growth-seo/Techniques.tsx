@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
     FileText, Code, Globe, Store, Link2, MousePointerClick, Settings,
     CheckCircle2, Zap, Search, Rocket, Target, BarChart,
@@ -20,6 +21,7 @@ export default function Techniques() {
             badge: "Foundation",
             color: "#3b82f6",
             gradient: "from-blue-500 to-cyan-500",
+            link: "/services/organic-growth-seo/on-page-seo",
         },
         {
             icon: Code,
@@ -30,6 +32,7 @@ export default function Techniques() {
             badge: "Technical",
             color: "#8b5cf6",
             gradient: "from-purple-500 to-pink-500",
+            link: "/services/organic-growth-seo/technical-seo",
         },
         {
             icon: Globe,
@@ -40,6 +43,7 @@ export default function Techniques() {
             badge: "Content",
             color: "#10b981",
             gradient: "from-green-500 to-emerald-500",
+            link: "/services/organic-growth-seo/content-seo",
         },
         {
             icon: Settings,
@@ -50,6 +54,7 @@ export default function Techniques() {
             badge: "Local",
             color: "#f59e0b",
             gradient: "from-amber-500 to-orange-500",
+            link: "/services/organic-growth-seo/local-seo",
         },
         {
             icon: Store,
@@ -58,8 +63,9 @@ export default function Techniques() {
             description: "Specialized optimization for product pages, category pages, and site architecture.",
             features: ["Product optimization", "Category pages", "Schema markup", "Site structure"],
             badge: "E-commerce",
-            color: "#ec4899",
-            gradient: "from-pink-500 to-rose-500",
+            color: "#0EA5E9",
+            gradient: "from-sky-400 to-cyan-500",
+            link: "/services/organic-growth-seo/ecommerce-seo",
         },
         {
             icon: Link2,
@@ -70,16 +76,7 @@ export default function Techniques() {
             badge: "Authority",
             color: "#06b6d4",
             gradient: "from-cyan-500 to-blue-500",
-        },
-        {
-            icon: MousePointerClick,
-            decorIcon: TrendingUp,
-            title: "Conversion Rate Optimization",
-            description: "Optimizing your website to increase the percentage of visitors who take desired actions.",
-            features: ["A/B testing", "UX optimization", "Landing pages", "Call-to-action"],
-            badge: "CRO",
-            color: "#14b8a6",
-            gradient: "from-teal-500 to-green-500",
+            link: "/services/organic-growth-seo/link-building",
         },
     ];
 
@@ -130,10 +127,10 @@ export default function Techniques() {
                         const Icon = tech.icon;
                         const DecorIcon = tech.decorIcon;
                         const isHovered = hoveredIndex === index;
+                        const linkProp = 'link' in tech ? (tech as { link?: string }).link : undefined;
 
-                        return (
+                        const cardContent = (
                             <div
-                                key={index}
                                 className="group relative"
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
@@ -335,6 +332,14 @@ export default function Techniques() {
                                     />
                                 </div>
                             </div>
+                        );
+
+                        return linkProp ? (
+                            <Link href={linkProp} key={index} className="block">
+                                {cardContent}
+                            </Link>
+                        ) : (
+                            <div key={index}>{cardContent}</div>
                         );
                     })}
                 </div>

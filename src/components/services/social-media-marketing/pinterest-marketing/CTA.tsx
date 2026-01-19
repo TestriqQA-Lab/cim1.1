@@ -46,14 +46,14 @@ export default function CTA() {
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center px-10 py-5 rounded-full font-bold text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                            className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
                             style={{
                                 backgroundColor: pinterestRed,
                                 boxShadow: `0 4px 20px ${pinterestRed}40`
                             }}
                         >
                             Get Free Audit
-                            <ArrowRight className="w-6 h-6 ml-2" />
+                            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                         </Link>
                         {/* View Case Studies - Commented out for now
                         <Link

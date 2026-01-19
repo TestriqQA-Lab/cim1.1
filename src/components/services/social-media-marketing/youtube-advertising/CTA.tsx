@@ -76,14 +76,14 @@ export default function CTA() {
                             </div>
 
                             {/* CTA Buttons */}
-                            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center px-8 py-4 bg-white rounded-full font-semibold transition-all hover:shadow-lg hover:scale-105"
+                                    className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 bg-white rounded-full font-bold text-base md:text-lg transition-all hover:shadow-lg hover:scale-105"
                                     style={{ color: youtubeRed }}
                                 >
                                     Get Free Audit
-                                    <ArrowRight className="w-5 h-5 ml-2" />
+                                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                                 </Link>
                             </div>
                         </div>
