@@ -1,0 +1,196 @@
+"use client";
+
+import { useState } from "react";
+import {
+    MessageSquare,
+    Hash,
+    Megaphone,
+    Users,
+    TrendingUp,
+    ShieldAlert,
+} from "lucide-react";
+
+export default function ServiceOverview() {
+    const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+
+    const services = [
+        {
+            icon: Megaphone,
+            title: "X Advertising",
+            description: "High-impact paid campaigns including Promoted Ads, Trend Takeovers, and Follower campaigns.",
+            color: "var(--secondary-text)",
+        },
+        {
+            icon: MessageSquare,
+            title: "Tweet Strategy",
+            description: "Crafting viral threads, engaging replies, and impactful posts that resonate with your niche.",
+            color: "#1D9BF0", // Twitter Blue accent
+        },
+        {
+            icon: Users,
+            title: "Community Growth",
+            description: "Building loyal communities through consistent engagement, Spaces hosting, and follower interaction.",
+            color: "var(--secondary-text)",
+        },
+        {
+            icon: TrendingUp,
+            title: "Trend Jacking",
+            description: "Real-time monitoring to capitalize on viral moments and insert your brand into relevant conversations.",
+            color: "#1D9BF0",
+        },
+        {
+            icon: Hash,
+            title: "Hashtag Campaigns",
+            description: "Strategic hashtag usage and branded challenges to maximize discoverability and reach.",
+            color: "var(--secondary-text)",
+        },
+        {
+            icon: ShieldAlert,
+            title: "PR & Crisis Mgmt",
+            description: "Proactive reputation management and rapid response strategies for maintaining brand integrity.",
+            color: "#1D9BF0",
+        },
+    ];
+
+    return (
+        <section
+            className="py-24 relative overflow-hidden transition-colors duration-300 border-t"
+            style={{
+                backgroundColor: "var(--background)",
+                borderColor: "#555555"
+            }}
+        >
+            {/* Animated background elements */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div
+                    className="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-5 blur-3xl animate-pulse"
+                    style={{
+                        backgroundColor: "var(--foreground)",
+                        animationDuration: "4s",
+                    }}
+                />
+                <div
+                    className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full opacity-5 blur-3xl animate-pulse"
+                    style={{
+                        backgroundColor: "#1D9BF0",
+                        animationDuration: "6s",
+                        animationDelay: "2s",
+                    }}
+                />
+            </div>
+
+            <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
+                <div className="text-center mb-16">
+                    <div className="inline-block mb-4">
+                        <span
+                            className="px-4 py-2 rounded-full text-sm font-semibold tracking-wide uppercase border border-border"
+                            style={{
+                                backgroundColor: "var(--card-bg)",
+                                color: "var(--foreground)",
+                            }}
+                        >
+                            Our Services
+                        </span>
+                    </div>
+                    <h2
+                        className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+                        style={{ color: "var(--foreground)" }}
+                    >
+                        X (Twitter){" "}
+                        <span style={{ color: "var(--secondary-text)" }}>
+                            Marketing Services
+                        </span>
+                    </h2>
+                    <p
+                        className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
+                        style={{ color: "var(--secondary-text)" }}
+                    >
+                        Comprehensive strategies to build authority, drive conversations, and convert followers on X.
+                    </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {services.map((service, idx) => {
+                        const Icon = service.icon;
+                        const isHovered = hoveredCard === idx;
+
+                        return (
+                            <div
+                                key={idx}
+                                className="group relative cursor-pointer"
+                                onMouseEnter={() => setHoveredCard(idx)}
+                                onMouseLeave={() => setHoveredCard(null)}
+                            >
+                                {/* Glow effect on hover */}
+                                <div
+                                    className={`
+                                        absolute -inset-1 rounded-3xl opacity-0 transition-all duration-500 blur-xl
+                                        ${isHovered ? "opacity-20" : ""}
+                                    `}
+                                    style={{
+                                        background: `linear-gradient(135deg, ${service.color}, transparent)`,
+                                    }}
+                                />
+
+                                {/* Main card */}
+                                <div
+                                    className={`
+                                        relative p-8 rounded-3xl border transition-all duration-500 overflow-hidden h-full
+                                        ${isHovered ? "bg-accent -translate-y-2" : "bg-card"}
+                                    `}
+                                    style={{
+                                        borderColor: isHovered ? service.color : "var(--border-color)",
+                                        backgroundColor: "var(--card-bg)"
+                                    }}
+                                >
+                                    {/* Icon container */}
+                                    <div className="relative mb-6">
+                                        <div
+                                            className={`
+                                                w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-500
+                                                ${isHovered ? "scale-110" : "scale-100"}
+                                            `}
+                                            style={{
+                                                backgroundColor: isHovered ? service.color : "var(--background)",
+                                            }}
+                                        >
+                                            <Icon
+                                                className={`w-8 h-8 transition-all duration-500`}
+                                                style={{
+                                                    color: isHovered ? (service.color === "#FFFFFF" ? "black" : "white") : "var(--foreground)",
+                                                }}
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Content */}
+                                    <h3
+                                        className="text-xl font-bold mb-3 transition-colors duration-300"
+                                        style={{ color: "var(--foreground)" }}
+                                    >
+                                        {service.title}
+                                    </h3>
+                                    <p
+                                        className="leading-relaxed"
+                                        style={{ color: "var(--secondary-text)" }}
+                                    >
+                                        {service.description}
+                                    </p>
+
+                                    {/* Animated bottom border */}
+                                    <div
+                                        className="absolute bottom-0 left-0 h-1 transition-all duration-500"
+                                        style={{
+                                            width: isHovered ? "100%" : "0%",
+                                            backgroundColor: service.color,
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+        </section>
+    );
+}

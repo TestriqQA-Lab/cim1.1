@@ -6,56 +6,47 @@ import Image from "next/image";
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("ads");
 
-    const linkedinBlue = "#0A66C2";
+    const youtubeRed = "#FF0000";
 
     const categories = [
-        { id: "ads", label: "LinkedIn Ads" },
-        { id: "crm", label: "CRM & Sales" },
-        { id: "analytics", label: "Analytics" },
-        { id: "content", label: "Content Tools" },
-        { id: "automation", label: "Automation" },
+        { id: "ads", label: "Ads & Analytics" },
+        { id: "production", label: "Video Production" },
+        { id: "optimization", label: "SEO & Growth" },
+        { id: "design", label: "Creative Design" },
     ];
 
     const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
         ads: [
-            { name: "LinkedIn Campaign Manager", description: "Ad Management", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Sales Navigator", description: "Lead Prospecting", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Marketing Solutions", description: "B2B Marketing", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Events", description: "Event Promotion", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Newsletter", description: "Content Distribution", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Live", description: "Live Streaming", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
+            { name: "Google Ads", description: "Ad Management", logo: "/images/performance-marketing-logos/google-ads-logo.svg" },
+            { name: "YouTube Analytics", description: "Native Data", logo: "/images/performance-marketing-logos/youtube-ads-logo.png" },
+            { name: "Google Analytics 4", description: "Cross-Platform", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Tag Manager", description: "Tracking", logo: "/images/techstack_logos/google-tag-manager-logo.svg" },
+            { name: "Looker Studio", description: "Reporting", logo: "/images/ai_automation_logos/looker-logo.svg" },
+            { name: "Supermetrics", description: "Data Integration", logo: "/images/techstack_logos/Supermetrics-logo.jpg" },
         ],
-        crm: [
-            { name: "HubSpot", description: "CRM & Marketing", logo: "/images/ai_automation_logos/hubspot-logo.png" },
-            { name: "Salesforce", description: "Enterprise CRM", logo: "/images/ai_automation_logos/salesforce-logo.png" },
-            { name: "Pipedrive", description: "Sales CRM", logo: "/images/techstack_logos/Pipedrive-logo.jpg" },
-            { name: "Zoho CRM", description: "Business CRM", logo: "/images/techstack_logos/Zoho-CRM-logo.png" },
-            { name: "Microsoft Dynamics", description: "Enterprise Suite", logo: "/images/techstack_logos/Microsoft-365-logo.webp" },
-            { name: "Apollo.io", description: "Sales Intelligence", logo: "/images/techstack_logos/Apolloio-logo.png" },
+        production: [
+            { name: "Adobe Premiere", description: "Pro Editing", logo: "/images/ai_automation_logos/adobe-logo.png" },
+            { name: "Final Cut Pro", description: "Mac Editing", logo: "/images/techstack_logos/Final-Cut-Pro-logo.png" },
+            { name: "DaVinci Resolve", description: "Color Grading", logo: "/images/techstack_logos/DaVinci-Resolve-logo.png" },
+            { name: "After Effects", description: "Motion Graphics", logo: "/images/ai_automation_logos/adobe-logo.png" },
+            { name: "CapCut", description: "Shorts Editing", logo: "/images/techstack_logos/Capcut-logo.png" },
+            { name: "Envato Elements", description: "Stock Assets", logo: "/images/techstack_logos/Envato-Elements-logo.jpg" },
         ],
-        analytics: [
-            { name: "LinkedIn Analytics", description: "Native Insights", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "Google Analytics", description: "Web Traffic", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
-            { name: "Google Looker", description: "Data Studio", logo: "/images/ai_automation_logos/looker-logo.svg" },
-            { name: "Tableau", description: "Visualization", logo: "/images/ai_automation_logos/tableau-logo.svg" },
-            { name: "Mixpanel", description: "Product Analytics", logo: "/images/techstack_logos/mixpanel-logo.png" },
-            { name: "Hotjar", description: "Heatmaps", logo: "/images/techstack_logos/Hotjar-logo.png" },
+        optimization: [
+            { name: "TubeBuddy", description: "Channel Growth", logo: "/images/techstack_logos/TubeBuddy-logo.jpg" },
+            { name: "VidIQ", description: "Video SEO", logo: "/images/techstack_logos/VidIQ-logo.png" },
+            { name: "Social Blade", description: "Competitor Stats", logo: "/images/techstack_logos/Social-Blade-logo.jpg" },
+            { name: "Google Trends", description: "Topic Research", logo: "/images/techstack_logos/Google-Trends-logo.jpg" },
+            { name: "Ahrefs", description: "Keyword Research", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
+            { name: "SEMrush", description: "Market Insights", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
         ],
-        content: [
-            { name: "Canva", description: "Graphics Design", logo: "/images/brand-identity-design-logos/canva-logo.png" },
-            { name: "Adobe Creative", description: "Pro Design", logo: "/images/ai_automation_logos/adobe-logo.png" },
+        design: [
+            { name: "Canva Pro", description: "Thumbnails", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Photoshop", description: "Pro Graphics", logo: "/images/ai_automation_logos/adobe-logo.png" },
             { name: "Figma", description: "UI Design", logo: "/images/techstack_logos/figma-logo.svg" },
-            { name: "Loom", description: "Video Recording", logo: "/images/techstack_logos/Loom-logo.png" },
-            { name: "Grammarly", description: "Writing Assistant", logo: "/images/techstack_logos/Grammarly-logo.jpg" },
-            { name: "Notion", description: "Content Planning", logo: "/images/techstack_logos/Notion-logo.png" },
-        ],
-        automation: [
-            { name: "Zapier", description: "Workflow Automation", logo: "/images/ai_automation_logos/zapier-logo.svg" },
-            { name: "Make", description: "Integrations", logo: "/images/ai_automation_logos/make-logo.png" },
-            { name: "HubSpot Automation", description: "Marketing Automation", logo: "/images/ai_automation_logos/hubspot-logo.png" },
-            { name: "Mailchimp", description: "Email Marketing", logo: "/images/ai_automation_logos/mailchimp-logo.svg" },
-            { name: "Calendly", description: "Scheduling", logo: "/images/techstack_logos/calendly-logo.webp" },
-            { name: "Slack", description: "Team Communication", logo: "/images/techstack_logos/slack-logo.svg" },
+            { name: "Midjourney", description: "AI Art", logo: "/images/techstack_logos/Midjourney-logo.png" },
+            { name: "DALL-E 3", description: "AI Generation", logo: "/images/techstack_logos/OpenAI-logo.png" },
+            { name: "Adobe Express", description: "Quick Design", logo: "/images/ai_automation_logos/adobe-logo.png" },
         ],
     };
 
@@ -68,13 +59,13 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Our LinkedIn</span>{" "}
-                        <span style={{ color: linkedinBlue }}>
+                        <span style={{ color: "var(--foreground)" }}>Our YouTube</span>{" "}
+                        <span style={{ color: youtubeRed }}>
                             Tech Stack
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Industry-leading tools we use to manage and optimize your LinkedIn marketing campaigns.
+                        Cutting-edge tools for video production, ad management, and channel optimization.
                     </p>
                 </div>
 
@@ -86,7 +77,7 @@ export default function TechStack() {
                             onClick={() => setActiveTab(cat.id)}
                             className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${activeTab === cat.id ? "text-white shadow-lg transform scale-105" : "hover:bg-accent"}`}
                             style={{
-                                backgroundColor: activeTab === cat.id ? linkedinBlue : "var(--background)",
+                                backgroundColor: activeTab === cat.id ? youtubeRed : "var(--background)",
                                 color: activeTab === cat.id ? "white" : "var(--secondary-text)",
                                 border: activeTab === cat.id ? "none" : "1px solid var(--border-color)",
                             }}
@@ -112,7 +103,7 @@ export default function TechStack() {
                                 <div
                                     className="w-14 h-14 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
                                     style={{
-                                        backgroundColor: tech.logo ? "var(--card-bg)" : linkedinBlue,
+                                        backgroundColor: tech.logo ? "var(--card-bg)" : youtubeRed,
                                         border: tech.logo ? "1px solid var(--border-color)" : "none",
                                     }}
                                 >

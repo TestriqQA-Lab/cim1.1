@@ -1,13 +1,13 @@
 "use client";
 
-import { ArrowRight, ChevronRight, Briefcase, Users, TrendingUp } from "lucide-react";
+import { ArrowRight, ChevronRight, MessageSquare, Hash, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Linkedin } from "lucide-react";
 
 export default function Hero() {
-    // LinkedIn brand color
-    const linkedinBlue = "#0A66C2";
+    // X brand colors
+    const xBlack = "#000000";
+    const xDarkGray = "#14171A";
 
     return (
         <section
@@ -19,17 +19,17 @@ export default function Hero() {
                 className="absolute inset-0 z-0"
                 style={{
                     backgroundImage: `
-                        radial-gradient(circle at 15% 50%, rgba(10, 102, 194, 0.12), transparent 25%),
-                        radial-gradient(circle at 85% 30%, rgba(10, 102, 194, 0.08), transparent 25%),
-                        radial-gradient(circle at 50% 80%, rgba(10, 102, 194, 0.06), transparent 25%)
+                        radial-gradient(circle at 15% 50%, rgba(255, 255, 255, 0.05), transparent 25%),
+                        radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.03), transparent 25%),
+                        radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.02), transparent 25%)
                     `,
                 }}
             >
                 {/* Grid Pattern */}
                 <div
-                    className="absolute inset-0 opacity-[0.03]"
+                    className="absolute inset-0 opacity-[0.05]"
                     style={{
-                        backgroundImage: `linear-gradient(${linkedinBlue} 1px, transparent 1px), linear-gradient(90deg, ${linkedinBlue} 1px, transparent 1px)`,
+                        backgroundImage: `linear-gradient(var(--border-color) 1px, transparent 1px), linear-gradient(90deg, var(--border-color) 1px, transparent 1px)`,
                         backgroundSize: "40px 40px",
                     }}
                 />
@@ -49,8 +49,8 @@ export default function Hero() {
                     50% { transform: translateY(-10px); }
                 }
                 @keyframes pulse-glow {
-                    0%, 100% { box-shadow: 0 0 20px rgba(10, 102, 194, 0.2); }
-                    50% { box-shadow: 0 0 40px rgba(10, 102, 194, 0.4); }
+                    0%, 100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.05); }
+                    50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.1); }
                 }
                 .animate-slideUp {
                     animation: slideUp 0.6s ease-out forwards;
@@ -77,26 +77,28 @@ export default function Hero() {
                     <div className="space-y-8 text-center lg:text-left">
                         {/* Breadcrumbs */}
                         <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-2 gap-y-1 text-sm" style={{ color: "var(--secondary-text)" }}>
-                            <Link href="/" className="hover:underline">Home</Link>
+                            <Link href="/" className="hover:underline text-foreground">Home</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <Link href="/services" className="hover:underline">Services</Link>
+                            <Link href="/services" className="hover:underline text-foreground">Services</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <Link href="/services/social-media-marketing" className="hover:underline">Social Media</Link>
+                            <Link href="/services/social-media-marketing" className="hover:underline text-foreground">Social Media</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <span style={{ color: linkedinBlue }}>LinkedIn Marketing</span>
+                            <span style={{ color: "var(--foreground)" }}>X (Twitter) Marketing</span>
                         </nav>
 
                         {/* Badge */}
                         <div
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm animate-fadeIn"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border animate-fadeIn"
                             style={{
-                                backgroundColor: `${linkedinBlue}10`,
-                                borderColor: `${linkedinBlue}30`,
+                                backgroundColor: "var(--card-bg)",
+                                borderColor: "var(--border-color)"
                             }}
                         >
-                            <Linkedin className="w-4 h-4" style={{ color: linkedinBlue }} />
-                            <span className="text-sm font-medium" style={{ color: linkedinBlue }}>
-                                LinkedIn Marketing Partner
+                            <svg className="w-4 h-4" style={{ color: "var(--foreground)" }} viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                            <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>
+                                X Advertising Partner
                             </span>
                         </div>
 
@@ -105,12 +107,12 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            B2B Growth with{" "}
-                            <span className="relative inline-block" style={{ color: linkedinBlue }}>
-                                LinkedIn Marketing
+                            Dominate the{" "}
+                            <span className="relative inline-block" style={{ color: "var(--foreground)" }}>
+                                Conversation
                                 <svg
-                                    className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
-                                    style={{ color: linkedinBlue }}
+                                    className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
+                                    style={{ color: "var(--foreground)" }}
                                     viewBox="0 0 100 10"
                                     preserveAspectRatio="none"
                                 >
@@ -120,27 +122,27 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Reach 1+ billion professionals with targeted LinkedIn marketing.
-                            Generate qualified B2B leads, build thought leadership, and drive business growth.
+                            Drive real-time engagement and build brand authority with strategic X (Twitter) campaigns.
+                            From trending topics to targeted ads, we amplify your voice.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Lead Generation",
-                                "Sponsored Content",
-                                "InMail Campaigns",
-                                "Account-Based Marketing",
+                                "Real-Time Trends",
+                                "Impactful Threads",
+                                "Spaces Hosting",
+                                "Targeted X Ads",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
                                     className="flex items-center gap-2 px-3 py-1.5 rounded-md border backdrop-blur-sm"
                                     style={{
                                         backgroundColor: "var(--card-bg)",
-                                        borderColor: "var(--border-color)",
+                                        borderColor: "var(--border-color)"
                                     }}
                                 >
-                                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: linkedinBlue }} />
+                                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "var(--foreground)" }} />
                                     <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{feature}</span>
                                 </div>
                             ))}
@@ -150,10 +152,13 @@ export default function Hero() {
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-slideUp delay-300">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
-                                style={{ backgroundColor: linkedinBlue }}
+                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 hover:shadow-lg"
+                                style={{
+                                    backgroundColor: "var(--foreground)",
+                                    color: "var(--background)"
+                                }}
                             >
-                                Get Free Strategy
+                                Start Trending
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -162,8 +167,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border transition-all hover:bg-accent"
                                 style={{
                                     borderColor: "var(--border-color)",
-                                    color: "var(--foreground)",
-                                    backgroundColor: "var(--card-bg)",
+                                    color: "var(--foreground)"
                                 }}
                             >
                                 Our Process
@@ -173,18 +177,18 @@ export default function Hero() {
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>1B+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Professionals</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "var(--foreground)" }}>500M+</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Monthly Users</p>
                             </div>
-                            <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
+                            <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>80%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>B2B Leads</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "var(--foreground)" }}>4x</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Higher Engagement</p>
                             </div>
-                            <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
+                            <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>2x</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Conversion Rate</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "var(--foreground)" }}>#1</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>For News & Trends</p>
                             </div>
                         </div>
                     </div>
@@ -196,30 +200,30 @@ export default function Hero() {
                             <div
                                 className="relative w-full max-w-lg aspect-square rounded-3xl overflow-hidden border flex items-center justify-center animate-float-gentle"
                                 style={{
-                                    borderColor: `${linkedinBlue}30`,
-                                    backgroundColor: `${linkedinBlue}05`,
-                                    boxShadow: `0 0 30px ${linkedinBlue}20`,
+                                    borderColor: "var(--border-color)",
+                                    backgroundColor: "var(--card-bg)",
+                                    boxShadow: "0 0 50px rgba(0,0,0,0.1)"
                                 }}
                             >
-                                {/* Hero Image */}
-                                <div className="w-[80%] h-[80%] relative flex items-center justify-center p-8 ">
+                                {/* X Hero Image */}
+                                <div className="w-[80%] h-[80%] relative flex items-center justify-center p-8">
                                     <Image
-                                        src="/images/techstack_logos/linkedin-logo-hero-image.avif"
-                                        alt="LinkedIn Marketing"
+                                        src="/images/techstack_logos/X-logo-hero-image.png"
+                                        alt="X Marketing"
                                         width={400}
                                         height={400}
-                                        className="object-contain rounded-2xl"
+                                        className="object-contain"
                                     />
                                 </div>
 
                                 {/* Decorative circles */}
                                 <div
                                     className="absolute w-72 h-72 rounded-full border opacity-20"
-                                    style={{ borderColor: linkedinBlue }}
+                                    style={{ borderColor: "var(--foreground)" }}
                                 />
                                 <div
                                     className="absolute w-96 h-96 rounded-full border opacity-10"
-                                    style={{ borderColor: linkedinBlue }}
+                                    style={{ borderColor: "var(--foreground)" }}
                                 />
                             </div>
 
@@ -227,23 +231,23 @@ export default function Hero() {
                             <div
                                 className="absolute -bottom-4 -left-4 p-4 rounded-2xl border shadow-xl animate-pulse-glow"
                                 style={{
-                                    backgroundColor: "var(--card-bg)",
-                                    borderColor: `${linkedinBlue}30`,
+                                    borderColor: "var(--border-color)",
+                                    backgroundColor: "var(--card-bg)"
                                 }}
                             >
                                 <div className="flex items-center gap-3">
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
-                                        style={{ backgroundColor: linkedinBlue }}
+                                        style={{ backgroundColor: "var(--background)" }}
                                     >
-                                        <Briefcase className="w-6 h-6 text-white" />
+                                        <MessageSquare className="w-6 h-6" style={{ color: "var(--foreground)" }} />
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            B2B Leads
+                                            Viral Reach
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Decision Makers
+                                            Instant Impact
                                         </p>
                                     </div>
                                 </div>
@@ -253,23 +257,23 @@ export default function Hero() {
                             <div
                                 className="absolute -top-4 -right-4 p-4 rounded-2xl border shadow-xl"
                                 style={{
-                                    backgroundColor: "var(--card-bg)",
-                                    borderColor: `${linkedinBlue}30`,
+                                    borderColor: "var(--border-color)",
+                                    backgroundColor: "var(--card-bg)"
                                 }}
                             >
                                 <div className="flex items-center gap-3">
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
-                                        style={{ backgroundColor: linkedinBlue }}
+                                        style={{ backgroundColor: "var(--background)" }}
                                     >
-                                        <TrendingUp className="w-6 h-6 text-white" />
+                                        <Hash className="w-6 h-6" style={{ color: "var(--foreground)" }} />
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            Thought Leadership
+                                            Trending
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Industry Authority
+                                            Top Topics
                                         </p>
                                     </div>
                                 </div>
@@ -280,22 +284,22 @@ export default function Hero() {
                         <div
                             className="p-5 rounded-2xl border mt-4"
                             style={{
-                                backgroundColor: "var(--card-bg)",
                                 borderColor: "var(--border-color)",
+                                backgroundColor: "var(--card-bg)"
                             }}
                         >
-                            <p className="text-sm font-semibold mb-3" style={{ color: linkedinBlue }}>
-                                LinkedIn Ad Formats We Manage
+                            <p className="text-sm font-semibold mb-3" style={{ color: "var(--foreground)" }}>
+                                X Ad Formats We Master
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Sponsored Content", "InMail", "Text Ads", "Dynamic Ads", "Video Ads", "Carousel"].map((format, idx) => (
+                                {["Promoted Ads", "Follower Ads", "Trend Takeover", "Amplify", "Twitter Live", "Video Ads"].map((format, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"
                                         style={{
-                                            backgroundColor: `${linkedinBlue}08`,
-                                            borderColor: `${linkedinBlue}20`,
-                                            color: "var(--foreground)",
+                                            borderColor: "var(--border-color)",
+                                            backgroundColor: "var(--background)",
+                                            color: "var(--secondary-text)"
                                         }}
                                     >
                                         {format}

@@ -12,6 +12,7 @@ import {
     Zap,
 } from "lucide-react";
 import { TwitterX, Pinterest } from "../../Icons";
+import Link from "next/link";
 
 export default function Platforms() {
     const platforms = [
@@ -43,6 +44,7 @@ export default function Platforms() {
         {
             name: "YouTube",
             description: "Developing high-value video content, optimizing for search, and utilizing YouTube Ads to capture attention and educate potential customers.",
+            link: "/services/social-media-marketing/youtube-advertising",
             gradient: "linear-gradient(135deg, #FF0000, #282828)",
             icon: Youtube,
             accentColor: "#FF0000",
@@ -50,6 +52,7 @@ export default function Platforms() {
         {
             name: "X (Twitter)",
             description: "Real-time engagement, trend-jacking, and building a strong, authoritative brand voice through concise and impactful messaging.",
+            link: "/services/social-media-marketing/x-twitter-marketing",
             gradient: "linear-gradient(135deg, #000000, #333333)",
             icon: TwitterX,
             accentColor: "#000000",
@@ -61,6 +64,7 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #E60023, #AD081B)",
             icon: Pinterest,
             accentColor: "#E60023",
+            link: "/services/social-media-marketing/pinterest-marketing",
         },
     ];
 
@@ -127,9 +131,10 @@ export default function Platforms() {
                     {platforms.map((platform, idx) => {
                         const Icon = platform.icon;
                         return (
-                            <div
+                            <Link
+                                href={platform.link || "#"}
                                 key={idx}
-                                className="group rounded-2xl p-8 border transition-all duration-500 hover:shadow-2xl overflow-hidden relative cursor-pointer"
+                                className="group rounded-2xl p-8 border transition-all duration-500 hover:shadow-2xl overflow-hidden relative cursor-pointer block"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
                                     borderColor: "var(--border-color)",
@@ -263,7 +268,7 @@ export default function Platforms() {
                                         e.currentTarget.style.transform = "scaleX(0)";
                                     }}
                                 />
-                            </div>
+                            </Link>
                         );
                     })}
                 </div>
