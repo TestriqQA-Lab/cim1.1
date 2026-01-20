@@ -8,6 +8,7 @@ import {
     Shield,
     Zap,
     HeadphonesIcon,
+    Sparkles,
 } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -72,6 +73,20 @@ export default function WhyChooseUs() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(24, 119, 242, 0.1)",
+                            borderColor: "rgba(24, 119, 242, 0.2)",
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: "#1877F2" }} />
+                        <span className="text-sm font-medium" style={{ color: "#1877F2" }}>
+                            Why Choose Us
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         <span style={{ color: "var(--foreground)" }}>Why Choose Us for</span>{" "}
                         <span style={{ color: "#1877F2" }}>

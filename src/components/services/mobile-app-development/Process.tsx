@@ -1,6 +1,6 @@
 "use client";
 
-import { Lightbulb, Pencil, Code, TestTube, Rocket, Wrench } from "lucide-react";
+import { Lightbulb, Pencil, Code, TestTube, Rocket, Wrench, Sparkles } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 
 export default function Process() {
@@ -62,6 +62,20 @@ export default function Process() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative">
                 {/* Section Header */}
                 <div className="text-center mb-16 animate-fadeIn">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "color-mix(in srgb, var(--brand-purple) 10%, transparent)",
+                            borderColor: "color-mix(in srgb, var(--brand-purple) 20%, transparent)",
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: "var(--brand-purple)" }} />
+                        <span className="text-sm font-medium" style={{ color: "var(--brand-purple)" }}>
+                            Our Process
+                        </span>
+                    </div>
+
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
                         <span style={{ color: "var(--foreground)" }}>Our Mobile App Development</span> <span style={{ color: "var(--brand-purple)" }}>Process</span>
                     </h2>

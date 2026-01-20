@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Building2, Briefcase, GraduationCap, Users, Target, Megaphone } from "lucide-react";
+import { Building2, Briefcase, GraduationCap, Users, Target, Megaphone, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -62,6 +62,20 @@ export default function SolutionTypes() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${linkedInBlue}15`,
+                            borderColor: `${linkedInBlue}40`,
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: linkedInBlue }} />
+                        <span className="text-sm font-medium" style={{ color: linkedInBlue }}>
+                            B2B Solutions
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         B2B <span style={{ color: linkedInBlue }}>Solutions</span>
                     </h2>

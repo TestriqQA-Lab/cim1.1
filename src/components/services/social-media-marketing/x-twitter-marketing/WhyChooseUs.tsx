@@ -1,6 +1,6 @@
 "use client";
 
-import { Zap, ShieldCheck, Globe, Trophy, Users, BarChart } from "lucide-react";
+import { Zap, ShieldCheck, Globe, Trophy, Users, BarChart, Sparkles } from "lucide-react";
 
 export default function WhyChooseUs() {
     const benefits = [
@@ -45,6 +45,20 @@ export default function WhyChooseUs() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left Content */}
                     <div>
+                        {/* Badge */}
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                            style={{
+                                backgroundColor: "rgba(29, 155, 240, 0.1)",
+                                borderColor: "rgba(29, 155, 240, 0.2)",
+                            }}
+                        >
+                            <Sparkles className="w-4 h-4" style={{ color: "#1D9BF0" }} />
+                            <span className="text-sm font-medium" style={{ color: "#1D9BF0" }}>
+                                Why Choose Us
+                            </span>
+                        </div>
+
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{ color: "var(--foreground)" }}>
                             Why Choose Us for <br />
                             <span style={{ color: "var(--secondary-text)" }}>X Marketing?</span>

@@ -8,6 +8,7 @@ import {
     GraduationCap,
     HeartPulse,
     Gavel,
+    Sparkles,
 } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -68,6 +69,20 @@ export default function SolutionTypes() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${contentEmerald}15`,
+                            borderColor: `${contentEmerald}40`,
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: contentEmerald }} />
+                        <span className="text-sm font-medium" style={{ color: contentEmerald }}>
+                            Industry Solutions
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Industries We <span style={{ color: contentEmerald }}>Serve</span>
                     </h2>

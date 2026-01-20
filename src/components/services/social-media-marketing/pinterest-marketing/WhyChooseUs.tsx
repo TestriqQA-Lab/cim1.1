@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle, TrendingUp, Target, Award, Clock, Users } from "lucide-react";
+import { CheckCircle, TrendingUp, Target, Award, Clock, Users, Sparkles } from "lucide-react";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -51,6 +51,20 @@ export default function WhyChooseUs() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left Content */}
                     <div>
+                        {/* Badge */}
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                            style={{
+                                backgroundColor: `${pinterestRed}15`,
+                                borderColor: `${pinterestRed}40`,
+                            }}
+                        >
+                            <Sparkles className="w-4 h-4" style={{ color: pinterestRed }} />
+                            <span className="text-sm font-medium" style={{ color: pinterestRed }}>
+                                Why Choose Us
+                            </span>
+                        </div>
+
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                             Why Choose <span style={{ color: pinterestRed }}>Us</span>
                         </h2>

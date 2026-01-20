@@ -9,6 +9,7 @@ import {
     Award,
     Music,
     ChevronRight,
+    Sparkles,
 } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -66,6 +67,20 @@ export default function SolutionTypes() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(29, 155, 240, 0.1)",
+                            borderColor: "rgba(29, 155, 240, 0.2)",
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: "#1D9BF0" }} />
+                        <span className="text-sm font-medium" style={{ color: "#1D9BF0" }}>
+                            Solutions Directory
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Industries We{" "}
                         <span style={{ color: "var(--secondary-text)" }}>Transform</span>

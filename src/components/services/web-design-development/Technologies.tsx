@@ -27,7 +27,7 @@ export default function Technologies() {
         { name: "PostgreSQL", logo: "/images/techstack_logos/postgresql-logo.svg" },
         { name: "MySQL", logo: "/images/techstack_logos/mysql-logo.svg" },
         { name: "Redis", logo: "/images/techstack_logos/redis-logo.svg" },
-        { name: "Express", logo: "/images/techstack_logos/express-logo.svg" },
+        { name: "Express", logo: "/images/techstack_logos/express-logo1.svg" },
         { name: "Django", logo: "/images/techstack_logos/django-logo.svg" },
     ];
 

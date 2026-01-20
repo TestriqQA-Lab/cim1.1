@@ -8,6 +8,7 @@ import {
     Globe2,
     Database,
     Layers,
+    Sparkles,
 } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -68,6 +69,20 @@ export default function SolutionTypes() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${techPurple}15`,
+                            borderColor: `${techPurple}40`,
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: techPurple }} />
+                        <span className="text-sm font-medium" style={{ color: techPurple }}>
+                            Technical Solutions
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Industry <span style={{ color: techPurple }}>Solutions</span>
                     </h2>

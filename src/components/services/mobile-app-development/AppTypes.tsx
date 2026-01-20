@@ -7,7 +7,9 @@ import {
     Rocket,
     Paintbrush,
     GitMerge,
-    Building2
+    GitMerge,
+    Building2,
+    Sparkles,
 } from "lucide-react";
 import { Android, Apple, Huawei } from "../../Icons";
 import Link from "next/link";
@@ -102,6 +104,20 @@ export default function AppTypes() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative">
                 {/* Section Header */}
                 <div className="text-center mb-16 animate-fadeIn">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "color-mix(in srgb, var(--brand-purple) 10%, transparent)",
+                            borderColor: "color-mix(in srgb, var(--brand-purple) 20%, transparent)",
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: "var(--brand-purple)" }} />
+                        <span className="text-sm font-medium" style={{ color: "var(--brand-purple)" }}>
+                            Development Services
+                        </span>
+                    </div>
+
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
                         <span style={{ color: "var(--brand-purple)" }}>Types</span> of Mobile App Development
                     </h2>

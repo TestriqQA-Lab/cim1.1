@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, Flame, Globe2, Target, Smartphone } from "lucide-react";
+import { ArrowRight, Flame, Globe2, Target, Smartphone, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
     const [activeCard, setActiveCard] = useState<number | null>(null);
+
+    const xBlue = "#1D9BF0";
 
     const solutions = [
         {
@@ -47,6 +49,20 @@ export default function SolutionTypes() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center mb-12">
                     <div>
+                        {/* Badge */}
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                            style={{
+                                backgroundColor: `${xBlue}15`,
+                                borderColor: `${xBlue}40`,
+                            }}
+                        >
+                            <Sparkles className="w-4 h-4" style={{ color: xBlue }} />
+                            <span className="text-sm font-medium" style={{ color: xBlue }}>
+                                Targeting Precision
+                            </span>
+                        </div>
+
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
                             Targeting Precision
                         </h2>

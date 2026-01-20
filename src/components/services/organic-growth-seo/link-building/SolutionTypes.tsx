@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FileEdit, Users, BookMarked, LinkIcon, Newspaper, ArrowRight } from "lucide-react";
+import { FileEdit, Users, BookMarked, LinkIcon, Newspaper, ArrowRight, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
     const [flippedCard, setFlippedCard] = useState<number | null>(null);
@@ -60,6 +60,20 @@ export default function SolutionTypes() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${linkCyan}15`,
+                            borderColor: `${linkCyan}40`,
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: linkCyan }} />
+                        <span className="text-sm font-medium" style={{ color: linkCyan }}>
+                            Link Strategies
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Types of <span style={{ color: linkCyan }}>Backlinks</span>
                     </h2>

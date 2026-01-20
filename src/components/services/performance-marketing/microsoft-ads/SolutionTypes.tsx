@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Target, Users, BarChart2, Briefcase } from "lucide-react";
+import { ArrowLeft, ArrowRight, Target, Users, BarChart2, Briefcase, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
     const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -51,6 +51,20 @@ export default function SolutionTypes() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${msBlue}15`,
+                            borderColor: `${msBlue}40`,
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: msBlue }} />
+                        <span className="text-sm font-medium" style={{ color: msBlue }}>
+                            Platform Benefits
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Strategic{" "}
                         <span

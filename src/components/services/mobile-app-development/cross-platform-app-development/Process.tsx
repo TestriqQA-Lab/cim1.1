@@ -8,6 +8,7 @@ import {
     TestTube2,
     Rocket,
     CheckCircle2,
+    Sparkles,
 } from "lucide-react";
 
 export default function Process() {
@@ -86,6 +87,20 @@ export default function Process() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(102, 126, 234, 0.1)",
+                            borderColor: "rgba(102, 126, 234, 0.2)",
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: "#667eea" }} />
+                        <span className="text-sm font-medium" style={{ color: "#667eea" }}>
+                            Our Process
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         <span style={{ color: "var(--foreground)" }}>Our Cross-Platform</span>{" "}
                         <span

@@ -1,6 +1,6 @@
 "use client";
 
-import { Zap, Lock, TrendingUp, Palette, Smartphone, Award } from "lucide-react";
+import { Zap, Lock, TrendingUp, Palette, Smartphone, Award, Sparkles } from "lucide-react";
 import { CheckCircle2, XCircle, ShieldCheck, Rocket, Gauge, Wrench, Layers, Building2 } from "lucide-react";
 import Image from "next/image";
 
@@ -58,6 +58,20 @@ export default function WhyChooseUs() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative">
                 {/* Section Header */}
                 <div className="text-center mb-16 animate-fadeIn">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "color-mix(in srgb, var(--brand-purple) 10%, transparent)",
+                            borderColor: "color-mix(in srgb, var(--brand-purple) 20%, transparent)",
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: "var(--brand-purple)" }} />
+                        <span className="text-sm font-medium" style={{ color: "var(--brand-purple)" }}>
+                            Why Choose Us
+                        </span>
+                    </div>
+
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
                         <span style={{ color: "var(--foreground)" }}>Why Choose Our</span> <span style={{ color: "var(--brand-purple)" }}>Mobile App Solutions</span>?
                     </h2>
