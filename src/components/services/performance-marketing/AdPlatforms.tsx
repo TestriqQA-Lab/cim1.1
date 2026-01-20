@@ -77,7 +77,7 @@ export default function AdPlatforms() {
             logo: "/images/techstack_logos/X-logo-hero-image.png",
             description: "Viral reach & real-time conversation",
             stats: { reach: "#1 for Discovery", ctr: "High Engagement" },
-            color: "#000000",
+            color: "#ffffff",
             gradient: "from-gray-900 to-black",
             link: "/services/performance-marketing/x-ads",
         },

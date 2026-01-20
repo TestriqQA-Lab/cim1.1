@@ -48,6 +48,20 @@ export default function WhyChooseUs() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${youtubeRed}15`,
+                            borderColor: `${youtubeRed}40`,
+                        }}
+                    >
+                        <Trophy className="w-4 h-4" style={{ color: youtubeRed }} />
+                        <span className="text-sm font-medium" style={{ color: youtubeRed }}>
+                            Why Choose Us
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Why Choose{" "}
                         <span

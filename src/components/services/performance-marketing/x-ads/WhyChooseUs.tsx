@@ -1,6 +1,6 @@
 "use client";
 
-import { Users, TrendingUp, ShieldCheck, Zap } from "lucide-react";
+import { Users, TrendingUp, ShieldCheck, Zap, Sparkles } from "lucide-react";
 
 export default function WhyChooseUs() {
     const xBlue = "#1D9BF0";
@@ -39,6 +39,20 @@ export default function WhyChooseUs() {
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     {/* Left Side - Content */}
                     <div>
+                        {/* Badge */}
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                            style={{
+                                backgroundColor: `${xBlue}15`,
+                                borderColor: `${xBlue}40`,
+                            }}
+                        >
+                            <Sparkles className="w-4 h-4" style={{ color: xBlue }} />
+                            <span className="text-sm font-medium" style={{ color: xBlue }}>
+                                The X Factor
+                            </span>
+                        </div>
+
                         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white">
                             The X Factor
                         </h2>

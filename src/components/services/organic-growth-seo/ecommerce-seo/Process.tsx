@@ -41,7 +41,7 @@ export default function Process() {
         {
             icon: BarChart,
             title: "Revenue Reporting",
-            description: "Tracking rankings, traffic, and most importantly—revenue generated from organic search.",
+            description: "Tracking rankings, traffic, and most importantly - revenue generated from organic search.",
             animation: "flip"
         },
     ];

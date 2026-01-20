@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ShoppingCart, Users, Download, Play, MessageSquare, Repeat } from "lucide-react";
+import { ShoppingCart, Users, Download, Play, MessageSquare, Repeat, Target } from "lucide-react";
 
 export default function SolutionTypes() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -62,6 +62,20 @@ export default function SolutionTypes() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${metaBlue}15`,
+                            borderColor: `${metaBlue}40`,
+                        }}
+                    >
+                        <Target className="w-4 h-4" style={{ color: metaBlue }} />
+                        <span className="text-sm font-medium" style={{ color: metaBlue }}>
+                            Campaign Objectives
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Campaign <span style={{ color: metaBlue }}>Objectives</span>
                     </h2>

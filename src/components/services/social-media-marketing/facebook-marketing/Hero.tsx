@@ -1,27 +1,23 @@
 "use client";
 
-import { ArrowRight, ChevronRight, Play, TrendingUp, BarChart } from "lucide-react";
+import { ArrowRight, ChevronRight, Users, TrendingUp, Target, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Youtube } from "lucide-react";
+import { Facebook } from "lucide-react";
 
 export default function Hero() {
-    // YouTube brand color
-    const youtubeRed = "#FF0000";
-
     return (
         <section
             className="relative min-h-screen pt-14 pb-16 transition-colors duration-300 overflow-hidden"
             style={{ backgroundColor: "var(--background)" }}
         >
-            {/* Background */}
+            {/* Background with animated gradient */}
             <div
                 className="absolute inset-0 z-0"
                 style={{
                     backgroundImage: `
-                        radial-gradient(circle at 15% 50%, rgba(255, 0, 0, 0.08), transparent 25%),
-                        radial-gradient(circle at 85% 30%, rgba(255, 0, 0, 0.05), transparent 25%),
-                        radial-gradient(circle at 50% 80%, rgba(255, 0, 0, 0.04), transparent 25%)
+                        radial-gradient(circle at 15% 50%, rgba(24, 119, 242, 0.12), transparent 25%),
+                        radial-gradient(circle at 85% 30%, rgba(24, 119, 242, 0.08), transparent 25%)
                     `,
                 }}
             >
@@ -29,7 +25,7 @@ export default function Hero() {
                 <div
                     className="absolute inset-0 opacity-[0.03]"
                     style={{
-                        backgroundImage: `linear-gradient(${youtubeRed} 1px, transparent 1px), linear-gradient(90deg, ${youtubeRed} 1px, transparent 1px)`,
+                        backgroundImage: `linear-gradient(#1877F2 1px, transparent 1px), linear-gradient(90deg, #1877F2 1px, transparent 1px)`,
                         backgroundSize: "40px 40px",
                     }}
                 />
@@ -49,8 +45,12 @@ export default function Hero() {
                     50% { transform: translateY(-10px); }
                 }
                 @keyframes pulse-glow {
-                    0%, 100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.2); }
-                    50% { box-shadow: 0 0 40px rgba(255, 0, 0, 0.4); }
+                    0%, 100% { box-shadow: 0 0 20px rgba(24, 119, 242, 0.2); }
+                    50% { box-shadow: 0 0 40px rgba(24, 119, 242, 0.4); }
+                }
+                @keyframes count-up {
+                    from { opacity: 0; transform: scale(0.5); }
+                    to { opacity: 1; transform: scale(1); }
                 }
                 .animate-slideUp {
                     animation: slideUp 0.6s ease-out forwards;
@@ -83,20 +83,20 @@ export default function Hero() {
                             <ChevronRight className="w-4 h-4" />
                             <Link href="/services/social-media-marketing" className="hover:underline">Social Media</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <span style={{ color: youtubeRed }}>YouTube Advertising</span>
+                            <span style={{ color: "#1877F2" }}>Facebook Ads</span>
                         </nav>
 
                         {/* Badge */}
                         <div
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm animate-fadeIn"
                             style={{
-                                backgroundColor: `${youtubeRed}10`,
-                                borderColor: `${youtubeRed}30`,
+                                background: "rgba(24, 119, 242, 0.1)",
+                                borderColor: "rgba(24, 119, 242, 0.3)",
                             }}
                         >
-                            <Youtube className="w-4 h-4" style={{ color: youtubeRed }} />
-                            <span className="text-sm font-medium" style={{ color: youtubeRed }}>
-                                YouTube Marketing Partner
+                            <Facebook className="w-4 h-4" style={{ color: "#1877F2" }} />
+                            <span className="text-sm font-medium" style={{ color: "#1877F2" }}>
+                                Meta Business Partner
                             </span>
                         </div>
 
@@ -105,12 +105,15 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Dominate Video with{" "}
-                            <span className="relative inline-block" style={{ color: youtubeRed }}>
-                                YouTube Ads
+                            Scale Your Business with{" "}
+                            <span
+                                className="relative inline-block"
+                                style={{ color: "#1877F2" }}
+                            >
+                                Facebook Marketing
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
-                                    style={{ color: youtubeRed }}
+                                    style={{ color: "#1877F2" }}
                                     viewBox="0 0 100 10"
                                     preserveAspectRatio="none"
                                 >
@@ -120,17 +123,17 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Turn viewers into customers with high-converting YouTube advertising campaigns.
-                            Scale your brand with data-driven video marketing strategies.
+                            Master your presence on the world's largest social network.
+                            From organic community building to precision-targeted advertising, we drive measurable results.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Video Ads",
-                                "Channel Growth",
-                                "YouTube Shorts",
-                                "Influencer Marketing",
+                                "Lead Generation",
+                                "Retargeting",
+                                "Lookalike Audiences",
+                                "Conversion Tracking",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -140,7 +143,7 @@ export default function Hero() {
                                         borderColor: "var(--border-color)",
                                     }}
                                 >
-                                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: youtubeRed }} />
+                                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#1877F2" }} />
                                     <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{feature}</span>
                                 </div>
                             ))}
@@ -151,9 +154,12 @@ export default function Hero() {
                             <Link
                                 href="/contact"
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
-                                style={{ backgroundColor: youtubeRed }}
+                                style={{
+                                    backgroundColor: "#1877F2",
+                                    boxShadow: "0 4px 20px rgba(24, 119, 242, 0.25)",
+                                }}
                             >
-                                Start Growing
+                                Get Free Audit
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -173,18 +179,18 @@ export default function Hero() {
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>2B+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Monthly Users</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>3B+</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Daily Active Users</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>30%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>8.5x</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. ROAS</p>
+                            </div>
+                            <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
+                            <div className="text-center lg:text-left">
+                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>45%</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Lower CPA</p>
-                            </div>
-                            <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
-                            <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>3x</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Brand Awareness</p>
                             </div>
                         </div>
                     </div>
@@ -196,30 +202,30 @@ export default function Hero() {
                             <div
                                 className="relative w-full max-w-lg aspect-square rounded-3xl overflow-hidden border flex items-center justify-center animate-float-gentle"
                                 style={{
-                                    borderColor: `${youtubeRed}30`,
-                                    backgroundColor: `${youtubeRed}05`,
-                                    boxShadow: `0 0 30px ${youtubeRed}20`,
+                                    borderColor: "rgba(24, 119, 242, 0.2)",
+                                    background: "rgba(24, 119, 242, 0.05)",
+                                    boxShadow: "0 0 30px rgba(24, 119, 242, 0.15)",
                                 }}
                             >
                                 {/* Hero Image */}
-                                <div className="w-[80%] h-[80%] relative flex items-center justify-center p-8 ">
+                                <div className="w-full h-full relative flex items-center justify-center p-8">
                                     <Image
-                                        src="/images/techstack_logos/Youtube-logo-hero-image.png"
-                                        alt="YouTube Advertising"
+                                        src="/images/techstack_logos/facebook-hero-img.png"
+                                        alt="Facebook Advertising"
                                         width={400}
                                         height={400}
-                                        className="object-contain rounded-2xl"
+                                        className="object-contain"
                                     />
                                 </div>
 
                                 {/* Decorative circles */}
                                 <div
                                     className="absolute w-72 h-72 rounded-full border opacity-20"
-                                    style={{ borderColor: youtubeRed }}
+                                    style={{ borderColor: "#1877F2" }}
                                 />
                                 <div
                                     className="absolute w-96 h-96 rounded-full border opacity-10"
-                                    style={{ borderColor: youtubeRed }}
+                                    style={{ borderColor: "#1877F2" }}
                                 />
                             </div>
 
@@ -228,22 +234,22 @@ export default function Hero() {
                                 className="absolute -bottom-4 -left-4 p-4 rounded-2xl border shadow-xl animate-pulse-glow"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
-                                    borderColor: `${youtubeRed}30`,
+                                    borderColor: "rgba(24, 119, 242, 0.3)",
                                 }}
                             >
                                 <div className="flex items-center gap-3">
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
-                                        style={{ backgroundColor: youtubeRed }}
+                                        style={{ backgroundColor: "#1877F2" }}
                                     >
-                                        <Play className="w-6 h-6 text-white ml-1" />
+                                        <Target className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            High Engagement
+                                            Precision Targeting
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Video First
+                                            10,000+ Interests
                                         </p>
                                     </div>
                                 </div>
@@ -254,22 +260,22 @@ export default function Hero() {
                                 className="absolute -top-4 -right-4 p-4 rounded-2xl border shadow-xl"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
-                                    borderColor: `${youtubeRed}30`,
+                                    borderColor: "rgba(24, 119, 242, 0.3)",
                                 }}
                             >
                                 <div className="flex items-center gap-3">
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
-                                        style={{ backgroundColor: youtubeRed }}
+                                        style={{ backgroundColor: "#1877F2" }}
                                     >
-                                        <TrendingUp className="w-6 h-6 text-white" />
+                                        <BarChart3 className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            Max Reach
+                                            Advanced Analytics
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Global Audience
+                                            Real-time Insights
                                         </p>
                                     </div>
                                 </div>
@@ -284,21 +290,21 @@ export default function Hero() {
                                 borderColor: "var(--border-color)",
                             }}
                         >
-                            <p className="text-sm font-semibold mb-3" style={{ color: youtubeRed }}>
-                                YouTube Ad Formats We Master
+                            <p className="text-sm font-semibold mb-3" style={{ color: "#1877F2" }}>
+                                Meta Platforms We Manage
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Skippable In-Stream", "Non-Skippable", "Bumper Ads", "In-Feed Ads", "Shorts Ads", "Masthead"].map((format, idx) => (
+                                {["Facebook Feed", "Instagram", "Messenger", "Audience Network", "Reels", "Stories"].map((platform, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"
                                         style={{
-                                            backgroundColor: `${youtubeRed}08`,
-                                            borderColor: `${youtubeRed}20`,
+                                            backgroundColor: "rgba(24, 119, 242, 0.05)",
+                                            borderColor: "rgba(24, 119, 242, 0.15)",
                                             color: "var(--foreground)",
                                         }}
                                     >
-                                        {format}
+                                        {platform}
                                     </span>
                                 ))}
                             </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { TrendingUp, Users, Zap, Search, Globe, DollarSign } from "lucide-react";
+import { TrendingUp, Users, Zap, Search, Globe, DollarSign, Sparkles } from "lucide-react";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -52,6 +52,20 @@ export default function WhyChooseUs() {
                     {/* Left Header Area */}
                     <div className="lg:w-1/3">
                         <div className="sticky top-24">
+                            {/* Badge */}
+                            <div
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                                style={{
+                                    backgroundColor: `${commerceBlue}15`,
+                                    borderColor: `${commerceBlue}40`,
+                                }}
+                            >
+                                <Sparkles className="w-4 h-4" style={{ color: commerceBlue }} />
+                                <span className="text-sm font-medium" style={{ color: commerceBlue }}>
+                                    Why Choose Us
+                                </span>
+                            </div>
+
                             <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                                 Why Top Brands <br />
                                 <span style={{ color: commerceBlue }}>Choose Us</span>

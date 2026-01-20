@@ -8,6 +8,7 @@ import {
     Hammer,
     ShoppingBag,
     Home,
+    Building2,
 } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -69,6 +70,20 @@ export default function SolutionTypes() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
                     <div>
+                        {/* Badge */}
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                            style={{
+                                backgroundColor: `${localAmber}15`,
+                                borderColor: `${localAmber}40`,
+                            }}
+                        >
+                            <Building2 className="w-4 h-4" style={{ color: localAmber }} />
+                            <span className="text-sm font-medium" style={{ color: localAmber }}>
+                                Target Industries
+                            </span>
+                        </div>
+
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                             Industries We <span style={{ color: localAmber }}>Grow</span>
                         </h2>

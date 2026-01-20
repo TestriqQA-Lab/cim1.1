@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Trophy, TrendingUp, Users, DollarSign, BarChart } from "lucide-react";
+import { Search, Trophy, TrendingUp, Users, DollarSign, BarChart, Target } from "lucide-react";
 
 export default function SolutionTypes() {
     const [flippedCard, setFlippedCard] = useState<number | null>(null);
@@ -22,7 +22,7 @@ export default function SolutionTypes() {
             title: "Brand Defense",
             description: "Protect your branded keywords from competitors.",
             backDetails: ["Brand Protection", "Competitor Conquering", "Share of Voice", "Trademark Defense"],
-            color: amazonBlue,
+            color: "#ffffff",
         },
         {
             icon: TrendingUp,
@@ -36,7 +36,7 @@ export default function SolutionTypes() {
             title: "New Customer Acq.",
             description: "Reach shoppers who haven't bought from you yet.",
             backDetails: ["Audience Targeting", "Category Targeting", "Retargeting", "Lookalike Audiences"],
-            color: amazonBlue,
+            color: "#ffffff",
         },
         {
             icon: DollarSign,
@@ -50,7 +50,7 @@ export default function SolutionTypes() {
             title: "Market Share",
             description: "Aggressively expand your digital shelf space.",
             backDetails: ["Shelf Analysis", "Category Dominance", "Cross-selling", "Bundling"],
-            color: amazonBlue,
+            color: "#ffffff",
         },
     ];
 
@@ -61,6 +61,20 @@ export default function SolutionTypes() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${amazonOrange}15`,
+                            borderColor: `${amazonOrange}40`,
+                        }}
+                    >
+                        <Target className="w-4 h-4" style={{ color: amazonOrange }} />
+                        <span className="text-sm font-medium" style={{ color: amazonOrange }}>
+                            Strategic Objectives
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Strategic{" "}
                         <span

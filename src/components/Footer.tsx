@@ -5,21 +5,23 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { TwitterX } from "./Icons";
 import { useEffect, useState } from "react";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, ArrowRight } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ChevronDown, ArrowRight } from "lucide-react";
 
 export default function Footer() {
-    const services = [
-        "Web Design & Development",
-        "Mobile App Development",
-        "Social Media Marketing",
-        "AI Workflows & Automations",
-        "AI-Powered Chatbots",
-        "Organic Growth & SEO",
-        "Performance Marketing",
-        "Brand Identity & Design",
-        "Additional Support Services",
+    // Main service list (matching reference image column 1)
+    const ourServices = [
+        { name: "Web Design & Development", href: "/services/web-design-development" },
+        { name: "Mobile App Development", href: "/services/mobile-app-development" },
+        { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+        { name: "AI Workflows & Automations", href: "/services/ai-workflows-automations" },
+        { name: "AI-Powered Chatbots", href: "/services/ai-powered-chatbots" },
+        { name: "Organic Growth & SEO", href: "/services/organic-growth-seo" },
+        { name: "Performance Marketing", href: "/services/performance-marketing" },
+        { name: "Brand Identity & Design", href: "/services/brand-identity-design" },
+        { name: "Additional Support Services", href: "/services/additional-support-services" },
     ];
 
+    // Quick Links (matching reference image)
     const quickLinks = [
         { name: "About Us", href: "/about" },
         { name: "Our Services", href: "/services" },
@@ -28,157 +30,194 @@ export default function Footer() {
         { name: "Terms of Service", href: "/terms-of-service" },
     ];
 
-    // next-themes
+    // Service sub-categories for expanded grid
+    const serviceCategories = [
+        {
+            title: "Web Technologies",
+            href: "/services/web-design-development",
+            items: [
+                { name: "WordPress", href: "/services/web-design-development/wordpress-development" },
+                { name: "Shopify", href: "/services/web-design-development/shopify-ecommerce" },
+                { name: "Next.js & React", href: "/services/web-design-development/nextjs-react" },
+                { name: "Laravel & PHP", href: "/services/web-design-development/laravel-php" },
+                { name: "Node.js", href: "/services/web-design-development/nodejs-backend" },
+                { name: "Python & Django", href: "/services/web-design-development/python-django" },
+                { name: "Java Spring", href: "/services/web-design-development/java-spring-boot" },
+                { name: "Astro Framework", href: "/services/web-design-development/astro-framework" },
+                { name: "Headless CMS", href: "/services/web-design-development/headless-traditional-cms" },
+                { name: "Strapi CMS", href: "/services/web-design-development/strapi-headless-cms" },
+                { name: "Contentful", href: "/services/web-design-development/contentful-headless-cms" },
+                { name: "Drupal CMS", href: "/services/web-design-development/drupal-cms" },
+            ],
+        },
+        {
+            title: "Website Types",
+            href: "/services/web-design-development",
+            items: [
+                { name: "E-commerce Stores", href: "/services/web-design-development/ecommerce-stores" },
+                { name: "Business & Corporate", href: "/services/web-design-development/business-corporate" },
+                { name: "Landing Pages", href: "/services/web-design-development/landing-pages" },
+                { name: "Web Apps & SaaS", href: "/services/web-design-development/web-applications-saas" },
+                { name: "Blogs & Portals", href: "/services/web-design-development/blogs-news-portals" },
+                { name: "Healthcare", href: "/services/web-design-development/healthcare-portals" },
+                { name: "EdTech & LMS", href: "/services/web-design-development/edtech-lms" },
+                { name: "FinTech", href: "/services/web-design-development/fintech-solutions" },
+                { name: "Real Estate", href: "/services/web-design-development/real-estate-platforms" },
+                { name: "Travel & Hospitality", href: "/services/web-design-development/travel-hospitality" },
+                { name: "Entertainment", href: "/services/web-design-development/entertainment-media" },
+                { name: "Portfolio Sites", href: "/services/web-design-development/portfolio-personal" },
+            ],
+        },
+        {
+            title: "App Development",
+            href: "/services/mobile-app-development",
+            items: [
+                { name: "iOS Apps", href: "/services/mobile-app-development/ios-app-development" },
+                { name: "Android Apps", href: "/services/mobile-app-development/android-app-development" },
+                { name: "Cross-Platform", href: "/services/mobile-app-development/cross-platform-app-development" },
+                { name: "Enterprise", href: "/services/mobile-app-development/enterprise-app-development" },
+                { name: "Hybrid Apps", href: "/services/mobile-app-development/hybrid-app-development" },
+                { name: "HarmonyOS", href: "/services/mobile-app-development/harmonyos-app-development" },
+            ],
+        },
+        {
+            title: "SEO & Growth",
+            href: "/services/organic-growth-seo",
+            items: [
+                { name: "Technical SEO", href: "/services/organic-growth-seo/technical-seo" },
+                { name: "On-Page SEO", href: "/services/organic-growth-seo/on-page-seo" },
+                { name: "Local SEO", href: "/services/organic-growth-seo/local-seo" },
+                { name: "Content SEO", href: "/services/organic-growth-seo/content-seo" },
+                { name: "eCommerce SEO", href: "/services/organic-growth-seo/ecommerce-seo" },
+                { name: "Link Building", href: "/services/organic-growth-seo/link-building" },
+            ],
+        },
+        {
+            title: "Paid Advertising",
+            href: "/services/performance-marketing",
+            items: [
+                { name: "Google Ads", href: "/services/performance-marketing/google-ads" },
+                { name: "Meta Ads", href: "/services/performance-marketing/meta-ads" },
+                { name: "LinkedIn Ads", href: "/services/performance-marketing/linkedin-ads" },
+                { name: "Amazon Ads", href: "/services/performance-marketing/amazon-ads" },
+                { name: "TikTok Ads", href: "/services/performance-marketing/tiktok-ads" },
+                { name: "Microsoft Ads", href: "/services/performance-marketing/microsoft-ads" },
+                { name: "X Ads", href: "/services/performance-marketing/x-ads" },
+                { name: "YouTube Ads", href: "/services/performance-marketing/youtube-ads" },
+            ],
+        },
+        {
+            title: "Social Media",
+            href: "/services/social-media-marketing",
+            items: [
+                { name: "Facebook Marketing", href: "/services/social-media-marketing/facebook-marketing" },
+                { name: "Instagram Marketing", href: "/services/social-media-marketing/instagram-marketing" },
+                { name: "LinkedIn Marketing", href: "/services/social-media-marketing/linkedin-marketing" },
+                { name: "Pinterest Marketing", href: "/services/social-media-marketing/pinterest-marketing" },
+                { name: "X Marketing", href: "/services/social-media-marketing/x-twitter-marketing" },
+                { name: "YouTube Marketing", href: "/services/social-media-marketing/youtube-marketing" },
+            ],
+        },
+    ];
+
+    // Theme
     const { theme, resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
+    const [expandedSection, setExpandedSection] = useState<number | null>(null);
 
-    // avoid hydration mismatch
     useEffect(() => {
         requestAnimationFrame(() => setMounted(true));
     }, []);
 
     const currentTheme = theme === "system" ? resolvedTheme : theme;
     const isDark = currentTheme === "dark";
-
-    // Year (safe to compute on client)
     const year = new Date().getFullYear();
 
-    // Inline styles using your CSS variables so dark mode flips automatically
+    const toggleSection = (index: number) => {
+        setExpandedSection(expandedSection === index ? null : index);
+    };
+
     const styles = {
         footerBg: { backgroundColor: "var(--card-bg)" },
-        containerBorder: { borderTopColor: "var(--border-color)" },
         heading: { color: "var(--foreground)" },
         text: { color: "var(--secondary-text)" },
         link: { color: "var(--secondary-text)" },
-        divider: { color: "var(--border-color)" },
-        iconBg: { backgroundColor: "var(--hover-bg)", color: "var(--foreground)" },
+        border: { borderColor: "var(--border-color)" },
     } as const;
 
     if (!mounted) {
-        // lightweight placeholder while theme resolves
         return (
-            <footer style={styles.footerBg} className="w-full border-t shadow-inner">
+            <footer style={styles.footerBg} className="w-full border-t">
                 <div className="mx-auto px-6 md:px-12 xl:px-16">
-                    <div className="py-12 lg:py-16">
-                        <div className="h-36" />
-                    </div>
+                    <div className="py-12"><div className="h-40" /></div>
                 </div>
             </footer>
         );
     }
 
     return (
-        <footer className="w-full" style={styles.footerBg}>
+        <footer className="w-full border-t" style={{ ...styles.footerBg, ...styles.border }}>
             <div className="mx-auto px-6 md:px-12 xl:px-16">
-                {/* Main Footer Content */}
+                {/* Main Footer Content - 4 Column Layout like reference */}
                 <div className="py-12 lg:py-16">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-                        {/* Brand Column */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+                        {/* Column 1: Brand (from reference image) */}
                         <div className="lg:col-span-1">
-                            <Link href="/" className="inline-block mb-4">
-                                <Image src={isDark ? "/images/CIM-LOGO-White.png" : "/images/CIM-LOGO-Black.png"} alt="CIM Logo" height={80} width={180} className="lg:h-[75px] lg:w-[175px]" />
+                            <Link href="/" className="inline-block mb-6">
+                                <Image
+                                    src={isDark ? "/images/CIM-LOGO-White.png" : "/images/CIM-LOGO-Black.png"}
+                                    alt="CIM Logo"
+                                    height={100}
+                                    width={250}
+                                    className="h-20 w-auto"
+                                />
                             </Link>
                             <p className="text-sm leading-relaxed mb-6" style={styles.text}>
                                 Empowering businesses with cutting-edge digital solutions. From web design to AI automation, we are your partner in growth.
                             </p>
 
-                            {/* Social Media */}
-                            <div className="flex space-x-4">
-                                {/* LinkedIn */}
-                                <Link
-                                    href="https://www.linkedin.com/company/cinute-infomedia/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="
-        w-12 h-12 rounded-full transition-all flex items-center justify-center group
-        hover:bg-[linear-gradient(135deg,#0A66C2,#004182)]
-      "
-                                    style={styles.iconBg}
-                                    aria-label="Visit our LinkedIn profile"
-                                >
-                                    <Linkedin className="h-6 w-6 text-[var(--foreground)] group-hover:text-white transition-colors" />
+                            {/* Social Icons */}
+                            <div className="flex items-center gap-4">
+                                <Link href="https://www.linkedin.com/company/cinute-infomedia/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-[var(--hover-bg)] hover:!bg-[#0A66C2] group">
+                                    <Linkedin className="h-6 w-6 group-hover:text-white transition-colors" style={{ color: "var(--foreground)" }} />
                                 </Link>
-
-                                {/* Instagram */}
-                                <Link
-                                    href="https://www.instagram.com/cinuteinfomedia/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="
-        w-12 h-12 rounded-full transition-all flex items-center justify-center group
-        hover:bg-[linear-gradient(135deg,#F58529,#DD2A7B,#8134AF)]
-      "
-                                    style={styles.iconBg}
-                                    aria-label="Visit our Instagram profile"
-                                >
-                                    <Instagram className="h-6 w-6 text-[var(--foreground)] group-hover:text-white transition-colors" />
+                                <Link href="https://www.instagram.com/cinuteinfomedia/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-[var(--hover-bg)] hover:!bg-[#E1306C] group">
+                                    <Instagram className="h-6 w-6 group-hover:text-white transition-colors" style={{ color: "var(--foreground)" }} />
                                 </Link>
-
-                                {/* Twitter */}
-                                <Link
-                                    href="https://x.com/cinute_infomedia"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="
-        w-12 h-12 rounded-full transition-all flex items-center justify-center group
-        hover:bg-[linear-gradient(135deg,#000000,#333333)]
-      "
-                                    style={styles.iconBg}
-                                    aria-label="Visit our Twitter profile"
-                                >
-                                    <TwitterX className="h-6 w-6 text-[var(--foreground)] group-hover:text-white transition-colors" />
+                                <Link href="https://x.com/cinute_infomedia" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-[var(--hover-bg)] hover:!bg-black group">
+                                    <TwitterX className="h-6 w-6 group-hover:text-white transition-colors" style={{ color: "var(--foreground)" }} />
                                 </Link>
-
-
-                                {/* Facebook */}
-                                <Link
-                                    href="https://www.facebook.com/cinuteinfomedia/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="
-        w-12 h-12 rounded-full transition-all flex items-center justify-center group
-        hover:bg-[linear-gradient(135deg,#1877F2,#0F68D8)]
-      "
-                                    style={styles.iconBg}
-                                    aria-label="Visit our Facebook page"
-                                >
-                                    <Facebook className="h-6 w-6 text-[var(--foreground)] group-hover:text-white transition-colors" />
+                                <Link href="https://www.facebook.com/cinuteinfomedia/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-[var(--hover-bg)] hover:!bg-[#1877F2] group">
+                                    <Facebook className="h-6 w-6 group-hover:text-white transition-colors" style={{ color: "var(--foreground)" }} />
                                 </Link>
-
-
-
-
-
                             </div>
                         </div>
 
-                        {/* Services Column */}
+                        {/* Column 2: Our Services */}
                         <div>
-                            <h3 className="text-sm font-bold uppercase tracking-wider mb-4" style={styles.heading}>
+                            <h3 className="text-sm font-bold uppercase tracking-wider mb-6" style={styles.heading}>
                                 Our Services
                             </h3>
                             <ul className="space-y-3">
-                                {services.map((service, index) => (
+                                {ourServices.map((service, index) => (
                                     <li key={index}>
-                                        <Link href={`/services/${service.toLowerCase().replace(/[&\s]+/g, "-")}`} className="text-sm flex items-center group py-2" style={styles.link}>
-                                            <ArrowRight className="h-3 w-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" />
-                                            {service}
+                                        <Link href={service.href} className="text-sm hover:underline transition-colors" style={styles.link}>
+                                            {service.name}
                                         </Link>
                                     </li>
                                 ))}
                             </ul>
                         </div>
 
-                        {/* Quick Links Column */}
+                        {/* Column 3: Quick Links */}
                         <div>
-                            <h3 className="text-sm font-bold uppercase tracking-wider mb-4" style={styles.heading}>
+                            <h3 className="text-sm font-bold uppercase tracking-wider mb-6" style={styles.heading}>
                                 Quick Links
                             </h3>
-                            <ul className="space-y-3 mb-6">
+                            <ul className="space-y-3">
                                 {quickLinks.map((link, index) => (
                                     <li key={index}>
-                                        <Link href={link.href} className="text-sm flex items-center group py-2" style={styles.link}>
-                                            <ArrowRight className="h-3 w-3 mr-2 opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                                        <Link href={link.href} className="text-sm hover:underline transition-colors" style={styles.link}>
                                             {link.name}
                                         </Link>
                                     </li>
@@ -186,65 +225,107 @@ export default function Footer() {
                             </ul>
                         </div>
 
-                        {/* Contact Column */}
+                        {/* Column 4: Get In Touch (from reference image) */}
                         <div>
-                            <h3 className="text-sm font-bold uppercase tracking-wider mb-4" style={styles.heading}>
+                            <h3 className="text-sm font-bold uppercase tracking-wider mb-6" style={styles.heading}>
                                 Get In Touch
                             </h3>
                             <ul className="space-y-4">
-                                <li className="flex items-start text-sm" style={styles.text}>
-                                    <Mail className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
-                                    <a href="mailto:contact@cinuteinfomedia.com" className="hover:underline py-2 inline-block" style={styles.link}>
+                                <li className="flex items-start gap-3">
+                                    <Mail className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
+                                    <a href="mailto:contact@cinuteinfomedia.com" className="text-sm hover:underline" style={styles.link}>
                                         contact@cinuteinfomedia.com
                                     </a>
                                 </li>
-                                <li className="flex items-start text-sm" style={styles.text}>
-                                    <Phone className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0" style={{ color: "var(--brand-teal)" }} />
-                                    <div className="flex flex-col">
-                                        <a href="tel:+919004988859" className="hover:underline py-1 inline-block" style={styles.link}>
-                                            +91 9004988859
-                                        </a>
-                                        <a href="tel:+917700995410" className="hover:underline py-1 inline-block" style={styles.link}>
-                                            +91 7700995410
-                                        </a>
+                                <li className="flex items-start gap-3">
+                                    <Phone className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: "var(--brand-teal)" }} />
+                                    <div className="flex flex-col gap-1">
+                                        <a href="tel:+919004988859" className="text-sm hover:underline" style={styles.link}>+91 9004988859</a>
+                                        <a href="tel:+917700995410" className="text-sm hover:underline" style={styles.link}>+91 7700995410</a>
                                     </div>
                                 </li>
-                                <li className="flex items-start text-sm" style={styles.text}>
-                                    <MapPin className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0" style={{ color: "var(--brand-purple)" }} />
-                                    <span>Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park, Mira Road, Mira Bhayandar, Mumbai, Maharashtra 401107</span>
+                                <li className="flex items-start gap-3">
+                                    <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" style={{ color: "var(--brand-purple)" }} />
+                                    <span className="text-sm leading-relaxed" style={styles.text}>
+                                        Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park, Mira Road, Mira Bhayandar, Mumbai, Maharashtra 401107
+                                    </span>
                                 </li>
                             </ul>
-
-                            {/* CTA Button */}
-                            <Link href="/contact" className="mt-6 inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg hover:shadow-xl hover:scale-105" style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-teal))", color: "white" }}>
+                            <Link href="/contact" className="mt-6 inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-white transition-transform hover:scale-105" style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-teal))" }}>
                                 Start Your Project
                             </Link>
                         </div>
                     </div>
                 </div>
 
+                {/* Sub-pages Section */}
+                <div className="py-10 border-t" style={styles.border}>
+                    {/* Desktop: 6-Column Grid */}
+                    <div className="hidden md:grid md:grid-cols-3 lg:grid-cols-6 gap-8">
+                        {serviceCategories.map((category, idx) => (
+                            <div key={idx}>
+                                <Link href={category.href} className="text-sm font-bold uppercase tracking-wider mb-4 block hover:underline" style={styles.heading}>
+                                    {category.title}
+                                </Link>
+                                <ul className="space-y-2">
+                                    {category.items.map((item, i) => (
+                                        <li key={i}>
+                                            <Link href={item.href} className="text-sm flex items-center group hover:underline" style={styles.link}>
+                                                <ArrowRight className="h-3 w-3 mr-1.5 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                                                {item.name}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Mobile: Accordion */}
+                    <div className="md:hidden space-y-2">
+                        {serviceCategories.map((category, idx) => (
+                            <div key={idx} className="border rounded-lg overflow-hidden" style={styles.border}>
+                                <button
+                                    onClick={() => toggleSection(idx)}
+                                    className="w-full flex items-center justify-between px-4 py-3 text-sm font-bold uppercase tracking-wider"
+                                    style={{ ...styles.heading, backgroundColor: expandedSection === idx ? "var(--hover-bg)" : "transparent" }}
+                                >
+                                    {category.title}
+                                    <ChevronDown className={`h-4 w-4 transition-transform ${expandedSection === idx ? "rotate-180" : ""}`} />
+                                </button>
+                                <div className={`overflow-hidden transition-all duration-300 ${expandedSection === idx ? "max-h-96" : "max-h-0"}`}>
+                                    <ul className="px-4 pb-3 space-y-2">
+                                        <li>
+                                            <Link href={category.href} className="text-sm font-medium hover:underline" style={{ color: "var(--brand-blue)" }}>
+                                                View All {category.title} →
+                                            </Link>
+                                        </li>
+                                        {category.items.map((item, i) => (
+                                            <li key={i}>
+                                                <Link href={item.href} className="text-sm hover:underline" style={styles.link}>
+                                                    {item.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
                 {/* Bottom Bar */}
-                <div className="py-6" style={styles.containerBorder}>
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-sm" style={styles.text}>
-                            © {year} CIM. All rights reserved.
+                <div className="py-6 border-t" style={styles.border}>
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p className="text-xs" style={styles.text}>
+                            © {year} Cinute Infomedia. All rights reserved.
                         </p>
-                        <div className="flex flex-col md:flex-row items-center justify-center space-x-6 text-sm">
-                            <Link href="/privacy-policy" className="hover:underline py-2" style={styles.link}>
-                                Privacy Policy
-                            </Link>
-                            <span className="hidden md:block" style={{ color: "var(--border-color)" }}>|</span>
-                            <Link href="/terms-of-service" className="hover:underline py-2" style={styles.link}>
-                                Terms of Service
-                            </Link>
-                            <span className="hidden md:block" style={{ color: "var(--border-color)" }}>|</span>
-                            <Link href="/cookies-policy" className="hover:underline py-2" style={styles.link}>
-                                Cookies Policy
-                            </Link>
-                            {/* <span className="hidden md:block" style={{ color: "var(--border-color)" }}>|</span>
-                            <Link href="/sitemap" className="hover:underline" style={styles.link}>
-                                Sitemap
-                            </Link> */}
+                        <div className="flex flex-wrap items-center justify-center gap-4 text-xs">
+                            <Link href="/privacy-policy" className="hover:underline" style={styles.link}>Privacy Policy</Link>
+                            <span style={styles.text}>|</span>
+                            <Link href="/terms-of-service" className="hover:underline" style={styles.link}>Terms of Service</Link>
+                            <span style={styles.text}>|</span>
+                            <Link href="/cookies-policy" className="hover:underline" style={styles.link}>Cookies Policy</Link>
                         </div>
                     </div>
                 </div>

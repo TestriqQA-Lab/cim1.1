@@ -8,6 +8,7 @@ import {
     Server,
     Gem,
     CreditCard,
+    Layers,
 } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -89,6 +90,20 @@ export default function SolutionTypes() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${commerceBlue}15`,
+                            borderColor: `${commerceBlue}40`,
+                        }}
+                    >
+                        <Layers className="w-4 h-4" style={{ color: commerceBlue }} />
+                        <span className="text-sm font-medium" style={{ color: commerceBlue }}>
+                            Platform Expertise
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Platform & Industry <span style={{ color: commerceBlue }}>Expertise</span>
                     </h2>

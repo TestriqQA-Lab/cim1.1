@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Shield, Target, BarChart3, Users, CheckCircle } from "lucide-react";
+import { Shield, Target, BarChart3, Users, CheckCircle, Award } from "lucide-react";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -48,6 +48,20 @@ export default function WhyChooseUs() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${linkCyan}15`,
+                            borderColor: `${linkCyan}40`,
+                        }}
+                    >
+                        <Award className="w-4 h-4" style={{ color: linkCyan }} />
+                        <span className="text-sm font-medium" style={{ color: linkCyan }}>
+                            Why Choose Us
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Why Choose <span style={{ color: linkCyan }}>Us</span>
                     </h2>

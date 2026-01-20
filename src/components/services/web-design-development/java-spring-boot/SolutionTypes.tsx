@@ -111,6 +111,20 @@ export default function SolutionTypes() {
         <section className="py-24 bg-background relative overflow-hidden">
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(109, 179, 63, 0.05)",
+                            borderColor: "rgba(109, 179, 63, 0.2)",
+                        }}
+                    >
+                        <Building className="w-4 h-4" style={{ color: "#6DB33F" }} />
+                        <span className="text-sm font-medium" style={{ color: "#6DB33F" }}>
+                            Industry Solutions
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         <span style={{ color: "var(--foreground)" }}>Industry</span>{" "}
                         <span

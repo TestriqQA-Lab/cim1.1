@@ -293,6 +293,20 @@ export default function WebsiteTypes() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-20">
                 {/* Header */}
                 <div className="text-center mb-12">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(0, 138, 193, 0.05)",
+                            borderColor: "rgba(0, 138, 193, 0.2)",
+                        }}
+                    >
+                        <Globe className="w-4 h-4" style={{ color: "var(--brand-blue)" }} />
+                        <span className="text-sm font-medium" style={{ color: "var(--brand-blue)" }}>
+                            Website Types
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Comprehensive <span style={{ color: "var(--brand-blue)", fontWeight: 700 }}>Custom Website Development</span> Solutions
                     </h2>

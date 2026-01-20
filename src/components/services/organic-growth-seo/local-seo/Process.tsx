@@ -239,7 +239,7 @@ export default function Process() {
                             Our Local <span style={{ color: localAmber }}>Process</span>
                         </h2>
                         <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            A proven framework to put your business on the map—literally.
+                            A proven framework to put your business on the map - literally.
                         </p>
                     </div>
 

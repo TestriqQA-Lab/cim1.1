@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, MapPin, Search, Users, Phone, BarChart } from "lucide-react";
+import { Check, MapPin, Search, Users, Phone, BarChart, Award } from "lucide-react";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -52,6 +52,20 @@ export default function WhyChooseUs() {
                     {/* Left Header Area */}
                     <div className="lg:w-1/3">
                         <div className="sticky top-24">
+                            {/* Badge */}
+                            <div
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                                style={{
+                                    backgroundColor: `${localAmber}15`,
+                                    borderColor: `${localAmber}40`,
+                                }}
+                            >
+                                <Award className="w-4 h-4" style={{ color: localAmber }} />
+                                <span className="text-sm font-medium" style={{ color: localAmber }}>
+                                    Why Trust Us
+                                </span>
+                            </div>
+
                             <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                                 Why Trust Us With Your <span style={{ color: localAmber }}>Local Market?</span>
                             </h2>

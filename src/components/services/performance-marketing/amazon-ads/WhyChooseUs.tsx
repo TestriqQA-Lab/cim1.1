@@ -55,6 +55,20 @@ export default function WhyChooseUs() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: `${amazonOrange}15`,
+                            borderColor: `${amazonOrange}40`,
+                        }}
+                    >
+                        <Award className="w-4 h-4" style={{ color: amazonOrange }} />
+                        <span className="text-sm font-medium" style={{ color: amazonOrange }}>
+                            Why Partner With Us
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Why Partner{" "}
                         <span

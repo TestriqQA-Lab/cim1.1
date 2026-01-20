@@ -60,6 +60,20 @@ export default function WhyChooseUs() {
             }}>
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(255, 45, 32, 0.05)",
+                            borderColor: "rgba(255, 45, 32, 0.2)",
+                        }}
+                    >
+                        <Users className="w-4 h-4" style={{ color: "#FF2D20" }} />
+                        <span className="text-sm font-medium" style={{ color: "#FF2D20" }}>
+                            Why Choose Us
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         <span style={{ color: "var(--foreground)" }}>Why We're the </span>{" "}
                         <span

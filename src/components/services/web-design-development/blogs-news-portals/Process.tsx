@@ -50,6 +50,20 @@ export default function Process() {
             <div className="mx-auto px-6 md:px-12 xl:px-20">
                 {/* Header */}
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(168, 85, 247, 0.05)",
+                            borderColor: "rgba(168, 85, 247, 0.2)",
+                        }}
+                    >
+                        <Rocket className="w-4 h-4" style={{ color: "#a855f7" }} />
+                        <span className="text-sm font-medium" style={{ color: "#a855f7" }}>
+                            Our Process
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Our <span style={{ color: "#a855f7" }}>Development Process</span>
                     </h2>

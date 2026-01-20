@@ -41,6 +41,20 @@ export default function WhyChooseUs() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left Content */}
                     <div>
+                        {/* Badge */}
+                        <div
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                            style={{
+                                backgroundColor: "rgba(168, 85, 247, 0.05)",
+                                borderColor: "rgba(168, 85, 247, 0.2)",
+                            }}
+                        >
+                            <Award className="w-4 h-4" style={{ color: "#a855f7" }} />
+                            <span className="text-sm font-medium" style={{ color: "#a855f7" }}>
+                                Why Choose Us
+                            </span>
+                        </div>
+
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                             Why Choose Us for Your{" "}
                             <span
