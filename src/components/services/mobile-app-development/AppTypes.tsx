@@ -7,7 +7,6 @@ import {
     Rocket,
     Paintbrush,
     GitMerge,
-    GitMerge,
     Building2,
     Sparkles,
 } from "lucide-react";
