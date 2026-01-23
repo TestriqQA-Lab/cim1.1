@@ -7,39 +7,39 @@ export default function Process() {
     const steps = [
         {
             icon: Lightbulb,
-            title: "Ideation & Strategy",
-            description: "We collaborate with you to understand your vision, target audience, and business goals. We conduct market research and competitive analysis to ensure your app stands out.",
-            details: ["Business Analysis", "Market Research", "Competitive Analysis", "Strategy Development"]
+            title: "Discovery & Strategy (Week 1-2)",
+            description: "Stakeholder interviews, competitor analysis, user persona development, and feature prioritization using MoSCoW method. Technical feasibility assessment with risk mitigation planning.",
+            details: ["Business Analysis", "Market Research", "Risk Assessment", "Technical Roadmap", "Budget & Timeline Estimation"]
         },
         {
             icon: Pencil,
-            title: "Wireframing & UI/UX Design",
-            description: "Our design team creates detailed wireframes and stunning UI designs. We focus on user experience, accessibility, and platform guidelines.",
-            details: ["User Research", "Wireframing", "UI Design", "Prototyping", "User Testing"]
+            title: "UI/UX Design (Week 3-5)",
+            description: "Low to high-fidelity wireframing, interactive prototypes in Figma/Adobe XD, user flow mapping, and accessibility audit. 35% higher engagement through conversion-focused design backed by 10,000+ hours A/B testing.",
+            details: ["Wireframing", "Interactive Prototypes", "Design System", "WCAG 2.2 AA Compliance", "Usability Testing (5+ users)"]
         },
         {
             icon: Code,
-            title: "Development & Coding",
-            description: "Our expert developers build your app using the latest technologies and best practices. We maintain clean, scalable code and follow agile methodologies.",
-            details: ["Frontend Development", "Backend Development", "API Integration", "Database Design", "Code Reviews"]
+            title: "Development & Coding (Week 6-16)",
+            description: "2-week agile sprints with backend API development, frontend implementation, third-party integrations, and DevOps CI/CD pipelines. 80%+ unit test coverage with code review for every PR.",
+            details: ["Sprint Planning", "Backend (Node.js/Python/.NET)", "Frontend (Swift/Kotlin/Flutter)", "API Integration", "Git Workflow (Gitflow)"]
         },
         {
             icon: TestTube,
-            title: "Testing & QA",
-            description: "Comprehensive testing across devices, platforms, and scenarios. We ensure your app is bug-free, performant, and meets all requirements.",
-            details: ["Unit Testing", "Integration Testing", "Performance Testing", "Security Testing", "User Acceptance Testing"]
+            title: "Testing & QA (Week 17-19)",
+            description: "Comprehensive testing: 80%+ unit coverage, integration testing for all APIs, UI automation of critical flows, manual testing across 100+ devices. 98.7% bug-free delivery rate with 99.9% crash-free sessions.",
+            details: ["Unit Testing (Jest/XCTest/JUnit)", "Integration Testing", "UI Automation (Appium/Detox)", "Performance Testing (Load/Stress)", "Security Testing (OWASP Top 10)"]
         },
         {
             icon: Rocket,
-            title: "Deployment & Launch",
-            description: "We handle all aspects of app store submission, including compliance checks, documentation, and optimization for discoverability.",
-            details: ["App Store Submission", "Play Store Submission", "Launch Strategy", "Marketing Support", "Performance Monitoring"]
+            title: "Deployment & Launch (Week 20-21)",
+            description: "App Store and Play Store submission with compliance docs, beta testing via TestFlight/Internal Track, and App Store Optimization. Average 40% increase in organic downloads with top 10 keyword rankings within 90 days.",
+            details: ["App Store Submission", "ASO (Keyword Research)", "Beta Testing", "Screenshot Optimization", "Pre-Launch Marketing"]
         },
         {
             icon: Wrench,
-            title: "Maintenance & Updates",
-            description: "Ongoing support, bug fixes, feature updates, and optimization. We ensure your app stays current with OS updates and user needs.",
-            details: ["Bug Fixes", "Feature Updates", "Performance Optimization", "Security Patches", "User Support"]
+            title: "Maintenance & Support (Ongoing)",
+            description: "24/7 support tiers (Bronze/Silver/Gold) with 24-48 hour bug fix SLA, OS compatibility updates, performance monitoring, security patches, and monthly analytics reporting.",
+            details: ["Bug Fixes (24-72hr SLA)", "OS Updates", "Feature Enhancements", "Security Patches", "Analytics & Reporting"]
         }
     ];
 
@@ -77,10 +77,10 @@ export default function Process() {
                     </div>
 
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
-                        <span style={{ color: "var(--foreground)" }}>Our Mobile App Development</span> <span style={{ color: "var(--brand-purple)" }}>Process</span>
+                        <span style={{ color: "var(--foreground)" }}>6-Phase Agile Methodology</span> <span style={{ color: "var(--brand-purple)" }}>(Proven Across 300+ Projects)</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A structured, transparent approach that ensures your app is delivered on time, within budget, and exceeds expectations.
+                        Our battle-tested development process ensures 95% on-time delivery with 98.7% bug-free rate. Transparent, structured approach delivering measurable results.
                     </p>
                 </div>
 

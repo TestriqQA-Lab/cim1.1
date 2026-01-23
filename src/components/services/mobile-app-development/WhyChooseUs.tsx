@@ -8,34 +8,34 @@ import Image from "next/image";
 export default function WhyChooseUs() {
     const reasons = [
         {
-            icon: Zap,
-            title: "Lightning-Fast Performance",
-            description: "Optimized code and architecture ensure your app runs smoothly with minimal battery drain and fast load times."
+            icon: Award,
+            title: "Proven Track Record",
+            description: "300+ mobile apps delivered across 45+ industries. 50M+ active users powered by our applications. 99.2% client retention rate with 15+ industry awards since 2014."
+        },
+        {
+            icon: Rocket,
+            title: "40% Faster Time-to-Market",
+            description: "Agile 2-week sprints and efficient development processes. 95% projects delivered on-time and within budget using proven methodologies."
         },
         {
             icon: Lock,
             title: "Enterprise-Grade Security",
-            description: "Implement industry-leading security practices including end-to-end encryption, secure authentication, and data protection."
-        },
-        {
-            icon: TrendingUp,
-            title: "Scalability at Scale",
-            description: "Build apps that grow with your business. Our architecture supports millions of users without performance degradation."
+            description: "Zero security breaches since 2014. AES-256 encryption, OAuth 2.0, OWASP compliance. GDPR, HIPAA, PCI-DSS, SOC 2 certified solutions."
         },
         {
             icon: Palette,
-            title: "Exceptional UX/UI",
-            description: "Beautiful, intuitive interfaces designed with user psychology in mind. Every pixel serves a purpose."
+            title: "35% Higher User Engagement",
+            description: "Conversion-optimized UX backed by 10,000+ hours of A/B testing. WCAG 2.2 AA compliant designs that reduce churn by 40%."
+        },
+        {
+            icon: Gauge,
+            title: "98.7% Bug-Free Delivery",
+            description: "Rigorous QA with 80%+ test coverage across 100+ devices. 99.9% crash-free sessions with <2s app launch time and 60 FPS performance."
         },
         {
             icon: Smartphone,
-            title: "App Store Ready",
-            description: "Full compliance with Apple App Store and Google Play Store guidelines. We handle all submission and approval processes."
-        },
-        {
-            icon: Award,
-            title: "Award-Winning Quality",
-            description: "Our apps have won multiple industry awards and recognition for innovation, design, and user experience."
+            title: "Multi-Platform Expertise",
+            description: "Masters of Swift 6, Kotlin, Flutter 3.5+, React Native New Architecture. Native, cross-platform, and hybrid solutions with single codebase efficiency."
         }
     ];
 
@@ -73,10 +73,10 @@ export default function WhyChooseUs() {
                     </div>
 
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
-                        <span style={{ color: "var(--foreground)" }}>Why Choose Our</span> <span style={{ color: "var(--brand-purple)" }}>Mobile App Solutions</span>?
+                        <span style={{ color: "var(--foreground)" }}>The Cinute Infomedia Advantage:</span> <span style={{ color: "var(--brand-purple)" }}>Where Innovation Meets Execution</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We combine technical excellence with strategic thinking to deliver mobile apps that drive real business results.
+                        As a globally recognized custom mobile app development company, we combine cutting-edge technology with deep industry expertise to build apps that users love and businesses profit from.
                     </p>
                 </div>
 

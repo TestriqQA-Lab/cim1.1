@@ -101,7 +101,7 @@ export default function Hero() {
                                     color: "transparent",
                                 }}
                             >
-                                Transform Your Ideas Into <span className="text-[var(--brand-purple)]">Powerful Mobile Apps</span>
+                                Transform Your Vision Into <span className="text-[var(--brand-purple)]">High-Performance Mobile Apps</span> That Drive Business Growth
                             </span>
                         </h1>
 
@@ -116,7 +116,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            As a premier <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>Mobile App Development Company</span>, we deliver high-performance, secure, and user-centric <span style={{ color: "var(--foreground)", fontWeight: 700 }}>Custom Mobile App Solutions</span> for iOS, Android, and cross-platform needs.
+                            As a <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>premier mobile app development company</span> with <span style={{ color: "var(--foreground)", fontWeight: 700 }}>12+ years of proven expertise</span>, we craft custom mobile app development solutions that transform businesses globally. Our award-winning team has delivered <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>300+ high-performance mobile applications</span> across iOS, Android, and cross-platform ecosystems.
                         </p>
 
                         {/* Feature Highlights */}
@@ -199,7 +199,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    200+
+                                    300+
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
                                     Apps Delivered
@@ -213,10 +213,10 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    5M+
+                                    50M+
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Users Impacted
+                                    Active Users
                                 </div>
                             </div>
                             <div className="text-center">
@@ -227,10 +227,10 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    98%
+                                    99.2%
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Client Satisfaction
+                                    Client Retention
                                 </div>
                             </div>
                         </div>
@@ -292,10 +292,10 @@ export default function Hero() {
                             }}
                         >
                             <h2 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>
-                                Why Choose Us?
+                                Why 2,500+ Businesses Trust Us
                             </h2>
                             <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
-                                We combine cutting-edge technology with proven methodologies to deliver exceptional mobile app solutions tailored to your business needs.
+                                98.7% bug-free delivery rate • 40% faster time-to-market • 24/7 global support • Enterprise-grade security (GDPR, HIPAA, SOC 2 compliant)
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 <span

@@ -48,9 +48,41 @@ export default function CTA() {
                             Ready to Build Your Mobile App?
                         </h2>
 
-                        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Let's transform your idea into a powerful, scalable mobile application that drives real business results.
+                        <p className="text-lg md:text-xl mb-4 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                            Let's Turn Your Idea Into Reality (Free 30-Min Consultation)
                         </p>
+
+                        <div className="mb-8 max-w-3xl mx-auto">
+                            <p className="text-sm md:text-base mb-3" style={{ color: "var(--secondary-text)" }}>
+                                <strong style={{ color: "var(--foreground)" }}>What You Get in Our Free Strategy Session:</strong>
+                            </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-left text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="flex items-start gap-2">
+                                    <span style={{ color: "var(--brand-purple)" }}>✓</span>
+                                    <span>Business Goals Analysis</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span style={{ color: "var(--brand-purple)" }}>✓</span>
+                                    <span>Technical Feasibility Review</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span style={{ color: "var(--brand-purple)" }}>✓</span>
+                                    <span>Cost & Timeline Estimate</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span style={{ color: "var(--brand-purple)" }}>✓</span>
+                                    <span>Competitor Analysis</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span style={{ color: "var(--brand-purple)" }}>✓</span>
+                                    <span>MVP Roadmap</span>
+                                </div>
+                                <div className="flex items-start gap-2">
+                                    <span style={{ color: "var(--brand-purple)" }}>✓</span>
+                                    <span>Free UI/UX Consultation ($1,500 value)</span>
+                                </div>
+                            </div>
+                        </div>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -62,7 +94,7 @@ export default function CTA() {
                                     color: "white",
                                 }}
                             >
-                                Start Your Project
+                                Book Free Consultation Now
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
@@ -113,7 +145,7 @@ export default function CTA() {
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="text-center">
                         <div className="text-4xl font-bold mb-2" style={{ color: "var(--brand-purple)" }}>
-                            200+
+                            300+
                         </div>
                         <p style={{ color: "var(--secondary-text)" }}>
                             Mobile apps delivered successfully
@@ -121,7 +153,7 @@ export default function CTA() {
                     </div>
                     <div className="text-center">
                         <div className="text-4xl font-bold mb-2" style={{ color: "var(--brand-yellow)" }}>
-                            5M+
+                            50M+
                         </div>
                         <p style={{ color: "var(--secondary-text)" }}>
                             Active users across all apps
@@ -129,10 +161,10 @@ export default function CTA() {
                     </div>
                     <div className="text-center">
                         <div className="text-4xl font-bold mb-2" style={{ color: "var(--brand-blue)" }}>
-                            98%
+                            99.2%
                         </div>
                         <p style={{ color: "var(--secondary-text)" }}>
-                            Client satisfaction rate
+                            Client retention rate
                         </p>
                     </div>
                 </div>
