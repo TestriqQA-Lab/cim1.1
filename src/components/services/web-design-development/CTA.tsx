@@ -58,7 +58,7 @@ export default function CTA() {
                             }}
                         >
                             <Sparkles className="w-4 h-4" />
-                            <span className="text-sm font-semibold">Ready to Transform Your Digital Presence?</span>
+                            <span className="text-sm font-semibold text-[var(--brand-blue)]">Global Excellence</span>
                         </div>
 
                         {/* Heading */}
@@ -72,43 +72,41 @@ export default function CTA() {
                                     color: "transparent",
                                 }}
                             >
-                                Ready to Launch Your Next Digital Project?
+                                Ready to Transform Your Global Digital Presence?
                             </span>
                         </h2>
 
                         {/* Description */}
-                        <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12" style={{ color: "var(--secondary-text)" }}>
-                            Don't settle for an average website. Partner with the <span style={{ fontWeight: 700, color: "var(--brand-blue)" }}>Web Development Company</span> that builds for growth. Contact us today to discuss your <span style={{ fontWeight: 700, color: "var(--brand-teal)" }}>Custom Website Development</span> needs and receive a personalized quote.
+                        <p className="text-lg md:text-xl max-w-4xl mx-auto mb-12 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                            Partner with a professional <span className="font-bold text-[var(--brand-blue)]">web development agency</span> to build a high-performance, SEO-optimized website that delivers <span className="text-[var(--brand-teal)] font-bold">measurable ROI</span>. Get your free expert audit today.
                         </p>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-base font-bold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                             >
-                                Start Your Project Today
+                                Get Your Free Website Audit
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
 
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold border transition-all duration-300"
+                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-base font-bold border transition-all duration-300"
                                 style={{
                                     borderColor: "var(--border-color)",
                                     color: "var(--foreground)",
                                 }}
-                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")}
-                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
                             >
-                                Schedule a Free Consultation
+                                Global Strategy Call
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
 
                         {/* Bottom Text */}
                         <p className="mt-8" style={{ color: "var(--secondary-text)", fontSize: "0.95rem" }}>
-                            Have questions? Our team is ready to help. <Link href="/contact" className="font-semibold hover:underline" style={{ color: "var(--brand-blue)" }}>Get in touch</Link> with us today.
+                            Building for US, EU, and APAC markets. <Link href="/contact" className="font-semibold hover:underline" style={{ color: "var(--brand-blue)" }}>Book a session</Link> with our architects.
                         </p>
                     </div>
                 </div>
@@ -117,16 +115,16 @@ export default function CTA() {
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {[
                         {
-                            number: "500+",
-                            label: "Projects Delivered",
+                            number: "15+ Years",
+                            label: "Expertise",
                         },
                         {
-                            number: "98%",
-                            label: "Client Satisfaction",
+                            number: "300%",
+                            label: "Traffic Growth",
                         },
                         {
-                            number: "10+",
-                            label: "Years of Experience",
+                            number: "99.9%",
+                            label: "Uptime SLA",
                         },
                     ].map((indicator, idx) => (
                         <div key={idx}>

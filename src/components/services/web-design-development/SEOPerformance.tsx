@@ -7,44 +7,44 @@ export default function SEOPerformance() {
     const features = [
         {
             icon: Gauge,
-            title: "Core Web Vitals Optimization",
-            description: "We optimize for Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS) to meet Google's performance standards.",
-            items: ["LCP < 2.5s", "FID < 100ms", "CLS < 0.1", "Mobile-first approach"],
+            title: "Sub-2s Core Web Vitals",
+            description: "We optimize for global performance standards (LCP, FID, CLS) ensuring lightning-fast load times across 15+ countries.",
+            items: ["LCP < 2.5s", "FID < 100ms", "CLS < 0.1", "Global CDN delivery"],
             color: "from-[#fab900] to-[#ee6500]",
+        },
+        {
+            icon: Eye,
+            title: "300% Organic Growth",
+            description: "Our technical SEO foundation has delivered 300% organic traffic growth for enterprise clients in competitive global markets.",
+            items: ["Semantic hierarchy", "Schema.org graph", "Keyword authority", "Global indexing"],
+            color: "from-[#008ac1] to-[#bc3feb]",
         },
         {
             icon: Smartphone,
             title: "Responsive Web Design",
-            description: "Our mobile-first approach guarantees a perfect experience on any device, a critical ranking factor for search engines.",
-            items: ["Mobile optimization", "Tablet compatibility", "Desktop perfection", "Touch-friendly UI"],
+            description: "Mobile-first approach ensuring flawless display on all devices. Average 20% conversion rate improvement post-launch.",
+            items: ["Fluid grid system", "Cross-device QA", "Touch-optimized UI", "Adaptive images"],
             color: "from-[#00efd6] to-[#00b5ca]",
         },
         {
-            icon: Eye,
-            title: "Semantic HTML & H-Tags",
-            description: "Proper use of H1, H2, and H3 tags ensures search engines correctly understand your content hierarchy and keyword focus.",
-            items: ["Proper heading hierarchy", "Schema markup", "Semantic structure", "Keyword optimization"],
-            color: "from-[#008ac1] to-[#bc3feb]",
-        },
-        {
             icon: Zap,
-            title: "Technical SEO Foundation",
-            description: "Strategic placement of keywords like Web Design Services, Web Development Company, and Custom Website Development within content and meta tags.",
-            items: ["Meta optimization", "Keyword targeting", "Internal linking", "Sitemap generation"],
+            title: "Custom Web Solutions",
+            description: "Data-backed UI/UX focused on business value. Our sites have increased online leads by up to 425% for global brands.",
+            items: ["Conversion audit", "Lead capture paths", "A/B tested layouts", "User flow mapping"],
             color: "from-[#bc3feb] to-[#fab900]",
         },
         {
             icon: Accessibility,
-            title: "Accessibility (A11Y)",
-            description: "Adherence to WCAG guidelines for an inclusive and compliant user experience that benefits both users and SEO.",
-            items: ["WCAG 2.1 AA compliance", "Screen reader support", "Keyboard navigation", "Color contrast"],
+            title: "Global Accessibility",
+            description: "Adherence to WCAG 2.1 guidelines for an inclusive user experience that benefits both international users and SEO.",
+            items: ["Screen reader ready", "Keyboard navigation", "High contrast UI", "ARIA standards"],
             color: "from-[#ee6500] to-[#fab900]",
         },
         {
             icon: Lock,
-            title: "Security & Trust Signals",
-            description: "SSL certificates, secure headers, and best practices that build trust with users and search engines.",
-            items: ["SSL/TLS encryption", "Security headers", "HTTPS everywhere", "Trust badges"],
+            title: "Enterprise Security",
+            description: "Advanced protocols and AWS-secured architecture ensuring 99.9% uptime and data protection for global operations.",
+            items: ["SSL/TLS encryption", "Security headers", "Real-time monitoring", "DDoS protection"],
             color: "from-[#008ac1] to-[#00b5ca]",
         },
     ];
@@ -99,11 +99,11 @@ export default function SEOPerformance() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ fontWeight: 700, color: "var(--brand-blue)" }}>Technical SEO</span> <span style={{ fontWeight: 700, color: "var(--foreground)" }}>and Performance</span>
+                        <span style={{ fontWeight: 700, color: "var(--brand-blue)" }}>Data-Backed ROI</span> <span style={{ fontWeight: 700, color: "var(--foreground)" }}>& Global Performance</span>
                     </h2>
 
-                    <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We ensure your website is a high-performing asset from day one. Our focus on technical SEO and speed is integral to our <span style={{ fontWeight: 700, color: "var(--brand-blue)" }}>Web Design Services</span>.
+                    <p className="text-xl max-w-4xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                        As an expert <span className="font-bold text-[var(--brand-blue)]">web development agency</span>, we don&apos;t just build sites—we engineer high-performance business assets that deliver measurable global ROI.
                     </p>
 
                     <div
@@ -198,15 +198,15 @@ export default function SEOPerformance() {
 
                 {/* Bottom CTA */}
                 <div className="text-center">
-                    <p className="text-lg mb-8" style={{ color: "var(--secondary-text)" }}>
-                        Ready to build a website that performs? Let&apos;s create something exceptional together.
+                    <p className="text-lg md:text-xl mb-8 text-[var(--secondary-text)] max-w-2xl mx-auto">
+                        Ready to build a website that performs globally? Partner with a professional <span className="font-bold text-[var(--brand-blue)]">web development agency</span> today.
                     </p>
 
                     <Link
                         href="/contact"
-                        className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-base font-bold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                     >
-                        Get Started Today
+                        Get Your Free Website Audit
                         <span>→</span>
                     </Link>
                 </div>

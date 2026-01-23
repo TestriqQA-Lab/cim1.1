@@ -91,7 +91,7 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -101,13 +101,13 @@ export default function Hero() {
                                     color: "transparent",
                                 }}
                             >
-                                Elevate Your Digital Presence
+                                Transform Your Business with Expert Web Development Services
                             </span>
                         </h1>
 
                         {/* Underline */}
                         <div
-                            className="w-32 h-1.5 mb-8 rounded-full lg:mx-0 mx-auto mt-4"
+                            className="w-32 h-1.5 mb-8 rounded-full lg:mx-0 mx-auto mt-6"
                             style={{
                                 background:
                                     "linear-gradient(90deg, var(--brand-blue), var(--brand-teal))",
@@ -115,76 +115,40 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            As a premier <span style={{ color: "var(--brand-blue)", fontWeight: 700 }}>Web Development Company</span>, we deliver fast, scalable, and SEO-optimized <span style={{ color: "var(--brand-teal)", fontWeight: 700 }}>Custom Website Development</span> solutions that drive business growth.
-                        </p>
+                        <div className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
+                            <p>
+                                As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span> with 15+ years of proven expertise, we deliver <span className="text-[var(--brand-teal)] font-bold">custom website development</span> solutions that drive measurable ROI.
+                            </p>
+                            <p className="text-base md:text-lg">
+                                Our professional web design agency has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets—achieving average <span className="text-[var(--brand-blue)] font-bold">300% traffic growth</span> and 20% conversion rate improvements.
+                            </p>
+                        </div>
 
                         {/* Feature Highlights */}
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
-                                style={{
-                                    backgroundColor: "color-mix(in srgb, var(--brand-blue) 8%, transparent)",
-                                }}
-                            >
-                                <Rocket className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Fast Launch
-                                </span>
-                            </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
-                                style={{
-                                    backgroundColor: "color-mix(in srgb, var(--brand-blue) 8%, transparent)",
-                                }}
-                            >
-                                <Zap className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Lightning Fast
-                                </span>
-                            </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
-                                style={{
-                                    backgroundColor: "color-mix(in srgb, var(--brand-blue) 8%, transparent)",
-                                }}
-                            >
-                                <Smartphone className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Mobile First
-                                </span>
-                            </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
-                                style={{
-                                    backgroundColor: "color-mix(in srgb, var(--brand-blue) 8%, transparent)",
-                                }}
-                            >
-                                <TrendingUp className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    SEO Ready
-                                </span>
-                            </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
-                                style={{
-                                    backgroundColor: "color-mix(in srgb, var(--brand-blue) 8%, transparent)",
-                                }}
-                            >
-                                <ShieldCheck className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Secure
-                                </span>
-                            </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
-                                style={{
-                                    backgroundColor: "color-mix(in srgb, var(--brand-blue) 8%, transparent)",
-                                }}
-                            >
-                                <Code className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-blue)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Clean Code
-                                </span>
-                            </div>
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+                            {[
+                                { icon: Rocket, text: "ROI Driven" },
+                                { icon: Zap, text: "Core Web Vitals 90+" },
+                                { icon: Smartphone, text: "Responsive Design" },
+                                { icon: TrendingUp, text: "Global SEO" },
+                                { icon: ShieldCheck, text: "Enterprise Security" },
+                                { icon: Code, text: "Bug-Free Code" },
+                            ].map((item, idx) => (
+                                <div key={idx} className="flex items-center gap-2.5 p-2.5 rounded-xl transition-all duration-300 hover:scale-105 border border-transparent hover:border-[var(--brand-blue)]"
+                                    style={{
+                                        backgroundColor: "color-mix(in srgb, var(--brand-blue) 8%, transparent)",
+                                    }}
+                                >
+                                    <item.icon className="w-4 h-4 flex-shrink-0 text-[var(--brand-blue)]" />
+                                    <span className="text-xs font-bold text-[var(--foreground)]">
+                                        {item.text}
+                                    </span>
+                                </div>
+                            ))}
                         </div>
 
                         {/* Stats Section */}
-                        <div className="grid grid-cols-3 gap-4 mb-8 p-6 rounded-2xl"
+                        <div className="grid grid-cols-3 gap-2 mb-8 p-6 rounded-2xl"
                             style={{
                                 backgroundColor: "color-mix(in srgb, var(--card-bg) 50%, transparent)",
                                 backdropFilter: "blur(10px)",
@@ -192,45 +156,27 @@ export default function Hero() {
                             }}
                         >
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
-                                    style={{
-                                        background: "linear-gradient(90deg, var(--brand-teal), var(--brand-blue))",
-                                        WebkitBackgroundClip: "text",
-                                        color: "transparent",
-                                    }}
-                                >
+                                <div className="text-2xl md:text-3xl font-bold mb-1 text-[var(--brand-blue)]">
                                     500+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Projects Delivered
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
+                                    High-Perf Sites
+                                </div>
+                            </div>
+                            <div className="text-center border-x border-[var(--border-color)]">
+                                <div className="text-2xl md:text-3xl font-bold mb-1 text-[var(--brand-teal)]">
+                                    95%
+                                </div>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
+                                    Bug-Free Delivery
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
-                                    style={{
-                                        background: "linear-gradient(90deg, var(--brand-teal), var(--brand-blue))",
-                                        WebkitBackgroundClip: "text",
-                                        color: "transparent",
-                                    }}
-                                >
-                                    98%
+                                <div className="text-2xl md:text-3xl font-bold mb-1 text-[var(--brand-blue)]">
+                                    300%
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Client Satisfaction
-                                </div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
-                                    style={{
-                                        background: "linear-gradient(90deg, var(--brand-teal), var(--brand-blue))",
-                                        WebkitBackgroundClip: "text",
-                                        color: "transparent",
-                                    }}
-                                >
-                                    24/7
-                                </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Support Available
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
+                                    Traffic Growth
                                 </div>
                             </div>
                         </div>
@@ -239,14 +185,14 @@ export default function Hero() {
                         <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                                className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-base font-bold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                             >
-                                Get Started Today
-                                <span>→</span>
+                                Get Your Free Website Audit
+                                <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
-                                href="/services"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold border transition-all duration-300"
+                                href="/portfolio"
+                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-base font-bold border transition-all duration-300"
                                 style={{
                                     borderColor: "var(--border-color)",
                                     color: "var(--foreground)",
@@ -254,8 +200,7 @@ export default function Hero() {
                                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")}
                                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
                             >
-                                Explore Services
-                                <ArrowRight className="w-5 h-5" />
+                                View Our Portfolio
                             </Link>
                         </div>
                     </div>

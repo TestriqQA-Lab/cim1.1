@@ -13,9 +13,9 @@ export default function WebsiteTypes() {
 
     const coreTypes = [
         {
-            icon: Globe,
+            icon: Building2,
             title: "Business & Corporate",
-            description: "Professional, authoritative sites designed to establish credibility and communicate brand value to stakeholders.",
+            description: "High-authority platforms engineered for global brands to establish credibility and capture high-value enterprise leads.",
             features: ["Brand authority", "Lead generation", "Professional design", "Trust building"],
             color: "from-[#f97316] to-[#ea580c]",
             href: "/services/web-design-development/business-corporate",
@@ -23,31 +23,31 @@ export default function WebsiteTypes() {
         {
             icon: Code,
             title: "Web Applications & SaaS",
-            description: "Complex, interactive software solutions and multi-tenant platforms with subscription billing.",
+            description: "Complex, scalable software solutions built with modern stacks (React, Node.js) for multi-tenant global platforms.",
             features: ["Real-time interactions", "Complex logic", "Scalable", "Subscription ready"],
             color: "from-[#008ac1] to-[#bc3feb]",
             href: "/services/web-design-development/web-applications-saas",
         },
         {
-            icon: BookOpen,
-            title: "Landing Pages",
-            description: "Single-page sites hyper-focused on a specific campaign goal, designed for maximum conversion rates.",
-            features: ["High conversion focus", "Campaign-specific", "Fast loading", "Clear CTA"],
-            color: "from-[#10b981] to-[#0ea5e9]",
-            href: "/services/web-design-development/landing-pages",
+            icon: ShoppingCart,
+            title: "E-commerce Ecosystems",
+            description: "Advanced online stores with global payment gateways, multi-currency support, and seamless omnichannel fulfillment.",
+            features: ["Global payments", "Inventory sync", "Conversion optimized", "Scalable architecture"],
+            color: "from-[#00b5ca] to-[#00efd6]",
+            href: "/services/web-design-development/ecommerce-stores",
         },
         {
             icon: Zap,
             title: "Blogs & News Portals",
-            description: "Perfect for content that updates frequently, such as blogs, news portals, or personalized user dashboards.",
-            features: ["Real-time updates", "Content management", "Database-driven", "Reader engagement"],
+            description: "High-traffic content platforms with advanced CMS integration, engineered for speed and global reader engagement.",
+            features: ["Content management", "Database-driven", "High performance", "Engagement tools"],
             color: "from-[#a855f7] to-[#ec4899]",
             href: "/services/web-design-development/blogs-news-portals",
         },
         {
             icon: ImageIcon,
             title: "Portfolio & Personal",
-            description: "Visually stunning platforms to showcase creative work, case studies, and professional achievements.",
+            description: "Visually stunning showcases for creators and professionals, designed to highlight global achievements and case studies.",
             features: ["Visual showcase", "Case studies", "Professional presentation", "Client testimonials"],
             color: "from-[#06b6d4] to-[#0891b2]",
             href: "/services/web-design-development/portfolio-personal",
@@ -56,41 +56,33 @@ export default function WebsiteTypes() {
 
     const industryTypes = [
         {
-            icon: ShoppingCart,
-            title: "E-commerce Stores",
-            description: "High-converting online stores with secure payment gateways, inventory management, and seamless checkout flows.",
-            features: ["Secure payments", "Inventory management", "Shopping cart", "Order tracking"],
-            color: "from-[#00b5ca] to-[#00efd6]",
-            href: "/services/web-design-development/ecommerce-stores",
-        },
-        {
-            icon: Building2,
-            title: "Real Estate Platforms",
-            description: "Property listing portals with advanced search, virtual tours, and agent management systems.",
-            features: ["Map integration", "Virtual tours", "Advanced filters", "Lead management"],
-            color: "from-[#0d9488] to-[#14b8a6]",
-            href: "/services/web-design-development/real-estate-platforms",
+            icon: GraduationCap,
+            title: "EdTech & LMS",
+            description: "Global learning platforms with interactive course delivery, student tracking, and automated certification systems.",
+            features: ["Course management", "Progress tracking", "Video streaming", "Certificates"],
+            color: "from-[#a855f7] to-[#ec4899]",
+            href: "/services/web-design-development/edtech-lms",
         },
         {
             icon: Stethoscope,
             title: "Healthcare Portals",
-            description: "HIPAA-compliant platforms for patient management, appointment booking, and telemedicine.",
+            description: "Secure, HIPAA-compliant web solutions for medical providers, featuring patient management and telemedicine.",
             features: ["Appointment scheduling", "Patient records", "Telemedicine", "Secure messaging"],
             color: "from-[#3b82f6] to-[#6366f1]",
             href: "/services/web-design-development/healthcare-portals",
         },
         {
-            icon: GraduationCap,
-            title: "EdTech & LMS",
-            description: "Learning management systems with course delivery, student tracking, and interactive quizzes.",
-            features: ["Course management", "Progress tracking", "Video streaming", "Quizzes & certificates"],
-            color: "from-[#a855f7] to-[#ec4899]",
-            href: "/services/web-design-development/edtech-lms",
+            icon: Building2,
+            title: "Real Estate Platforms",
+            description: "Advanced property portals with multi-region support, virtual tours, and CRM-integrated lead management.",
+            features: ["Map integration", "Virtual tours", "Advanced filters", "Lead management"],
+            color: "from-[#0d9488] to-[#14b8a6]",
+            href: "/services/web-design-development/real-estate-platforms",
         },
         {
             icon: Calculator,
             title: "FinTech Solutions",
-            description: "Secure financial platforms for banking, investment tracking, and payment processing.",
+            description: "Secure financial platforms for global banking, investment tracking, and high-volume payment processing.",
             features: ["Bank-grade security", "Real-time data", "Encryption", "Payment integration"],
             color: "from-[#ee6500] to-[#fab900]",
             href: "/services/web-design-development/fintech-solutions",
@@ -98,7 +90,7 @@ export default function WebsiteTypes() {
         {
             icon: Plane,
             title: "Travel & Hospitality",
-            description: "Booking engines for hotels, flights, and tours with dynamic pricing and inventory management.",
+            description: "Booking engines with dynamic global pricing, inventory management, and multi-language support.",
             features: ["Booking engine", "Inventory sync", "Payment gateway", "Reviews & ratings"],
             color: "from-[#fab900] to-[#00efd6]",
             href: "/services/web-design-development/travel-hospitality",
@@ -106,7 +98,7 @@ export default function WebsiteTypes() {
         {
             icon: Clapperboard,
             title: "Entertainment & Media",
-            description: "Content streaming and media distribution platforms designed for high traffic and engagement.",
+            description: "High-performance streaming and media platforms designed for global distribution and mass engagement.",
             features: ["Video streaming", "Content delivery", "Subscription models", "Live chat"],
             color: "from-[#bc3feb] to-[#008ac1]",
             href: "/services/web-design-development/entertainment-media",
@@ -311,8 +303,8 @@ export default function WebsiteTypes() {
                         Comprehensive <span style={{ color: "var(--brand-blue)", fontWeight: 700 }}>Custom Website Development</span> Solutions
                     </h2>
 
-                    <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We offer a full spectrum of web solutions to meet any business need. From core web presence to industry-specific platforms and advanced tech stacks.
+                    <p className="text-xl max-w-4xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                        As a professional <span className="text-[var(--brand-blue)] font-bold">web design agency</span>, we offer full-spectrum digital engineering. Our <span className="text-[var(--brand-teal)] font-bold">web development agency</span> delivers scalable, secure, and SEO-optimized platforms for global markets.
                     </p>
 
                     <div
