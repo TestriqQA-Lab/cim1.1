@@ -261,7 +261,7 @@ const CookiesPolicyClient: React.FC = () => {
                         Cinute InfoMedia (CIM)
                     </p>
                     <p className="text-sm mt-2" style={{ color: "var(--secondary-text)" }}>
-                        Last Updated: December 12, 2025
+                        Last Updated: December 12, 2026
                     </p>
                 </div>
 
