@@ -8,7 +8,7 @@ export default function Process() {
             number: "01",
             icon: Search,
             title: "Strategy & Research",
-            description: "Deep dive into your brand, audience, competitors, and industry trends to define clear, measurable goals.",
+            description: "Deep dive into your brand, audience customer avatar & persona research, competitors, and industry trends to define clear, measurable goals.",
         },
         {
             number: "02",
@@ -20,25 +20,25 @@ export default function Process() {
             number: "03",
             icon: Palette,
             title: "Creative Design",
-            description: "Producing high-quality, on-brand visual assets and compelling copy tailored for each platform.",
+            description: "Producing high-quality, on-brand visual assets and compelling social media content creation services copy tailored for each platform.",
         },
         {
             number: "04",
             icon: Send,
             title: "Publishing & Promotion",
-            description: "Executing the content calendar and launching targeted paid social media advertising campaigns.",
+            description: "Executing the content calendar and launching targeted paid social media advertising agency campaigns.",
         },
         {
             number: "05",
             icon: MessageSquare,
             title: "Engagement & Monitoring",
-            description: "Actively managing comments, messages, and mentions, and tracking real-time performance metrics.",
+            description: "Actively managing comments, messages, and mentions, and tracking real-time performance metrics and reputation.",
         },
         {
             number: "06",
             icon: TrendingUp,
             title: "Optimization & Reporting",
-            description: "Analyzing data, identifying areas for improvement, and providing monthly reports with clear insights.",
+            description: "Analyzing data, identifying areas for improvement, and providing monthly social media audit and analysis services reports with clear insights.",
         },
     ];
 

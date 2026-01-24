@@ -18,7 +18,7 @@ export default function Platforms() {
     const platforms = [
         {
             name: "Facebook",
-            description: "Leveraging the platform's robust advertising tools and community groups for targeted lead generation and building a loyal customer base.",
+            description: "Leveraging the platform's robust advertising tools and community groups for targeted lead generation and building a loyal customer base via expert Facebook and Instagram advertising services.",
             gradient: "linear-gradient(135deg, #1877F2, #0A66C2)",
             icon: Facebook,
             accentColor: "#1877F2",
@@ -26,7 +26,7 @@ export default function Platforms() {
         },
         {
             name: "Instagram Marketing",
-            description: "Visually-driven strategies focused on high-quality content, Reels, Stories, and effective use of shopping features to drive engagement and sales.",
+            description: "Visually-driven strategies focused on high-quality content, Reels, Stories, and effective use of shopping features to drive engagement and sales for ecommerce social media management agency clients.",
             gradient: "linear-gradient(135deg, #E1306C, #C13584)",
             icon: Instagram,
             accentColor: "#E1306C",
@@ -35,7 +35,7 @@ export default function Platforms() {
 
         {
             name: "LinkedIn",
-            description: "Professional B2B marketing, thought leadership content, and targeted outreach to key decision-makers and industry professionals.",
+            description: "Professional LinkedIn marketing services for B2B, thought leadership content, and targeted outreach to key decision-makers and industry professionals.",
             gradient: "linear-gradient(135deg, #0A66C2, #0A63BC)",
             icon: Linkedin,
             accentColor: "#0A66C2",

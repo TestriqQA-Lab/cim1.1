@@ -68,7 +68,7 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -92,8 +92,8 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            Transform your social presence into a powerful engine for <span style={{ color: "var(--brand-teal)", fontWeight: 700 }}>brand awareness</span>, <span style={{ color: "var(--brand-teal)", fontWeight: 700 }}>lead generation</span>, and measurable ROI.
+                        <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                            In today's hyper-competitive digital landscape, your brand needs more than just "likes"-it needs a strategic engine that drives real business results. As a premier Social Media Marketing Agency, we don't just post content; we engineer comprehensive social media marketing ecosystems designed to dominate your niche.
                         </p>
 
                         {/* Feature Highlights */}
@@ -104,7 +104,7 @@ export default function Hero() {
                                 }}
                             >
                                 <TrendingUp className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-teal)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>
                                     Growth-Focused
                                 </span>
                             </div>
@@ -168,7 +168,7 @@ export default function Hero() {
                             }}
                         >
                             <div className="text-center">
-                                <div className="text-xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-teal), var(--brand-cyan))",
                                         WebkitBackgroundClip: "text",
@@ -177,7 +177,7 @@ export default function Hero() {
                                 >
                                     300+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Campaigns
                                 </div>
                             </div>
@@ -203,7 +203,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    320%
+                                    300%
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
                                     ROI Increase

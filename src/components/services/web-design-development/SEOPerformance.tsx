@@ -103,7 +103,7 @@ export default function SEOPerformance() {
                     </h2>
 
                     <p className="text-xl max-w-4xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        As an expert <span className="font-bold text-[var(--brand-blue)]">web development agency</span>, we don&apos;t just build sites—we engineer high-performance business assets that deliver measurable global ROI.
+                        As an expert <span className="font-bold text-[var(--brand-blue)]">web development agency</span>, we don&apos;t just build sites-we engineer high-performance business assets that deliver measurable global ROI.
                     </p>
 
                     <div

@@ -26,8 +26,8 @@ import { getPageMetadata } from '@/lib/metadata';
 import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata = getPageMetadata({
-    title: '🏆 Top Mobile App Development Company | Custom Apps 2026',
-    description: 'Leading mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today! ⚡',
+    title: 'Top Mobile App Development Company | Custom Apps 2026',
+    description: 'Leading mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!',
     url: '/services/mobile-app-development',
     keywords: [
         'Mobile App Development Company',

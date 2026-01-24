@@ -34,7 +34,7 @@ export default function Analytics() {
         {
             icon: ShoppingCart,
             title: "Lead & Conversion Tracking",
-            description: "Implementing robust tracking to attribute leads, sales, and sign-ups directly to social media campaigns.",
+            description: "Implementing robust tracking and Conversion Rate Optimization (CRO) to attribute leads, sales, and sign-ups directly to social media campaigns.",
             gradient: "linear-gradient(135deg, #8b5cf6, #6366f1)",
             accentColor: "#8b5cf6",
         },

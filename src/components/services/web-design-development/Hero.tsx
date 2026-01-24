@@ -120,7 +120,7 @@ export default function Hero() {
                                 As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span> with 15+ years of proven expertise, we deliver <span className="text-[var(--brand-teal)] font-bold">custom website development</span> solutions that drive measurable ROI.
                             </p>
                             <p className="text-base md:text-lg">
-                                Our professional web design agency has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets—achieving average <span className="text-[var(--brand-blue)] font-bold">300% traffic growth</span> and 20% conversion rate improvements.
+                                Our professional web design agency has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue)] font-bold">300% traffic growth</span> and 20% conversion rate improvements.
                             </p>
                         </div>
 
