@@ -1,48 +1,38 @@
 "use client";
 
-import { Brain, MessageSquare, Languages, Shield, Sparkles, ChevronRight, Check } from "lucide-react";
+import { TrendingUp, MessageSquare, Languages, Shield, Sparkles, ChevronRight, Check } from "lucide-react";
 
 export default function WhyChooseUs() {
     const benefits = [
         {
-            icon: Brain,
-            title: "Natural Language Understanding",
-            description: "Advanced NLP algorithms that comprehend context, sentiment, and user intent with remarkable accuracy.",
+            icon: TrendingUp,
+            title: "Proven Track Record",
+            description: "300% Traffic Growth via SEO-optimized conversational flows. 95% Bug-Free Apps delivered for 50+ Fintech & Healthcare clients.",
             gradient: "from-violet-500 via-purple-500 to-indigo-500",
             iconBg: "bg-violet-500/10",
             iconColor: "text-violet-500",
 
-            features: ["Context awareness", "Sentiment analysis", "Intent recognition"],
+            features: ["300% Traffic Growth", "95% Bug-Free Apps", "20%+ CTR Lifts"],
         },
         {
-            icon: MessageSquare,
-            title: "Context-Aware Conversations",
-            description: "Chatbots that remember conversation history and provide personalized, relevant responses.",
+            icon: Shield,
+            title: "Post-2025 Future Proofing",
+            description: "Our solutions are built with Human-in-the-Loop (HITL) Support protocols and strict data privacy standards, ensuring your specific implementation is safe, ethical, and aligned with the latest core algorithm signals.",
             gradient: "from-blue-500 via-cyan-500 to-teal-500",
             iconBg: "bg-blue-500/10",
             iconColor: "text-blue-500",
 
-            features: ["Memory retention", "Personalization", "Smart responses"],
+            features: ["HITL Support", "Strict Privacy", "Algorithm Aligned"],
         },
         {
             icon: Languages,
-            title: "Multilingual Support",
-            description: "Engage customers in 50+ languages with real-time translation and localization.",
+            title: "Global Reach, Local Feel",
+            description: "We build Multilingual AI chatbots that speak your customers' language-literally. Target audiences in the US, EU, India, and APAC with seamless Natural Language Understanding (NLU) in 100+ languages.",
             gradient: "from-emerald-500 via-green-500 to-teal-500",
             iconBg: "bg-emerald-500/10",
             iconColor: "text-emerald-500",
 
-            features: ["50+ languages", "Real-time translation", "Cultural localization"],
-        },
-        {
-            icon: Shield,
-            title: "Secure & Scalable Deployment",
-            description: "Enterprise-grade security with compliance to GDPR, CCPA, and industry standards. Scales to millions of conversations.",
-            gradient: "from-orange-500 via-amber-500 to-yellow-500",
-            iconBg: "bg-orange-500/10",
-            iconColor: "text-orange-500",
-
-            features: ["GDPR compliant", "Enterprise security", "Infinite scale"],
+            features: ["100+ Languages", "Seamless NLU", "Global Targeting"],
         },
     ];
 
@@ -122,10 +112,10 @@ export default function WhyChooseUs() {
                         </div>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Why Choose Our <span style={{ color: "var(--brand-chatbot)" }}>AI Chatbot Solutions</span>?
+                            Why Partner With Our <span style={{ color: "var(--brand-chatbot)" }}>AI Chatbot Agency</span>?
                         </h2>
                         <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            We combine cutting-edge AI technology with industry expertise to deliver chatbots that truly understand your customers.
+                            We don't just build bots; we build revenue engines. Our team of 50+ engineers has delivered Custom AI Chatbot Development projects for Fortune 500s and agile startups alike.
                         </p>
                     </div>
 

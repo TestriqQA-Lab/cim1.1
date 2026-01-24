@@ -23,43 +23,43 @@ export default function Process() {
     const steps = [
         {
             number: "01",
-            title: "Requirement Analysis",
-            description: "We understand your business goals, customer pain points, and chatbot objectives through detailed discovery sessions.",
+            title: "Discovery & Strategy",
+            description: "We audit your current support/sales workflows, identify automation opportunities, and define clear KPIs for success.",
             icon: Search,
             color: "#6366F1",
         },
         {
             number: "02",
             title: "Conversation Design",
-            description: "Our UX experts design natural conversation flows, user intents, and response patterns that feel human-like.",
+            description: "Our linguists map out user intents, utterances, and dialogue flows to ensure natural, empathetic interactions.",
             icon: MessageSquare,
             color: "#8B5CF6",
         },
         {
             number: "03",
-            title: "AI Model Training",
-            description: "We train and fine-tune AI models using your data, industry knowledge, and best practices to ensure accuracy.",
+            title: "Development & Training",
+            description: "We build the bot using best-in-class LLMs (GPT-4o, Claude 3.5), fine-tuning them on your proprietary data securely.",
             icon: Brain,
             color: "#EC4899",
         },
         {
             number: "04",
-            title: "Integration & Deployment",
-            description: "Seamlessly integrate your chatbot with CRM, ERP, APIs, and messaging platforms. Deploy to production.",
+            title: "Integration",
+            description: "We connect the chatbot to your Tech Stack-CRM, ERP, Helpdesk, and eCommerce platforms-for real-time data sync.",
             icon: Plug,
             color: "#F59E0B",
         },
         {
             number: "05",
             title: "Testing & Optimization",
-            description: "Rigorous testing across scenarios, edge cases, and user interactions. Continuous optimization for performance.",
+            description: "Rigorous QA including stress testing, bias detection, and fallback handling before go-live.",
             icon: TestTube,
             color: "#10B981",
         },
         {
             number: "06",
-            title: "Monitoring & Continuous Improvement",
-            description: "Real-time monitoring, analytics, and feedback loops. Regular updates and improvements based on user interactions.",
+            title: "Launch & Evolve",
+            description: "We deploy the bot and monitor performance 24/7, using active learning to improve accuracy over time.",
             icon: LineChart,
             color: "#06B6D4",
         },
@@ -85,10 +85,10 @@ export default function Process() {
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                        Our Chatbot Development <span style={{ color: "var(--brand-chatbot)" }}>Process</span>
+                        Our 6-Step Custom AI Chatbot <span style={{ color: "var(--brand-chatbot)" }}>Development Process</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A proven methodology that ensures your chatbot is intelligent, reliable, and delivers measurable business results.
+                        From initial strategy to post-launch optimization, we follow a rigorous agile framework to ensure your chatbot delivers ROI from Day 1.
                     </p>
                 </div>
 

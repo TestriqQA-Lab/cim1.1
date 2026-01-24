@@ -7,27 +7,27 @@ export default function Technologies() {
     const capabilities = [
         {
             icon: Brain,
-            title: "LLMs & Natural Language Processing",
-            description: "Powered by state-of-the-art large language models and advanced NLP techniques for human-like conversations.",
-            details: ["GPT-4 & Claude integration", "Semantic understanding", "Context retention", "Intent classification"],
+            title: "Advanced LLM Integration",
+            description: "We deploy and fine-tune industry-leading models including GPT-4o, Claude 3.5 Sonnet, and Llama 3.",
+            details: ["Prompt Engineering", "Fine-tuning", "Context Windows", "Zero-shot learning"],
         },
         {
             icon: Zap,
-            title: "API Integrations",
-            description: "Seamlessly connect with your existing systems, databases, and third-party services.",
-            details: ["REST & GraphQL APIs", "Webhook support", "Real-time data sync", "Custom integrations"],
+            title: "Retrieval-Augmented Generation (RAG)",
+            description: "Eliminate hallucinations. Our RAG pipelines connect your chatbot to your live internal data sources.",
+            details: ["Vector Databases", "Semantic Search", "Real-time sync", "Source citation"],
         },
         {
             icon: Lock,
-            title: "Security & Data Privacy",
-            description: "Enterprise-grade security with full compliance to industry standards and regulations.",
-            details: ["End-to-end encryption", "GDPR & CCPA compliant", "Data anonymization", "Regular security audits"],
+            title: "Enterprise-Grade Security",
+            description: "Your data stays yours. We implement SOC2-compliant architecture with PII masking and RBAC.",
+            details: ["SOC2 compliance", "PII redaction", "End-to-End Encryption", "Role-based access"],
         },
         {
             icon: BarChart3,
-            title: "Analytics & Learning Loops",
-            description: "Comprehensive analytics and continuous learning mechanisms to improve performance over time.",
-            details: ["Conversation analytics", "User behavior tracking", "Performance metrics", "Automated optimization"],
+            title: "Predictive Analytics Dashboard",
+            description: "Go beyond basic metrics. Track user sentiment, intent trends, and conversation drop-off points.",
+            details: ["Sentiment tracking", "Intent heatmaps", "Conversion attribution", "Custom reports"],
         },
     ];
 
@@ -43,10 +43,10 @@ export default function Technologies() {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Technology Stack & <span style={{ color: "var(--brand-chatbot)" }}>AI Capabilities</span>
+                        Technology Stack & <span style={{ color: "var(--brand-chatbot)" }}>Expertise</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We leverage cutting-edge AI technologies and best practices to build intelligent, scalable chatbots.
+                        We build on battle-tested frameworks and cutting-edge AI models to ensure scalability, security, and performance.
                     </p>
                 </div>
 

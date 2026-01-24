@@ -86,11 +86,11 @@ export default function Hero() {
                             }}
                         >
                             <Sparkles className="w-4 h-4" style={{ color: "var(--brand-chatbot)" }} />
-                            <span className="text-sm font-semibold">AI-Powered Chatbots</span>
+                            <span className="text-sm font-semibold">Custom AI Chatbot Development Services</span>
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -100,13 +100,13 @@ export default function Hero() {
                                     color: "transparent",
                                 }}
                             >
-                                <span style={{ color: "var(--foreground)" }}>Intelligent</span> Conversations <span style={{ color: "var(--foreground)" }}>at Scale</span>
+                                <span style={{ color: "var(--foreground)" }}>Empower Your Business with</span> Intelligent, 24/7 Conversations <span style={{ color: "var(--foreground)" }}>at Scale</span>
                             </span>
                         </h1>
 
                         {/* Underline */}
                         <div
-                            className="w-32 h-1.5 mb-8 rounded-full lg:mx-0 mx-auto mt-4"
+                            className="w-32 h-1.5 mb-8 rounded-full lg:mx-0 mx-auto mt-6"
                             style={{
                                 background:
                                     "linear-gradient(90deg, var(--brand-chatbot), var(--brand-blue))",
@@ -114,8 +114,8 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            Deploy <span style={{ color: "var(--brand-chatbot)", fontWeight: 700 }}>AI-Powered Chatbots</span> that understand context, engage customers, and drive conversions <span style={{ color: "var(--brand-blue)", fontWeight: 700 }}>24/7</span>.
+                        <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                            As a premier AI Chatbot Agency, we specialize in <span style={{ color: "var(--brand-chatbot)", fontWeight: 700 }}>Custom AI Chatbot Development</span> that drives real ROI. Our Enterprise AI Chatbot Platform solutions don't just answer questions-they understand context, gauge sentiment, and personalize every interaction using advanced Large Language Models (LLMs) and Natural Language Processing (NLP).
                         </p>
 
                         {/* Feature Highlights */}
@@ -126,7 +126,7 @@ export default function Hero() {
                                 }}
                             >
                                 <Brain className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-chatbot)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>
                                     AI-Powered
                                 </span>
                             </div>
@@ -136,7 +136,7 @@ export default function Hero() {
                                 }}
                             >
                                 <MessageCircle className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-chatbot)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>
                                     24/7 Support
                                 </span>
                             </div>
@@ -146,7 +146,7 @@ export default function Hero() {
                                 }}
                             >
                                 <Zap className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-chatbot)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>
                                     Lightning Fast
                                 </span>
                             </div>
@@ -156,7 +156,7 @@ export default function Hero() {
                                 }}
                             >
                                 <Gauge className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-chatbot)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>
                                     Scalable
                                 </span>
                             </div>
@@ -171,7 +171,7 @@ export default function Hero() {
                             }}
                         >
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-blue), var(--brand-chatbot))",
                                         WebkitBackgroundClip: "text",
@@ -180,12 +180,12 @@ export default function Hero() {
                                 >
                                     10M+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Conversations
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-blue), var(--brand-chatbot))",
                                         WebkitBackgroundClip: "text",
@@ -194,12 +194,12 @@ export default function Hero() {
                                 >
                                     98%
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Satisfaction
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-blue), var(--brand-chatbot))",
                                         WebkitBackgroundClip: "text",
@@ -208,7 +208,7 @@ export default function Hero() {
                                 >
                                     50+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Industries
                                 </div>
                             </div>
@@ -217,9 +217,9 @@ export default function Hero() {
                         {/* CTA Button */}
                         <Link
                             href="/contact"
-                            className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[var(--brand-chatbot)] to-[#008ac1] hover:from-[var(--brand-chatbot)] hover:to-[var(--brand-chatbot)] text-white rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[var(--brand-chatbot)] to-[#008ac1] hover:from-[var(--brand-chatbot)] hover:to-[var(--brand-chatbot)] text-white rounded-2xl text-base font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                         >
-                            Build Your AI Chatbot
+                            Book Free AI Strategy Audit
                             <ArrowRight className="w-5 h-5" />
                         </Link>
                     </div>

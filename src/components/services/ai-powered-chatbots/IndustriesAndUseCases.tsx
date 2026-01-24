@@ -2,19 +2,21 @@
 
 import { useState } from "react";
 import {
+    Scale,
+    ShoppingBag,
+    Plane,
+    Globe,
     ShoppingCart,
-    Stethoscope,
-    Landmark,
-    BookOpen,
+    Star,
+    Shield,
+    Users,
+    TrendingUp,
     Zap,
+    BookOpen,
     Building2,
     CheckCircle2,
     Sparkles,
-    TrendingUp,
-    Shield,
-    Users,
     ArrowRight,
-    Star,
 } from "lucide-react";
 
 export default function IndustriesAndUseCases() {
@@ -22,52 +24,52 @@ export default function IndustriesAndUseCases() {
 
     const industries = [
         {
-            icon: ShoppingCart,
-            title: "E-commerce",
-            description: "Product recommendations, order tracking, returns processing, and personalized shopping assistance.",
-            benefits: ["Increased conversions", "Reduced cart abandonment", "24/7 shopping support"],
+            icon: Building2,
+            title: "Real Estate",
+            description: "24/7 property tours & scheduling. Automate lead capture and qualification.",
+            benefits: ["Lead capture", "Property tours", "Instant scheduling"],
             accentColor: "#FF6B6B",
             secondaryIcon: TrendingUp,
         },
         {
-            icon: Stethoscope,
-            title: "Healthcare",
-            description: "Appointment scheduling, symptom checking, medication reminders, and patient support.",
-            benefits: ["Improved patient engagement", "Reduced admin burden", "Better health outcomes"],
+            icon: Zap,
+            title: "SaaS",
+            description: "Reduced churn by 15% via guided tours. Automate customer onboarding and support.",
+            benefits: ["Reduced churn", "Guided tours", "Automated onboarding"],
             accentColor: "#4ECDC4",
-            secondaryIcon: Shield,
+            secondaryIcon: Star,
         },
         {
-            icon: Landmark,
-            title: "Banking & Finance",
-            description: "Account inquiries, transaction support, fraud detection, and financial advice.",
-            benefits: ["Enhanced security", "Faster resolution", "Improved compliance"],
+            icon: Scale,
+            title: "Legal",
+            description: "Auto-screening of potential cases. Streamline client intake and document collection.",
+            benefits: ["Auto-screening", "Client intake", "24/7 Availability"],
             accentColor: "#FFD93D",
             secondaryIcon: Shield,
         },
         {
+            icon: ShoppingBag,
+            title: "Retail",
+            description: "30% increase in average order value. Deliver real-time personalized shopping experiences.",
+            benefits: ["Increased AOV", "Personalized shopping", "Inventory checks"],
+            accentColor: "#A78BFA",
+            secondaryIcon: ShoppingCart,
+        },
+        {
             icon: BookOpen,
             title: "Education",
-            description: "Student support, course recommendations, assignment help, and enrollment assistance.",
-            benefits: ["Better retention", "Personalized learning", "Reduced workload"],
-            accentColor: "#A78BFA",
-            secondaryIcon: Users,
-        },
-        {
-            icon: Zap,
-            title: "SaaS",
-            description: "Onboarding assistance, feature guidance, billing support, and technical troubleshooting.",
-            benefits: ["Higher adoption", "Reduced churn", "Improved satisfaction"],
+            description: "50% reduction in admin workload. Automate student support and enrollment queries.",
+            benefits: ["Reduced workload", "Enrollment support", "Student FAQs"],
             accentColor: "#F59E0B",
-            secondaryIcon: Star,
+            secondaryIcon: Users,
         },
         {
-            icon: Building2,
-            title: "Enterprises",
-            description: "Internal HR support, IT helpdesk, employee training, and process automation.",
-            benefits: ["Higher productivity", "Cost efficiency", "Better employee experience"],
+            icon: Plane,
+            title: "Travel",
+            description: "Instant changes & multilingual support. Automate booking and itinerary management.",
+            benefits: ["Instant changes", "Booking management", "24/7 Support"],
             accentColor: "#10B981",
-            secondaryIcon: Users,
+            secondaryIcon: Globe,
         },
     ];
 
@@ -83,8 +85,7 @@ export default function IndustriesAndUseCases() {
                 {/* Header */}
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Industries &{" "}
-                        <span style={{ color: "var(--brand-chatbot)" }}>AI Use Cases</span>
+                        Industries Transforming with <span style={{ color: "var(--brand-chatbot)" }}>Our AI Solutions</span>
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto"
