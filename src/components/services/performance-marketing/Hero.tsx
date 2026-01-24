@@ -78,19 +78,21 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center lg:text-left">
+
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight text-center lg:text-left">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{ background: "var(--brand-orange)", WebkitBackgroundClip: "text" }}
                             >
-                                Data-Driven Ads.
+                                Performance Marketing
                             </span>
                             <br />
-                            <span style={{ color: "var(--foreground)" }}>Measurable Results.</span>
+                            <span style={{ color: "var(--foreground)" }}>Services to Scale Your Revenue Globally.</span>
                         </h1>
 
+
                         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Maximize your ROI with precision-targeted campaigns across Google, Meta, LinkedIn, and beyond. Every dollar tracked, every conversion optimized.
+                            Stop guessing where your marketing budget goes. Start scaling with precision. We allow you to lower your Customer Acquisition Cost (CAC) while maximizing your Return on Ad Spend (ROAS). Join 50+ global brands who trust us to manage over $50M in annual ad spend.
                         </p>
 
                         {/* Feature Pills */}
@@ -129,12 +131,13 @@ export default function Hero() {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-8 sm:mt-10 justify-center lg:justify-start">
+
                             <Link
                                 href="/contact"
                                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-white"
                                 style={{ backgroundColor: "var(--brand-orange)" }}
                             >
-                                Get Your Free Audit
+                                Get Free Performance Audit
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
@@ -142,7 +145,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full border-2 transition-all duration-300 hover:scale-105"
                                 style={{ borderColor: "var(--brand-orange)", color: "var(--brand-orange)" }}
                             >
-                                View Case Studies
+                                View Success Stories
                             </Link>
                         </div>
                     </div>

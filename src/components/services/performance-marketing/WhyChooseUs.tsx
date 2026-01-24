@@ -6,37 +6,38 @@ import { BarChart3, Shield, Eye, Award, CheckCircle2, Sparkles } from "lucide-re
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+
     const benefits = [
         {
             icon: BarChart3,
             decorIcon: Sparkles,
             title: "Data-Driven Decisions",
-            description: "Every campaign is backed by deep analytics. We don't guess-we test, measure, and optimize based on real performance data.",
-            highlight: "Analytics-First",
+            description: "We don't rely on gut feelings. Every campaign optimization is backed by rigorous A/B testing and statistical significance.",
+            highlight: "Scientific Approach",
             color: "#4285f4",
         },
         {
             icon: Shield,
             decorIcon: CheckCircle2,
-            title: "Transparent Reporting",
-            description: "Full visibility into your ad spend, conversions, and ROI. Real-time dashboards and detailed monthly reports.",
-            highlight: "100% Transparent",
+            title: "Transparent Reporting & Analytics",
+            description: "Tired of vague reports? You get 24/7 access to live dashboards showing ROAS, CAC, LTV, and Net Profit - not just clicks.",
+            highlight: "Full Visibility",
             color: "#34a853",
         },
         {
             icon: Eye,
             decorIcon: BarChart3,
             title: "Dedicated Account Team",
-            description: "Your campaigns are managed by certified experts who know your business inside and out.",
-            highlight: "Expert Team",
+            description: "You get a dedicated Senior Strategist, Copywriter, and Media Buyer. No junior hand-offs.",
+            highlight: "Senior Experts",
             color: "#fbbc04",
         },
         {
             icon: Award,
             decorIcon: Shield,
             title: "Proven Track Record",
-            description: "Over $50M in ad spend managed with an average 500% ROAS across industries.",
-            highlight: "500% ROAS",
+            description: "Over $50M in client revenue generated with an average ROAS of 500%. We audit and fix inefficient accounts.",
+            highlight: "$50M+ Revenue",
             color: "#ea4335",
         },
     ];
@@ -65,11 +66,13 @@ export default function WhyChooseUs() {
                             WHY CHOOSE US
                         </span>
                     </div>
+
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                        Why Partner with Our <span style={{ color: "var(--brand-orange)" }}>Performance Team</span>?
+                        Why Partner with Our <span style={{ color: "var(--brand-orange)" }}>Performance Marketing Team?</span>
                     </h2>
+
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We combine cutting-edge technology with human expertise to deliver campaigns that consistently exceed expectations.
+                        We are not just an external agency; we act as your internal growth engine.
                     </p>
                 </div>
 

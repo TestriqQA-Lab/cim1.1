@@ -78,7 +78,7 @@ export default function CTA() {
                             className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-semibold hover:scale-105 transition-transform shadow-lg text-base sm:text-lg"
                             style={{ backgroundColor: "var(--brand-orange)" }}
                         >
-                            Get Your Free Audit
+                            Get Your Proposal
                             <ArrowRight className="w-5 h-5" />
                         </Link>
                         <Link

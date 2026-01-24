@@ -7,33 +7,34 @@ import { MousePointerClick, RefreshCw, Share2, Layers, ArrowRight, CheckCircle2,
 export default function ServiceOverview() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+
     const services = [
         {
             icon: MousePointerClick,
-            title: "PPC Advertising",
-            description: "Strategic pay-per-click campaigns on Google, Bing, and beyond that capture high-intent searchers ready to convert.",
-            features: ["Keyword optimization", "Ad copy testing", "Bid management", "Quality score"],
+            title: "ROI-Focused Google Ads & PPC",
+            description: "Dominate search results with high-intent Paid Search (PPC). We don't just bid on keywords; we dominate search intent.",
+            features: ["Search Ads", "Shopping Ads", "Local Services Ads", "Quality Score Optimization"],
             color: "#4285f4",
         },
         {
-            icon: RefreshCw,
-            title: "Retargeting & Remarketing",
-            description: "Re-engage visitors who didn't convert with personalized ads across the web and social platforms.",
-            features: ["Dynamic ads", "Audience segmentation", "Frequency capping", "Cross-device targeting"],
-            color: "#ea4335",
-        },
-        {
             icon: Share2,
-            title: "Paid Social Advertising",
-            description: "Reach your ideal customers on Facebook, Instagram, LinkedIn, and TikTok with precision targeting.",
-            features: ["Lookalike audiences", "Creative optimization", "A/B testing", "Conversion tracking"],
+            title: "Paid Social Media Marketing",
+            description: "Turn scrollers into buyers on Meta, TikTok, and LinkedIn. Social media is no longer just for brand awareness - it is a performance engine.",
+            features: ["Meta Ads", "LinkedIn B2B Ads", "TikTok Viral Ads", "Advanced Segmentation"],
             color: "#34a853",
         },
         {
+            icon: RefreshCw,
+            title: "Precision Retargeting & Remarketing",
+            description: "Did you know 97% of visitors leave your site without buying? We bring them back with Cross-Platform Retargeting.",
+            features: ["Cross-Platform Retargeting", "Dynamic Product Ads", "Cart Abandonment Flows", "Recover Lost Revenue"],
+            color: "#ea4335",
+        },
+        {
             icon: Layers,
-            title: "Programmatic Advertising",
-            description: "Automated, real-time bidding across thousands of websites for maximum reach and efficiency.",
-            features: ["RTB technology", "DSP management", "Contextual targeting", "Brand safety"],
+            title: "Programmatic Advertising & Display",
+            description: "Scale beyond the 'walled gardens'. Access premium inventory across websites, apps, and CTV channels.",
+            features: ["Real-Time Bidding (RTB)", "Contextual Targeting", "Native Advertising", "Premium Inventory"],
             color: "#fbbc04",
         },
     ];
@@ -55,11 +56,13 @@ export default function ServiceOverview() {
                             OUR SERVICES
                         </span>
                     </div>
+
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                        Full-Funnel <span style={{ color: "var(--brand-orange)" }}>Advertising Solutions</span>
+                        Full-Funnel <span style={{ color: "var(--brand-orange)" }}>Performance Marketing Agency Services</span>
                     </h2>
+
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        From awareness to conversion, we build integrated campaigns that drive measurable results at every stage.
+                        From the first click to the final sale (and beyond to retention), we optimize every single touchpoint of the user journey. Our integrated approach ensures no leak in your funnels.
                     </p>
                 </div>
 

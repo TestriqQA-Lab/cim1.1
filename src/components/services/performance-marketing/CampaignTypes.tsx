@@ -1,59 +1,36 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Monitor, Share2, Play, ShoppingCart, RefreshCw, TrendingUp, DollarSign, Users, ArrowRight } from "lucide-react";
+import { Search, Monitor, Share2, Play, ShoppingCart, RefreshCw, TrendingUp, DollarSign, Users, ArrowRight, Shield } from "lucide-react";
 
 export default function CampaignTypes() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+
     const campaigns = [
         {
-            icon: Search,
-            title: "Search Campaigns",
-            description: "Capture high-intent users actively searching for your products or services.",
-            metrics: { impressions: "1M+", clicks: "50K+", conversions: "5K+" },
-            features: ["Keyword targeting", "Ad extensions", "Smart bidding"],
+            icon: ShoppingCart,
+            title: "Performance Marketing for eCommerce",
+            description: "For retail brands, it’s all about ROAS and LTV. We implement advanced shopping campaigns, dynamic retargeting, and influencer whitelisting to drive direct sales.",
+            metrics: { purchases: "Direct Sales", roas: "Maximized", ltv: "Enhanced" },
+            features: ["Shopping Campaigns", "Dynamic Retargeting", "Influencer Whitelisting"],
             color: "#4285f4",
         },
         {
             icon: Monitor,
-            title: "Display Campaigns",
-            description: "Build brand awareness with visual ads across millions of websites.",
-            metrics: { impressions: "10M+", clicks: "100K+", reach: "5M+" },
-            features: ["Custom audiences", "Responsive ads", "Placement targeting"],
+            title: "Performance Marketing for SaaS & B2B",
+            description: "For software companies, the cycle is longer. We focus on Lead Generation, MQLs, and content syndication to fill the top of the funnel.",
+            metrics: { leads: "MQLs", cost: "Cost Per Demo", arr: "Revenue Growth" },
+            features: ["LinkedIn Ads", "Content Syndication", "Email Remarketing"],
             color: "#34a853",
         },
         {
-            icon: Share2,
-            title: "Social Campaigns",
-            description: "Engage audiences on Facebook, Instagram, LinkedIn, and TikTok.",
-            metrics: { engagement: "500K+", leads: "10K+", reach: "2M+" },
-            features: ["Lookalike audiences", "Lead forms", "Carousel ads"],
+            icon: Shield,
+            title: "Performance Marketing for Fintech & Healthcare",
+            description: "Trust is the currency here. We navigate strict compliance regulations (Google’s YMYL) to build authority and acquire high-value customers.",
+            metrics: { leads: "Verified Leads", accts: "Account Opens", bookings: "Patient Bookings" },
+            features: ["Compliance-Ready", "Authority Building", "High-Value Acquisition"],
             color: "#1877f2",
-        },
-        {
-            icon: Play,
-            title: "Video Campaigns",
-            description: "Tell your story with compelling video ads on YouTube and beyond.",
-            metrics: { views: "5M+", watchTime: "1M hrs", subscribers: "50K+" },
-            features: ["Skippable ads", "Bumper ads", "Discovery ads"],
-            color: "#ff0000",
-        },
-        {
-            icon: ShoppingCart,
-            title: "Shopping Campaigns",
-            description: "Showcase your products directly in search results with rich visuals.",
-            metrics: { products: "10K+", sales: "$1M+", roas: "800%" },
-            features: ["Product feeds", "Smart Shopping", "Local inventory"],
-            color: "#fbbc04",
-        },
-        {
-            icon: RefreshCw,
-            title: "Remarketing Campaigns",
-            description: "Re-engage visitors who've shown interest but haven't converted yet.",
-            metrics: { returnRate: "35%", convRate: "15%", costReduction: "50%" },
-            features: ["Dynamic ads", "RLSA", "Cross-device targeting"],
-            color: "#ea4335",
         },
     ];
 
@@ -71,14 +48,15 @@ export default function CampaignTypes() {
                     >
                         <TrendingUp className="w-4 h-4" style={{ color: "var(--brand-orange)" }} />
                         <span className="text-sm font-bold tracking-wide" style={{ color: "var(--brand-orange)" }}>
-                            CAMPAIGN TYPES
+                            INDUSTRIES
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                        Multi-Channel <span style={{ color: "var(--brand-orange)" }}>Campaign Strategies</span>
+                        Performance Marketing Solutions <span style={{ color: "var(--brand-orange)" }}>by Industry</span>
                     </h2>
+
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We deploy the right campaign type for each stage of your customer journey.
+                        We tailor our strategies to the unique demands of your vertical.
                     </p>
                 </div>
 
