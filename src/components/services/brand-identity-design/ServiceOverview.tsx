@@ -25,7 +25,7 @@ export default function ServiceOverview() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "var(--brand-yellow)" }}>Complete Brand Identity</span> Solutions
+                        <span style={{ color: "var(--brand-yellow)" }}>Complete Brand Identity Design</span> Agency Solutions
                     </h2>
 
                     <div
@@ -38,16 +38,19 @@ export default function ServiceOverview() {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div className="space-y-6">
+                        <p className="text-xl font-semibold" style={{ color: "var(--brand-yellow)" }}>
+                            More Than Just a Logo—We Build Scalable Brand Ecosystems
+                        </p>
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            Our <span style={{ color: "var(--brand-yellow)", fontWeight: 700 }}>Brand Identity Design</span> services go far beyond just a pretty logo. We build comprehensive brand systems that create lasting impressions and drive business growth.
+                            In today's digital-first economy, your brand is your most valuable asset. As a premier <span style={{ color: "var(--brand-yellow)", fontWeight: 700 }}>Brand Identity Design Agency</span>, we don't just create visuals; we engineer comprehensive brand experiences that drive recognition, trust, and revenue. Our custom brand design frameworks are built on 2026 EEAT principles, ensuring your business signals authority and expertise to both users and search engines.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            From startups seeking their first visual identity to established companies ready for a rebrand, we partner with you to understand your vision, values, and audience. The result is a cohesive <span style={{ color: "var(--brand-yellow)", fontWeight: 700 }}>brand identity</span> that communicates your unique story.
+                            Whether you are a fintech startup looking to disrupt the market or an established enterprise seeking rebranding services for small business, our strategic approach bridges the gap between creative vision and business objectives. We specialize in brand identity design for SaaS products, ecommerce platforms, and luxury brands, delivering pixel-perfect assets that work seamlessly across web, mobile, and print.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            Every element we design is purposeful-from the psychology behind your color choices to the personality expressed through typography. We create brands that don't just look beautiful but work strategically to achieve your business objectives.
+                            Our team has delivered over <span style={{ color: "var(--foreground)", fontWeight: "bold" }}>500+ successful brand launches</span>, achieving an average of <span style={{ color: "var(--foreground)", fontWeight: "bold" }}>300% traffic growth</span> for our partners. We leverage advanced design psychology and sustainable brand identity design strategy to create future-proof identities that resonate with global audiences in the US, EU, India, and APAC.
                         </p>
 
                         <div className="pt-4">

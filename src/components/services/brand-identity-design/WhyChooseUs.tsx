@@ -1,42 +1,42 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, Lightbulb, Target, Palette, Sparkles, TrendingUp, Shield, Award } from "lucide-react";
+import { CheckCircle2, Lightbulb, Target, Palette, Sparkles, TrendingUp, Shield, Award, Search } from "lucide-react";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     const benefits = [
         {
-            icon: Lightbulb,
-            decorIcon: Sparkles,
-            title: "Strategic Approach",
-            description: "We don't just design-we strategize. Every brand element is backed by research and aligned with your business goals.",
-            highlight: "Research-Driven",
+            icon: TrendingUp,
+            decorIcon: CheckCircle2,
+            title: "95% Client Retention",
+            description: "We prioritize long-term partnerships. Our professional brand guidelines ensure your brand evolves with your business, delivering consistent ROI.",
+            highlight: "High Retention",
             color: "#fab900",
         },
         {
             icon: Target,
-            decorIcon: TrendingUp,
-            title: "Audience-Focused",
-            description: "Your brand is designed to resonate with your target audience, creating meaningful connections that convert.",
-            highlight: "User-Centric",
+            decorIcon: Sparkles,
+            title: "Global Expertise",
+            description: "We understand how design translates to code. Our assets are optimized for React, Next.js, and mobile frameworks, ensuring 100% implementation fidelity.",
+            highlight: "Tech-Ready",
             color: "#ee6500",
         },
         {
-            icon: Palette,
+            icon: Search,
             decorIcon: Award,
-            title: "Creative Excellence",
-            description: "Our award-winning designers bring fresh perspectives and innovative ideas to make your brand truly unique.",
-            highlight: "Award-Winning",
+            title: "SEO-First Design",
+            description: "We integrate Graphic Design Principles with SEO visibility. Our assets are optimized for Core Web Vitals, aiding your organic ranking efforts.",
+            highlight: "SEO-Optimized",
             color: "#bc3feb",
         },
         {
-            icon: Shield,
-            decorIcon: CheckCircle2,
-            title: "Future-Proof Design",
-            description: "We create timeless brand identities that remain relevant and scalable as your business grows.",
-            highlight: "Scalable",
+            icon: Award,
+            decorIcon: Shield,
+            title: "Award-Winning",
+            description: "Explore our creative brand identity design portfolio featuring work for non-profits, hospitality, and real estate firms.",
+            highlight: "Top Rated",
             color: "#00b5ca",
         },
     ];

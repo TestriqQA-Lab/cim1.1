@@ -10,19 +10,19 @@ export default function DesignTools() {
     const tools = [
         {
             name: "Adobe Photoshop",
-            description: "Photo editing & compositing",
+            description: "Precision vector/raster work",
             logo: "/images/brand-identity-design-logos/Adobe_Photoshop_logo.png",
             color: "#31A8FF", // Photoshop Blue
         },
         {
             name: "Adobe Illustrator",
-            description: "Vector graphics & illustration",
+            description: "Precision vector/raster work",
             logo: "/images/brand-identity-design-logos/Adobe_Illustrator_logo.png",
             color: "#FF9A00", // Illustrator Orange
         },
         {
             name: "Figma",
-            description: "UI/UX design & prototyping",
+            description: "Scalable UI/UX assets",
             logo: "/images/brand-identity-design-logos/Figma-logo.svg",
             color: "#A259FF", // Figma Purple
         },
@@ -34,25 +34,25 @@ export default function DesignTools() {
         },
         {
             name: "Sketch",
-            description: "Digital design toolkit",
+            description: "Scalable UI/UX assets",
             logo: "/images/brand-identity-design-logos/Sketch_Logo.png",
             color: "#F7B500", // Sketch Yellow/Orange
         },
         {
             name: "Adobe InDesign",
-            description: "Layout & publishing",
+            description: "Precision vector/raster work",
             logo: "/images/brand-identity-design-logos/Adobe_InDesign_logo.png",
             color: "#FF3366", // InDesign Pink/Magenta
         },
         {
             name: "Canva",
-            description: "Quick design & templates",
+            description: "Collaborative strategy",
             logo: "/images/brand-identity-design-logos/canva-logo.png",
             color: "#00C4CC", // Canva Teal
         },
         {
             name: "After Effects",
-            description: "Motion graphics & animation",
+            description: "Logo animation & motion",
             logo: "/images/brand-identity-design-logos/Adobe_After_Effects_logo.png",
             color: "#9999FF", // After Effects Purple
         },

@@ -84,14 +84,14 @@ export default function Hero() {
                                 className="bg-clip-text text-transparent"
                                 style={{ background: "var(--brand-yellow)", WebkitBackgroundClip: "text" }}
                             >
-                                Craft Your Brand.
+                                Brand Identity Design Services
                             </span>
                             <br />
-                            <span style={{ color: "var(--foreground)" }}>Define Your Identity.</span>
+                            <span style={{ color: "var(--foreground)" }}>That Define Industry Leaders</span>
                         </h1>
 
                         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Build a memorable brand that resonates with your audience. From logo design to complete brand systems, we create identities that stand out and stand the test of time.
+                            Unlock your global potential with a custom visual identity. We craft data-driven brand systems for startups, SaaS, and enterprises to dominate markets.
                         </p>
 
                         {/* Feature Pills */}
@@ -135,7 +135,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-black"
                                 style={{ backgroundColor: "var(--brand-yellow)" }}
                             >
-                                Start Your Brand Journey
+                                Book Free Brand Audit
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             {/* <Link
