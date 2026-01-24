@@ -90,11 +90,11 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                             >
-                                <span style={{ color: "var(--brand-orange)" }}>Automate</span> <span style={{ color: "var(--foreground)" }}>Your Business</span> <span style={{ color: "var(--brand-orange)" }}>with AI</span>
+                                <span style={{ color: "var(--brand-orange)" }}>AI Workflow</span> <span style={{ color: "var(--foreground)" }}>Automation Services for</span> <span style={{ color: "var(--brand-orange)" }}>Scalable Growth</span>
                             </span>
                         </h1>
 
@@ -108,8 +108,8 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            Transform your operations with <span style={{ color: "var(--brand-orange)", fontWeight: 700 }}>Intelligent Automation</span>. Reduce costs, eliminate errors, and scale your business with <span style={{ color: "var(--brand-orange)", fontWeight: 700 }}>AI-powered workflows</span>.
+                        <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                            Transform your fragmented operations into a unified, intelligent engine. As a premier <span style={{ color: "var(--brand-orange)", fontWeight: 700 }}>Custom AI Automation Agency</span>, we don&apos;t just connect tools - we build sophisticated, <span style={{ color: "var(--brand-orange)", fontWeight: 700 }}>Agentic Workflow Automations</span> that think, adapt, and execute. From Enterprise AI Automation Solutions to Low-code AI automation for small businesses, our architect-led team empowers you to reclaim thousands of hours and drive double-digit ROI.
                         </p>
 
                         {/* Feature Highlights */}
@@ -121,7 +121,7 @@ export default function Hero() {
                             >
                                 <Zap className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-orange)" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Lightning Fast
+                                    Targeted ROI
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
@@ -131,7 +131,7 @@ export default function Hero() {
                             >
                                 <Cpu className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-orange)" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    AI-Powered
+                                    Agentic AI
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
@@ -141,7 +141,7 @@ export default function Hero() {
                             >
                                 <Workflow className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-orange)" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Workflow Design
+                                    Enterprise Scale
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
@@ -151,7 +151,7 @@ export default function Hero() {
                             >
                                 <BarChart3 className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-orange)" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Data-Driven
+                                    Predictive
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
@@ -161,7 +161,7 @@ export default function Hero() {
                             >
                                 <ShieldCheck className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-orange)" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Secure
+                                    Secure (SOC2)
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
@@ -185,21 +185,21 @@ export default function Hero() {
                             }}
                         >
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-orange), var(--brand-orange))",
                                         WebkitBackgroundClip: "text",
                                         color: "transparent",
                                     }}
                                 >
-                                    80%
+                                    300%
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Cost Reduction
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
+                                    Efficiency Gains
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-orange), var(--brand-orange))",
                                         WebkitBackgroundClip: "text",
@@ -208,34 +208,39 @@ export default function Hero() {
                                 >
                                     10x
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Faster Execution
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-orange), var(--brand-orange))",
                                         WebkitBackgroundClip: "text",
                                         color: "transparent",
                                     }}
                                 >
-                                    99%
+                                    24h
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Error Reduction
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
+                                    Custom Roadmap
                                 </div>
                             </div>
                         </div>
 
                         {/* CTA Button */}
-                        <Link
-                            href="/contact"
-                            className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#fab900] to-[#ee6500] hover:from-[#fab900] hover:to-[#fab900] text-black rounded-full text-sm md:text-lg font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105"
-                        >
-                            Start Your AI Journey
-                            <ArrowRight className="w-5 h-5" />
-                        </Link>
+                        <div className="flex flex-col sm:flex-row items-center gap-4">
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#fab900] to-[#ee6500] hover:from-[#fab900] hover:to-[#fab900] text-black rounded-full text-sm md:text-lg font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                            >
+                                Book Your Free AI Audit
+                                <ArrowRight className="w-5 h-5" />
+                            </Link>
+                            <p className="text-sm font-medium" style={{ color: "var(--secondary-text)" }}>
+                                Get a custom roadmap in 24 hours.
+                            </p>
+                        </div>
                     </div>
 
                     {/* RIGHT VISUAL ELEMENT */}

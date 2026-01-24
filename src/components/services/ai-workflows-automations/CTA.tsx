@@ -35,7 +35,7 @@ export default function CTA() {
                             Ready to Transform Your <span style={{ color: "var(--brand-orange)" }}>Operations?</span>
                         </h2>
                         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Let's discuss how AI-powered workflows can automate your business, reduce costs, and drive growth.
+                            Don't let manual work hold you back. Partner with a Custom AI Automation Agency that understands the future of work.
                         </p>
 
                         {/* CTA Buttons */}
@@ -45,19 +45,9 @@ export default function CTA() {
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#fab900] to-[#ee6500] hover:from-[#fab900] hover:to-[#fab900] text-black rounded-full text-sm md:text-lg font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                             >
                                 <Zap className="w-5 h-5" />
-                                Book Your AI Consultation
+                                Get Your Free Proposal
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
-                            {/* <button
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 border-2 rounded-full text-sm md:text-lg font-bold transition-all hover:scale-105"
-                                style={{
-                                    borderColor: "var(--brand-orange)",
-                                    color: "var(--brand-orange)",
-                                }}
-                            >
-                                <MessageSquare className="w-5 h-5" />
-                                Chat with Our Experts
-                            </button> */}
                         </div>
 
                         {/* Benefits Summary */}
