@@ -91,7 +91,7 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -115,7 +115,7 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
+                        <p className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
                             As a <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>premier mobile app development company</span> with <span style={{ color: "var(--foreground)", fontWeight: 700 }}>12+ years of proven expertise</span>, we craft custom mobile app development solutions that transform businesses globally. Our award-winning team has delivered <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>300+ high-performance mobile applications</span> across iOS, Android, and cross-platform ecosystems.
                         </p>
 
@@ -192,7 +192,7 @@ export default function Hero() {
                             }}
                         >
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-purple), var(--brand-blue))",
                                         WebkitBackgroundClip: "text",
@@ -201,12 +201,12 @@ export default function Hero() {
                                 >
                                     300+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
                                     Apps Delivered
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-purple), var(--brand-blue))",
                                         WebkitBackgroundClip: "text",
@@ -215,12 +215,12 @@ export default function Hero() {
                                 >
                                     50M+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
                                     Active Users
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-purple), var(--brand-blue))",
                                         WebkitBackgroundClip: "text",
@@ -229,7 +229,7 @@ export default function Hero() {
                                 >
                                     99.2%
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
                                     Client Retention
                                 </div>
                             </div>
