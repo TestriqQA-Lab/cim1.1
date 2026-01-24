@@ -6,24 +6,24 @@ import Link from "next/link";
 export default function ServiceOverview() {
     const features = [
         {
-            icon: Eye,
-            title: "Long-Term Visibility",
-            description: "We build a robust foundation that ensures your brand remains visible and relevant in search results for years to come.",
-        },
-        {
             icon: TrendingUp,
             title: "Sustainable Traffic",
-            description: "Focusing on high-quality, organic traffic sources that provide consistent, reliable growth without continuous ad spend.",
+            description: "Unlike PPC, Organic SEO services build an evergreen funnel. We focus on ranking for high-intent keywords that drive qualified traffic 24/7 without the recurring cost per click.",
         },
         {
             icon: Users,
             title: "High-Intent Leads",
-            description: "Targeting users actively searching for your solutions, resulting in higher conversion rates and efficient sales funnels.",
+            description: "We target the \"money keywords.\" Our Organic SEO for lead generation targets users at the bottom of the funnel—those ready to buy—ensuring your traffic converts into revenue.",
         },
         {
             icon: Globe,
             title: "Brand Authority",
-            description: "Establishing your website as a trusted, authoritative source in your industry through expert content and strategic link building.",
+            description: "Ranking #1 signals trust. We use E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) principles to position your brand as the industry leader, critical for Organic SEO for brand authority.",
+        },
+        {
+            icon: Eye,
+            title: "ROI-Focused Growth",
+            description: "We don't just chase rankings; we chase revenue. Our ROI-focused organic SEO services are aligned with your business KPIs, ensuring every optimization contributes to your bottom line.",
         },
     ];
 
@@ -48,7 +48,7 @@ export default function ServiceOverview() {
                         The Power of <span style={{ color: "var(--brand-seo)" }}>Organic Growth</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Organic Growth and SEO are not just marketing tactics-they are a fundamental business strategy for long-term visibility and sustainable traffic.
+                        In an era of AI Overviews and evolving core updates, Long-term organic search visibility is your most valuable asset.
                     </p>
                 </div>
 

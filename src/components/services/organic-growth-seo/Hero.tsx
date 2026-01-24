@@ -86,16 +86,13 @@ export default function Hero() {
                             }}
                         >
                             <TrendingUp className="w-4 h-4" style={{ color: "var(--brand-seo)" }} />
-                            <span className="text-sm font-semibold">Organic Growth & SEO</span>
+                            <span className="text-sm font-semibold">Organic Growth & SEO Services</span>
                         </div>
 
                         {/* Heading (H1) */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
-                            <span style={{ color: "var(--foreground)" }}>Sustainable</span>{" "}
-                            <span style={{ color: "var(--brand-seo)" }}>Traffic.</span>
-                            <br />
-                            <span style={{ color: "var(--foreground)" }}>Exponential</span>{" "}
-                            <span style={{ color: "var(--brand-seo)" }}>Growth.</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold">
+                            <span style={{ color: "var(--foreground)" }}>Organic Growth &</span>{" "}
+                            <span style={{ color: "var(--brand-seo)" }}>SEO Services.</span>
                         </h1>
 
                         {/* Underline */}
@@ -107,8 +104,11 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            We are the <span style={{ color: "var(--brand-seo)", fontWeight: 700 }}>SEO Company</span> that delivers long-term <span style={{ color: "var(--brand-seo)", fontWeight: 700 }}>Organic Traffic Growth</span>. Partner with our agency for data-driven strategies that convert.
+                        <p className="text-lg md:text-xl mb-8" style={{ color: "var(--secondary-text)" }}>
+                            Scale Your Business with <span style={{ color: "var(--brand-seo)", fontWeight: 700 }}>Data-Driven Organic Search Strategies</span> Designed for the 2026 Algorithms.
+                        </p>
+                        <p className="text-base md:text-lg mb-8" style={{ color: "var(--secondary-text)" }}>
+                            Stop relying on paid ads. As a premier global SEO Agency, we Engineer long-term search dominance. Our Organic SEO Services combine technical precision, authority-building content, and white-hat strategies to deliver consistent leads and revenue. Whether you are a startup needing a sustainable organic traffic growth strategy or an enterprise seeking global dominance, our 30+ years of expertise ensures you own your niche.
                         </p>
 
                         {/* Feature Highlights */}
@@ -170,17 +170,17 @@ export default function Hero() {
                                     300%
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Avg Traffic Growth
+                                    Avg. Traffic Lift
                                 </div>
                             </div>
                             <div className="text-center">
                                 <div className="text-3xl md:text-4xl font-bold mb-1"
                                     style={{ color: "var(--brand-seo)" }}
                                 >
-                                    Top 10
+                                    95%
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Ranking Results
+                                    Retention Rate
                                 </div>
                             </div>
                             <div className="text-center">
@@ -190,7 +190,7 @@ export default function Hero() {
                                     50+
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Happy Clients
+                                    Fintech & SaaS Leaders
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@ export default function Hero() {
                                 backgroundColor: "var(--brand-seo)",
                             }}
                         >
-                            Book Your Free SEO Audit
+                            Book Free Audit Today
                             <ArrowRight className="w-5 h-5" />
                         </Link>
                     </div>

@@ -65,7 +65,7 @@ export default function CTA() {
                             className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-white"
                             style={{ backgroundColor: "var(--brand-seo)" }}
                         >
-                            Start Your Free SEO Audit
+                            Book Free Audit Today
                             <ArrowRight className="w-5 h-5" />
                         </Link>
                     </div>
