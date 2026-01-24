@@ -79,7 +79,7 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center lg:text-left">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-center lg:text-left leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{ background: "var(--brand-yellow)", WebkitBackgroundClip: "text" }}
