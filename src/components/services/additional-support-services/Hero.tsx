@@ -64,7 +64,7 @@ export default function Hero() {
                     </Link>
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
                     <span className="font-semibold p-2" style={{ color: "#fab900" }}>
-                        Additional Support Services
+                        Business Support Services
                     </span>
                 </nav>
 
@@ -82,24 +82,27 @@ export default function Hero() {
                                 }}
                             >
                                 <Headphones className="w-4 h-4" style={{ color: "#4b277a" }} />
-                                <span className="text-sm font-semibold" style={{ color: "#4b277a" }}>Additional Support Services</span>
+                                <span className="text-sm font-semibold" style={{ color: "#4b277a" }}>Business Support Services</span>
                             </div>
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center lg:text-left">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-center lg:text-left leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{ background: "linear-gradient(135deg, #4b277a, #97288e)", WebkitBackgroundClip: "text" }}
                             >
                                 Ongoing Support.
                             </span>
-                            <br />
                             <span style={{ color: "var(--foreground)" }}>Lasting <span style={{ color: "#fab900" }}>Success.</span></span>
                         </h1>
 
                         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Beyond project delivery, we provide comprehensive ongoing support, maintenance, and optimization services to ensure your digital solutions continue to thrive.
+                            Optimize your operations with our premium Business Support Services designed for global scalability. Whether you need Outsourced Administrative assistance, IT Business Support Services, or Managed Support Services, our team ensures your business runs flawlessly 24/7. We combine 30+ years of digital expertise with cutting-edge technology to deliver Business Assistance Services that drive efficiency and growth.
+                        </p>
+
+                        <p className="mt-4 text-sm md:text-base max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
+                            Join 50+ global fintech and enterprise clients who trust us for 95% bug-free technical maintenance and 300% operational efficiency improvements.
                         </p>
 
                         {/* Feature Pills */}
@@ -162,7 +165,7 @@ export default function Hero() {
                     <div className="relative">
                         {/* Main Visual Card */}
                         <div
-                            className="relative rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden p-5 md:p-6 max-w-md mx-auto"
+                            className="relative rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden p-6 md:p-8 max-w-lg mx-auto"
                             style={{
                                 background: "linear-gradient(135deg, color-mix(in srgb, #4b277a 10%, var(--card-bg)), var(--card-bg))",
                                 border: "1px solid var(--border-color)",
@@ -176,37 +179,35 @@ export default function Hero() {
                                 <Headphones className="w-8 h-8 md:w-10 md:h-10 text-white" />
                             </div>
 
-                            <h2 className="text-lg md:text-xl font-bold mb-4 md:mb-5" style={{ color: "#4b277a" }}>Why Choose Our Support?</h2>
+                            <h2 className="text-xl md:text-2xl font-bold mb-5 md:mb-6" style={{ color: "#4b277a" }}>Why Choose Our Support?</h2>
 
-                            <div className="space-y-3">
+                            <div className="space-y-4">
                                 {[
-                                    "Dedicated account manager for personalized service",
-                                    "99.9% uptime guarantee for critical systems",
-                                    "Regular performance audits & optimization",
-                                    "Security monitoring & threat prevention",
-                                    "Scalable solutions that grow with you",
+                                    "Global Reach: Serving US, EU, India, and APAC markets.",
+                                    "Expert Team: Certified developers and detailed-oriented virtual assistants.",
+                                    "Proactive Approach: We monitor systems before issues arise.",
                                 ].map((item, index) => (
                                     <div
                                         key={index}
-                                        className="flex items-start gap-3 p-3 rounded-xl transition-all duration-300 group cursor-pointer"
+                                        className="flex items-start gap-3 p-4 rounded-xl transition-all duration-300 group cursor-pointer"
                                         style={{ backgroundColor: "color-mix(in srgb, #4b277a 5%, var(--card-bg))" }}
                                     >
                                         <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" style={{ color: "#fab900" }} />
-                                        <span className="text-sm" style={{ color: "var(--secondary-text)" }}>{item}</span>
+                                        <span className="text-base" style={{ color: "var(--secondary-text)" }}>{item}</span>
                                     </div>
                                 ))}
                             </div>
 
                             {/* Stats Row */}
-                            <div className="grid grid-cols-3 gap-4 mt-6 pt-5 border-t" style={{ borderColor: "var(--border-color)" }}>
+                            <div className="grid grid-cols-3 gap-4 mt-8 pt-6 border-t" style={{ borderColor: "var(--border-color)" }}>
                                 {[
                                     { value: "500+", label: "Happy Clients" },
                                     { value: "15+", label: "Years Exp." },
                                     { value: "50+", label: "Support Staff" },
                                 ].map((stat, index) => (
                                     <div key={index} className="text-center">
-                                        <div className="text-xl font-black" style={{ color: "#97288e" }}>{stat.value}</div>
-                                        <div className="text-xs" style={{ color: "var(--secondary-text)" }}>{stat.label}</div>
+                                        <div className="text-2xl font-black" style={{ color: "#97288e" }}>{stat.value}</div>
+                                        <div className="text-sm" style={{ color: "var(--secondary-text)" }}>{stat.label}</div>
                                     </div>
                                 ))}
                             </div>
@@ -214,26 +215,26 @@ export default function Hero() {
 
                         {/* Why Choose Us Box */}
                         <div
-                            className="mt-6 p-6 rounded-2xl border"
+                            className="mt-6 p-6 md:p-8 rounded-2xl border max-w-lg mx-auto"
                             style={{
                                 backgroundColor: "color-mix(in srgb, #fab900 5%, var(--card-bg))",
                                 borderColor: "color-mix(in srgb, #fab900 20%, var(--border-color))",
                             }}
                         >
-                            <div className="flex items-center gap-2 mb-3">
-                                <Sparkles className="w-5 h-5" style={{ color: "#fab900" }} />
-                                <h3 className="font-bold text-lg" style={{ color: "#fab900" }}>
-                                    Your Success, Our Priority
+                            <div className="flex items-center gap-3 mb-4">
+                                <Sparkles className="w-6 h-6" style={{ color: "#fab900" }} />
+                                <h3 className="font-bold text-xl" style={{ color: "#fab900" }}>
+                                    Your Infrastructure, Our Priority
                                 </h3>
                             </div>
-                            <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
-                                We go beyond standard support to ensure your business achieves its goals.
+                            <p className="text-base mb-5" style={{ color: "var(--secondary-text)" }}>
+                                We don't just fix problems; we prevent them. Our comprehensive support solutions are built on a foundation of Experience, Expertise, Authoritativeness, and Trust (E-E-A-T).
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 {["24/7 Support", "Fast Response", "Expert Team", "Proactive Care"].map((tag) => (
                                     <span
                                         key={tag}
-                                        className="px-3 py-1 rounded-full text-xs font-medium"
+                                        className="px-4 py-1.5 rounded-full text-sm font-medium"
                                         style={{
                                             backgroundColor: "color-mix(in srgb, #fab900 15%, transparent)",
                                             color: "#fab900",
