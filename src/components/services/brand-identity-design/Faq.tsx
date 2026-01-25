@@ -13,7 +13,7 @@ export default function Faq() {
         },
         {
             question: "What is the difference between branding and brand identity?",
-            answer: "Branding is the holistic process of shaping how your audience perceives your company (the \"why\" and \"feeling\"). Brand identity is the tangible collection of visual tools (the \"what\")—logo, fonts, colors—that you use to communicate that brand. Think of branding as the personality and brand identity as the clothes and style."
+            answer: "Branding is the holistic process of shaping how your audience perceives your company (the \"why\" and \"feeling\"). Brand identity is the tangible collection of visual tools (the \"what\")-logo, fonts, colors-that you use to communicate that brand. Think of branding as the personality and brand identity as the clothes and style."
         },
         {
             question: "How long does the brand identity design process take?",

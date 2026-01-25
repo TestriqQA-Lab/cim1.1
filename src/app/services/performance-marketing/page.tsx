@@ -113,7 +113,7 @@ export default function PerformanceMarketingPage() {
                         "name": "What is the difference between digital marketing and performance marketing?",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "While digital marketing encompasses all online efforts, performance marketing is specifically focused on paid channels where you pay only for results—clicks, leads, or sales. It is highly measurable and ROI-centric."
+                            "text": "While digital marketing encompasses all online efforts, performance marketing is specifically focused on paid channels where you pay only for results-clicks, leads, or sales. It is highly measurable and ROI-centric."
                         }
                     },
                     {

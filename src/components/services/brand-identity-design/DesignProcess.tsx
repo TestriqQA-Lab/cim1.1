@@ -28,7 +28,7 @@ export default function DesignProcess() {
         {
             icon: PenTool,
             title: "Systematization & Guidelines",
-            description: "Once approved, we build the full system—color codes, type scales, and brand guidelines design. We ensure every asset is production-ready.",
+            description: "Once approved, we build the full system-color codes, type scales, and brand guidelines design. We ensure every asset is production-ready.",
             details: ["System building", "Color codes", "Type scales", "Production ready"],
         },
         {

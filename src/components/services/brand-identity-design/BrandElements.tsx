@@ -42,7 +42,7 @@ export default function BrandElements() {
         {
             icon: Image,
             title: "Illustration Style",
-            description: "We define unique imagery styles—custom illustrations, icon sets, and photography guidelines—that separate you from the stock-photo crowd.",
+            description: "We define unique imagery styles-custom illustrations, icon sets, and photography guidelines-that separate you from the stock-photo crowd.",
             features: ["Custom illustrations", "Icon sets", "Photo guidelines", "Premium positioning"],
             color: "#00b5ca",
             preview: "imagery",
