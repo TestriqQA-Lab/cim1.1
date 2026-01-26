@@ -8,40 +8,34 @@ export default function ServiceOverview() {
 
     const features = [
         {
-            icon: FileText,
-            title: "Content Management",
-            description: "Intuitive CMS that makes publishing, editing, and organizing content effortless for your team.",
-            details: ["WYSIWYG editors", "Media library", "Content scheduling", "Version control"]
-        },
-        {
-            icon: Search,
-            title: "SEO Optimization",
-            description: "Built-in SEO tools to help your content rank higher and attract organic traffic.",
-            details: ["Meta tag management", "Schema markup", "Sitemap generation", "Performance optimization"]
-        },
-        {
-            icon: Users,
-            title: "Reader Engagement",
-            description: "Features that keep readers engaged and coming back for more content.",
-            details: ["Comment systems", "Social sharing", "Newsletter integration", "Related content"]
-        },
-        {
-            icon: BarChart3,
-            title: "Analytics & Insights",
-            description: "Comprehensive analytics to understand your audience and optimize content strategy.",
-            details: ["Traffic analytics", "Reader behavior", "Content performance", "Conversion tracking"]
-        },
-        {
-            icon: Zap,
-            title: "Performance",
-            description: "Lightning-fast load times that keep readers engaged and improve SEO rankings.",
-            details: ["CDN integration", "Image optimization", "Lazy loading", "Caching strategies"]
+            icon: Newspaper,
+            title: "Custom News Portal Design",
+            description: "Transform your journalism with a Custom news portal design for media agencies. We implement News portal security.",
+            details: ["Mobile-responsive layouts", "Video-centric design", "Seamless streaming", "Adaptive user interfaces"]
         },
         {
             icon: Palette,
-            title: "Custom Design",
-            description: "Unique, branded designs that reflect your identity and stand out from the crowd.",
-            details: ["Custom themes", "Responsive design", "Dark mode support", "Accessibility compliant"]
+            title: "Specialized Blog Design",
+            description: "Stand out with bespoke Blog Design services. From Niche blog development to Multi-author management systems.",
+            details: ["Zero-downtime migration", "Headless WP setups", "Interactive polling", "Gamification tools"]
+        },
+        {
+            icon: Zap,
+            title: "Automated Publishing",
+            description: "Efficiency is key. We deploy Automated news aggregation and portal setup workflows to keep content fresh.",
+            details: ["Global CDN integration", "Reuters/AP API connect", "News portal analytics", "Reader behavior insights"]
+        },
+        {
+            icon: BarChart3,
+            title: "Monetization & Growth",
+            description: "Turn views into revenue. Our News portal monetization strategies optimize AdSense and paywalls.",
+            details: ["Programmatic ad setup", "Paywall integration", "Audience growth SEO", "UGC community modules"]
+        },
+        {
+            icon: FileText,
+            title: "Professional Content",
+            description: "Blog writing services and Professional editorial services providing high-E-E-A-T content that ranks.",
+            details: ["Content strategy", "Topic clusters", "Editorial workflows", "Brief creation"]
         }
     ];
 
@@ -66,11 +60,11 @@ export default function ServiceOverview() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Complete <span style={{ color: "#a855f7" }}>Content Platform</span> Solutions
+                        Comprehensive <span style={{ color: "#a855f7" }}>Website Management</span> & Portal Solutions
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Everything you need to build, manage, and grow a successful blog or news portal that attracts and retains readers.
+                        We don&apos;t just build websites; we engineer digital equity. Our recurring Website Management Services and development packages are designed for growth.
                     </p>
 
                     <div

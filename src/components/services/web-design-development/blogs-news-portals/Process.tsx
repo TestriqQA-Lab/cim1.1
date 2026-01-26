@@ -6,39 +6,33 @@ export default function Process() {
     const steps = [
         {
             icon: MessageSquare,
-            title: "Discovery & Strategy",
-            description: "We dive deep into your content goals, audience, and competition to create a winning strategy.",
-            details: ["Content audit", "Audience research", "Competitor analysis", "Feature planning"]
+            title: "Discovery & Topical Authority",
+            description: "We analyze your niche, competitors, and Topical Authority and E-E-A-T gaps to plan a winning structure.",
+            details: ["Niche analysis", "Competitor audit", "Keyword planning", "Structure mapping"]
         },
         {
             icon: Palette,
-            title: "Design & UX",
-            description: "Creating reader-focused designs that maximize engagement and time on site.",
-            details: ["Wireframing", "Visual design", "Mobile optimization", "Accessibility"]
+            title: "UX/UI & Retention",
+            description: "Designing for Reader Retention and Loyalty. We create layouts that encourage scroll depth and click-throughs.",
+            details: ["Scroll depth optimization", "Ad placement strategy", "Reader journey mapping", "Engagement UI"]
         },
         {
             icon: Code2,
-            title: "Development",
-            description: "Building your platform with modern technologies for speed, security, and scalability.",
-            details: ["CMS setup", "Custom features", "SEO implementation", "Performance tuning"]
+            title: "Agile Dev & CMS Setup",
+            description: "Building robust Multi-author blog management systems with role-based access control.",
+            details: ["Role-based access", "Workflow automation", "Custom post types", "Security setup"]
         },
         {
             icon: Rocket,
-            title: "Launch & Training",
-            description: "Smooth deployment with comprehensive training for your content team.",
-            details: ["Quality assurance", "Content migration", "Team training", "Go-live support"]
+            title: "Migration & SEO Launchpad",
+            description: "Executing safe Blog migration and redesign services with 301 redirect mapping and schema implementation.",
+            details: ["Zero-downtime migration", "301 redirect mapping", "Schema implementation", "Core Web Vitals check"]
         },
         {
             icon: Settings,
-            title: "Optimization",
-            description: "Continuous improvements based on analytics and reader feedback.",
-            details: ["A/B testing", "Performance monitoring", "SEO refinement", "Feature updates"]
-        },
-        {
-            icon: HeartHandshake,
-            title: "Ongoing Support",
-            description: "Long-term partnership to ensure your platform continues to grow and evolve.",
-            details: ["Technical support", "Security updates", "Content consulting", "Growth strategy"]
+            title: "Growth & Monetization",
+            description: "Post-launch News portal SEO and audience growth services and Content Monetization Models setup.",
+            details: ["AdSense/AdManager setup", "Paywall configuration", "Analytics dashboard", "Growth strategy"]
         }
     ];
 
@@ -65,7 +59,7 @@ export default function Process() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Our <span style={{ color: "#a855f7" }}>Development Process</span>
+                        Our 5-Step <span style={{ color: "#a855f7" }}>Editorial & Development Roadmap</span>
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>

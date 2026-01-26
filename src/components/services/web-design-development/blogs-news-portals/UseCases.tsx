@@ -9,45 +9,31 @@ export default function UseCases() {
     const industries = [
         {
             icon: Newspaper,
-            title: "Media & Publishing",
-            description: "High-traffic news sites and digital publications with real-time updates and breaking news capabilities.",
-            metrics: ["50M+ monthly page views", "Sub-second load times", "Global CDN delivery"],
+            title: "Media Agencies",
+            description: "High-Traffic News Portals designed for breaking news cycles.",
+            metrics: ["99.9% Uptime", "Real-time indexing", "Ad revenue optimization"],
             bgColor: "#a855f7",
         },
         {
-            icon: Laptop,
-            title: "Technology",
-            description: "Tech blogs and documentation sites that establish thought leadership and product authority.",
-            metrics: ["Developer communities", "API documentation", "Product changelog"],
+            icon: Building2,
+            title: "Corporate Brands",
+            description: "Thought Leadership Blogs that establish authority and drive leads.",
+            metrics: ["40% Increase in B2B Leads", "Brand authority", "CRM integration"],
             bgColor: "#8b5cf6",
         },
         {
-            icon: Coins,
-            title: "Finance & Business",
-            description: "Financial news portals and corporate blogs that build trust and drive business.",
-            metrics: ["Market analysis", "Investment insights", "Regulatory compliance"],
-            bgColor: "#7c3aed",
-        },
-        {
-            icon: Heart,
-            title: "Lifestyle & Wellness",
-            description: "Engaging lifestyle blogs with rich media, recipes, and community features.",
-            metrics: ["Visual storytelling", "Recipe databases", "Community forums"],
+            icon: Laptop,
+            title: "Independent Creators",
+            description: "Subscription-Based Magazines with built-in paywalls and newsletters.",
+            metrics: ["2x Revenue via Paywalls", "Member management", "Exclusive content"],
             bgColor: "#ec4899",
         },
         {
             icon: GraduationCap,
-            title: "Education",
-            description: "Educational content platforms and e-learning blogs with course integration.",
-            metrics: ["Course promotion", "Student resources", "Instructor blogs"],
+            title: "Local Governments",
+            description: "Community Info Portals for public service announcements and engagement.",
+            metrics: ["Improved Engagement", "Accessibility compliant", "Public notifications"],
             bgColor: "#d946ef",
-        },
-        {
-            icon: Building2,
-            title: "Enterprise",
-            description: "Corporate knowledge bases and internal communication platforms.",
-            metrics: ["Multi-department", "SSO integration", "Compliance ready"],
-            bgColor: "#c026d3",
         },
     ];
 
@@ -60,7 +46,7 @@ export default function UseCases() {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Industry <span style={{ color: "#a855f7" }}>Use Cases</span>
+                        Tailored Digital Media <span style={{ color: "#a855f7" }}>Strategy for Every Niche</span>
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>

@@ -6,29 +6,29 @@ import Link from "next/link";
 export default function WhyChooseUs() {
     const reasons = [
         {
-            icon: Award,
-            title: "Content Expertise",
-            description: "Years of experience building high-traffic blogs and news platforms for publishers worldwide."
+            icon: Shield,
+            title: "E-E-A-T Focused Architecture",
+            description: "We code with Google's Experience, Expertise, Authoritativeness, and Trustworthiness guidelines. Your site structure will signal authority from Day 1."
         },
         {
             icon: Zap,
-            title: "Performance First",
-            description: "Optimized for Core Web Vitals ensuring fast load times and excellent user experience."
+            title: "Performance Obsessed",
+            description: "We guarantee News portal performance and speed optimization. Passing Core Web Vitals is our baseline, not a goal."
         },
         {
-            icon: Users,
-            title: "Reader-Centric Design",
-            description: "UX patterns proven to increase time on site, reduce bounce rates, and boost engagement."
+            icon: Award,
+            title: "Global Reach, Hyper-Local Focus",
+            description: "Experience in building Hyper-local news portal development services that dominate regional search, while scaling to global traffic."
+        },
+        {
+            icon: CheckCircle2,
+            title: "Custom CMS Mastery",
+            description: "Whether it's Custom CMS development for news websites or headless setups, we give you control."
         },
         {
             icon: TrendingUp,
-            title: "SEO Excellence",
-            description: "Built with SEO best practices to help your content rank higher in search results."
-        },
-        {
-            icon: Shield,
-            title: "Secure & Scalable",
-            description: "Enterprise-grade security with infrastructure that scales with your audience growth."
+            title: "Proven ROI",
+            description: "Our clients see an average of 300% traffic growth within 12 months via our integrated technical SEO."
         }
     ];
 
@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Why Choose Us for Your{" "}
+                            Why We Are the Leaders in <span style={{ color: "#a855f7" }}>Digital Magazine</span> Publishing
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
                                     WebkitBackgroundClip: "text",
                                 }}
                             >
-                                Content Platform
+                                {" "}Platform Services
                             </span>
                         </h2>
 

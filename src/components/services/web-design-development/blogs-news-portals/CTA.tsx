@@ -56,21 +56,20 @@ export default function CTA() {
 
                         {/* Heading */}
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Ready to Launch Your{" "}
-                            <span
+                            Ready to Launch Your Next <span
                                 className="bg-clip-text text-transparent"
                                 style={{
                                     background: "linear-gradient(135deg, #a855f7, #ec4899)",
                                     WebkitBackgroundClip: "text",
                                 }}
                             >
-                                Content Platform?
+                                Big Media Asset?
                             </span>
                         </h2>
 
                         {/* Description */}
                         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Let&apos;s build a blog or news portal that engages your audience, ranks in search, and grows your brand.
+                            Don&apos;t let technical debt hold back your editorial potential. Partner with a Blogs & News Portals Development agency that understands the rhythm of the news cycle.
                         </p>
 
                         {/* CTA Buttons */}

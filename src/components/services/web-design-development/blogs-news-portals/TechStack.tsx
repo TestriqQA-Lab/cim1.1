@@ -9,52 +9,52 @@ export default function TechStack() {
     const technologies = [
         {
             category: "CMS Platforms",
-            description: "Powerful content management systems for easy publishing",
+            description: "Powerful CMS options for every scale of publishing",
             items: [
-                { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
+                { name: "WordPress VIP", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
                 { name: "Strapi", logo: "/images/techstack_logos/Strapi-logo.png" },
-                { name: "Sanity", logo: "/images/techstack_logos/Sanity-square-logo.png" },
-                { name: "Contentful", logo: "/images/techstack_logos/Contentful-logo.webp" },
+                { name: "Ghost", logo: "/images/techstack_logos/Ghost-logo.jpg" },
+                { name: "Drupal", logo: "/images/techstack_logos/drupal-logo.png" },
             ],
         },
         {
-            category: "Frontend Frameworks",
-            description: "Modern frameworks for fast, SEO-friendly rendering",
+            category: "Frontend",
+            description: "Fast, SEO-friendly rendering engines",
             items: [
                 { name: "Next.js", logo: "/images/techstack_logos/nextjs-logo.svg" },
                 { name: "React", logo: "/images/techstack_logos/react-logo.svg" },
-                { name: "Tailwind CSS", logo: "/images/techstack_logos/tailwindcss-logo.svg" },
-                { name: "TypeScript", logo: "/images/techstack_logos/typescript-logo.svg" },
+                { name: "Vue.js", logo: "/images/techstack_logos/vuejs-logo.svg" },
+                { name: "Svelte", logo: "/images/techstack_logos/Svelte-Logo.png" },
             ],
         },
         {
-            category: "Analytics & SEO",
-            description: "Tools for tracking performance and optimizing content",
+            category: "Backend",
+            description: "Robust backend technologies for scalability",
             items: [
-                { name: "Google Analytics", logo: "/images/techstack_logos/google-tag-manager-logo.svg" },
-                { name: "Mixpanel", logo: "/images/techstack_logos/mixpanel-logo.png" },
-                { name: "Hotjar", logo: "/images/techstack_logos/Hotjar-logo.png" },
-                { name: "Segment", logo: "/images/techstack_logos/Segment-logo.png" },
+                { name: "Node.js", logo: "/images/techstack_logos/nodejs-logo.svg" },
+                { name: "Python", logo: "/images/techstack_logos/python-logo.svg" },
+                { name: "Laravel", logo: "/images/techstack_logos/Laravel-logo.png" },
+                { name: "Django", logo: "/images/techstack_logos/django-logo.svg" },
             ],
         },
         {
-            category: "Hosting & CDN",
-            description: "Fast, reliable hosting for global audiences",
+            category: "Infrastructure",
+            description: "Cloud infrastructure for global speed and uptime",
             items: [
-                { name: "Vercel", logo: "/images/techstack_logos/vercel-logo.webp" },
-                { name: "Netlify", logo: "/images/techstack_logos/netlify-logo.svg" },
-                { name: "Cloudflare", logo: "/images/techstack_logos/Cloudflare-logo.webp" },
                 { name: "AWS", logo: "/images/techstack_logos/aws-logo.png" },
+                { name: "Google Cloud", logo: "/images/techstack_logos/googlecloud-logo.svg" },
+                { name: "Vercel", logo: "/images/techstack_logos/vercel-logo.webp" },
+                { name: "DigitalOcean", logo: "/images/techstack_logos/DigitalOcean-logo.svg" },
             ],
         },
         {
-            category: "Email & Marketing",
-            description: "Newsletter and marketing automation tools",
+            category: "Integrations",
+            description: "Essential tools for distribution and monetization",
             items: [
-                { name: "Mailchimp", logo: "/images/ai_automation_logos/mailchimp-logo.svg" },
-                { name: "HubSpot", logo: "/images/ai_automation_logos/hubspot-logo.png" },
+                { name: "Google Trends", logo: "/images/techstack_logos/Google-Trends-logo.jpg" },
                 { name: "SendGrid", logo: "/images/techstack_logos/SendGrid-logo.png" },
-                { name: "Klaviyo", logo: "/images/techstack_logos/Klaviyo-logo.png" },
+                { name: "Mailchimp", logo: "/images/ai_automation_logos/mailchimp-logo.svg" },
+                { name: "Display & Video 360", logo: "/images/techstack_logos/DV360-Logo.webp" },
             ],
         },
     ];
@@ -68,7 +68,7 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Powered by <span style={{ color: "#a855f7" }}>Modern Tech</span>
+                        Powered by <span style={{ color: "#a855f7" }}>Modern Digital Journalism Tools</span>
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>

@@ -88,7 +88,7 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 animate-slideUp">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 animate-slideUp leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -97,10 +97,10 @@ export default function Hero() {
                                     color: "transparent",
                                 }}
                             >
-                                Engage Your Audience
+                                Enterprise Blogs &
                             </span>
                             <br />
-                            <span style={{ color: "var(--foreground)" }}>With Compelling Content</span>
+                            <span style={{ color: "var(--foreground)" }}>News Portals Development</span>
                         </h1>
 
                         {/* Underline */}
@@ -112,8 +112,8 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8 animate-fadeIn" style={{ color: "var(--secondary-text)", animationDelay: "0.2s" }}>
-                            Build <span style={{ color: "#a855f7", fontWeight: 700 }}>powerful content platforms</span> that drive traffic, build authority, and keep readers coming back for more.
+                        <p className="text-lg md:text-xl mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.2s" }}>
+                            Empower your editorial team and <span style={{ color: "#a855f7", fontWeight: 700 }}>engage millions of readers</span> with our high-performance Web Portal development Services. We build scalable, secure, and SEO-dominant digital publishing platforms.
                         </p>
 
                         {/* Feature Highlights */}
@@ -126,7 +126,7 @@ export default function Hero() {
                             >
                                 <Rss className="w-5 h-5 flex-shrink-0" style={{ color: "#a855f7" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Real-time Updates
+                                    Custom CMS
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -137,7 +137,7 @@ export default function Hero() {
                             >
                                 <Search className="w-5 h-5 flex-shrink-0" style={{ color: "#a855f7" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    SEO Optimized
+                                    SEO-Ready
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -148,7 +148,7 @@ export default function Hero() {
                             >
                                 <Users className="w-5 h-5 flex-shrink-0" style={{ color: "#a855f7" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Reader Engagement
+                                    High Traffic
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -159,7 +159,7 @@ export default function Hero() {
                             >
                                 <BookOpen className="w-5 h-5 flex-shrink-0" style={{ color: "#a855f7" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Easy Publishing
+                                    Monetization
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -170,7 +170,7 @@ export default function Hero() {
                             >
                                 <TrendingUp className="w-5 h-5 flex-shrink-0" style={{ color: "#a855f7" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Traffic Growth
+                                    Ad Revenue
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -181,7 +181,7 @@ export default function Hero() {
                             >
                                 <Newspaper className="w-5 h-5 flex-shrink-0" style={{ color: "#a855f7" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Content Management
+                                    Global Media
                                 </span>
                             </div>
                         </div>
@@ -202,10 +202,10 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    500+
+                                    30+
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Blogs Launched
+                                    Years Expertise
                                 </div>
                             </div>
                             <div className="text-center">
@@ -216,10 +216,10 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    10M+
+                                    50+
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Monthly Readers
+                                    Media Giants
                                 </div>
                             </div>
                             <div className="text-center">
@@ -230,10 +230,10 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    85%
+                                    2025
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    SEO Score Avg
+                                    Core Web Vitals
                                 </div>
                             </div>
                         </div>
@@ -248,20 +248,20 @@ export default function Hero() {
                                     boxShadow: "0 8px 20px -4px rgba(168, 85, 247, 0.4)",
                                 }}
                             >
-                                Start Your Blog Project
+                                Start Your Project
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
-                            <Link
-                                href="/contact"
+                            {/* <Link
+                                href="/portfolio"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold border transition-all duration-300 hover:bg-violet-500/5"
                                 style={{
                                     borderColor: "#a855f7",
                                     color: "#a855f7",
                                 }}
                             >
-                                Discuss Your Content Strategy
+                                View Case Studies
                                 <ArrowRight className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
 
