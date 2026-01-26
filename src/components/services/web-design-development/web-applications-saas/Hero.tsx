@@ -83,8 +83,7 @@ export default function Hero() {
                             <span className="text-sm font-semibold">Web Applications & SaaS Development</span>
                         </div>
 
-                        {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -93,7 +92,7 @@ export default function Hero() {
                                     color: "transparent",
                                 }}
                             >
-                                Build Products That Scale
+                                SaaS Development Company Building Products That Scale
                             </span>
                         </h1>
 
@@ -106,8 +105,8 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            Custom <span style={{ color: "#008ac1", fontWeight: 700 }}>web applications and SaaS platforms</span> engineered for multi-tenancy, subscription billing, and enterprise-grade scalability.
+                        <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl" style={{ color: "var(--secondary-text)" }}>
+                            Your trusted <span style={{ color: "#008ac1", fontWeight: 700 }}>SaaS development company</span> for building scalable, high-performance web applications. We specialize in <span style={{ color: "#008ac1", fontWeight: 700 }}>custom SaaS platform development</span>, <span style={{ color: "#008ac1", fontWeight: 700 }}>multi-tenant architectures</span>, and secure cloud solutions. From rapid <span style={{ color: "#008ac1", fontWeight: 700 }}>MVP development</span> to enterprise-grade systems, we engineer products that drive revenue and growth.
                         </p>
 
                         {/* Feature Highlights */}
@@ -118,7 +117,7 @@ export default function Hero() {
                                 }}
                             >
                                 <Layers className="w-5 h-5 flex-shrink-0" style={{ color: "#008ac1" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>
                                     Multi-Tenant
                                 </span>
                             </div>
@@ -128,7 +127,7 @@ export default function Hero() {
                                 }}
                             >
                                 <Database className="w-5 h-5 flex-shrink-0" style={{ color: "#008ac1" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>
                                     API-First
                                 </span>
                             </div>
@@ -189,24 +188,10 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    50+
+                                    $197B
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    SaaS Products Built
-                                </div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-2xl md:text-3xl font-bold mb-1"
-                                    style={{
-                                        background: "linear-gradient(90deg, #bc3feb, #008ac1)",
-                                        WebkitBackgroundClip: "text",
-                                        color: "transparent",
-                                    }}
-                                >
-                                    1M+
-                                </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    End Users Served
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
+                                    Global SaaS market by 2027
                                 </div>
                             </div>
                             <div className="text-center">
@@ -217,10 +202,24 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    99.9%
+                                    38%
+                                </div>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
+                                    Average SaaS gross margin
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
+                                    style={{
+                                        background: "linear-gradient(90deg, #bc3feb, #008ac1)",
+                                        WebkitBackgroundClip: "text",
+                                        color: "transparent",
+                                    }}
+                                >
+                                    5-7x
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Uptime SLA
+                                    ARR multiple for SaaS exits
                                 </div>
                             </div>
                         </div>

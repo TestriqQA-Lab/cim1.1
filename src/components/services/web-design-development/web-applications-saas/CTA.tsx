@@ -61,7 +61,7 @@ export default function CTA() {
 
                         {/* Description */}
                         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12" style={{ color: "var(--secondary-text)" }}>
-                            From MVP validation to enterprise scale, we've helped 50+ teams turn their product vision into production-ready software. Let's discuss your project.
+                            Transform Your Idea Into a Revenue-Generating Platform. Partner with a SaaS development company that's delivered 50+ successful SaaS products across fintech, healthcare, and e-commerce sectors.
                         </p>
 
                         {/* CTA Buttons */}
@@ -70,26 +70,26 @@ export default function CTA() {
                                 href="/contact"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                             >
-                                Develop Your SaaS Product
+                                Book Your Free SaaS Strategy Call
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
 
-                            <Link
-                                href="/contact"
+                            {/* <Link
+                                href="/case-studies"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold border transition-all duration-300"
                                 style={{
                                     borderColor: "var(--border-color)",
                                     color: "var(--foreground)",
                                 }}
                             >
-                                Book a Technical Discovery Call
+                                View Our SaaS Case Studies
                                 <ArrowRight className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                         </div>
 
                         {/* Bottom Text */}
                         <p className="mt-8" style={{ color: "var(--secondary-text)", fontSize: "0.95rem" }}>
-                            MVP timeline: 8-12 weeks. Full product: 3-6 months depending on scope.
+                            Or call us directly: +91 9004988859 / +91 7700995410 (Available 10 AM - 7 PM IST)
                         </p>
                     </div>
                 </div>

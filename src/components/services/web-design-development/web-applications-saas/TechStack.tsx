@@ -9,36 +9,36 @@ export default function TechStack() {
             category: "Frontend Frameworks",
             icon: Code2,
             items: [
-                { name: "React/Next.js", description: "SSR & static generation", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
-                { name: "Vue.js/Nuxt", description: "Progressive framework", logos: ["/images/techstack_logos/vuejs-logo.svg", "/images/techstack_logos/nuxt-logo.png"] },
-                { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
+                { name: "React/Next.js", description: "SSR & static generation for SEO", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: "Vue.js/Nuxt", description: "Progressive dashboard framework", logos: ["/images/techstack_logos/vuejs-logo.svg", "/images/techstack_logos/nuxt-logo.png"] },
+                { name: "Tailwind CSS", description: "Rapid UI development", logos: ["/images/techstack_logos/tailwindcss-logo.svg"] },
             ],
         },
         {
             category: "Backend & APIs",
             icon: Database,
             items: [
-                { name: "Node.js", description: "JavaScript runtime", logos: ["/images/techstack_logos/nodejs-logo.svg"] },
-                { name: "Python/FastAPI", description: "High-performance APIs", logos: ["/images/techstack_logos/python-logo.svg", "/images/techstack_logos/fastapi-logo.webp"] },
-                { name: "GraphQL", description: "Flexible data queries", logos: ["/images/techstack_logos/graphql-logo.svg"] },
+                { name: "Node.js (Express/NestJS)", description: "Event-driven architecture", logos: ["/images/techstack_logos/nodejs-logo.svg"] },
+                { name: "Python (FastAPI/Django)", description: "Data-intensive apps", logos: ["/images/techstack_logos/python-logo.svg", "/images/techstack_logos/fastapi-logo.webp"] },
+                { name: "PostgreSQL", description: "JSONB support & reliability", logos: ["/images/techstack_logos/postgresql-logo.svg"] },
             ],
         },
         {
             category: "Authentication & Security",
             icon: Shield,
             items: [
-                { name: "Auth0/Clerk", description: "Identity management", logos: ["/images/techstack_logos/auth0-logo.png", "/images/techstack_logos/clerk-logo.png"] },
-                { name: "OAuth 2.0 / SAML", description: "Enterprise SSO", logos: [] },
-                { name: "RBAC/ABAC", description: "Access control", logos: [] },
+                { name: "Auth0/Clerk", description: "Identity management with SSO", logos: ["/images/techstack_logos/auth0-logo.png", "/images/techstack_logos/clerk-logo.png"] },
+                { name: "OAuth 2.0 / SAML", description: "Federated authentication", logos: [] },
+                { name: "JWT Tokens", description: "Stateless session management", logos: [] },
             ],
         },
         {
             category: "Cloud Infrastructure",
             icon: Cloud,
             items: [
-                { name: "AWS/GCP/Azure", description: "Cloud platforms", logos: ["/images/techstack_logos/aws-logo.png", "/images/techstack_logos/googlecloud-logo.svg", "/images/techstack_logos/azure-logo.svg"] },
+                { name: "AWS/GCP/Azure", description: "Managed cloud services", logos: ["/images/techstack_logos/aws-logo.png", "/images/techstack_logos/googlecloud-logo.svg", "/images/techstack_logos/azure-logo.svg"] },
                 { name: "Vercel/Netlify", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-logo.webp", "/images/techstack_logos/netlify-logo.svg"] },
-                { name: "Docker/Kubernetes", description: "Container orchestration", logos: ["/images/techstack_logos/docker-logo.svg", "/images/techstack_logos/kubernetes-logo.svg"] },
+                { name: "Cloudflare", description: "CDN & DDoS protection", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
             ],
         },
         {
@@ -46,17 +46,17 @@ export default function TechStack() {
             icon: RefreshCw,
             items: [
                 { name: "GitHub Actions", description: "Automated workflows", logos: ["/images/techstack_logos/Github-actions-logo.png"] },
-                { name: "Terraform", description: "Infrastructure as code", logos: ["/images/techstack_logos/terraform-logo.webp"] },
-                { name: "Datadog/Sentry", description: "Monitoring & logging", logos: ["/images/techstack_logos/datadog-logo.webp", "/images/techstack_logos/sentry-logo.svg"] },
+                { name: "Terraform", description: "Infrastructure-as-code", logos: ["/images/techstack_logos/terraform-logo.webp"] },
+                { name: "Datadog/Sentry", description: "Monitoring & error tracking", logos: ["/images/techstack_logos/datadog-logo.webp", "/images/techstack_logos/sentry-logo.svg"] },
             ],
         },
         {
             category: "Integrations",
             icon: Puzzle,
             items: [
-                { name: "Stripe/Paddle", description: "Payment processing", logos: ["/images/techstack_logos/Stripe-logo.png", "/images/techstack_logos/paddle-logo.png"] },
-                { name: "SendGrid/Twilio", description: "Notifications", logos: ["/images/techstack_logos/SendGrid-logo.png", "/images/techstack_logos/twilio-icon.webp"] },
-                { name: "Segment/Mixpanel", description: "Product analytics", logos: ["/images/techstack_logos/Segment-logo.png", "/images/techstack_logos/mixpanel-logo.png"] },
+                { name: "Stripe/Paddle", description: "Subscription management", logos: ["/images/techstack_logos/Stripe-logo.png", "/images/techstack_logos/paddle-logo.png"] },
+                { name: "SendGrid/Twilio", description: "Transactional emails & SMS", logos: ["/images/techstack_logos/SendGrid-logo.png", "/images/techstack_logos/twilio-icon.webp"] },
+                { name: "Segment/Mixpanel", description: "User behavior tracking", logos: ["/images/techstack_logos/Segment-logo.png", "/images/techstack_logos/mixpanel-logo.png"] },
             ],
         },
     ];
