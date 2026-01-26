@@ -61,7 +61,7 @@ export default function CTA() {
 
                         {/* Description */}
                         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-12" style={{ color: "var(--secondary-text)" }}>
-                            Join 150+ brands that have increased their online revenue with our conversion-optimized e-commerce solutions. Get a free store audit today.
+                            Don't settle for a generic template. Partner with a global Ecommerce Agency that delivers quantifiable results.
                         </p>
 
                         {/* CTA Buttons */}
@@ -70,27 +70,10 @@ export default function CTA() {
                                 href="/contact"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                             >
-                                Launch Your Store
-                                <ArrowRight className="w-5 h-5" />
-                            </Link>
-
-                            <Link
-                                href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold border transition-all duration-300"
-                                style={{
-                                    borderColor: "var(--border-color)",
-                                    color: "var(--foreground)",
-                                }}
-                            >
-                                Get Free Store Audit
+                                Book Your Free Strategy Call Today
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
-
-                        {/* Bottom Text */}
-                        <p className="mt-8" style={{ color: "var(--secondary-text)", fontSize: "0.95rem" }}>
-                            Average time to launch: 6-12 weeks depending on complexity.
-                        </p>
                     </div>
                 </div>
 

@@ -19,7 +19,7 @@ export default function Process() {
             number: "01",
             icon: Search,
             title: "Commerce Strategy & Discovery",
-            description: "We analyze your products, target audience, competitive landscape, and revenue goals to define a commerce strategy that drives measurable results.",
+            description: "We audit your current setup and define KPIs, mapping out the full Customer Journey.",
             deliverables: [
                 { icon: TrendingUp, text: "Market analysis" },
                 { icon: Users, text: "Customer journey mapping" },
@@ -33,7 +33,7 @@ export default function Process() {
             number: "02",
             icon: Palette,
             title: "UX Design & Product Merchandising",
-            description: "Creating visually compelling product presentation with optimized category navigation, search functionality, and mobile-first checkout experiences.",
+            description: "Creating intuitive Digital Storefront designs that align with your brand identity.",
             deliverables: [
                 { icon: FileText, text: "Product page wireframes" },
                 { icon: Layout, text: "Collection layouts" },
@@ -47,7 +47,7 @@ export default function Process() {
             number: "03",
             icon: Code,
             title: "Platform Development",
-            description: "Building your store on the optimal platform-Shopify, WooCommerce, or custom headless-with payment gateways, inventory systems, and shipping integrations.",
+            description: "Coding your store on Shopify, Magento, BigCommerce, or custom stacks with clean, standards-compliant code.",
             deliverables: [
                 { icon: Settings, text: "Platform setup" },
                 { icon: CreditCard, text: "Payment integration" },
@@ -59,23 +59,37 @@ export default function Process() {
         },
         {
             number: "04",
+            icon: Zap, // Reuse Zap or import another if needed (Zap is imported)
+            title: "Integration & Migration",
+            description: "Seamless Ecommerce inventory management solutions and Ecommerce payment gateway integration.",
+            deliverables: [
+                { icon: Package, text: "Inventory Management" },
+                { icon: CreditCard, text: "Payment Gateway" },
+                { icon: FileText, text: "Data Migration" },
+                { icon: Settings, text: "CRM Integration" }
+            ],
+            color: "#ee6500", // New color slot or reused? I'll shift colors slightly
+            gradient: "from-[#ee6500] to-[#ff4d4d]", // Shift to red?
+        },
+        {
+            number: "05",
             icon: TestTube,
             title: "Testing & Quality Assurance",
-            description: "Comprehensive testing of purchase flows, payment processing, edge cases, and load testing to ensure flawless performance under peak traffic.",
+            description: "Rigorous testing for bugs, Ecommerce ADA compliance and accessibility, and security vulnerabilities, ensuring 95% bug-free launches.",
             deliverables: [
                 { icon: ShoppingCart, text: "Checkout testing" },
                 { icon: CheckCircle2, text: "Payment validation" },
                 { icon: TrendingUp, text: "Load testing" },
-                { icon: Smartphone, text: "Cross-device QA" }
+                { icon: Smartphone, text: "ADA Compliance" }
             ],
-            color: "#ee6500",
-            gradient: "from-[#ee6500] to-[#00efd6]",
+            color: "#ff4d4d", // Red
+            gradient: "from-[#ff4d4d] to-[#00efd6]",
         },
         {
-            number: "05",
+            number: "06",
             icon: Rocket,
             title: "Launch & Optimization",
-            description: "Coordinated launch with SEO configuration, analytics setup, and initial marketing integrations to capture early sales momentum.",
+            description: "Smooth go-live support followed by immediate monitoring and Ecommerce SEO and digital marketing services.",
             deliverables: [
                 { icon: Globe, text: "SEO setup" },
                 { icon: LineChart, text: "Analytics config" },
@@ -86,10 +100,10 @@ export default function Process() {
             gradient: "from-[#00efd6] to-[#00b5ca]",
         },
         {
-            number: "06",
+            number: "07",
             icon: BarChart3,
             title: "Growth & Iteration",
-            description: "Ongoing optimization with A/B testing, conversion analysis, and feature enhancements based on real customer behavior data.",
+            description: "Continuous improvement based on real user data and Omnichannel Retailing trends.",
             deliverables: [
                 { icon: Target, text: "A/B testing" },
                 { icon: LineChart, text: "Conversion reports" },
@@ -132,7 +146,7 @@ export default function Process() {
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        A conversion-focused methodology that prioritizes speed to market while building a foundation for long-term revenue growth.
+                        A Proven Agile Methodology for On-Time Delivery
                     </p>
 
                     <div

@@ -11,7 +11,7 @@ export default function SolutionTypes() {
         {
             icon: ShoppingBag,
             title: "B2C Online Stores",
-            description: "Direct-to-consumer retail experiences with stunning product presentation, seamless checkout, and post-purchase engagement automation.",
+            description: "Capture the consumer market with visually stunning, high-converting storefronts. As a leading Ecommerce website design company, we craft immersive brand experiences with Ecommerce product page optimization that showcases your catalog in its best light.",
             features: [
                 { icon: Package, text: "Product galleries" },
                 { icon: ShoppingCart, text: "Wishlist & favorites" },
@@ -24,7 +24,7 @@ export default function SolutionTypes() {
         {
             icon: Building2,
             title: "B2B E-commerce Platforms",
-            description: "Wholesale and trade portals with tiered pricing, quote systems, bulk ordering, and account management for business buyers.",
+            description: "Streamline your wholesale operations with sophisticated B2B ecommerce platform development. We enable complex features like tiered pricing, bulk ordering, and Custom API integrations for ecommerce stores (ERP/CRM) to automate your back-office workflows.",
             features: [
                 { icon: CreditCard, text: "Custom pricing tiers" },
                 { icon: Package, text: "Quote requests" },
@@ -37,7 +37,7 @@ export default function SolutionTypes() {
         {
             icon: Store,
             title: "Marketplace Solutions",
-            description: "Multi-vendor platforms connecting buyers with multiple sellers, featuring vendor dashboards, commission management, and unified checkout.",
+            description: "Launch your own Amazon-style platform. We build robust multi-vendor marketplaces with unified checkouts, vendor dashboards, and complex commission structures, positioning you as a central hub in your niche Ecommerce Ecosystem.",
             features: [
                 { icon: Users, text: "Vendor onboarding" },
                 { icon: CreditCard, text: "Split payments" },
@@ -50,7 +50,7 @@ export default function SolutionTypes() {
         {
             icon: RefreshCw,
             title: "Subscription Commerce",
-            description: "Recurring revenue models with flexible billing cycles, subscriber portals, and churn reduction tools for subscription-based products.",
+            description: "Build predictable revenue streams with Subscription-based ecommerce store setup. We integrate flexible billing engines and churn-reduction tools, ensuring seamless recurring payments and superior subscriber management.",
             features: [
                 { icon: RefreshCw, text: "Recurring billing" },
                 { icon: Package, text: "Skip/pause options" },
@@ -63,7 +63,7 @@ export default function SolutionTypes() {
         {
             icon: Layers,
             title: "Headless Commerce",
-            description: "API-first architectures separating frontend presentation from commerce backend, enabling omnichannel experiences and maximum flexibility.",
+            description: "Future-proof your business with Headless ecommerce development services. By decoupling the frontend from the backend, we deliver lightning-fast omnichannel experiences that let you sell anywhere - web, mobile, IoT, or voice.",
             features: [
                 { icon: Zap, text: "API-first design" },
                 { icon: Layers, text: "Custom frontends" },
@@ -103,7 +103,7 @@ export default function SolutionTypes() {
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        From single-brand D2C stores to complex multi-vendor marketplaces, we build commerce platforms tailored to your business model.
+                        End-to-End Development for Every Business Model
                     </p>
 
                     <div
@@ -257,7 +257,7 @@ export default function SolutionTypes() {
                 {/* Bottom CTA */}
                 <div className="text-center mt-16">
                     <p className="text-lg mb-6" style={{ color: "var(--secondary-text)" }}>
-                        Need a custom solution? We've got you covered.
+                        Need a specialized solution like Dropshipping store development and automation?
                     </p>
                     <Link
                         href="/contact"
@@ -266,7 +266,7 @@ export default function SolutionTypes() {
                             background: "linear-gradient(135deg, #00b5ca 0%, #00efd6 100%)",
                         }}
                     >
-                        Let's Discuss Your Project
+                        Let&apos;s Discuss Your Project
                     </Link>
                 </div>
             </div>

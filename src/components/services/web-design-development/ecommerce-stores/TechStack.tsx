@@ -10,6 +10,7 @@ export default function TechStack() {
             icon: ShoppingCart,
             items: [
                 { name: "Shopify Plus", description: "Enterprise e-commerce", logos: ["/images/techstack_logos/shopify-logo.png"] },
+                { name: "Magento (Adobe Commerce)", description: "Flexible open-source", logos: ["/images/techstack_logos/Magento-logo.svg"] },
                 { name: "WooCommerce", description: "WordPress commerce", logos: ["/images/techstack_logos/WooCommerce-logo.png"] },
                 { name: "BigCommerce", description: "Scalable SaaS platform", logos: ["/images/techstack_logos/bigcommerce-logo.png"] },
             ],
@@ -19,8 +20,10 @@ export default function TechStack() {
             icon: CreditCard,
             items: [
                 { name: "Stripe", description: "Global payments", logos: ["/images/techstack_logos/Stripe-logo.png"] },
-                { name: "PayPal Commerce", description: "Trusted checkout", logos: ["/images/techstack_logos/paypal-logo.png"] },
-                { name: "Klarna/Afterpay", description: "BNPL options", logos: ["/images/techstack_logos/Klarna-logo.jpg", "/images/techstack_logos/afterpay-logo.webp"] },
+                { name: "PayPal", description: "Trusted checkout", logos: ["/images/techstack_logos/paypal-logo.png"] },
+
+                { name: "Klarna", description: "Buy now, pay later", logos: ["/images/techstack_logos/Klarna-logo.jpg"] },
+                { name: "Square", description: "Modern POS & payments", logos: ["/images/techstack_logos/Square-logo.png"] },
             ],
         },
         {
@@ -28,8 +31,8 @@ export default function TechStack() {
             icon: Package,
             items: [
                 { name: "ShipStation", description: "Multi-carrier shipping", logos: ["/images/techstack_logos/ShipStation-logo.png"] },
-                { name: "ShipBob", description: "3PL fulfillment", logos: ["/images/techstack_logos/ShipBob-logo.png"] },
-                { name: "Returnly", description: "Returns management", logos: ["/images/techstack_logos/returnly-logo.svg"] },
+                { name: "Shippo", description: "Shipping API", logos: ["/images/techstack_logos/Shippo-logo.png"] },
+
             ],
         },
         {
@@ -38,7 +41,7 @@ export default function TechStack() {
             items: [
                 { name: "Google Analytics 4", description: "E-commerce tracking", logos: ["/images/techstack_logos/google-tag-manager-logo.svg"] },
                 { name: "Hotjar", description: "Behavior analytics", logos: ["/images/techstack_logos/Hotjar-logo.png"] },
-                { name: "Optimizely", description: "A/B testing", logos: ["/images/techstack_logos/Optimizely-logo.webp"] },
+
             ],
         },
         {
@@ -46,8 +49,8 @@ export default function TechStack() {
             icon: Mail,
             items: [
                 { name: "Klaviyo", description: "E-commerce email", logos: ["/images/techstack_logos/Klaviyo-logo.png"] },
-                { name: "Attentive", description: "SMS marketing", logos: ["/images/techstack_logos/Attentive-logo.png"] },
-                { name: "Yotpo", description: "Reviews & UGC", logos: ["/images/techstack_logos/Yotpo-Logo.png"] },
+                { name: "HubSpot", description: "CRM & marketing", logos: ["/images/ai_automation_logos/hubspot-logo.png"] },
+                { name: "Mailchimp", description: "Email marketing", logos: ["/images/ai_automation_logos/mailchimp-logo.svg"] },
             ],
         },
         {
@@ -55,8 +58,7 @@ export default function TechStack() {
             icon: Search,
             items: [
                 { name: "Algolia", description: "Instant search", logos: ["/images/techstack_logos/algolia-logo.webp"] },
-                { name: "Nosto", description: "Personalization", logos: ["/images/techstack_logos/nosto-logo.png"] },
-                { name: "Rebuy", description: "Smart recommendations", logos: ["/images/techstack_logos/rebuy-logo.webp"] },
+                { name: "Elasticsearch", description: "Distributed search", logos: ["/images/techstack_logos/Elasticsearch-logo.webp"] },
             ],
         },
     ];
@@ -70,11 +72,11 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "#00b5ca" }}>Commerce</span> Technology Stack
+                        <span style={{ color: "#00b5ca" }}>E-commerce</span> Technology Stack
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We integrate best-in-class e-commerce tools to create a seamless selling system from first click to delivery.
+                        We Master the Tools That Power Global Retail
                     </p>
 
                     <div
@@ -159,6 +161,6 @@ export default function TechStack() {
                     })}
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

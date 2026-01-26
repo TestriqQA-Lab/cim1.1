@@ -84,7 +84,8 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
+                        {/* Heading */}
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight mb-4">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -93,8 +94,8 @@ export default function Hero() {
                                     color: "transparent",
                                 }}
                             >
-                                Turn Browsers Into Buyers
-                            </span>
+                                E-commerce Website Development Services
+                            </span> That Scale Your Revenue
                         </h1>
 
                         {/* Underline */}
@@ -106,8 +107,8 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            Build a <span style={{ color: "#00b5ca", fontWeight: 700 }}>high-converting online store</span> engineered for revenue growth, seamless checkout experiences, and scalable commerce operations.
+                        <p className="text-lg md:text-xl mb-8" style={{ color: "var(--secondary-text)" }}>
+                            Expert E-commerce Development Company for Global Brands
                         </p>
 
                         {/* Feature Highlights */}
@@ -231,20 +232,20 @@ export default function Hero() {
                                 href="/contact"
                                 className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                             >
-                                Launch Your E-commerce Store
+                                Get Your Free Audit & Quote
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
-                            <Link
-                                href="/contact"
+                            {/* <Link
+                                href="/portfolio"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold border transition-all duration-300"
                                 style={{
                                     borderColor: "var(--border-color)",
                                     color: "var(--foreground)",
                                 }}
                             >
-                                Get a Free Audit
+                                View Our Portfolio
                                 <ArrowRight className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
 

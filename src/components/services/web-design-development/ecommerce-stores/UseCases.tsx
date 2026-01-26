@@ -58,7 +58,7 @@ export default function UseCases() {
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We've helped brands across industries launch and scale their e-commerce operations with industry-specific features and optimizations.
+                        Domain Expertise Across Verticals
                     </p>
 
                     <div

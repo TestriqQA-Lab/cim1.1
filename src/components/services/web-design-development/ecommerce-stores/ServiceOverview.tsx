@@ -41,42 +41,16 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            An <span style={{ color: "#00b5ca", fontWeight: 700 }}>e-commerce store</span> isn't just a product catalog-it's a sophisticated sales engine designed to guide shoppers from discovery to checkout with minimal friction and maximum conversion.
+                            In today’s hyper-competitive digital landscape, your online store is more than just a shop window - it’s the engine of your business growth. As a premier E-commerce development company, we specialize in building robust, high-performance storefronts that turn visitors into loyal customers. Our E-commerce Website Development Services are designed to solve complex scalability challenges for B2B, B2C, and D2C brands across the US, EU, and APAC regions.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            We build online stores that combine beautiful product presentation with proven conversion optimization techniques. Every element-from product pages to checkout flows-is engineered to reduce abandonment and increase average order value.
+                            Whether you need a Shopify store development and optimization partner or a custom Headless ecommerce development service, our team brings 15+ years of Experience to the table. We don&apos;t just write code; we engineer digital ecosystems using next-gen tech stacks like React, Next.js, and Node.js to ensure your site loads instantly and handles high-volume traffic with ease.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            Whether you're launching your first D2C brand or scaling an established retail operation, we create e-commerce experiences that turn casual browsers into repeat customers and brand advocates.
+                            We understand that Ecommerce Management Services require a blend of technical precision and marketing acumen. That’s why our solutions focus on Experience (UX) and Expertise (Technical SEO) to deliver measurable ROI. From Magento to Shopify migration services to B2B ecommerce platform development, we empower you to outperform global competitors with a store that is secure, compliant, and conversion-focused.
                         </p>
-
-                        <div className="pt-4">
-                            <h3 className="text-xl font-bold mb-4" style={{ color: "var(--foreground)" }}>
-                                The E-commerce Imperative
-                            </h3>
-                            <ul className="space-y-3">
-                                {[
-                                    "Global e-commerce sales reached $5.8 trillion in 2023",
-                                    "53% of mobile users abandon sites that take over 3 seconds to load",
-                                    "Cart abandonment rate averages 70%-optimization is critical",
-                                    "Personalized experiences increase revenue by up to 40%",
-                                ].map((item, idx) => (
-                                    <li key={idx} className="flex items-start gap-3">
-                                        <span
-                                            className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-white text-sm font-bold mt-0.5"
-                                            style={{
-                                                background: "linear-gradient(90deg, #00b5ca, #00efd6)",
-                                            }}
-                                        >
-                                            ✓
-                                        </span>
-                                        <span style={{ color: "var(--secondary-text)" }}>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
                     </div>
 
                     {/* Right Content - Key Differentiators */}
@@ -142,6 +116,6 @@ export default function ServiceOverview() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
