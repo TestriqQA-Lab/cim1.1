@@ -62,6 +62,7 @@ export default function CTA() {
                                 style={{
                                     background: "linear-gradient(135deg, #06b6d4, #0891b2)",
                                     WebkitBackgroundClip: "text",
+                                    color: "transparent",
                                 }}
                             >
                                 Dream Portfolio?
@@ -70,7 +71,7 @@ export default function CTA() {
 
                         {/* Description */}
                         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Let&apos;s create a portfolio that showcases your best work and helps you land your dream clients.
+                            Don't let another opportunity slip by. Your future clients and employers are googling you right now - what will they find? Take control of your digital destiny.
                         </p>
 
                         {/* CTA Buttons */}
@@ -83,7 +84,7 @@ export default function CTA() {
                                     boxShadow: "0 8px 20px -4px rgba(6, 182, 212, 0.4)",
                                 }}
                             >
-                                <span style={{ color: "inherit" }}>Start Your Project</span>
+                                <span style={{ color: "inherit" }}>Book Your Free Brand Audit</span>
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
@@ -94,7 +95,7 @@ export default function CTA() {
                                     color: "#06b6d4",
                                 }}
                             >
-                                Schedule a Call
+                                Create a Legacy
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
@@ -104,15 +105,15 @@ export default function CTA() {
                             <div className="flex flex-wrap justify-center gap-6 text-sm" style={{ color: "var(--secondary-text)" }}>
                                 <span className="flex items-center gap-2">
                                     <div className="w-2 h-2 rounded-full bg-green-500" />
-                                    Free Consultation
+                                    Build Your Brand
                                 </span>
                                 <span className="flex items-center gap-2">
                                     <div className="w-2 h-2 rounded-full bg-cyan-500" />
-                                    Custom Designs
+                                    Own Your Future
                                 </span>
                                 <span className="flex items-center gap-2">
                                     <div className="w-2 h-2 rounded-full bg-teal-500" />
-                                    Lifetime Updates
+                                    World's Leading Agency
                                 </span>
                             </div>
                         </div>

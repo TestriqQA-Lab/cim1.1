@@ -10,38 +10,38 @@ export default function ServiceOverview() {
         {
             icon: ImageIcon,
             title: "Project Galleries",
-            description: "Stunning visual galleries that showcase your best work with filterable categories and lightbox views.",
-            details: ["Grid layouts", "Masonry style", "Lightbox popups", "Category filters"]
+            description: "Transform your work into a visual masterpiece. We build custom portfolio websites for creative professionals that utilize advanced grid layouts, masonry styles, and immersive lightbox features.",
+            details: ["Advanced grid layouts", "Masonry styles", "Immersive lightbox", "High fidelity display"]
         },
         {
             icon: Layout,
             title: "Case Studies",
-            description: "In-depth project breakdowns that demonstrate your process, skills, and the results you deliver.",
-            details: ["Problem & solution", "Process showcase", "Results & metrics", "Client testimonials"]
+            description: "Move beyond simple screenshots. Our innovative portfolio developement for job seekers and consultants includes deep-dive case study modules using the STAR method.",
+            details: ["Deep-dive modules", "STAR method structure", "Impact visualization", "Trust equation solving"]
         },
         {
             icon: Sparkles,
             title: "Personal Branding",
-            description: "Custom designs that reflect your unique personality and professional identity.",
-            details: ["Custom typography", "Color schemes", "Logo integration", "Consistent styling"]
+            description: "Your brand is your promise. We align your visual identity with your career trajectory, from color psychology to typography selection, ensuring you look the part.",
+            details: ["Career trajectory alignment", "Color psychology", "Visual identity", "Resonant typography"]
         },
         {
             icon: Users,
             title: "About & Bio",
-            description: "Compelling about sections that tell your story and build connection with visitors.",
-            details: ["Professional bio", "Skills showcase", "Experience timeline", "Certifications"]
+            description: "People buy from people. We specialize in professional bio writing and branding services that humanize your digital presence and foster genuine connection.",
+            details: ["Professional bio writing", "Authentic storytelling", "Personal journey", "Humanized presence"]
         },
         {
             icon: Award,
             title: "Testimonials",
-            description: "Social proof sections that build trust and credibility with potential clients.",
-            details: ["Client quotes", "Star ratings", "Video testimonials", "Logo showcase"]
+            description: "Social proof is non-negotiable. We integrate dynamic testimonial sections and Knowledge Panel Optimization signals that validate your expertise.",
+            details: ["Dynamic testimonials", "Knowledge Panel Optimization", "Real feedback", "Professional credibility"]
         },
         {
             icon: Globe,
             title: "Contact Integration",
-            description: "Easy ways for potential clients to reach you and start the conversation.",
-            details: ["Contact forms", "Calendar booking", "Social links", "Email integration"]
+            description: "Turn traffic into conversations. Our personal website SEO and visibility optimization includes strategic CTA placement and seamless contact forms.",
+            details: ["Strategic CTA placement", "Seamless contact forms", "Calendar booking", "Effortless inquiry"]
         }
     ];
 

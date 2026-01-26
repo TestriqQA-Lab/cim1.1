@@ -8,27 +8,27 @@ export default function WhyChooseUs() {
         {
             icon: Palette,
             title: "Design Excellence",
-            description: "Award-winning designs that make your portfolio stand out and leave lasting impressions."
+            description: "We don't use cookie-cutter templates. Our interactive portfolio features are bespoke, award-winning creations. We focus on \"wow\" moments - micro-interactions, smooth scroll effects, and unique layouts - that keep users engaged and impressed."
         },
         {
             icon: Eye,
             title: "Conversion Focused",
-            description: "Strategic layouts designed to turn portfolio visitors into paying clients."
+            description: "A pretty site that doesn't convert is a vanity project. We apply personal brand growth principles to guide visitors toward hiring you."
         },
         {
             icon: Zap,
             title: "Fast Performance",
-            description: "Optimized for speed with instant page loads and smooth animations."
+            description: "Speed is a feature. In the era of Core Web Vitals, we optimize images and leverage global CDNs to ensure instant loads."
         },
         {
             icon: Award,
             title: "SEO Optimized",
-            description: "Built with SEO best practices so clients can find you in search results."
+            description: "Get found by the people who matter. We optimize for Contextual Modifiers and long-tail queries like \"Personal branding for entrepreneurs\"."
         },
         {
             icon: Shield,
             title: "Future-Proof",
-            description: "Modern tech stack that ensures your portfolio stays relevant for years."
+            description: "We build with modern frameworks like Next.js allowing easy updates and features like Video portfolio development as the web evolves."
         }
     ];
 

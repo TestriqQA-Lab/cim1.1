@@ -7,38 +7,38 @@ export default function Process() {
         {
             icon: MessageSquare,
             title: "Discovery Call",
-            description: "We learn about your work, goals, and what makes you unique in your field.",
-            details: ["Work review", "Goal setting", "Brand discovery", "Competitor analysis"]
+            description: "We conduct a deep-dive interview to understand your unique value proposition, target audience, and career goals.",
+            details: ["Deep-dive interview", "Value proposition", "Target audience", "Roadmap definition"]
         },
         {
             icon: Palette,
             title: "Design Concepts",
-            description: "Creating visual concepts that capture your personality and showcase your work beautifully.",
-            details: ["Mood boards", "Layout options", "Color palettes", "Typography"]
+            description: "We translate your personality into pixels. Rapid prototyping with mood boards and wireframes capturing your personal brand.",
+            details: ["Personality to pixels", "Rapid prototyping", "Mood boards", "Brand storytelling"]
         },
         {
             icon: Code2,
             title: "Development",
-            description: "Building your portfolio with modern tech for fast performance and smooth interactions.",
-            details: ["Responsive build", "Animations", "Gallery system", "Contact forms"]
+            description: "Code meets creativity. bringing designs to life with clean, semantic code ensuring full responsiveness across all devices.",
+            details: ["Clean semantic code", "Full responsiveness", "4K to mobile", "Creativity implementation"]
         },
         {
             icon: Rocket,
             title: "Content Setup",
-            description: "Helping you organize and upload your projects, case studies, and testimonials.",
-            details: ["Project upload", "Image optimization", "SEO setup", "Copy refinement"]
+            description: "Content is king. We assist with LinkedIn profile optimization ensuring cohesive cross-channel narrative.",
+            details: ["Content assistance", "LinkedIn optimization", "Cohesive narrative", "Cross-channel sync"]
         },
         {
             icon: Settings,
             title: "Review & Launch",
-            description: "Final polish and testing before your portfolio goes live to the world.",
-            details: ["QA testing", "Browser checks", "Speed optimization", "Launch day"]
+            description: "Prioritizing perfection. Rigorous QA testing across browsers/devices and load time checks before flipping the switch.",
+            details: ["Rigorous QA", "Browser testing", "Load time checks", "Feature verification"]
         },
         {
             icon: HeartHandshake,
             title: "Ongoing Support",
-            description: "Continued partnership to keep your portfolio updated and performing well.",
-            details: ["Content updates", "Technical support", "Analytics review", "Improvements"]
+            description: "We're in it for the long haul. Personal portfolio hosting and maintenance solutions to keep your content fresh and secure.",
+            details: ["Hosting solutions", "Maintenance", "Fresh content", "Security updates"]
         }
     ];
 

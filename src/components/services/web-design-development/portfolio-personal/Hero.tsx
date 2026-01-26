@@ -84,11 +84,11 @@ export default function Hero() {
                             }}
                         >
                             <Palette className="w-4 h-4" style={{ color: "#06b6d4" }} />
-                            <span className="text-sm font-semibold">Portfolio & Personal Websites</span>
+                            <span className="text-sm font-semibold">Personal Branding Services & Custom Portfolio Website Design</span>
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 animate-slideUp">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 animate-slideUp leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -97,10 +97,10 @@ export default function Hero() {
                                     color: "transparent",
                                 }}
                             >
-                                Showcase Your Work
+                                Build Your Brand 2026
                             </span>
                             <br />
-                            <span style={{ color: "var(--foreground)" }}>Stand Out From The Crowd</span>
+                            <span style={{ color: "var(--foreground)" }}>Is your digital footprint working as hard as you do?</span>
                         </h1>
 
                         {/* Underline */}
@@ -112,8 +112,11 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8 animate-fadeIn" style={{ color: "var(--secondary-text)", animationDelay: "0.2s" }}>
-                            Create a <span style={{ color: "#06b6d4", fontWeight: 700 }}>stunning portfolio</span> that highlights your best work, tells your story, and attracts dream clients.
+                        <p className="text-lg md:text-xl mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.2s" }}>
+                            In the competitive landscape of 2026, a generic resume isn't enough. You need a powerful, automated 24/7 <span style={{ color: "#06b6d4", fontWeight: 700 }}>personal branding engine</span>.
+                        </p>
+                        <p className="text-base md:text-lg mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.3s" }}>
+                            As a premier online reputation management agency and website design services provider, we specialize in crafting high-impact digital narratives for global leaders. We don't just build websites; we engineer Personal Branding Services that position you as an undisputed authority in your niche.
                         </p>
 
                         {/* Feature Highlights */}
@@ -126,7 +129,7 @@ export default function Hero() {
                             >
                                 <ImageIcon className="w-5 h-5 flex-shrink-0" style={{ color: "#06b6d4" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Visual Showcase
+                                    Aesthetic Excellence
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -137,7 +140,7 @@ export default function Hero() {
                             >
                                 <Award className="w-5 h-5 flex-shrink-0" style={{ color: "#06b6d4" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Case Studies
+                                    E-E-A-T Principles
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -148,7 +151,7 @@ export default function Hero() {
                             >
                                 <Star className="w-5 h-5 flex-shrink-0" style={{ color: "#06b6d4" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Testimonials
+                                    Thought Leadership
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -159,7 +162,7 @@ export default function Hero() {
                             >
                                 <Briefcase className="w-5 h-5 flex-shrink-0" style={{ color: "#06b6d4" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Professional Bio
+                                    Entity SEO
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -170,7 +173,7 @@ export default function Hero() {
                             >
                                 <Users className="w-5 h-5 flex-shrink-0" style={{ color: "#06b6d4" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Client Attraction
+                                    Transitive Trust
                                 </span>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
@@ -181,7 +184,7 @@ export default function Hero() {
                             >
                                 <Eye className="w-5 h-5 flex-shrink-0" style={{ color: "#06b6d4" }} />
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Stunning Visuals
+                                    Next.js / React
                                 </span>
                             </div>
                         </div>
@@ -248,7 +251,7 @@ export default function Hero() {
                                     boxShadow: "0 8px 20px -4px rgba(6, 182, 212, 0.4)",
                                 }}
                             >
-                                Build Your Portfolio
+                                Control Your Narrative
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
