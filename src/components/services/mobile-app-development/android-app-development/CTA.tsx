@@ -60,13 +60,12 @@ export default function CTA() {
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                                Ready to Build Your{" "}
-                                <span className="text-[#073042]">Android App?</span>
+                                Ready to Dominate the{" "}
+                                <span className="text-[#073042]">Android Market?</span>
                             </h2>
 
                             <p className="text-lg text-white/80 mb-8 max-w-xl">
-                                Let&apos;s discuss your app idea and create something extraordinary for the Play Store.
-                                Our Android experts are ready to bring your vision to life.
+                                Don&apos;t settle for average. Partner with the agency that defines <strong>Android excellence</strong>.
                             </p>
 
                             {/* Benefits */}
@@ -85,7 +84,7 @@ export default function CTA() {
                                     href="/contact"
                                     className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#3DDC84] rounded-full font-semibold transition-all hover:shadow-lg hover:scale-105"
                                 >
-                                    Get Free Consultation
+                                    Let&apos;s discuss your project today!
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Link>
 
@@ -101,7 +100,7 @@ export default function CTA() {
                         {/* Right Stats */}
                         <div className="grid grid-cols-2 gap-3 sm:gap-6">
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">180+</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">300+</div>
                                 <div className="text-xs sm:text-sm text-white/70">Android Apps Delivered</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
@@ -109,12 +108,12 @@ export default function CTA() {
                                 <div className="text-xs sm:text-sm text-white/70">Play Store Rating</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">97%</div>
-                                <div className="text-xs sm:text-sm text-white/70">First Submit Approval</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">99.9%</div>
+                                <div className="text-xs sm:text-sm text-white/70">Crash-Free Impact</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">50M+</div>
-                                <div className="text-xs sm:text-sm text-white/70">Total Downloads</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">50+</div>
+                                <div className="text-xs sm:text-sm text-white/70">Certified Developers</div>
                             </div>
                         </div>
                     </div>

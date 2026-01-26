@@ -91,10 +91,10 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Build Powerful{" "}
+                            Premier{" "}
                             <span
                                 className="relative inline-block"
                                 style={{
@@ -103,7 +103,7 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Android Apps
+                                Android App Development
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: "#78C257" }}
@@ -113,20 +113,21 @@ export default function Hero() {
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
                                 </svg>
                             </span>{" "}
-                            for Every Device
+                            Services Driving Global Business Growth
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Native Android app development with Kotlin and Jetpack. We build high-performance, Play Store-ready applications that reach billions of users.
+                            As a world-class <strong>Android app development company</strong> with over a decade of mastery in the mobile ecosystem, we engineer scalable, high-performance solutions that redefine digital experiences.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Kotlin & Java",
-                                "Play Store Optimized",
-                                "Material Design 3",
-                                "Native Performance",
+                                "95% Bug-Free Codebase",
+                                "40% Faster Delivery",
+                                "300% Traffic Growth",
+                                "Enterprise-Grade Security",
+                                "24/7 Global Support",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -152,38 +153,28 @@ export default function Hero() {
                                     boxShadow: "0 4px 20px rgba(61, 220, 132, 0.25)",
                                 }}
                             >
-                                Start Your Android Project
+                                Book Free Consultation Now
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
-                            <Link
-                                href="#process"
-                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border transition-all hover:bg-accent"
-                                style={{
-                                    borderColor: "var(--border-color)",
-                                    color: "var(--foreground)",
-                                    backgroundColor: "var(--card-bg)",
-                                }}
-                            >
-                                Our Process
-                            </Link>
+
                         </div>
 
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>180+</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>300+</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Android Apps Delivered</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>4.7★</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. Play Store Rating</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>99.9%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Crash-Free Impact</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>50M+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>App Downloads</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>50+</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Certified Developers</p>
                             </div>
                         </div>
                     </div>

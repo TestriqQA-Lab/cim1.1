@@ -17,43 +17,43 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Zap,
-            title: "Native Performance",
-            description: "Pure Kotlin and Jetpack development ensures your app runs at peak performance with smooth 60fps animations and instant responsiveness.",
+            title: "Native Performance Mastery",
+            description: "We squeeze every ounce of performance from the hardware. Our native Android development ensures instant startup times and buttery smooth animations that hybrid apps can't match.",
             gradient: "from-[#3DDC84] to-[#78C257]",
             shadowColor: "rgba(61, 220, 132, 0.3)",
         },
         {
             icon: Shield,
-            title: "Material Design Expertise",
-            description: "Deep understanding of Material Design 3 and Play Store requirements ensures beautiful, consistent user experiences.",
+            title: "Material Design Guidelines Expert",
+            description: "Our UI/UX team are purists of Google's design language, ensuring your app feels at home on any Android device while maintaining your unique brand identity.",
             gradient: "from-[#78C257] to-[#3DDC84]",
             shadowColor: "rgba(120, 194, 87, 0.3)",
         },
         {
             icon: Award,
-            title: "Play Store Success",
-            description: "Our apps consistently achieve high ratings and featured placements on the Play Store with proven ASO strategies.",
+            title: "Android App Security and Data Privacy",
+            description: "Security is developed in, not bolted on. We implement ProGuard, R8 shrinking, and strict permission handling to protect user data and IP.",
             gradient: "from-[#073042] to-[#3DDC84]",
             shadowColor: "rgba(7, 48, 66, 0.3)",
         },
         {
             icon: HeartHandshake,
-            title: "Dedicated Android Team",
-            description: "Work with a team of certified Android developers who live and breathe Google technologies and best practices.",
+            title: "Dedicated Android Developers",
+            description: "Hire a team that lives in Android Studio. Our developers are active contributors to the GitHub community and stay ahead of the curve with Android App Bundles (AAB) and Jetpack Compose.",
             gradient: "from-[#3DDC84] to-[#073042]",
             shadowColor: "rgba(61, 220, 132, 0.3)",
         },
         {
             icon: Users,
-            title: "Billions of Users Reach",
-            description: "Proven track record building Android apps that reach the 3+ billion active Android devices worldwide.",
+            title: "Global Reach, Local Feel",
+            description: "With multilingual hreflang potential capabilities, we localize your app for 18,000+ device models across 190 countries.",
             gradient: "from-[#78C257] to-[#073042]",
             shadowColor: "rgba(120, 194, 87, 0.3)",
         },
         {
             icon: Clock,
-            title: "Ongoing Support",
-            description: "Comprehensive post-launch support with regular updates, Android version compatibility, and feature enhancements.",
+            title: "Transparent & Agile",
+            description: "Zero hidden costs. You get access to Jira/Trello boards for real-time progress tracking and weekly sprint demos.",
             gradient: "from-[#073042] to-[#78C257]",
             shadowColor: "rgba(7, 48, 66, 0.3)",
         },
@@ -94,7 +94,7 @@ export default function WhyChooseUs() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Why Choose Us for</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>The Cinute Infomedia</span>{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #3DDC84, #78C257)",
@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Android Development
+                            Advantage
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>

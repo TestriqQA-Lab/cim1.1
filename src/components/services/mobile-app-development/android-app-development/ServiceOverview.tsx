@@ -17,42 +17,42 @@ export default function ServiceOverview() {
         {
             icon: Smartphone,
             title: "Android Phone Apps",
-            description: "Native Android applications with stunning UI, smooth animations, and optimal performance for all Android devices.",
+            description: "Custom native Android apps built with Kotlin and Java that leverage device-specific features like cameras, GPS, and sensors. We ensure silky smooth 120Hz scrolling and instant load times.",
             gradient: "from-[#3DDC84] to-[#78C257]",
             shadowColor: "rgba(61, 220, 132, 0.4)",
         },
         {
             icon: Tablet,
             title: "Android Tablet Apps",
-            description: "Tablet-optimized experiences with responsive layouts, multi-window support, and large-screen optimizations.",
+            description: "Optimized for larger screens, our tablet applications utilize adaptive layouts and multi-window support to boost productivity for enterprise and education sectors.",
             gradient: "from-[#78C257] to-[#3DDC84]",
             shadowColor: "rgba(120, 194, 87, 0.4)",
         },
         {
             icon: Watch,
             title: "Wear OS Apps",
-            description: "Companion smartwatch apps with health tracking, notifications, and quick actions for Android wearables.",
+            description: "Extend your reach with wearable Android app development. We create companion apps for health tracking, notifications, and quick actions on Pixel Watch and Galaxy Watch.",
             gradient: "from-[#073042] to-[#3DDC84]",
             shadowColor: "rgba(7, 48, 66, 0.4)",
         },
         {
             icon: Tv,
-            title: "Android TV Apps",
-            description: "Living room experiences with Leanback library, voice control, and streaming capabilities for Android TV.",
+            title: "Android TV and OTT Apps",
+            description: "Capture the living room with immersive Android TV app development solutions. We build streaming platforms using the Leanback library for intuitive remote-control navigation.",
             gradient: "from-[#3DDC84] to-[#073042]",
             shadowColor: "rgba(61, 220, 132, 0.4)",
         },
         {
             icon: Car,
             title: "Android Auto Apps",
-            description: "Safe driving experiences with Android Auto integration, voice commands, and vehicle-optimized interfaces.",
+            description: "Drive engagement with safe, voice-enabled driver experiences. Our apps integrate seamlessly with vehicle infotainment systems for tailored media and navigation.",
             gradient: "from-[#78C257] to-[#073042]",
             shadowColor: "rgba(120, 194, 87, 0.4)",
         },
         {
             icon: Sparkles,
-            title: "Play Store Optimization",
-            description: "Strategic ASO to maximize visibility, downloads, and ratings on the Google Play Store.",
+            title: "App Store Optimization (ASO)",
+            description: "Our data-driven ASO services ensure your app ranks #1 for high-intent keywords. We optimize titles, descriptions, and visuals significantly improving organic downloads.",
             gradient: "from-[#073042] to-[#78C257]",
             shadowColor: "rgba(7, 48, 66, 0.4)",
         },
@@ -102,7 +102,7 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Complete{" "}
+                        Build Powerful{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #3DDC84, #78C257)",
@@ -110,15 +110,15 @@ export default function ServiceOverview() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Android Ecosystem
+                            Android Apps
                         </span>{" "}
-                        Development
+                        for Every Device
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        From phones to wearables, we build native apps across the entire Android ecosystem.
+                        We go beyond smartphones to deliver multi-device compatibility across the entire Google ecosystem.
                     </p>
                 </div>
 

@@ -17,68 +17,81 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Discovery & Planning",
-            description: "We analyze your requirements, research the market, and create a comprehensive roadmap for your Android app.",
+            title: "Discovery & Strategy",
+            description: "We analyze your market, define user personas, and select the best tech stack (Native vs. Flutter/React Native).",
             details: [
-                "Requirements gathering & analysis",
-                "Competitor & market research",
-                "User persona development",
-                "Technical feasibility assessment",
-                "Project timeline & milestones",
+                "Technical Specification Document (TSD)",
+                "Market analysis",
+                "User persona definition",
+                "Tech stack selection",
+                "Project roadmap",
             ],
             duration: "1-2 Weeks",
         },
         {
             icon: Palette,
             title: "UI/UX Design",
-            description: "Our designers create stunning interfaces following Material Design 3 guidelines for an exceptional user experience.",
+            description: "Award-winning designs following Material Design 3 principles. We create intuitive wireframes and interactive prototypes.",
             details: [
-                "Wireframing & prototyping",
-                "Visual design in Figma",
                 "Material Design 3 compliance",
                 "Interactive prototypes",
-                "Design system creation",
+                "Figma & Adobe XD",
+                "User journey mapping",
+                "Accessibility focus",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Code,
             title: "Development",
-            description: "Expert Android developers build your app using Kotlin and Jetpack with clean, maintainable code architecture.",
+            description: "Clean, documented coding using MVVM/Clean Architecture. We focus on Kotlin-first development for safety and conciseness.",
             details: [
-                "Native Kotlin development",
-                "MVVM architecture pattern",
-                "Jetpack Compose UI",
-                "API integration & backends",
-                "Continuous integration setup",
+                "Kotlin-first development",
+                "MVVM/Clean Architecture",
+                "Jetpack Libraries",
+                "Secure API integration",
+                "Coroutines for async tasks",
             ],
             duration: "6-12 Weeks",
         },
         {
             icon: TestTube2,
-            title: "Testing & QA",
-            description: "Rigorous testing across devices and Android versions to ensure a bug-free, high-performance application.",
+            title: "Testing & Quality Assurance",
+            description: "Rigorous Android app testing services across 50+ real devices. We test for battery drain, memory leaks, and network volatility.",
             details: [
-                "Unit & integration testing",
-                "UI automation with Espresso",
-                "Performance profiling",
-                "Device compatibility testing",
-                "Beta testing via Play Console",
+                "<1% crash rate post-launch",
+                "Battery drain analysis",
+                "Memory leak detection",
+                "Network volatility tests",
+                "50+ real devices testing",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Rocket,
-            title: "Play Store Launch",
-            description: "We handle the entire Play Store submission process, from metadata optimization to approval.",
+            title: "Deployment & ASO",
+            description: "We handle the complex Google Play Console submission process, ensuring unmatched Google Play Store publish success rates.",
             details: [
-                "Play Console setup",
-                "Metadata & screenshots",
-                "Play Store Optimization (ASO)",
-                "Review submission",
-                "Post-launch monitoring",
+                "Google Play Console submission",
+                "ASO optimization",
+                "Metadata preparation",
+                "Release build management",
+                "Compliance check",
             ],
             duration: "1-2 Weeks",
+        },
+        {
+            icon: CheckCircle2,
+            title: "Maintenance & Support",
+            description: "Ongoing Android app maintenance and support services including OS updates, security patches, and Android app performance optimization.",
+            details: [
+                "OS updates support",
+                "Security patches",
+                "Performance optimization",
+                "Feature enhancements",
+                "24/7 monitoring",
+            ],
+            duration: "Ongoing",
         },
     ];
 
@@ -102,7 +115,7 @@ export default function Process() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Our Android</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>6-Step Agile</span>{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #3DDC84, #78C257)",
@@ -110,11 +123,11 @@ export default function Process() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Development Process
+                            Methodology for Perfection
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A proven methodology that ensures your Android app is delivered on time, on budget, and exceeds expectations.
+                        A proven 6-step agile methodology that ensures your Android app is delivered on time, on budget, and exceeds expectations.
                     </p>
                 </div>
 
