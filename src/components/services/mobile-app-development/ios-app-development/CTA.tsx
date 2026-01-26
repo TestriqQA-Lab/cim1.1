@@ -64,8 +64,7 @@ export default function CTA() {
                             </h2>
 
                             <p className="text-lg text-white/80 mb-8 max-w-xl">
-                                Let&apos;s discuss your app idea and create something extraordinary for the App Store.
-                                Our iOS experts are ready to bring your vision to life.
+                                Don&apos;t settle for average. Partner with an iOS App Development Company that understands the art and science of mobile success.
                             </p>
 
                             {/* Benefits */}
@@ -84,7 +83,7 @@ export default function CTA() {
                                     href="/contact"
                                     className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#007AFF] rounded-full font-semibold transition-all hover:shadow-lg hover:scale-105"
                                 >
-                                    Get Free Consultation
+                                    Book Free Audit Today
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Link>
 

@@ -17,45 +17,31 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Zap,
-            title: "Native Performance",
-            description: "Pure Swift and SwiftUI development ensures your app runs at peak performance with smooth 60fps animations and instant responsiveness.",
+            title: "Native Performance First",
+            description: "We prioritize native technologies. Hybrid to native iOS app conversion services are a specialty. We help clients migrate from sluggish cross-platform apps.",
             gradient: "from-[#007AFF] to-[#5AC8FA]",
             shadowColor: "rgba(0, 122, 255, 0.3)",
         },
         {
             icon: Shield,
             title: "Apple Guidelines Expertise",
-            description: "Deep understanding of Human Interface Guidelines and App Store requirements ensures approval on first submission.",
+            description: "Rejection is not an option. Our deep knowledge of the Apple Developer Program and review guidelines ensures faster time-to-market.",
             gradient: "from-[#5AC8FA] to-[#007AFF]",
             shadowColor: "rgba(90, 200, 250, 0.3)",
         },
         {
-            icon: Award,
-            title: "App Store Success",
-            description: "Our apps consistently achieve high ratings and featured placements on the App Store with proven ASO strategies.",
-            gradient: "from-[#0055D4] to-[#007AFF]",
-            shadowColor: "rgba(0, 85, 212, 0.3)",
-        },
-        {
             icon: HeartHandshake,
             title: "Dedicated iOS Team",
-            description: "Work with a team of certified iOS developers who live and breathe Apple technologies and best practices.",
+            description: "Hire a team that lives and breathes mobile. Our developers are certified experts in Custom API integration, Push Notifications, and On-device Intelligence.",
             gradient: "from-[#007AFF] to-[#0055D4]",
             shadowColor: "rgba(0, 122, 255, 0.3)",
         },
         {
             icon: Users,
             title: "Enterprise Experience",
-            description: "Proven track record building iOS apps for startups to enterprises with millions of users worldwide.",
+            description: "We have scaled apps to millions of users. From iOS app migration to legacy code modernization, we handle enterprise-grade loads.",
             gradient: "from-[#5AC8FA] to-[#0055D4]",
             shadowColor: "rgba(90, 200, 250, 0.3)",
-        },
-        {
-            icon: Clock,
-            title: "Ongoing Support",
-            description: "Comprehensive post-launch support with regular updates, iOS version compatibility, and feature enhancements.",
-            gradient: "from-[#0055D4] to-[#5AC8FA]",
-            shadowColor: "rgba(0, 85, 212, 0.3)",
         },
     ];
 
@@ -106,7 +92,7 @@ export default function WhyChooseUs() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Partner with iOS specialists who understand the Apple ecosystem inside and out.
+                        Expertise that delivers measurable ROI.
                     </p>
                 </div>
 

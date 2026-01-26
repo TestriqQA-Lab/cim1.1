@@ -17,42 +17,42 @@ export default function ServiceOverview() {
         {
             icon: Smartphone,
             title: "iPhone App Development",
-            description: "Native iPhone applications with stunning UI, smooth animations, and optimal performance for all iPhone models.",
+            description: "We engineer Custom iPhone app development for startups and Fortune 500s alike. Our apps harness the latest iOS features, ensuring compatibility across all devices.",
             gradient: "from-[#007AFF] to-[#5AC8FA]",
             shadowColor: "rgba(0, 122, 255, 0.4)",
         },
         {
             icon: Tablet,
             title: "iPad App Development",
-            description: "Tablet-optimized experiences with multitasking support, Split View, and adaptive layouts for iPad.",
+            description: "Maximize productivity with iPad application development for enterprise use. We design adaptive, multi-column layouts perfect for POS systems and dashboards.",
             gradient: "from-[#5AC8FA] to-[#007AFF]",
             shadowColor: "rgba(90, 200, 250, 0.4)",
         },
         {
             icon: Watch,
             title: "Apple Watch Apps",
-            description: "Companion watchOS apps with complications, health kit integration, and quick glances.",
+            description: "Extend your reach to the wrist. Our Apple Watch and watchOS app development creates glanceable, actionable experiences for health and connectivity.",
             gradient: "from-[#0055D4] to-[#007AFF]",
             shadowColor: "rgba(0, 85, 212, 0.4)",
         },
         {
             icon: Tv,
             title: "Apple TV Apps",
-            description: "tvOS applications with immersive experiences, focus-driven navigation, and streaming capabilities.",
+            description: "Dominate the living room with immersive tvOS experiences. We build streaming apps and interactive platforms that leverage the Siri Remote.",
             gradient: "from-[#007AFF] to-[#0055D4]",
             shadowColor: "rgba(0, 122, 255, 0.4)",
         },
         {
             icon: Cloud,
             title: "iCloud Integration",
-            description: "Seamless data sync across devices with CloudKit, iCloud Drive, and real-time collaboration features.",
+            description: "Enable seamless continuity. We implement iOS app cloud integration and backend development using CloudKit with real-time data synchronization.",
             gradient: "from-[#5AC8FA] to-[#0055D4]",
             shadowColor: "rgba(90, 200, 250, 0.4)",
         },
         {
             icon: Sparkles,
-            title: "App Store Optimization",
-            description: "Strategic ASO to maximize visibility, downloads, and ratings on the App Store.",
+            title: "App Store Optimization (ASO)",
+            description: "Visibility is key. Our App Store Optimization (ASO) for iOS apps ensures your product gets found, optimizing visuals and descriptions.",
             gradient: "from-[#0055D4] to-[#5AC8FA]",
             shadowColor: "rgba(0, 85, 212, 0.4)",
         },
@@ -118,7 +118,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        From iPhone to Apple Watch, we build native apps across the entire Apple ecosystem.
+                        Unlock the full potential of Apple&apos;s hardware and software integration.
                     </p>
                 </div>
 

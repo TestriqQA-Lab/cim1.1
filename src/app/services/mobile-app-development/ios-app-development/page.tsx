@@ -8,24 +8,127 @@ import WhyChooseUs from "@/components/services/mobile-app-development/ios-app-de
 import CTA from "@/components/services/mobile-app-development/ios-app-development/CTA";
 
 export const metadata: Metadata = {
-    title: "iOS App Development Services | Custom iPhone & iPad Apps | Testriq",
+    title: "iOS App Development Services | Custom iPhone & iPad Apps for Global Brands",
     description:
-        "Expert iOS app development services. We build native Swift and SwiftUI applications for iPhone, iPad, and Apple Watch with App Store optimization.",
+        "Premier iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
     keywords: [
-        "iOS app development",
-        "iPhone app development",
-        "iPad app development",
-        "Swift development",
+        "iOS App Development Services",
+        "iOS App Development Company",
+        "iPhone App Development services",
+        "Custom iPhone app development",
+        "iPad application development",
+        "Apple Watch app development",
         "SwiftUI development",
-        "iOS developer",
-        "Apple app development",
-        "App Store optimization",
+        "Enterprise iOS solutions",
+        "iOS app security",
+        "App Store Optimization"
     ],
 };
 
 export default function iOSAppDevelopmentPage() {
     return (
         <main className="min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@graph": [
+                            {
+                                "@type": "Service",
+                                "name": "iOS App Development Services",
+                                "provider": {
+                                    "@type": "Organization",
+                                    "name": "Cinute Digital",
+                                    "url": "https://www.cinuteinfomedia.com"
+                                },
+                                "serviceType": "Mobile App Development",
+                                "areaServed": "Global",
+                                "description": "Premium iOS App Development Services using Swift & SwiftUI. We build custom iPhone & iPad apps for startups and enterprises with a focus on performance and UX.",
+                                "hasOfferCatalog": {
+                                    "@type": "OfferCatalog",
+                                    "name": "iOS Development Services",
+                                    "itemListElement": [
+                                        {
+                                            "@type": "Offer",
+                                            "itemOffered": {
+                                                "@type": "Service",
+                                                "name": "Custom iPhone App Development"
+                                            }
+                                        },
+                                        {
+                                            "@type": "Offer",
+                                            "itemOffered": {
+                                                "@type": "Service",
+                                                "name": "iPad App Development"
+                                            }
+                                        },
+                                        {
+                                            "@type": "Offer",
+                                            "itemOffered": {
+                                                "@type": "Service",
+                                                "name": "iOS App Maintenance & Support"
+                                            }
+                                        },
+                                        {
+                                            "@type": "Offer",
+                                            "itemOffered": {
+                                                "@type": "Service",
+                                                "name": "Enterprise iOS Solutions"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "@type": "FAQPage",
+                                "mainEntity": [
+                                    {
+                                        "@type": "Question",
+                                        "name": "How much does it cost to develop an iOS app?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Costs vary based on complexity, typically ranging from $10k for MVPs to $100k+ for complex enterprise solutions."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "What is the best language for iOS app development?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Swift and SwiftUI are the best modern languages for iOS development, offering superior performance and safety."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "How long does it take to build a custom iPhone app?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "A standard MVP typically takes 3-4 months, while complex apps can take 6-12 months."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "What are the benefits of native iOS development vs hybrid?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Native development offers better performance, hardware access, and user experience compared to hybrid solutions."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "How do I submit my app to the Apple App Store?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "We handle the full submission process via App Store Connect, ensuring compliance with Apple's guidelines."
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    })
+                }}
+            />
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

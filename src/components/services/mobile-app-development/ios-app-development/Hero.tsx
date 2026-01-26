@@ -83,17 +83,17 @@ export default function Hero() {
                             }}
                         >
                             <Apple className="w-4 h-4" style={{ color: "#007AFF" }} />
-                            <span className="text-sm font-medium" style={{ color: "#007AFF" }}>
-                                Native iOS Development
+                            <span className="text-sm font-semibold" style={{ color: "#007AFF" }}>
+                                iOS App Development Services
                             </span>
                         </div>
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Build Premium{" "}
+                            Transforming Business {" "}
                             <span
                                 className="relative inline-block"
                                 style={{
@@ -102,7 +102,7 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                iOS Apps
+                                Vision
                                 {/* Underline decoration */}
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
@@ -113,20 +113,25 @@ export default function Hero() {
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
                                 </svg>
                             </span>{" "}
-                            for iPhone & iPad
+                            into Native iOS Experiences
                         </h1>
 
-                        <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Native iOS app development with Swift and SwiftUI. We build high-performance, App Store-ready applications that deliver exceptional user experiences.
-                        </p>
+                        <div className="space-y-4 animate-slideUp delay-100">
+                            <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
+                                In an era where mobile supremacy defines market leadership, our iOS App Development Services empower startups and enterprises to dominate the Apple ecosystem.
+                            </p>
+                            <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 hidden md:block" style={{ color: "var(--secondary-text)" }}>
+                                We specialize in crafting high-impact, user-centric applications that strictly adhere to Apple’s Human Interface Guidelines (HIG).
+                            </p>
+                        </div>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Swift & SwiftUI",
-                                "App Store Optimized",
-                                "Apple Guidelines",
                                 "Native Performance",
+                                "Swift & SwiftUI",
+                                "App Store Ready",
+                                "Apple Guidelines",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -172,18 +177,18 @@ export default function Hero() {
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#007AFF" }}>150+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>iOS Apps Delivered</p>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: "#007AFF" }}>150+</h4>
+                                <p className="text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>iOS Apps Delivered</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#007AFF" }}>4.8★</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. App Store Rating</p>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: "#007AFF" }}>4.8★</h4>
+                                <p className="text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>Avg. App Store Rating</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#007AFF" }}>10M+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>App Downloads</p>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: "#007AFF" }}>10M+</h4>
+                                <p className="text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>App Downloads</p>
                             </div>
                         </div>
                     </div>

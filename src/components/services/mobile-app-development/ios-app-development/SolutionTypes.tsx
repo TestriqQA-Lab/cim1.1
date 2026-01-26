@@ -36,73 +36,73 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: ShoppingCart,
-            title: "E-commerce Apps",
-            description: "Shopping apps with Apple Pay, in-app purchases, product catalogs, and seamless checkout experiences.",
+            title: "E-commerce & Retail",
+            description: "Boost sales with Ecommerce and retail iOS app solutions. We integrate Apple Pay, ARKit, and personalized recommendation engines.",
             features: [
-                "Apple Pay integration",
-                "In-app purchases",
-                "Push notifications",
-                "Secure transactions",
+                "Apple Pay checkout",
+                "ARKit 'Try-Before-Buy'",
+                "Recommendation engines",
+                "Higher cart values",
             ],
             gradient: "from-[#007AFF] to-[#5AC8FA]",
         },
         {
             icon: Building2,
-            title: "Enterprise Apps",
-            description: "Internal business apps with MDM support, SSO authentication, and enterprise distribution.",
+            title: "Enterprise & B2B",
+            description: "Streamline operations with B2B iOS app development. Secure MDM-compatible apps featuring SSO, VPN, and custom analytics.",
             features: [
                 "MDM compatibility",
-                "SSO integration",
-                "Secure data handling",
-                "Enterprise App Store",
+                "SSO & VPN integration",
+                "Workforce productivity",
+                "Custom analytics",
             ],
             gradient: "from-[#5AC8FA] to-[#007AFF]",
         },
         {
             icon: Heart,
-            title: "Health & Fitness",
-            description: "HealthKit-integrated apps with workout tracking, health data sync, and Apple Watch companion apps.",
+            title: "Healthcare & Fitness",
+            description: "Trust is paramount. We deliver HIPAA-compliant iOS apps. Secure patient portals, telemedicine, and fitness trackers with HealthKit.",
             features: [
+                "HIPAA compliance",
                 "HealthKit integration",
-                "Workout tracking",
-                "Apple Watch support",
-                "Health data privacy",
+                "Telemedicine features",
+                "Secure patient data",
             ],
             gradient: "from-[#0055D4] to-[#007AFF]",
         },
         {
             icon: Wallet,
-            title: "Fintech Apps",
-            description: "Secure financial apps with biometric auth, Apple Wallet integration, and real-time transactions.",
+            title: "Fintech & Banking",
+            description: "Bank on security. Fintech solutions with biometric auth (FaceID/TouchID), data privacy consulting, and secure Metal visualization.",
             features: [
-                "Face ID / Touch ID",
-                "Apple Wallet passes",
-                "Secure enclave",
-                "PCI compliance",
+                "Biometric auth",
+                "Real-time processing",
+                "Data privacy consulting",
+                "Metal data viz",
             ],
             gradient: "from-[#007AFF] to-[#0055D4]",
         },
         {
             icon: Gamepad2,
-            title: "Gaming Apps",
-            description: "Engaging games with Game Center, ARKit experiences, and Metal graphics for peak performance.",
+            title: "Gaming & Entertainment",
+            description: "Create immersive worlds. We utilize Metal, SpriteKit, and SceneKit to build console-quality games and AR adventures.",
             features: [
-                "Game Center leaderboards",
-                "ARKit integration",
-                "Metal framework",
-                "Haptic feedback",
+                "Metal graphics",
+                "SpriteKit & SceneKit",
+                "Console-quality visual",
+                "AR adventures",
             ],
             gradient: "from-[#5AC8FA] to-[#0055D4]",
         },
         {
             icon: GraduationCap,
-            title: "Education Apps",
-            description: "Learning apps with ClassKit integration, offline content, and interactive educational experiences.",
+            title: "Education & eLearning",
+            description: "Revolutionize learning. Interactive apps leveraging ClassKit for progress tracking, PencilKit for drawing, and AR demonstrations.",
             features: [
-                "ClassKit support",
-                "Offline learning",
-                "Progress tracking",
-                "Interactive content",
+                "ClassKit tracking",
+                "PencilKit drawing",
+                "AR demonstrations",
+                "Interactive UI/UX",
             ],
             gradient: "from-[#0055D4] to-[#5AC8FA]",
         },
@@ -139,7 +139,7 @@ export default function SolutionTypes() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        From consumer apps to enterprise solutions, we build iOS applications tailored to your industry needs.
+                        Tailored strategies for vertical-specific challenges.
                     </p>
                 </div>
 

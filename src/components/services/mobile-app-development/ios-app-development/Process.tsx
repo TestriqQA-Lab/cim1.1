@@ -17,68 +17,68 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Discovery & Planning",
-            description: "We analyze your requirements, research the market, and create a comprehensive roadmap for your iOS app.",
+            title: "Discovery & Strategy",
+            description: "We start by understanding your business goals. We analyze iOS app monetization and in-app purchase setup potential and define the technical roadmap.",
             details: [
-                "Requirements gathering & analysis",
-                "Competitor & market research",
-                "User persona development",
-                "Technical feasibility assessment",
-                "Project timeline & milestones",
+                "Business goal analysis",
+                "Monetization strategy",
+                "Technical roadmap",
+                "In-app purchase setup",
+                "Market analysis",
             ],
             duration: "1-2 Weeks",
         },
         {
             icon: Palette,
             title: "UI/UX Design",
-            description: "Our designers create stunning interfaces following Apple Human Interface Guidelines for an exceptional user experience.",
+            description: "Adhering strictly to Human Interface Guidelines (HIG), we create high-fidelity prototypes. We focus on Spatial computing and visionOS readiness.",
             details: [
-                "Wireframing & prototyping",
-                "Visual design in Figma/Sketch",
-                "Apple HIG compliance",
-                "Interactive prototypes",
-                "Design system creation",
+                "HIG compliance",
+                "High-fidelity prototypes",
+                "Spatial computing",
+                "visionOS readiness",
+                "Interactive design",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Code,
             title: "Development",
-            description: "Expert iOS developers build your app using Swift and SwiftUI with clean, maintainable code architecture.",
+            description: "Agile sprints using Swift and SwiftUI development for business apps. We write clean, self-documenting code and conduct daily standups.",
             details: [
-                "Native Swift/SwiftUI development",
-                "MVVM architecture pattern",
-                "API integration & backends",
-                "Core Data implementation",
-                "Continuous integration setup",
+                "Swift & SwiftUI",
+                "Agile sprints",
+                "Clean code",
+                "Daily standups",
+                "Business logic",
             ],
             duration: "6-12 Weeks",
         },
         {
             icon: TestTube2,
             title: "Testing & QA",
-            description: "Rigorous testing across devices and iOS versions to ensure a bug-free, high-performance application.",
+            description: "Comprehensive iOS app testing and quality assurance services. We use TestFlight Beta Testing to gather real-world feedback.",
             details: [
-                "Unit & integration testing",
-                "UI automation with XCTest",
-                "Performance profiling",
-                "Device compatibility testing",
-                "TestFlight beta testing",
+                "Comprehensive testing",
+                "Quality assurance",
+                "TestFlight Beta",
+                "Real-world feedback",
+                "Bug-free releases",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Rocket,
-            title: "App Store Launch",
-            description: "We handle the entire App Store submission process, from metadata optimization to approval.",
+            title: "Deployment & Support",
+            description: "We handle the complex App Store Connect submission process. Post-launch, we offer iOS app maintenance and support services.",
             details: [
-                "App Store Connect setup",
-                "Metadata & screenshots",
-                "App Store Optimization (ASO)",
-                "Review submission",
-                "Post-launch monitoring",
+                "App Store submission",
+                "Maintenance & support",
+                "OS updates",
+                "New features",
+                "Performance monitoring",
             ],
-            duration: "1-2 Weeks",
+            duration: "Ongoing",
         },
     ];
 
@@ -114,7 +114,7 @@ export default function Process() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A proven methodology that ensures your iOS app is delivered on time, on budget, and exceeds expectations.
+                        A transparent, agile workflow designed for speed and quality.
                     </p>
                 </div>
 
