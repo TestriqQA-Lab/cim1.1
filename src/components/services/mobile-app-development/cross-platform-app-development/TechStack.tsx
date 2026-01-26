@@ -20,40 +20,26 @@ export default function TechStack() {
             { name: "TypeScript", description: "Type Safety", logo: "/images/techstack_logos/typescript-logo.svg" },
             { name: "Expo", description: "Development Platform", logo: "/images/techstack_logos/Expo-logo.png" },
             { name: "Redux", description: "State Management", logo: "/images/techstack_logos/redux-logo.svg" },
-            { name: "React Navigation", description: "Routing", logo: "/images/techstack_logos/react-logo.svg" },
             { name: "Native Modules", description: "Platform Bridge", logo: "" },
         ],
         flutter: [
             { name: "Flutter", description: "UI Toolkit", logo: "/images/techstack_logos/flutter-logo.svg" },
             { name: "Dart", description: "Programming Language", logo: "/images/techstack_logos/Dart-logo.png" },
             { name: "Bloc", description: "State Management", logo: "/images/techstack_logos/Bloc-logo.png" },
-            { name: "Provider", description: "Dependency Injection", logo: "" },
-            { name: "GetX", description: "Full Solution", logo: "/images/techstack_logos/GetX-logo.png" },
-            { name: "Platform Channels", description: "Native Bridge", logo: "" },
         ],
         shared: [
             { name: "Firebase", description: "Backend Services", logo: "/images/techstack_logos/firebase-logo.svg" },
             { name: "VS Code", description: "IDE", logo: "/images/techstack_logos/vscode-logo.svg" },
             { name: "Git", description: "Version Control", logo: "/images/techstack_logos/git-logo.svg" },
-            { name: "Figma", description: "Design Handoff", logo: "/images/techstack_logos/figma-logo.svg" },
-            { name: "GitHub Actions", description: "CI/CD", logo: "/images/techstack_logos/github-logo.svg" },
-            { name: "Fastlane", description: "Automation", logo: "/images/techstack_logos/Fastlane-logo.png" },
         ],
         testing: [
             { name: "Jest", description: "Unit Testing", logo: "/images/techstack_logos/jest-logo.webp" },
             { name: "Detox", description: "E2E Testing", logo: "/images/techstack_logos/Detox-Logo.png" },
             { name: "Flutter Test", description: "Widget Testing", logo: "/images/techstack_logos/flutter-logo.svg" },
-            { name: "Appium", description: "Mobile Automation", logo: "/images/techstack_logos/appium-logo.svg" },
-            { name: "Firebase Test Lab", description: "Device Testing", logo: "/images/techstack_logos/firebase-logo.svg" },
-            { name: "Crashlytics", description: "Crash Reporting", logo: "/images/techstack_logos/crashlytics-logo.svg" },
         ],
         backend: [
             { name: "Firebase", description: "Backend Services", logo: "/images/techstack_logos/firebase-logo.svg" },
             { name: "Node.js", description: "API Backend", logo: "/images/techstack_logos/nodejs-logo.svg" },
-            { name: "AWS Amplify", description: "Cloud Platform", logo: "/images/techstack_logos/aws-logo.png" },
-            { name: "Supabase", description: "Open Source BaaS", logo: "/images/techstack_logos/supabase-logo.webp" },
-            { name: "GraphQL", description: "API Layer", logo: "/images/techstack_logos/graphql-logo.svg" },
-            { name: "REST APIs", description: "Web Services", logo: "/images/techstack_logos/REST-API-logo.png" },
         ],
     };
 
@@ -78,7 +64,7 @@ export default function TechStack() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We leverage the best cross-platform frameworks and industry-standard tools to build exceptional apps.
+                        We use a cutting-edge tech stack to ensure your app is future-proof, secure, and high-performing.
                     </p>
                 </div>
 

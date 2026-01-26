@@ -37,72 +37,72 @@ export default function SolutionTypes() {
         {
             icon: Rocket,
             title: "Startups & MVPs",
-            description: "Launch your product on both platforms simultaneously. Perfect for validating ideas quickly and cost-effectively.",
+            description: "Validate your idea fast. Our custom cross-platform app development for startups focuses on rapid MVP delivery. Launch on both platforms simultaneously to gather user feedback and secure funding without burning your runway.",
             features: [
-                "Rapid prototyping",
-                "Lean development",
-                "Quick iterations",
-                "Market validation",
+                "Rapid MVP delivery",
+                "Simultaneous launch",
+                "User feedback gathering",
+                "Cost-effective scaling",
             ],
             gradient: "from-[#667eea] to-[#764ba2]",
         },
         {
             icon: ShoppingCart,
-            title: "E-commerce Apps",
-            description: "Multi-platform shopping experiences with unified inventory, payments, and customer management.",
+            title: "E-commerce & Retail Solutions",
+            description: "Drive sales with immersive ecommerce and retail multi-platform app solutions. We build shoppable apps with unified inventory management, secure checkout, and personalized recommendations that convert visitors into loyal customers.",
             features: [
-                "Unified cart system",
-                "Payment integrations",
-                "Real-time inventory",
-                "Push notifications",
+                "Shoppable apps",
+                "Unified inventory",
+                "Secure checkout",
+                "Personalized recommendations",
             ],
             gradient: "from-[#764ba2] to-[#667eea]",
         },
         {
             icon: Building2,
-            title: "Enterprise Apps",
-            description: "Corporate mobile solutions that work across employee devices regardless of their platform preference.",
+            title: "Enterprise Mobility",
+            description: "Empower your workforce. We deliver Flutter app development services for enterprise that streamline internal operations. Secure, scalable, and integrated with your existing IT infrastructure (SAP, Salesforce, Oracle).",
             features: [
-                "SSO integration",
-                "Offline capabilities",
-                "Data synchronization",
-                "Role-based access",
+                "Streamlined operations",
+                "IT infrastructure integration",
+                "Secure & scalable",
+                "Workforce empowerment",
             ],
             gradient: "from-[#00d4ff] to-[#667eea]",
         },
         {
             icon: MessageCircle,
-            title: "Social & Chat Apps",
-            description: "Real-time communication platforms with consistent experience across all devices.",
+            title: "Social & Chat Applications",
+            description: "Build the next big community. We develop real-time social and chat apps with features like live messaging, video calling, and media sharing, ensuring a consistent and engaging experience across devices.",
             features: [
                 "Real-time messaging",
+                "Video calling",
                 "Media sharing",
-                "Group features",
-                "End-to-end encryption",
+                "Consistent experience",
             ],
             gradient: "from-[#667eea] to-[#00d4ff]",
         },
         {
             icon: Car,
             title: "On-Demand Services",
-            description: "Uber-style apps for logistics, delivery, and service booking with driver and customer apps.",
+            description: "Dominate the gig economy. Our on-demand cross-platform app developers for hire build Uber-style booking, tracking, and delivery apps. robust driver/customer modules with real-time geolocation and payment integration.",
             features: [
-                "Real-time tracking",
-                "Driver/customer apps",
-                "Payment processing",
-                "Rating systems",
+                "Booking & tracking",
+                "Driver/customer modules",
+                "Real-time geolocation",
+                "Payment integration",
             ],
             gradient: "from-[#764ba2] to-[#00d4ff]",
         },
         {
             icon: Wallet,
-            title: "Fintech Apps",
-            description: "Secure financial applications with biometric auth and transaction processing on both platforms.",
+            title: "Fintech & Healthcare (HIPAA Compliant)",
+            description: "Security first. We build Healthcare and HIPAA-compliant cross-platform apps and secure Fintech apps with biometric authentication, encryption, and regulatory compliance baked into the core architecture.",
             features: [
-                "Biometric security",
-                "Transaction history",
-                "Account management",
-                "Compliance ready",
+                "HIPAA compliance",
+                "Biometric authentication",
+                "Data encryption",
+                "Secure architecture",
             ],
             gradient: "from-[#00d4ff] to-[#764ba2]",
         },
@@ -127,7 +127,7 @@ export default function SolutionTypes() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Cross-Platform Solutions for</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Custom Cross-Platform Application Solutions for</span>{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #667eea, #764ba2)",
@@ -139,7 +139,7 @@ export default function SolutionTypes() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        From startups to enterprises, we build cross-platform apps tailored to your business needs.
+                        From disruptive startups to Fortune 500 enterprises, we engineer scalable multi-platform apps that drive digital transformation across sectors.
                     </p>
                 </div>
 

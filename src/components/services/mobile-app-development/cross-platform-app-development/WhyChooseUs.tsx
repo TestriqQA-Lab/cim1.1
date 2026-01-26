@@ -17,43 +17,43 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Zap,
-            title: "70% Faster Development",
-            description: "Single codebase means faster development, quicker iterations, and simultaneous releases on both platforms.",
+            title: "Native-Like Performance",
+            description: "Gone are the days of laggy hybrid apps. Our optimization techniques and use of native modules ensure your app performs at 60fps, indistinguishable from native apps.",
             gradient: "from-[#667eea] to-[#764ba2]",
             shadowColor: "rgba(102, 126, 234, 0.3)",
         },
         {
             icon: DollarSign,
             title: "40% Cost Savings",
-            description: "Build and maintain one codebase instead of two separate native apps, significantly reducing development costs.",
+            description: "Developing two separate native apps is expensive. Our Hybrid Mobile App Development Company approach saves you up to 40% by maintaining a Unified Codebase, reducing resource requirements.",
             gradient: "from-[#764ba2] to-[#667eea]",
             shadowColor: "rgba(118, 75, 162, 0.3)",
         },
         {
             icon: Clock,
             title: "Faster Time-to-Market",
-            description: "Launch on iOS and Android simultaneously without waiting for separate development cycles to complete.",
+            description: "Beat the competition. With Hot Reload and Fast Refresh, we iterate quickly. You get a market-ready product in weeks, not months.",
             gradient: "from-[#00d4ff] to-[#667eea]",
             shadowColor: "rgba(0, 212, 255, 0.3)",
         },
         {
             icon: Users,
-            title: "React & Flutter Experts",
-            description: "Our team has deep expertise in both React Native and Flutter, choosing the best tool for your specific needs.",
+            title: "Code Reusability & Scalability",
+            description: "We write code once and use it everywhere. High Code Reusability means easier updates and scaling. Add new features to both platforms instantly.",
             gradient: "from-[#667eea] to-[#00d4ff]",
             shadowColor: "rgba(102, 126, 234, 0.3)",
         },
         {
             icon: RefreshCw,
-            title: "Easy Maintenance",
-            description: "Update once, deploy everywhere. Bug fixes and new features are instantly available on both platforms.",
+            title: "Dedicated React & Flutter Experts",
+            description: "Work with the best. Our team comprises senior engineers who contribute to the open-source community and stay ahead of Post-2025 core updates.",
             gradient: "from-[#764ba2] to-[#00d4ff]",
             shadowColor: "rgba(118, 75, 162, 0.3)",
         },
         {
             icon: HeartHandshake,
-            title: "Long-term Partnership",
-            description: "We provide ongoing support, updates, and optimization to ensure your app evolves with platform changes.",
+            title: "Post-Launch Support",
+            description: "We are your long-term partner. We provide ongoing cross-platform app maintenance and support, ensuring your app remains compatible with the latest OS versions and devices.",
             gradient: "from-[#00d4ff] to-[#764ba2]",
             shadowColor: "rgba(0, 212, 255, 0.3)",
         },
@@ -94,7 +94,7 @@ export default function WhyChooseUs() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Why Choose</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Why Choose Results-Driven</span>{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #667eea, #764ba2)",
@@ -102,11 +102,11 @@ export default function WhyChooseUs() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Cross-Platform Development
+                            Cross-Platform App Development
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Maximize your reach while minimizing development time and costs with our expert cross-platform solutions.
+                        Maximize ROI with reduced TTM and development costs without sacrificing quality or performance.
                     </p>
                 </div>
 

@@ -16,43 +16,43 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Smartphone,
-            title: "React Native Development",
-            description: "Build iOS and Android apps with React Native, leveraging your existing JavaScript/React knowledge for rapid development.",
+            title: "Custom Cross-Platform Application Solutions",
+            description: "We design and engineer bespoke mobile applications that operate seamlessly on multiple operating systems. Our single codebase app development for iOS and Android ensures consistent brand identity and user experience (UX) across all devices.",
             gradient: "from-[#667eea] to-[#764ba2]",
             shadowColor: "rgba(102, 126, 234, 0.4)",
         },
         {
             icon: Layers,
-            title: "Flutter Development",
-            description: "Create beautiful, natively compiled apps with Flutter's expressive UI toolkit and Dart programming language.",
+            title: "Flutter and React Native Development Agency",
+            description: "As a premier Flutter and React Native Development Agency, we leverage the power of Google's Flutter and Meta's React Native to build high-performance, visually stunning apps. Whether you need the widget-rich environment of Flutter or the native component mapping of React Native, we have the expertise.",
             gradient: "from-[#02569B] to-[#13B9FD]",
             shadowColor: "rgba(2, 86, 155, 0.4)",
         },
         {
             icon: Code2,
-            title: "Shared Codebase Strategy",
-            description: "Maximize code reuse across platforms while maintaining platform-specific experiences where needed.",
+            title: "Cross-Platform App Migration and Modernization",
+            description: "Is your legacy app slowing you down? We specialize in cross-platform app migration and modernization. We seamlessly port native apps to efficient cross-platform frameworks, preserving data integrity while upgrading performance, security, and maintainability.",
             gradient: "from-[#764ba2] to-[#667eea]",
             shadowColor: "rgba(118, 75, 162, 0.4)",
         },
         {
             icon: Puzzle,
-            title: "Native Module Integration",
-            description: "Bridge native device features seamlessly when cross-platform solutions don't fully meet requirements.",
+            title: "Progressive Web App (PWA) Development Services",
+            description: "Extend your reach beyond app stores. Our Progressive Web App (PWA) development services deliver app-like experiences directly in the browser. Fast loading, offline capabilities, and push notifications ensure maximum user engagement.",
             gradient: "from-[#00d4ff] to-[#667eea]",
             shadowColor: "rgba(0, 212, 255, 0.4)",
         },
         {
             icon: Palette,
-            title: "Platform-Adaptive UI",
-            description: "Design interfaces that feel native on each platform while maintaining brand consistency.",
+            title: "Cross-Platform App Maintenance and Support",
+            description: "Our commitment doesn't end at launch. We provide 24/7 cross-platform app maintenance and support with strict SLAs. From OS updates (iOS 19/Android 16 ready) to security patches and performance tuning, we keep your app running at peak efficiency.",
             gradient: "from-[#667eea] to-[#00d4ff]",
             shadowColor: "rgba(102, 126, 234, 0.4)",
         },
         {
             icon: Rocket,
-            title: "Dual Store Deployment",
-            description: "Streamlined deployment to both App Store and Google Play Store with optimized submissions.",
+            title: "Custom API Integration for Multi-Platform Apps",
+            description: "Unlock the full potential of your app with custom API integration for multi-platform apps. We securely connect your mobile solutions to cloud backends, payment gateways, ERPs, and third-party services, ensuring real-time data synchronization.",
             gradient: "from-[#764ba2] to-[#00d4ff]",
             shadowColor: "rgba(118, 75, 162, 0.4)",
         },
@@ -102,7 +102,7 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Comprehensive{" "}
+                        Professional{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #667eea, #764ba2)",
@@ -110,7 +110,7 @@ export default function ServiceOverview() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Cross-Platform
+                            Multi-Platform App Development
                         </span>{" "}
                         Solutions
                     </h2>
@@ -118,7 +118,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Build once, deploy everywhere with our expert React Native and Flutter development services.
+                        Build once, scale everywhere. We deliver comprehensive cross-platform application solutions tailored to your unique business goals using the latest frameworks.
                     </p>
                 </div>
 

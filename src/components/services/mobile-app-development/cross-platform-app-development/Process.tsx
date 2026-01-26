@@ -18,65 +18,60 @@ export default function Process() {
         {
             icon: Search,
             title: "Discovery & Planning",
-            description: "We analyze your requirements, evaluate platform needs, and create a cross-platform development strategy.",
+            description: "We continually audit your requirements. We define the cross-platform mobile app design and UI/UX strategy, selecting the right framework (Flutter vs. React Native) based on your specific needs.",
             details: [
-                "Requirements gathering & analysis",
-                "Platform feature comparison",
-                "Technology selection (RN vs Flutter)",
-                "Architecture planning",
-                "Timeline & milestones",
+                "Requirement audit",
+                "UI/UX strategy definition",
+                "Framework selection",
+                "Needs assessment",
             ],
             duration: "1-2 Weeks",
         },
         {
             icon: Palette,
             title: "UI/UX Design",
-            description: "Our designers create platform-adaptive interfaces that feel native on both iOS and Android.",
+            description: "Our designers create platform-adaptive UI designs that respect iOS (Human Interface Guidelines) and Android (Material Design) conventions while maintaining your unique brand identity.",
             details: [
-                "Wireframing & prototyping",
-                "Platform-specific adaptations",
-                "Design system creation",
-                "Interactive prototypes",
-                "User testing",
+                "Platform-adaptive UI",
+                "Human Interface Guidelines",
+                "Material Design",
+                "Brand identity maintenance",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Code,
-            title: "Development",
-            description: "Expert developers build your app using shared codebase with platform-specific optimizations where needed.",
+            title: "Agile Development",
+            description: "Our on-demand cross-platform app developers write clean, documented code. We implement shared business logic to maximize code reuse (up to 95%) and ensure consistency.",
             details: [
-                "Shared codebase development",
-                "Platform-specific modules",
-                "State management setup",
-                "API integration",
-                "Performance optimization",
+                "Clean, documented code",
+                "Shared business logic",
+                "Code reusability (95%)",
+                "Consistency assurance",
             ],
             duration: "6-12 Weeks",
         },
         {
             icon: TestTube2,
             title: "Testing & QA",
-            description: "Comprehensive testing on both platforms across multiple devices and OS versions.",
+            description: "We don't compromise on quality. Our cross-platform app testing and quality assurance includes automated and manual testing on huge device farms to ensure bug-free apps and native-like performance.",
             details: [
-                "Cross-platform testing",
-                "Device compatibility testing",
-                "Performance profiling",
-                "User acceptance testing",
-                "Beta testing programs",
+                "Automated & manual testing",
+                "Device farm testing",
+                "Bug-free assurance",
+                "Native-like performance",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Rocket,
             title: "Dual Store Launch",
-            description: "We submit to both App Store and Play Store simultaneously with optimized listings.",
+            description: "We handle the complexities of submission. We optimize your store listings and manage the simultaneous deployment to the Apple App Store and Google Play Store.",
             details: [
-                "App Store submission",
-                "Play Store submission",
-                "ASO optimization",
-                "Metadata & screenshots",
-                "Post-launch monitoring",
+                "Submission handling",
+                "Store listing optimization",
+                "Simultaneous deployment",
+                "App Store & Google Play",
             ],
             duration: "1-2 Weeks",
         },
@@ -114,7 +109,7 @@ export default function Process() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A proven methodology that delivers your app to both platforms efficiently and effectively.
+                        A proven, agile methodology that delivers transparency, quality, and speed.
                     </p>
                 </div>
 

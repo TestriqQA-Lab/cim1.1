@@ -98,10 +98,10 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            One Codebase,{" "}
+                            Cross-Platform{" "}
                             <span
                                 className="relative inline-block animate-gradient"
                                 style={{
@@ -111,7 +111,7 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Two Platforms
+                                App Development Services
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: "#764ba2" }}
@@ -124,16 +124,17 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Build stunning iOS and Android apps from a single codebase with React Native and Flutter. Save time, reduce costs, and reach more users faster.
+                            Enterprise-grade multi-platform solutions. React Native & Flutter experts delivering 100% native-like performance and scalability for global brands.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "React Native",
-                                "Flutter",
-                                "Single Codebase",
-                                "70% Faster",
+                                "Single Codebase Efficiency",
+                                "iOS & Android Native Feel",
+                                "Dual Store Deployment",
+                                "App Store & Play Store Ready",
+                                "Certified Cross-Platform Experts",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -159,7 +160,7 @@ export default function Hero() {
                                     boxShadow: "0 4px 20px rgba(102, 126, 234, 0.25)",
                                 }}
                             >
-                                Start Your Project
+                                Book Free Consultation
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -172,7 +173,7 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Our Process
+                                View Our Process
                             </Link>
                         </div>
 
@@ -180,17 +181,17 @@ export default function Hero() {
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>150+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cross-Platform Apps</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cross-Platform Apps Delivered Since 2015</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>70%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Faster Development</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Faster Development Time</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>40%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cost Savings</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cost Efficiency</p>
                             </div>
                         </div>
                     </div>
