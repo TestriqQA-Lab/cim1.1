@@ -2,7 +2,7 @@
 
 import { Sparkles, ArrowRight, Home, ChevronRight, Rocket, Zap, Smartphone, TrendingUp, ShieldCheck, Code } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import WebDevAnimation from "./WebDevAnimation";
 
 
 export default function Hero() {
@@ -220,24 +220,14 @@ export default function Hero() {
 
                         {/* Feature Card */}
                         <div
-                            className="relative rounded-3xl shadow-2xl border hover:scale-105 transition-transform duration-300 max-w-lg w-full"
+                            className="relative rounded-3xl shadow-2xl border hover:scale-105 transition-transform duration-300 max-w-lg w-full p-4"
                             style={{
                                 backgroundColor: "var(--card-bg)",
                                 borderColor: "var(--border-color)",
                                 backdropFilter: "blur(6px)",
                             }}
                         >
-                            <Image
-                                src="/images/services-images/web-development-illustration.png"
-                                alt="Web Design & Development"
-                                width={638}
-                                height={565}
-                                priority
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 638px"
-                                className="w-full h-auto rounded-3xl"
-                                placeholder="blur"
-                                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgADEf/aAAwDAQACEQMRAD8AzTR9I1C5sY57izt7eKVQ8Ud1KImkU8g7cEgH5nHNWP6Y/EfxSlFNmSuf/9k="
-                            />
+                            <WebDevAnimation />
                         </div>
                         {/* Additional Info Section */}
                         <div
