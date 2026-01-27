@@ -8,6 +8,7 @@ import {
     Workflow,
     Shield,
     BarChart3,
+    Sparkles,
 } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -17,37 +18,37 @@ export default function ServiceOverview() {
         {
             icon: Users,
             title: "Employee Mobile Apps",
-            description: "Internal apps for workforce management, HR self-service, training, and company communications.",
+            description: "Supercharge internal productivity with custom apps for workforce management, HR self-service, and real-time company communications. Our solutions integrate seamlessly with existing Custom HR and HCM software.",
             shadowColor: "rgba(37, 99, 235, 0.4)",
         },
         {
             icon: Briefcase,
             title: "Field Service Applications",
-            description: "Mobile solutions for field teams - work orders, inspections, asset management, and offline capabilities.",
+            description: "Empower your field teams with offline-first capabilities, real-time asset management, and automated work order workflows. We build solutions that synchronize data instantly across your supply chain management (SCM) ecosystem.",
             shadowColor: "rgba(37, 99, 235, 0.4)",
         },
         {
             icon: Link2,
             title: "CRM & Sales Apps",
-            description: "Salesforce, HubSpot, and custom CRM mobile integrations for your sales and account teams.",
+            description: "We build custom mobile overlays for Salesforce, HubSpot, and proprietary Custom ERP and CRM development for large businesses, ensuring your sales teams have data-driven insights at their fingertips.",
             shadowColor: "rgba(37, 99, 235, 0.4)",
         },
         {
             icon: Workflow,
             title: "Workflow & Approval Apps",
-            description: "Digitize approval workflows, expense management, and business processes for mobile access.",
+            description: "Eliminate bottlenecks with Real-time enterprise workflow automation tools. Digitize complex approval chains, expense reporting, and multi-layered business processes for secure mobile access anywhere.",
             shadowColor: "rgba(37, 99, 235, 0.4)",
         },
         {
             icon: Shield,
             title: "Secure Communications",
-            description: "End-to-end encrypted messaging, secure file sharing, and compliant collaboration tools.",
+            description: "Protect your intellectual property with end-to-end encrypted messaging and Enterprise-grade mobile app security and MDM. We implement Identity and Access Management (IAM) and Single Sign-On (SSO).",
             shadowColor: "rgba(37, 99, 235, 0.4)",
         },
         {
             icon: BarChart3,
             title: "Executive Dashboards",
-            description: "Real-time business intelligence and KPI dashboards optimized for mobile executives.",
+            description: "Transform raw data into actionable intelligence. Our Enterprise data analytics and BI dashboard development provides mobile-optimized KPIs for C-suite executives, powered by robust Microservices architecture.",
             shadowColor: "rgba(37, 99, 235, 0.4)",
         },
     ];
@@ -81,14 +82,16 @@ export default function ServiceOverview() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
-                    <div className="inline-block mb-4">
-                        <span
-                            className="px-4 py-2 rounded-full text-sm font-semibold tracking-wide uppercase"
-                            style={{
-                                background: "rgba(37, 99, 235, 0.1)",
-                                color: "#2563eb",
-                            }}
-                        >
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(37, 99, 235, 0.1)",
+                            borderColor: "rgba(37, 99, 235, 0.2)",
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: "#2563eb" }} />
+                        <span className="text-sm font-medium" style={{ color: "#2563eb" }}>
                             Our Services
                         </span>
                     </div>
@@ -96,17 +99,16 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Comprehensive{" "}
+                        Custom Enterprise Software Development for{" "}
                         <span style={{ color: "#2563eb" }}>
-                            Enterprise
-                        </span>{" "}
-                        Solutions
+                            Scalable Growth
+                        </span>
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Mobile applications designed for enterprise-scale operations, security, and integration requirements.
+                        We specialize in developing robust Enterprise Web Applications and mobile solutions that solve complex workflow challenges and drive operational efficiency.
                     </p>
                 </div>
 

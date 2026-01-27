@@ -6,8 +6,8 @@ import { ArrowRight, CheckCircle2, Building2 } from "lucide-react";
 export default function CTA() {
     const benefits = [
         "Free enterprise consultation",
-        "Security assessment included",
-        "Custom SLA options",
+        "Security-first ROI roadmap",
+        "Modernization services included",
         "Dedicated account manager",
     ];
 
@@ -59,13 +59,12 @@ export default function CTA() {
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                                Ready for{" "}
-                                <span className="text-white/80">Enterprise Scale?</span>
+                                Ready to{" "}
+                                <span className="text-white/80">Scale?</span>
                             </h2>
 
                             <p className="text-lg text-white/80 mb-8 max-w-xl">
-                                Let&apos;s discuss your enterprise mobile strategy. Our team of experts will help you
-                                navigate security, compliance, and integration requirements.
+                                Take Your Enterprise Mobile Strategy to the Next Level. Don&apos;t let legacy systems hold you back. Our Enterprise application modernization services can revitalize your digital ecosystem.
                             </p>
 
                             {/* Benefits */}
@@ -84,7 +83,7 @@ export default function CTA() {
                                     href="/contact"
                                     className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#2563eb] rounded-full font-semibold transition-all hover:shadow-lg hover:scale-105"
                                 >
-                                    Schedule Consultation
+                                    Book Your Free Enterprise Consultation
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Link>
                             </div>

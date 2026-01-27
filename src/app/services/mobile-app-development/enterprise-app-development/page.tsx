@@ -6,31 +6,72 @@ import TechStack from "@/components/services/mobile-app-development/enterprise-a
 import Process from "@/components/services/mobile-app-development/enterprise-app-development/Process";
 import WhyChooseUs from "@/components/services/mobile-app-development/enterprise-app-development/WhyChooseUs";
 import CTA from "@/components/services/mobile-app-development/enterprise-app-development/CTA";
+import FAQ from "@/components/services/mobile-app-development/enterprise-app-development/FAQ";
 
 export const metadata: Metadata = {
-    title: "Enterprise App Development Services | Secure & Scalable | Testriq",
+    title: "Enterprise Application Development Services | Secure & Scalable Solutions 🚀",
     description:
-        "Expert enterprise mobile app development with SSO, MDM, and SOC 2 compliance. Secure, scalable apps for manufacturing, healthcare, and financial services.",
+        "Empower your business with Enterprise Application Development services. Custom, secure, & scalable enterprise software development for global ROI. Get a quote today! 💼",
     keywords: [
-        "enterprise app development",
-        "enterprise mobile applications",
-        "corporate app development",
-        "secure mobile apps",
-        "SSO integration",
-        "MDM compatible apps",
-        "SOC 2 compliant apps",
+        "Enterprise Application Development services",
+        "Enterprise Software Development",
+        "Enterprise App Development company",
+        "Enterprise Mobile App Development",
+        "Enterprise Web Applications",
     ],
+};
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Enterprise Application Development Services",
+    "operatingSystem": "iOS, Android, Windows, macOS",
+    "applicationCategory": "BusinessApplication",
+    "about": "Custom enterprise software development services for global organizations.",
+    "provider": {
+        "@type": "Organization",
+        "name": "Cinute Infomedia",
+        "url": "https://www.cinuteinfomedia.com/"
+    },
+    "serviceType": "Enterprise App Development",
+    "areaServed": ["US", "EU", "India", "APAC"],
+    "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is enterprise application development?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Enterprise application development is the process of building complex, scalable, and secure software solutions designed to support the mission-critical operations of large organizations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does enterprise app development cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The cost of Enterprise Application Development services typically ranges from $50,000 to $500,000+, depending on complexity and integration needs."
+                }
+            }
+        ]
+    }
 };
 
 export default function EnterpriseAppDevelopmentPage() {
     return (
         <main className="min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <Hero />
             <ServiceOverview />
             <SolutionTypes />
             <TechStack />
             <Process />
             <WhyChooseUs />
+            <FAQ />
             <CTA />
         </main>
     );

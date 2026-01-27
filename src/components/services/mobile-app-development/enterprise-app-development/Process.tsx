@@ -17,68 +17,68 @@ export default function Process() {
     const steps = [
         {
             icon: MessageSquare,
-            title: "Enterprise Consulting",
-            description: "We assess your organization's needs, existing systems, and security requirements to create a comprehensive strategy.",
+            title: "Enterprise Consulting & Roadmap Planning",
+            description: "We begin with deep-dive consulting to align your digital strategy with business goals. Our Enterprise Architecture (EA) experts assess your current ecosystem to plan for Cloud migration.",
             details: [
-                "Stakeholder interviews",
-                "System architecture review",
-                "Security requirements",
-                "Compliance assessment",
-                "ROI analysis",
+                "Digital strategy alignment",
+                "EA expert assessment",
+                "Cloud migration planning",
+                "Hosting services setup",
+                "ROI-focused roadmap",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Shield,
-            title: "Security Architecture",
-            description: "Design secure architecture with SSO, encryption, and compliance requirements built from the ground up.",
+            title: "Security Architecture & Design",
+            description: "We design with security at the core. This includes Single Sign-On (SSO) Integration, Identity and Access Management (IAM), and robust data protection layers.",
             details: [
+                "SSO Integration (SAML/OAuth)",
+                "IAM framework design",
+                "Data protection layers",
                 "Threat modeling",
-                "Security protocols design",
-                "SSO/LDAP integration plan",
-                "Data encryption strategy",
-                "Compliance roadmap",
+                "Compliance-first design",
             ],
-            duration: "2-3 Weeks",
+            duration: "2-4 Weeks",
         },
         {
             icon: Code,
-            title: "Development & Testing",
-            description: "Agile development with continuous security testing, code reviews, and enterprise QA standards.",
+            title: "Development & Continuous QA",
+            description: "Using Agile methodology and DevOps pipelines, our team builds features incrementally. Every build undergoes rigorous security audits and penetration testing.",
             details: [
-                "Sprint-based development",
-                "Security code reviews",
-                "Automated testing",
+                "Sprint-based agile dev",
+                "DevOps CI/CD pipelines",
+                "Rigorous security audits",
                 "Penetration testing",
-                "UAT environments",
+                "Modernization services",
             ],
             duration: "12-20 Weeks",
         },
         {
             icon: Link2,
-            title: "Integration & Migration",
-            description: "Seamless integration with your existing enterprise systems, data migration, and SSO configuration.",
+            title: "Integration & Middleware Services",
+            description: "We specialize in Legacy system integration, ensuring your new mobile or web app communicates perfectly with your existing ERP, CRM, and data warehouses.",
             details: [
-                "API integrations",
-                "Data migration",
-                "SSO configuration",
-                "MDM enrollment",
-                "Legacy system bridges",
+                "Legacy system integration",
+                "Custom API gateways",
+                "ERP & CRM sync",
+                "Data warehouse hooks",
+                "Middleware optimization",
             ],
-            duration: "3-4 Weeks",
+            duration: "3-5 Weeks",
         },
         {
             icon: Rocket,
-            title: "Deployment & Support",
-            description: "Enterprise rollout with training, documentation, and ongoing 24/7 support with SLA guarantees.",
+            title: "Deployment & 24/7 Enterprise Support",
+            description: "Our commitment doesn't end at launch. We provide Enterprise app maintenance and continuous delivery, backed by 24/7 proactive monitoring and strict SLA guarantees.",
             details: [
-                "Staged rollout",
-                "User training",
-                "Admin documentation",
-                "24/7 support setup",
-                "SLA monitoring",
+                "Staged enterprise rollout",
+                "Maintenance & delivery",
+                "24/7 proactive monitoring",
+                "Strict SLA guarantees",
+                "Ongoing support",
             ],
-            duration: "2-4 Weeks",
+            duration: "Ongoing",
         },
     ];
 
@@ -102,13 +102,13 @@ export default function Process() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Our Enterprise</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>A Security-First Lifecycle for</span>{" "}
                         <span style={{ color: "#2563eb" }}>
-                            Development Process
+                            Enterprise Stability
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A rigorous methodology designed for enterprise-scale deployments with security and compliance at every stage.
+                        A rigorous methodology designed for enterprise-scale deployments with security and compliance at every stage of the application lifecycle.
                     </p>
                 </div>
 

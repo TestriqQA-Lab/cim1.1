@@ -16,12 +16,12 @@ export default function TechStack() {
 
     const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
         security: [
-            { name: "SSL/TLS", description: "Encryption", logo: "" },
-            { name: "AES-256", description: "Data Encryption", logo: "" },
-            { name: "OWASP", description: "Security Standards", logo: "" },
-            { name: "Penetration Testing", description: "Security Audits", logo: "" },
-            { name: "SOC 2", description: "Compliance", logo: "" },
+            { name: "SSL/TLS", description: "Standard Encryption", logo: "" },
+            { name: "AES-256", description: "Advanced Data Encryption", logo: "" },
+            { name: "OWASP Top 10", description: "Security Standards", logo: "" },
+            { name: "SOC 2 Type II", description: "Compliance Standard", logo: "" },
             { name: "HIPAA", description: "Healthcare Compliance", logo: "" },
+            { name: "ISO 27001", description: "Information Security", logo: "" },
         ],
         identity: [
             { name: "Azure AD", description: "Microsoft Identity", logo: "/images/techstack_logos/azure-logo.svg" },
@@ -66,13 +66,13 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Enterprise</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Cloud-Native Infrastructure &</span>{" "}
                         <span style={{ color: "#2563eb" }}>
-                            Technology Stack
+                            Security Excellence
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Enterprise-grade technologies for security, compliance, and seamless integration with your existing systems.
+                        Our technical architecture is built for Interoperability and Scalability. We utilize a Microservices and Containers approach to ensure your application can grow without performance degradation.
                     </p>
                 </div>
 

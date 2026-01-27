@@ -18,37 +18,37 @@ export default function WhyChooseUs() {
         {
             icon: Shield,
             title: "Enterprise-Grade Security",
-            description: "Bank-level encryption, penetration testing, and security audits. SOC 2 Type II and HIPAA compliance capabilities.",
+            description: "We don't just follow standards; we set them. Our apps undergo quarterly third-party penetration tests and follow the latest Enterprise-grade mobile app security protocols.",
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
             icon: Scale,
             title: "Infinite Scalability",
-            description: "Architecture designed to scale from hundreds to millions of users without performance degradation.",
+            description: "Our Cloud-native enterprise app development approach ensures your infrastructure scales automatically to handle millions of requests without latency.",
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
-            icon: FileCheck,
-            title: "Compliance Ready",
-            description: "Built-in compliance for GDPR, HIPAA, SOC 2, FedRAMP, and industry-specific regulations.",
+            icon: Sparkles,
+            title: "30+ Years of Collective Authority",
+            description: "Our strategists have seen the evolution of the web. We apply three decades of experience to ensure your Enterprise Software Development project avoids common pitfalls.",
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
             icon: Headphones,
             title: "24/7 Enterprise Support",
-            description: "Dedicated support team with guaranteed SLAs, proactive monitoring, and rapid incident response.",
+            description: "Dedicated support team with guaranteed SLAs, proactive monitoring, and rapid incident response backed by strict uptime guarantees.",
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
             icon: Lock,
             title: "SSO & MDM Integration",
-            description: "Seamless integration with Azure AD, Okta, and enterprise MDM solutions for secure deployment.",
+            description: "Seamless integration with Azure AD, Okta, and enterprise MDM solutions (InTune, MobileIron) for secure global deployment.",
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
             icon: TrendingUp,
-            title: "Proven Track Record",
-            description: "Over 85 enterprise clients across manufacturing, healthcare, finance, and government sectors.",
+            title: "Global Multi-Platform Reach",
+            description: "Target users across the globe with Multi-platform enterprise app development (iOS/Android/Web). We ensure your apps are localization-ready.",
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
     ];
@@ -88,13 +88,13 @@ export default function WhyChooseUs() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Why Choose</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Why Choose Us as Your</span>{" "}
                         <span style={{ color: "#2563eb" }}>
-                            Enterprise Development
+                            Enterprise App Development Company?
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        The enterprise expertise, security, and reliability your organization demands.
+                        The enterprise expertise, security, and 30+ years of collective authority your organization demands for massive ROI.
                     </p>
                 </div>
 

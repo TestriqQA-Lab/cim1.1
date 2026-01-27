@@ -97,17 +97,17 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Secure, Scalable{" "}
+                            Enterprise Application Development Services:{" "}
                             <span
                                 className="relative inline-block"
                                 style={{
                                     color: "#2563eb",
                                 }}
                             >
-                                Enterprise Apps
+                                Driving Global Innovation in 2026
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: "#2563eb" }}
@@ -120,16 +120,16 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Build mission-critical mobile applications for your enterprise. Enterprise-grade security, seamless integrations, and scalable architecture for organizations of any size.
+                            In today&apos;s hyper-competitive digital landscape, off-the-shelf software often fails to meet the complex demands of modern business. Our Enterprise Application Development services bridge the gap between legacy limitations and future-ready performance.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "SSO & LDAP",
-                                "MDM Compatible",
-                                "SOC 2 Compliant",
-                                "99.9% Uptime",
+                                "85+ Global clients",
+                                "500K+ Active Users",
+                                "99.9% Uptime SLA",
+                                "SOC 2, GDPR Compliant",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -155,7 +155,7 @@ export default function Hero() {
                                     boxShadow: "0 4px 20px rgba(37, 99, 235, 0.25)",
                                 }}
                             >
-                                Schedule Consultation
+                                Schedule Free Enterprise Audit Today
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -168,25 +168,25 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Our Process
+                                Explore Our 2026 Process
                             </Link>
                         </div>
 
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
+                                <h4 className="text-3xl font-bold" style={{ color: "#2563eb" }}>95%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Bug-free applications</p>
+                            </div>
+                            <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
+                            <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#2563eb" }}>85+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Enterprise Clients</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Global Enterprise Clients</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#2563eb" }}>500K+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Active Users</p>
-                            </div>
-                            <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
-                            <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#2563eb" }}>99.9%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Uptime SLA</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Daily Active Users</p>
                             </div>
                         </div>
                     </div>
@@ -245,7 +245,7 @@ export default function Hero() {
                                             Enterprise Security
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            SOC 2 & HIPAA
+                                            SOC 2, HIPAA & GDPR
                                         </p>
                                     </div>
                                 </div>

@@ -37,67 +37,67 @@ export default function SolutionTypes() {
         {
             icon: Factory,
             title: "Manufacturing",
-            description: "Production monitoring, quality control, inventory management, and shop floor apps for manufacturing operations.",
+            description: "Optimize your shop floor with Enterprise business process automation (BPA). We deliver production monitoring and quality control apps that integrate with Legacy system integration and middleware services.",
             features: [
-                "Production dashboards",
-                "Quality inspections",
-                "Inventory tracking",
-                "Maintenance requests",
+                "Production monitoring",
+                "Quality control apps",
+                "Legacy system integration",
+                "Middleware services",
             ],
         },
         {
             icon: Heart,
             title: "Healthcare",
-            description: "HIPAA-compliant apps for patient engagement, clinical workflows, and healthcare administration.",
+            description: "Launch HIPAA and GDPR compliant enterprise software designed for patient engagement, clinical workflows, and secure health record administration. Our healthcare apps meet the highest standards of Application Lifecycle Management (ALM).",
             features: [
-                "Patient portals",
+                "HIPAA & GDPR compliant",
+                "Patient engagement",
                 "Clinical workflows",
-                "Appointment scheduling",
-                "HIPAA compliance",
+                "ALM standards",
             ],
         },
         {
             icon: Landmark,
             title: "Financial Services",
-            description: "Secure mobile banking, trading, and financial management apps with regulatory compliance.",
+            description: "Our Custom fintech and banking enterprise applications feature bank-level encryption and regulatory compliance. We have a proven track record of delivering 100% secure transactional platforms for global financial institutions.",
             features: [
+                "Custom fintech solutions",
+                "Bank-level encryption",
+                "Regulatory compliance",
                 "Secure transactions",
-                "Portfolio management",
-                "Compliance reporting",
-                "Biometric auth",
             ],
         },
         {
             icon: Truck,
             title: "Logistics & Supply Chain",
-            description: "Fleet management, route optimization, shipment tracking, and warehouse operations apps.",
+            description: "Master your logistics with route optimization and real-time shipment tracking. Our Enterprise supply chain management (SCM) apps reduce overhead and improve delivery predictability in the APAC, EU, and US markets.",
             features: [
-                "Fleet tracking",
                 "Route optimization",
-                "Delivery management",
-                "Warehouse ops",
+                "Real-time tracking",
+                "SCM apps",
+                "Global market reach",
             ],
         },
         {
             icon: Store,
             title: "Retail Enterprise",
-            description: "Omnichannel retail solutions, inventory management, and employee apps for retail chains.",
+            description: "Scale your retail operations with omnichannel solutions, automated inventory management, and high-performance employee apps designed for global retail chains.",
             features: [
-                "Store operations",
-                "Inventory management",
-                "Customer engagement",
-                "POS integration",
+                "Omnichannel solutions",
+                "Inventory automation",
+                "Retail employee apps",
+                "POS cloud integration",
             ],
         },
         {
             icon: Building,
             title: "Government & Public Sector",
-            description: "Citizen services, internal operations, and field inspection apps with government compliance.",
+            description: "Deliver secure, compliant citizen portals and internal operations apps. We specialize in FedRAMP-ready solutions for field inspections and complex case management.",
             features: [
-                "Citizen portals",
-                "Field inspections",
+                "Secure citizen portals",
+                "Field inspection apps",
                 "Case management",
-                "FedRAMP ready",
+                "FedRAMP compliance",
             ],
         },
     ];
@@ -121,13 +121,13 @@ export default function SolutionTypes() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Enterprise Solutions by</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Industry-Specific Expertise in</span>{" "}
                         <span style={{ color: "#2563eb" }}>
-                            Industry
+                            Global Markets
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Specialized enterprise mobile solutions tailored for your industry requirements and compliance needs.
+                        Specialized enterprise mobile solutions tailored for your industry requirements and compliance needs in APAC, EU, and US markets.
                     </p>
                 </div>
 
