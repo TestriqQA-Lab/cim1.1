@@ -28,7 +28,7 @@ export default function TechStack() {
             icon: Server,
             description: "Backend frameworks we use",
             technologies: [
-                { name: "Express.js", description: "Minimalist Node.js", logo: "/images/techstack_logos/express-logo1.svg" },
+                { name: "Express.js", description: "Minimalist Node.js", logo: "/images/techstack_logos/express-logo1.webp" },
                 { name: "NestJS", description: "Enterprise Node.js", logo: "/images/techstack_logos/NestJS-logo.svg" },
                 { name: "Fastify", description: "High performance", logo: "/images/techstack_logos/Fastify-logo.png" },
                 { name: "Django", description: "Python framework", logo: "/images/techstack_logos/django-logo.svg" },

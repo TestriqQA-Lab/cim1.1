@@ -26,7 +26,7 @@ export default function Technologies() {
                 { name: "Java", description: "Enterprise solutions", logo: "/images/techstack_logos/java-logo.svg" },
                 { name: "Firebase", description: "Real-time database", logo: "/images/techstack_logos/firebase-logo.svg" },
                 { name: "GraphQL", description: "Efficient data queries", logo: "/images/techstack_logos/graphql-logo.svg" },
-                { name: "Express", description: "Fast web framework", logo: "/images/techstack_logos/express-logo1.svg" }
+                { name: "Express", description: "Fast web framework", logo: "/images/techstack_logos/express-logo1.webp" }
             ]
         },
         {

@@ -68,7 +68,7 @@ export default function TechStack() {
                 { name: "Vercel", description: "Edge Deployment", logo: "/images/techstack_logos/vercel-logo.webp" },
                 { name: "Netlify", description: "Web Platform", logo: "/images/techstack_logos/netlify-logo.svg" },
                 { name: "Cloudflare", description: "Edge Network", logo: "/images/techstack_logos/Cloudflare-logo.webp" },
-                { name: "GitHub Pages", description: "Static Hosting", logo: "/images/techstack_logos/github-logo.svg" },
+                { name: "GitHub Pages", description: "Static Hosting", logo: "/images/techstack_logos/github-logo1.webp" },
             ],
         },
     ];

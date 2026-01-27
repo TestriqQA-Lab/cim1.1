@@ -27,7 +27,7 @@ export default function Technologies() {
         { name: "PostgreSQL", logo: "/images/techstack_logos/postgresql-logo.svg" },
         { name: "MySQL", logo: "/images/techstack_logos/mysql-logo.svg" },
         { name: "Redis", logo: "/images/techstack_logos/redis-logo.svg" },
-        { name: "Express", logo: "/images/techstack_logos/express-logo1.svg" },
+        { name: "Express", logo: "/images/techstack_logos/express-logo1.webp" },
         { name: "Django", logo: "/images/techstack_logos/django-logo.svg" },
     ];
 
@@ -36,7 +36,7 @@ export default function Technologies() {
         { name: "Docker", logo: "/images/techstack_logos/docker-logo.svg" },
         { name: "Kubernetes", logo: "/images/techstack_logos/kubernetes-logo.svg" },
         { name: "Git", logo: "/images/techstack_logos/git-logo.svg" },
-        { name: "GitHub", logo: "/images/techstack_logos/github-logo.svg" },
+        { name: "GitHub", logo: "/images/techstack_logos/github-logo1.webp" },
         { name: "GitLab", logo: "/images/techstack_logos/gitlab-logo.svg" },
         { name: "Jenkins", logo: "/images/techstack_logos/jenkins-logo.svg" },
         { name: "Nginx", logo: "/images/techstack_logos/nginx-logo.svg" },
