@@ -70,7 +70,7 @@ export default function Hero() {
                     </span>
                 </nav>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-16 items-start">
 
                     {/* LEFT CONTENT */}
                     <div
@@ -220,7 +220,7 @@ export default function Hero() {
 
                         {/* Feature Card */}
                         <div
-                            className="relative rounded-3xl shadow-2xl border hover:scale-105 transition-transform duration-300 max-w-lg w-full p-4"
+                            className="relative rounded-3xl shadow-2xl border hover:scale-105 transition-transform duration-300 max-w-xl w-full p-6"
                             style={{
                                 backgroundColor: "var(--card-bg)",
                                 borderColor: "var(--border-color)",
