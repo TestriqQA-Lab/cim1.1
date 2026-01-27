@@ -36,73 +36,73 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Rocket,
-            title: "Startup MVPs",
-            description: "Quickly validate your idea with a hybrid MVP. Perfect for startups needing fast market entry with limited budget.",
+            title: "Custom Hybrid App Development for Startups (MVPs)",
+            description: "Validate your business model in record time. Our startup-focused solutions provide a cost-effective way to hit both iOS and Android markets simultaneously with a feature-rich MVP.",
             features: [
                 "Rapid prototyping",
+                "Fast market entry",
                 "Cost-effective launch",
-                "Quick iterations",
-                "Web team friendly",
+                "Investor-ready MVP",
             ],
             gradient: "from-[#00b4d8] to-[#0077b6]",
         },
         {
             icon: ShoppingCart,
-            title: "E-commerce Apps",
-            description: "Mobile shopping experiences built with your existing web storefront technologies for consistent branding.",
+            title: "Ecommerce and Retail Hybrid App Solutions",
+            description: "Boost your sales with high-conversion mobile shopping. We integrate secure payment gateways and AR-driven product previews using modern web view architecture.",
             features: [
-                "Product catalogs",
-                "Secure checkout",
+                "Secure payments",
+                "AR product previews",
                 "Push notifications",
-                "Offline browsing",
+                "Inventory sync",
             ],
             gradient: "from-[#0077b6] to-[#00b4d8]",
         },
         {
             icon: Building2,
-            title: "Internal Business Apps",
-            description: "Corporate tools and internal apps built rapidly using your organization's existing web development resources.",
+            title: "B2B Hybrid Apps for Internal Operations",
+            description: "Streamline your workforce. We build secure B2B hybrid apps for internal business operations, featuring robust data encryption and seamless ERP/CRM integration.",
             features: [
-                "Employee portals",
-                "Inventory management",
-                "Field service apps",
-                "Data collection",
+                "ERP/CRM integration",
+                "Data encryption",
+                "Offline reporting",
+                "Employee workflows",
             ],
             gradient: "from-[#48cae4] to-[#00b4d8]",
         },
         {
             icon: FileText,
-            title: "Content & Media Apps",
-            description: "News, blogs, and content apps with offline reading capabilities and push notification support.",
+            title: "Healthcare and HIPAA-Compliant Hybrid Apps",
+            description: "Trust and security are paramount. We deliver healthcare hybrid applications that strictly follow HIPAA guidelines, ensuring patient data privacy and secure telehealth capabilities.",
             features: [
-                "Offline content",
-                "Media playback",
-                "Push notifications",
-                "Content sync",
+                "HIPAA compliance",
+                "Telehealth features",
+                "Secure messaging",
+                "Patient records",
             ],
             gradient: "from-[#00b4d8] to-[#48cae4]",
         },
         {
             icon: Headphones,
-            title: "Customer Service Apps",
-            description: "Support and service apps with chat, ticketing, and knowledge base features using familiar web tech.",
+            title: "Wearable and IoT Hybrid App Development",
+            description: "The future is connected. Our developers build wearable and IoT hybrid solutions that sync with smartwatches and IoT devices, providing real-time data visualization.",
             features: [
-                "Live chat",
-                "Ticket system",
-                "FAQ sections",
-                "Push alerts",
+                "Smartwatch sync",
+                "IoT connectivity",
+                "Real-time data",
+                "Cross-device control",
             ],
             gradient: "from-[#0077b6] to-[#48cae4]",
         },
         {
             icon: GraduationCap,
-            title: "Educational Apps",
-            description: "Learning platforms and educational apps with video content, quizzes, and progress tracking.",
+            title: "Content, Media & EdTech Solutions",
+            description: "Engage your audience with news portals or learning platforms. Our apps support offline reading, video streaming, and real-time progress tracking across all devices.",
             features: [
-                "Video courses",
-                "Interactive quizzes",
+                "Offline reading",
+                "Video streaming",
                 "Progress tracking",
-                "Offline learning",
+                "LMS integration",
             ],
             gradient: "from-[#48cae4] to-[#0077b6]",
         },
@@ -139,7 +139,7 @@ export default function SolutionTypes() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        From MVPs to enterprise apps, hybrid development fits many business needs perfectly.
+                        From disruptive MVPs to complex B2B ecosystems, our hybrid app development services cater to diverse global industries.
                     </p>
                 </div>
 

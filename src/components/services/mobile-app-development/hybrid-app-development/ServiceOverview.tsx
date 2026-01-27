@@ -16,43 +16,43 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Globe,
-            title: "Ionic App Development",
-            description: "Build powerful hybrid apps with Ionic Framework using Angular, React, or Vue - your choice of web framework.",
+            title: "Ionic Framework App Development Services",
+            description: "As a premier Ionic framework app development agency, we build lightning-fast apps using Angular, React, or Vue. Our performance optimization ensures your Ionic apps feel as smooth as native code.",
             gradient: "from-[#00b4d8] to-[#0077b6]",
             shadowColor: "rgba(0, 180, 216, 0.4)",
         },
         {
             icon: Zap,
-            title: "Capacitor Integration",
-            description: "Access native device features through Capacitor plugins - camera, GPS, push notifications, and more.",
+            title: "Capacitor & Native Bridge Integration",
+            description: "Unlock the full potential of hardware with Capacitor solutions. We provide custom API integration for hybrid applications, enabling seamless access to GPS, Camera, Biometrics, and Push Notifications.",
             gradient: "from-[#0077b6] to-[#00b4d8]",
             shadowColor: "rgba(0, 119, 182, 0.4)",
         },
         {
             icon: Smartphone,
-            title: "Progressive Web Apps",
-            description: "Create installable web apps that work offline and provide app-like experiences in the browser.",
+            title: "Scalable Progressive Web Apps (PWA)",
+            description: "Future-proof your business with installable web apps. Our PWAs offer offline functionality and app-like experiences directly in the browser, maximizing user engagement without friction.",
             gradient: "from-[#48cae4] to-[#00b4d8]",
             shadowColor: "rgba(72, 202, 228, 0.4)",
         },
         {
             icon: RefreshCw,
-            title: "Web to Mobile Conversion",
-            description: "Transform your existing web application into a mobile app without rewriting code from scratch.",
+            title: "Native to Hybrid App Conversion Services",
+            description: "Modernize your tech stack. We specialize in hybrid app migration, converting siloed native apps into a unified, maintainable cross-platform app development architecture.",
             gradient: "from-[#00b4d8] to-[#48cae4]",
             shadowColor: "rgba(0, 180, 216, 0.4)",
         },
         {
             icon: Puzzle,
-            title: "Plugin Development",
-            description: "Custom native plugins when Capacitor's built-in features don't meet your specific requirements.",
+            title: "Custom Plugin & Native Container Dev",
+            description: "When standard plugins fall short, our hybrid app developers build custom native bridges to handle complex requirements like specialized IoT connectivity or hardware integration.",
             gradient: "from-[#0077b6] to-[#48cae4]",
             shadowColor: "rgba(0, 119, 182, 0.4)",
         },
         {
             icon: Rocket,
-            title: "Store Deployment",
-            description: "Complete submission to App Store and Play Store with optimized listings and compliance checks.",
+            title: "App Store & Play Store Deployment",
+            description: "Navigating global compliance is our forte. We handle the entire submission process, ensuring your apps meet the latest 2026 security and privacy standards for both iOS and Android.",
             gradient: "from-[#48cae4] to-[#0077b6]",
             shadowColor: "rgba(72, 202, 228, 0.4)",
         },
@@ -118,7 +118,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Leverage your web development skills to build mobile apps with native capabilities.
+                        Leverage your reach and minimize overhead with hybrid app development strategies that bridge the gap between web agility and native power.
                     </p>
                 </div>
 

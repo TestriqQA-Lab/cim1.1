@@ -16,44 +16,44 @@ export default function WhyChooseUs() {
 
     const reasons = [
         {
-            icon: Code2,
-            title: "Use Your Web Skills",
-            description: "If your team knows HTML, CSS, and JavaScript, they can build mobile apps without learning Swift or Kotlin.",
+            icon: DollarSign,
+            title: "Cost-Effective Mobile Solutions",
+            description: "Save up to 50% on development costs compared to separate native builds without losing feature parity.",
             gradient: "from-[#00b4d8] to-[#0077b6]",
             shadowColor: "rgba(0, 180, 216, 0.3)",
         },
         {
-            icon: DollarSign,
-            title: "50% Cost Savings",
-            description: "One codebase, one team, one deployment - hybrid development dramatically reduces your development budget.",
+            icon: Zap,
+            title: "Time-to-Market Advantage",
+            description: "Launch on both iOS and Android in half the time, letting you capture market share while competitors are still coding.",
             gradient: "from-[#0077b6] to-[#00b4d8]",
             shadowColor: "rgba(0, 119, 182, 0.3)",
         },
         {
-            icon: Zap,
-            title: "Rapid Development",
-            description: "Web development tools and hot reload mean faster iterations and quicker time to market for your app.",
+            icon: Sparkles,
+            title: "Post-2025 SEO & EEAT Strategy",
+            description: "Our content and apps are optimized for Google’s latest core updates, ensuring your brand ranks high and builds trust.",
             gradient: "from-[#48cae4] to-[#00b4d8]",
             shadowColor: "rgba(72, 202, 228, 0.3)",
         },
         {
-            icon: Globe,
-            title: "Web + Mobile + PWA",
-            description: "Deploy to iOS, Android, and the web from a single codebase - true multi-platform coverage.",
+            icon: Users,
+            title: "Expert Authoritative Team",
+            description: "With 120+ successful projects, our team consists of verified industry experts in HTML5, JavaScript, and Native Bridge integration.",
             gradient: "from-[#00b4d8] to-[#48cae4]",
             shadowColor: "rgba(0, 180, 216, 0.3)",
         },
         {
             icon: RefreshCw,
-            title: "Easy Updates",
-            description: "Update your app instantly without going through app store review with Ionic's live update capabilities.",
+            title: "Proactive Hybrid App Maintenance",
+            description: "Post-launch support includes performance monitoring, periodic security audits, and regular updates for latest OS versions.",
             gradient: "from-[#0077b6] to-[#48cae4]",
             shadowColor: "rgba(0, 119, 182, 0.3)",
         },
         {
-            icon: Users,
-            title: "Ionic Experts",
-            description: "Our team has deep experience with Ionic and Capacitor, delivering hybrid apps that perform like native.",
+            icon: Globe,
+            title: "Full Lifecycle Support",
+            description: "From Web to App conversion to hybrid app performance tuning, we are your long-term growth partner.",
             gradient: "from-[#48cae4] to-[#0077b6]",
             shadowColor: "rgba(72, 202, 228, 0.3)",
         },
@@ -106,7 +106,7 @@ export default function WhyChooseUs() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Get the best of web and native with our hybrid app development expertise.
+                        Get the competitive edge with a partner that understands the 2026 digital landscape.
                     </p>
                 </div>
 

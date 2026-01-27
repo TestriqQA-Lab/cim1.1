@@ -98,10 +98,9 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Web Skills,{" "}
                             <span
                                 className="relative inline-block animate-wave"
                                 style={{
@@ -111,7 +110,7 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Native Power
+                                Premier Hybrid App Development Services
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: "#0077b6" }}
@@ -123,8 +122,10 @@ export default function Hero() {
                             </span>
                         </h1>
 
-                        <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Build mobile apps using web technologies you already know. HTML, CSS, and JavaScript - wrapped in a native shell for App Store and Play Store.
+                        <p className="text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
+                            Forge a formidable mobile presence with the speed of web development and the punch of native performance. In 2026, staying ahead means deploying faster without sacrificing quality. Our hybrid mobile app development company leverages HTML5, CSS3, and JavaScript, encapsulated in a robust native shell, to deliver seamless experiences on both the App Store and Play Store.
+                            <br /><br />
+                            Whether you are seeking custom hybrid app development for startups or enterprise-grade multi-platform hybrid tablet and mobile apps, our team ensures a single codebase efficiency that slashes time-to-market by 60%.
                         </p>
 
                         {/* Feature Pills */}
@@ -177,20 +178,21 @@ export default function Hero() {
                         </div>
 
                         {/* Stats */}
-                        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
+                        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#00b4d8" }}>120+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Hybrid Apps Built</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Global Apps Delivered</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#00b4d8" }}>60%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Faster Development</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Faster Cycles</p>
                             </div>
+
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#00b4d8" }}>50%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cost Reduction</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#00b4d8" }}>95%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Bug-Free Deployment</p>
                             </div>
                         </div>
                     </div>

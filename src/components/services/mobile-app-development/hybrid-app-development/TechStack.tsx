@@ -16,12 +16,12 @@ export default function TechStack() {
 
     const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
         frameworks: [
-            { name: "Ionic", description: "Hybrid Framework", logo: "/images/techstack_logos/ionic-logo.svg" },
-            { name: "Capacitor", description: "Native Runtime", logo: "/images/techstack_logos/capacitor-logo.png" },
+            { name: "Ionic", description: "UI/UX Excellence", logo: "/images/techstack_logos/ionic-logo.svg" },
+            { name: "Capacitor", description: "Modern Native Runtime", logo: "/images/techstack_logos/capacitor-logo.png" },
             { name: "Cordova", description: "Legacy Support", logo: "/images/techstack_logos/cordova-logo.webp" },
-            { name: "PhoneGap", description: "Apache Cordova", logo: "/images/techstack_logos/cordova-logo.webp" },
-            { name: "Electron", description: "Desktop Apps", logo: "/images/techstack_logos/electron-logo.png" },
-            { name: "PWA", description: "Progressive Web", logo: "/images/techstack_logos/pwa-logo.png" },
+            { name: "PhoneGap", description: "Migration Experts", logo: "/images/techstack_logos/cordova-logo.webp" },
+            { name: "Electron", description: "Desktop Expansion", logo: "/images/techstack_logos/electron-logo.png" },
+            { name: "PWA", description: "Web-Native Hybrid", logo: "/images/techstack_logos/pwa-logo.png" },
         ],
         frontend: [
             { name: "Angular", description: "TypeScript Framework", logo: "/images/techstack_logos/angularjs-logo.svg" },
@@ -78,7 +78,7 @@ export default function TechStack() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Modern web technologies combined with native capabilities through proven hybrid frameworks.
+                        We use a cutting-edge app shell model combined with the industry&apos;s most reliable frameworks for 2026 tech leadership.
                     </p>
                 </div>
 

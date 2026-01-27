@@ -17,66 +17,66 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Requirements Analysis",
-            description: "We evaluate your project needs and determine if hybrid is the right approach for your use case.",
+            title: "Strategic Requirements Analysis",
+            description: "We assess your business goals to ensure hybrid app development is the optimal path for your specific ROI needs.",
             details: [
-                "Feature requirements review",
-                "Platform capability assessment",
-                "Hybrid vs native evaluation",
-                "Technology selection",
-                "Project scoping",
+                "ROI needs assessment",
+                "Business goal alignment",
+                "Hybrid viability check",
+                "Platform strategy",
+                "Resource planning",
             ],
             duration: "1-2 Weeks",
         },
         {
             icon: Palette,
-            title: "UI/UX Design",
-            description: "Design mobile-optimized interfaces that work beautifully across iOS and Android platforms.",
+            title: "Hybrid Mobile App Design (UI/UX)",
+            description: "Our designers craft high-fidelity interfaces optimized for cross-platform compatibility and user retention.",
             details: [
-                "Mobile-first wireframes",
                 "Cross-platform UI patterns",
-                "Component library setup",
+                "User retention focus",
+                "High-fidelity interfaces",
+                "Native-feel animations",
                 "Interactive prototypes",
-                "Usability testing",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Code,
-            title: "Development",
-            description: "Build your app using modern web technologies with native plugin integration for device features.",
+            title: "Agile Development & Coding",
+            description: "Using a single codebase, our developers build your app with modular, clean code that is easy to scale and maintain.",
             details: [
-                "Ionic/Capacitor setup",
-                "Component development",
-                "Plugin integration",
-                "API connections",
-                "Performance tuning",
+                "Single codebase efficiency",
+                "Modular code architecture",
+                "Clean code standards",
+                "Native bridge assembly",
+                "Feature implementation",
             ],
             duration: "6-10 Weeks",
         },
         {
             icon: TestTube2,
-            title: "Testing & QA",
-            description: "Comprehensive testing on real devices to ensure native-like performance and reliability.",
+            title: "Hybrid App Testing & Quality Assurance",
+            description: "Rigorous testing on real devices ensures 99.9% crash-free sessions and hybrid app security.",
             details: [
-                "Cross-device testing",
-                "Platform-specific QA",
-                "Performance profiling",
-                "Plugin compatibility",
-                "User acceptance testing",
+                "Real device verification",
+                "Security auditing",
+                "Crash-free profiling",
+                "UX validation",
+                "Regression testing",
             ],
             duration: "2-3 Weeks",
         },
         {
             icon: Rocket,
-            title: "Store Deployment",
-            description: "Submit to both app stores with optimized listings and handle the approval process.",
+            title: "Global Deployment & Store Approval",
+            description: "We manage the launch and provide ongoing hybrid app maintenance and support services to keep your app updated.",
             details: [
-                "Build configuration",
-                "Store asset preparation",
-                "App Store submission",
-                "Play Store submission",
+                "App Store approval",
+                "Play Store launch",
+                "Metadata optimization",
                 "Post-launch monitoring",
+                "Ongoing maintenance",
             ],
             duration: "1-2 Weeks",
         },
@@ -114,7 +114,7 @@ export default function Process() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A streamlined methodology that leverages web development speed for mobile app delivery.
+                        A data-driven, EEAT-aligned methodology that ensures quality at every milestone.
                     </p>
                 </div>
 
