@@ -22,7 +22,7 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #1877F2, #0A66C2)",
             icon: Facebook,
             accentColor: "#1877F2",
-            link: "/services/social-media-marketing/facebook-advertising",
+            link: "/services/social-media-marketing/facebook-marketing",
         },
         {
             name: "Instagram Marketing",
@@ -44,7 +44,7 @@ export default function Platforms() {
         {
             name: "YouTube",
             description: "Developing high-value video content, optimizing for search, and utilizing YouTube Ads to capture attention and educate potential customers.",
-            link: "/services/social-media-marketing/youtube-advertising",
+            link: "/services/social-media-marketing/youtube-marketing",
             gradient: "linear-gradient(135deg, #FF0000, #282828)",
             icon: Youtube,
             accentColor: "#FF0000",

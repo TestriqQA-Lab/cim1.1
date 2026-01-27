@@ -2,7 +2,7 @@
 
 import { Sparkles, ArrowRight, Home, ChevronRight, Rocket, Zap, Smartphone, TrendingUp, ShieldCheck, Code } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import MobileAppAnimation from "./MobileAppAnimation";
 
 
 export default function Hero() {
@@ -70,7 +70,7 @@ export default function Hero() {
                     </span>
                 </nav>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-16 items-start">
 
                     {/* LEFT CONTENT */}
                     <div
@@ -263,24 +263,14 @@ export default function Hero() {
 
                         {/* Feature Card */}
                         <div
-                            className="relative flex items-center justify-center rounded-3xl shadow-2xl border hover:scale-105 transition-transform duration-300 max-w-lg w-full"
+                            className="relative rounded-3xl shadow-2xl border hover:scale-105 transition-transform duration-300 max-w-xl w-full p-6"
                             style={{
                                 backgroundColor: "var(--card-bg)",
                                 borderColor: "var(--border-color)",
                                 backdropFilter: "blur(6px)",
                             }}
                         >
-                            <Image
-                                src="/images/services-images/mobile-app-development-illustration.webp"
-                                alt="Mobile App Development"
-                                width={638}
-                                height={565}
-                                priority
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 638px"
-                                className="w-[80%] h-[80%] rounded-3xl p-5"
-                                placeholder="blur"
-                                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgADEf/aAAwDAQACEQMRAD8AzTR9I1C5sY57izt7eKVQ8Ud1KImkU8g7cEgH5nHNWP6Y/EfxSlFNmSuf/9k="
-                            />
+                            <MobileAppAnimation />
                         </div>
                         {/* Additional Info Section */}
                         <div
