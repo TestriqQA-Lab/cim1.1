@@ -20,45 +20,45 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "ecommerce",
-            title: "E-commerce Sites",
-            description: "Product page optimization, category structure, and schema markup for online stores.",
+            title: "E-commerce Websites",
+            description: "Specialized on-page SEO optimization for ecommerce websites (Shopify/Magento/WooCommerce). We optimize product pages for high-intent keywords and implement merchant-specific schema.",
             icon: Store,
             color: seoGreen,
         },
         {
-            id: "corporate",
-            title: "Corporate Websites",
-            description: "Service page optimization, about us pages, and local SEO for business sites.",
+            id: "saas",
+            title: "SaaS & Tech Companies",
+            description: "Strategic on-page SEO strategy for SaaS companies. We focus on feature-driven content and technical debt reduction for fast-growing software platforms.",
             icon: Building2,
             color: "#3B82F6",
         },
         {
-            id: "blogs",
-            title: "Blogs & Publishers",
-            description: "Article optimization, content clusters, and featured snippet targeting.",
-            icon: Newspaper,
-            color: "#F59E0B",
-        },
-        {
-            id: "education",
-            title: "Educational Platforms",
-            description: "Course page SEO, knowledge base optimization, and FAQ schema.",
-            icon: GraduationCap,
-            color: "#8B5CF6",
-        },
-        {
             id: "healthcare",
-            title: "Healthcare Sites",
-            description: "YMYL content optimization, E-E-A-T signals, and medical schema markup.",
+            title: "Medical Practices & Healthcare",
+            description: "Ensuring YMYL (Your Money Your Life) compliance. We implement strict E-E-A-T signals to build patient trust and dominate local healthcare search.",
             icon: HeartPulse,
             color: "#EC4899",
         },
         {
             id: "legal",
-            title: "Legal & Professional",
-            description: "Practice area pages, attorney profiles, and local service schema.",
+            title: "Law Firms & Legal Services",
+            description: "Authoritative content optimization for high-competition legal niches. We optimize practice area pages to convert 'searchers' into 'clients.'",
             icon: Scale,
             color: "#06B6D4",
+        },
+        {
+            id: "realestate",
+            title: "Real Estate & Property Portals",
+            description: "Data-driven on-page SEO for real estate websites. We optimize dynamic listing pages and local map signals for hyper-local dominance.",
+            icon: Building2,
+            color: "#F59E0B",
+        },
+        {
+            id: "wordpress",
+            title: "WordPress & CMS Optimization",
+            description: "Expert on-page SEO for WordPress websites. From technical plugin configuration to content pruning, we ensure your CMS isn't holding you back.",
+            icon: GraduationCap,
+            color: "#8B5CF6",
         },
     ];
 
@@ -84,10 +84,10 @@ export default function SolutionTypes() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Industry <span style={{ color: seoGreen }}>Solutions</span>
+                        Tailored On-Page <span style={{ color: seoGreen }}>SEO Strategy for Every Niche</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Tailored on-page SEO strategies for different website types and industries.
+                        Different industries require different signals. We provide specialized <strong>on-page SEO services for small businesses</strong> and global enterprises alike.
                     </p>
                 </div>
 

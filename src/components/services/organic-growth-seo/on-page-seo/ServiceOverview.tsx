@@ -19,38 +19,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Type,
-            title: "Title Tag Optimization",
-            description: "Crafting compelling, keyword-rich title tags that improve click-through rates and rankings.",
+            title: "Multi-Step Title Tag Optimization",
+            description: "We don't just add keywords; we engineer clicks. Our on-page SEO keyword mapping services ensure every title tag is a high-CTR hook that satisfies user intent.",
             color: seoGreen,
         },
         {
             icon: FileText,
-            title: "Meta Description Writing",
-            description: "Creating persuasive meta descriptions that encourage clicks from search results.",
+            title: "Meta Description & Snippet Engineering",
+            description: "Maximize your real estate on the SERP. We craft persuasive descriptions that improve CTR by 20%+ while naturally integrating on-page SEO variants.",
             color: "#3B82F6",
         },
         {
             icon: ImageIcon,
-            title: "Image Optimization",
-            description: "Alt text, compression, and proper formatting for faster load times and accessibility.",
+            title: "Performance-First Image Optimization",
+            description: "Speed is a ranking factor. Our On-page SEO image optimization services include WebP conversion, lazy loading, and accessibility-rich alt text for visual search dominance.",
             color: "#F59E0B",
         },
         {
             icon: Link2,
-            title: "Internal Linking Strategy",
-            description: "Strategic internal links to distribute page authority and improve site navigation.",
+            title: "Advanced Internal Linking Strategy",
+            description: "Build a topic cluster that search engines love. We use semantic silos to distribute link equity, ensuring your priority pages rank faster.",
             color: "#8B5CF6",
         },
         {
             icon: Gauge,
-            title: "Core Web Vitals",
-            description: "Optimizing LCP, FID, and CLS for better user experience and search rankings.",
+            title: "Core Web Vitals & Page Speed",
+            description: "Post-2025 updates demand speed. We optimize LCP, FID, and CLS, ensuring a seamless user experience SEO that keeps visitors engaged.",
             color: "#EC4899",
         },
         {
             icon: Code,
-            title: "Schema Markup",
-            description: "Implementing structured data for rich snippets and enhanced search visibility.",
+            title: "High-E-E-A-T Schema Markup Implementation",
+            description: "Speak Google's language. We implement custom on-page SEO schema markup implementation (JSON-LD) for rich snippets, FAQs, and organization authority.",
             color: "#06B6D4",
         },
     ];
@@ -93,16 +93,16 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        On-Page SEO{" "}
+                        Expert On-Page SEO{" "}
                         <span style={{ color: seoGreen }}>
-                            Services
+                            Optimization for Scalable Growth
                         </span>
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Comprehensive on-page optimization to help search engines understand and rank your content.
+                        Generic SEO is dead. Our framework focuses on deep <strong>on-page SEO technical audits and implementation</strong> to ensure your site is crawlable, relevant, and authoritative.
                     </p>
                 </div>
 

@@ -31,12 +31,12 @@ export default function CTA() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
-                        Ready to Rank <br />
-                        <span style={{ color: seoGreen }}>Higher?</span>
+                        Stop Guessing. Start Growing with a <br />
+                        <span style={{ color: seoGreen }}>Free On-Page SEO Audit.</span>
                     </h2>
 
                     <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
-                        Get a comprehensive on-page SEO audit and discover opportunities to improve your rankings.
+                        Is your website ready for the 2026 search landscape? Get a detailed breakdown of your site's health and a roadmap to #1 rankings.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -48,7 +48,7 @@ export default function CTA() {
                                 boxShadow: `0 4px 20px ${seoGreen}40`
                             }}
                         >
-                            Get Free SEO Audit
+                            Claim Your Free Audit Today
                             <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                         </Link>
                     </div>
@@ -57,15 +57,15 @@ export default function CTA() {
                     <div className="mt-16 pt-8 border-t flex flex-wrap justify-center gap-12 md:gap-24 opacity-70" style={{ borderColor: "var(--border-color)" }}>
                         <div className="text-center">
                             <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>100+</p>
-                            <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>SEO Elements</p>
+                            <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>SEO Factors Checked</p>
                         </div>
                         <div className="text-center">
-                            <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>24-48hrs</p>
+                            <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>24-Hour</p>
                             <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>Audit Delivery</p>
                         </div>
                         <div className="text-center">
-                            <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>Free</p>
-                            <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>Initial Consultation</p>
+                            <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>Zero</p>
+                            <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>Obligation</p>
                         </div>
                     </div>
                 </div>

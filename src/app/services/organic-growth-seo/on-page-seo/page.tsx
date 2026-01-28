@@ -5,12 +5,13 @@ import SolutionTypes from "@/components/services/organic-growth-seo/on-page-seo/
 import TechStack from "@/components/services/organic-growth-seo/on-page-seo/TechStack";
 import Process from "@/components/services/organic-growth-seo/on-page-seo/Process";
 import WhyChooseUs from "@/components/services/organic-growth-seo/on-page-seo/WhyChooseUs";
+import FAQ from "@/components/services/organic-growth-seo/on-page-seo/FAQ";
 import CTA from "@/components/services/organic-growth-seo/on-page-seo/CTA";
 
 export const metadata: Metadata = {
-    title: "On-Page SEO Services | Title Tags, Meta & Content Optimization",
+    title: "Hire Expert On-Page SEO Services | Boost Organic Traffic 2026",
     description:
-        "Professional on-page SEO services to optimize your website content, title tags, meta descriptions, headers, and internal linking for higher search rankings.",
+        "Scaling ROI with data-backed On-page SEO optimization. Rank #1, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
     keywords: [
         "on-page SEO",
         "on-page SEO services",
@@ -25,15 +26,66 @@ export const metadata: Metadata = {
     ],
 };
 
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "On-Page SEO Services",
+    "provider": {
+        "@type": "Organization",
+        "name": "Cinute Infomedia",
+        "url": "https://www.cinuteinfomedia.com"
+    },
+    "areaServed": "Global",
+    "description": "Professional on-page SEO optimization services including technical audits, keyword mapping, content optimization, and schema implementation to boost search rankings.",
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "SEO Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "On-page SEO Technical Audit"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "E-commerce SEO Optimization"
+                }
+            }
+        ]
+    },
+    "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is included in on-page SEO services?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our services include technical audits, keyword mapping, content optimization, image SEO, and schema markup."
+                }
+            }
+        ]
+    }
+};
+
 export default function OnPageSEOPage() {
     return (
         <main>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <Hero />
             <ServiceOverview />
             <SolutionTypes />
             <TechStack />
             <Process />
             <WhyChooseUs />
+            <FAQ />
             <CTA />
         </main>
     );

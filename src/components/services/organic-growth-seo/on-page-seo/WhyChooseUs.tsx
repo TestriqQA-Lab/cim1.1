@@ -12,33 +12,33 @@ export default function WhyChooseUs() {
     const benefits = [
         {
             icon: CheckCircle,
-            title: "Proven Methodology",
-            description: "Data-driven approach based on years of SEO experience and algorithm updates.",
+            title: "30+ Years Combined Experience",
+            description: "Our strategists have survived every major Google algorithm update since 2010.",
         },
         {
             icon: TrendingUp,
-            title: "Measurable Results",
-            description: "Clear reporting on rankings, traffic, and conversion improvements.",
+            title: "Data-Driven Methodology",
+            description: "Decisions based on conversion metrics, not just vanity traffic.",
         },
         {
             icon: Target,
-            title: "Strategic Focus",
-            description: "Prioritizing high-impact optimizations that drive real business results.",
+            title: "No Black-Hat Shortcuts",
+            description: "We build sustainable authority that withstands the 2025/2026 Core Updates.",
         },
         {
             icon: Award,
-            title: "Industry Expertise",
-            description: "Deep knowledge of SEO best practices and Google guidelines.",
+            title: "Transparent Reporting",
+            description: "See exactly how your On-page SEO cost translates into bottom-line revenue.",
         },
         {
             icon: Clock,
-            title: "Long-Term Value",
-            description: "Sustainable optimizations that continue to perform over time.",
+            title: "Global/Multilingual Support",
+            description: "Optimizing for US, EU, and APAC markets with proper hreflang implementation.",
         },
         {
             icon: Users,
-            title: "Dedicated Support",
-            description: "Expert team available to answer questions and provide guidance.",
+            title: "ROI-First Focus",
+            description: "We prioritize the 20% of optimizations that drive 80% of your traffic growth.",
         },
     ];
 
@@ -66,11 +66,10 @@ export default function WhyChooseUs() {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Why Choose <span style={{ color: seoGreen }}>Us</span>
+                            Global Expertise. Local Impact. <span style={{ color: seoGreen }}>Proven ROI.</span>
                         </h2>
                         <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            We focus on sustainable on-page SEO that builds authority and drives
-                            organic traffic growth month after month.
+                            Why <strong>hire an on-page SEO expert</strong> from our team? Because we deliver results, not just reports.
                         </p>
 
                         {/* Stats */}
@@ -79,15 +78,15 @@ export default function WhyChooseUs() {
                                 className="p-6 rounded-2xl border"
                                 style={{ borderColor: "var(--border-color)", backgroundColor: "var(--card-bg)" }}
                             >
-                                <h4 className="text-3xl font-bold mb-2" style={{ color: seoGreen }}>500+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Pages Optimized</p>
+                                <h4 className="text-3xl font-bold mb-2" style={{ color: seoGreen }}>30+</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Years Combined Exp.</p>
                             </div>
                             <div
                                 className="p-6 rounded-2xl border"
                                 style={{ borderColor: "var(--border-color)", backgroundColor: "var(--card-bg)" }}
                             >
-                                <h4 className="text-3xl font-bold mb-2" style={{ color: seoGreen }}>45%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. Traffic Increase</p>
+                                <h4 className="text-3xl font-bold mb-2" style={{ color: seoGreen }}>Sustainable</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Organic Results</p>
                             </div>
                         </div>
                     </div>

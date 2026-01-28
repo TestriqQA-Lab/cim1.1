@@ -9,33 +9,33 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "SEO Audit",
-            description: "Comprehensive analysis of your current on-page elements, identifying gaps and opportunities.",
+            title: "Comprehensive On-Page SEO Audit",
+            description: "We identify every technical bottleneck, from broken tags to thin content.",
         },
         {
             icon: FileText,
-            title: "Keyword Mapping",
-            description: "Strategic keyword assignment to pages based on search intent and competition analysis.",
+            title: "Strategic Keyword Mapping",
+            description: "Assigning high-intent KWs to specific pages to avoid cannibalization.",
         },
         {
             icon: Code,
             title: "Technical Implementation",
-            description: "Optimizing title tags, meta descriptions, headers, and implementing schema markup.",
+            description: "Hands-on optimization of H1s, metas, and on-site optimization techniques.",
         },
         {
             icon: Gauge,
-            title: "Content Optimization",
-            description: "Enhancing content quality, readability, and keyword placement for better rankings.",
+            title: "Content & E-E-A-T Optimization",
+            description: "Elevating professional on-page SEO content optimization with expert insights.",
         },
         {
             icon: BarChart,
-            title: "Performance Tracking",
-            description: "Monitoring rankings, traffic, and engagement metrics to measure improvement.",
+            title: "Schema & Rich Snippet Deployment",
+            description: "Adding structured data to capture Featured Snippets and AI Overviews.",
         },
         {
             icon: RefreshCw,
-            title: "Continuous Refinement",
-            description: "Ongoing optimization based on algorithm updates and performance data.",
+            title: "Performance Monitoring & Refinement",
+            description: "Daily tracking of rankings and page speed and performance.",
         },
     ];
 
@@ -48,10 +48,10 @@ export default function Process() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Our Proven <span style={{ color: seoGreen }}>Process</span>
+                        6 Steps to <span style={{ color: seoGreen }}>On-Page SEO Dominance</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A systematic approach to on-page SEO that delivers measurable results.
+                        Our systematic approach ensures no element is left unoptimized, delivering 95% bug-free implementations.
                     </p>
                 </div>
 

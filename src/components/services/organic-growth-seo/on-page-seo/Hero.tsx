@@ -101,12 +101,12 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Optimize Every Page for{" "}
+                            Expert{" "}
                             <span className="relative inline-block" style={{ color: seoGreen }}>
-                                Maximum Visibility
+                                On-Page SEO
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
                                     style={{ color: seoGreen }}
@@ -115,35 +115,17 @@ export default function Hero() {
                                 >
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
                                 </svg>
-                            </span>
+                            </span>{" "}
+                            Services for 2026 Growth
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Master on-page SEO to rank higher, attract more organic traffic, and convert visitors
-                            into customers with perfectly optimized content and structure.
+                            Stop losing customers to the competition. Our <strong>On-page SEO optimization</strong> bridge the gap between "good content" and "Google's #1 spot." By integrating 2026 EEAT signals and advanced <strong>on-site SEO services</strong>, we turn your website into a high-performance lead generation engine.
                         </p>
 
-                        {/* Feature Pills */}
-                        <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
-                            {[
-                                "Title Tags",
-                                "Meta Descriptions",
-                                "Header Structure",
-                                "Content Optimization",
-                            ].map((feature, idx) => (
-                                <div
-                                    key={idx}
-                                    className="flex items-center gap-2 px-3 py-1.5 rounded-md border backdrop-blur-sm"
-                                    style={{
-                                        backgroundColor: "var(--card-bg)",
-                                        borderColor: `${seoGreen}30`
-                                    }}
-                                >
-                                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: seoGreen }} />
-                                    <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{feature}</span>
-                                </div>
-                            ))}
-                        </div>
+                        <p className="text-base md:text-lg animate-slideUp delay-200" style={{ color: "var(--secondary-text)" }}>
+                            Whether you're looking for an <strong>On-page SEO agency</strong> near you or scaling a global enterprise, our experts provide the precision needed to survive the post-2025 core updates.
+                        </p>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-slideUp delay-300">
@@ -152,7 +134,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
                                 style={{ backgroundColor: seoGreen }}
                             >
-                                Get SEO Audit
+                                Get Free SEO Audit
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -164,24 +146,24 @@ export default function Hero() {
                                     color: "var(--foreground)"
                                 }}
                             >
-                                Our Process
+                                View Our Process
                             </Link>
                         </div>
 
                         {/* Stats */}
-                        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
+                        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>200+</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>250+</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>SEO Elements</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>95%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Page Speed Score</p>
+                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>98%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. Core Web Vitals</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>3x</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>4.5x</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Traffic Growth</p>
                             </div>
                         </div>

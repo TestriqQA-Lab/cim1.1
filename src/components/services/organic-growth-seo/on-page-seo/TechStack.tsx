@@ -17,12 +17,12 @@ export default function TechStack() {
 
     const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
         analysis: [
-            { name: "Screaming Frog", description: "Site Crawling", logo: "/images/organic_growth_and_seo/screaming-frog-logo.png" },
-            { name: "Ahrefs", description: "SEO Analysis", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
-            { name: "SEMrush", description: "Keyword Research", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
-            { name: "Moz Pro", description: "Page Analysis", logo: "/images/organic_growth_and_seo/Moz_logo.png" },
-            { name: "Surfer SEO", description: "Content Optimization", logo: "/images/techstack_logos/Surfer-SEO-logo.webp" },
-            { name: "Clearscope", description: "Content Intelligence", logo: "/images/techstack_logos/Clearscope-logo.jpg" },
+            { name: "Screaming Frog", description: "Deep-crawl technical on-page SEO audits.", logo: "/images/organic_growth_and_seo/screaming-frog-logo.png" },
+            { name: "Ahrefs & SEMrush", description: "Competitive keyword mapping and gap analysis.", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
+            { name: "Surfer SEO", description: "Real-time content relevance and quality optimization.", logo: "/images/techstack_logos/Surfer-SEO-logo.webp" },
+            { name: "Google Search Console", description: "Monitoring Core Web Vitals optimization and indexing.", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
+            { name: "Clearscope", description: "Ensuring semantic search optimization for AI-era rankings.", logo: "/images/techstack_logos/Clearscope-logo.jpg" },
+            { name: "Hotjar", description: "Analyzing User experience SEO and page interaction.", logo: "/images/techstack_logos/Hotjar-logo.png" },
         ],
         optimization: [
             { name: "Yoast SEO", description: "WordPress SEO", logo: "/images/techstack_logos/Yoast-SEO-logo.png" },
@@ -47,10 +47,10 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Our SEO <span style={{ color: seoGreen }}>Tech Stack</span>
+                        Precision Tools for <span style={{ color: seoGreen }}>Data-Backed Results</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Industry-leading tools for analysis, optimization, and performance monitoring.
+                        We leverage the industry's most advanced tools to conduct your <strong>on-page SEO audit</strong> and monitor performance in real-time.
                     </p>
                 </div>
 
