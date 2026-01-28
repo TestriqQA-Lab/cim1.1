@@ -9,7 +9,7 @@ export default function TechStack() {
     const linkedinBlue = "#0A66C2";
 
     const categories = [
-        { id: "ads", label: "LinkedIn Ads" },
+        { id: "ads", label: "LinkedIn Tools" },
         { id: "crm", label: "CRM & Sales" },
         { id: "analytics", label: "Analytics" },
         { id: "content", label: "Content Tools" },
@@ -18,12 +18,11 @@ export default function TechStack() {
 
     const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
         ads: [
-            { name: "LinkedIn Campaign Manager", description: "Ad Management", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Sales Navigator", description: "Lead Prospecting", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Marketing Solutions", description: "B2B Marketing", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Events", description: "Event Promotion", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Newsletter", description: "Content Distribution", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "LinkedIn Live", description: "Live Streaming", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
+            { name: "LinkedIn Campaign Manager", description: "Advanced ad bidding and audience segmentation.", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
+            { name: "LinkedIn Sales Navigator", description: "Hyper-targeted prospecting & outreach automation.", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
+            { name: "LinkedIn Insight Tag", description: "Detailed conversion tracking and Matched Audience remarketing.", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
+            { name: "AI-Audience Modeling", description: "Predictive analytics for 2026 lead forecasting.", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
+            { name: "Sales Navigator Integration", description: "Seamless CRM syncing for sales-ready leads.", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
         ],
         crm: [
             { name: "HubSpot", description: "CRM & Marketing", logo: "/images/ai_automation_logos/hubspot-logo.png" },
@@ -74,7 +73,7 @@ export default function TechStack() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Industry-leading tools we use to manage and optimize your LinkedIn marketing campaigns.
+                        We use the world&apos;s most advanced B2B tools to scale your business.
                     </p>
                 </div>
 

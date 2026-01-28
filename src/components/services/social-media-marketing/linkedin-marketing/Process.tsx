@@ -123,17 +123,102 @@ export default function Process() {
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         <span style={{ color: "var(--foreground)" }}>Our LinkedIn</span>{" "}
                         <span style={{ color: linkedinBlue }}>
-                            Process
+                            Marketing Process
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A proven methodology to generate B2B leads and build thought leadership on LinkedIn.
+                        A proven, data-backed methodology to dominate the B2B landscape.
                     </p>
                 </div>
 
                 {/* Process Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {steps.map((step, idx) => {
+                    {[
+                        {
+                            icon: Search,
+                            title: "Account & Audience Audit",
+                            description: "Deep-dive LinkedIn ads audit to find wasted spend and growth opportunities.",
+                            details: [
+                                "Company profile audit",
+                                "Wasted spend analysis",
+                                "Audience segmentation",
+                                "Competitor benchmarking",
+                                "Growth mapping",
+                            ],
+                            duration: "Week 1",
+                            color: "#0A66C2",
+                        },
+                        {
+                            icon: Target,
+                            title: "Strategy Development",
+                            description: "Crafting a comprehensive Account Based Marketing (ABM) roadmap.",
+                            details: [
+                                "ABM strategy design",
+                                "Lead funnel mapping",
+                                "Budget optimization",
+                                "Target account lists",
+                                "KPI framework",
+                            ],
+                            duration: "Week 2",
+                            color: "#0077B5",
+                        },
+                        {
+                            icon: Palette,
+                            title: "Creative & Copy Excellence",
+                            description: "Developing high-CTR LinkedIn sponsored content and visuals.",
+                            details: [
+                                "Persuasive ad copy",
+                                "Visual asset creation",
+                                "Ad format selection",
+                                "Lead gen form design",
+                                "A/B test planning",
+                            ],
+                            duration: "Week 2-3",
+                            color: "#004182",
+                        },
+                        {
+                            icon: Rocket,
+                            title: "Campaign Launch",
+                            description: "Multi-variant testing and LinkedIn Matched Audiences setup.",
+                            details: [
+                                "Technical tracking setup",
+                                "Matched audiences",
+                                "Campaign structure",
+                                "Direct outreach launch",
+                                "Insight tag validation",
+                            ],
+                            duration: "Week 3",
+                            color: "#0A66C2",
+                        },
+                        {
+                            icon: Zap,
+                            title: "AI-Driven Optimization",
+                            description: "Continuous LinkedIn dynamic ads optimization for lower CPL.",
+                            details: [
+                                "AI bidding management",
+                                "Dynamic ad iterations",
+                                "Real-time adjustments",
+                                "Conversion optimization",
+                                "Lead quality filtering",
+                            ],
+                            duration: "Ongoing",
+                            color: "#0077B5",
+                        },
+                        {
+                            icon: BarChart3,
+                            title: "Scaling & ROI Reporting",
+                            description: "Bi-weekly deep dives into performance and revenue growth.",
+                            details: [
+                                "ROI tracking reports",
+                                "Executive deep-dives",
+                                "Budget scaling strategy",
+                                "New market expansion",
+                                "Quarterly roadmaps",
+                            ],
+                            duration: "Ongoing",
+                            color: "#004182",
+                        },
+                    ].map((step, idx) => {
                         const Icon = step.icon;
                         const isHovered = hoveredStep === idx;
 

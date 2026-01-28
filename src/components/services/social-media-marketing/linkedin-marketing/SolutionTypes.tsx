@@ -21,7 +21,7 @@ export default function SolutionTypes() {
         {
             icon: Cpu,
             title: "Technology & SaaS",
-            description: "Reach IT decision-makers and software buyers with targeted campaigns for enterprise solutions.",
+            description: "LinkedIn ads management for SaaS tailored to reach CTOs and IT decision-makers.",
             features: [
                 "IT decision-maker targeting",
                 "Product demo campaigns",
@@ -33,7 +33,7 @@ export default function SolutionTypes() {
         {
             icon: Building2,
             title: "Professional Services",
-            description: "Generate leads for consulting, legal, accounting, and business services firms.",
+            description: "Targeted LinkedIn lead generation services for consulting, legal, and accounting firms.",
             features: [
                 "Thought leadership",
                 "Service awareness",
@@ -45,7 +45,7 @@ export default function SolutionTypes() {
         {
             icon: Stethoscope,
             title: "Healthcare & Pharma",
-            description: "Connect with healthcare professionals, administrators, and medical decision-makers.",
+            description: "Compliance-focused messaging for medical professionals and hospital administrators.",
             features: [
                 "HCP targeting",
                 "Medical conference promo",
@@ -57,7 +57,7 @@ export default function SolutionTypes() {
         {
             icon: Landmark,
             title: "Financial Services",
-            description: "Reach financial professionals, investors, and business owners with compliant messaging.",
+            description: "LinkedIn marketing for financial services designed to build high-level trust and authority.",
             features: [
                 "Wealth advisors",
                 "Corporate finance",
@@ -67,21 +67,9 @@ export default function SolutionTypes() {
             color: "#0A66C2",
         },
         {
-            icon: GraduationCap,
-            title: "Education & Training",
-            description: "Promote courses, certifications, and educational programs to professionals seeking growth.",
-            features: [
-                "Course promotion",
-                "Certification programs",
-                "Professional development",
-                "Corporate training",
-            ],
-            color: "#0077B5",
-        },
-        {
             icon: Briefcase,
             title: "Recruiting & HR",
-            description: "Attract top talent and promote employer brand with LinkedIn's recruiting solutions.",
+            description: "Dominate LinkedIn recruitment advertising services to attract top-tier global talent.",
             features: [
                 "Employer branding",
                 "Job promotion",
@@ -113,7 +101,7 @@ export default function SolutionTypes() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Tailored LinkedIn marketing strategies for B2B industries and professional services.
+                        Customized B2B marketing strategies tailored for high-growth sectors.
                     </p>
                 </div>
 

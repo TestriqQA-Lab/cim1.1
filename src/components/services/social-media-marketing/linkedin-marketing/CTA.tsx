@@ -56,13 +56,12 @@ export default function CTA() {
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                                Ready to Generate{" "}
-                                <span className="text-white/80">B2B Leads?</span>
+                                Ready to Scale Your{" "}
+                                <span className="text-white/80">B2B Revenue?</span>
                             </h2>
 
                             <p className="text-lg text-white/80 mb-8 max-w-xl">
-                                Get a free audit of your LinkedIn presence and discover
-                                opportunities to reach more decision-makers.
+                                Stop guessing and start growing. Get a 100% free LinkedIn ads audit and strategy session today.
                             </p>
 
                             {/* Benefits */}
@@ -85,7 +84,7 @@ export default function CTA() {
                                         boxShadow: `0 4px 20px ${linkedinBlue}40`
                                     }}
                                 >
-                                    Get Free B2B Audit
+                                    Get My Free LinkedIn Audit Now
                                     <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                                 </Link>
                             </div>

@@ -81,19 +81,56 @@ export default function WhyChooseUs() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Why Choose Us for</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Why Partner with Our</span>{" "}
                         <span style={{ color: linkedinBlue }}>
-                            LinkedIn Marketing
+                            B2B LinkedIn Agency?
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Partner with B2B marketing experts who understand LinkedIn and deliver real results.
+                        Future-proof your B2B growth with elite strategies optimized for AI Overviews and 2026 search intent.
                     </p>
                 </div>
 
                 {/* Cards Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {reasons.map((reason, idx) => {
+                    {[
+                        {
+                            icon: Award,
+                            title: "LinkedIn Certified Experts",
+                            description: "Our team holds the highest tier of LinkedIn Marketing certifications for B2B advertising.",
+                            color: "#0A66C2",
+                        },
+                        {
+                            icon: Zap,
+                            title: "95% Bug-Free Implementations",
+                            description: "Flawless tracking setup (Insight Tags, API integrations) for 100+ global clients.",
+                            color: "#0077B5",
+                        },
+                        {
+                            icon: TrendingUp,
+                            title: "Data-Driven ROI",
+                            description: "We've delivered 300% traffic growth and 20% CTR lifts for tech startups and enterprises alike.",
+                            color: "#004182",
+                        },
+                        {
+                            icon: Users,
+                            title: "Global Reach",
+                            description: "Expertise in US, EU, and APAC markets with multilingual LinkedIn strategy capabilities.",
+                            color: "#0A66C2",
+                        },
+                        {
+                            icon: Shield,
+                            title: "Future-Proof SEO",
+                            description: "All content is optimized for AI Overviews and 2026 search intent signals.",
+                            color: "#0077B5",
+                        },
+                        {
+                            icon: HeadphonesIcon,
+                            title: "White-Glove Support",
+                            description: "Dedicated account management ensuring 100% transparency on every dollar spent.",
+                            color: "#004182",
+                        },
+                    ].map((reason, idx) => {
                         const Icon = reason.icon;
                         const isHovered = hoveredCard === idx;
 

@@ -102,12 +102,12 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            B2B Growth with{" "}
+                            LinkedIn Marketing Services for{" "}
                             <span className="relative inline-block" style={{ color: linkedinBlue }}>
-                                LinkedIn Marketing
+                                B2B Growth
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: linkedinBlue }}
@@ -120,8 +120,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Reach 1+ billion professionals with targeted LinkedIn marketing.
-                            Generate qualified B2B leads, build thought leadership, and drive business growth.
+                            Reach 1.2B+ professionals with elite, data-driven LinkedIn marketing strategies. At Cinute Infomedia, we don&apos;t just &quot;run ads&quot; but we build high-conversion B2B engines that generate qualified leads, establish industry authority, and drive measurable revenue in the post-2025 AI-search era.
                         </p>
 
                         {/* Feature Pills */}
@@ -153,7 +152,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
                                 style={{ backgroundColor: linkedinBlue }}
                             >
-                                Get Free Strategy
+                                Book Free Strategy Audit
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -166,25 +165,25 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Our Process
+                                Explore Our Process
                             </Link>
                         </div>
 
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>1B+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Professionals</p>
+                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>1.2B+</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Global Professional Reach</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>80%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>B2B Leads</p>
+                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>85%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Higher B2B Lead Quality</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>2x</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Conversion Rate</p>
+                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>300%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>ROI Growth (Tech/SaaS)</p>
                             </div>
                         </div>
                     </div>

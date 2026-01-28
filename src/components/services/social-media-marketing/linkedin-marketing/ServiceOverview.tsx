@@ -19,37 +19,37 @@ export default function ServiceOverview() {
         {
             icon: Target,
             title: "LinkedIn Ads Management",
-            description: "Full-service LinkedIn advertising including Sponsored Content, InMail, and dynamic ads optimized for B2B conversions.",
+            description: "Our LinkedIn advertising agency specialists manage full-funnel campaigns including Sponsored Content, InMail, and Video Ads. We leverage LinkedIn Campaign Manager expertise to optimize bidding and creative for maximum ROI.",
             color: "#0A66C2",
         },
         {
             icon: Users,
-            title: "Lead Generation Campaigns",
-            description: "Generate high-quality B2B leads with LinkedIn Lead Gen Forms and targeted sponsored content campaigns.",
+            title: "LinkedIn Lead Generation Services",
+            description: "Generate high-intent B2B leads directly through LinkedIn Lead Gen Forms and friction-less conversion paths. We focus on high-ticket decision-makers, reducing CPL while increasing lead quality.",
             color: "#0077B5",
         },
         {
             icon: MessageSquare,
-            title: "InMail Campaigns",
-            description: "Personalized direct messaging to decision-makers with compelling offers and call-to-actions.",
+            title: "Personalized InMail & Message Ads",
+            description: "Break through the noise with LinkedIn message ads campaign management. We craft hyper-personalized direct messaging that speaks directly to the pain points of C-suite executives.",
             color: "#004182",
         },
         {
             icon: FileText,
-            title: "Content Marketing",
-            description: "Thought leadership content strategy including articles, posts, newsletters, and document sharing.",
+            title: "B2B Content Marketing & Thought Leadership",
+            description: "Establish dominance with a LinkedIn content marketing strategy for businesses. From newsletters to LinkedIn Live, we turn your executives into industry thought leaders.",
             color: "#0A66C2",
         },
         {
             icon: Megaphone,
-            title: "Company Page Optimization",
-            description: "Optimize your LinkedIn Company Page for maximum visibility and follower growth.",
+            title: "LinkedIn Company Page Optimization",
+            description: "Transform your profile with professional LinkedIn profile optimization for executives and full-scale LinkedIn company page management services. We ensure your brand looks premium and authoritative.",
             color: "#0077B5",
         },
         {
             icon: BarChart3,
-            title: "Analytics & Reporting",
-            description: "Comprehensive performance tracking with actionable insights to continuously improve ROI.",
+            title: "ROI Tracking & Analytics",
+            description: "Navigate your growth with LinkedIn ads reporting and ROI tracking. We set up LinkedIn Insight Tags and Matched Audiences to provide 100% transparency on every dollar spent.",
             color: "#004182",
         },
     ];
@@ -108,7 +108,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Comprehensive LinkedIn marketing solutions to generate B2B leads and establish industry authority.
+                        Comprehensive LinkedIn marketing solutions to generate high-intent B2B leads and establish global industry authority.
                     </p>
                 </div>
 
