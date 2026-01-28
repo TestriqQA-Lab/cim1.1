@@ -18,45 +18,38 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "crypto",
-            title: "Web3 & Crypto",
-            description: "Build hype, manage communities, and drive token adoption in the heart of the crypto conversation.",
+            title: "Web3, Crypto & Fintech",
+            description: "X is the heartbeat of the decentralized world. We build hype, manage communities, and drive token adoption through X premium marketing.",
             icon: Coins,
             color: "#F7931A", // Bitcoin Orange
         },
         {
-            id: "news",
-            title: "News & Media",
-            description: "Disseminate breaking news, engage with real-time events, and drive traffic to your publications.",
-            icon: FileText, // FileText instead of Newspaper
-            color: "#1D9BF0", // Twitter Blue
-        },
-        {
             id: "saas",
-            title: "Tech & SaaS",
-            description: "Establish thought leadership, connect with decision-makers, and drive qualified leads for your software.",
+            title: "Tech & SaaS Startups",
+            description: "Ranked as the best X agency for tech startups, we help generate B2B leads through strategic threads and targeted X Campaign Manager tactics.",
             icon: Laptop,
             color: "#00E676", // Tech Green
         },
         {
-            id: "politics",
-            title: "Politics & Advocacy",
-            description: "Mobilize supporters, shape public opinion, and win campaigns through strategic messaging.",
-            icon: Megaphone, // Megaphone instead of Vote
-            color: "#E53935", // Alert Red
+            id: "ecommerce",
+            title: "E-commerce & Retail",
+            description: "Drive instant sales with Twitter ads management for ecommerce brands, leveraging audience targeting segments to find ready shoppers.",
+            icon: Megaphone,
+            color: "#1D9BF0",
         },
         {
-            id: "sports",
-            title: "Sports & Gaming",
-            description: "Engage fans live during events, build hype for launches, and create viral moments.",
-            icon: Award, // Award instead of Trophy
-            color: "#FFD700", // Gold
+            id: "realestate",
+            title: "Real Estate & Professionals",
+            description: "Build local authority and generate high-value inquiries through geo-targeted campaigns and X search keyword ads.",
+            icon: Award,
+            color: "#FFD700",
         },
         {
-            id: "entertainment",
-            title: "Entertainment",
-            description: "Promote releases, manage talent reputation, and foster deep fan connections.",
-            icon: Music,
-            color: "#9C27B0", // Purple
+            id: "news",
+            title: "News, Media & Entertainment",
+            description: "Capitalize on real-time events. We help media outlets dominate trending topics and drive massive traffic to external sites.",
+            icon: FileText,
+            color: "#E53935",
         },
     ];
 

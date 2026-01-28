@@ -15,23 +15,24 @@ export default function TechStack() {
     const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
         management: [
             { name: "X Pro (TweetDeck)", description: "Power User Suite", logo: "/images/techstack_logos/X-logo-hero-image.png" },
-            { name: "Hootsuite", description: "Scheduling", logo: "/images/techstack_logos/Hootsuite-logo.png" },
-            { name: "Buffer", description: "Publishing", logo: "/images/techstack_logos/Buffer-logo.webp" },
-            { name: "Sprout Social", description: "Enterprise Tools", logo: "/images/techstack_logos/Sprout-Social-logo.png" },
-            { name: "Typefully", description: "Thread Writing", logo: "/images/techstack_logos/Typefully-logo.jpg" },
+            { name: "Hootsuite", description: "Scheduling & Unified Messaging", logo: "/images/techstack_logos/Hootsuite-logo.png" },
+            { name: "Buffer", description: "Cross-Platform Publishing", logo: "/images/techstack_logos/Buffer-logo.webp" },
+            { name: "Sprout Social", description: "Enterprise-grade CRM", logo: "/images/techstack_logos/Sprout-Social-logo.png" },
+            { name: "Typefully", description: "Advanced Thread Writing", logo: "/images/techstack_logos/Typefully-logo.jpg" },
             { name: "Salesforce", description: "CRM Integration", logo: "/images/techstack_logos/salesforce-logo.png" },
         ],
         analytics: [
-            { name: "X Analytics", description: "Native Insights", logo: "/images/techstack_logos/X-logo-hero-image.png" },
+            { name: "X Campaign Manager", description: "Deep-Dive Ads Analytics", logo: "/images/techstack_logos/X-logo-hero-image.png" },
+            { name: "X Analytics", description: "Native Performance Metrics", logo: "/images/techstack_logos/X-logo-hero-image.png" },
             { name: "Audiense", description: "Audience Intelligence", logo: "/images/techstack_logos/Audiense-logo.png" },
             { name: "Brandwatch", description: "Social Listening", logo: "/images/techstack_logos/Brandwatch-logo.jpg" },
-            { name: "Google Analytics 4", description: "Traffic Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics 4", description: "Conversion Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
         ],
         content: [
-            { name: "Canva Pro", description: "Visuals", logo: "/images/brand-identity-design-logos/canva-logo.png" },
-            { name: "Adobe Photoshop", description: "Pro Design", logo: "/images/ai_automation_logos/adobe-logo.png" },
-            { name: "Figma", description: "Templates", logo: "/images/techstack_logos/figma-logo.svg" },
-            { name: "CapCut", description: "Video Editing", logo: "/images/techstack_logos/Capcut-logo.png" },
+
+            { name: "Canva Pro", description: "Visual Design", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Adobe Photoshop", description: "Pro Visuals", logo: "/images/ai_automation_logos/adobe-logo.png" },
+            { name: "CapCut", description: "X Video Ads Editing", logo: "/images/techstack_logos/Capcut-logo.png" },
         ],
     };
 

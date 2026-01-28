@@ -6,33 +6,33 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Audience Audit",
-            description: "We analyze your current X presence, competitor landscape, and target audience conversations.",
+            title: "X Channel Audit & Strategy",
+            description: "We analyze your current X presence, competitor landscape, and the specific Twitter audience targeting segments that matter for your niche.",
         },
         {
             icon: PenTool,
-            title: "Voice Development",
-            description: "Crafting a unique, authentic brand voice that resonates with the fast-paced X culture.",
+            title: "Audience & Voice Development",
+            description: "Crafting a unique, authentic brand voice while setting up Twitter conversion tracking to ensure every interaction is measurable.",
         },
         {
             icon: Calendar,
-            title: "Content Calendar",
-            description: "Planning a mix of viral threads, engaging polls, and timely responses to keep you top-of-mind.",
+            title: "Strategic Content Planning",
+            description: "Planning a dynamic mix of viral threads and polls, integrated with hashtag optimization to maximize your discoverability.",
         },
         {
             icon: Zap,
-            title: "Real-Time Engagement",
-            description: "Active monitoring and immediate interaction with trending topics and follower mentions.",
+            title: "Real-Time Trend Hijacking",
+            description: "24/7 monitoring of global trends to insert your brand into the cultural zeitgeist and drive massive viral reach.",
         },
         {
             icon: Rocket,
-            title: "Growth Acceleration",
-            description: "Launching targeted ad campaigns and follower growth strategies to scale your reach.",
+            title: "Growth Acceleration & X Ads",
+            description: "Scaling reach through targeted Twitter ads management, from promoted tweets to X video ads using data-driven tactics.",
         },
         {
             icon: BarChart,
-            title: "Analytics & Refinement",
-            description: "Deep dive into engagement metrics to optimize tweet timing, formats, and ad spend.",
+            title: "ROI Reporting & Optimization",
+            description: "Monthly X ads reporting and ROI analytics, focusing on performance metrics that translate to bottom-line growth.",
         },
     ];
 

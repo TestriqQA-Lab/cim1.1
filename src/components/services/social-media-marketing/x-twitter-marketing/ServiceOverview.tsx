@@ -16,38 +16,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Megaphone,
-            title: "X Advertising",
-            description: "High-impact paid campaigns including Promoted Ads, Trend Takeovers, and Follower campaigns.",
+            title: "X Advertising & Twitter Ads Management",
+            description: "ROI-driven Twitter ads management including promoted tweets, X video ads, and Twitter conversion tracking setup.",
             color: "var(--secondary-text)",
         },
         {
             icon: MessageSquare,
-            title: "Tweet Strategy",
-            description: "Crafting viral threads, engaging replies, and impactful posts that resonate with your niche.",
+            title: "Professional X Account Management",
+            description: "Comprehensive X channel audit and strategy with technical X profile optimization for maximum business authority.",
             color: "#1D9BF0", // Twitter Blue accent
         },
         {
             icon: Users,
-            title: "Community Growth",
-            description: "Building loyal communities through consistent engagement, Spaces hosting, and follower interaction.",
+            title: "Influencer Marketing & Community",
+            description: "Connecting brands with niche leaders for X algorithm visibility optimization and active community management.",
             color: "var(--secondary-text)",
         },
         {
             icon: TrendingUp,
-            title: "Trend Jacking",
-            description: "Real-time monitoring to capitalize on viral moments and insert your brand into relevant conversations.",
+            title: "Real-Time Trend Jacking",
+            description: "24/7 monitoring to insert your brand into viral moments through strategic X trend hijacking marketing.",
             color: "#1D9BF0",
         },
         {
             icon: Hash,
-            title: "Hashtag Campaigns",
-            description: "Strategic hashtag usage and branded challenges to maximize discoverability and reach.",
+            title: "Viral Marketing Strategy",
+            description: "Engineering strategic threads and hashtag optimization to gain massive reach without the premium price tag.",
             color: "var(--secondary-text)",
         },
         {
             icon: ShieldAlert,
-            title: "PR & Crisis Mgmt",
-            description: "Proactive reputation management and rapid response strategies for maintaining brand integrity.",
+            title: "PR & Crisis Management",
+            description: "Protecting brand integrity with proactive crisis management and authoritative real-time engagement services.",
             color: "#1D9BF0",
         },
     ];

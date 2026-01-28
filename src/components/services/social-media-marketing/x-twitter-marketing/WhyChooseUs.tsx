@@ -5,34 +5,34 @@ import { Zap, ShieldCheck, Globe, Trophy, Users, BarChart, Sparkles } from "luci
 export default function WhyChooseUs() {
     const benefits = [
         {
-            icon: Zap,
-            title: "Real-Time & Agile",
-            description: "We move at the speed of X. Our team monitors trends 24/7 to insert your brand into viral cultural moments.",
+            icon: Trophy,
+            title: "30+ Years Leadership",
+            description: "As a global agency, we bring three decades of marketing excellence, navigating every shift from microblogging to the current X ecosystem.",
         },
         {
-            icon: Trophy,
-            title: "Viral Expertise",
-            description: "Masters of the algorithm. We know how to craft threads and memes that get retweeted and shared.",
+            icon: Zap,
+            title: "300% Traffic Growth",
+            description: "We've consistently delivered 300% traffic growth for tech and SaaS clients, helping them dominate through aggressive X business strategies.",
         },
         {
             icon: ShieldCheck,
-            title: "Brand Safety",
-            description: "Proactive moderation and careful tone checks to ensure your brand navigates X's open platform safely.",
+            title: "95% Precision Targeting",
+            description: "Using proprietary data layers and audience segments, we achieve 95% accuracy in reaching decision-makers, skyrocketing conversion success.",
         },
         {
             icon: Users,
-            title: "Community First",
-            description: "We don't just broadcast; we build. We foster genuine connections that turn followers into advocates.",
+            title: "Real-Time & Agile Team",
+            description: "We move at the speed of X. Our 24/7 'War Room' ensures your brand is always part of the right viral conversation at the right moment.",
         },
         {
             icon: Globe,
-            title: "Global Reach",
-            description: "Strategies that transcend borders. Connect with a global audience or target specific geo-locations.",
+            title: "Global Reach, Local Nuance",
+            description: "From the US to APAC, we understand regional cultural nuances, providing multilingual services to help global companies scale across borders.",
         },
         {
             icon: BarChart,
-            title: "ROI Focused",
-            description: "Beyond vanity metrics, we focus on click-throughs, conversions, and tangible business impact.",
+            title: "ROI-Focused & Transparent",
+            description: "We are an ROI-driven X marketing company. No fluff, no 'vanity' retweets - we focus on leads, sales, and brand authority.",
         },
     ];
 
