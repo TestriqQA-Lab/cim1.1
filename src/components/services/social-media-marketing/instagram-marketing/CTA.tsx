@@ -6,10 +6,10 @@ import { Instagram } from "lucide-react";
 
 export default function CTA() {
     const benefits = [
-        "Free profile audit",
-        "Custom content strategy",
-        "No long-term contracts",
-        "Growth guarantee",
+        "Free Instagram Audit & Growth Plan",
+        "Expert 2026 Strategy",
+        "ROI-Focused Management",
+        "High-Retention Reels Production",
     ];
 
     const instaGradient = "linear-gradient(135deg, #E1306C, #C13584, #833AB4)";
@@ -56,13 +56,12 @@ export default function CTA() {
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                                Ready to Grow on{" "}
-                                <span className="text-white/80">Instagram?</span>
+                                Ready to Dominate{" "}
+                                <span className="text-white/80">the Feed?</span>
                             </h2>
 
                             <p className="text-lg text-white/80 mb-8 max-w-xl">
-                                Get a free audit of your Instagram profile and discover
-                                opportunities to grow your following and engagement.
+                                Don't let your brand get lost in the scroll. Partner with an Instagram Marketing Company that knows how to turn views into value.
                             </p>
 
                             {/* Benefits */}
@@ -79,13 +78,13 @@ export default function CTA() {
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                                    className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-base text-white transition-all transform hover:scale-105 hover:shadow-lg"
                                     style={{
                                         background: instaGradient,
                                         boxShadow: "0 4px 20px rgba(225, 48, 108, 0.4)"
                                     }}
                                 >
-                                    Get Free Instagram Audit
+                                    CLAIM YOUR FREE INSTAGRAM AUDIT & GROWTH PLAN
                                     <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                                 </Link>
                             </div>

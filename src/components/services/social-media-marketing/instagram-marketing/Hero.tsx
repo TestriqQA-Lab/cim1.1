@@ -84,7 +84,7 @@ export default function Hero() {
             `}</style>
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
                     {/* Text Content */}
                     <div className="space-y-8 text-center lg:text-left">
                         {/* Breadcrumbs */}
@@ -114,14 +114,14 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Grow Your Brand with{" "}
+                            Global Instagram Marketing Agency:{" "}
                             <span
                                 className="relative inline-block bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 bg-clip-text text-transparent"
                             >
-                                Instagram Marketing
+                                Scale Your Brand with 2026 Trend-First Strategies
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: instagramPink }}
@@ -133,22 +133,21 @@ export default function Hero() {
                             </span>
                         </h1>
 
-                        <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Reach 2+ billion monthly active users with stunning visual content and strategic Instagram marketing.
-                            Build brand awareness, drive engagement, and convert followers into customers.
+                        <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
+                            Dominate the world's most visual stage. With over 2+ billion monthly active users, Instagram is no longer just a photo-sharing app - it’s a global marketplace. As a premier Instagram Marketing Company, we help brands transition from "just posting" to high-impact ROI systems. Our data-driven Instagram Marketing Services leverage the latest 2026 algorithm updates to ensure your content doesn’t just look good - it converts.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Reels Strategy",
-                                "Stories Ads",
-                                "Influencer Marketing",
-                                "Shopping Integration",
+                                "95% Success Rate for High-Growth E-commerce Brands",
+                                "300% Average Increases in Organic Reach & Engagement",
+                                "30+ Years of Combined Digital Marketing & Creative Expertise",
+                                "Direct-to-Consumer (D2C) & B2B Strategic Specialists",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
-                                    className="flex items-center gap-2 px-3 py-1.5 rounded-md border backdrop-blur-sm"
+                                    className="flex items-center gap-2 px-3 py-1.5 rounded-md border backdrop-blur-sm transition-all duration-300 hover:scale-105"
                                     style={{
                                         backgroundColor: "var(--card-bg)",
                                         borderColor: "var(--border-color)",
@@ -165,13 +164,8 @@ export default function Hero() {
                             <Link
                                 href="/contact"
                                 className="instagram-gradient inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
-                                style={{
-                                    borderColor: "var(--border-color)",
-                                    color: "var(--foreground)",
-                                    backgroundColor: "var(--card-bg)",
-                                }}
                             >
-                                Get Free Strategy
+                                Book Your Free Instagram Audit Today
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -184,7 +178,7 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Our Process
+                                Explore Our Process
                             </Link>
                         </div>
 
@@ -208,7 +202,7 @@ export default function Hero() {
                     </div>
 
                     {/* Right Visual */}
-                    <div className="relative hidden lg:flex flex-col gap-6 animate-fadeIn delay-500">
+                    <div className="relative hidden lg:flex flex-col gap-6 animate-fadeIn delay-500 mt-15">
                         {/* Main Visual Container */}
                         <div className="relative flex items-center justify-center">
                             <div

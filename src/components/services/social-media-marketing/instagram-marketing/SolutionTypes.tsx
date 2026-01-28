@@ -17,12 +17,12 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Store,
-            title: "E-commerce & D2C Brands",
-            description: "Drive product discovery and sales with shoppable posts, influencer collaborations, and targeted ads.",
+            title: "E-commerce & D2C",
+            description: "Instagram Shop Setup, Shoppable Posts. Driving product discovery and high-intent sales conversions.",
             features: [
-                "Instagram Shopping setup",
-                "Product tagging",
-                "User-generated content",
+                "Return on Ad Spend (ROAS)",
+                "Full-Funnel Ad Strategy",
+                "UGC Integration",
                 "Shoppable Reels",
             ],
             color: "#E1306C",
@@ -30,62 +30,50 @@ export default function SolutionTypes() {
         {
             icon: Palette,
             title: "Fashion & Beauty",
-            description: "Showcase your products with stunning visuals, tutorials, and trend-driven content strategies.",
+            description: "Influencer Partnerships, Aesthetic Consistency. Showcase products with trend-driven visual storytelling.",
             features: [
-                "Lookbook content",
+                "Brand Recognition",
+                "Aesthetic Curation",
                 "Tutorial Reels",
-                "Influencer collabs",
-                "Seasonal campaigns",
+                "Influencer Collabs",
             ],
             color: "#C13584",
         },
         {
-            icon: Coffee,
-            title: "Food & Restaurants",
-            description: "Make mouths water with appetizing content that drives foot traffic and online orders.",
+            icon: Heart,
+            title: "Healthcare & Medical",
+            description: "Educational Content, Trust Signals, Compliance. Building patient community through credible content.",
             features: [
-                "Food photography",
-                "Behind-the-scenes",
-                "Local targeting",
-                "Story highlights",
+                "Patient Appointments",
+                "Medical Compliance",
+                "Trust-Building Assets",
+                "Live Q&As",
             ],
             color: "#F77737",
         },
         {
-            icon: Heart,
-            title: "Health & Wellness",
-            description: "Build a community around your wellness brand with inspiring and educational content.",
+            icon: Shirt,
+            title: "Real Estate & Luxury",
+            description: "High-End Product Showcases, Visual Storytelling. Crafting aspirational content for premium audiences.",
             features: [
-                "Transformation stories",
-                "Educational carousels",
-                "Live Q&As",
-                "Community building",
+                "Inquiry Volume",
+                "Visual Brand Strategy",
+                "Lifestyle Imagery",
+                "Case Studies",
             ],
             color: "#833AB4",
         },
         {
-            icon: Shirt,
-            title: "Lifestyle Brands",
-            description: "Create aspirational content that resonates with your target audience's values and interests.",
+            icon: Sparkles,
+            title: "B2B & Tech",
+            description: "Thought Leadership, Case Studies, Lead Magnets. Positioning your brand as an industry authority.",
             features: [
-                "Lifestyle imagery",
-                "Brand storytelling",
-                "Ambassador programs",
-                "Aesthetic curation",
+                "High-Quality Leads",
+                "Whitepaper Content",
+                "LinkedIn Cross-promotion",
+                "Webinar Outreach",
             ],
             color: "#405DE6",
-        },
-        {
-            icon: Sparkles,
-            title: "Personal Brands & Creators",
-            description: "Grow your personal brand and monetize your influence with strategic content and partnerships.",
-            features: [
-                "Content calendar",
-                "Engagement growth",
-                "Brand partnerships",
-                "Monetization strategy",
-            ],
-            color: "#FD1D1D",
         },
     ];
 
@@ -104,13 +92,13 @@ export default function SolutionTypes() {
                         <span className="text-sm font-medium" style={{ color: "#E1306C" }}>Industry Solutions</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Instagram for</span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Instagram for Your Industry:</span>{" "}
                         <span className="bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 bg-clip-text text-transparent">
-                            Your Industry
+                            Precision Targeting
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Tailored Instagram marketing strategies that resonate with your specific audience and industry.
+                        Whether you need local Instagram marketing services for retail stores or a B2B Instagram marketing strategy for lead generation, our industry-specific blueprints deliver results.
                     </p>
                 </div>
 

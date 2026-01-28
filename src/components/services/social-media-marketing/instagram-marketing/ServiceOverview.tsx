@@ -18,38 +18,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Film,
-            title: "Reels & Short-Form Video",
-            description: "Create viral-worthy Reels that capture attention and drive massive organic reach with trending audio and formats.",
+            title: "Instagram Reels Marketing & Production Agency",
+            description: "Reels are the primary growth lever in 2026. Our production team crafts viral-worthy, short-form video content that hooks viewers in the first 0.5 seconds.",
             color: "#E1306C",
         },
         {
             icon: Camera,
-            title: "Content Strategy & Creation",
-            description: "Develop a cohesive visual identity with stunning feed posts, carousel content, and Instagram-optimized graphics.",
+            title: "Custom Instagram Content Creation Services",
+            description: "Static images aren't enough. We build a cohesive Brand Identity and Aesthetic Design Service that makes your profile a destination.",
             color: "#C13584",
         },
         {
             icon: Megaphone,
-            title: "Stories & Ads Management",
-            description: "Run high-converting Instagram ad campaigns across Stories, Feed, Explore, and Reels placements.",
+            title: "Instagram Advertising Services & Ad Management",
+            description: "Go beyond 'Boost Post.' Our Instagram ad campaign management for ecommerce utilizes advanced Meta Pixel tracking and CAPI integration.",
             color: "#F77737",
         },
         {
             icon: Users,
-            title: "Influencer Partnerships",
-            description: "Connect with the right influencers to amplify your brand message and reach new engaged audiences.",
+            title: "Influencer Partnerships & UGC",
+            description: "Integrating User-Generated Content (UGC) and connecting with the right influencers to build iron-clad trust.",
             color: "#833AB4",
         },
         {
             icon: ShoppingBag,
-            title: "Instagram Shopping",
+            title: "Instagram Shopping & Commerce",
             description: "Set up and optimize your Instagram Shop to drive direct sales with shoppable posts and product tags.",
             color: "#FD1D1D",
         },
         {
             icon: BarChart3,
-            title: "Analytics & Growth",
-            description: "Track performance metrics, analyze audience insights, and continuously optimize for follower growth.",
+            title: "Post-Conversion & Retargeting",
+            description: "Capturing high-intent users who’ve interacted with your brand via retargeting loops and full-funnel ads.",
             color: "#405DE6",
         },
     ];
@@ -98,9 +98,9 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Instagram{" "}
+                        Comprehensive{" "}
                         <span className="bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 bg-clip-text text-transparent">
-                            Marketing
+                            Instagram Marketing
                         </span>{" "}
                         Services
                     </h2>
@@ -108,7 +108,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Comprehensive Instagram marketing solutions to grow your brand presence and drive real business results.
+                        Transform your profile into a revenue-generating engine with our suite of specialized Instagram Management Services.
                     </p>
                 </div>
 
