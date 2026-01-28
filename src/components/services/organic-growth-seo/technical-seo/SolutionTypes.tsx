@@ -20,43 +20,43 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "ecommerce",
-            title: "E-commerce Platforms",
-            description: "Product page indexation, faceted navigation, and large-scale crawl optimization.",
+            title: "Technical SEO Audit for Ecommerce Websites",
+            description: "Optimize large-scale catalogs. We handle technical SEO audit for ecommerce websites (Shopify, Magento), fixing faceted navigation issues and canonical tag errors to prevent duplicate content.",
             icon: Store,
             color: techPurple,
         },
         {
             id: "enterprise",
-            title: "Enterprise Websites",
-            description: "Complex site architecture, multi-domain setups, and CDN configuration.",
+            title: "Technical SEO for Large Enterprise Websites",
+            description: "Managing 100k+ pages? Our technical SEO for large enterprise websites focuses on crawl budget management and CDN configuration to maintain peak performance at scale.",
             icon: Building2,
             color: "#3B82F6",
         },
         {
             id: "publishers",
-            title: "Publishers & Media",
-            description: "News SEO, AMP implementation, and high-volume content indexation.",
+            title: "Technical SEO for News & Media Websites",
+            description: "Timing is everything. We optimize Technical SEO for news websites with accelerated indexation strategies and News-optimized schema markup for top-story placement.",
             icon: Newspaper,
             color: "#F59E0B",
         },
         {
             id: "saas",
-            title: "SaaS Applications",
-            description: "JavaScript rendering, dynamic content, and app shell architecture.",
+            title: "Technical SEO Services for SaaS Companies",
+            description: "For software platforms, we specialize in JavaScript SEO optimization and server-side rendering for SEO, ensuring your dynamic app content is fully readable by Googlebot.",
             icon: Layers,
             color: "#22C55E",
         },
         {
             id: "international",
-            title: "International Sites",
-            description: "Multi-language setup, hreflang implementation, and geo-targeting.",
+            title: "Technical SEO for International Markets",
+            description: "We manage complex multi-language setups with robust hreflang tag implementation and localized server configurations for global performance.",
             icon: Globe2,
             color: "#EC4899",
         },
         {
             id: "database",
-            title: "Database-Driven Sites",
-            description: "Dynamic URL handling, pagination, and parameter management.",
+            title: "Technical SEO for Marketplace & Real Estate",
+            description: "Handle millions of dynamic listings. Our technical SEO for real estate platforms and marketplaces ensures efficient crawling of fast-changing data sets.",
             icon: Database,
             color: "#06B6D4",
         },
@@ -84,10 +84,10 @@ export default function SolutionTypes() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Industry <span style={{ color: techPurple }}>Solutions</span>
+                        Tailored Technical SEO Audit for <span style={{ color: techPurple }}>Global Enterprises</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Specialized technical SEO strategies for different website types and platforms.
+                        Different tech stacks and business models face unique challenges. We provide specialized technical SEO services for SaaS companies, e-commerce giants, and massive marketplace platforms.
                     </p>
                 </div>
 

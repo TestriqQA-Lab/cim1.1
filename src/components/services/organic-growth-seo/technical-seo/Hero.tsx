@@ -101,12 +101,12 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Build a Foundation for{" "}
+                            Expert Technical SEO Services for{" "}
                             <span className="relative inline-block" style={{ color: techPurple }}>
-                                Search Success
+                                2026 Peak Performance
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
                                     style={{ color: techPurple }}
@@ -119,17 +119,16 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Optimize your website's technical infrastructure for faster crawling,
-                            better indexation, and improved search engine rankings.
+                            Stop letting technical debt bury your rankings. Our <strong>Technical SEO company</strong> specializes in building a flawless technical foundation that search engines love. From <strong>website performance analysis</strong> to advanced <strong>technical SEO consulting</strong>, we ensure your site is built for the global stage.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Site Speed",
-                                "Crawlability",
-                                "Core Web Vitals",
-                                "Mobile-First",
+                                "100% Mobile-First",
+                                "<2s Load Time",
+                                "99.9% Uptime",
+                                "All Green Core Web Vitals",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -172,7 +171,7 @@ export default function Hero() {
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: techPurple }}>100%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Mobile Optimized</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Mobile-First Compliance</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
@@ -181,8 +180,8 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: techPurple }}>99%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Uptime Guarantee</p>
+                                <h4 className="text-3xl font-bold" style={{ color: techPurple }}>99.9%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Server Uptime & SSL</p>
                             </div>
                         </div>
                     </div>

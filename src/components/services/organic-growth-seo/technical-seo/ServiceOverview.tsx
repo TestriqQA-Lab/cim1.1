@@ -19,38 +19,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Gauge,
-            title: "Site Speed Optimization",
-            description: "Improving page load times through caching, compression, and resource optimization.",
+            title: "Website Performance Analysis & Site Speed",
+            description: "Speed isn't just a luxury; it's a critical ranking factor. Our professional website speed optimization services leverage server-side rendering and edge caching to ensure your site loads faster than the competition.",
             color: techPurple,
         },
         {
             icon: Smartphone,
-            title: "Mobile-First Indexing",
-            description: "Ensuring your site is fully optimized for Google's mobile-first approach.",
+            title: "Mobile-First Indexing Optimization Services",
+            description: "With Google's mobile-first approach, your mobile site is your primary site. We conduct a thorough technical SEO audit for WordPress sites and custom builds to ensure 100% mobile parity and responsiveness.",
             color: "#3B82F6",
         },
         {
             icon: Shield,
-            title: "Security & HTTPS",
-            description: "Implementing SSL certificates and security best practices for trust signals.",
+            title: "HTTPS, SSL & Security for SEO",
+            description: "Security is a core trust signal. We implement advanced HTTPS and SSL security for SEO, including security headers (HSTS) and malware protection, to build ultimate E-E-A-T.",
             color: "#22C55E",
         },
         {
             icon: FileCode,
-            title: "XML Sitemaps & Robots.txt",
-            description: "Proper configuration for efficient crawling and indexation control.",
+            title: "XML Sitemap & Robots.txt Optimization",
+            description: "Guide search engines to your most valuable content. We provide expert XML sitemap and robots.txt optimization to prevent crawl waste and ensure your priority pages are indexed instantly.",
             color: "#F59E0B",
         },
         {
             icon: Globe,
-            title: "International SEO",
-            description: "Hreflang implementation and geo-targeting for global audiences.",
+            title: "Technical SEO for International Websites",
+            description: "Scaling globally? Our technical SEO for international websites includes precise hreflang tag implementation and geo-targeting strategies to capture audiences in the US, EU, and APAC markets.",
             color: "#EC4899",
         },
         {
             icon: LayoutGrid,
-            title: "Site Architecture",
-            description: "Optimizing URL structure, navigation, and internal linking patterns.",
+            title: "Scalable Website Architecture",
+            description: "Structure is everything. We optimize your website structure and internal link structure optimization to distribute authority efficiently, ensuring even the deepest pages find their way to the top of SERPs.",
             color: "#06B6D4",
         },
     ];
@@ -93,16 +93,16 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Technical SEO{" "}
+                        Comprehensive Technical SEO{" "}
                         <span style={{ color: techPurple }}>
-                            Services
+                            Services for Scalable Growth
                         </span>
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Comprehensive technical optimization to ensure search engines can effectively crawl and index your website.
+                        Search engine algorithms are more complex than ever. Our technical SEO services go beyond the basics, solving the deep-rooted issues that hinder your organic growth and user experience.
                     </p>
                 </div>
 

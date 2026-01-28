@@ -12,33 +12,33 @@ export default function WhyChooseUs() {
     const benefits = [
         {
             icon: CheckCircle,
-            title: "Deep Technical Expertise",
-            description: "Years of experience solving complex technical SEO challenges.",
+            title: "30+ Years Global Expertise",
+            description: "Our strategists have hands-on experience with every major algorithm shift since the 90s.",
         },
         {
             icon: TrendingUp,
-            title: "Measurable Improvements",
-            description: "Clear metrics showing crawl efficiency and indexation gains.",
+            title: "95% Bug-Free Implementation",
+            description: "Our team delivered 95% bug-free apps for 50+ fintech clients using React/Next.js.",
         },
         {
             icon: Target,
             title: "Root Cause Analysis",
-            description: "We don't just fix symptoms - we solve underlying issues.",
+            description: "We don't just fix symptoms - we solve underlying server and code issues.",
         },
         {
             icon: Award,
-            title: "Platform Expertise",
-            description: "Experience with WordPress, Shopify, custom CMS, and more.",
+            title: "Developer-First Collaboration",
+            description: "We provide clear technical SEO checklist for developers to ensure seamless implementation.",
         },
         {
             icon: Clock,
-            title: "Fast Implementation",
-            description: "Quick turnaround on critical technical fixes.",
+            title: "Platform Specialists",
+            description: "Expert technical SEO for headless CMS websites, WordPress, Shopify, and custom stacks.",
         },
         {
             icon: Users,
-            title: "Developer Collaboration",
-            description: "We work seamlessly with your development team.",
+            title: "Transparent Reporting",
+            description: "See exactly how your technical SEO cost for business websites 2026 translates into performance gains.",
         },
     ];
 
@@ -66,11 +66,10 @@ export default function WhyChooseUs() {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Why Choose <span style={{ color: techPurple }}>Us</span>
+                            Global Technical Expertise. <span style={{ color: techPurple }}>Measurable ROI.</span>
                         </h2>
                         <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            We specialize in solving complex technical SEO challenges that
-                            other agencies can't handle.
+                            Why hire a technical SEO expert from our team? Because we've delivered 300% traffic growth for clients by fixing the issues others miss.
                         </p>
 
                         {/* Stats */}

@@ -9,33 +9,33 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Technical Audit",
-            description: "Comprehensive crawl analysis to identify technical issues affecting search performance.",
+            title: "Comprehensive Technical SEO Audit",
+            description: "We check 200+ checkpoints, from 404 error and redirect audit to server response times.",
         },
         {
             icon: FileCode,
-            title: "Crawl Optimization",
-            description: "Fixing robots.txt, XML sitemaps, and ensuring efficient crawl budget utilization.",
+            title: "Crawl & Indexability Optimization",
+            description: "Fixing robots.txt, XML sitemaps, and ensuring efficient search engine crawl.",
         },
         {
             icon: Gauge,
-            title: "Speed Optimization",
-            description: "Improving Core Web Vitals, server response times, and resource loading.",
+            title: "Speed & Core Web Vitals Fixes",
+            description: "Implementing professional website speed optimization services to hit green scores across the board.",
         },
         {
             icon: Shield,
-            title: "Security Implementation",
-            description: "HTTPS migration, security headers, and trust signal optimization.",
+            title: "Security & SSL Deployment",
+            description: "Ensuring robust HTTPS and SSL security for SEO across all subdomains.",
         },
         {
             icon: BarChart,
-            title: "Indexation Monitoring",
-            description: "Tracking index coverage, fixing errors, and monitoring search console data.",
+            title: "Schema Markup Implementation Services",
+            description: "Deploying Structured data and JSON-LD to secure rich snippets and AI Overview visibility.",
         },
         {
             icon: RefreshCw,
-            title: "Ongoing Maintenance",
-            description: "Regular audits, algorithm update assessments, and continuous improvement.",
+            title: "Ongoing Technical Monitoring",
+            description: "Regular audits to ensure new deployments don't introduce technical debt.",
         },
     ];
 
@@ -48,10 +48,10 @@ export default function Process() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Our Proven <span style={{ color: techPurple }}>Process</span>
+                        6 Steps to Flawless <span style={{ color: techPurple }}>Technical Performance</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A systematic approach to technical SEO that ensures long-term success.
+                        Our systematic approach ensures every technical bottleneck is identified and resolved, delivering 95% bug-free implementations for our clients.
                     </p>
                 </div>
 

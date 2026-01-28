@@ -45,10 +45,10 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Our Technical <span style={{ color: techPurple }}>Tech Stack</span>
+                        Precision Tools for <span style={{ color: techPurple }}>Deep Technical Audits</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Industry-leading tools for performance analysis, crawling, and technical monitoring.
+                        We use the industry's most advanced tools to conduct your technical SEO audit and monitor performance in real-time.
                     </p>
                 </div>
 
