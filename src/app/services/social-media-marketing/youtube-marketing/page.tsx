@@ -5,12 +5,13 @@ import SolutionTypes from "@/components/services/social-media-marketing/youtube-
 import TechStack from "@/components/services/social-media-marketing/youtube-marketing/TechStack";
 import Process from "@/components/services/social-media-marketing/youtube-marketing/Process";
 import WhyChooseUs from "@/components/services/social-media-marketing/youtube-marketing/WhyChooseUs";
+import FAQ from "@/components/services/social-media-marketing/youtube-marketing/FAQ";
 import CTA from "@/components/services/social-media-marketing/youtube-marketing/CTA";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'YouTube Marketing Agency | Video Content Growth Services | TestrIQ',
-    description: 'Scale your brand with expert YouTube marketing and video content growth services. We manage channels, optimize video SEO, and drive engagement with data-driven video marketing.',
+    title: 'YouTube Marketing Services | Top Agency for ROI & Growth',
+    description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive 20%+ CTR lifts & high-intent leads. Book free audit!',
 };
 
 export default function YouTubeMarketingPage() {
@@ -21,13 +22,79 @@ export default function YouTubeMarketingPage() {
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "Service",
-                        "name": "YouTube Marketing",
-                        "description": "Expert YouTube marketing and video content growth services.",
-                        "provider": {
-                            "@type": "Organization",
-                            "name": "CIM"
-                        }
+                        "@graph": [
+                            {
+                                "@type": "Organization",
+                                "@id": "https://www.cinuteinfomedia.com/#organization",
+                                "name": "Cinute Infomedia",
+                                "url": "https://www.cinuteinfomedia.com",
+                                "logo": "https://www.cinuteinfomedia.com/images/logo.png"
+                            },
+                            {
+                                "@type": "Service",
+                                "name": "YouTube Marketing Services",
+                                "provider": { "@id": "https://www.cinuteinfomedia.com/#organization" },
+                                "serviceType": "Digital Marketing",
+                                "description": "Premium YouTube Marketing Agency offering YouTube Ads Management, Video SEO, and Channel Growth services worldwide.",
+                                "areaServed": ["US", "EU", "IN", "APAC"],
+                                "hasOfferCatalog": {
+                                    "@type": "OfferCatalog",
+                                    "name": "YouTube Marketing Services",
+                                    "itemListElement": [
+                                        {
+                                            "@type": "Offer",
+                                            "itemOffered": {
+                                                "@type": "Service",
+                                                "name": "YouTube Ads Management"
+                                            }
+                                        },
+                                        {
+                                            "@type": "Offer",
+                                            "itemOffered": {
+                                                "@type": "Service",
+                                                "name": "YouTube SEO Services"
+                                            }
+                                        },
+                                        {
+                                            "@type": "Offer",
+                                            "itemOffered": {
+                                                "@type": "Service",
+                                                "name": "YouTube Channel Management"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "@type": "FAQPage",
+                                "mainEntity": [
+                                    {
+                                        "@type": "Question",
+                                        "name": "How much do professional YouTube marketing services cost?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "YouTube marketing cost for small businesses starts at $1,500/month, while full-service enterprise management ranges from $5,000 to $25,000+ depending on ad spend and content scale."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "What are the benefits of hiring a YouTube advertising agency?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Hiring an agency ensures expertise in algorithm optimization, creative A/B testing, and ROI tracking, typically resulting in a 30% higher ROAS compared to in-house management."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "How long does it take to see ROI from YouTube marketing?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Ads can show results in 2-4 weeks, while organic YouTube SEO typically builds sustainable authority and compounding ROI over 3-6 months."
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     })
                 }}
             />
@@ -37,6 +104,7 @@ export default function YouTubeMarketingPage() {
             <TechStack />
             <Process />
             <WhyChooseUs />
+            <FAQ />
             <CTA />
         </main>
     );

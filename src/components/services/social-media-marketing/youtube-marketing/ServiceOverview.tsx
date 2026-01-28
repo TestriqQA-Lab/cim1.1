@@ -18,38 +18,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: PlayCircle,
-            title: "YouTube Advertising",
-            description: "End-to-end management of YouTube ad campaigns including TrueView, Bumper, and Discovery ads for maximum ROI.",
+            title: "YouTube Ads & PPC",
+            description: "Expertly managed TrueView, Bumper, and In-stream ads. Rigorous A/B creative testing to maximize your ROAS.",
             color: "#FF0000",
         },
         {
             icon: Search,
-            title: "Video SEO",
-            description: "Optimize your videos to rank higher in YouTube search and Google results to drive organic views.",
+            title: "YouTube SEO Services",
+            description: "Advanced video SEO beyond tags. Optimizing titles, descriptions, and transcripts for 2026 AI Overviews.",
             color: "#CC0000",
         },
         {
             icon: Users,
-            title: "Channel Growth",
-            description: "Strategies to increase subscribers, watch time, and engagement through consistent, high-quality content.",
+            title: "B2B Lead Generation",
+            description: "Authority-building content and remarketing ads designed to nurture prospects through the buying cycle.",
             color: "#FF0000",
         },
         {
             icon: Clapperboard,
-            title: "Content Strategy",
-            description: "Data-backed content planning, scripting, and ideation to keep your audience hooked and returning.",
+            title: "Ecommerce Ads",
+            description: "Direct-to-consumer shoppable ads leveraging YouTube bumper and TrueView for action formats.",
             color: "#CC0000",
         },
         {
             icon: MonitorPlay,
-            title: "YouTube Shorts",
-            description: "Capitalize on short-form video trends with viral-ready Shorts content to explode your reach.",
+            title: "Influencer Marketing",
+            description: "Access our verified creator network. Talent identification, contract management, and ROI tracking.",
             color: "#FF0000",
         },
         {
             icon: BarChart2,
-            title: "Analytics & Reporting",
-            description: "Deep dive into viewer retention, demographics, and conversion metrics to refine your strategy.",
+            title: "Shorts Strategy",
+            description: "High-retention frameworks for YouTube Shorts to drive viral growth and channel subscriptions.",
             color: "#CC0000",
         },
     ];
@@ -91,24 +91,23 @@ export default function ServiceOverview() {
                                 color: youtubeRed,
                             }}
                         >
-                            Our Services
+                            Full-Funnel Excellence
                         </span>
                     </div>
                     <h2
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        YouTube{" "}
+                        Comprehensive YouTube{" "}
                         <span style={{ color: youtubeRed }}>
-                            Advertising
-                        </span>{" "}
-                        Services
+                            Marketing Solutions
+                        </span>
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Comprehensive video marketing solutions to grow your brand and drive conversions on the world's largest video platform.
+                        End-to-end suite of YouTube video SEO and optimization services designed to maximize visibility and audience retention.
                     </p>
                 </div>
 

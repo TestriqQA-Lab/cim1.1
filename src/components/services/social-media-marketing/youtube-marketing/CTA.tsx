@@ -56,13 +56,12 @@ export default function CTA() {
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                                Ready to Dominate{" "}
-                                <span className="text-white/80">YouTube?</span>
+                                Ready to Scale Your{" "}
+                                <span className="text-white/80">Video Authority?</span>
                             </h2>
 
                             <p className="text-lg text-white/80 mb-8 max-w-xl">
-                                Get a free 360° audit of your channel and discover how to
-                                scale your brand with video advertising.
+                                Don&apos;t let your competitors own the screen. Claim your FREE YouTube Strategy Audit & Ads Roadmap today.
                             </p>
 
                             {/* Benefits */}
@@ -82,7 +81,7 @@ export default function CTA() {
                                     className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 bg-white rounded-full font-bold text-base md:text-lg transition-all hover:shadow-lg hover:scale-105"
                                     style={{ color: youtubeRed }}
                                 >
-                                    Get Free Audit
+                                    Claim Your Free Audit Now
                                     <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                                 </Link>
                             </div>
@@ -91,20 +90,20 @@ export default function CTA() {
                         {/* Right Stats */}
                         <div className="grid grid-cols-2 gap-3 sm:gap-6">
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">2B+</div>
-                                <div className="text-xs sm:text-sm text-white/70">Monthly Users</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">25%</div>
+                                <div className="text-xs sm:text-sm text-white/70">Lower CPA</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">30%</div>
-                                <div className="text-xs sm:text-sm text-white/70">Sales Growth</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">300%</div>
+                                <div className="text-xs sm:text-sm text-white/70">Traffic Growth</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">3x</div>
-                                <div className="text-xs sm:text-sm text-white/70">Engagement</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">95%</div>
+                                <div className="text-xs sm:text-sm text-white/70">Client Retention</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
                                 <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">24/7</div>
-                                <div className="text-xs sm:text-sm text-white/70">Brand Exposure</div>
+                                <div className="text-xs sm:text-sm text-white/70">Expert Support</div>
                             </div>
                         </div>
                     </div>

@@ -18,39 +18,39 @@ export default function WhyChooseUs() {
 
     const reasons = [
         {
-            icon: Award,
-            title: "Google Partners",
-            description: "We are certified Google Partners with direct access to YouTube advertising betas and support.",
-            color: "#FF0000",
-        },
-        {
             icon: TrendingUp,
-            title: "Proven ROI",
-            description: "Our data-driven campaigns consistently deliver lower CPA and higher ROAS for our clients.",
-            color: "#CC0000",
-        },
-        {
-            icon: Clapperboard,
-            title: "Creative Excellence",
-            description: "In-house video production team that creates high-converting ad creatives and organic content.",
-            color: "#FF0000",
-        },
-        {
-            icon: ShieldCheck,
-            title: "Brand Safety",
-            description: "We ensure your ads appear on relevant, high-quality channels that align with your brand values.",
-            color: "#CC0000",
-        },
-        {
-            icon: Zap,
-            title: "Fast Scaling",
-            description: "Strategies designed to test quickly, identify winners, and scale budgets effectively.",
+            title: "300% Traffic Growth",
+            description: "Proven results using the latest video SEO techniques. We use data to drive real scale.",
             color: "#FF0000",
         },
         {
             icon: Users,
-            title: "Full-Funnel Approach",
-            description: "We manage the entire user journey from awareness views to conversion and retention.",
+            title: "Dedicated Experts",
+            description: "Google-certified Campaign Managers assigned to every account for global scale and precision.",
+            color: "#CC0000",
+        },
+        {
+            icon: ShieldCheck,
+            title: "EEAT Certified",
+            description: "Content is fact-checked, authority-driven, and compliant with the latest Google Core updates.",
+            color: "#FF0000",
+        },
+        {
+            icon: Zap,
+            title: "25% CPA Reduction",
+            description: "Optimized funnels and creative testing consistently lower acquisition costs across any niche.",
+            color: "#CC0000",
+        },
+        {
+            icon: Clapperboard,
+            title: "Multi-Device Mastery",
+            description: "Optimized for everything from 4K Smart TVs to mobile devices, ensuring maximum engagement.",
+            color: "#FF0000",
+        },
+        {
+            icon: Sparkles,
+            title: "95% Client Retention",
+            description: "Long-term partnerships built on transparency, results, and consistent ROI growth.",
             color: "#CC0000",
         },
     ];

@@ -19,74 +19,74 @@ export default function SolutionTypes() {
 
     const solutions = [
         {
-            icon: ShoppingBag,
-            title: "E-Commerce & Retail",
-            description: "Showcase products with shoppable video ads and drive direct sales with high-intent audiences.",
+            icon: Briefcase,
+            title: "Financial Services",
+            description: "High-trust content for fintech & banking. We build authoritativeness through expert interviews.",
             features: [
-                "Product feed integration",
-                "Shoppable ads",
-                "Unboxing videos",
-                "Retargeting campaigns",
+                "Compliance-ready video",
+                "Expert interviews",
+                "Educational series",
+                "40% lead volume boost",
+            ],
+            color: "#FF0000",
+        },
+        {
+            icon: Home,
+            title: "Real Estate Agents",
+            description: "Immersive property tours and neighborhood spotlights optimized for local search dominance.",
+            features: [
+                "Immersive tours",
+                "Local SEO optimization",
+                "Neighborhood spotlights",
+                "Lead-gen funnels",
+            ],
+            color: "#CC0000",
+        },
+        {
+            icon: Sparkles,
+            title: "Growth for Startups",
+            description: "Agile, cost-effective models allowing startups to compete with giants through creative disruption.",
+            features: [
+                "2026 pricing models",
+                "Rapid scaling tactics",
+                "Creative disruption",
+                "Brand voice design",
             ],
             color: "#FF0000",
         },
         {
             icon: Monitor,
-            title: "SaaS & Technology",
-            description: "Demonstrate software value through tutorials, demos, and customer success stories.",
+            title: "B2B Tech & SaaS",
+            description: "Deep-dive demos and founder-led thought leadership. Teams that understand technical product-market fit.",
             features: [
-                "Product demos",
-                "Tutorial series",
-                "Feature highlights",
-                "Webinar promotion",
+                "Software demos",
+                "Founder-led content",
+                "Technical SEO",
+                "Trial-to-paid funnels",
             ],
             color: "#CC0000",
         },
         {
-            icon: GraduationCap,
-            title: "Education & Coaching",
-            description: "Attract students and sell courses by sharing valuable educational content and previews.",
+            icon: ShoppingBag,
+            title: "Ecommerce & Retail",
+            description: "Drive direct sales with shoppable ads and high-intent audience targeting.",
             features: [
-                "Course previews",
-                "Student testimonials",
-                "Educational value",
-                "Webinar funnels",
+                "Shoppable integrations",
+                "Product feed ads",
+                "High-intent targeting",
+                "ROAS optimization",
             ],
             color: "#FF0000",
         },
         {
             icon: HeartPulse,
             title: "Health & Wellness",
-            description: "Build trust and community with informative videos, client transformations, and expert advice.",
+            description: "Build trust with informative videos, client transformations, and expert advice.",
             features: [
                 "Patient stories",
-                "Expert interviews",
-                "Facility tours",
-                "Treatment explainers",
-            ],
-            color: "#CC0000",
-        },
-        {
-            icon: Home,
-            title: "Real Estate",
-            description: "Immersive property tours and neighborhood guides to attract buyers and sellers.",
-            features: [
-                "Video walkthroughs",
-                "Neighborhood guides",
-                "Agent profiles",
-                "Listing highlights",
-            ],
-            color: "#FF0000",
-        },
-        {
-            icon: Briefcase,
-            title: "Finance & Consulting",
-            description: "Establish authority and explain complex financial concepts to build client trust.",
-            features: [
-                "Market updates",
-                "Service explainers",
-                "Client case studies",
-                "Advisor introductions",
+                "Expert AMAs",
+                "Trust-building content",
+                "Community growth",
             ],
             color: "#CC0000",
         },
@@ -104,16 +104,16 @@ export default function SolutionTypes() {
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ backgroundColor: `${youtubeRed}15`, border: `1px solid ${youtubeRed}30` }}>
                         <Sparkles className="w-4 h-4" style={{ color: youtubeRed }} />
-                        <span className="text-sm font-medium" style={{ color: youtubeRed }}>Industry Solutions</span>
+                        <span className="text-sm font-medium" style={{ color: youtubeRed }}>Tailored Expertise</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>YouTube for</span>{" "}
+                        Sector-Specific{" "}
                         <span style={{ color: youtubeRed }}>
-                            Your Industry
+                            YouTube Strategies
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Tailored video marketing strategies to meet the unique needs of your business sector.
+                        Scalable ROI through specialized video marketing frameworks for your specific business sector.
                     </p>
                 </div>
 

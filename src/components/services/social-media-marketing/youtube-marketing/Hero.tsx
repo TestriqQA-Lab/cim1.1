@@ -102,10 +102,10 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Dominate Video with{" "}
+                            Elite{" "}
                             <span className="relative inline-block" style={{ color: youtubeRed }}>
                                 YouTube Marketing
                                 <svg
@@ -116,21 +116,22 @@ export default function Hero() {
                                 >
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
                                 </svg>
-                            </span>
+                            </span>{" "}
+                            Services
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Scale your brand with expert YouTube marketing and video growth services.
-                            We combine organic content strategy with high-impact advertising to dominate the platform.
+                            As a globally recognized YouTube marketing agency with 30+ years of collective expertise in digital growth, we don't just "post videos", we engineer high-conversion ecosystems. Leveraging 2026 EEAT guidelines, we deliver YouTube marketing services that outrank, outperform, and outscale the competition.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Video Ads",
-                                "Channel Growth",
-                                "YouTube Shorts",
-                                "Influencer Marketing",
+                                "ROI-First Strategy",
+                                "EEAT-Certified Content",
+                                "Pro Channel Management",
+                                "Advanced Video Marketing",
+                                "Global Multilingual Reach",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -153,12 +154,12 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
                                 style={{ backgroundColor: youtubeRed }}
                             >
-                                Start Growing
+                                Book Your Free Audit Today
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
-                            <Link
-                                href="#process"
+                            {/* <Link
+                                href="#portfolio"
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border transition-all hover:bg-accent"
                                 style={{
                                     borderColor: "var(--border-color)",
@@ -166,25 +167,25 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Our Process
-                            </Link>
+                                View Our Case Studies
+                            </Link> */}
                         </div>
 
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>2B+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Monthly Users</p>
+                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>25%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Reduction in CPA</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>30%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Lower CPA</p>
+                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>95%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Client Retention</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>3x</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Brand Awareness</p>
+                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>300%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Traffic Growth</p>
                             </div>
                         </div>
                     </div>
