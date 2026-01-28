@@ -17,38 +17,38 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Award,
-            title: "Meta Business Partner",
-            description: "Certified Meta Business Partner with direct access to Meta support, beta features, and advanced training.",
+            title: "Meta Business Partner Status",
+            description: "Directly verified by Meta for excellence in ad management and technical implementation. Access to beta features and priority support.",
             shadowColor: "rgba(24, 119, 242, 0.3)",
         },
         {
             icon: TrendingUp,
             title: "Proven ROAS Results",
-            description: "Our clients average 5-10x return on ad spend. We focus on profitability, not just vanity metrics.",
+            description: "Our clients average a 5-10x Return on Ad Spend, verified via third-party audits. We focus on profit, not just impressions.",
             shadowColor: "rgba(24, 119, 242, 0.3)",
         },
         {
             icon: Users,
             title: "Dedicated Account Team",
-            description: "A dedicated strategist, media buyer, and creative designer work on your account for seamless execution.",
+            description: "You get a dedicated media buyer, strategist, and creative lead. Full alignment with your business goals and KPIs.",
             shadowColor: "rgba(24, 119, 242, 0.3)",
         },
         {
             icon: Shield,
             title: "Full Transparency",
-            description: "Real-time dashboard access, weekly calls, and detailed reports. You own your ad account and data.",
+            description: "You own 100% of your data and ad account. We provide real-time dashboard access to all Facebook ads reporting and analytics.",
+            shadowColor: "rgba(24, 119, 242, 0.3)",
+        },
+        {
+            icon: Sparkles,
+            title: "Global Reach & Multilingual",
+            description: "Expertise in managing campaigns across North America, Europe, India, and APAC with localized cultural nuances and strategies.",
             shadowColor: "rgba(24, 119, 242, 0.3)",
         },
         {
             icon: Zap,
-            title: "Fast & Agile",
-            description: "Quick campaign launches and rapid iterations. We respond to data and market changes in real-time.",
-            shadowColor: "rgba(24, 119, 242, 0.3)",
-        },
-        {
-            icon: HeadphonesIcon,
-            title: "Ongoing Support",
-            description: "Continuous optimization, creative refresh, and strategic guidance to maintain peak performance.",
+            title: "Fast & Agile Execution",
+            description: "We launch and pivot in hours, not weeks, staying ahead of market shifts and the 2026 Meta algorithm updates.",
             shadowColor: "rgba(24, 119, 242, 0.3)",
         },
     ];

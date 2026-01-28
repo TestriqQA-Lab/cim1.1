@@ -102,7 +102,7 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
                             Scale Your Business with{" "}
@@ -110,7 +110,7 @@ export default function Hero() {
                                 className="relative inline-block"
                                 style={{ color: "#1877F2" }}
                             >
-                                Facebook Marketing
+                                Premier Facebook Marketing Services
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: "#1877F2" }}
@@ -123,8 +123,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Master your presence on the world's largest social network.
-                            From organic community building to precision-targeted advertising, we drive measurable results.
+                            Master your presence on the world's largest social network with a Facebook marketing agency that prioritizes ROI over vanity metrics. In the competitive digital landscape of 2026, simply "posting" isn't enough. You need an award-winning Facebook marketing company that leverages the latest Meta AI algorithms and high-E-E-A-T content principles to drive measurable growth.
                         </p>
 
                         {/* Feature Pills */}

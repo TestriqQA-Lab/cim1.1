@@ -16,38 +16,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Target,
-            title: "Lead Generation Ads",
-            description: "Capture high-quality leads directly within Facebook. Our optimized lead forms reduce friction and increase conversion rates.",
+            title: "Lead Generation Ads (Small Business & Enterprise)",
+            description: "Capture high-quality leads directly within the Meta ecosystem. Our optimized lead forms and Facebook business ads manager services reduce friction, ensuring a seamless bridge between your ad and your CRM. We specialize in Facebook lead generation services for small business that deliver sales-ready prospects.",
             shadowColor: "rgba(24, 119, 242, 0.4)",
         },
         {
             icon: ShoppingCart,
-            title: "E-commerce & Catalog Ads",
-            description: "Drive sales with dynamic product ads that automatically show relevant products to interested customers.",
+            title: "E-commerce & Catalog Ads (DPAs)",
+            description: "Scale your online store with Facebook ads management for ecommerce. We implement Facebook dynamic product ads for retail that automatically showcase the right products to the right shoppers. Our experts are a leading Shopify Facebook ads management agency, integrating directly with your store for real-time inventory syncing.",
             shadowColor: "rgba(24, 119, 242, 0.4)",
         },
         {
             icon: Video,
             title: "Video & Reels Campaigns",
-            description: "Engage audiences with compelling video content optimized for Facebook and Instagram Reels placements.",
+            description: "Engage audiences with high-impact Facebook video ads marketing strategy. We design scroll-stopping Reels and video content optimized for mobile-first consumption, driving higher engagement and lower Facebook ads cost for small business 2026.",
             shadowColor: "rgba(24, 119, 242, 0.4)",
         },
         {
             icon: Users,
-            title: "Lookalike Audiences",
-            description: "Scale your reach by targeting users similar to your best customers using Facebook's powerful AI algorithms.",
+            title: "Lookalike & Custom Audiences",
+            description: "Scale your reach by targeting users identical to your best customers. Using Lookalike audience creation and Custom audience targeting, we find high-intent users who are ready to buy, maximizing your paid social media management budget.",
             shadowColor: "rgba(24, 119, 242, 0.4)",
         },
         {
             icon: Repeat,
-            title: "Retargeting Campaigns",
-            description: "Re-engage website visitors and cart abandoners with personalized ads that drive them back to convert.",
+            title: "Retargeting & Remarketing Campaigns",
+            description: "Don't let interested users slip away. Our Facebook retargeting ads management agency uses advanced Facebook Pixel setup and tracking to re-engage website visitors and cart abandoners with personalized offers that close the deal.",
             shadowColor: "rgba(24, 119, 242, 0.4)",
         },
         {
             icon: MessageCircle,
             title: "Messenger & WhatsApp Ads",
-            description: "Start conversations with potential customers through click-to-message ads and automated chatbots.",
+            description: "Start meaningful conversations. We build social media engagement services via click-to-message ads that initiate real-time dialogue, shortening the sales cycle for professional services and high-ticket items.",
             shadowColor: "rgba(24, 119, 242, 0.4)",
         },
     ];
@@ -96,7 +96,7 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Facebook{" "}
+                        Comprehensive Facebook{" "}
                         <span style={{ color: "#1877F2" }}>
                             Advertising
                         </span>{" "}
@@ -106,7 +106,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Comprehensive Facebook and Instagram advertising solutions to grow your business and maximize ROI.
+                        As a full-service Facebook marketing agency, we provide end-to-end Facebook ads management services designed for scalability and technical excellence.
                     </p>
                 </div>
 

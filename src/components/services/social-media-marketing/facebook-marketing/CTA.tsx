@@ -62,13 +62,12 @@ export default function CTA() {
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                                Ready to Scale with{" "}
+                                Ready to Scale Your ROI with{" "}
                                 <span className="text-white/80">Facebook Ads?</span>
                             </h2>
 
                             <p className="text-lg text-white/80 mb-8 max-w-xl">
-                                Get a free audit of your current Facebook advertising and discover
-                                opportunities to improve your ROAS and scale profitably.
+                                Stop wasting budget on underperforming campaigns. Get a free audit of your current Facebook advertising and partner with the Facebook marketing experts who deliver measurable growth.
                             </p>
 
                             {/* Benefits */}
