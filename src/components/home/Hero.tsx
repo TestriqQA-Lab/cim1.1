@@ -65,18 +65,18 @@ export default function Hero() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-                            Dominate Your Digital Presence.
+                            Leading Web Development Company
                             <br />
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-purple), var(--brand-cyan)) ", WebkitBackgroundClip: "text", color: "transparent" }}
                             >
-                                Engineered for Growth.
+                                Engineered for Global Growth
                             </span>
                         </h1>
 
                         <p className="text-xl max-w-2xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            We are your full-stack partner for online success, specializing in high-converting websites, strategic SEO, performance marketing, and AI-driven automation to ensure your brand stands out and scales.
+                            We are your full-stack partner for online success, specializing in high-converting websites, strategic SEO, AI-powered automation, and performance marketing to ensure your brand stands out and scales globally.
                         </p>
 
                         <div className="flex flex-wrap gap-4 mb-12">
@@ -86,8 +86,8 @@ export default function Hero() {
                                 style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-cyan))" }}
                             >
                                 <span className="relative z-10 flex items-center gap-2">
-                                    Start Your Digital Audit
-                                    <ChevronRight className="w-5 h-5" />
+                                    Start Your Free Digital Audit
+                                    <ArrowRight className="w-5 h-5" />
                                 </span>
                             </Link>
 

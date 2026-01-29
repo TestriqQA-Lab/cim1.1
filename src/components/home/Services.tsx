@@ -10,30 +10,73 @@ export default function Services() {
     const services = [
         {
             icon: <Globe className="w-6 h-6" />,
-            title: "Websites & Web Apps",
+            title: "Web Design & Development",
             slug: "web-design-development",
             bullets: [
-                "Fast, accessible, SEO-friendly",
-                "Conversion-first UX & analytics",
-                "React / Next.js / Headless CMS",
+                "Business & corporate websites",
+                "Web applications & SaaS platforms",
+                "E-commerce ecosystems (Shopify, WooCommerce)",
+                "Key Results: Sub-2s load times, 300% organic growth",
             ],
             gradientStyle: { background: "linear-gradient(90deg, var(--brand-cyan), var(--brand-blue))" },
         },
         {
-            icon: <Palette className="w-6 h-6" />,
-            title: "Brand & Creative Design",
-            slug: "brand-identity-design",
-            bullets: ["Visual identity systems", "Design systems & guidelines", "Content & tone of voice"],
-            gradientStyle: { background: "linear-gradient(90deg, var(--brand-purple), var(--brand-orange))" },
+            icon: <Code className="w-6 h-6" />,
+            title: "Mobile App Development",
+            slug: "mobile-app-development",
+            bullets: [
+                "Native iOS & Android app development",
+                "Cross-platform (React Native, Flutter)",
+                "Enterprise mobile applications",
+                "Key Results: 40% faster time-to-market, 98.7% bug-free",
+            ],
+            gradientStyle: { background: "linear-gradient(90deg, var(--brand-purple), var(--brand-cyan))" },
+        },
+        {
+            icon: <Share2 className="w-6 h-6" />,
+            title: "Social Media Marketing",
+            slug: "social-media-marketing",
+            bullets: [
+                "Platform-specific strategies (Facebook, Instagram, LinkedIn)",
+                "Paid social media advertising",
+                "Influencer marketing campaigns",
+                "Key Results: 300% ROI on paid campaigns, 10x engagement",
+            ],
+            gradientStyle: { background: "linear-gradient(90deg, var(--brand-teal), var(--brand-cyan))" },
+        },
+        {
+            icon: <Workflow className="w-6 h-6" />,
+            title: "AI Workflows & Automations",
+            slug: "ai-workflows-automations",
+            bullets: [
+                "Business process automation (BPA)",
+                "Document processing & OCR",
+                "CRM/ERP integrations (Salesforce, HubSpot)",
+                "Key Results: 200+ hours saved monthly, 60% cost reduction",
+            ],
+            gradientStyle: { background: "linear-gradient(90deg, var(--brand-purple), var(--brand-yellow))" },
+        },
+        {
+            icon: <Bot className="w-6 h-6" />,
+            title: "AI-Powered Chatbots",
+            slug: "ai-powered-chatbots",
+            bullets: [
+                "Custom AI chatbot development",
+                "E-commerce sales & support bots",
+                "WhatsApp & social media automation",
+                "Key Results: 300% ROI, 70% reduction in support costs",
+            ],
+            gradientStyle: { background: "linear-gradient(90deg, var(--brand-cyan), var(--brand-purple))" },
         },
         {
             icon: <Search className="w-6 h-6" />,
-            title: "SEO & Content",
+            title: "Organic Growth & SEO",
             slug: "organic-growth-seo",
             bullets: [
-                "Keyword strategy & content plan",
-                "On-page technical SEO & audits",
-                "Link building & organic growth",
+                "Technical SEO & site audits",
+                "On-page & off-page optimization",
+                "Content strategy & marketing",
+                "Key Results: 3x organic traffic in 6 months, #1 rankings",
             ],
             gradientStyle: { background: "linear-gradient(90deg, var(--brand-yellow), var(--brand-orange))" },
         },
@@ -41,36 +84,25 @@ export default function Services() {
             icon: <Target className="w-6 h-6" />,
             title: "Performance Marketing",
             slug: "performance-marketing",
-            bullets: ["Google & Meta ads", "Funnel optimisation", "CRO and tracking"],
+            bullets: [
+                "Google Ads & PPC management",
+                "Paid social campaigns (Meta, LinkedIn, TikTok)",
+                "Retargeting & remarketing strategies",
+                "Key Results: 10x ROAS, precision targeting",
+            ],
             gradientStyle: { background: "linear-gradient(90deg, var(--brand-orange), var(--brand-purple))" },
         },
         {
-            icon: <Share2 className="w-6 h-6" />,
-            title: "Social & Community",
-            slug: "social-media-marketing",
-            bullets: ["Content calendar", "Community moderation", "Campaign creative"],
-            gradientStyle: { background: "linear-gradient(90deg, var(--brand-teal), var(--brand-cyan))" },
-        },
-        {
-            icon: <Bot className="w-6 h-6" />,
-            title: "AI Chatbots & Automations",
-            slug: "ai-powered-chatbots",
-            bullets: ["Lead qualification flows", "CRM integrations", "Conversational UX"],
-            gradientStyle: { background: "linear-gradient(90deg, var(--brand-cyan), var(--brand-purple))" },
-        },
-        {
-            icon: <Workflow className="w-6 h-6" />,
-            title: "Workflows & Integrations",
-            slug: "ai-workflows-automations",
-            bullets: ["Zapier / n8n / Custom APIs", "Data pipelines & reporting", "Event-driven automation"],
-            gradientStyle: { background: "linear-gradient(90deg, var(--brand-purple), var(--brand-yellow))" },
-        },
-        {
-            icon: <Code className="w-6 h-6" />,
-            title: "Maintenance & Support",
-            slug: "additional-support-services",
-            bullets: ["Monitoring & backups", "A/B testing & experiments", "SLA-backed support"],
-            gradientStyle: { background: "linear-gradient(90deg, var(--brand-blue), var(--brand-teal))" },
+            icon: <Palette className="w-6 h-6" />,
+            title: "Brand Identity Design",
+            slug: "brand-identity-design",
+            bullets: [
+                "Strategic logo design",
+                "Brand style guide development",
+                "Complete visual identity systems",
+                "Key Results: 95% client retention, award-winning designs",
+            ],
+            gradientStyle: { background: "linear-gradient(90deg, var(--brand-purple), var(--brand-orange))" },
         },
     ];
 
@@ -82,8 +114,8 @@ export default function Services() {
                         <Zap className="w-4 h-4" style={{ color: "var(--brand-yellow)" }} />
                         <span style={{ fontWeight: 600 }}>Full-Stack Digital Presence Services</span>
                     </div>
-                    <h2 style={{ fontSize: "2.5rem", fontWeight: 900, marginBottom: 8 }}>Services built for <span style={{ background: "linear-gradient(90deg, var(--brand-purple), var(--brand-cyan))", WebkitBackgroundClip: "text", color: "transparent" }}>scale</span></h2>
-                    <p style={{ color: "var(--secondary-text)" }}>Modular services that work together to accelerate your growth trajectory</p>
+                    <h2 style={{ fontSize: "2.5rem", fontWeight: 900, marginBottom: 8 }}>Comprehensive Web Development Services & <span style={{ background: "linear-gradient(90deg, var(--brand-purple), var(--brand-cyan))", WebkitBackgroundClip: "text", color: "transparent" }}>Digital Marketing Solutions</span></h2>
+                    <p style={{ color: "var(--secondary-text)", maxWidth: "700px", margin: "0 auto" }}>From corporate website development to enterprise mobile apps and AI-driven marketing, our professional web development company offers full-spectrum services designed to accelerate your digital transformation.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
