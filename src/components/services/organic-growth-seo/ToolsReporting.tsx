@@ -15,8 +15,8 @@ export default function ToolsReporting() {
         {
             icon: Search,
             decorIcon: Activity,
-            title: "Search Console & Analytics",
-            description: "Direct integration and expert analysis of Google Search Console and Analytics data to understand user behavior.",
+            title: "Google Search Console & GA4",
+            description: "Truth in data.",
             tools: [
                 { name: "Google Analytics", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
                 { name: "Search Console", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
@@ -27,8 +27,8 @@ export default function ToolsReporting() {
         {
             icon: TrendingUp,
             decorIcon: BarChart3,
-            title: "Rank Tracking & Monitoring",
-            description: "Daily monitoring of target keyword rankings across major search engines to quickly identify shifts and opportunities.",
+            title: "Semrush & Ahrefs",
+            description: "Competitive intelligence.",
             tools: [
                 { name: "SEMrush", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
                 { name: "Ahrefs", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
@@ -39,8 +39,8 @@ export default function ToolsReporting() {
         {
             icon: Monitor,
             decorIcon: Eye,
-            title: "Performance Dashboards",
-            description: "Custom, easy-to-understand dashboards providing a real-time view of your SEO progress, traffic, and conversions.",
+            title: "Custom Data Studio Reports",
+            description: "Real-time ROI-focused organic SEO services reporting.",
             tools: [
                 { name: "Google Data Studio", logo: "/images/organic_growth_and_seo/google-data-studio-logo.webp" },
                 { name: "Tableau", logo: "/images/organic_growth_and_seo/tableau-logo.svg" },
@@ -51,8 +51,8 @@ export default function ToolsReporting() {
         {
             icon: Layers,
             decorIcon: Zap,
-            title: "Advanced SEO Tools",
-            description: "Leveraging industry-leading tools for technical audits, competitor analysis, and backlink profile management.",
+            title: "Screaming Frog",
+            description: "Deep technical crawls.",
             tools: [
                 { name: "Screaming Frog", logo: "/images/organic_growth_and_seo/screaming-frog-logo.png" },
                 { name: "Moz", logo: "/images/organic_growth_and_seo/Moz_logo.png" },
@@ -98,7 +98,7 @@ export default function ToolsReporting() {
                         Tools, Analytics & <span style={{ color: "var(--brand-seo)" }}>Transparent Reporting</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We believe in full transparency. Our reporting provides clear, actionable insights into your Organic Traffic Growth.
+                        We use the best to deliver the best.
                     </p>
                 </div>
 

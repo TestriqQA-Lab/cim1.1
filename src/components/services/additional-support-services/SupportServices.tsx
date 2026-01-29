@@ -19,51 +19,33 @@ export default function SupportServices() {
     const services = [
         {
             icon: Wrench,
-            title: "Technical Maintenance",
-            description: "Regular updates, bug fixes, and performance optimization to keep your systems running smoothly.",
-            features: ["Software Updates", "Bug Resolution", "Performance Tuning"],
-        },
-        {
-            icon: MonitorCheck,
-            title: "System Monitoring",
-            description: "24/7 proactive monitoring of your applications and infrastructure for immediate issue detection.",
-            features: ["Real-time Alerts", "Uptime Tracking", "Error Logging", "Health Dashboards"],
-        },
-        {
-            icon: ShieldCheck,
-            title: "Security Management",
-            description: "Comprehensive security audits, vulnerability assessments, and threat prevention measures.",
-            features: ["Security Audits", "Patch Management", "SSL Certificates", "Firewall Config"],
-        },
-        {
-            icon: RefreshCw,
-            title: "Backup & Recovery",
-            description: "Automated backup solutions and disaster recovery plans to protect your valuable data.",
-            features: ["Automated Backups", "Recovery Plans", "Data Migration", "Redundancy Setup"],
-        },
-        {
-            icon: Cloud,
-            title: "Cloud Management",
-            description: "Optimize your cloud infrastructure for performance, cost-efficiency, and scalability.",
-            features: ["Cost Optimization", "Resource Scaling", "Cloud Migration", "Multi-cloud Setup"],
+            title: "IT Business Support Services",
+            description: "Keep your digital assets secure and optimized.",
+            features: ["Regular updates & Patch Management", "99.9% Uptime Monitoring", "Additional technical support"],
         },
         {
             icon: Users,
-            title: "User Training",
-            description: "Empower your team with comprehensive training on your digital tools and platforms.",
-            features: ["Onboarding Sessions", "Documentation", "Video Tutorials", "Live Workshops"],
+            title: "Outsourced Administrative & Virtual Assistants",
+            description: "Unlock Operational Efficiency with our Professional virtual assistant support services.",
+            features: ["On-demand administrative assistance", "Outsourced HR support", "Additional legal administrative support"],
         },
         {
             icon: BarChart3,
-            title: "Analytics & Reporting",
-            description: "Detailed insights and regular reports on performance, usage, and growth metrics.",
-            features: ["Custom Dashboards", "Monthly Reports", "KPI Tracking", "Trend Analysis"],
+            title: "Data Management & Back-Office",
+            description: "Scale your operations without the overhead.",
+            features: ["Outsourced data management", "Outsourced order processing", "Supplementary financial support"],
+        },
+        {
+            icon: ShieldCheck,
+            title: "Specialized Industry Support",
+            description: "Tailored solutions for niche sectors.",
+            features: ["Healthcare admin assistance", "Real estate listing management", "Additional marketing support"],
         },
         {
             icon: Headset,
-            title: "Dedicated Support Desk",
-            description: "Direct access to our expert support team through multiple channels for quick resolution.",
-            features: ["Email Support", "Phone Support", "Live Chat", "Ticket System"],
+            title: "Customer Support & Lead Gen",
+            description: "Grow your revenue with active engagement.",
+            features: ["Supplementary customer support", "Supplementary lead generation", "24/7 chat resolution"],
         },
     ];
 
@@ -97,10 +79,10 @@ export default function SupportServices() {
                         </span>
                     </div>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
-                        Comprehensive <span style={{ color: "#fab900" }}>Support</span> Solutions
+                        Comprehensive <span style={{ color: "#fab900" }}>Business Support</span> Services
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl mx-auto px-4" style={{ color: "var(--secondary-text)" }}>
-                        From technical maintenance to strategic consulting, we offer the complete range of support services your business needs.
+                        From Outsourced back-office support solutions to strategic IT maintenance, we offer a full suite of Custom business support packages tailored for agencies, startups, and enterprises.
                     </p>
                 </div>
 

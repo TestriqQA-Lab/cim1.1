@@ -32,12 +32,12 @@ export default function CTA() {
                     >
                         {/* Heading */}
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                            Ready to Transform Your <span style={{ color: "var(--brand-chatbot)" }}>Customer Interactions</span>?
+                            Ready to <span style={{ color: "var(--brand-chatbot)" }}>Scale with AI?</span>
                         </h2>
 
                         {/* Subheading */}
                         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Let's discuss your chatbot requirements and create an intelligent solution that drives business growth.
+                            Don't let your competition beat you to the future. Partner with a top-tier AI Chatbot Agency today.
                         </p>
 
                         {/* CTA Buttons */}
@@ -46,7 +46,7 @@ export default function CTA() {
                                 href="/contact"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[var(--brand-chatbot)] to-[#008ac1] hover:from-[var(--brand-chatbot)] hover:to-[var(--brand-chatbot)] text-white rounded-full text-sm md:text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                             >
-                                Build Your AI Chatbot
+                                Get a Quick Quote
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
@@ -64,13 +64,13 @@ export default function CTA() {
                                 }}
                             >
                                 <Calendar className="w-5 h-5" />
-                                Book a Demo
+                                See a Live Demo
                             </Link>
                         </div>
 
                         {/* Additional Info */}
                         <p style={{ color: "var(--secondary-text)" }}>
-                            No credit card required. Get a personalized demo in 15 minutes.
+                            Free Consultation. No Obligations. 100% Confidential.
                         </p>
                     </div>
 
@@ -79,18 +79,18 @@ export default function CTA() {
                         {[
                             {
                                 icon: MessageSquare,
-                                title: "Expert Consultation",
-                                description: "Our AI specialists will understand your needs and recommend the best solution.",
+                                title: "Discovery Call",
+                                description: "We analyze your workflows.",
                             },
                             {
                                 icon: ArrowRight,
-                                title: "Rapid Deployment",
-                                description: "Get your chatbot live in weeks, not months, with our proven development process.",
+                                title: "Custom Strategy",
+                                description: "You get a tailored AI roadmap.",
                             },
                             {
                                 icon: Calendar,
-                                title: "Ongoing Support",
-                                description: "Continuous monitoring, optimization, and support to ensure your chatbot performs.",
+                                title: "Rapid Launch",
+                                description: "Go live in as little as 2 weeks.",
                             },
                         ].map((feature, index) => {
                             const Icon = feature.icon;

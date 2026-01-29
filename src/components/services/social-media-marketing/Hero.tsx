@@ -1,8 +1,7 @@
-"use client";
-
 import { Sparkles, ArrowRight, Home, ChevronRight, TrendingUp, Users, Zap, Share2, BarChart3, Target } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import HeroBackground from "./HeroBackground";
 
 export default function Hero() {
     return (
@@ -11,39 +10,17 @@ export default function Hero() {
             style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}
         >
             {/* Animated Background */}
-            <div className="absolute inset-0 pointer-events-none">
-                <div
-                    className="absolute top-0 left-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
-                    style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-teal) 12%, transparent)",
-                    }}
-                />
-                <div
-                    className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
-                    style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-cyan) 12%, transparent)",
-                        animationDelay: "1s",
-                    }}
-                />
-                <div
-                    className="absolute top-1/2 left-1/2 w-96 h-96 rounded-full blur-3xl animate-pulse"
-                    style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-purple) 12%, transparent)",
-                        animationDelay: "2s",
-                    }}
-                />
-            </div>
+            <HeroBackground />
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 py-12 relative">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-2 text-sm mb-5 justify-center lg:justify-start animate-fadeIn"
+                    className="flex flex-wrap items-center gap-x-1 gap-y-1 text-sm mb-5 justify-center lg:justify-start"
                     aria-label="Breadcrumb"
-                    style={{ animationDelay: "0.1s", animationFillMode: "both" }}
                 >
                     <Link
                         href="/"
-                        className="flex items-center gap-1 hover:underline transition-colors"
+                        className="flex items-center gap-1 hover:underline transition-colors p-2"
                         style={{ color: "var(--secondary-text)" }}
                     >
                         <Home className="w-4 h-4" />
@@ -54,7 +31,7 @@ export default function Hero() {
 
                     <Link
                         href="/services"
-                        className="hover:underline transition-colors"
+                        className="hover:underline transition-colors p-2"
                         style={{ color: "var(--secondary-text)" }}
                     >
                         Services
@@ -63,7 +40,7 @@ export default function Hero() {
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
 
                     <span
-                        className="font-semibold"
+                        className="font-semibold p-2"
                         style={{ color: "var(--brand-teal)" }}
                     >
                         Social Media Marketing
@@ -74,8 +51,7 @@ export default function Hero() {
 
                     {/* LEFT CONTENT */}
                     <div
-                        className="text-center lg:text-left animate-fadeIn"
-                        style={{ animationDelay: "0.2s", animationFillMode: "both" }}
+                        className="text-center lg:text-left"
                     >
                         {/* Badge */}
                         <div
@@ -92,7 +68,7 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -116,8 +92,8 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            Transform your social presence into a powerful engine for <span style={{ color: "var(--brand-teal)", fontWeight: 700 }}>brand awareness</span>, <span style={{ color: "var(--brand-teal)", fontWeight: 700 }}>lead generation</span>, and measurable ROI.
+                        <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                            In today's hyper-competitive digital landscape, your brand needs more than just "likes"-it needs a strategic engine that drives real business results. As a premier Social Media Marketing Agency, we don't just post content; we engineer comprehensive social media marketing ecosystems designed to dominate your niche.
                         </p>
 
                         {/* Feature Highlights */}
@@ -128,7 +104,7 @@ export default function Hero() {
                                 }}
                             >
                                 <TrendingUp className="w-5 h-5 flex-shrink-0" style={{ color: "var(--brand-teal)" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>
                                     Growth-Focused
                                 </span>
                             </div>
@@ -187,13 +163,12 @@ export default function Hero() {
                         {/* Stats Section */}
                         <div className="grid grid-cols-3 gap-4 mb-8 p-6 rounded-2xl"
                             style={{
-                                backgroundColor: "color-mix(in srgb, var(--card-bg) 50%, transparent)",
-                                backdropFilter: "blur(10px)",
+                                backgroundColor: "color-mix(in srgb, var(--card-bg) 90%, transparent)",
                                 border: "1px solid var(--border-color)",
                             }}
                         >
                             <div className="text-center">
-                                <div className="text-xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-teal), var(--brand-cyan))",
                                         WebkitBackgroundClip: "text",
@@ -202,7 +177,7 @@ export default function Hero() {
                                 >
                                     300+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Campaigns
                                 </div>
                             </div>
@@ -228,7 +203,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    320%
+                                    300%
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
                                     ROI Increase
@@ -251,8 +226,7 @@ export default function Hero() {
 
                     {/* RIGHT VISUAL ELEMENT */}
                     <div
-                        className="relative flex flex-col items-center gap-12 justify-center animate-fadeIn mt-0 lg:-mt-15"
-                        style={{ animationDelay: "0.3s", animationFillMode: "both" }}
+                        className="relative flex flex-col items-center gap-12 justify-center mt-0 lg:-mt-15"
                     >
                         <div
                             className="absolute inset-0 rounded-3xl blur-2xl"
@@ -268,17 +242,16 @@ export default function Hero() {
                             style={{
                                 backgroundColor: "var(--card-bg)",
                                 borderColor: "var(--border-color)",
-                                backdropFilter: "blur(6px)",
                             }}
                         >
                             <Image
-                                src="/images/services-images/social-media-marketing-illustration.svg"
+                                src="/images/services-images/smm-hero-image.png"
                                 alt="Social Media Marketing"
                                 width={638}
                                 height={565}
                                 priority
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 638px"
-                                className="w-[80%] h-[80%] rounded-3xl p-5"
+                                className="w-[90%] h-[90%] rounded-3xl p-5"
                                 placeholder="blur"
                                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgADEf/aAAwDAQACEQMRAD8AzTR9I1C5sY57izt7eKVQ8Ud1KImkU8g7cEgH5nHNWP6Y/EfxSlFNmSuf/9k="
                             />

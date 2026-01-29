@@ -87,7 +87,7 @@ export default function CTA() {
                         Ready to <span style={{ color: "#fab900" }}>Elevate</span> Your Support?
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Let&apos;s discuss how our support services can help your business thrive. Get in touch today.
+                        Stop struggling with overhead. Partner with a leader in Business Assistance services.
                     </p>
                 </div>
 

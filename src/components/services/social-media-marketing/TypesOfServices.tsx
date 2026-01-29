@@ -18,49 +18,49 @@ export default function TypesOfServices() {
         {
             icon: Sprout,
             title: "Organic Social Media Marketing",
-            description: "Building genuine, lasting connections with your audience through high-quality, non-promoted content. This is the foundation of brand loyalty and organic community growth.",
+            description: "Building genuine, lasting connections with your audience through high-quality, non-promoted content. This is the foundation of brand loyalty and organic social media follower growth strategy. We craft compounding content strategies that educate, entertain, and inspire, naturally attracting an audience that actually cares about your mission. Over time, this builds a fortress of trust that paid ads alone cannot replicate, reducing your reliance on ad spend and increasing customer lifetime value.",
             gradient: "linear-gradient(135deg, #10b981, #059669)",
             accentColor: "#10b981",
         },
         {
             icon: Megaphone,
             title: "Paid Social Media Advertising",
-            description: "Targeted, high-impact campaigns across platforms to drive immediate results. Our expertise ensures your budget is spent efficiently to maximize leads and sales.",
+            description: "Targeted, high-impact campaigns across platforms to drive immediate results. Our paid social media advertising agency expertise ensures your budget is spent efficiently to maximize leads and sales. We utilize advanced audience segmentation, lookalike modeling, and retargeting sequences to put your offer in front of the people most likely to buy. From Meta Ads to LinkedIn Sponsored Content, our precise targeting lowers your CPA and scales your revenue predictably.",
             gradient: "linear-gradient(135deg, var(--brand-teal), var(--brand-cyan))",
             accentColor: "var(--brand-teal)",
         },
         {
             icon: UsersRound,
             title: "Influencer Marketing",
-            description: "Leveraging trusted voices in your industry to promote your brand authentically, expanding your reach to highly engaged, niche audiences.",
+            description: "Leveraging trusted voices in your industry to promote your brand authentically, expanding your reach to highly engaged, niche audiences via our influencer marketing management services. We handle the entire lifecycle of influencer partnerships-from vetting and negotiation to campaign management and compliance. By aligning with influencers who share your brand values, we tap into pre-built trust, driving higher conversion rates than traditional display advertising.",
             gradient: "linear-gradient(135deg, #8b5cf6, #6366f1)",
             accentColor: "#8b5cf6",
         },
         {
             icon: PenTool,
             title: "Content Creation & Scheduling",
-            description: "Developing visually engaging and contextually relevant content (graphics, videos, copy) and scheduling it for optimal posting times to capture maximum audience attention.",
+            description: "Developing visually engaging and contextually relevant content (graphics, videos, copy) and utilizing custom social media content calendar services for optimal posting times to capture maximum audience attention. Content is king, but context is queen. We produce high-fidelity assets-from scroll-stopping motion graphics to thought-leadership articles-that stop the scroll. Our strategic scheduling ensures your content hits the feed exactly when your audience is most active, maximizing visibility and engagement.",
             gradient: "linear-gradient(135deg, #f59e0b, #d97706)",
             accentColor: "#f59e0b",
         },
         {
             icon: LayoutDashboard,
             title: "Social Media Management",
-            description: "Full-service handling of your social channels, including profile optimization, daily posting, and brand monitoring, allowing you to focus on your core business.",
+            description: "Full-service handling of your social channels, including profile optimization, daily posting, and brand monitoring, allowing you to focus on your core business. We act as an extension of your team, maintaining a consistent pulse on your accounts. We handle the day-to-day grind-uploading, captioning, hashtagging, and troubleshooting-so you can dedicate your energy to high-level business operations, knowing your digital reputation is in expert hands.",
             gradient: "linear-gradient(135deg, var(--brand-cyan), var(--brand-teal))",
             accentColor: "var(--brand-cyan)",
         },
         {
             icon: MessageCircleHeart,
             title: "Community Engagement & Growth",
-            description: "Proactive interaction with followers, responding to comments and messages, and implementing strategies to organically grow your follower base with qualified leads.",
+            description: "Proactive interaction with followers, responding to comments and messages, and implementing social listening & monitoring strategies to organically grow your follower base with qualified leads. Silence kills relationships. We ensure no comment goes unanswered and no DM is ignored. By actively participating in conversations and monitoring brand mentions across the web, we protect your reputation and turn casual interactions into sales opportunities.",
             gradient: "linear-gradient(135deg, #ec4899, #db2777)",
             accentColor: "#ec4899",
         },
         {
             icon: LineChart,
             title: "Analytics & Reporting",
-            description: "Continuous monitoring of key performance indicators (KPIs) and providing transparent, actionable reports to refine strategy and prove ROI.",
+            description: "Continuous monitoring of key performance indicators (KPIs) and providing transparent, actionable reports to refine strategy and prove ROI. Data without insight is noise. We distill complex analytics into clear, visual dashboards that show you exactly where your money is going and what it’s returning. Our monthly deep-dives provide strategic recommendations for the next phase, ensuring continuous improvement and transparency in our partnership.",
             gradient: "linear-gradient(135deg, #3b82f6, #2563eb)",
             accentColor: "#3b82f6",
         },
@@ -104,7 +104,7 @@ export default function TypesOfServices() {
                 {/* Header */}
                 <div className="text-center mb-16 max-w-6xl mx-auto">
                     <div
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full border backdrop-blur-sm"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full border backdrop-blur-sm mb-5"
                         style={{
                             background:
                                 "linear-gradient(90deg, color-mix(in srgb, var(--brand-teal) 8%, transparent), color-mix(in srgb, var(--brand-teal) 8%, transparent))",

@@ -2,35 +2,49 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ExternalLink, TrendingUp, Users, Target } from "lucide-react";
 
 export default function AdPlatforms() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+
     const platforms = [
         {
-            name: "Google Ads",
+            name: "Google Partner",
             logo: "/images/performance-marketing-logos/google-ads-logo.svg",
-            description: "Search, Display, Shopping & YouTube campaigns",
+            description: "Mastery of Search, Display, Shopping, Youtube, and Discovery ads.",
             stats: { reach: "5B+ daily searches", ctr: "4.2% avg CTR" },
             color: "#4285f4",
             gradient: "from-blue-500 to-green-500",
+            link: "/services/performance-marketing/google-ads",
         },
         {
-            name: "Meta Ads",
+            name: "Meta Business Partner",
             logo: "/images/performance-marketing-logos/meta-ads-logo.png",
-            description: "Facebook & Instagram advertising",
+            description: "Advanced structuring for Facebook, Instagram, Messenger, and WhatsApp.",
             stats: { reach: "3B+ users", ctr: "1.6% avg CTR" },
             color: "#1877f2",
             gradient: "from-blue-600 to-purple-600",
+            link: "/services/performance-marketing/meta-ads",
         },
         {
-            name: "LinkedIn Ads",
+            name: "LinkedIn Marketing Solutions",
             logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg",
-            description: "B2B lead generation & thought leadership",
+            description: "Expert B2B lead generation and Sponsored InMail campaigns.",
             stats: { reach: "900M+ professionals", ctr: "0.5% avg CTR" },
             color: "#0a66c2",
             gradient: "from-blue-700 to-cyan-600",
+            link: "/services/performance-marketing/linkedin-ads",
+        },
+        {
+            name: "Amazon Ads",
+            logo: "/images/performance-marketing-logos/Amazon-ads-logo.svg",
+            description: "Sponsored Products and Brands for marketplace dominance.",
+            stats: { reach: "300M+ customers", ctr: "0.4% avg CTR" },
+            color: "#FF9900",
+            gradient: "from-orange-500 to-yellow-400",
+            link: "/services/performance-marketing/amazon-ads",
         },
         {
             name: "TikTok Ads",
@@ -39,6 +53,7 @@ export default function AdPlatforms() {
             stats: { reach: "1B+ users", ctr: "2.5% avg CTR" },
             color: "#ff59ffff",
             gradient: "from-pink-500 to-cyan-400",
+            link: "/services/performance-marketing/tiktok-ads",
         },
         {
             name: "YouTube Ads",
@@ -47,15 +62,26 @@ export default function AdPlatforms() {
             stats: { reach: "2B+ monthly users", ctr: "0.5% avg CTR" },
             color: "#ff0000",
             gradient: "from-red-600 to-red-400",
+            link: "/services/performance-marketing/youtube-ads",
         },
         {
-            name: "Amazon Ads",
-            logo: "/images/performance-marketing-logos/Amazon-ads-logo.svg",
-            description: "E-commerce & product advertising",
-            stats: { reach: "300M+ customers", ctr: "0.4% avg CTR" },
-            color: "#ff9900",
-            gradient: "from-orange-500 to-yellow-500",
+            name: "Microsoft Ads",
+            logo: "/images/techstack_logos/Microsoft-logo-hero-image.png",
+            description: "High-value desktop & B2B audience",
+            stats: { reach: "60M+ desktop users", ctr: "Higher purchasing power" },
+            color: "#0078D4",
+            gradient: "from-blue-600 to-cyan-500",
+            link: "/services/performance-marketing/microsoft-ads",
         },
+        {
+            name: "X (Twitter) Ads",
+            logo: "/images/techstack_logos/X-logo-hero-image.png",
+            description: "Viral reach & real-time conversation",
+            stats: { reach: "#1 for Discovery", ctr: "High Engagement" },
+            color: "#ffffff",
+            gradient: "from-gray-900 to-black",
+            link: "/services/performance-marketing/x-ads",
+        }
     ];
 
     return (
@@ -83,11 +109,13 @@ export default function AdPlatforms() {
                             AD PLATFORMS
                         </span>
                     </div>
+
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                         We Manage Ads Across <span style={{ color: "var(--brand-orange)" }}>All Major Platforms</span>
                     </h2>
+
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Certified experts across every major advertising platform, delivering integrated campaigns for maximum reach.
+                        Our team is certified in the top ad tech stacks and platforms. We select the right mix for your specific business model.
                     </p>
                 </div>
 
@@ -95,10 +123,10 @@ export default function AdPlatforms() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     {platforms.map((platform, index) => {
                         const isHovered = hoveredIndex === index;
+                        const linkProp = 'link' in platform ? (platform as { link?: string }).link : undefined;
 
-                        return (
+                        const cardContent = (
                             <div
-                                key={index}
                                 className="group relative"
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
@@ -171,6 +199,14 @@ export default function AdPlatforms() {
                                     />
                                 </div>
                             </div>
+                        );
+
+                        return linkProp ? (
+                            <Link href={linkProp} key={index} className="block">
+                                {cardContent}
+                            </Link>
+                        ) : (
+                            <div key={index}>{cardContent}</div>
                         );
                     })}
                 </div>

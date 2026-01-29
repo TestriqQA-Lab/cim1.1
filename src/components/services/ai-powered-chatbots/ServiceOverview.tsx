@@ -149,16 +149,21 @@ export default function ServiceOverview() {
                         >
                             <Sparkles className="w-4 h-4 animate-spin-slow" style={{ color: "var(--brand-chatbot)" }} />
                             <span className="text-sm font-bold tracking-wide" style={{ color: "var(--brand-chatbot)" }}>
-                                NEXT-GEN AI TECHNOLOGY
+                                Intelligent Conversations Powered by Next-Gen AI
                             </span>
                         </div>
 
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                             What Are <span style={{ color: "var(--brand-chatbot)" }}>AI-Powered Chatbots</span>?
                         </h2>
-                        <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            AI-powered chatbots are intelligent conversational agents that use natural language processing and machine learning to understand customer intent, provide accurate responses, and handle complex interactions seamlessly.
-                        </p>
+                        <div className="max-w-6xl mx-auto space-y-4">
+                            <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                Gone are the days of clunky, rule-based responses. Our AI Chatbot Services leverage state-of-the-art Generative AI and Machine Learning (ML) in Chatbots to create dynamic, human-like experiences. Unlike traditional scripts, our bots utilize Retrieval-Augmented Generation (RAG) to pull real-time, accurate data from your internal knowledge base, ensuring every answer is precise, trustworthy, and compliant with 2026 E-E-A-T guidelines.
+                            </p>
+                            <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                From Sentiment Analysis for Customer Support to Intent Detection and Classification, our intelligent agents adapt to user behavior in real-time. We help you move beyond simple automation to true Omnichannel Customer Experience (CX) excellence.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Features Grid */}

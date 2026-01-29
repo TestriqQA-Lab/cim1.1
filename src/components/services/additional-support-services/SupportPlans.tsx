@@ -11,58 +11,58 @@ export default function SupportPlans() {
         {
             name: "Essential",
             icon: Zap,
-            description: "Perfect for small businesses with basic support needs",
+            description: "Perfect for Additional support services for small businesses needing basic help.",
             monthlyPrice: 299,
             yearlyPrice: 2990,
             color: "#4b277a",
             popular: false,
             features: [
-                { text: "Email support (business hours)", included: true },
-                { text: "48-hour response time", included: true },
-                { text: "Monthly maintenance updates", included: true },
-                { text: "Basic security monitoring", included: true },
-                { text: "Quarterly performance reports", included: true },
-                { text: "Phone support", included: false },
-                { text: "Dedicated account manager", included: false },
-                { text: "Priority queue access", included: false },
+                { text: "10 Hours/Month Virtual Assistant", included: true },
+                { text: "Basic IT Monitoring", included: true },
+                { text: "Email Support", included: true },
+                { text: "Monthly Status Reports", included: true },
+                { text: "Priority Managed Support", included: false },
+                { text: "Dedicated Project Manager", included: false },
+                { text: "24/7 Security", included: false },
+                { text: "Custom SLA", included: false },
             ],
         },
         {
             name: "Professional",
             icon: Star,
-            description: "Ideal for growing businesses requiring comprehensive support",
+            description: "Ideal for startups requiring Supplementary administrative services and tech maintenance.",
             monthlyPrice: 599,
             yearlyPrice: 5990,
             color: "#fab900",
             popular: true,
             features: [
-                { text: "Email & phone support (extended hours)", included: true },
-                { text: "4-hour response time", included: true },
-                { text: "Weekly maintenance updates", included: true },
-                { text: "Advanced security suite", included: true },
-                { text: "Monthly performance reports", included: true },
-                { text: "Dedicated account manager", included: true },
-                { text: "Priority queue access", included: true },
-                { text: "24/7 emergency hotline", included: false },
+                { text: "40 Hours/Month Dedicated Support", included: true },
+                { text: "Priority Managed Support services", included: true },
+                { text: "Weekly Reporting", included: true },
+                { text: "Proactive Maintenance", included: true },
+                { text: "Email & Phone Support", included: true },
+                { text: "Dedicated Project Manager", included: false },
+                { text: "24/7 Security", included: false },
+                { text: "Custom SLA", included: false },
             ],
         },
         {
             name: "Enterprise",
             icon: Crown,
-            description: "Complete support ecosystem for large-scale operations",
+            description: "Complete Business operational support for remote teams and large organizations.",
             monthlyPrice: 1299,
             yearlyPrice: 12990,
             color: "#97288e",
             popular: false,
             features: [
-                { text: "24/7 omnichannel support", included: true },
-                { text: "30-minute response time", included: true },
-                { text: "Continuous maintenance & updates", included: true },
-                { text: "Enterprise security & compliance", included: true },
-                { text: "Real-time analytics dashboard", included: true },
-                { text: "Dedicated success team", included: true },
-                { text: "VIP priority access", included: true },
-                { text: "On-site support visits", included: true },
+                { text: "Dedicated Project Manager", included: true },
+                { text: "24/7 IT Business support Services", included: true },
+                { text: "Comprehensive Security", included: true },
+                { text: "Custom SLA & Partnership", included: true },
+                { text: "Daily Reporting", included: true },
+                { text: "Unlimited Virtual Assistant", included: true },
+                { text: "Priority 30-min Response", included: true },
+                { text: "On-site support options", included: true },
             ],
         },
     ];
@@ -97,7 +97,7 @@ export default function SupportPlans() {
                         Flexible <span style={{ color: "#97288e" }}>Pricing</span> Options
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl mx-auto mb-6 md:mb-8 px-4" style={{ color: "var(--secondary-text)" }}>
-                        Choose a support plan that fits your needs. All plans include access to our expert team and proven methodologies.
+                        Choose Scalable business support for growing companies. All plans include customized onboarding.
                     </p>
 
                     {/* Billing Toggle */}
@@ -252,7 +252,7 @@ export default function SupportPlans() {
 
                 {/* Custom Note */}
                 <p className="text-center mt-8 md:mt-12 text-xs sm:text-sm px-4" style={{ color: "var(--secondary-text)" }}>
-                    Need a custom enterprise solution?{" "}
+                    Need Custom business support packages for agencies?{" "}
                     <a href="/contact" className="font-bold underline" style={{ color: "#fab900" }}>
                         Contact our sales team
                     </a>{" "}

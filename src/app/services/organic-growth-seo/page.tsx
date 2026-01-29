@@ -21,30 +21,48 @@ const Industries = dynamic(() => import('@/components/services/organic-growth-se
 const CTA = dynamic(() => import('@/components/services/organic-growth-seo/CTA'), {
     loading: () => <div className="py-20" />,
 });
+const FAQ = dynamic(() => import('@/components/services/organic-growth-seo/FAQ'), {
+    loading: () => <div className="py-20" />,
+});
 
-export const metadata = {
-    title: 'Organic Growth & SEO Services | Search Engine Optimization Company',
-    description: 'Drive sustainable traffic and high-intent leads with our data-driven Organic SEO Services. We are a leading Search Engine Optimization Company focused on long-term growth and measurable results.',
+import { getPageMetadata } from '@/lib/metadata';
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+
+export const metadata = getPageMetadata({
+    title: 'Organic Growth & SEO Services | Top Rated Global SEO Agency (2026)',
+    description: 'Scale Your Business with Data-Driven Organic Search Strategies Designed for the 2026 Algorithms. Stop relying on paid ads.',
+    url: '/services/organic-growth-seo',
     keywords: [
         'Organic SEO Services',
-        'Search Engine Optimization Company',
+        'Top Rated Global SEO Agency',
         'Organic Traffic Growth',
         'SEO Agency',
-        'On-Page SEO',
-        'Technical SEO',
-        'Content SEO',
-        'Link Building',
     ],
-    openGraph: {
-        title: 'Organic Growth & SEO Services | CIM',
-        description: 'Expert Organic SEO Services for long-term visibility and sustainable traffic growth.',
-        type: 'website',
-    },
-};
+});
 
 export default function OrganicGrowthSEOPage() {
+    const serviceSchema = generateServiceSchema({
+        name: 'Organic Growth & SEO',
+        description: 'Data-driven SEO strategies for sustainable business growth.',
+        urlPath: '/services/organic-growth-seo',
+    });
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Organic SEO', url: '/services/organic-growth-seo' },
+    ]);
+
     return (
-        <main className="bg-white dark:bg-black">
+        <main className="bg-white dark:bg-black" style={{ scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Hero />
             <ServiceOverview />
             <WhyChooseUs />
@@ -52,6 +70,7 @@ export default function OrganicGrowthSEOPage() {
             <Process />
             <ToolsReporting />
             <Industries />
+            <FAQ />
             <CTA />
         </main>
     );

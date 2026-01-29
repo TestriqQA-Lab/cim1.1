@@ -6,42 +6,43 @@ import { ClipboardList, Search, Rocket, Settings, TrendingUp, FileText, ArrowRig
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
 
+
     const steps = [
         {
             icon: ClipboardList,
-            title: "Discovery & Audit",
-            description: "We analyze your current marketing efforts, competitors, and identify opportunities for growth.",
-            details: ["Account audit", "Competitor analysis", "Opportunity mapping", "Goal alignment"],
+            title: "Discovery & Deep-Dive Audit",
+            description: "We start by understanding your business DNA. We dive deep into your historical data, audit your existing accounts (Google/Meta), and analyze your competitors.",
+            details: ["Business DNA", "Data Audit", "Competitor Analysis", "KPI Definition"],
         },
         {
             icon: Search,
-            title: "Strategy Development",
-            description: "Custom campaign strategy based on your goals, audience, and budget allocation.",
-            details: ["Channel selection", "Audience targeting", "Budget planning", "KPI definition"],
+            title: "Strategy & Media Planning",
+            description: "We craft a tailored performance marketing strategy. We identify the 'low-hanging fruit' for quick wins while building a long-term roadmap.",
+            details: ["Channel Mix", "Budget Allocation", "Quick Wins", "Long-term Roadmap"],
         },
         {
             icon: Rocket,
-            title: "Campaign Launch",
-            description: "We build and launch your campaigns with precision tracking and optimized creatives.",
-            details: ["Ad creation", "Tracking setup", "A/B testing", "Landing pages"],
+            title: "Creative & Asset Production",
+            description: "Performance is 50% media buying and 50% creative. Our design team builds high-converting assets - banners, videos, and carousels.",
+            details: ["Ad Banners", "Video Ads", "Copywriting", "High-Converting Assets"],
         },
         {
             icon: Settings,
-            title: "Continuous Optimization",
-            description: "Daily monitoring and weekly optimizations to improve performance and reduce costs.",
-            details: ["Bid adjustments", "Audience refinement", "Creative testing", "Quality score"],
+            title: "Campaign Launch & Setup",
+            description: "We build your campaigns with surgical precision. This includes setting up pixel tracking, conversion API (CAPI), and event tagging.",
+            details: ["Pixel Tracking", "CAPI Setup", "Event Tagging", "Testing Structure"],
         },
         {
             icon: TrendingUp,
-            title: "Scale & Expand",
-            description: "Once we find what works, we scale successful campaigns and expand to new channels.",
-            details: ["Budget scaling", "New audiences", "Channel expansion", "Market testing"],
+            title: "Continuous Optimization (The Grind)",
+            description: "The real work starts after launch. We monitor bids, optimize ad copy, and refine audiences daily. We kill the losing ads and double down on winners.",
+            details: ["Bid Monitoring", "Copy Optimization", "Audience Refinement", "ROI Boosting"],
         },
         {
             icon: FileText,
-            title: "Report & Iterate",
-            description: "Comprehensive monthly reports with insights, learnings, and recommendations.",
-            details: ["Performance reports", "ROI analysis", "Strategic insights", "Next steps"],
+            title: "Scale, Report & Iterate",
+            description: "Once we hit the target KPIs, we aggressively scale the budget. Our comprehensive monthly reports provide insights and a roadmap for the next sprint.",
+            details: ["Budget Scaling", "Audience Expansion", "Monthly Reports", "Sprint Planning"],
         },
     ];
 

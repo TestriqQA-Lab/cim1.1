@@ -9,38 +9,38 @@ export default function Process() {
     const steps = [
         {
             icon: ListChecks,
-            title: "Comprehensive SEO Audit",
-            description: "A deep dive into your current website performance, technical health, content gaps, and backlink profile to identify immediate opportunities.",
+            title: "Organic SEO Audit and Growth Roadmap",
+            description: "We start with a deep dive. Our 100+ point audit covers technical health, content gaps, and off-page factors to build a custom Organic SEO audit and growth roadmap.",
             details: ["Site health analysis", "Competitor research", "Keyword gap analysis", "Content audit"],
         },
         {
             icon: Search,
             title: "Strategic Keyword Research",
-            description: "Identifying high-value, low-competition keywords that align with user intent and your business goals for maximum impact.",
+            description: "We go beyond volume. We identify high-value, low-difficulty terms and long-tail keywords that your competitors are missing, mapping them to the buyer's journey.",
             details: ["Search volume analysis", "Intent mapping", "Long-tail opportunities", "SERP analysis"],
-        },
-        {
-            icon: FileText,
-            title: "Content Optimization & Creation",
-            description: "Revamping existing content and developing new, authoritative content to target identified keywords and establish topical authority.",
-            details: ["Content planning", "On-page optimization", "E-A-T signals", "Content refresh"],
         },
         {
             icon: Code,
             title: "Technical Fixes & Enhancements",
-            description: "Addressing Core Web Vitals, site speed, mobile responsiveness, and crawlability issues for a flawless user experience.",
+            description: "We lay the rails. Our devs fix broken links, improve speed, and implement structured data to ensure Google can crawl and index your site without friction.",
             details: ["Core Web Vitals", "Mobile optimization", "Schema markup", "Crawl optimization"],
         },
         {
+            icon: FileText,
+            title: "Content Optimization & Creation",
+            description: "We craft content that ranks. Whether it's Organic SEO for startups or established brands, we produce \"Helpful Content\" that satisfies user intent and earns backlinks.",
+            details: ["Content planning", "On-page optimization", "E-A-T signals", "Content refresh"],
+        },
+        {
             icon: Shield,
-            title: "Authority Building (Link Building)",
-            description: "Executing ethical outreach and content promotion strategies to secure high-quality, relevant backlinks from industry leaders.",
+            title: "Authority Building",
+            description: "We build your reputation. Through strategic partnerships and outreach, we earn the links that signal authority to Google's algorithms.",
             details: ["Outreach campaigns", "Guest posting", "Digital PR", "Broken link building"],
         },
         {
             icon: TrendingUp,
-            title: "Performance Tracking & Reporting",
-            description: "Continuous monitoring of rankings, traffic, and conversions, providing transparent, actionable reports and strategic adjustments.",
+            title: "Performance Tracking & Transparency",
+            description: "You are never in the dark. We provide 24/7 access to dashboards showing Organic SEO for revenue growth, traffic trends, and key wins.",
             details: ["Rank tracking", "Traffic analysis", "Conversion monitoring", "Monthly reports"],
         },
     ];
@@ -69,7 +69,7 @@ export default function Process() {
                         Our Proven <span style={{ color: "var(--brand-seo)" }}>SEO Process</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We follow a structured, six-step framework to ensure every aspect of your Organic Traffic Growth strategy is covered.
+                        A clear roadmap to #1. Here is how we deliver Enterprise organic growth SEO solutions:
                     </p>
                 </div>
 

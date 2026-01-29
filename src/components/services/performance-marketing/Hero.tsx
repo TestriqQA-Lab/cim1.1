@@ -42,19 +42,19 @@ export default function Hero() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 py-12 relative">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-2 text-sm mb-5 justify-center lg:justify-start"
+                    className="flex flex-wrap items-center gap-x-1 gap-y-1 text-sm mb-5 justify-center lg:justify-start"
                     aria-label="Breadcrumb"
                 >
-                    <Link href="/" className="flex items-center gap-1 hover:underline transition-colors" style={{ color: "var(--secondary-text)" }}>
+                    <Link href="/" className="flex items-center gap-1 hover:underline transition-colors p-2" style={{ color: "var(--secondary-text)" }}>
                         <Home className="w-4 h-4" />
                         Home
                     </Link>
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
-                    <Link href="/services" className="hover:underline transition-colors" style={{ color: "var(--secondary-text)" }}>
+                    <Link href="/services" className="hover:underline transition-colors p-2" style={{ color: "var(--secondary-text)" }}>
                         Services
                     </Link>
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
-                    <span className="font-semibold" style={{ color: "var(--brand-orange)" }}>
+                    <span className="font-semibold p-2" style={{ color: "var(--brand-orange)" }}>
                         Performance Marketing
                     </span>
                 </nav>
@@ -78,19 +78,21 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center lg:text-left">
+
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight text-center lg:text-left">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{ background: "var(--brand-orange)", WebkitBackgroundClip: "text" }}
                             >
-                                Data-Driven Ads.
+                                Performance Marketing
                             </span>
                             <br />
-                            <span style={{ color: "var(--foreground)" }}>Measurable Results.</span>
+                            <span style={{ color: "var(--foreground)" }}>Services to Scale Your Revenue Globally.</span>
                         </h1>
 
+
                         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Maximize your ROI with precision-targeted campaigns across Google, Meta, LinkedIn, and beyond. Every dollar tracked, every conversion optimized.
+                            Stop guessing where your marketing budget goes. Start scaling with precision. We allow you to lower your Customer Acquisition Cost (CAC) while maximizing your Return on Ad Spend (ROAS). Join 50+ global brands who trust us to manage over $50M in annual ad spend.
                         </p>
 
                         {/* Feature Pills */}
@@ -129,12 +131,13 @@ export default function Hero() {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-8 sm:mt-10 justify-center lg:justify-start">
+
                             <Link
                                 href="/contact"
                                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-white"
                                 style={{ backgroundColor: "var(--brand-orange)" }}
                             >
-                                Get Your Free Audit
+                                Get Free Performance Audit
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
@@ -142,7 +145,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full border-2 transition-all duration-300 hover:scale-105"
                                 style={{ borderColor: "var(--brand-orange)", color: "var(--brand-orange)" }}
                             >
-                                View Case Studies
+                                View Success Stories
                             </Link>
                         </div>
                     </div>
@@ -164,6 +167,7 @@ export default function Hero() {
                                 height={565}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 638px"
                                 className="w-[70%] h-[70%] rounded-2xl"
+                                priority
                             />
                         </div>
 
@@ -175,9 +179,9 @@ export default function Hero() {
                                 borderColor: "color-mix(in srgb, var(--brand-orange) 20%, var(--border-color))",
                             }}
                         >
-                            <h3 className="font-bold text-lg mb-3" style={{ color: "var(--brand-orange)" }}>
+                            <h2 className="font-bold text-lg mb-3" style={{ color: "var(--brand-orange)" }}>
                                 Why Performance Marketing?
-                            </h3>
+                            </h2>
                             <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
                                 Only pay for results. Track every conversion. Scale what works.
                             </p>

@@ -2,7 +2,7 @@
 
 import { Sparkles, ArrowRight, Home, ChevronRight, Rocket, Zap, Smartphone, TrendingUp, ShieldCheck, Code } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import MobileAppAnimation from "./MobileAppAnimation";
 
 
 export default function Hero() {
@@ -38,13 +38,12 @@ export default function Hero() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 py-12 relative">
                 {/* Breadcrumbs */}
                 <nav
-                    className="flex items-center gap-2 text-sm mb-5 justify-center lg:justify-start animate-fadeIn"
+                    className="flex flex-wrap items-center gap-x-1 gap-y-1 text-sm mb-5 justify-center lg:justify-start"
                     aria-label="Breadcrumb"
-                    style={{ animationDelay: "0.1s", animationFillMode: "both" }}
                 >
                     <Link
                         href="/"
-                        className="flex items-center gap-1 hover:underline transition-colors"
+                        className="flex items-center gap-1 hover:underline transition-colors p-2"
                         style={{ color: "var(--secondary-text)" }}
                     >
                         <Home className="w-4 h-4" />
@@ -55,7 +54,7 @@ export default function Hero() {
 
                     <Link
                         href="/services"
-                        className="hover:underline transition-colors"
+                        className="hover:underline transition-colors p-2"
                         style={{ color: "var(--secondary-text)" }}
                     >
                         Services
@@ -64,19 +63,18 @@ export default function Hero() {
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
 
                     <span
-                        className="font-semibold"
+                        className="font-semibold p-2"
                         style={{ color: "var(--brand-purple)" }}
                     >
                         Mobile App Development
                     </span>
                 </nav>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-16 items-start">
 
                     {/* LEFT CONTENT */}
                     <div
-                        className="text-center lg:text-left animate-fadeIn"
-                        style={{ animationDelay: "0.2s", animationFillMode: "both" }}
+                        className="text-center lg:text-left"
                     >
                         {/* Badge */}
                         <div
@@ -93,7 +91,7 @@ export default function Hero() {
                         </div>
 
                         {/* Heading */}
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                        <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -103,7 +101,7 @@ export default function Hero() {
                                     color: "transparent",
                                 }}
                             >
-                                Transform Your Ideas Into <span className="text-[var(--brand-purple)]">Powerful Mobile Apps</span>
+                                Transform Your Vision Into <span className="text-[var(--brand-purple)]">High-Performance Mobile Apps</span> That Drive Business Growth
                             </span>
                         </h1>
 
@@ -117,8 +115,8 @@ export default function Hero() {
                         />
 
                         {/* Tagline */}
-                        <p className="text-xl md:text-2xl mb-8" style={{ color: "var(--secondary-text)" }}>
-                            As a premier <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>Mobile App Development Company</span>, we deliver high-performance, secure, and user-centric <span style={{ color: "var(--foreground)", fontWeight: 700 }}>Custom Mobile App Solutions</span> for iOS, Android, and cross-platform needs.
+                        <p className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
+                            As a <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>premier mobile app development company</span> with <span style={{ color: "var(--foreground)", fontWeight: 700 }}>12+ years of proven expertise</span>, we craft custom mobile app development solutions that transform businesses globally. Our award-winning team has delivered <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>300+ high-performance mobile applications</span> across iOS, Android, and cross-platform ecosystems.
                         </p>
 
                         {/* Feature Highlights */}
@@ -194,45 +192,45 @@ export default function Hero() {
                             }}
                         >
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-purple), var(--brand-blue))",
                                         WebkitBackgroundClip: "text",
                                         color: "transparent",
                                     }}
                                 >
-                                    200+
+                                    300+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
                                     Apps Delivered
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-purple), var(--brand-blue))",
                                         WebkitBackgroundClip: "text",
                                         color: "transparent",
                                     }}
                                 >
-                                    5M+
+                                    50M+
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Users Impacted
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
+                                    Active Users
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl md:text-4xl font-bold mb-1"
+                                <div className="text-2xl md:text-3xl font-bold mb-1"
                                     style={{
                                         background: "linear-gradient(90deg, var(--brand-purple), var(--brand-blue))",
                                         WebkitBackgroundClip: "text",
                                         color: "transparent",
                                     }}
                                 >
-                                    98%
+                                    99.2%
                                 </div>
-                                <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Client Satisfaction
+                                <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
+                                    Client Retention
                                 </div>
                             </div>
                         </div>
@@ -265,24 +263,14 @@ export default function Hero() {
 
                         {/* Feature Card */}
                         <div
-                            className="relative flex items-center justify-center rounded-3xl shadow-2xl border hover:scale-105 transition-transform duration-300 max-w-lg w-full"
+                            className="relative rounded-3xl shadow-2xl border hover:scale-105 transition-transform duration-300 max-w-xl w-full p-6"
                             style={{
                                 backgroundColor: "var(--card-bg)",
                                 borderColor: "var(--border-color)",
                                 backdropFilter: "blur(6px)",
                             }}
                         >
-                            <Image
-                                src="/images/services-images/mobile-app-development-illustration.webp"
-                                alt="Mobile App Development"
-                                width={638}
-                                height={565}
-                                priority
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 638px"
-                                className="w-[80%] h-[80%] rounded-3xl p-5"
-                                placeholder="blur"
-                                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgADEf/aAAwDAQACEQMRAD8AzTR9I1C5sY57izt7eKVQ8Ud1KImkU8g7cEgH5nHNWP6Y/EfxSlFNmSuf/9k="
-                            />
+                            <MobileAppAnimation />
                         </div>
                         {/* Additional Info Section */}
                         <div
@@ -294,10 +282,10 @@ export default function Hero() {
                             }}
                         >
                             <h2 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>
-                                Why Choose Us?
+                                Why 2,500+ Businesses Trust Us
                             </h2>
                             <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
-                                We combine cutting-edge technology with proven methodologies to deliver exceptional mobile app solutions tailored to your business needs.
+                                98.7% bug-free delivery rate • 40% faster time-to-market • 24/7 global support • Enterprise-grade security (GDPR, HIPAA, SOC 2 compliant)
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 <span

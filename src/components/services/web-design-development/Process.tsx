@@ -8,43 +8,43 @@ export default function Process() {
         {
             icon: Compass,
             number: "01",
-            title: "Discovery",
-            description: "Deep dive into your business goals, target audience, and technical requirements. We ask the right questions to understand your vision.",
+            title: "Expert Audit & Discovery",
+            description: "Deep analysis of your competition and global market trends. We define technical requirements for enterprise scalability.",
             color: "from-[#008ac1] to-[#00b5ca]",
         },
         {
             icon: Palette,
             number: "02",
-            title: "Design",
-            description: "Wireframing, prototyping, and creating the visual Responsive Web Design based on user feedback and best practices.",
+            title: "Strategic Architecture",
+            description: "Planning for Core Web Vitals and global accessibility. We design high-fidelity UI/UX that reflects brand authority.",
             color: "from-[#bc3feb] to-[#fab900]",
         },
         {
             icon: Code,
             number: "03",
-            title: "Development",
-            description: "Clean, modular, and reusable code implementation using the latest technologies and industry standards.",
+            title: "Agile Engineering",
+            description: "95% bug-free delivery using modern, secure tech stacks (Next.js, TypeScript). Clean, modular code for future growth.",
             color: "from-[#fab900] to-[#ee6500]",
         },
         {
             icon: CheckCircle,
             number: "04",
-            title: "Testing",
-            description: "Rigorous QA, cross-browser compatibility checks, performance testing, and security audits.",
+            title: "Global SEO & Performance",
+            description: "Rigorous QA with built-in technical SEO that has delivered 300% organic traffic growth for global clients.",
             color: "from-[#00efd6] to-[#00b5ca]",
         },
         {
             icon: Rocket,
             number: "05",
-            title: "Deployment",
-            description: "Seamless launch with zero downtime, final SEO checks, and performance optimization.",
+            title: "Seamless Deployment",
+            description: "Zero-downtime launch with AWS/Vercel integration and final cross-region performance monitoring.",
             color: "from-[#008ac1] to-[#bc3feb]",
         },
         {
             icon: Wrench,
             number: "06",
-            title: "Maintenance",
-            description: "Ongoing support, security updates, performance monitoring, and continuous improvement.",
+            title: "Continuous Optimization",
+            description: "24/7 technical support and performance tuning based on real-time data to maintain your competitive edge.",
             color: "from-[#ee6500] to-[#fab900]",
         },
     ];
@@ -85,11 +85,11 @@ export default function Process() {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        A Proven <span style={{ color: "var(--brand-blue)" }}>6-Step Process</span> for Digital Success
+                        Our Professional <span style={{ color: "var(--brand-blue)" }}>Web Development Process</span>
                     </h2>
 
-                    <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        Our structured approach ensures every project is delivered on time, on budget, and exceeds expectations.
+                    <p className="text-xl max-w-4xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                        As a results-driven <span className="font-bold text-[var(--brand-blue)]">web development company</span>, we follow a rigorous, data-backed methodology to ensure global success.
                     </p>
 
                     <div

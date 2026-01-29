@@ -1,0 +1,242 @@
+"use client";
+
+import { useState } from "react";
+import {
+    Search,
+    Palette,
+    Code,
+    TestTube2,
+    Rocket,
+    CheckCircle2,
+    Sparkles,
+} from "lucide-react";
+
+export default function Process() {
+    const [activeStep, setActiveStep] = useState<number | null>(null);
+
+    const steps = [
+        {
+            icon: Search,
+            title: "Strategic Requirements Analysis",
+            description: "We assess your business goals to ensure hybrid app development is the optimal path for your specific ROI needs.",
+            details: [
+                "ROI needs assessment",
+                "Business goal alignment",
+                "Hybrid viability check",
+                "Platform strategy",
+                "Resource planning",
+            ],
+            duration: "1-2 Weeks",
+        },
+        {
+            icon: Palette,
+            title: "Hybrid Mobile App Design (UI/UX)",
+            description: "Our designers craft high-fidelity interfaces optimized for cross-platform compatibility and user retention.",
+            details: [
+                "Cross-platform UI patterns",
+                "User retention focus",
+                "High-fidelity interfaces",
+                "Native-feel animations",
+                "Interactive prototypes",
+            ],
+            duration: "2-3 Weeks",
+        },
+        {
+            icon: Code,
+            title: "Agile Development & Coding",
+            description: "Using a single codebase, our developers build your app with modular, clean code that is easy to scale and maintain.",
+            details: [
+                "Single codebase efficiency",
+                "Modular code architecture",
+                "Clean code standards",
+                "Native bridge assembly",
+                "Feature implementation",
+            ],
+            duration: "6-10 Weeks",
+        },
+        {
+            icon: TestTube2,
+            title: "Hybrid App Testing & Quality Assurance",
+            description: "Rigorous testing on real devices ensures 99.9% crash-free sessions and hybrid app security.",
+            details: [
+                "Real device verification",
+                "Security auditing",
+                "Crash-free profiling",
+                "UX validation",
+                "Regression testing",
+            ],
+            duration: "2-3 Weeks",
+        },
+        {
+            icon: Rocket,
+            title: "Global Deployment & Store Approval",
+            description: "We manage the launch and provide ongoing hybrid app maintenance and support services to keep your app updated.",
+            details: [
+                "App Store approval",
+                "Play Store launch",
+                "Metadata optimization",
+                "Post-launch monitoring",
+                "Ongoing maintenance",
+            ],
+            duration: "1-2 Weeks",
+        },
+    ];
+
+    return (
+        <section id="process" className="py-24 relative overflow-hidden bg-background">
+            <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
+                {/* Header */}
+                <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(0, 180, 216, 0.1)",
+                            borderColor: "rgba(0, 180, 216, 0.2)",
+                        }}
+                    >
+                        <Sparkles className="w-4 h-4" style={{ color: "#00b4d8" }} />
+                        <span className="text-sm font-medium" style={{ color: "#00b4d8" }}>
+                            Our Process
+                        </span>
+                    </div>
+
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                        <span style={{ color: "var(--foreground)" }}>Our Hybrid App</span>{" "}
+                        <span
+                            style={{
+                                background: "linear-gradient(135deg, #00b4d8, #0077b6)",
+                                WebkitBackgroundClip: "text",
+                                WebkitTextFillColor: "transparent",
+                            }}
+                        >
+                            Development Process
+                        </span>
+                    </h2>
+                    <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                        A data-driven, EEAT-aligned methodology that ensures quality at every milestone.
+                    </p>
+                </div>
+
+                {/* Timeline */}
+                <div className="relative">
+                    {/* Vertical Line */}
+                    <div
+                        className="absolute left-8 lg:left-1/2 top-0 bottom-0 w-0.5 hidden lg:block"
+                        style={{
+                            background: "linear-gradient(180deg, #00b4d8, #0077b6, #00b4d8)",
+                        }}
+                    />
+
+                    {/* Steps */}
+                    <div className="space-y-12">
+                        {steps.map((step, idx) => {
+                            const Icon = step.icon;
+                            const isActive = activeStep === idx;
+                            const isEven = idx % 2 === 0;
+
+                            return (
+                                <div
+                                    key={idx}
+                                    className={`
+                                        relative flex flex-col md:flex-row items-center gap-8
+                                        ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"}
+                                    `}
+                                    onMouseEnter={() => setActiveStep(idx)}
+                                    onMouseLeave={() => setActiveStep(null)}
+                                >
+                                    {/* Step Number Circle */}
+                                    <div
+                                        className="absolute left-8 lg:left-1/2 transform -translate-x-1/2 hidden lg:flex"
+                                        style={{ zIndex: 10 }}
+                                    >
+                                        <div
+                                            className={`
+                                                w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl
+                                                transition-all duration-300
+                                                ${isActive ? "scale-110 shadow-lg" : "scale-100"}
+                                            `}
+                                            style={{
+                                                background: "linear-gradient(135deg, #00b4d8, #0077b6)",
+                                                boxShadow: isActive ? "0 8px 30px rgba(0, 180, 216, 0.4)" : "none",
+                                            }}
+                                        >
+                                            {idx + 1}
+                                        </div>
+                                    </div>
+
+                                    {/* Content Card */}
+                                    <div
+                                        className={`
+                                            w-full lg:w-[calc(50%-60px)] p-8 rounded-3xl border transition-all duration-300 cursor-pointer
+                                            ${isActive ? "shadow-xl -translate-y-2" : "hover:shadow-lg"}
+                                            ${isEven ? "lg:mr-auto" : "lg:ml-auto"}
+                                        `}
+                                        style={{
+                                            backgroundColor: "var(--card-bg)",
+                                            borderColor: isActive ? "#00b4d8" : "var(--border-color)",
+                                        }}
+                                    >
+                                        <div className="flex items-start gap-4">
+                                            {/* Mobile Step Number */}
+                                            <div
+                                                className="lg:hidden w-12 h-12 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0"
+                                                style={{ background: "linear-gradient(135deg, #00b4d8, #0077b6)" }}
+                                            >
+                                                {idx + 1}
+                                            </div>
+
+                                            <div className="flex-1">
+                                                <div className="flex items-center gap-3 mb-3">
+                                                    <div
+                                                        className="w-10 h-10 rounded-xl flex items-center justify-center"
+                                                        style={{ backgroundColor: "rgba(0, 180, 216, 0.1)" }}
+                                                    >
+                                                        <Icon className="w-5 h-5 text-[#00b4d8]" />
+                                                    </div>
+                                                    <div
+                                                        className="px-3 py-1 rounded-full text-xs font-semibold"
+                                                        style={{
+                                                            backgroundColor: "rgba(0, 119, 182, 0.1)",
+                                                            color: "#0077b6",
+                                                        }}
+                                                    >
+                                                        {step.duration}
+                                                    </div>
+                                                </div>
+
+                                                <h3 className="text-xl font-bold mb-2" style={{ color: "var(--foreground)" }}>
+                                                    {step.title}
+                                                </h3>
+                                                <p className="mb-4" style={{ color: "var(--secondary-text)" }}>
+                                                    {step.description}
+                                                </p>
+
+                                                {/* Expandable Details */}
+                                                <div
+                                                    className={`
+                                                        space-y-2 overflow-hidden transition-all duration-300
+                                                        ${isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
+                                                    `}
+                                                >
+                                                    {step.details.map((detail, dIdx) => (
+                                                        <div key={dIdx} className="flex items-center gap-2">
+                                                            <CheckCircle2 className="w-4 h-4 text-[#00b4d8] flex-shrink-0" />
+                                                            <span className="text-sm" style={{ color: "var(--secondary-text)" }}>
+                                                                {detail}
+                                                            </span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}

@@ -56,7 +56,7 @@ export default function CTA() {
                         Ready to <span style={{ color: "var(--brand-yellow)" }}>Transform Your Brand</span>?
                     </h2>
                     <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Get a free brand consultation and discover how we can elevate your business identity.
+                        Don't Settle for Generic. Build a Brand That Leads. Join 500+ successful companies who trusted us with their visual identity.
                     </p>
 
                     {/* Stats */}
@@ -78,7 +78,7 @@ export default function CTA() {
                             className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-black font-semibold hover:scale-105 transition-transform shadow-lg text-base sm:text-lg"
                             style={{ backgroundColor: "var(--brand-yellow)" }}
                         >
-                            Start Your Brand Journey
+                            Book Your Free Consultation
                             <ArrowRight className="w-5 h-5" />
                         </Link>
                         <Link

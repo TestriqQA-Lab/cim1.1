@@ -62,7 +62,9 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   // avoid hydration mismatch
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    requestAnimationFrame(() => setMounted(true));
+  }, []);
 
   const currentTheme = theme === "system" ? resolvedTheme : theme;
   const isDark = currentTheme === "dark";
@@ -119,7 +121,7 @@ export default function Navbar() {
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center space-x-2">
                 <div className="relative overflow-hidden rounded-lg">
-                  <Image src="/images/cim_Logo.png" alt="CIM Logo" height={80} width={180} className="lg:h-[75px] lg:w-[175px]" />
+                  <Image src="/images/CIM-LOGO-Black.png" alt="CIM Logo" height={80} width={180} className="lg:h-[75px] lg:w-[175px]" priority />
                 </div>
               </Link>
             </div>
@@ -151,6 +153,7 @@ export default function Navbar() {
                   height={80}
                   width={180}
                   className={"object-contain"}
+                  priority
                 />
               </div>
             </Link>
@@ -390,7 +393,7 @@ export default function Navbar() {
             <button
               ref={mobileThemeRef}
               onClick={() => setIsThemeOpen(!isThemeOpen)}
-              className="p-2 rounded-lg transition-colors relative"
+              className="p-3 rounded-lg transition-colors relative"
               style={{ color: "var(--foreground)" }}
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
@@ -443,7 +446,7 @@ export default function Navbar() {
             </button>
 
 
-            <button onClick={toggleMobileMenu} className="p-2 rounded-lg transition-colors" style={{ color: "var(--foreground)" }} onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")} onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")} aria-label="Toggle mobile menu" aria-expanded={isMobileMenuOpen}>
+            <button onClick={toggleMobileMenu} className="p-3 rounded-lg transition-colors" style={{ color: "var(--foreground)" }} onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")} onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")} aria-label="Toggle mobile menu" aria-expanded={isMobileMenuOpen}>
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>

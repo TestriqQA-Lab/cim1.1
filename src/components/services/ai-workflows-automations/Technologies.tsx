@@ -40,12 +40,12 @@ export default function Technologies() {
             iconBg: "bg-purple-500/10",
             iconColor: "text-purple-500",
             items: [
-                { name: "OpenAI GPT Models", logo: techLogos.openai },
-                { name: "TensorFlow", logo: techLogos.tensorflow },
-                { name: "PyTorch", logo: techLogos.pytorch },
-                { name: "Dialogflow", logo: techLogos.dialogflow },
+                { name: "OpenAI GPT-4o", logo: techLogos.openai },
+                { name: "Anthropic Claude 3.5", logo: "/images/techstack_logos/anthropic-logo.svg" },
+                { name: "Hugging Face", logo: "/images/techstack_logos/Hugging-logo.png" },
+                { name: "Google Gemini", logo: techLogos.gcp }, // Using GCP logo as proxy or generic
             ],
-            features: ["Natural Language Processing", "Computer Vision & OCR", "Predictive Analytics", "Custom ML Models"],
+            features: ["High-level Reasoning", "Nuanced Writing", "Custom Open-Source Models", "Multimodal Capabilities"],
         },
         {
             icon: Cloud,
@@ -56,11 +56,11 @@ export default function Technologies() {
             iconColor: "text-blue-500",
             items: [
                 { name: "Amazon Web Services", logo: techLogos.aws },
-                { name: "Google Cloud Platform", logo: techLogos.gcp },
+                { name: "Google Cloud", logo: techLogos.gcp },
                 { name: "Microsoft Azure", logo: techLogos.azure },
                 { name: "Kubernetes", logo: techLogos.kubernetes },
             ],
-            features: ["Serverless Architecture", "Auto-scaling Solutions", "Multi-region Deployment", "High Availability"],
+            features: ["Serverless Infrastructure", "Containerized Scalability", "Secure Environments", "Global Availability"],
         },
         {
             icon: Database,
@@ -71,26 +71,26 @@ export default function Technologies() {
             iconColor: "text-emerald-500",
             items: [
                 { name: "Salesforce", logo: techLogos.salesforce },
-                { name: "HubSpot CRM", logo: techLogos.hubspot },
+                { name: "HubSpot", logo: techLogos.hubspot },
                 { name: "SAP", logo: techLogos.sap },
-                { name: "Oracle ERP", logo: techLogos.oracle },
+                { name: "Oracle", logo: techLogos.oracle },
             ],
-            features: ["Custom API Integrations", "NetSuite", "Microsoft Dynamics", "Real-time Sync"],
+            features: ["Zoho", "NetSuite", "Microsoft Dynamics", "Two-way Sync"],
         },
         {
             icon: Zap,
-            title: "No-Code / Low-Code Tools",
-            description: "Rapid development and deployment platforms",
+            title: "Orchestration Tools",
+            description: "Visual workflow management and agentic frameworks",
             gradient: "from-orange-600 to-amber-500",
             iconBg: "bg-orange-500/10",
             iconColor: "text-orange-500",
             items: [
+                { name: "n8n", logo: techLogos.n8n },
+                { name: "Make.com", logo: techLogos.make },
                 { name: "Zapier", logo: techLogos.zapier },
-                { name: "Make (Integromat)", logo: techLogos.make },
-                { name: "n8n Workflows", logo: techLogos.n8n },
-                { name: "Docker", logo: techLogos.docker },
+                { name: "LangChain", logo: "/images/techstack_logos/LangChain-logo.png" },
             ],
-            features: ["Visual Automation Builders", "Custom Workflow Engines", "Integration Platforms", "Rapid Prototyping"],
+            features: ["Visual Workflow Management", "Agentic Workflows", "Flowise", "Self-Hosted Options"],
         },
     ];
 

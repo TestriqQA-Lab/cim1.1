@@ -251,6 +251,7 @@ export default function SearchBar({ onSearch, placeholder = "Search articles, ta
           aria-autocomplete="list"
           aria-controls="search-suggestions"
           aria-expanded={showSuggestions}
+          role="combobox"
         />
 
         {/* Action Buttons */}

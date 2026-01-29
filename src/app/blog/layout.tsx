@@ -1,10 +1,14 @@
 import { Suspense } from "react";
+import { Metadata } from "next";
+import { blogMetadata } from "@/lib/metadata";
 import BlogNavbar from "@/components/blog/BlogNavbar";
+
+export const metadata: Metadata = blogMetadata;
 
 function BlogNavbarFallback() {
     return (
         <nav
-            className="sticky top-0 z-[100] border-b backdrop-blur-md"
+            className="sticky top-16 lg:top-20 z-[100] border-b backdrop-blur-md"
             style={{
                 backgroundColor: "color-mix(in srgb, var(--background) 95%, transparent)",
                 borderColor: "var(--border-color)",

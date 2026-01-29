@@ -28,11 +28,11 @@ export default function ServiceOverview() {
                         }}
                     >
                         <Zap className="w-4 h-4" />
-                        <span className="text-sm font-semibold">Service Overview</span>
+                        <span className="text-sm font-semibold">Technical Excellence</span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "var(--brand-blue)" }}>Beyond Websites:</span> Strategic Digital Solutions for Business Value
+                        Leading <span style={{ color: "var(--brand-blue)" }}>Web Development Company</span> with a Global Perspective
                     </h2>
 
                     <div
@@ -48,38 +48,38 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            Our <span style={{ color: "var(--brand-blue)", fontWeight: 700 }}>Web Design Services</span> go beyond aesthetics. We focus on building a robust digital foundation that translates into tangible business value.
+                            As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span>, we provide full-spectrum digital engineering. Our <span className="text-[var(--brand-teal)] font-bold">professional web design agency</span> combines creative excellence with technical precision.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            From initial concept to final deployment, we ensure your online presence is a powerful asset, driving leads, sales, and brand authority. We are your dedicated <span style={{ color: "var(--brand-blue)", fontWeight: 700 }}>Web Development Company</span> partner, committed to your long-term success.
+                            From <span className="font-semibold text-[var(--foreground)]">responsive web design services</span> to complex enterprise portals, our <span className="font-semibold text-[var(--foreground)]">web development agency</span> delivers scalable, secure, and SEO-optimized platforms for global markets like US, EU, and APAC.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            We craft experiences that are not only beautiful but also highly functional and aligned with your core business objectives. Every line of code, every design element, and every interaction is purposefully built to deliver measurable results.
+                            We don&apos;t just build websites; we engineer digital growth engines. Our <span className="font-semibold text-[var(--foreground)]">custom website development</span> solutions are designed to outperform competition, achieving an average 300% organic traffic growth for our global clients.
                         </p>
 
                         <div className="pt-4">
                             <h3 className="text-xl font-bold mb-4" style={{ color: "var(--foreground)" }}>
-                                Our Commitment
+                                Our Global Standards
                             </h3>
-                            <ul className="space-y-3">
+                            <ul className="grid sm:grid-cols-2 gap-4">
                                 {[
-                                    "Transparent communication throughout the project lifecycle",
-                                    "Adherence to timelines and budgets",
-                                    "Continuous optimization and performance monitoring",
-                                    "Post-launch support and maintenance",
+                                    "Global reach with performance-first architecture",
+                                    "95% bug-free delivery on first deployment",
+                                    "Built-in SEO that delivers 300% traffic growth",
+                                    "24/7 technical support across timezones",
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3">
                                         <span
-                                            className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-white text-sm font-bold mt-0.5"
+                                            className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-white text-sm font-bold mt-0.5 shadow-md"
                                             style={{
                                                 background: "linear-gradient(90deg, var(--brand-blue), var(--brand-teal))",
                                             }}
                                         >
                                             ✓
                                         </span>
-                                        <span style={{ color: "var(--secondary-text)" }}>{item}</span>
+                                        <span className="text-sm font-medium" style={{ color: "var(--secondary-text)" }}>{item}</span>
                                     </li>
                                 ))}
                             </ul>

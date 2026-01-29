@@ -27,7 +27,7 @@ export default function Technologies() {
         { name: "PostgreSQL", logo: "/images/techstack_logos/postgresql-logo.svg" },
         { name: "MySQL", logo: "/images/techstack_logos/mysql-logo.svg" },
         { name: "Redis", logo: "/images/techstack_logos/redis-logo.svg" },
-        { name: "Express", logo: "/images/techstack_logos/express-logo.svg" },
+        { name: "Express", logo: "/images/techstack_logos/express-logo1.webp" },
         { name: "Django", logo: "/images/techstack_logos/django-logo.svg" },
     ];
 
@@ -36,7 +36,7 @@ export default function Technologies() {
         { name: "Docker", logo: "/images/techstack_logos/docker-logo.svg" },
         { name: "Kubernetes", logo: "/images/techstack_logos/kubernetes-logo.svg" },
         { name: "Git", logo: "/images/techstack_logos/git-logo.svg" },
-        { name: "GitHub", logo: "/images/techstack_logos/github-logo.svg" },
+        { name: "GitHub", logo: "/images/techstack_logos/github-logo1.webp" },
         { name: "GitLab", logo: "/images/techstack_logos/gitlab-logo.svg" },
         { name: "Jenkins", logo: "/images/techstack_logos/jenkins-logo.svg" },
         { name: "Nginx", logo: "/images/techstack_logos/nginx-logo.svg" },
@@ -54,7 +54,7 @@ export default function Technologies() {
         { name: "Postman", logo: "/images/techstack_logos/postman-logo.svg" },
         { name: "Jira", logo: "/images/techstack_logos/jira-logo.svg" },
         { name: "Slack", logo: "/images/techstack_logos/slack-logo.svg" },
-        { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo.svg" },
+        { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
     ];
 
     const TechCard = ({ tech, idx }: { tech: { name: string; logo: string }; idx: number }) => (
@@ -97,12 +97,26 @@ export default function Technologies() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-20">
                 {/* Header */}
                 <div className="text-center mb-16">
+                    {/* Badge */}
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(0, 138, 193, 0.05)",
+                            borderColor: "rgba(0, 138, 193, 0.2)",
+                        }}
+                    >
+                        <Code2 className="w-4 h-4" style={{ color: "var(--brand-blue)" }} />
+                        <span className="text-sm font-medium" style={{ color: "var(--brand-blue)" }}>
+                            Our Tech Stack
+                        </span>
+                    </div>
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Building with the <span style={{ fontWeight: 700, color: "var(--brand-blue)" }}>Modern Web Stack</span>
+                        Cutting-Edge <span style={{ fontWeight: 700, color: "var(--brand-blue)" }}>Technology Stack</span> for Global Performance
                     </h2>
 
-                    <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        As a forward-thinking <span style={{ fontWeight: 700, color: "var(--brand-blue)" }}>Web Development Company</span>, we leverage the best tools to build high-performance applications.
+                    <p className="text-xl max-w-4xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                        As a forward-leaning <span className="font-bold text-[var(--brand-blue)]">web development company</span>, we utilize the most advanced tools to build fast, secure, and scalable digital solutions.
                     </p>
 
                     <div
@@ -219,18 +233,18 @@ export default function Technologies() {
                     }}
                 >
                     <h3 className="text-2xl font-bold mb-4" style={{ color: "var(--foreground)" }}>
-                        Custom Tech Stack for Your Needs
+                        Scalable Architecture for Global Growth
                     </h3>
 
-                    <p className="mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)", lineHeight: "1.8" }}>
-                        While we specialize in the modern web stack, we&apos;re flexible and can adapt to your specific requirements or existing infrastructure. Let&apos;s discuss the best approach for your project.
+                    <p className="mb-8 max-w-2xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)", fontSize: "1.1rem" }}>
+                        Our <span className="text-[var(--brand-blue)] font-bold">web development agency</span> leverages this robust tech stack to deliver 99.9% uptime and <span className="text-[var(--brand-teal)] font-bold">sub-2s load times</span> for enterprise clients worldwide.
                     </p>
 
                     <Link
                         href="/contact"
-                        className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-base font-bold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                     >
-                        Discuss Your Tech Stack
+                        Get Your Free Website Audit
                         <span>→</span>
                     </Link>
                 </div>

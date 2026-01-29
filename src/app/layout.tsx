@@ -4,8 +4,9 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeProviderClient from "@/components/ThemeProviderClient"; // client wrapper
+import { GoogleAnalytics } from '@next/third-parties/google';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "CIM - Digital Solutions",
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <head />
+
       {/* Put ThemeProviderClient inside the <body> */}
       <body className={`${inter.className} antialiased bg-white dark:bg-black text-gray-900 dark:text-white`} suppressHydrationWarning>
         <ThemeProviderClient>
@@ -28,6 +29,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProviderClient>
+        <GoogleAnalytics gaId="G-X378ZPPV30" />
       </body>
     </html>
   );

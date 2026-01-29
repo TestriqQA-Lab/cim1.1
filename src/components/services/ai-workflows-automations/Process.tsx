@@ -7,7 +7,7 @@ export default function Process() {
         {
             number: "01",
             title: "Process Analysis",
-            description: "We deeply analyze your current workflows, identify bottlenecks, and understand your business objectives to design optimal automation strategies.",
+            description: "We start with a deep-dive audit. We map your current \"happy path\" and identifying edge cases to design the perfect API-First Automation Strategy.",
             icon: Search,
             color: "from-blue-500 to-cyan-500",
             iconBg: "bg-blue-500/10",
@@ -16,7 +16,7 @@ export default function Process() {
         {
             number: "02",
             title: "Workflow Design",
-            description: "Our experts design intelligent workflows that incorporate AI logic, decision trees, and integration points tailored to your specific needs.",
+            description: "Our architects draft the blueprint, selecting the best-fit Machine Learning Model Deployment strategies and defining human touchpoints.",
             icon: Pencil,
             color: "from-purple-500 to-pink-500",
             iconBg: "bg-purple-500/10",
@@ -25,7 +25,7 @@ export default function Process() {
         {
             number: "03",
             title: "AI Model Integration",
-            description: "We integrate advanced AI models and APIs - from NLP to predictive analytics - to power intelligent decision-making within your workflows.",
+            description: "We plug in the brains. Whether it's OpenAI, Anthropic, or open-source Llama models, we handle the fine-tuning and prompting for maximum accuracy.",
             icon: Brain,
             color: "from-violet-500 to-purple-500",
             iconBg: "bg-violet-500/10",
@@ -34,7 +34,7 @@ export default function Process() {
         {
             number: "04",
             title: "Automation Setup",
-            description: "We configure and deploy the automation infrastructure, integrate with your existing systems, and ensure seamless data flow.",
+            description: "We build the pipes. Using tools like n8n or Make, combined with custom Python code, we construct robust, error-resistant flows.",
             icon: Zap,
             color: "from-amber-500 to-orange-500",
             iconBg: "bg-amber-500/10",
@@ -43,7 +43,7 @@ export default function Process() {
         {
             number: "05",
             title: "Testing & Optimization",
-            description: "Rigorous testing ensures reliability and performance. We optimize workflows based on real-world data and feedback.",
+            description: "We stress-test with Real-time AI workflow monitoring. We run thousands of scenarios to ensure your Agentic AI Frameworks don't hallucinate.",
             icon: TestTube,
             color: "from-green-500 to-emerald-500",
             iconBg: "bg-green-500/10",
@@ -52,7 +52,7 @@ export default function Process() {
         {
             number: "06",
             title: "Deployment & Monitoring",
-            description: "We deploy your workflows to production and provide continuous monitoring, maintenance, and optimization for peak performance.",
+            description: "Go live with confidence. We provide ROI-driven AI automation consulting post-launch to continuously improve efficiency.",
             icon: Activity,
             color: "from-rose-500 to-red-500",
             iconBg: "bg-rose-500/10",

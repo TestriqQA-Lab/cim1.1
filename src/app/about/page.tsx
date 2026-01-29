@@ -1,19 +1,25 @@
+import dynamic from 'next/dynamic';
 import Hero from '@/components/about/Hero';
-import Services from '@/components/about/Services';
-import Process from '@/components/about/Process';
-import Industries from '@/components/about/Industries';
-import Impact from '@/components/about/Impact';
-import LeadJourney from '@/components/about/LeadJourney';
-import CTA from '@/components/about/CTA';
 
-export const metadata = {
-    title: 'About Us | Cinute InfoMedia',
+// Lazy load below-the-fold components
+const Services = dynamic(() => import('@/components/about/Services'));
+const Process = dynamic(() => import('@/components/about/Process'));
+const Industries = dynamic(() => import('@/components/about/Industries'));
+const Impact = dynamic(() => import('@/components/about/Impact'));
+const LeadJourney = dynamic(() => import('@/components/about/LeadJourney'));
+const CTA = dynamic(() => import('@/components/about/CTA'));
+
+import { getPageMetadata } from '@/lib/metadata';
+
+export const metadata = getPageMetadata({
+    title: 'About Us | Cinute InfoMedia - Digital Growth Agency',
     description: 'Learn about Cinute InfoMedia (CIM), a digital growth agency helping businesses build, market, and scale with creativity, data, and technology.',
-};
+    url: '/about',
+});
 
 export default function AboutPage() {
     return (
-        <div className="bg-white">
+        <div className="bg-white" style={{ scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
             <Hero />
             <Services />
             <Process />

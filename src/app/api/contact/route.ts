@@ -69,9 +69,10 @@ export async function POST(request: Request) {
         const brandLogoCid = 'brandLogo@cinuteinfomedia.com';
 
         // Define attachment for the logo
+        // Use a public URL for the logo to avoid file system issues in serverless environments (ENOENT)
         const logoAttachment = {
             filename: 'CIM-LOGO.png',
-            path: process.cwd() + '/public/images/CIM-LOGO-Bold-with-white-BG.png',
+            path: 'https://www.cinuteinfomedia.com/images/CIM-LOGO-Bold-with-white-BG.png',
             cid: brandLogoCid // same cid value as in the html img src
         };
 
@@ -144,6 +145,8 @@ export async function POST(request: Request) {
         const adminMailOptions = {
             from: process.env.SMTP_FROM || `"Contact Form" <${process.env.SMTP_USER}>`,
             to: process.env.ADMIN_EMAIL || process.env.SMTP_TO || process.env.SMTP_USER,
+            cc: process.env.CC_EMAIL,
+            bcc: process.env.BCC_EMAIL,
             subject: `[New Lead] ${name} - ${subject}`,
             html: generateEmailTemplate(`New Lead: ${subject}`, adminHtmlContent),
             attachments: [logoAttachment]
@@ -186,10 +189,10 @@ export async function POST(request: Request) {
         console.log('Admin notification and user confirmation emails sent successfully');
         return NextResponse.json({ success: true }, { status: 200 });
 
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error('Error sending email:', error);
         return NextResponse.json(
-            { error: error.message || 'Failed to send email' },
+            { error: error instanceof Error ? error.message : 'Failed to send email' },
             { status: 500 }
         );
     }

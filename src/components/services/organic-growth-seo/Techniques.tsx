@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
     FileText, Code, Globe, Store, Link2, MousePointerClick, Settings,
     CheckCircle2, Zap, Search, Rocket, Target, BarChart,
@@ -14,72 +15,68 @@ export default function Techniques() {
         {
             icon: FileText,
             decorIcon: Search,
-            title: "On-Page SEO",
-            description: "Optimizing individual web pages to rank higher and earn more relevant traffic in search engines.",
-            features: ["Title tags", "Meta descriptions", "Content quality", "Internal linking"],
+            title: "On-Page Optimization",
+            description: "We optimize every pixel. From H1 tags to semantic HTML, we ensure your content speaks the language of search engines.",
+            features: ["Search Intent Optimization", "Generative Engine Optimization (GEO)", "Schema Markup Implementation"],
             badge: "Foundation",
             color: "#3b82f6",
             gradient: "from-blue-500 to-cyan-500",
+            link: "/services/organic-growth-seo/on-page-seo",
         },
         {
             icon: Code,
             decorIcon: Settings,
             title: "Technical SEO",
-            description: "Ensuring search engine crawlers can efficiently access, crawl, and index your website.",
-            features: ["Site speed", "Mobile-friendliness", "Structured data", "Core web vitals"],
+            description: "The foundation of growth. We fix crawl errors, optimize site speed, and ensure mobile-first indexing compliance.",
+            features: ["Technical SEO Audit & Remediation", "Core Web Vitals Optimization", "JavaScript SEO for Next.js/React"],
             badge: "Technical",
             color: "#8b5cf6",
             gradient: "from-purple-500 to-pink-500",
+            link: "/services/organic-growth-seo/technical-seo",
         },
         {
             icon: Globe,
             decorIcon: Sparkles,
-            title: "Content SEO & Blogging",
-            description: "Creating high-quality, valuable content that answers user queries and establishes thought leadership.",
-            features: ["Keyword research", "Content strategy", "Topic clusters", "Long-tail targeting"],
+            title: "Content Strategy & Marketing",
+            description: "Content is King, but Context is Queen. Our Organic SEO content marketing strategy builds topical authority through expert-led articles, whitepapers, and guides.",
+            features: ["Topical Authority Mapping", "E-E-A-T Content Updates", "Video & Visual SEO"],
             badge: "Content",
             color: "#10b981",
             gradient: "from-green-500 to-emerald-500",
+            link: "/services/organic-growth-seo/content-seo",
         },
         {
             icon: Settings,
             decorIcon: Target,
             title: "Local SEO",
-            description: "Optimizing your online presence to attract more business from relevant local searches.",
-            features: ["Google My Business", "Local citations", "NAP consistency", "Reviews management"],
+            description: "Dominate your neighborhood. Our Organic SEO for local business growth puts you on the map—literally.",
+            features: ["Google Business Profile Optimization", "Localized Content & Citations", "Reviews Management"],
             badge: "Local",
             color: "#f59e0b",
             gradient: "from-amber-500 to-orange-500",
+            link: "/services/organic-growth-seo/local-seo",
         },
         {
             icon: Store,
             decorIcon: BarChart,
             title: "E-commerce SEO",
-            description: "Specialized optimization for product pages, category pages, and site architecture.",
-            features: ["Product optimization", "Category pages", "Schema markup", "Site structure"],
+            description: "Turn browsers into buyers. Our Organic growth SEO for ecommerce optimizes product pages and category architecture for maximum conversion.",
+            features: ["Product Schema & Structured Data", "Faceted Navigation Optimization", "Seasonal Campaign SEO"],
             badge: "E-commerce",
-            color: "#ec4899",
-            gradient: "from-pink-500 to-rose-500",
+            color: "#0EA5E9",
+            gradient: "from-sky-400 to-cyan-500",
+            link: "/services/organic-growth-seo/ecommerce-seo",
         },
         {
             icon: Link2,
             decorIcon: Award,
             title: "Link Building",
-            description: "Acquiring high-quality backlinks from authoritative websites to boost your domain authority.",
-            features: ["Outreach campaigns", "Guest posting", "Resource link building", "Digital PR"],
+            description: "Vote of confidence. We secure high-quality backlinks from authoritative domains to boost your site's trustworthiness.",
+            features: ["Backlink Profile Analysis", "Digital PR & Outreach", "Guest Posting on Industry Hubs"],
             badge: "Authority",
             color: "#06b6d4",
             gradient: "from-cyan-500 to-blue-500",
-        },
-        {
-            icon: MousePointerClick,
-            decorIcon: TrendingUp,
-            title: "Conversion Rate Optimization",
-            description: "Optimizing your website to increase the percentage of visitors who take desired actions.",
-            features: ["A/B testing", "UX optimization", "Landing pages", "Call-to-action"],
-            badge: "CRO",
-            color: "#14b8a6",
-            gradient: "from-teal-500 to-green-500",
+            link: "/services/organic-growth-seo/link-building",
         },
     ];
 
@@ -120,7 +117,7 @@ export default function Techniques() {
                         Types of <span style={{ color: "var(--brand-seo)" }}>SEO Techniques</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Our comprehensive approach covers every facet of Search Engine Optimization to ensure maximum Organic Traffic Growth.
+                        We offer a holistic suite of solutions tailored to your specific needs, from Organic SEO for SaaS companies to local brick-and-mortar growth.
                     </p>
                 </div>
 
@@ -130,10 +127,10 @@ export default function Techniques() {
                         const Icon = tech.icon;
                         const DecorIcon = tech.decorIcon;
                         const isHovered = hoveredIndex === index;
+                        const linkProp = 'link' in tech ? (tech as { link?: string }).link : undefined;
 
-                        return (
+                        const cardContent = (
                             <div
-                                key={index}
                                 className="group relative"
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
@@ -335,6 +332,14 @@ export default function Techniques() {
                                     />
                                 </div>
                             </div>
+                        );
+
+                        return linkProp ? (
+                            <Link href={linkProp} key={index} className="block">
+                                {cardContent}
+                            </Link>
+                        ) : (
+                            <div key={index}>{cardContent}</div>
                         );
                     })}
                 </div>

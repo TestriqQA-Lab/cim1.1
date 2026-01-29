@@ -1,15 +1,14 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://cim-10.vercel.app';
+    const baseUrl = 'https://www.cinuteinfomedia.com';
 
     return {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: '/private/',
+            disallow: ['/private/', '/api/'],
         },
         sitemap: `${baseUrl}/sitemap.xml`,
-        host: baseUrl,
     };
 }
