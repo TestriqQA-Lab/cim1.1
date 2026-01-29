@@ -1,0 +1,117 @@
+"use client";
+
+import { useState } from "react";
+import { Plus, Minus, HelpCircle } from "lucide-react";
+
+export default function FAQ() {
+    const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+    const faqs = [
+        {
+            question: "What are travel and hospitality services in the context of digital development?",
+            answer: "Travel and hospitality services encompass the strategic design, development, and marketing of digital solutions for the tourism industry. This includes building custom booking engines, hotel management software, OTA platforms, and implementing Travel Technology Solutions that streamline operations and enhance the guest experience."
+        },
+        {
+            question: "How can technology improve hospitality services for hotels and agencies?",
+            answer: "Technology improves hospitality services by automating routine tasks, personalizing guest interactions, and optimizing revenue. Tools like Hotel Property Management Systems (PMS), AI-driven chatbots, and Travel Data Analytics allow businesses to offer seamless booking experiences, real-time support, and tailored recommendations, directly boosting satisfaction and loyalty."
+        },
+        {
+            question: "What makes a top-tier Hospitality Marketing Agency?",
+            answer: "A top-tier Hospitality Marketing Agency combines creative storytelling with data-driven strategies. Look for an agency that specializes in Digital Marketing for Luxury Hotels and Resorts, uses advanced SEO for Travel Lead Generation, and has a proven track record of increasing direct bookings through Hospitality Social Media Management Services and paid campaigns."
+        },
+        {
+            question: "Why is custom Travel Software Development Services better than off-the-shelf solutions?",
+            answer: "Custom Travel Software Development Services offer flexibility and scalability that off-the-shelf products cannot match. A custom solution is tailored to your specific business workflows, brands, and customer needs, allowing for unique features like specialized Travel API integration services and proprietary Hospitality Revenue Management algorithms that provide a competitive edge."
+        },
+        {
+            question: "What are the key Hospitality Technology Trends for 2026?",
+            answer: "The key Hospitality Technology Trends 2026 include the rise of hyper-personalization via AI, the adoption of sustainable travel tech for Sustainable Travel and Tourism Consulting, biometric authentication for seamless check-ins, and the increased use of immersive AR/VR in Travel Agency Website Design to provide virtual \"try-before-you-buy\" experiences."
+        },
+        {
+            question: "How do you handle Travel API Integration Services (GDS/OTA)?",
+            answer: "We consider Travel API Integration Services a core competency. Our team has extensive experience connecting with major GDS providers like Amadeus and Sabre, as well as OTAs like Expedia. We ensure secure, real-time data exchange for inventory and pricing, handling the technical complexity so you can focus on your business."
+        }
+    ];
+
+    return (
+        <section
+            className="py-20 transition-colors duration-300"
+            style={{ backgroundColor: "var(--background)" }}
+        >
+            <div className="mx-auto px-6 md:px-12 xl:px-20 max-w-5xl">
+                {/* Header */}
+                <div className="text-center mb-16">
+                    <div
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
+                        style={{
+                            backgroundColor: "rgba(13, 148, 136, 0.05)",
+                            borderColor: "rgba(13, 148, 136, 0.2)",
+                        }}
+                    >
+                        <HelpCircle className="w-4 h-4" style={{ color: "#0d9488" }} />
+                        <span className="text-sm font-medium" style={{ color: "#0d9488" }}>
+                            FAQ
+                        </span>
+                    </div>
+
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
+                        Frequently Asked <span style={{ color: "#0d9488" }}>Questions</span>
+                    </h2>
+                </div>
+
+                {/* FAQ Items */}
+                <div className="space-y-4">
+                    {faqs.map((faq, idx) => {
+                        const isOpen = openIndex === idx;
+
+                        return (
+                            <div
+                                key={idx}
+                                className="rounded-2xl border overflow-hidden transition-all duration-300"
+                                style={{
+                                    backgroundColor: "var(--card-bg)",
+                                    borderColor: isOpen ? "#0d9488" : "var(--border-color)",
+                                }}
+                            >
+                                <button
+                                    onClick={() => setOpenIndex(isOpen ? null : idx)}
+                                    className="w-full flex items-center justify-between p-6 text-left hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                                >
+                                    <span className="text-lg font-semibold pr-8" style={{ color: "var(--foreground)" }}>
+                                        {faq.question}
+                                    </span>
+                                    <div
+                                        className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300"
+                                        style={{
+                                            backgroundColor: isOpen ? "#0d9488" : "transparent",
+                                            border: `1px solid ${isOpen ? "#0d9488" : "var(--border-color)"}`,
+                                            transform: isOpen ? "rotate(180deg)" : "rotate(0deg)"
+                                        }}
+                                    >
+                                        {isOpen ? (
+                                            <Minus className="w-4 h-4 text-white" />
+                                        ) : (
+                                            <Plus className="w-4 h-4" style={{ color: "var(--foreground)" }} />
+                                        )}
+                                    </div>
+                                </button>
+
+                                <div
+                                    className={`overflow-hidden transition-all duration-300 ease-in-out`}
+                                    style={{
+                                        maxHeight: isOpen ? "500px" : "0",
+                                        opacity: isOpen ? 1 : 0
+                                    }}
+                                >
+                                    <div className="p-6 pt-0 text-base leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                        {faq.answer}
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+        </section>
+    );
+}

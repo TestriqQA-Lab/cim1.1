@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function CTA() {
     const features = [
-        { icon: Calendar, text: "Real-time Booking" },
-        { icon: Globe, text: "Multi-channel Sync" },
-        { icon: CreditCard, text: "Secure Payments" },
+        { icon: Calendar, text: "Custom Booking Engines" },
+        { icon: Globe, text: "GDS/OTA Integration" },
+        { icon: CreditCard, text: "Secure Global Payments" },
     ];
 
     return (
@@ -33,15 +33,15 @@ export default function CTA() {
                             className="text-3xl md:text-4xl font-bold mb-4"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Ready to Transform Your{" "}
-                            <span style={{ color: "#0d9488" }}>Hospitality Business</span>?
+                            Ready to Pioneer the Future of{" "}
+                            <span style={{ color: "#0d9488" }}>Travel and Hospitality</span>?
                         </h2>
 
                         <p
                             className="text-lg mb-8"
                             style={{ color: "var(--secondary-text)" }}
                         >
-                            Let's build a booking platform that delights guests and drives revenue. From boutique hotels to global tour operators, we have the expertise to elevate your digital presence.
+                            Transform your operations, delight your guests, and drive unprecedented growth with our expert Travel and Hospitality Services. Whether you're looking for custom development or a complete digital overhaul, Cinute Infomedia is your partner in innovation. Contact us today for a free consultation and let's build something extraordinary together.
                         </p>
 
                         <div className="flex flex-wrap gap-4 mb-8">
@@ -74,11 +74,11 @@ export default function CTA() {
                                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105"
                                 style={{ backgroundColor: "#0d9488" }}
                             >
-                                Start Your Project
+                                Get Your Free Audit
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
                             <Link
-                                href="/services/web-design-development"
+                                href="/contact"
                                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold border transition-all duration-300 hover:scale-105"
                                 style={{
                                     borderColor: "var(--border-color)",
@@ -86,7 +86,7 @@ export default function CTA() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Explore All Services
+                                Talk to an Expert
                             </Link>
                         </div>
                     </div>

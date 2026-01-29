@@ -7,23 +7,23 @@ export default function ServiceOverview() {
     const deliverables = [
         {
             icon: Calendar,
-            title: "Booking Engine",
-            description: "Real-time availability, instant confirmations, and seamless reservation management",
+            title: "Custom Booking Engines",
+            description: "Develop high-conversion Travel Booking Engine Optimization systems with real-time inventory updates and zero overbookings.",
         },
         {
             icon: Globe,
-            title: "Channel Management",
-            description: "Sync inventory across OTAs, metasearch engines, and direct booking channels",
+            title: "GDS & OTA Integration",
+            description: "Seamless Travel API Integration Services (GDS/OTA) for Amadeus, Sabre, Expedia, and Airbnb with bidirectional data sync.",
         },
         {
             icon: Users,
-            title: "Guest Experience",
-            description: "Personalized portals, loyalty programs, and automated communication",
+            title: "Guest Experience Platforms",
+            description: "Elevate engagement with Hospitality Guest Experience Optimization Services, from mobile check-in to AI concierge chatbots.",
         },
         {
             icon: CreditCard,
-            title: "Payment Integration",
-            description: "Multi-currency support, secure gateways, and flexible payment options",
+            title: "Revenue Management Systems",
+            description: "Implement advanced Hospitality Revenue Management Services using AI to predict demand and optimize dynamic pricing.",
         },
     ];
 
@@ -37,15 +37,15 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            A <span style={{ color: "#0d9488", fontWeight: 700 }}>travel platform</span> is more than a booking interface - it's a complete digital ecosystem that connects travelers with unforgettable experiences while maximizing your operational efficiency.
+                            A <span style={{ color: "#0d9488", fontWeight: 700 }}>travel platform</span> is more than a booking interface: it's a complete digital ecosystem that connects travelers with unforgettable experiences while maximizing your operational efficiency.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            We build hospitality solutions that combine stunning visual presentation with powerful booking engines, channel management, and guest experience tools. Every element - from property showcases to checkout flows - is designed to increase conversions and guest satisfaction.
+                            In the rapidly evolving landscape of 2026, the global tourism industry demands intelligent, scalable Travel and Hospitality Services that drive revenue and enhance guest experiences. We understand that modern travelers expect instant gratification, hyper-personalization, and frictionless booking journeys. That’s why we build hospitality solutions that combine stunning visual presentation with powerful booking engines, GDS/OTA integrations, and guest experience tools.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            Our platforms integrate with leading hospitality APIs, payment gateways, and property management systems to create a unified experience for both operators and guests.
+                            Our expertise spans delivering custom Travel Technology Solutions that solve complex challenges, from seamless GDS integration to AI-driven Hospitality Management Consulting. Every element is engineered by our elite developers and strategists to boost Direct Booking flow, optimize Hospitality Revenue Management Services, and ensure your brand stands out in a crowded market.
                         </p>
 
                         <div className="pt-4">
