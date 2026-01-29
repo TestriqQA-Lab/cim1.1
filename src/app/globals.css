@@ -69,6 +69,12 @@
   [tabindex]:not([tabindex="-1"]) {
     cursor: pointer;
   }
+
+  /* Brand Gradient Selection */
+  ::selection {
+    color: #ffffff;
+    background: #BC3FEB;
+  }
 }
 
 /* Connect CSS vars to Tailwind tokens (Tailwind v4 style) */
