@@ -30,7 +30,7 @@ export default function TechStack() {
             technologies: [
                 { name: "Gutenberg Blocks", description: "Custom Block Logic", logo: "/images/techstack_logos/Gutenberg-logo.svg" },
                 { name: "Elementor", description: "Visual Builder", logo: "/images/techstack_logos/Elementor-logo.png" },
-                { name: "Tailwind CSS", description: "Utility-first Style", logo: "/images/techstack_logos/tailwind-logo.svg" },
+                { name: "Tailwind CSS", description: "Utility-first Style", logo: "/images/techstack_logos/tailwindcss-logo.svg" },
                 { name: "Vanilla JS", description: "Lightweight Logic", logo: "/images/techstack_logos/javascript-logo.svg" },
                 { name: "Bricks Builder", description: "High-Performance", logo: "/images/techstack_logos/Bricks-Builder-logo.svg" },
             ],
