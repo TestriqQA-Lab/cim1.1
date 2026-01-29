@@ -55,17 +55,32 @@ export default function CTA() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Astro
+                            Astro Framework
                         </span>
                     </h2>
 
                     <p
-                        className="text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed"
+                        className="text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Ready to create a website that loads instantly and ranks higher?
-                        Let&apos;s discuss how Astro can transform your web presence.
+                        Ready to create a website that loads instantly and ranks higher? Our Astro development agency delivers 100% PageSpeed scores, SEO-first architecture, and 24/7 technical support.
                     </p>
+
+                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8 text-sm md:text-base font-medium" style={{ color: "var(--foreground)" }}>
+                        <span>✓ 100% Performance Guarantee</span>
+                        <span>✓ Expert Migration Support</span>
+                        <span>✓ Headless CMS Integration</span>
+                    </div>
+
+                    <div className="mb-8 p-4 rounded-2xl bg-black/5 dark:bg-white/5 border border-dashed border-border">
+                        <p className="text-sm font-semibold mb-2" style={{ color: "#7C3AED" }}>GET IN TOUCH TODAY</p>
+                        <p className="text-base" style={{ color: "var(--foreground)" }}>
+                            Email: contact@cinuteinfomedia.com | Phone: +91 9004988859, +91 7700995410
+                        </p>
+                        <p className="text-xs mt-1" style={{ color: "var(--secondary-text)" }}>
+                            Office Hours: Mon-Fri, 9 AM - 6 PM
+                        </p>
+                    </div>
 
                     {/* CTA Button */}
                     <Link

@@ -36,72 +36,72 @@ export default function SolutionTypes() {
         {
             icon: Megaphone,
             title: "Marketing Websites",
-            description: "High-performance marketing sites that rank well and convert visitors.",
+            description: "High-performance marketing sites that rank well and convert visitors with Astro SEO audit and optimization services built-in.",
             features: [
-                "Lightning fast loads",
-                "SEO optimized",
-                "A/B testing ready",
-                "Analytics integration",
+                "SaaS & B2B focus",
+                "SEO audit included",
+                "High conversion rate",
+                "Advanced analytics",
             ],
             gradient: "from-[#7C3AED] to-[#A855F7]",
         },
         {
             icon: Building2,
             title: "Corporate Sites",
-            description: "Professional company websites that establish credibility and trust.",
+            description: "Professional company websites that establish credibility and trust. Custom Astro website development with brand consistency.",
             features: [
+                "Enterprise security",
                 "Brand consistency",
-                "Content management",
-                "Multi-language",
-                "Contact forms",
+                "Investor relations",
+                "Career portals",
             ],
             gradient: "from-[#FF5D01] to-[#FF8534]",
         },
         {
             icon: Briefcase,
             title: "Portfolio & Personal",
-            description: "Showcase your work beautifully with fast-loading portfolio sites.",
+            description: "Showcase creative work beautifully with Astro framework for portfolio websites that load instantly and impress clients.",
             features: [
-                "Visual galleries",
-                "Project showcases",
-                "Resume sections",
-                "Contact integration",
+                "Instant visual load",
+                "Project galleries",
+                "Client testimonials",
+                "Creative focus",
             ],
             gradient: "from-[#7C3AED] to-[#6D28D9]",
         },
         {
             icon: BookOpenCheck,
             title: "Documentation Portals",
-            description: "Technical docs and knowledge bases with excellent search.",
+            description: "Technical docs and knowledge bases with excellent search powered by Astro framework ecosystem and integrations.",
             features: [
+                "Versioned docs",
                 "Full-text search",
-                "Version control",
-                "Code highlighting",
                 "API references",
+                "Developer portals",
             ],
             gradient: "from-[#A855F7] to-[#7C3AED]",
         },
         {
             icon: ShoppingCart,
             title: "E-commerce Catalogs",
-            description: "Fast product showcases that drive purchases.",
+            description: "Fast product showcases that drive purchases with Astro headless CMS integration services for flexible management.",
             features: [
-                "Product galleries",
-                "Filtering & search",
-                "Shopping cart",
-                "Payment integration",
+                "Headless CMS sync",
+                "Product filtering",
+                "Cart integration",
+                "B2B catalogs",
             ],
             gradient: "from-[#7C3AED] to-[#FF5D01]",
         },
         {
             icon: PenLine,
             title: "Blog Platforms",
-            description: "Content-focused blogs with excellent reading experience.",
+            description: "Content-focused Astro development for content-rich sites with excellent reading experience and author workflows.",
             features: [
-                "MDX support",
-                "Categories & tags",
-                "RSS feeds",
-                "Social sharing",
+                "MDX & CMS support",
+                "Author templates",
+                "RSS & Newsletters",
+                "SEO excellence",
             ],
             gradient: "from-[#FF5D01] to-[#7C3AED]",
         },
@@ -138,7 +138,7 @@ export default function SolutionTypes() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Astro excels at building content-focused websites with exceptional performance.
+                        Astro framework services excel at building content-focused websites with exceptional performance. Our Astro server-side rendering (SSR) services and static site generation (SSG) with Astro JS cover every business need.
                     </p>
                 </div>
 
