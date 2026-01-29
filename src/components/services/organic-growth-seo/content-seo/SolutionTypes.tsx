@@ -20,45 +20,45 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "b2b",
-            title: "B2B Technology",
-            description: "Technical whitepapers, case studies, and thought leadership articles.",
+            title: "B2B Technology & SaaS",
+            description: "High-convert SEO content for B2B lead generation and technical whitepapers. 95%+ accuracy for fintech.",
             icon: Briefcase,
             color: contentEmerald,
         },
         {
             id: "ecommerce",
-            title: "E-commerce",
-            description: "Product descriptions, buying guides, and category page content.",
+            title: "E-commerce Brands",
+            description: "Strategic SEO content for ecommerce brands including product descriptions and high-intent buying guides.",
             icon: ShoppingBag,
             color: "#3B82F6",
         },
         {
-            id: "saas",
-            title: "SaaS Companies",
-            description: "Feature guides, documentation, and user onboarding flows.",
-            icon: Laptop,
+            id: "legal",
+            title: "Law Firms",
+            description: "Authoritative SEO content for law firms following strict legal compliance and expertise benchmarks.",
+            icon: Gavel,
             color: "#F59E0B",
         },
         {
-            id: "education",
-            title: "EdTech & Courses",
-            description: "Educational guides, course curriculums, and student resources.",
-            icon: GraduationCap,
+            id: "health",
+            title: "Medical Practices",
+            description: "High-trust SEO content for medical practices that meets YMYL (Your Money Your Life) standards.",
+            icon: HeartPulse,
             color: "#8B5CF6",
         },
         {
-            id: "health",
-            title: "Healthcare",
-            description: "Patient education, medical articles, and compliance-focused content.",
-            icon: HeartPulse,
-            color: "#EF4444",
+            id: "realestate",
+            title: "Real Estate",
+            description: "Hyper-local SEO content for real estate websites to dominate local property searches.",
+            icon: Laptop,
+            color: "#EC4899",
         },
         {
-            id: "legal",
-            title: "Legal & Finance",
-            description: "Authoritative, accurate advice and industry commentary.",
-            icon: Gavel,
-            color: "#6366F1",
+            id: "education",
+            title: "Education & Non-Profits",
+            description: "SEO content for educational institutions and purpose-driven narratives for non-profits.",
+            icon: GraduationCap,
+            color: "#06B6D4",
         },
     ];
 
@@ -84,10 +84,10 @@ export default function SolutionTypes() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Industries We <span style={{ color: contentEmerald }}>Serve</span>
+                        Industries We <span style={{ color: contentEmerald }}>Master</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Specialized content strategies tailored to your industry's unique tone and audience.
+                        Specialized Content SEO for High-Growth Niches. Our SMEs combine deep industry knowledge with technical SEO precision.
                     </p>
                 </div>
 

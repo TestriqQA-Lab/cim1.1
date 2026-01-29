@@ -52,10 +52,10 @@ export default function CTA() {
                     <Target className="w-16 h-16 mx-auto mb-6" style={{ color: "var(--brand-orange)" }} />
 
                     {/* Heading */}
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-6">
                         Ready to <span style={{ color: "var(--brand-orange)" }}>Maximize Your ROI</span>?
                     </h2>
-                    <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                    <p className="text-base md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
                         Get a free performance audit and discover how much more your ad budget could achieve.
                     </p>
 
@@ -72,21 +72,21 @@ export default function CTA() {
                     </div>
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center items-center">
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-semibold hover:scale-105 transition-transform shadow-lg text-base sm:text-lg"
+                            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-4 rounded-full text-white font-semibold hover:scale-105 transition-transform shadow-lg text-sm sm:text-base md:text-lg"
                             style={{ backgroundColor: "var(--brand-orange)" }}
                         >
                             Get Your Proposal
-                            <ArrowRight className="w-5 h-5" />
+                            <ArrowRight className="w-5 h-5 flex-shrink-0" />
                         </Link>
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 font-semibold hover:scale-105 transition-transform text-base sm:text-lg"
+                            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-4 rounded-full border-2 font-semibold hover:scale-105 transition-transform text-sm sm:text-base md:text-lg"
                             style={{ borderColor: "var(--brand-orange)", color: "var(--brand-orange)" }}
                         >
-                            <Phone className="w-5 h-5" />
+                            <Phone className="w-5 h-5 flex-shrink-0" />
                             Schedule a Call
                         </Link>
                     </div>

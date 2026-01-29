@@ -9,33 +9,33 @@ export default function Process() {
     const steps = [
         {
             icon: FileSearch,
-            title: "Discovery & Strategy",
-            description: "Deep dive into your audience, competitors, and keywords to build a roadmap.",
-        },
-        {
-            icon: PenTool,
-            title: "Content Creation",
-            description: "Expert writers craft engaging, authoritative content aligned with your brand voice.",
-        },
-        {
-            icon: Edit3,
-            title: "Editorial Review",
-            description: "Rigorous editing for clarity, tone, accuracy, and SEO best practices.",
-        },
-        {
-            icon: CheckCircle2,
-            title: "Optimization",
-            description: "Fine-tuning meta tags, internal links, headings, and readability scores.",
+            title: "Phase 1: Deep Search Intent Analysis",
+            description: "We analyze the \"why\" behind the search, identifying keyword research for content opportunities that competitors miss.",
         },
         {
             icon: Share2,
-            title: "Publishing & Distribution",
-            description: "Scheduling content and promoting it across relevant channels for maximum reach.",
+            title: "Phase 2: Strategy & Topic Clusters",
+            description: "Creating topic clusters SEO patterns to distribute authority across your domain, making it impossible for Google to ignore you.",
+        },
+        {
+            icon: PenTool,
+            title: "Phase 3: High-EEAT Content Creation",
+            description: "Our SEO content experts craft long-form SEO content (1500-2500 words) that solve user pain points deeply.",
+        },
+        {
+            icon: CheckCircle2,
+            title: "Phase 4: Semantic Content Optimization",
+            description: "Integrating LSI/Semantic naturally. No stuffing, just pure content relevance and authority for search dominance.",
         },
         {
             icon: TrendingUp,
-            title: "Performance Analysis",
-            description: "Measuring impact and refining the strategy based on real user data.",
+            title: "Phase 5: Performance & Engagement Tracking",
+            description: "Monitoring engagement metrics and user dwell time to ensure your content isn't just seen, but read and acted upon.",
+        },
+        {
+            icon: Edit3,
+            title: "Phase 6: Continuous SEO Content Refresh",
+            description: "Regularly updating services to align with the latest 2026 Google guidelines and AI-overview trends.",
         },
     ];
 

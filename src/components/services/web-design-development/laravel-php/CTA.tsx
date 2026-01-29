@@ -17,7 +17,7 @@ export default function CTA() {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div
-                    className="max-w-4xl mx-auto rounded-[2.5rem] p-8 md:p-16 text-center border overflow-hidden relative"
+                    className="max-w-4xl mx-auto rounded-[2.5rem] p-6 md:p-16 text-center border overflow-hidden relative"
                     style={{
                         background: "linear-gradient(135deg, rgba(255, 45, 32, 0.05), rgba(240, 83, 64, 0.05))",
                         borderColor: "rgba(255, 45, 32, 0.2)",
@@ -37,7 +37,7 @@ export default function CTA() {
                             </span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                             <span style={{ color: "var(--foreground)" }}>Build Your Next </span>{" "}
                             <span
                                 style={{
@@ -50,7 +50,7 @@ export default function CTA() {
                             </span>
                         </h2>
 
-                        <p className="text-xl mb-10 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                        <p className="text-base md:text-xl mb-10 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
                             Whether you need a custom web application, a SaaS platform, or an enterprise portal,
                             our Laravel experts are ready to bring your vision to life.
                         </p>
@@ -58,14 +58,14 @@ export default function CTA() {
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-xl w-full sm:w-auto"
+                                className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-xl"
                                 style={{
                                     background: "linear-gradient(135deg, #FF2D20, #F05340)",
                                     boxShadow: "0 8px 30px rgba(255, 45, 32, 0.2)",
                                 }}
                             >
                                 Schedule a Call
-                                <ArrowRight className="w-5 h-5 ml-2" />
+                                <ArrowRight className="w-5 h-5 flex-shrink-0 ml-2" />
                             </Link>
 
                         </div>

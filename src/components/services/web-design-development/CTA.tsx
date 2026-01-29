@@ -29,7 +29,7 @@ export default function CTA() {
 
                 {/* Main CTA Card */}
                 <div
-                    className="relative rounded-3xl p-8 md:p-16 border text-center overflow-hidden"
+                    className="relative rounded-3xl p-6 md:p-16 border text-center overflow-hidden"
                     style={{
                         backgroundColor: "var(--card-bg)",
                         borderColor: "var(--border-color)",
@@ -62,7 +62,7 @@ export default function CTA() {
                         </div>
 
                         {/* Heading */}
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                             <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -77,30 +77,30 @@ export default function CTA() {
                         </h2>
 
                         {/* Description */}
-                        <p className="text-lg md:text-xl max-w-4xl mx-auto mb-12 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                        <p className="text-base md:text-xl max-w-4xl mx-auto mb-12 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
                             Partner with a professional <span className="font-bold text-[var(--brand-blue)]">web development agency</span> to build a high-performance, SEO-optimized website that delivers <span className="text-[var(--brand-teal)] font-bold">measurable ROI</span>. Get your free expert audit today.
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-base font-bold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl text-sm md:text-base font-bold bg-gradient-to-r from-[#008ac1] to-[#00b5ca] text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                             >
                                 Get Your Free Website Audit
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
                             </Link>
 
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-base font-bold border transition-all duration-300"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl text-sm md:text-base font-bold border transition-all duration-300"
                                 style={{
                                     borderColor: "var(--border-color)",
                                     color: "var(--foreground)",
                                 }}
                             >
                                 Global Strategy Call
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
                             </Link>
                         </div>
 

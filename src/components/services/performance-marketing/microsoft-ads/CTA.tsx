@@ -17,7 +17,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10 text-center">
                 <div
-                    className="relative rounded-3xl overflow-hidden border p-12 md:p-20"
+                    className="relative rounded-3xl overflow-hidden border p-8 md:p-20"
                     style={{
                         background: `linear-gradient(135deg, ${msBlue}10, transparent)`,
                         borderColor: "var(--border-color)"
@@ -30,25 +30,27 @@ export default function CTA() {
                         <Zap className="w-10 h-10" />
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Ready to <span style={{ color: msBlue }}>Expand Reach?</span>
                     </h2>
 
-                    <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
                         Tap into new audiences and lower your acquisition costs with Microsoft Ads.
                     </p>
 
-                    <Link
-                        href="/contact"
-                        className="inline-flex items-center justify-center px-8 py-4 rounded-lg font-bold text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-xl group"
-                        style={{
-                            backgroundColor: msBlue,
-                            boxShadow: `0 4px 15px ${msBlue}40`
-                        }}
-                    >
-                        Launch Campaign
-                        <ArrowRight className="w-6 h-6 ml-2 transition-transform group-hover:translate-x-1" />
-                    </Link>
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <Link
+                            href="/contact"
+                            className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-xl group"
+                            style={{
+                                backgroundColor: msBlue,
+                                boxShadow: `0 4px 15px ${msBlue}40`
+                            }}
+                        >
+                            Launch Campaign
+                            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 flex-shrink-0 transition-transform group-hover:translate-x-1" />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

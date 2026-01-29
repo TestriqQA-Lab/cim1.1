@@ -27,7 +27,7 @@ export default function CTA() {
 
             <div className="max-w-4xl mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="p-10 md:p-16 rounded-3xl border text-center relative overflow-hidden"
+                    className="p-6 md:p-16 rounded-3xl border text-center relative overflow-hidden"
                     style={{
                         backgroundColor: "var(--card-bg)",
                         borderColor: "var(--border-color)",
@@ -55,7 +55,7 @@ export default function CTA() {
                         </div>
 
                         {/* Heading */}
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
+                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                             Ready to Build Your{" "}
                             <span
                                 className="bg-clip-text text-transparent"
@@ -70,33 +70,33 @@ export default function CTA() {
                         </h2>
 
                         {/* Description */}
-                        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                        <p className="text-base md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
                             Don't let another opportunity slip by. Your future clients and employers are googling you right now - what will they find? Take control of your digital destiny.
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-semibold text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-bold text-sm sm:text-base md:text-lg text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                                 style={{
                                     background: "linear-gradient(135deg, #06b6d4, #0891b2)",
                                     boxShadow: "0 8px 20px -4px rgba(6, 182, 212, 0.4)",
                                 }}
                             >
                                 <span style={{ color: "inherit" }}>Book Your Free Brand Audit</span>
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
                             </Link>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-semibold border transition-all duration-300 hover:bg-cyan-500/5"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl font-bold text-sm sm:text-base md:text-lg border transition-all duration-300 hover:bg-cyan-500/5"
                                 style={{
                                     borderColor: "#06b6d4",
                                     color: "#06b6d4",
                                 }}
                             >
                                 Create a Legacy
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
                             </Link>
                         </div>
 

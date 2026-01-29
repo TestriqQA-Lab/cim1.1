@@ -26,7 +26,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="relative rounded-[2rem] p-8 md:p-12 lg:p-16 overflow-hidden"
+                    className="relative rounded-[2rem] p-6 md:p-12 lg:p-16 overflow-hidden"
                     style={{
                         background: "linear-gradient(135deg, #E1306C, #C13584, #833AB4)",
                     }}
@@ -55,12 +55,12 @@ export default function CTA() {
                                 </span>
                             </div>
 
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
                                 Ready to Dominate{" "}
                                 <span className="text-white/80">the Feed?</span>
                             </h2>
 
-                            <p className="text-lg text-white/80 mb-8 max-w-xl">
+                            <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl mx-auto lg:mx-0">
                                 Don't let your brand get lost in the scroll. Partner with an Instagram Marketing Company that knows how to turn views into value.
                             </p>
 
@@ -75,17 +75,17 @@ export default function CTA() {
                             </div>
 
                             {/* CTA Buttons */}
-                            <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-base text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 rounded-full font-bold text-sm sm:text-base text-white transition-all transform hover:scale-105 hover:shadow-lg"
                                     style={{
                                         background: instaGradient,
                                         boxShadow: "0 4px 20px rgba(225, 48, 108, 0.4)"
                                     }}
                                 >
                                     CLAIM YOUR FREE INSTAGRAM AUDIT & GROWTH PLAN
-                                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
+                                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 flex-shrink-0" />
                                 </Link>
                             </div>
                         </div>

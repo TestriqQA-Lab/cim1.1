@@ -11,34 +11,34 @@ export default function WhyChooseUs() {
 
     const benefits = [
         {
-            icon: CheckCircle,
-            title: "Data-Driven Strategy",
-            description: "We don't guess. We use data to identify exactly what your audience is searching for.",
+            icon: Sparkles,
+            title: "Proven EEAT Portfolio",
+            description: "Managed 50+ enterprise-scale projects with 95% bug-free delivery on technical content.",
+        },
+        {
+            icon: Globe,
+            title: "Global Strategy, Local Reach",
+            description: "Expertise in SEO content for local business landing pages across US, EU, and India.",
+        },
+        {
+            icon: Zap,
+            title: "ROI-First Mindset",
+            description: "Clients see an average 30% lift in MQLs within 6 months of execution.",
+        },
+        {
+            icon: Database,
+            title: "Future-Proof Content",
+            description: "Optimized for AI Overviews with semantic richness and direct answer formatting.",
         },
         {
             icon: UserCheck,
             title: "Subject Matter Experts",
-            description: "Our writers aren't generalists. We match you with experts in your specific industry.",
+            description: "We match you with industry-specific SMEs ensuring decade-long authority.",
         },
         {
             icon: Search,
-            title: "SEO-First Approach",
-            description: "Every piece of content is built to rank, with optimized structure and keywords.",
-        },
-        {
-            icon: Zap,
-            title: "Scalable Production",
-            description: "We can scale from 4 to 40+ articles per month without compromising quality.",
-        },
-        {
-            icon: Database,
-            title: "Comprehensive Briefs",
-            description: "Detailed content briefs ensure every article hits the mark before writing begins.",
-        },
-        {
-            icon: Globe,
-            title: "Holistic Growth",
-            description: "We build ecosystem of content that lifts your entire domain authority.",
+            title: "Data-Driven Strategy",
+            description: "Every word aligns with deep user intent and 2026 EEAT guidelines.",
         },
     ];
 
@@ -66,10 +66,10 @@ export default function WhyChooseUs() {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Why Partner With <span style={{ color: contentEmerald }}>Us</span>
+                            Why Partner with <span style={{ color: contentEmerald }}>Cinute Infomedia?</span>
                         </h2>
                         <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            We transform content from a cost center into a reliable revenue generator.
+                            Transform your content into a non-stop lead engine. We don't just track rankings; we track your bottom line.
                         </p>
 
                         {/* Stats */}

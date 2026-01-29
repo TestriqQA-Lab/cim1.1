@@ -22,7 +22,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10 text-center">
                 <div
-                    className="relative rounded-3xl overflow-hidden border p-12 md:p-20"
+                    className="relative rounded-3xl overflow-hidden border p-8 md:p-20"
                     style={{
                         background: `linear-gradient(135deg, ${amazonBlue}10, ${amazonOrange}05)`,
                         borderColor: "var(--border-color)"
@@ -35,26 +35,28 @@ export default function CTA() {
                         <ShoppingCart className="w-10 h-10" />
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Ready to <span style={{ color: amazonOrange }}>Scale Sales?</span>
                     </h2>
 
-                    <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
                         Join the agencies and brands generating millions in revenue on Amazon.
                     </p>
 
-                    <Link
-                        href="/contact"
-                        className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-base md:text-lg transition-all transform hover:scale-105 hover:shadow-xl group"
-                        style={{
-                            backgroundColor: "#FFD814", // Buy Box Yellow
-                            color: "#111",
-                            boxShadow: "0 2px 5px rgba(0,0,0,0.2)"
-                        }}
-                    >
-                        Start Selling More
-                        <ArrowRight className="w-6 h-6 ml-2 transition-transform group-hover:translate-x-1" />
-                    </Link>
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <Link
+                            href="/contact"
+                            className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-full font-bold text-sm sm:text-base md:text-lg transition-all transform hover:scale-105 hover:shadow-xl group"
+                            style={{
+                                backgroundColor: "#FFD814", // Buy Box Yellow
+                                color: "#111",
+                                boxShadow: "0 2px 5px rgba(0,0,0,0.2)"
+                            }}
+                        >
+                            Start Selling More
+                            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 flex-shrink-0 transition-transform group-hover:translate-x-1" />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

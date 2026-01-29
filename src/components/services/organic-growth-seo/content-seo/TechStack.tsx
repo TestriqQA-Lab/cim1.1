@@ -17,22 +17,22 @@ export default function TechStack() {
 
     const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
         creation: [
-            { name: "Grammarly", description: "Writing Asst", logo: "/images/techstack_logos/Grammarly-logo.jpg" },
-            { name: "OpenAI", description: "AI Assistance", logo: "/images/techstack_logos/OpenAI-logo.png" },
+            { name: "Grammarly Business", description: "Professional Tone", logo: "/images/techstack_logos/Grammarly-logo.jpg" },
+            { name: "Hemmingway", description: "Readability Score", logo: "/images/techstack_logos/Markdown-logo.png" },
+            { name: "Custom AI", description: "Brief Generation", logo: "/images/techstack_logos/OpenAI-logo.png" },
             { name: "Canva", description: "Visual Content", logo: "/images/brand-identity-design-logos/canva-logo.png" },
-            { name: "Markdown", description: "Focus Writing", logo: "/images/techstack_logos/Markdown-logo.png" },
         ],
         optimization: [
             { name: "Surfer SEO", description: "Content Audit", logo: "/images/techstack_logos/Surfer-SEO-logo.webp" },
-            { name: "Clearscope", description: "Relevance", logo: "/images/techstack_logos/Clearscope-logo.jpg" },
-            { name: "Yoast SEO", description: "On-Page SEO", logo: "/images/techstack_logos/Yoast-SEO-logo.png" },
-            { name: "RankMath", description: "Evaluation", logo: "/images/techstack_logos/RankMath-logo.jpg" },
+            { name: "Clearscope", description: "Semantic Depth", logo: "/images/techstack_logos/Clearscope-logo.jpg" },
+            { name: "Semrush", description: "KW Research", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
+            { name: "Ahrefs", description: "Gap Analysis", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
         ],
         management: [
-            { name: "WordPress", description: "CMS", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
-            { name: "HubSpot", description: "Marketing Hub", logo: "/images/ai_automation_logos/hubspot-logo.png" },
-            { name: "Notion", description: "Planning", logo: "/images/techstack_logos/Notion-logo.png" },
-            { name: "Jira", description: "Workflow", logo: "/images/techstack_logos/jira-logo.svg" },
+            { name: "WordPress", description: "CMS Delivery", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
+            { name: "HubSpot", description: "B2B Marketing", logo: "/images/ai_automation_logos/hubspot-logo.png" },
+            { name: "Notion", description: "Content Calendar", logo: "/images/techstack_logos/Notion-logo.png" },
+            { name: "Jira", description: "Async Workflow", logo: "/images/techstack_logos/jira-logo.svg" },
         ],
     };
 

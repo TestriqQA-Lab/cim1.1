@@ -16,7 +16,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="relative rounded-3xl overflow-hidden border p-12 md:p-16 text-center"
+                    className="relative rounded-3xl overflow-hidden border p-8 md:p-16 text-center"
                     style={{
                         background: "linear-gradient(135deg, var(--card-bg) 0%, var(--background) 100%)",
                         borderColor: "var(--border-color)"
@@ -30,26 +30,26 @@ export default function CTA() {
                         <FileText className="w-32 h-32" style={{ color: seoGreen }} />
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
                         Stop Guessing. Start Growing with a <br />
                         <span style={{ color: seoGreen }}>Free On-Page SEO Audit.</span>
                     </h2>
 
-                    <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
                         Is your website ready for the 2026 search landscape? Get a detailed breakdown of your site's health and a roadmap to #1 rankings.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                            className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
                             style={{
                                 backgroundColor: seoGreen,
                                 boxShadow: `0 4px 20px ${seoGreen}40`
                             }}
                         >
                             Claim Your Free Audit Today
-                            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
+                            <ArrowRight className="w-4 h-4 md:w-6 md:h-6 ml-2 flex-shrink-0" />
                         </Link>
                     </div>
 

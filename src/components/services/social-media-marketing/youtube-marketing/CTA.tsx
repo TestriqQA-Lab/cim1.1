@@ -26,7 +26,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="relative rounded-[2rem] p-8 md:p-12 lg:p-16 overflow-hidden"
+                    className="relative rounded-[2rem] p-6 md:p-12 lg:p-16 overflow-hidden"
                     style={{
                         backgroundColor: youtubeRed,
                     }}
@@ -55,12 +55,12 @@ export default function CTA() {
                                 </span>
                             </div>
 
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
                                 Ready to Scale Your{" "}
                                 <span className="text-white/80">Video Authority?</span>
                             </h2>
 
-                            <p className="text-lg text-white/80 mb-8 max-w-xl">
+                            <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl mx-auto lg:mx-0">
                                 Don&apos;t let your competitors own the screen. Claim your FREE YouTube Strategy Audit & Ads Roadmap today.
                             </p>
 
@@ -75,14 +75,14 @@ export default function CTA() {
                             </div>
 
                             {/* CTA Buttons */}
-                            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 bg-white rounded-full font-bold text-base md:text-lg transition-all hover:shadow-lg hover:scale-105"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 bg-white rounded-full font-bold text-sm sm:text-base md:text-lg transition-all hover:shadow-lg hover:scale-105"
                                     style={{ color: youtubeRed }}
                                 >
                                     Claim Your Free Audit Now
-                                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
+                                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 flex-shrink-0" />
                                 </Link>
                             </div>
                         </div>
