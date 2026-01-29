@@ -92,7 +92,7 @@ export default function FAQ() {
                                     {openIndex === idx ? (
                                         <Minus className="w-4 h-4 text-white" />
                                     ) : (
-                                        <Plus className="w-4 h-4 text-[var(--secondary-text)]" />
+                                        <Plus className="w-4 h-4 text-[var(--foreground)]" />
                                     )}
                                 </div>
                             </button>
@@ -102,7 +102,7 @@ export default function FAQ() {
                                     }`}
                             >
                                 <div className="px-6 pb-6 pt-0">
-                                    <p style={{ color: "var(--secondary-text)", lineHeight: "1.7" }}>
+                                    <p style={{ color: "var(--foreground)", lineHeight: "1.7" }}>
                                         {faq.answer}
                                     </p>
                                 </div>

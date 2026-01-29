@@ -35,12 +35,12 @@ export default function CTA() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
-                        Get Found On The <br />
-                        <span style={{ color: localAmber }}>First Page</span>
+                        GET FOUND ON THE <br />
+                        <span style={{ color: localAmber }}>FIRST PAGE</span>
                     </h2>
 
                     <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
-                        Stop losing customers to competitors who rank higher. Get your free local audit today.
+                        Stop losing customers to competitors who rank higher. 83% of local searches lead to in-store visits within 24 hours. If you're not in the top 3 Google Map Pack results, you're handing high-intent customers to competitors on a silver platter.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -52,7 +52,7 @@ export default function CTA() {
                                 boxShadow: `0 4px 20px ${localAmber}40`
                             }}
                         >
-                            Claim Your Free Audit
+                            Claim Your Free Local SEO Audit Now
                             <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                         </Link>
                     </div>

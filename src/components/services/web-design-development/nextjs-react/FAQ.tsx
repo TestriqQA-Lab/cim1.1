@@ -96,7 +96,7 @@ export default function FAQ() {
                                         }`}
                                 >
                                     <div className="p-6 pt-0 border-t" style={{ borderColor: "var(--border-color)" }}>
-                                        <p className="text-lg leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                        <p className="text-lg leading-relaxed" style={{ color: "var(--foreground)" }}>
                                             {faq.answer}
                                         </p>
                                     </div>

@@ -103,7 +103,7 @@ export default function FAQ() {
                                         opacity: isOpen ? 1 : 0
                                     }}
                                 >
-                                    <div className="p-6 pt-0 text-base leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                    <div className="p-6 pt-0 text-base leading-relaxed" style={{ color: "var(--foreground)" }}>
                                         {faq.answer}
                                     </div>
                                 </div>

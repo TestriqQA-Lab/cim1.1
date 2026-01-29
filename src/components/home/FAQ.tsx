@@ -47,7 +47,7 @@ export default function FAQ() {
                                     </div>
                                     <div style={{ flex: 1 }}>
                                         <div style={{ fontWeight: 700, marginBottom: 8 }}>{faq.q}</div>
-                                        {faqOpen === i && <div style={{ color: "var(--secondary-text)", marginTop: 8 }}>{faq.a}</div>}
+                                        {faqOpen === i && <div style={{ color: "var(--foreground)", marginTop: 8 }}>{faq.a}</div>}
                                     </div>
                                 </div>
                             </button>

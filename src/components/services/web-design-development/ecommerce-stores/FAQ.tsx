@@ -92,7 +92,7 @@ export default function FAQ() {
                                     className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"
                                         }`}
                                 >
-                                    <p className="text-base leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                    <p className="text-base leading-relaxed" style={{ color: "var(--foreground)" }}>
                                         {faq.answer}
                                     </p>
                                 </div>

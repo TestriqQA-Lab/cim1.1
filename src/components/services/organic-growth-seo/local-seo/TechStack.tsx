@@ -48,7 +48,7 @@ export default function TechStack() {
                         Local <span style={{ color: localAmber }}>Tool Stack</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We use industry-leading software to ensure your business data is accurate everywhere.
+                        Industry-leading software for consistent business data everywhere. We leverage the most advanced Google Maps marketing services tools to ensure your NAP data is accurate, synchronized, and optimized across every platform.
                     </p>
                 </div>
 
