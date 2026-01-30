@@ -29,15 +29,26 @@ function BlogNavbarFallback() {
     );
 }
 
-export default function BlogLayout({
+import { client } from "@/sanity/lib/client";
+import { allPostsQuery, categoriesWithPostCountQuery } from "@/sanity/lib/queries";
+import { mapSanityPostToBlogPost } from "@/sanity/lib/mapper";
+
+export default async function BlogLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
+    const [categories, sanityPosts] = await Promise.all([
+        client.fetch(categoriesWithPostCountQuery),
+        client.fetch(allPostsQuery)
+    ]);
+
+    const posts = sanityPosts.map(mapSanityPostToBlogPost);
+
     return (
         <>
             <Suspense fallback={<BlogNavbarFallback />}>
-                <BlogNavbar />
+                <BlogNavbar categories={categories} posts={posts} />
             </Suspense>
             {children}
         </>

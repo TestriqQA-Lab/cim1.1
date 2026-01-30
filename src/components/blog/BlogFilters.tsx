@@ -1,6 +1,6 @@
 "use client";
 
-import { categories, blogPosts } from "@/data/blog";
+import { useRouter } from "next/navigation";
 import SearchBar from "./SearchBar";
 import { BookOpen, Layers, TrendingUp, Sparkles, X } from "lucide-react";
 
@@ -19,6 +19,8 @@ interface BlogFiltersProps {
     onSearch: (query: string) => void;
     onCategorySelect: (category: string | null) => void;
     onClear: () => void;
+    categories: { name: string; count: number }[];
+    totalPostsCount: number;
 }
 
 export default function BlogFilters({
@@ -28,13 +30,9 @@ export default function BlogFilters({
     onSearch,
     onCategorySelect,
     onClear,
+    categories,
+    totalPostsCount
 }: BlogFiltersProps) {
-    // Get category post counts
-    const categoryCounts: Record<string, number> = {};
-    blogPosts.forEach((post) => {
-        categoryCounts[post.category] = (categoryCounts[post.category] || 0) + 1;
-    });
-
     const hasActiveFilters = searchQuery || selectedCategory;
 
     return (
@@ -89,28 +87,28 @@ export default function BlogFilters({
                                 color: !selectedCategory ? "white" : "var(--brand-purple)",
                             }}
                         >
-                            {blogPosts.length}
+                            {totalPostsCount}
                         </span>
                     </span>
                 </button>
 
-                {categories.map((category) => (
+                {categories.map((cat) => (
                     <button
-                        key={category}
-                        onClick={() => onCategorySelect(category)}
+                        key={cat.name}
+                        onClick={() => onCategorySelect(cat.name)}
                         className="px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 border hover:border-[var(--brand-purple)]"
                         style={{
                             backgroundColor:
-                                selectedCategory === category
+                                selectedCategory === cat.name
                                     ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)"
                                     : "transparent",
-                            color: selectedCategory === category ? "var(--brand-purple)" : "var(--foreground)",
-                            borderColor: selectedCategory === category ? "var(--brand-purple)" : "var(--border-color)",
+                            color: selectedCategory === cat.name ? "var(--brand-purple)" : "var(--foreground)",
+                            borderColor: selectedCategory === cat.name ? "var(--brand-purple)" : "var(--border-color)",
                         }}
                     >
                         <span className="flex items-center gap-2">
-                            {categoryIcons[category] || <Layers className="w-4 h-4" />}
-                            {category}
+                            {categoryIcons[cat.name] || <Layers className="w-4 h-4" />}
+                            {cat.name}
                             <span
                                 className="px-2 py-0.5 rounded-full text-xs"
                                 style={{
@@ -118,7 +116,7 @@ export default function BlogFilters({
                                     color: "var(--brand-purple)",
                                 }}
                             >
-                                {categoryCounts[category] || 0}
+                                {cat.count}
                             </span>
                         </span>
                     </button>

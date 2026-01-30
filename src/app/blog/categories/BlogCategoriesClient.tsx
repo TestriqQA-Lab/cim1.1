@@ -1,11 +1,7 @@
 "use client";
 
 import { Suspense } from "react";
-import {
-    categories,
-    categoryDetails,
-    getBlogPostsByCategory,
-} from "@/data/blog";
+import { CategoryDetails, BlogPost } from "@/data/blog";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import {
     Code,
@@ -37,22 +33,31 @@ const iconMap: Record<string, React.ReactNode> = {
     FileText: <FileText className="w-6 h-6" />,
 };
 
-function CategoriesContent() {
+interface CategoriesContentProps {
+    categories: CategoryDetails[];
+    posts: BlogPost[];
+    sidebarCategories: string[];
+    popularPosts: BlogPost[];
+    tags: string[];
+}
+
+function CategoriesContent({ categories, posts, sidebarCategories, popularPosts, tags }: CategoriesContentProps) {
     const [searchQuery, setSearchQuery] = useState("");
 
     const filteredCategories = useMemo(() => {
-        return categoryDetails.filter((category) =>
+        return categories.filter((category) =>
             category.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
             category.description.toLowerCase().includes(searchQuery.toLowerCase())
         );
-    }, [searchQuery]);
+    }, [searchQuery, categories]);
 
     // Calculate total stats
-    const totalArticles = categories.reduce((acc, cat) => acc + getBlogPostsByCategory(cat).length, 0);
-    const totalReadTime = categories.reduce((acc, cat) => {
-        const posts = getBlogPostsByCategory(cat);
-        return acc + posts.reduce((sum, post) => sum + post.readTime, 0);
-    }, 0);
+    const totalArticles = posts.length;
+    const totalReadTime = posts.reduce((sum, post) => sum + post.readTime, 0);
+
+    const getCategoryPosts = (categoryName: string) => {
+        return posts.filter(post => post.category === categoryName);
+    };
 
     return (
         <main
@@ -64,6 +69,7 @@ function CategoriesContent() {
         >
             {/* Hero Section */}
             <section className="relative overflow-hidden">
+                {/* ... existing hero code ... */}
                 <div
                     className="absolute inset-0 opacity-5"
                     style={{
@@ -311,7 +317,7 @@ function CategoriesContent() {
                         {filteredCategories.length > 0 ? (
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {filteredCategories.map((category) => {
-                                    const categoryPosts = getBlogPostsByCategory(category.name);
+                                    const categoryPosts = getCategoryPosts(category.name);
                                     const totalReadTime = categoryPosts.reduce((acc, post) => acc + post.readTime, 0);
 
                                     return (
@@ -436,7 +442,7 @@ function CategoriesContent() {
                     {/* Sidebar */}
                     <div className="lg:col-span-1">
                         <div className="sticky top-24">
-                            <BlogSidebar />
+                            <BlogSidebar categories={sidebarCategories} popularPosts={popularPosts} tags={tags} />
                         </div>
                     </div>
                 </div>
@@ -445,7 +451,7 @@ function CategoriesContent() {
     );
 }
 
-export default function BlogCategoriesClient() {
+export default function BlogCategoriesClient({ categories, posts, sidebarCategories, popularPosts, tags }: CategoriesContentProps) {
     return (
         <Suspense fallback={
             <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: "var(--background)" }}>
@@ -455,7 +461,13 @@ export default function BlogCategoriesClient() {
                 </div>
             </div>
         }>
-            <CategoriesContent />
+            <CategoriesContent
+                categories={categories}
+                posts={posts}
+                sidebarCategories={sidebarCategories}
+                popularPosts={popularPosts}
+                tags={tags}
+            />
         </Suspense>
     );
 }

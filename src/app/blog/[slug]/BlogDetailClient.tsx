@@ -1,6 +1,6 @@
 "use client";
 
-import { getBlogPostsByCategory, getCategorySlug } from "@/data/blog";
+import { getCategorySlug } from "@/data/blog";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import BlogContentRenderer from "@/components/blog/BlogContentRenderer";
@@ -18,12 +18,33 @@ interface TocItem {
 }
 
 // Function to extract headings from content
-function extractHeadings(content: string): TocItem[] {
-    const headingRegex = /^(#{1,3})\s+(.+)$/gm;
+import { ContentBlock } from "@/data/blog";
+
+// Function to extract headings from content
+function extractHeadings(markdown: string, blocks?: ContentBlock[]): TocItem[] {
     const headings: TocItem[] = [];
+
+    // Priority 1: Extract from Content Blocks (Sanity Portable Text / Modular Blocks)
+    if (blocks && blocks.length > 0) {
+        blocks.forEach((block) => {
+            if (block.type === 'text' && ['h1', 'h2', 'h3'].includes(block.variant)) {
+                const level = parseInt(block.variant.replace('h', ''));
+                const text = block.content;
+                const id = text
+                    .toLowerCase()
+                    .replace(/[^a-z0-9\s-]/g, "")
+                    .replace(/\s+/g, "-");
+                headings.push({ id, text, level });
+            }
+        });
+        if (headings.length > 0) return headings;
+    }
+
+    // Priority 2: Fallback to Regex on Markdown String
+    const headingRegex = /^(#{1,3})\s+(.+)$/gm;
     let match;
 
-    while ((match = headingRegex.exec(content)) !== null) {
+    while ((match = headingRegex.exec(markdown)) !== null) {
         const level = match[1].length;
         const text = match[2].trim();
         const id = text
@@ -37,9 +58,9 @@ function extractHeadings(content: string): TocItem[] {
 }
 
 // Table of Contents Component
-function TableOfContents({ content }: { content: string }) {
+function TableOfContents({ markdown = "", blocks = [] }: { markdown?: string; blocks?: ContentBlock[] }) {
     const [activeId, setActiveId] = useState<string>("");
-    const headings = useMemo(() => extractHeadings(content), [content]);
+    const headings = useMemo(() => extractHeadings(markdown, blocks), [markdown, blocks]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -113,12 +134,20 @@ function TableOfContents({ content }: { content: string }) {
     );
 }
 
-export default function BlogDetailClient({ post }: { post: BlogPost }) {
-    const relatedPosts = useMemo(() => {
-        return getBlogPostsByCategory(post.category)
-            .filter((p) => p.id !== post.id)
-            .slice(0, 3);
-    }, [post]);
+export default function BlogDetailClient({
+    post,
+    relatedPosts,
+    categories,
+    popularPosts,
+    tags
+}: {
+    post: BlogPost;
+    relatedPosts: BlogPost[];
+    categories: string[];
+    popularPosts: BlogPost[];
+    tags: string[];
+}) {
+    // const relatedPosts = useMemo(...) // Removed local calculation
 
     const formattedDate = new Date(post.publishedAt).toLocaleDateString("en-US", {
         year: "numeric",
@@ -288,7 +317,7 @@ export default function BlogDetailClient({ post }: { post: BlogPost }) {
                         <article className="xl:col-span-2">
                             {/* Mobile Table of Contents - visible on screens < xl */}
                             <div className="xl:hidden mb-8">
-                                <TableOfContents content={post.content} />
+                                <TableOfContents markdown={post.content} blocks={post.contentBlocks} />
                             </div>
                             {/* Article Content */}
                             <div
@@ -321,7 +350,7 @@ export default function BlogDetailClient({ post }: { post: BlogPost }) {
                             </div>
 
                             {/* Related Posts */}
-                            {relatedPosts.length > 0 && (
+                            {relatedPosts && relatedPosts.length > 0 && (
                                 <div className="mt-16">
                                     <h2 className="text-2xl font-bold mb-8">Related Articles</h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -337,8 +366,13 @@ export default function BlogDetailClient({ post }: { post: BlogPost }) {
                         <aside className="hidden xl:block xl:col-span-1">
                             {/* 👇 Sticky applies to FULL article height */}
                             <div className="sticky top-24">
-                                <TableOfContents content={post.content} />
-                                <BlogSidebar currentPostSlug={post.slug} />
+                                <TableOfContents markdown={post.content} blocks={post.contentBlocks} />
+                                <BlogSidebar
+                                    currentPostSlug={post.slug}
+                                    categories={categories}
+                                    popularPosts={popularPosts}
+                                    tags={tags}
+                                />
                             </div>
                         </aside>
 

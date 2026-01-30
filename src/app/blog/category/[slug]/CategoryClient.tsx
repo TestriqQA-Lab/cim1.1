@@ -1,6 +1,6 @@
 "use client";
 
-import { categories, getBlogPostsByCategory, getCategoryDetails, categoryDetails, getCategorySlug } from "@/data/blog";
+import { CategoryDetails, BlogPost } from "@/data/blog";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import {
@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useMemo } from "react";
-import { CategoryDetails } from "@/data/blog";
+
 
 // Icon mapping for categories
 const iconMap: Record<string, React.ReactNode> = {
@@ -47,16 +47,24 @@ const smallIconMap: Record<string, React.ReactNode> = {
 
 export default function CategoryClient({
     categoryName,
-    categoryInfo
+    categoryInfo,
+    posts,
+    categories,
+    popularPosts,
+    tags
 }: {
     categoryName: string;
     categoryInfo: CategoryDetails;
+    posts: BlogPost[];
+    categories: string[];
+    popularPosts: BlogPost[];
+    tags: string[];
 }) {
     const categoryPosts = useMemo(() => {
-        return getBlogPostsByCategory(categoryName).sort(
+        return posts.sort(
             (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
         );
-    }, [categoryName]);
+    }, [posts]);
 
     const latestPosts = categoryPosts.slice(0, 3);
     const allPosts = categoryPosts;
@@ -195,7 +203,11 @@ export default function CategoryClient({
                         </div>
                         <div className="lg:col-span-1">
                             <div className="sticky top-24">
-                                <BlogSidebar />
+                                <BlogSidebar
+                                    categories={categories}
+                                    popularPosts={popularPosts}
+                                    tags={tags}
+                                />
                             </div>
                         </div>
                     </div>
