@@ -291,7 +291,7 @@ export default function Hero() {
                                 Technologies We Use
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["WordPress 6.4+", "PHP 8.2", "WooCommerce", "Elementor", "ACF Pro", "Gutenberg"].map((tech, idx) => (
+                                {["WordPress 6.7+", "PHP 8.4", "WooCommerce", "Elementor", "ACF Pro", "Gutenberg"].map((tech, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"

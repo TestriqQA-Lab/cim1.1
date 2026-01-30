@@ -14,8 +14,8 @@ export default function TechStack() {
             icon: Code2,
             description: "The foundation of modern React development",
             technologies: [
-                { name: "Next.js 15", description: "React framework for production", logo: "/images/techstack_logos/nextjs-logo.svg" },
-                { name: "React 18", description: "UI component library", logo: "/images/techstack_logos/react-logo.svg" },
+                { name: "Next.js 16", description: "React framework for production", logo: "/images/techstack_logos/nextjs-logo.svg" },
+                { name: "React 19", description: "UI component library", logo: "/images/techstack_logos/react-logo.svg" },
                 { name: "TypeScript", description: "Type-safe JavaScript", logo: "/images/techstack_logos/typescript-logo.svg" },
                 { name: "Node.js", description: "JavaScript runtime", logo: "/images/techstack_logos/nodejs-logo.svg" },
                 { name: "Vite", description: "Next-gen build tool", logo: "/images/techstack_logos/vitejs-logo.svg" },

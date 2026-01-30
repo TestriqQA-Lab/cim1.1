@@ -19,7 +19,7 @@ export default function FAQ() {
         },
         {
             q: "Why is on-page SEO important for website ranking?",
-            a: "On-page SEO tells Google exactly what your content is about. Without it, even the best content lacks the relevance signals needed to rank, especially post-2025 AI-driven updates.",
+            a: "On-page SEO tells Google exactly what your content is about. Without it, even the best content lacks the relevance signals needed to rank, especially 2026 AI-driven updates.",
         },
         {
             q: "How long does it take to see results from on-page SEO?",

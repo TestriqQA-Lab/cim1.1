@@ -214,7 +214,7 @@ export default function Hero() {
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            React 18 Ready
+                                            React 19 Ready
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                             Concurrent features enabled
@@ -243,7 +243,7 @@ export default function Hero() {
                                             App Router
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Next.js 15 powered
+                                            Next.js 16 powered
                                         </p>
                                     </div>
                                 </div>
@@ -262,7 +262,7 @@ export default function Hero() {
                                 Tech Stack
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Next.js 15", "React 18", "TypeScript", "Tailwind CSS", "Vercel"].map((tech, idx) => (
+                                {["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Vercel"].map((tech, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border font-mono"

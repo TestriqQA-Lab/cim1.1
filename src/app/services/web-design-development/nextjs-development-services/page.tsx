@@ -10,7 +10,7 @@ import CTA from "@/components/services/web-design-development/nextjs-development
 
 export const metadata: Metadata = {
     title: "Next.js Development Agency | Expert React JS Development Company 2026",
-    description: "Premier Next.js development services for high-performance apps. Hire React developers for Enterprise, SaaS & E-commerce. Boost Core Web Vitals & ROI today!",
+    description: "Premier Next.js 16 development services. Hire React 19 developers for Enterprise, SaaS & E-commerce. Boost Core Web Vitals & ROI.",
     alternates: {
         canonical: "/services/web-design-development/nextjs-development-services",
     },

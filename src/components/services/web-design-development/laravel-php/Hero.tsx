@@ -301,7 +301,7 @@ export default function Hero() {
                                 Technologies We Use
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Laravel 10+", "PHP 8.2", "Livewire", "Alpine.js", "MySQL", "Redis", "Docker"].map((tech, idx) => (
+                                {["Laravel 11+", "PHP 8.4", "Livewire", "Alpine.js", "MySQL", "Redis", "Docker"].map((tech, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"

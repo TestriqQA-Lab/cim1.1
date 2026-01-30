@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Shield,
-            title: "Post-2025 Future Proofing",
+            title: "2026 Future Proofing",
             description: "Our solutions are built with Human-in-the-Loop (HITL) Support protocols and strict data privacy standards, ensuring your specific implementation is safe, ethical, and aligned with the latest core algorithm signals.",
             gradient: "from-blue-500 via-cyan-500 to-teal-500",
             iconBg: "bg-blue-500/10",

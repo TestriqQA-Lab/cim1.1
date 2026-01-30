@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
         {
             icon: Target,
             title: "No Black-Hat Shortcuts",
-            description: "We build sustainable authority that withstands the 2025/2026 Core Updates.",
+            description: "We build sustainable authority that withstands the 2026 Core Updates.",
         },
         {
             icon: Award,

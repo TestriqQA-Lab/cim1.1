@@ -25,7 +25,7 @@ export default function FAQ() {
         },
         {
             question: "Do you offer post-launch support and maintenance?",
-            answer: "Yes! We provide ongoing Ecommerce Management Services, including security patches, feature updates, and performance monitoring to ensure your store remains competitive post-2025."
+            answer: "Yes! We provide ongoing Ecommerce Management Services, including security patches, feature updates, and performance monitoring to ensure your store remains competitive in 2026."
         },
         {
             question: "Can you help migrate my store from Magento to Shopify?",

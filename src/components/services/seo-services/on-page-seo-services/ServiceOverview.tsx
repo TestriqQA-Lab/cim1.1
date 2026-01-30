@@ -44,7 +44,7 @@ export default function ServiceOverview() {
         {
             icon: Gauge,
             title: "Core Web Vitals & Page Speed",
-            description: "Post-2025 updates demand speed. We optimize LCP, FID, and CLS, ensuring a seamless user experience SEO that keeps visitors engaged.",
+            description: "2026 updates demand speed. We optimize LCP, FID, and CLS, ensuring a seamless user experience SEO that keeps visitors engaged.",
             color: "#EC4899",
         },
         {

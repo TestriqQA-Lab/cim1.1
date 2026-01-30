@@ -230,7 +230,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    2025
+                                    2026
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
                                     Core Web Vitals

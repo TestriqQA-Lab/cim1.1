@@ -18,7 +18,7 @@ export default function CTA() {
         },
         {
             question: "How do I choose the best Shopify agency for my business?",
-            answer: "Look for a certified Shopify Partner with a deep understanding of both technical development and digital marketing. The best agency should prioritize performance (speed) and SEO, as these are the primary drivers of e-commerce revenue in the post-2025 search era."
+            answer: "Look for a certified Shopify Partner with a deep understanding of both technical development and digital marketing. The best agency should prioritize performance (speed) and SEO, as these are the primary drivers of e-commerce revenue in the 2026 search era."
         },
         {
             question: "What is included in a full-service Shopify marketing package?",

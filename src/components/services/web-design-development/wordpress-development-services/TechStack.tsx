@@ -14,8 +14,8 @@ export default function TechStack() {
             icon: Code2,
             description: "Foundation of future-proof WordPress development",
             technologies: [
-                { name: "WordPress 6.x+", description: "Core CMS Platform", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
-                { name: "PHP 8.3+", description: "Server-side Engine", logo: "/images/techstack_logos/php-logo.svg" },
+                { name: "WordPress 6.7+", description: "Core CMS Platform", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
+                { name: "PHP 8.4+", description: "Server-side Engine", logo: "/images/techstack_logos/php-logo.svg" },
                 { name: "MySQL 8", description: "Database Management", logo: "/images/techstack_logos/mysql-logo.svg" },
                 { name: "Gutenberg", description: "Custom Block Dev", logo: "/images/techstack_logos/Gutenberg-logo.svg" },
                 { name: "REST/GraphQL", description: "Advanced API Sync", logo: "/images/techstack_logos/REST-API-logo.png" },

@@ -124,7 +124,7 @@ export default function Hero() {
                         </p>
 
                         <p className="text-base md:text-lg animate-slideUp delay-200" style={{ color: "var(--secondary-text)" }}>
-                            Whether you're looking for an <strong>On-page SEO agency</strong> near you or scaling a global enterprise, our experts provide the precision needed to survive the post-2025 core updates.
+                            Whether you're looking for an <strong>On-page SEO agency</strong> near you or scaling a global enterprise, our experts provide the precision needed to survive the 2026 core updates.
                         </p>
 
                         {/* CTA Buttons */}
