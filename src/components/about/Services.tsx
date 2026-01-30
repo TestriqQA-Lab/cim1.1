@@ -93,7 +93,7 @@ export default function Services() {
             description: "Platform-specific strategies focused on content, community-building, and measurable brand growth",
             badgeGrad: "from-[var(--brand-cyan)] to-[var(--brand-teal)]",
             brandText: "var(--brand-cyan)",
-            href: "/services/social-media-marketing",
+            href: "/services/social-media-marketing-services",
             details: [
                 "Social Strategy & Content Calendars",
                 "Short/Long Form Video Planning",

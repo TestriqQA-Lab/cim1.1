@@ -1,13 +1,13 @@
 "use client";
 
-import { ArrowRight, ChevronRight, Briefcase, Users, TrendingUp } from "lucide-react";
+import { ArrowRight, ChevronRight, Play, TrendingUp, BarChart } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Linkedin } from "lucide-react";
+import { Youtube } from "lucide-react";
 
 export default function Hero() {
-    // LinkedIn brand color
-    const linkedinBlue = "#0A66C2";
+    // YouTube brand color
+    const youtubeRed = "#FF0000";
 
     return (
         <section
@@ -19,9 +19,9 @@ export default function Hero() {
                 className="absolute inset-0 z-0"
                 style={{
                     backgroundImage: `
-                        radial-gradient(circle at 15% 50%, rgba(10, 102, 194, 0.12), transparent 25%),
-                        radial-gradient(circle at 85% 30%, rgba(10, 102, 194, 0.08), transparent 25%),
-                        radial-gradient(circle at 50% 80%, rgba(10, 102, 194, 0.06), transparent 25%)
+                        radial-gradient(circle at 15% 50%, rgba(255, 0, 0, 0.08), transparent 25%),
+                        radial-gradient(circle at 85% 30%, rgba(255, 0, 0, 0.05), transparent 25%),
+                        radial-gradient(circle at 50% 80%, rgba(255, 0, 0, 0.04), transparent 25%)
                     `,
                 }}
             >
@@ -29,7 +29,7 @@ export default function Hero() {
                 <div
                     className="absolute inset-0 opacity-[0.03]"
                     style={{
-                        backgroundImage: `linear-gradient(${linkedinBlue} 1px, transparent 1px), linear-gradient(90deg, ${linkedinBlue} 1px, transparent 1px)`,
+                        backgroundImage: `linear-gradient(${youtubeRed} 1px, transparent 1px), linear-gradient(90deg, ${youtubeRed} 1px, transparent 1px)`,
                         backgroundSize: "40px 40px",
                     }}
                 />
@@ -49,8 +49,8 @@ export default function Hero() {
                     50% { transform: translateY(-10px); }
                 }
                 @keyframes pulse-glow {
-                    0%, 100% { box-shadow: 0 0 20px rgba(10, 102, 194, 0.2); }
-                    50% { box-shadow: 0 0 40px rgba(10, 102, 194, 0.4); }
+                    0%, 100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.2); }
+                    50% { box-shadow: 0 0 40px rgba(255, 0, 0, 0.4); }
                 }
                 .animate-slideUp {
                     animation: slideUp 0.6s ease-out forwards;
@@ -81,22 +81,22 @@ export default function Hero() {
                             <ChevronRight className="w-4 h-4" />
                             <Link href="/services" className="hover:underline">Services</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <Link href="/services/social-media-marketing" className="hover:underline">Social Media</Link>
+                            <Link href="/services/social-media-marketing-services" className="hover:underline">Social Media</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <span style={{ color: linkedinBlue }}>LinkedIn Marketing</span>
+                            <span style={{ color: youtubeRed }}>YouTube Marketing</span>
                         </nav>
 
                         {/* Badge */}
                         <div
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm animate-fadeIn"
                             style={{
-                                backgroundColor: `${linkedinBlue}10`,
-                                borderColor: `${linkedinBlue}30`,
+                                backgroundColor: `${youtubeRed}10`,
+                                borderColor: `${youtubeRed}30`,
                             }}
                         >
-                            <Linkedin className="w-4 h-4" style={{ color: linkedinBlue }} />
-                            <span className="text-sm font-medium" style={{ color: linkedinBlue }}>
-                                LinkedIn Marketing Partner
+                            <Youtube className="w-4 h-4" style={{ color: youtubeRed }} />
+                            <span className="text-sm font-medium" style={{ color: youtubeRed }}>
+                                YouTube Marketing Partner
                             </span>
                         </div>
 
@@ -105,31 +105,33 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            LinkedIn Marketing Services for{" "}
-                            <span className="relative inline-block" style={{ color: linkedinBlue }}>
-                                B2B Growth
+                            Elite{" "}
+                            <span className="relative inline-block" style={{ color: youtubeRed }}>
+                                YouTube Marketing
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
-                                    style={{ color: linkedinBlue }}
+                                    style={{ color: youtubeRed }}
                                     viewBox="0 0 100 10"
                                     preserveAspectRatio="none"
                                 >
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
                                 </svg>
-                            </span>
+                            </span>{" "}
+                            Services
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Reach 1.2B+ professionals with elite, data-driven LinkedIn marketing strategies. At Cinute Infomedia, we don&apos;t just &quot;run ads&quot; but we build high-conversion B2B engines that generate qualified leads, establish industry authority, and drive measurable revenue in the post-2025 AI-search era.
+                            As a globally recognized YouTube marketing agency with 30+ years of collective expertise in digital growth, we don't just "post videos", we engineer high-conversion ecosystems. Leveraging 2026 EEAT guidelines, we deliver YouTube marketing services that outrank, outperform, and outscale the competition.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Lead Generation",
-                                "Sponsored Content",
-                                "InMail Campaigns",
-                                "Account-Based Marketing",
+                                "ROI-First Strategy",
+                                "EEAT-Certified Content",
+                                "Pro Channel Management",
+                                "Advanced Video Marketing",
+                                "Global Multilingual Reach",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -139,7 +141,7 @@ export default function Hero() {
                                         borderColor: "var(--border-color)",
                                     }}
                                 >
-                                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: linkedinBlue }} />
+                                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: youtubeRed }} />
                                     <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{feature}</span>
                                 </div>
                             ))}
@@ -150,14 +152,14 @@ export default function Hero() {
                             <Link
                                 href="/contact"
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
-                                style={{ backgroundColor: linkedinBlue }}
+                                style={{ backgroundColor: youtubeRed }}
                             >
-                                Book Free Strategy Audit
+                                Book Your Free Audit Today
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
-                            <Link
-                                href="#process"
+                            {/* <Link
+                                href="#portfolio"
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border transition-all hover:bg-accent"
                                 style={{
                                     borderColor: "var(--border-color)",
@@ -165,25 +167,25 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Explore Our Process
-                            </Link>
+                                View Our Case Studies
+                            </Link> */}
                         </div>
 
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>1.2B+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Global Professional Reach</p>
+                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>25%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Reduction in CPA</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>85%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Higher B2B Lead Quality</p>
+                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>95%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Client Retention</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>300%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>ROI Growth (Tech/SaaS)</p>
+                                <h4 className="text-3xl font-bold" style={{ color: youtubeRed }}>300%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Traffic Growth</p>
                             </div>
                         </div>
                     </div>
@@ -195,16 +197,16 @@ export default function Hero() {
                             <div
                                 className="relative w-full max-w-lg aspect-square rounded-3xl overflow-hidden border flex items-center justify-center animate-float-gentle"
                                 style={{
-                                    borderColor: `${linkedinBlue}30`,
-                                    backgroundColor: `${linkedinBlue}05`,
-                                    boxShadow: `0 0 30px ${linkedinBlue}20`,
+                                    borderColor: `${youtubeRed}30`,
+                                    backgroundColor: `${youtubeRed}05`,
+                                    boxShadow: `0 0 30px ${youtubeRed}20`,
                                 }}
                             >
                                 {/* Hero Image */}
                                 <div className="w-[80%] h-[80%] relative flex items-center justify-center p-8 ">
                                     <Image
-                                        src="/images/techstack_logos/linkedin-logo-hero-image.avif"
-                                        alt="LinkedIn Marketing"
+                                        src="/images/techstack_logos/Youtube-logo-hero-image.png"
+                                        alt="YouTube Marketing"
                                         width={400}
                                         height={400}
                                         className="object-contain rounded-2xl"
@@ -214,11 +216,11 @@ export default function Hero() {
                                 {/* Decorative circles */}
                                 <div
                                     className="absolute w-72 h-72 rounded-full border opacity-20"
-                                    style={{ borderColor: linkedinBlue }}
+                                    style={{ borderColor: youtubeRed }}
                                 />
                                 <div
                                     className="absolute w-96 h-96 rounded-full border opacity-10"
-                                    style={{ borderColor: linkedinBlue }}
+                                    style={{ borderColor: youtubeRed }}
                                 />
                             </div>
 
@@ -227,22 +229,22 @@ export default function Hero() {
                                 className="absolute -bottom-4 -left-4 p-4 rounded-2xl border shadow-xl animate-pulse-glow"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
-                                    borderColor: `${linkedinBlue}30`,
+                                    borderColor: `${youtubeRed}30`,
                                 }}
                             >
                                 <div className="flex items-center gap-3">
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
-                                        style={{ backgroundColor: linkedinBlue }}
+                                        style={{ backgroundColor: youtubeRed }}
                                     >
-                                        <Briefcase className="w-6 h-6 text-white" />
+                                        <Play className="w-6 h-6 text-white ml-1" />
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            B2B Leads
+                                            High Engagement
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Decision Makers
+                                            Video First
                                         </p>
                                     </div>
                                 </div>
@@ -253,22 +255,22 @@ export default function Hero() {
                                 className="absolute -top-4 -right-4 p-4 rounded-2xl border shadow-xl"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
-                                    borderColor: `${linkedinBlue}30`,
+                                    borderColor: `${youtubeRed}30`,
                                 }}
                             >
                                 <div className="flex items-center gap-3">
                                     <div
                                         className="w-12 h-12 rounded-xl flex items-center justify-center"
-                                        style={{ backgroundColor: linkedinBlue }}
+                                        style={{ backgroundColor: youtubeRed }}
                                     >
                                         <TrendingUp className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            Thought Leadership
+                                            Max Reach
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Industry Authority
+                                            Global Audience
                                         </p>
                                     </div>
                                 </div>
@@ -283,17 +285,17 @@ export default function Hero() {
                                 borderColor: "var(--border-color)",
                             }}
                         >
-                            <p className="text-sm font-semibold mb-3" style={{ color: linkedinBlue }}>
-                                LinkedIn Ad Formats We Manage
+                            <p className="text-sm font-semibold mb-3" style={{ color: youtubeRed }}>
+                                YouTube Ad Formats We Master
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Sponsored Content", "InMail", "Text Ads", "Dynamic Ads", "Video Ads", "Carousel"].map((format, idx) => (
+                                {["Skippable In-Stream", "Non-Skippable", "Bumper Ads", "In-Feed Ads", "Shorts Ads", "Masthead"].map((format, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"
                                         style={{
-                                            backgroundColor: `${linkedinBlue}08`,
-                                            borderColor: `${linkedinBlue}20`,
+                                            backgroundColor: `${youtubeRed}08`,
+                                            borderColor: `${youtubeRed}20`,
                                             color: "var(--foreground)",
                                         }}
                                     >

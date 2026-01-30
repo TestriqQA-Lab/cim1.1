@@ -12,7 +12,7 @@ export default function Footer() {
     const ourServices = [
         { name: "Web Design & Development", href: "/services/web-design-development" },
         { name: "Mobile App Development", href: "/services/mobile-app-development" },
-        { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+        { name: "Social Media Marketing", href: "/services/social-media-marketing-services" },
         { name: "AI Workflows & Automations", href: "/services/ai-workflows-automations" },
         { name: "AI-Powered Chatbots", href: "/services/ai-powered-chatbots" },
         { name: "Organic Growth & SEO", href: "/services/organic-growth-seo" },
@@ -108,14 +108,14 @@ export default function Footer() {
         },
         {
             title: "Social Media",
-            href: "/services/social-media-marketing",
+            href: "/services/social-media-marketing-services",
             items: [
-                { name: "Facebook Marketing", href: "/services/social-media-marketing/facebook-marketing" },
-                { name: "Instagram Marketing", href: "/services/social-media-marketing/instagram-marketing" },
-                { name: "LinkedIn Marketing", href: "/services/social-media-marketing/linkedin-marketing" },
-                { name: "Pinterest Marketing", href: "/services/social-media-marketing/pinterest-marketing" },
-                { name: "X Marketing", href: "/services/social-media-marketing/x-twitter-marketing" },
-                { name: "YouTube Marketing", href: "/services/social-media-marketing/youtube-marketing" },
+                { name: "Facebook Marketing", href: "/services/social-media-marketing-services/facebook-marketing" },
+                { name: "Instagram Marketing", href: "/services/social-media-marketing-services/instagram-marketing" },
+                { name: "LinkedIn Marketing", href: "/services/social-media-marketing-services/linkedin-marketing" },
+                { name: "Pinterest Marketing", href: "/services/social-media-marketing-services/pinterest-marketing" },
+                { name: "X Marketing", href: "/services/social-media-marketing-services/x-twitter-marketing" },
+                { name: "YouTube Marketing", href: "/services/social-media-marketing-services/youtube-marketing" },
             ],
         },
     ];

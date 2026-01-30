@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import Hero from "@/components/services/social-media-marketing/instagram-marketing/Hero";
-import ServiceOverview from "@/components/services/social-media-marketing/instagram-marketing/ServiceOverview";
-import SolutionTypes from "@/components/services/social-media-marketing/instagram-marketing/SolutionTypes";
-import TechStack from "@/components/services/social-media-marketing/instagram-marketing/TechStack";
-import Process from "@/components/services/social-media-marketing/instagram-marketing/Process";
-import WhyChooseUs from "@/components/services/social-media-marketing/instagram-marketing/WhyChooseUs";
-import FAQ from "@/components/services/social-media-marketing/instagram-marketing/FAQ";
-import CTA from "@/components/services/social-media-marketing/instagram-marketing/CTA";
+import Hero from "@/components/services/social-media-marketing-services/instagram-marketing/Hero";
+import ServiceOverview from "@/components/services/social-media-marketing-services/instagram-marketing/ServiceOverview";
+import SolutionTypes from "@/components/services/social-media-marketing-services/instagram-marketing/SolutionTypes";
+import TechStack from "@/components/services/social-media-marketing-services/instagram-marketing/TechStack";
+import Process from "@/components/services/social-media-marketing-services/instagram-marketing/Process";
+import WhyChooseUs from "@/components/services/social-media-marketing-services/instagram-marketing/WhyChooseUs";
+import FAQ from "@/components/services/social-media-marketing-services/instagram-marketing/FAQ";
+import CTA from "@/components/services/social-media-marketing-services/instagram-marketing/CTA";
 
 export const metadata: Metadata = {
     title: "Best Instagram Marketing Agency | #1 Instagram Growth & Ads 2026",

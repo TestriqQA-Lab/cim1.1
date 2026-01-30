@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "@/components/services/social-media-marketing/x-twitter-marketing/Hero";
-import ServiceOverview from "@/components/services/social-media-marketing/x-twitter-marketing/ServiceOverview";
-import SolutionTypes from "@/components/services/social-media-marketing/x-twitter-marketing/SolutionTypes";
-import TechStack from "@/components/services/social-media-marketing/x-twitter-marketing/TechStack";
-import Process from "@/components/services/social-media-marketing/x-twitter-marketing/Process";
-import WhyChooseUs from "@/components/services/social-media-marketing/x-twitter-marketing/WhyChooseUs";
-import FAQ from "@/components/services/social-media-marketing/x-twitter-marketing/FAQ";
-import CTA from "@/components/services/social-media-marketing/x-twitter-marketing/CTA";
+import Hero from "@/components/services/social-media-marketing-services/x-twitter-marketing/Hero";
+import ServiceOverview from "@/components/services/social-media-marketing-services/x-twitter-marketing/ServiceOverview";
+import SolutionTypes from "@/components/services/social-media-marketing-services/x-twitter-marketing/SolutionTypes";
+import TechStack from "@/components/services/social-media-marketing-services/x-twitter-marketing/TechStack";
+import Process from "@/components/services/social-media-marketing-services/x-twitter-marketing/Process";
+import WhyChooseUs from "@/components/services/social-media-marketing-services/x-twitter-marketing/WhyChooseUs";
+import FAQ from "@/components/services/social-media-marketing-services/x-twitter-marketing/FAQ";
+import CTA from "@/components/services/social-media-marketing-services/x-twitter-marketing/CTA";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

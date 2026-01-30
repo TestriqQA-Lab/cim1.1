@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import Hero from "@/components/services/social-media-marketing/linkedin-marketing/Hero";
-import ServiceOverview from "@/components/services/social-media-marketing/linkedin-marketing/ServiceOverview";
-import SolutionTypes from "@/components/services/social-media-marketing/linkedin-marketing/SolutionTypes";
-import TechStack from "@/components/services/social-media-marketing/linkedin-marketing/TechStack";
-import Process from "@/components/services/social-media-marketing/linkedin-marketing/Process";
-import WhyChooseUs from "@/components/services/social-media-marketing/linkedin-marketing/WhyChooseUs";
-import FAQ from "@/components/services/social-media-marketing/linkedin-marketing/FAQ";
-import CTA from "@/components/services/social-media-marketing/linkedin-marketing/CTA";
+import Hero from "@/components/services/social-media-marketing-services/linkedin-marketing/Hero";
+import ServiceOverview from "@/components/services/social-media-marketing-services/linkedin-marketing/ServiceOverview";
+import SolutionTypes from "@/components/services/social-media-marketing-services/linkedin-marketing/SolutionTypes";
+import TechStack from "@/components/services/social-media-marketing-services/linkedin-marketing/TechStack";
+import Process from "@/components/services/social-media-marketing-services/linkedin-marketing/Process";
+import WhyChooseUs from "@/components/services/social-media-marketing-services/linkedin-marketing/WhyChooseUs";
+import FAQ from "@/components/services/social-media-marketing-services/linkedin-marketing/FAQ";
+import CTA from "@/components/services/social-media-marketing-services/linkedin-marketing/CTA";
 
 export const metadata: Metadata = {
     title: "LinkedIn Marketing Services | #1 B2B Lead Generation Agency 2026",

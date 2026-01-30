@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Hero from "@/components/services/social-media-marketing/facebook-marketing/Hero";
-import ServiceOverview from "@/components/services/social-media-marketing/facebook-marketing/ServiceOverview";
-import SolutionTypes from "@/components/services/social-media-marketing/facebook-marketing/SolutionTypes";
-import TechStack from "@/components/services/social-media-marketing/facebook-marketing/TechStack";
-import Process from "@/components/services/social-media-marketing/facebook-marketing/Process";
-import WhyChooseUs from "@/components/services/social-media-marketing/facebook-marketing/WhyChooseUs";
-import CTA from "@/components/services/social-media-marketing/facebook-marketing/CTA";
+import Hero from "@/components/services/social-media-marketing-services/facebook-marketing/Hero";
+import ServiceOverview from "@/components/services/social-media-marketing-services/facebook-marketing/ServiceOverview";
+import SolutionTypes from "@/components/services/social-media-marketing-services/facebook-marketing/SolutionTypes";
+import TechStack from "@/components/services/social-media-marketing-services/facebook-marketing/TechStack";
+import Process from "@/components/services/social-media-marketing-services/facebook-marketing/Process";
+import WhyChooseUs from "@/components/services/social-media-marketing-services/facebook-marketing/WhyChooseUs";
+import CTA from "@/components/services/social-media-marketing-services/facebook-marketing/CTA";
 
 export const metadata: Metadata = {
     title: "Facebook Marketing Services | Lead Gen & Ads Management Agency",

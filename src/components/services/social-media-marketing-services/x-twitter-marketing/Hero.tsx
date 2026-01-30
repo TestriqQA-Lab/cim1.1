@@ -81,7 +81,7 @@ export default function Hero() {
                             <ChevronRight className="w-4 h-4" />
                             <Link href="/services" className="hover:underline text-foreground">Services</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <Link href="/services/social-media-marketing" className="hover:underline text-foreground">Social Media</Link>
+                            <Link href="/services/social-media-marketing-services" className="hover:underline text-foreground">Social Media</Link>
                             <ChevronRight className="w-4 h-4" />
                             <span style={{ color: "var(--foreground)" }}>X (Twitter) Marketing</span>
                         </nav>

@@ -1,27 +1,27 @@
 import dynamic from 'next/dynamic';
-import Hero from '@/components/services/social-media-marketing/Hero';
-import ServiceOverview from '@/components/services/social-media-marketing/ServiceOverview';
+import Hero from '@/components/services/social-media-marketing-services/Hero';
+import ServiceOverview from '@/components/services/social-media-marketing-services/ServiceOverview';
 
 // Lazy load below-the-fold components for better performance
-const WhyChooseUs = dynamic(() => import('@/components/services/social-media-marketing/WhyChooseUs'), {
+const WhyChooseUs = dynamic(() => import('@/components/services/social-media-marketing-services/WhyChooseUs'), {
     loading: () => <div className="py-20" />,
 });
-const TypesOfServices = dynamic(() => import('@/components/services/social-media-marketing/TypesOfServices'), {
+const TypesOfServices = dynamic(() => import('@/components/services/social-media-marketing-services/TypesOfServices'), {
     loading: () => <div className="py-20" />,
 });
-const Platforms = dynamic(() => import('@/components/services/social-media-marketing/Platforms'), {
+const Platforms = dynamic(() => import('@/components/services/social-media-marketing-services/Platforms'), {
     loading: () => <div className="py-20" />,
 });
-const Process = dynamic(() => import('@/components/services/social-media-marketing/Process'), {
+const Process = dynamic(() => import('@/components/services/social-media-marketing-services/Process'), {
     loading: () => <div className="py-20" />,
 });
-const Analytics = dynamic(() => import('@/components/services/social-media-marketing/Analytics'), {
+const Analytics = dynamic(() => import('@/components/services/social-media-marketing-services/Analytics'), {
     loading: () => <div className="py-20" />,
 });
-const SocialMediaFAQ = dynamic(() => import('@/components/services/social-media-marketing/SocialMediaFAQ'), {
+const SocialMediaFAQ = dynamic(() => import('@/components/services/social-media-marketing-services/SocialMediaFAQ'), {
     loading: () => <div className="py-20" />,
 });
-const CTA = dynamic(() => import('@/components/services/social-media-marketing/CTA'), {
+const CTA = dynamic(() => import('@/components/services/social-media-marketing-services/CTA'), {
     loading: () => <div className="py-20" />,
 });
 
@@ -31,7 +31,7 @@ import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 export const metadata = getPageMetadata({
     title: 'Social Media Marketing Services | Top-Rated SMM Agency for 300% ROI',
     description: "Explode your brand's growth with our expert Social Media Marketing Services. Global SMM Agency specializing in Strategy, Paid Ads & Content. Get a Free Audit!",
-    url: '/services/social-media-marketing',
+    url: '/services/social-media-marketing-services',
     keywords: [
         'Social Media Marketing Services',
         'Social Media Management Company',
@@ -47,13 +47,13 @@ export default function SocialMediaMarketingPage() {
     const serviceSchema = generateServiceSchema({
         name: 'Social Media Marketing',
         description: 'Expert Social Media Marketing Services focused on ROI, community growth, and brand authority. Top-rated agency for startups to enterprise.',
-        urlPath: '/services/social-media-marketing',
+        urlPath: '/services/social-media-marketing-services',
     });
 
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: 'Home', url: '/' },
         { name: 'Services', url: '/services' },
-        { name: 'Social Media Marketing', url: '/services/social-media-marketing' },
+        { name: 'Social Media Marketing', url: '/services/social-media-marketing-services' },
     ]);
 
     const faqSchema = {

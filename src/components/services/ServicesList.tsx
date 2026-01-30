@@ -36,7 +36,7 @@ const services = [
     {
         icon: Share2,
         title: "Social Media Marketing",
-        slug: "social-media-marketing",
+        slug: "social-media-marketing-services",
         description: "Grow your brand presence and engage your audience across all social platforms.",
         features: ["Content Strategy", "Community Management", "Analytics"],
         gradient: "linear-gradient(135deg, var(--brand-orange), var(--brand-purple))",

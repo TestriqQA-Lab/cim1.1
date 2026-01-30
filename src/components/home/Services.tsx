@@ -35,7 +35,7 @@ export default function Services() {
         {
             icon: <Share2 className="w-6 h-6" />,
             title: "Social Media Marketing",
-            slug: "social-media-marketing",
+            slug: "social-media-marketing-services",
             bullets: [
                 "Platform-specific strategies (Facebook, Instagram, LinkedIn)",
                 "Paid social media advertising",

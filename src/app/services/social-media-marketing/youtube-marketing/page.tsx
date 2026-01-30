@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "@/components/services/social-media-marketing/youtube-marketing/Hero";
-import ServiceOverview from "@/components/services/social-media-marketing/youtube-marketing/ServiceOverview";
-import SolutionTypes from "@/components/services/social-media-marketing/youtube-marketing/SolutionTypes";
-import TechStack from "@/components/services/social-media-marketing/youtube-marketing/TechStack";
-import Process from "@/components/services/social-media-marketing/youtube-marketing/Process";
-import WhyChooseUs from "@/components/services/social-media-marketing/youtube-marketing/WhyChooseUs";
-import FAQ from "@/components/services/social-media-marketing/youtube-marketing/FAQ";
-import CTA from "@/components/services/social-media-marketing/youtube-marketing/CTA";
+import Hero from "@/components/services/social-media-marketing-services/youtube-marketing/Hero";
+import ServiceOverview from "@/components/services/social-media-marketing-services/youtube-marketing/ServiceOverview";
+import SolutionTypes from "@/components/services/social-media-marketing-services/youtube-marketing/SolutionTypes";
+import TechStack from "@/components/services/social-media-marketing-services/youtube-marketing/TechStack";
+import Process from "@/components/services/social-media-marketing-services/youtube-marketing/Process";
+import WhyChooseUs from "@/components/services/social-media-marketing-services/youtube-marketing/WhyChooseUs";
+import FAQ from "@/components/services/social-media-marketing-services/youtube-marketing/FAQ";
+import CTA from "@/components/services/social-media-marketing-services/youtube-marketing/CTA";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

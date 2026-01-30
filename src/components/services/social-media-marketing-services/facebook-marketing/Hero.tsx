@@ -1,16 +1,11 @@
 "use client";
 
-import { ArrowRight, ChevronRight, Heart, Camera, Sparkles, TrendingUp } from "lucide-react";
+import { ArrowRight, ChevronRight, Users, TrendingUp, Target, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram } from "lucide-react";
+import { Facebook } from "lucide-react";
 
 export default function Hero() {
-    // Instagram gradient colors
-    const instagramPink = "#E1306C";
-    const instagramPurple = "#C13584";
-    const instagramOrange = "#F77737";
-
     return (
         <section
             className="relative min-h-screen pt-14 pb-16 transition-colors duration-300 overflow-hidden"
@@ -21,9 +16,8 @@ export default function Hero() {
                 className="absolute inset-0 z-0"
                 style={{
                     backgroundImage: `
-                        radial-gradient(circle at 15% 50%, rgba(225, 48, 108, 0.12), transparent 25%),
-                        radial-gradient(circle at 85% 30%, rgba(193, 53, 132, 0.08), transparent 25%),
-                        radial-gradient(circle at 50% 80%, rgba(247, 119, 55, 0.06), transparent 25%)
+                        radial-gradient(circle at 15% 50%, rgba(24, 119, 242, 0.12), transparent 25%),
+                        radial-gradient(circle at 85% 30%, rgba(24, 119, 242, 0.08), transparent 25%)
                     `,
                 }}
             >
@@ -31,7 +25,7 @@ export default function Hero() {
                 <div
                     className="absolute inset-0 opacity-[0.03]"
                     style={{
-                        backgroundImage: `linear-gradient(${instagramPink} 1px, transparent 1px), linear-gradient(90deg, ${instagramPink} 1px, transparent 1px)`,
+                        backgroundImage: `linear-gradient(#1877F2 1px, transparent 1px), linear-gradient(90deg, #1877F2 1px, transparent 1px)`,
                         backgroundSize: "40px 40px",
                     }}
                 />
@@ -51,13 +45,12 @@ export default function Hero() {
                     50% { transform: translateY(-10px); }
                 }
                 @keyframes pulse-glow {
-                    0%, 100% { box-shadow: 0 0 20px rgba(225, 48, 108, 0.2); }
-                    50% { box-shadow: 0 0 40px rgba(225, 48, 108, 0.4); }
+                    0%, 100% { box-shadow: 0 0 20px rgba(24, 119, 242, 0.2); }
+                    50% { box-shadow: 0 0 40px rgba(24, 119, 242, 0.4); }
                 }
-                @keyframes gradient-shift {
-                    0% { background-position: 0% 50%; }
-                    50% { background-position: 100% 50%; }
-                    100% { background-position: 0% 50%; }
+                @keyframes count-up {
+                    from { opacity: 0; transform: scale(0.5); }
+                    to { opacity: 1; transform: scale(1); }
                 }
                 .animate-slideUp {
                     animation: slideUp 0.6s ease-out forwards;
@@ -71,11 +64,6 @@ export default function Hero() {
                 .animate-pulse-glow {
                     animation: pulse-glow 3s ease-in-out infinite;
                 }
-                .instagram-gradient {
-                    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-                    background-size: 200% 200%;
-                    animation: gradient-shift 3s ease infinite;
-                }
                 .delay-100 { animation-delay: 0.1s; }
                 .delay-200 { animation-delay: 0.2s; }
                 .delay-300 { animation-delay: 0.3s; }
@@ -84,7 +72,7 @@ export default function Hero() {
             `}</style>
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     {/* Text Content */}
                     <div className="space-y-8 text-center lg:text-left">
                         {/* Breadcrumbs */}
@@ -93,38 +81,39 @@ export default function Hero() {
                             <ChevronRight className="w-4 h-4" />
                             <Link href="/services" className="hover:underline">Services</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <Link href="/services/social-media-marketing" className="hover:underline">Social Media</Link>
+                            <Link href="/services/social-media-marketing-services" className="hover:underline">Social Media</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <span style={{ color: instagramPink }}>Instagram Marketing</span>
+                            <span style={{ color: "#1877F2" }}>Facebook Ads</span>
                         </nav>
 
                         {/* Badge */}
                         <div
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm animate-fadeIn"
                             style={{
-                                background: "linear-gradient(135deg, rgba(225, 48, 108, 0.1), rgba(193, 53, 132, 0.1))",
-                                borderColor: "rgba(225, 48, 108, 0.3)",
+                                background: "rgba(24, 119, 242, 0.1)",
+                                borderColor: "rgba(24, 119, 242, 0.3)",
                             }}
                         >
-                            <Instagram className="w-4 h-4" style={{ color: instagramPink }} />
-                            <span className="text-sm font-medium" style={{ color: instagramPink }}>
-                                Instagram Partner
+                            <Facebook className="w-4 h-4" style={{ color: "#1877F2" }} />
+                            <span className="text-sm font-medium" style={{ color: "#1877F2" }}>
+                                Meta Business Partner
                             </span>
                         </div>
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Global Instagram Marketing Agency:{" "}
+                            Scale Your Business with{" "}
                             <span
-                                className="relative inline-block bg-gradient-to-r from-pink-500 via-rose-500 to-orange-400 bg-clip-text text-transparent"
+                                className="relative inline-block"
+                                style={{ color: "#1877F2" }}
                             >
-                                Scale Your Brand with 2026 Trend-First Strategies
+                                Premier Facebook Marketing Services
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
-                                    style={{ color: instagramPink }}
+                                    style={{ color: "#1877F2" }}
                                     viewBox="0 0 100 10"
                                     preserveAspectRatio="none"
                                 >
@@ -133,27 +122,27 @@ export default function Hero() {
                             </span>
                         </h1>
 
-                        <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Dominate the world's most visual stage. With over 2+ billion monthly active users, Instagram is no longer just a photo-sharing app - it’s a global marketplace. As a premier Instagram Marketing Company, we help brands transition from "just posting" to high-impact ROI systems. Our data-driven Instagram Marketing Services leverage the latest 2026 algorithm updates to ensure your content doesn’t just look good - it converts.
+                        <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
+                            Master your presence on the world's largest social network with a Facebook marketing agency that prioritizes ROI over vanity metrics. In the competitive digital landscape of 2026, simply "posting" isn't enough. You need an award-winning Facebook marketing company that leverages the latest Meta AI algorithms and high-E-E-A-T content principles to drive measurable growth.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "95% Success Rate for High-Growth E-commerce Brands",
-                                "300% Average Increases in Organic Reach & Engagement",
-                                "30+ Years of Combined Digital Marketing & Creative Expertise",
-                                "Direct-to-Consumer (D2C) & B2B Strategic Specialists",
+                                "Lead Generation",
+                                "Retargeting",
+                                "Lookalike Audiences",
+                                "Conversion Tracking",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
-                                    className="flex items-center gap-2 px-3 py-1.5 rounded-md border backdrop-blur-sm transition-all duration-300 hover:scale-105"
+                                    className="flex items-center gap-2 px-3 py-1.5 rounded-md border backdrop-blur-sm"
                                     style={{
                                         backgroundColor: "var(--card-bg)",
                                         borderColor: "var(--border-color)",
                                     }}
                                 >
-                                    <div className="w-1.5 h-1.5 rounded-full" style={{ background: `linear-gradient(135deg, ${instagramPink}, ${instagramOrange})` }} />
+                                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#1877F2" }} />
                                     <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{feature}</span>
                                 </div>
                             ))}
@@ -163,9 +152,13 @@ export default function Hero() {
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-slideUp delay-300">
                             <Link
                                 href="/contact"
-                                className="instagram-gradient inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                                style={{
+                                    backgroundColor: "#1877F2",
+                                    boxShadow: "0 4px 20px rgba(24, 119, 242, 0.25)",
+                                }}
                             >
-                                Book Your Free Instagram Audit Today
+                                Get Free Audit
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -178,46 +171,46 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Explore Our Process
+                                Our Process
                             </Link>
                         </div>
 
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: instagramPink }}>2B+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Monthly Users</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>3B+</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Daily Active Users</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: instagramPink }}>83%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Product Discovery</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>8.5x</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. ROAS</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: instagramPink }}>4x</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Higher Engagement</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>45%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Lower CPA</p>
                             </div>
                         </div>
                     </div>
 
                     {/* Right Visual */}
-                    <div className="relative hidden lg:flex flex-col gap-6 animate-fadeIn delay-500 mt-15">
+                    <div className="relative hidden lg:flex flex-col gap-6 animate-fadeIn delay-500">
                         {/* Main Visual Container */}
                         <div className="relative flex items-center justify-center">
                             <div
                                 className="relative w-full max-w-lg aspect-square rounded-3xl overflow-hidden border flex items-center justify-center animate-float-gentle"
                                 style={{
-                                    borderColor: "rgba(225, 48, 108, 0.2)",
-                                    background: "linear-gradient(135deg, rgba(225, 48, 108, 0.05), rgba(193, 53, 132, 0.05))",
-                                    boxShadow: "0 0 30px rgba(225, 48, 108, 0.15)",
+                                    borderColor: "rgba(24, 119, 242, 0.2)",
+                                    background: "rgba(24, 119, 242, 0.05)",
+                                    boxShadow: "0 0 30px rgba(24, 119, 242, 0.15)",
                                 }}
                             >
                                 {/* Hero Image */}
                                 <div className="w-full h-full relative flex items-center justify-center p-8">
                                     <Image
-                                        src="/images/techstack_logos/Instagram-logo-hero-image.png"
-                                        alt="Instagram Marketing"
+                                        src="/images/techstack_logos/facebook-hero-img.png"
+                                        alt="Facebook Advertising"
                                         width={400}
                                         height={400}
                                         className="object-contain"
@@ -227,11 +220,11 @@ export default function Hero() {
                                 {/* Decorative circles */}
                                 <div
                                     className="absolute w-72 h-72 rounded-full border opacity-20"
-                                    style={{ borderColor: instagramPink }}
+                                    style={{ borderColor: "#1877F2" }}
                                 />
                                 <div
                                     className="absolute w-96 h-96 rounded-full border opacity-10"
-                                    style={{ borderColor: instagramPurple }}
+                                    style={{ borderColor: "#1877F2" }}
                                 />
                             </div>
 
@@ -240,21 +233,22 @@ export default function Hero() {
                                 className="absolute -bottom-4 -left-4 p-4 rounded-2xl border shadow-xl animate-pulse-glow"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
-                                    borderColor: "rgba(225, 48, 108, 0.3)",
+                                    borderColor: "rgba(24, 119, 242, 0.3)",
                                 }}
                             >
                                 <div className="flex items-center gap-3">
                                     <div
-                                        className="w-12 h-12 rounded-xl flex items-center justify-center instagram-gradient"
+                                        className="w-12 h-12 rounded-xl flex items-center justify-center"
+                                        style={{ backgroundColor: "#1877F2" }}
                                     >
-                                        <Heart className="w-6 h-6 text-white" />
+                                        <Target className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            High Engagement
+                                            Precision Targeting
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Visual Content
+                                            10,000+ Interests
                                         </p>
                                     </div>
                                 </div>
@@ -265,21 +259,22 @@ export default function Hero() {
                                 className="absolute -top-4 -right-4 p-4 rounded-2xl border shadow-xl"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
-                                    borderColor: "rgba(225, 48, 108, 0.3)",
+                                    borderColor: "rgba(24, 119, 242, 0.3)",
                                 }}
                             >
                                 <div className="flex items-center gap-3">
                                     <div
-                                        className="w-12 h-12 rounded-xl flex items-center justify-center instagram-gradient"
+                                        className="w-12 h-12 rounded-xl flex items-center justify-center"
+                                        style={{ backgroundColor: "#1877F2" }}
                                     >
-                                        <Camera className="w-6 h-6 text-white" />
+                                        <BarChart3 className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            Reels & Stories
+                                            Advanced Analytics
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Short-Form Content
+                                            Real-time Insights
                                         </p>
                                     </div>
                                 </div>
@@ -294,21 +289,21 @@ export default function Hero() {
                                 borderColor: "var(--border-color)",
                             }}
                         >
-                            <p className="text-sm font-semibold mb-3" style={{ color: instagramPink }}>
-                                Content Formats We Optimize
+                            <p className="text-sm font-semibold mb-3" style={{ color: "#1877F2" }}>
+                                Meta Platforms We Manage
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Feed Posts", "Stories", "Reels", "IGTV", "Live", "Guides"].map((format, idx) => (
+                                {["Facebook Feed", "Instagram", "Messenger", "Audience Network", "Reels", "Stories"].map((platform, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"
                                         style={{
-                                            backgroundColor: "rgba(225, 48, 108, 0.05)",
-                                            borderColor: "rgba(225, 48, 108, 0.15)",
+                                            backgroundColor: "rgba(24, 119, 242, 0.05)",
+                                            borderColor: "rgba(24, 119, 242, 0.15)",
                                             color: "var(--foreground)",
                                         }}
                                     >
-                                        {format}
+                                        {platform}
                                     </span>
                                 ))}
                             </div>
