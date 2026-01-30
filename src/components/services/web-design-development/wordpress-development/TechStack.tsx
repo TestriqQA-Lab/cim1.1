@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Code2, Layout, ShoppingCart, Cloud, Search } from "lucide-react";
+import { Code2, Layout, ShoppingBag, Cloud, Search } from "lucide-react";
 import Image from "next/image";
 
 export default function TechStack() {
@@ -10,68 +10,68 @@ export default function TechStack() {
     const categories = [
         {
             id: "core",
-            title: "Core Technologies",
+            title: "Core Ecosystem",
             icon: Code2,
-            description: "Foundation of WordPress development",
+            description: "Foundation of future-proof WordPress development",
             technologies: [
-                { name: "WordPress", description: "Core CMS Platform", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
-                { name: "PHP 8.2+", description: "Server-side Language", logo: "/images/techstack_logos/php-logo.svg" },
-                { name: "MySQL", description: "Database", logo: "/images/techstack_logos/mysql-logo.svg" },
-                { name: "Gutenberg", description: "Block Editor", logo: "/images/techstack_logos/Gutenberg-logo.svg" },
-                { name: "ACF Pro", description: "Custom Fields", logo: "/images/techstack_logos/ACF-logo.png" },
-                { name: "REST API", description: "Headless Capability", logo: "/images/techstack_logos/REST-API-logo.png" },
+                { name: "WordPress 6.x+", description: "Core CMS Platform", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
+                { name: "PHP 8.3+", description: "Server-side Engine", logo: "/images/techstack_logos/php-logo.svg" },
+                { name: "MySQL 8", description: "Database Management", logo: "/images/techstack_logos/mysql-logo.svg" },
+                { name: "Gutenberg", description: "Custom Block Dev", logo: "/images/techstack_logos/Gutenberg-logo.svg" },
+                { name: "REST/GraphQL", description: "Advanced API Sync", logo: "/images/techstack_logos/REST-API-logo.png" },
+                { name: "ACF Pro", description: "Custom Workflows", logo: "/images/techstack_logos/ACF-logo.png" },
             ],
         },
         {
             id: "builders",
-            title: "Page Builders",
+            title: "Editor & Performance",
             icon: Layout,
-            description: "Visual design and page building tools",
+            description: "Visual design and performance builders",
             technologies: [
+                { name: "Gutenberg Blocks", description: "Custom Block Logic", logo: "/images/techstack_logos/Gutenberg-logo.svg" },
                 { name: "Elementor", description: "Visual Builder", logo: "/images/techstack_logos/Elementor-logo.png" },
-                { name: "Divi", description: "Theme & Builder", logo: "/images/techstack_logos/Divi-logo.png" },
-                { name: "WPBakery", description: "Classic Builder", logo: "/images/techstack_logos/WPBakery -logo.png" },
-                { name: "Oxygen Builder", description: "Developer Builder", logo: "/images/techstack_logos/Oxygen-Builder-logo.png" },
-                { name: "Bricks Builder", description: "Performance Focused", logo: "/images/techstack_logos/Bricks-Builder-logo.svg" },
+                { name: "Tailwind CSS", description: "Utility-first Style", logo: "/images/techstack_logos/tailwindcss-logo.svg" },
+                { name: "Vanilla JS", description: "Lightweight Logic", logo: "/images/techstack_logos/javascript-logo.svg" },
+                { name: "Bricks Builder", description: "High-Performance", logo: "/images/techstack_logos/Bricks-Builder-logo.svg" },
             ],
         },
         {
             id: "ecommerce",
-            title: "E-commerce",
-            icon: ShoppingCart,
-            description: "Online store solutions and plugins",
+            title: "E-commerce & Payments",
+            icon: ShoppingBag,
+            description: "Online store solutions and payment gateways",
             technologies: [
-                { name: "WooCommerce", description: "E-commerce Platform", logo: "/images/techstack_logos/WooCommerce-logo.png" },
-                { name: "Stripe", description: "Payment Processing", logo: "/images/techstack_logos/Stripe-logo.png" },
-                { name: "PayPal", description: "Payment Gateway", logo: "/images/techstack_logos/paypal-logo.png" },
-                { name: "Easy Digital Downloads", description: "Digital Products", logo: "/images/techstack_logos/Easy-Digital-Downloads-logo.svg" },
-                { name: "Shippo", description: "Shipping Integration", logo: "/images/techstack_logos/Shippo-logo.png" },
+                { name: "WooCommerce", description: "E-commerce Core", logo: "/images/techstack_logos/WooCommerce-logo.png" },
+                { name: "Stripe", description: "Payment Infrastructure", logo: "/images/techstack_logos/Stripe-logo.png" },
+                { name: "PayPal", description: "Global Payments", logo: "/images/techstack_logos/paypal-logo.png" },
+                { name: "Inventory Sync", description: "Smart Stock Sync", logo: "" },
+                { name: "Custom Checkout", description: "High Conversion", logo: "" },
             ],
         },
         {
-            id: "hosting",
-            title: "Hosting & Infrastructure",
+            id: "devops",
+            title: "DevOps & Deployment",
             icon: Cloud,
-            description: "Managed WordPress hosting solutions",
+            description: "Managed hosting and automated deployment",
             technologies: [
                 { name: "WP Engine", description: "Managed WP Hosting", logo: "/images/techstack_logos/WP-Engine-logo.png" },
-                { name: "Pantheon", description: "Enterprise Hosting", logo: "/images/techstack_logos/Pantheon-logo-1.png" },
+                { name: "Git", description: "Version Control", logo: "/images/techstack_logos/git-logo.svg" },
+                { name: "Automated Deploy", description: "CI/CD Pipelines", logo: "" },
                 { name: "Cloudflare", description: "CDN & Security", logo: "/images/techstack_logos/Cloudflare-logo.webp" },
                 { name: "AWS", description: "Cloud Infrastructure", logo: "/images/techstack_logos/aws-logo.png" },
-                { name: "DigitalOcean", description: "Cloud VPS", logo: "/images/techstack_logos/DigitalOcean-logo.svg" },
             ],
         },
         {
             id: "seo",
-            title: "SEO & Analytics",
+            title: "SEO & Growth",
             icon: Search,
-            description: "Search optimization and tracking tools",
+            description: "Search optimization and marketing tools",
             technologies: [
-                { name: "Yoast SEO", description: "SEO Plugin", logo: "/images/techstack_logos/Yoast-SEO-logo.png" },
                 { name: "RankMath", description: "SEO Suite", logo: "/images/techstack_logos/RankMath-logo.jpg" },
-                { name: "Google Analytics", description: "Analytics", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
-                { name: "Hotjar", description: "User Behavior", logo: "/images/techstack_logos/Hotjar-logo.png" },
-                { name: "Google Tag Manager", description: "Tag Management", logo: "/images/techstack_logos/google-tag-manager-logo.svg" },
+                { name: "Yoast SEO", description: "SEO Plugin", logo: "/images/techstack_logos/Yoast-SEO-logo.png" },
+                { name: "Google Analytics 4", description: "Modern Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+                { name: "Schema.org", description: "Structured Data", logo: "" },
+                { name: "PageSpeed", description: "Core Web Vitals", logo: "" },
             ],
         },
     ];

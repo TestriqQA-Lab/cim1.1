@@ -8,28 +8,28 @@ export default function Testimonials() {
 
     const testimonials = [
         {
-            company: "Ved Solutions",
-            industry: "IT & QA",
+            company: "Testriq Technologies",
+            industry: "QA & Testing Solutions",
             quote:
-                "CIM increased our qualified B2B leads by 320% in 3 months and lowered our CAC significantly - they are growth partners, not vendors.",
-            result: "320% Lead Increase",
-            avatar: "V",
-        },
-        {
-            company: "Maple Solutions",
-            industry: "EdTech",
-            quote:
-                "AI chatbots and automations saved our team 200+ hours a month and lifted student engagement by 85%.",
-            result: "200+ Hours Saved",
-            avatar: "M",
-        },
-        {
-            company: "HealthCare Plus",
-            industry: "Healthcare",
-            quote:
-                "With their SEO and content strategy we tripled organic traffic in 6 months and dominated competitive keywords.",
+                "Cinute InfoMedia transformed our outdated website into a lead-generation powerhouse. The custom web development solution they delivered exceeded our expectations, and the ongoing SEO support has tripled our organic traffic.",
             result: "3x Organic Traffic",
-            avatar: "H",
+            avatar: "T",
+        },
+        {
+            company: "CloudScale.io",
+            industry: "SaaS Startup",
+            quote:
+                "As a fast-growing SaaS startup, we needed a web development company that understood scalability. Their team delivered a Next.js application that handles 10,000+ concurrent users with blazing performance.",
+            result: "10K+ Concurrent Users",
+            avatar: "C",
+        },
+        {
+            company: "CDPL Institute",
+            industry: "Education Technology",
+            quote:
+                "The AI chatbot they built has transformed our customer support. We're saving 200+ hours monthly while providing better, faster service to our students.",
+            result: "200+ Hours Saved",
+            avatar: "D",
         },
     ];
 

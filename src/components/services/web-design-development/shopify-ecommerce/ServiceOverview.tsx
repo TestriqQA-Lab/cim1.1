@@ -1,38 +1,38 @@
 "use client";
 
-import { Palette, CreditCard, Package, Globe, TrendingUp, Smartphone } from "lucide-react";
+import { Palette, CreditCard, Package, Globe, TrendingUp, Smartphone, ShoppingCart } from "lucide-react";
 
 export default function ServiceOverview() {
     const highlights = [
         {
-            icon: Palette,
-            title: "Custom Store Design",
-            description: "Unique branded experiences that reflect your identity and resonate with your target audience.",
+            icon: ShoppingCart,
+            title: "Custom Shopify Store Design",
+            description: "Providing bespoke Shopify store design services that blend unique brand aesthetics with optimized user journeys for maximum conversions.",
         },
         {
             icon: CreditCard,
-            title: "Payment Gateway Integration",
-            description: "Seamless integration with Stripe, PayPal, Square, and local payment methods worldwide.",
+            title: "Shopify Plus Development",
+            description: "Enterprise-grade scaling for high-volume merchants, featuring mobile-first architecture and bespoke checkout automation via Shopify Flow.",
         },
         {
             icon: Package,
-            title: "Inventory Management",
-            description: "Real-time stock tracking, automated alerts, and multi-location inventory control.",
+            title: "Custom Theme Development",
+            description: "Building headless and traditional storefronts utilizing React, Liquid, and Next.js, optimized for 2026 Core Web Vitals and app-like speed.",
         },
         {
             icon: Globe,
-            title: "Multi-channel Selling",
-            description: "Sell on Amazon, eBay, Instagram, Facebook, and more from a single dashboard.",
+            title: "Shopify Migration & Int'l SEO",
+            description: "Ensuring 100% data integrity and international SEO continuity when moving from Magento or WooCommerce with zero downtime.",
         },
         {
             icon: TrendingUp,
-            title: "Conversion Optimization",
-            description: "A/B testing, checkout optimization, and data-driven improvements to boost sales.",
+            title: "App Development & Integration",
+            description: "Custom-built apps and secure bridges for ERP, CRM (Salesforce/HubSpot), or Inventory Management systems.",
         },
         {
             icon: Smartphone,
-            title: "Mobile Commerce",
-            description: "Responsive design and app-like experiences for shoppers on any device.",
+            title: "Shopify SEO & Marketing",
+            description: "Comprehensive technical audits and product page optimization to align with 2026 AI Overviews and helpful content signals.",
         },
     ];
 
@@ -64,7 +64,7 @@ export default function ServiceOverview() {
                     >
                         <TrendingUp className="w-4 h-4" style={{ color: "#96bf48" }} />
                         <span className="text-sm font-medium" style={{ color: "#96bf48" }}>
-                            Why E-commerce Matters
+                            Build a Revenue-Driving Store
                         </span>
                     </div>
 
@@ -72,24 +72,25 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Build a{" "}
+                        Core{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #96bf48, #5c8a1e)",
                                 WebkitBackgroundClip: "text",
                                 WebkitTextFillColor: "transparent",
+                                WebkitBoxDecorationBreak: "clone",
                             }}
                         >
-                            Revenue-Driving
+                            Shopify Services
                         </span>{" "}
-                        Store
+                        for Growth
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Your e-commerce store is more than a website - it&apos;s your 24/7 sales engine.
-                        We build stores designed to convert browsers into buyers.
+                        We provide end-to-end Shopify solutions designed to scale your brand,
+                        optimize performance, and dominate the 2026 e-commerce landscape.
                     </p>
                 </div>
 

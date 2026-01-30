@@ -37,8 +37,8 @@ export default function CTA() {
                             </span>
                         </div>
 
-                        <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                            <span style={{ color: "var(--foreground)" }}>Build Your </span>{" "}
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                            <span style={{ color: "var(--foreground)" }}>Ready to </span>{" "}
                             <span
                                 style={{
                                     background: "linear-gradient(135deg, #0073AA, #0096D6)",
@@ -46,13 +46,12 @@ export default function CTA() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                WordPress Vision
+                                Scale Your Business?
                             </span>
                         </h2>
 
-                        <p className="text-base md:text-xl mb-10 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Whether you need a blog, e-commerce store, membership site, or enterprise portal,
-                            our WordPress experts are ready to bring your vision to life.
+                        <p className="text-xl mb-10 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                            Don&apos;t settle for &quot;good enough.&quot; Book Your Free WordPress Audit Today and see how our WordPress website development agency can transform your digital ROI.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -64,10 +63,21 @@ export default function CTA() {
                                     boxShadow: "0 8px 30px rgba(0, 115, 170, 0.2)",
                                 }}
                             >
-                                Schedule a Call
-                                <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 flex-shrink-0" />
+                                Get a Quick Quote
+                                <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
+                            {/* <Link
+                                href="#process"
+                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border transition-all hover:bg-accent w-full sm:w-auto"
+                                style={{
+                                    borderColor: "var(--border-color)",
+                                    color: "var(--foreground)",
+                                    backgroundColor: "var(--card-bg)",
+                                }}
+                            >
+                                View Case Studies
+                            </Link> */}
                         </div>
                     </div>
                 </div>

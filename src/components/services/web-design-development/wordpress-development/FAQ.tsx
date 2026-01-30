@@ -8,24 +8,24 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: "How much does it cost to build a professional news portal?",
-            answer: "The cost varies based on complexity. A basic WordPress blog development for businesses starts from $3,000, while a robust Custom news portal design for media agencies with custom robust features can range from $15,000 to $50,000+. We offer transparent pricing packages tailored to your Digital Publishing Solutions needs."
+            question: "What are the benefits of custom WordPress development?",
+            answer: "Custom WordPress development ensures your site is built specifically for your brand’s needs, without the bloat of pre-made themes. This leads to faster load times, better security, and a unique user experience that increases conversions."
         },
         {
-            question: "What is the best CMS for a high-traffic news website?",
-            answer: "For scalability and flexibility, we recommend Headless CMS architectures (like Strapi with Next.js) or optimized WordPress VIP for Digital magazine publishing platform services. These ensure your Mobile-responsive news website development remains fast under heavy loads."
+            question: "How much does it cost to build a custom WordPress website in 2026?",
+            answer: "The WordPress development cost for business 2026 varies by complexity. A standard business site may range from $3,000 to $10,000, while enterprise portals or complex e-commerce builds can exceed $25,000. Contact us for a precise quote."
         },
         {
-            question: "How can I improve my blog's search engine ranking?",
-            answer: "Focus on Topical Authority, E-E-A-T signals, and technical health. Our News portal SEO and audience growth services include schema markup, site speed optimization, and Blog content strategy and management solutions to target low-competition, high-value keywords."
+            question: "How do I choose the best WordPress development agency?",
+            answer: "Look for an agency with a deep portfolio, transparent WordPress maintenance and support services, and verifiable reviews. A top-tier agency should prioritize SEO, speed, and mobile responsiveness."
         },
         {
-            question: "What are the essential features of a modern news portal?",
-            answer: "Key features include mobile responsiveness, fast loading speeds (News portal performance and speed optimization), Multi-author blog management systems, paywall integration, AMP support, and Interactive blog features like comments and social sharing."
+            question: "What is included in WordPress maintenance services?",
+            answer: "Our WordPress maintenance services include weekly core/plugin updates, daily backups, 24/7 security monitoring, and uptime checks to ensure your business never goes offline."
         },
         {
-            question: "How do I monetize a news portal or business blog?",
-            answer: "We implement diverse Content Monetization Models including display ads (Google AdSense), sponsored content, subscription paywalls, and affiliate marketing modules as part of our News portal monetization and ad integration services."
+            question: "How long does it take to develop a custom WordPress site?",
+            answer: "A custom project typically takes 4–12 weeks depending on features like WooCommerce development or WordPress API integration. We provide a detailed timeline during the discovery phase."
         }
     ];
 
@@ -40,18 +40,18 @@ export default function FAQ() {
                     <div
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
                         style={{
-                            backgroundColor: "rgba(168, 85, 247, 0.05)",
-                            borderColor: "rgba(168, 85, 247, 0.2)",
+                            backgroundColor: "rgba(0, 115, 170, 0.05)",
+                            borderColor: "rgba(0, 115, 170, 0.2)",
                         }}
                     >
-                        <HelpCircle className="w-4 h-4" style={{ color: "#a855f7" }} />
-                        <span className="text-sm font-medium" style={{ color: "#a855f7" }}>
+                        <HelpCircle className="w-4 h-4" style={{ color: "#0073AA" }} />
+                        <span className="text-sm font-medium" style={{ color: "#0073AA" }}>
                             FAQ
                         </span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Frequently Asked <span style={{ color: "#a855f7" }}>Questions</span>
+                        Frequently Asked <span style={{ color: "#0073AA" }}>Questions</span>
                     </h2>
                 </div>
 
@@ -66,7 +66,7 @@ export default function FAQ() {
                                 className="rounded-2xl border overflow-hidden transition-all duration-300"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
-                                    borderColor: isOpen ? "#a855f7" : "var(--border-color)",
+                                    borderColor: isOpen ? "#0073AA" : "var(--border-color)",
                                 }}
                             >
                                 <button
@@ -79,8 +79,8 @@ export default function FAQ() {
                                     <div
                                         className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300"
                                         style={{
-                                            backgroundColor: isOpen ? "#a855f7" : "transparent",
-                                            border: `1px solid ${isOpen ? "#a855f7" : "var(--border-color)"}`,
+                                            backgroundColor: isOpen ? "#0073AA" : "transparent",
+                                            border: `1px solid ${isOpen ? "#0073AA" : "var(--border-color)"}`,
                                             transform: isOpen ? "rotate(180deg)" : "rotate(0deg)"
                                         }}
                                     >

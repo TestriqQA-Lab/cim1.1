@@ -8,24 +8,28 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: "How much does it cost to build a professional news portal?",
-            answer: "The cost varies based on complexity. A basic WordPress blog development for businesses starts from $3,000, while a robust Custom news portal design for media agencies with custom robust features can range from $15,000 to $50,000+. We offer transparent pricing packages tailored to your Digital Publishing Solutions needs."
+            question: "What are travel and hospitality services in the context of digital development?",
+            answer: "Travel and hospitality services encompass the strategic design, development, and marketing of digital solutions for the tourism industry. This includes building custom booking engines, hotel management software, OTA platforms, and implementing Travel Technology Solutions that streamline operations and enhance the guest experience."
         },
         {
-            question: "What is the best CMS for a high-traffic news website?",
-            answer: "For scalability and flexibility, we recommend Headless CMS architectures (like Strapi with Next.js) or optimized WordPress VIP for Digital magazine publishing platform services. These ensure your Mobile-responsive news website development remains fast under heavy loads."
+            question: "How can technology improve hospitality services for hotels and agencies?",
+            answer: "Technology improves hospitality services by automating routine tasks, personalizing guest interactions, and optimizing revenue. Tools like Hotel Property Management Systems (PMS), AI-driven chatbots, and Travel Data Analytics allow businesses to offer seamless booking experiences, real-time support, and tailored recommendations, directly boosting satisfaction and loyalty."
         },
         {
-            question: "How can I improve my blog's search engine ranking?",
-            answer: "Focus on Topical Authority, E-E-A-T signals, and technical health. Our News portal SEO and audience growth services include schema markup, site speed optimization, and Blog content strategy and management solutions to target low-competition, high-value keywords."
+            question: "What makes a top-tier Hospitality Marketing Agency?",
+            answer: "A top-tier Hospitality Marketing Agency combines creative storytelling with data-driven strategies. Look for an agency that specializes in Digital Marketing for Luxury Hotels and Resorts, uses advanced SEO for Travel Lead Generation, and has a proven track record of increasing direct bookings through Hospitality Social Media Management Services and paid campaigns."
         },
         {
-            question: "What are the essential features of a modern news portal?",
-            answer: "Key features include mobile responsiveness, fast loading speeds (News portal performance and speed optimization), Multi-author blog management systems, paywall integration, AMP support, and Interactive blog features like comments and social sharing."
+            question: "Why is custom Travel Software Development Services better than off-the-shelf solutions?",
+            answer: "Custom Travel Software Development Services offer flexibility and scalability that off-the-shelf products cannot match. A custom solution is tailored to your specific business workflows, brands, and customer needs, allowing for unique features like specialized Travel API integration services and proprietary Hospitality Revenue Management algorithms that provide a competitive edge."
         },
         {
-            question: "How do I monetize a news portal or business blog?",
-            answer: "We implement diverse Content Monetization Models including display ads (Google AdSense), sponsored content, subscription paywalls, and affiliate marketing modules as part of our News portal monetization and ad integration services."
+            question: "What are the key Hospitality Technology Trends for 2026?",
+            answer: "The key Hospitality Technology Trends 2026 include the rise of hyper-personalization via AI, the adoption of sustainable travel tech for Sustainable Travel and Tourism Consulting, biometric authentication for seamless check-ins, and the increased use of immersive AR/VR in Travel Agency Website Design to provide virtual \"try-before-you-buy\" experiences."
+        },
+        {
+            question: "How do you handle Travel API Integration Services (GDS/OTA)?",
+            answer: "We consider Travel API Integration Services a core competency. Our team has extensive experience connecting with major GDS providers like Amadeus and Sabre, as well as OTAs like Expedia. We ensure secure, real-time data exchange for inventory and pricing, handling the technical complexity so you can focus on your business."
         }
     ];
 
@@ -40,18 +44,18 @@ export default function FAQ() {
                     <div
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border"
                         style={{
-                            backgroundColor: "rgba(168, 85, 247, 0.05)",
-                            borderColor: "rgba(168, 85, 247, 0.2)",
+                            backgroundColor: "rgba(13, 148, 136, 0.05)",
+                            borderColor: "rgba(13, 148, 136, 0.2)",
                         }}
                     >
-                        <HelpCircle className="w-4 h-4" style={{ color: "#a855f7" }} />
-                        <span className="text-sm font-medium" style={{ color: "#a855f7" }}>
+                        <HelpCircle className="w-4 h-4" style={{ color: "#0d9488" }} />
+                        <span className="text-sm font-medium" style={{ color: "#0d9488" }}>
                             FAQ
                         </span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Frequently Asked <span style={{ color: "#a855f7" }}>Questions</span>
+                        Frequently Asked <span style={{ color: "#0d9488" }}>Questions</span>
                     </h2>
                 </div>
 
@@ -66,7 +70,7 @@ export default function FAQ() {
                                 className="rounded-2xl border overflow-hidden transition-all duration-300"
                                 style={{
                                     backgroundColor: "var(--card-bg)",
-                                    borderColor: isOpen ? "#a855f7" : "var(--border-color)",
+                                    borderColor: isOpen ? "#0d9488" : "var(--border-color)",
                                 }}
                             >
                                 <button
@@ -79,8 +83,8 @@ export default function FAQ() {
                                     <div
                                         className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300"
                                         style={{
-                                            backgroundColor: isOpen ? "#a855f7" : "transparent",
-                                            border: `1px solid ${isOpen ? "#a855f7" : "var(--border-color)"}`,
+                                            backgroundColor: isOpen ? "#0d9488" : "transparent",
+                                            border: `1px solid ${isOpen ? "#0d9488" : "var(--border-color)"}`,
                                             transform: isOpen ? "rotate(180deg)" : "rotate(0deg)"
                                         }}
                                     >

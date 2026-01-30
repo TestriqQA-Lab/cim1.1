@@ -16,8 +16,8 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Zap,
-            title: "Blazing Fast Performance",
-            description: "Zero JavaScript by default means your site loads instantly, delighting users and search engines.",
+            title: "Blazing Fast Performance ⚡",
+            description: "Zero JavaScript by default means your site loads instantly. Our performance optimization achieves consistent sub-1-second load times.",
             gradient: "from-violet-500 via-purple-500 to-indigo-500",
             bgColor: "rgba(124, 58, 237, 0.15)",
             iconColor: "#7C3AED",
@@ -25,8 +25,8 @@ export default function WhyChooseUs() {
         },
         {
             icon: Search,
-            title: "SEO Excellence",
-            description: "Static HTML output and fast load times result in superior search engine rankings.",
+            title: "SEO Excellence 🔍",
+            description: "Static HTML output and fast load times result in superior rankings with built-in SEO audit and optimization services.",
             gradient: "from-orange-500 via-amber-500 to-yellow-500",
             bgColor: "rgba(255, 93, 1, 0.15)",
             iconColor: "#FF5D01",
@@ -34,8 +34,8 @@ export default function WhyChooseUs() {
         },
         {
             icon: Layers,
-            title: "Islands Architecture",
-            description: "Selective hydration loads JavaScript only where needed for interactive components.",
+            title: "Islands Architecture 🏝️",
+            description: "Selective hydration loads JavaScript only where needed for interactive components, reducing TTI by up to 70%.",
             gradient: "from-purple-500 via-violet-500 to-fuchsia-500",
             bgColor: "rgba(168, 85, 247, 0.15)",
             iconColor: "#A855F7",
@@ -43,8 +43,8 @@ export default function WhyChooseUs() {
         },
         {
             icon: Sparkles,
-            title: "Framework Freedom",
-            description: "Use React, Vue, Svelte, or Solid components together in the same project.",
+            title: "Framework Freedom 🛠️",
+            description: "Astro integration with React and Vue allows you to use preferred frameworks together without conflicts or performance hits.",
             gradient: "from-pink-500 via-rose-500 to-red-500",
             bgColor: "rgba(236, 72, 153, 0.15)",
             iconColor: "#ec4899",
@@ -52,8 +52,8 @@ export default function WhyChooseUs() {
         },
         {
             icon: FileText,
-            title: "Content-First Design",
-            description: "Perfect for blogs, docs, and marketing sites with built-in MDX and CMS support.",
+            title: "Content-First Design 📝",
+            description: "Perfect for content-rich sites with built-in MDX and headless CMS support for flexible content management.",
             gradient: "from-cyan-500 via-blue-500 to-indigo-500",
             bgColor: "rgba(59, 130, 246, 0.15)",
             iconColor: "#3b82f6",
@@ -61,8 +61,8 @@ export default function WhyChooseUs() {
         },
         {
             icon: Rocket,
-            title: "Future Ready",
-            description: "Built on modern web standards with edge deployment and View Transitions API.",
+            title: "Future Ready 🚀",
+            description: "Built on modern web standards with edge deployment and View Transitions API for smooth, app-like navigation.",
             gradient: "from-emerald-500 via-green-500 to-teal-500",
             bgColor: "rgba(16, 185, 129, 0.15)",
             iconColor: "#10b981",

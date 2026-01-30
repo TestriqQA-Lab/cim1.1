@@ -69,7 +69,7 @@ export default function Hero() {
             `}</style>
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
                     {/* Text Content */}
                     <div className="space-y-8 text-center lg:text-left">
                         {/* Breadcrumbs */}
@@ -99,12 +99,12 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Attract Customers in{" "}
+                            Dominate Local Search & Attract{" "}
                             <span className="relative inline-block" style={{ color: localAmber }}>
-                                Your Area
+                                High-Intent Customers
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
                                     style={{ color: localAmber }}
@@ -113,21 +113,25 @@ export default function Hero() {
                                 >
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
                                 </svg>
-                            </span>
+                            </span>{" "}
+                            in Your Area
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Optimize your online presence to capture high-intent local traffic.
-                            Rank higher in Google Maps and become the top choice for nearby customers.
+                            Rank in the top 3 Google Map Pack results and become visible to 83% of consumers searching for local businesses. Our local SEO services optimize your Google Business Profile, NAP consistency, and secure the #1 Map Pack spot.
+                        </p>
+
+                        <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
+                            Trusted by 500+ businesses across 15+ industries. We deliver 247% increase in local search visibility and 178% boost in direction requests within 90 days.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Google My Business",
-                                "Local Citations",
-                                "Review Management",
-                                "Hyper-Local Content",
+                                "Google Business Profile",
+                                "Map Pack Rankings",
+                                "Citation Building",
+                                "Review Generation",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -150,7 +154,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
                                 style={{ backgroundColor: localAmber }}
                             >
-                                Get Local Audit
+                                Get Your Free Local SEO Audit
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -167,26 +171,37 @@ export default function Hero() {
                         </div>
 
                         {/* Stats */}
-                        <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: localAmber }}>#1</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Map Pack Spot</p>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>#1</h4>
+                                <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Map Pack Spot</p>
+                                <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>87% in top 3</p>
                             </div>
-                            <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: localAmber }}>3x</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Local Calls</p>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>3x</h4>
+                                <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Local Calls</p>
+                                <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>Avg increase</p>
                             </div>
-                            <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: localAmber }}>500+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Businesses Scaled</p>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>500+</h4>
+                                <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Businesses</p>
+                                <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>15+ industries</p>
+                            </div>
+                            <div className="text-center lg:text-left">
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>340%</h4>
+                                <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Review Growth</p>
+                                <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>5-star increase</p>
+                            </div>
+                            <div className="text-center lg:text-left col-span-2 sm:col-span-1">
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>92%</h4>
+                                <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Retention</p>
+                                <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>Community-focused</p>
                             </div>
                         </div>
                     </div>
 
                     {/* Right Visual */}
-                    <div className="relative hidden lg:flex flex-col gap-6 animate-fadeIn delay-500">
+                    <div className="relative hidden lg:flex flex-col gap-6 animate-fadeIn delay-500 mt-15">
                         {/* Main Visual Container */}
                         <div className="relative flex items-center justify-center">
                             <div

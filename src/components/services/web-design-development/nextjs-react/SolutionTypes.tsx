@@ -20,79 +20,79 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Building2,
-            title: "Corporate & Marketing Sites",
+            title: "Enterprise React Development",
             description:
-                "High-performance corporate websites with perfect SEO scores, fast load times, and stunning animations.",
+                "Scalable, multi-tenant architectures for large-scale operations. We build robust systems that handle high traffic with ease.",
             features: [
-                "Static Site Generation",
-                "Perfect Lighthouse Scores",
-                "CMS Integration",
-                "Multi-language Support",
+                "Scalable Architectures",
+                "Multi-tenant Support",
+                "Enterprise Security",
+                "Robust Data Handling",
             ],
             accentColor: "#61dafb",
         },
         {
             icon: ShoppingCart,
-            title: "E-commerce Platforms",
+            title: "Next.js Ecommerce",
             description:
-                "Blazing-fast storefronts with dynamic product pages, cart functionality, and seamless checkout flows.",
+                "High-performance storefronts with Shopify or BigCommerce integration. Boost your sales with blazing-fast shopping experiences.",
             features: [
-                "Dynamic Product Pages",
-                "Cart & Checkout",
-                "Payment Integration",
-                "Inventory Management",
+                "Shopify & BigCommerce",
+                "20%+ CTR Boost",
+                "Lower Bounce Rates",
+                "Optimized Checkout",
             ],
             accentColor: "#00d4ff",
         },
         {
             icon: LayoutDashboard,
-            title: "SaaS Applications",
+            title: "SaaS Product Development",
             description:
-                "Complex web applications with authentication, real-time data, dashboards, and subscription billing.",
+                "Best Next.js agency for SaaS products and dashboards. Secure, scalable, and high-performance applications.",
             features: [
-                "Authentication & Auth",
-                "Real-time Updates",
-                "Dashboard UIs",
-                "API Integration",
+                "SaaS Dashboards",
+                "Security-First Approach",
+                "High Performance",
+                "Subscription Models",
             ],
             accentColor: "#61dafb",
         },
         {
             icon: FileText,
-            title: "Content Platforms",
+            title: "Next.js Headless CMS",
             description:
-                "Blogs, documentation sites, and content hubs with MDX support, search, and dynamic routing.",
+                "Integration with Contentful, Strapi, or Sanity. Manage your content dynamically with lightning-fast updates.",
             features: [
-                "MDX Support",
-                "Full-text Search",
-                "Dynamic Routing",
-                "RSS Feeds",
+                "Contentful & Strapi",
+                "Sanity Integration",
+                "Dynamic Content",
+                "Faster CMS Updates",
             ],
             accentColor: "#00d4ff",
         },
         {
             icon: Smartphone,
-            title: "Progressive Web Apps",
+            title: "React Native Mobile Apps",
             description:
-                "App-like experiences with offline support, push notifications, and installable on any device.",
+                "Cross-platform mobile solutions with shared logic. Build faster and reduce costs while maintaining high quality.",
             features: [
-                "Offline Support",
-                "Push Notifications",
-                "App Manifest",
-                "Service Workers",
+                "Cross-Platform Dev",
+                "Shared Logic Patterns",
+                "Faster GTM",
+                "Reduced Dev Costs",
             ],
             accentColor: "#61dafb",
         },
         {
             icon: Server,
-            title: "API & Backend Services",
+            title: "Next.js Migration Services",
             description:
-                "Serverless API routes, edge functions, and full-stack applications with Next.js API routes.",
+                "Seamless transition from legacy React, Vue, or Angular. Modernize your tech stack with zero downtime.",
             features: [
-                "API Routes",
-                "Edge Functions",
-                "Database Integration",
-                "Serverless Scaling",
+                "Legacy Migration",
+                "Zero Downtime",
+                "Modernized Stack",
+                "Improved Performance",
             ],
             accentColor: "#00d4ff",
         },
@@ -159,7 +159,7 @@ export default function SolutionTypes() {
                     >
                         <Sparkles className="w-4 h-4" style={{ color: "#61dafb" }} />
                         <span className="text-sm font-medium" style={{ color: "#61dafb" }}>
-                            What We Build
+                            Our Core Services
                         </span>
                     </div>
 
@@ -167,6 +167,7 @@ export default function SolutionTypes() {
                         className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
+                        Specialized{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #61dafb, #00d4ff)",
@@ -174,16 +175,15 @@ export default function SolutionTypes() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Solutions
+                            Next.js & React
                         </span>{" "}
-                        We Deliver
+                        Solutions
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        From marketing sites to complex SaaS platforms, we build
-                        every type of web application with Next.js and React.
+                        We provide a comprehensive suite of Next.js development services designed to maximize user engagement. Our React development agency specializes in high-performance architectures that scale with multi-national enterprises.
                     </p>
                     <div
                         className="w-24 h-1.5 mx-auto mt-8 rounded-full"
@@ -225,7 +225,7 @@ export default function SolutionTypes() {
                                 {/* Card */}
                                 <div
                                     className={`
-                                        relative p-8 rounded-3xl border-2 cursor-pointer
+                                        relative p-6 sm:p-8 rounded-3xl border-2 cursor-pointer
                                         transition-all duration-500 ease-out
                                         ${isActive ? "shadow-2xl" : "shadow-md hover:shadow-xl"}
                                     `}

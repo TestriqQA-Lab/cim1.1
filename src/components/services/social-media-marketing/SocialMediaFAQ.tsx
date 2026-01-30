@@ -38,7 +38,7 @@ export default function SocialMediaFAQ() {
                         <span className="text-sm font-bold tracking-wider uppercase">FAQ</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-black mb-6">Frequently Asked Questions</h2>
-                    <p className="text-lg text-[var(--secondary-text)] max-w-2xl mx-auto">
+                    <p className="text-lg text-[var(--foreground)] max-w-2xl mx-auto">
                         Answers to common questions about our social media marketing services, strategy, and results.
                     </p>
                 </div>
@@ -79,7 +79,7 @@ export default function SocialMediaFAQ() {
 
                                 {faqOpen === i && (
                                     <div className="mt-4 pl-14 pr-4 border-t pt-4 animate-in fade-in slide-in-from-top-2 duration-300" style={{ borderColor: "color-mix(in srgb, var(--border-color) 50%, transparent)" }}>
-                                        <p className="text-[var(--secondary-text)] leading-relaxed">
+                                        <p className="text-[var(--foreground)] leading-relaxed">
                                             {faq.a}
                                         </p>
                                     </div>

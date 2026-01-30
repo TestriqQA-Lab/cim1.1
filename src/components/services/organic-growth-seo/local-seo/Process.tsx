@@ -10,38 +10,38 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Local Presence Audit",
-            description: "We analyze your current visibility, consistency of NAP data, and competitor positioning.",
+            title: "Local Presence Audit & Competitor Analysis",
+            description: "What We Analyze: Current Google Map Pack rankings for your primary keywords, NAP consistency across top 50 citation sources, review count/rating vs. top 3 competitors, GBP completeness score, website technical SEO for mobile and local schema. Deliverable: 25-page audit report with actionable recommendations.",
             animation: "slide-right"
         },
         {
             icon: Map,
-            title: "GMB Optimization",
-            description: "Claiming, verifying, and optimizing every field of your Google Business Profile.",
+            title: "Google Business Profile Optimization",
+            description: "Complete setup & enhancement: Claim/verify GBP listing, select primary + 9 secondary categories based on search volume, upload 20+ geotagged photos, add all attributes. Timeline: 7-10 business days for full optimization.",
             animation: "slide-left"
         },
         {
             icon: FileCode,
-            title: "On-Page Localization",
-            description: "Creating location pages and implementing LocalBusiness Schema markup.",
+            title: "On-Page Localization & Schema Implementation",
+            description: "Technical on-site work: Install LocalBusiness schema with exact coordinates, create location-specific landing pages, optimize title tags with city + service keywords. SEO Impact: 40-60% increase in geo-modified keyword rankings within 30 days.",
             animation: "fade-up"
         },
         {
             icon: Share2,
-            title: "Citation Building",
-            description: "Submitting your business to high-authority local and industry directories.",
+            title: "Citation Building & Data Cleanup",
+            description: "Building your digital footprint: Submit to 50+ high-authority directories, fix existing NAP inconsistencies, remove duplicate listings causing rank suppression. Result: Consistent NAP across 95%+ of citation sources within 45 days.",
             animation: "scale"
         },
         {
             icon: Star,
-            title: "Reputation Strategy",
-            description: "Implementing systems to generate more 5-star reviews and manage feedback.",
+            title: "Reputation Strategy & Review Generation",
+            description: "Systematic 5-star growth: Set up automated post-service review requests (SMS/email), create branded review landing pages, respond to 100% of reviews within 24 hours. Average Outcome: 10-15 new Google reviews per month (5x industry average).",
             animation: "rotate"
         },
         {
             icon: TrendingUp,
-            title: "Monthly Reporting",
-            description: "Tracking rankings, calls, and direction requests to measure real ROI.",
+            title: "Monthly Reporting & Continuous Optimization",
+            description: "Transparent ROI tracking: Google Map Pack ranking changes (weekly monitoring), GBP insights (calls, direction requests, website clicks), call tracking data, review growth & sentiment analysis. Reporting Cadence: Detailed monthly reports + weekly updates.",
             animation: "flip"
         },
     ];
@@ -236,10 +236,10 @@ export default function Process() {
                 <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                     <div className="text-center mb-20">
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Our Local <span style={{ color: localAmber }}>Process</span>
+                            Our Local <span style={{ color: localAmber }}>SEO Process</span>
                         </h2>
                         <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            A proven framework to put your business on the map - literally.
+                            A battle-tested 6-step framework proven across 50+ directories to put your business on the map (literally). We make you visible to ready-to-buy customers actively looking for your services.
                         </p>
                     </div>
 
@@ -367,7 +367,7 @@ export default function Process() {
 
                     {/* Bottom CTA */}
                     <div className="text-center mt-20">
-                        <Link href="/contact-us">
+                        <Link href="/contact">
                             <div
                                 className="inline-flex items-center gap-3 px-8 py-4 rounded-full border-2 transition-all duration-300 hover:scale-105 cursor-pointer"
                                 style={{
@@ -376,7 +376,7 @@ export default function Process() {
                                 }}
                             >
                                 <span className="font-semibold" style={{ color: localAmber }}>
-                                    Ready to get started?
+                                    Ready to Dominate Your Local Market? Get Started
                                 </span>
                                 <ArrowRight className="w-5 h-5" style={{ color: localAmber }} />
                             </div>

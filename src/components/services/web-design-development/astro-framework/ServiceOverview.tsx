@@ -17,42 +17,42 @@ export default function ServiceOverview() {
         {
             icon: Megaphone,
             title: "Marketing & Landing Pages",
-            description: "High-converting marketing sites and landing pages that load instantly and rank higher.",
+            description: "High-converting Astro development for marketing landing pages that load instantly and rank higher. Perfect for product launches and lead generation.",
             gradient: "from-violet-600 to-purple-400",
             shadowColor: "rgba(124, 58, 237, 0.4)",
         },
         {
             icon: FileText,
             title: "Content-Driven Websites",
-            description: "Blogs, portfolios, and content sites optimized for performance and SEO.",
+            description: "Best Astro agency for high-performance blogs, portfolios, and publishing platforms optimized for SEO and reader experience. Built-in MDX support.",
             gradient: "from-orange-500 to-amber-400",
             shadowColor: "rgba(255, 93, 1, 0.4)",
         },
         {
             icon: ShoppingBag,
             title: "E-commerce Storefronts",
-            description: "Fast product catalogs and storefronts that convert visitors into customers.",
+            description: "Fast Astro framework for ecommerce websites with product catalogs and storefronts that convert. Integrate with Shopify or headless CMSs.",
             gradient: "from-pink-500 to-rose-400",
             shadowColor: "rgba(236, 72, 153, 0.4)",
         },
         {
             icon: BookOpen,
             title: "Documentation Sites",
-            description: "Developer docs, wikis, and knowledge bases with excellent search and navigation.",
+            description: "Astro framework for SaaS documentation sites, developer portals, and knowledge bases with excellent search, versioning, and navigation.",
             gradient: "from-blue-500 to-cyan-400",
             shadowColor: "rgba(59, 130, 246, 0.4)",
         },
         {
             icon: Layers,
             title: "Multi-Framework Projects",
-            description: "Combine React, Vue, and Svelte components in a single project with islands.",
+            description: "Astro integration with React and Vue components in a single project using Astro islands architecture. Build hybrid applications seamlessly.",
             gradient: "from-emerald-500 to-teal-400",
             shadowColor: "rgba(16, 185, 129, 0.4)",
         },
         {
             icon: ArrowRightLeft,
             title: "Migration to Astro",
-            description: "Convert your existing site to Astro for better performance and developer experience.",
+            description: "Astro migration services from Next.js or Gatsby to reduce bundle sizes by 90% and improve Core Web Vitals instantly.",
             gradient: "from-indigo-500 to-violet-400",
             shadowColor: "rgba(99, 102, 241, 0.4)",
         },
@@ -117,8 +117,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        From content sites to complex multi-framework applications, we leverage Astro&apos;s
-                        unique architecture for optimal performance.
+                        From simple landing pages to complex multi-framework applications, we leverage Astro component-based architecture and modern hydration strategies in web development for exceptional performance.
                     </p>
                 </div>
 

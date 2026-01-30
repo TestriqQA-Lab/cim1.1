@@ -26,12 +26,12 @@ export default function SolutionTypes() {
             icon: Building2,
             title: "Hotel & Resort Websites",
             description:
-                "Luxury booking experiences with virtual tours, room configurators, and amenity showcases for hotels and resorts of all sizes.",
+                "Immersive digital experiences with Travel Agency Website Design and SEO. Stunning, fast-loading sites for luxury resorts that integrate seamlessly with Hotel Property Management System (PMS).",
             features: [
-                "360° Virtual Tours",
-                "Room Comparison",
-                "Spa & Dining Booking",
-                "Loyalty Programs",
+                "Virtual Tours & Visualizers",
+                "Direct Booking Incentives",
+                "PMS Integration",
+                "Luxury Amenity Showcases",
             ],
             gradient: "from-teal-500 to-cyan-600",
             iconBg: "bg-gradient-to-br from-teal-500 to-cyan-600",
@@ -41,12 +41,12 @@ export default function SolutionTypes() {
             icon: Compass,
             title: "Tour & Activity Platforms",
             description:
-                "Dynamic tour booking systems with itinerary builders, availability calendars, and group booking capabilities.",
+                "Scalable Travel Software Development Services for tour operators. Dynamic platforms supporting itinerary builders, group bookings, and automated guide assignment.",
             features: [
                 "Itinerary Builder",
-                "Group Bookings",
-                "Guide Assignments",
-                "Real-time Availability",
+                "DMO Services Support",
+                "Multi-location Management",
+                "Automated Guide Assignment",
             ],
             gradient: "from-blue-500 to-indigo-600",
             iconBg: "bg-gradient-to-br from-blue-500 to-indigo-600",
@@ -56,12 +56,12 @@ export default function SolutionTypes() {
             icon: Briefcase,
             title: "Travel Agency Portals",
             description:
-                "Comprehensive agency platforms with supplier integrations, commission tracking, and B2B/B2C booking flows.",
+                "Robust Travel Technology Solutions for agencies. Custom portals featuring comprehensive supplier management, agent commission tracking, and white-label capabilities.",
             features: [
-                "Supplier Integration",
-                "Commission Management",
-                "Package Builder",
-                "CRM Integration",
+                "B2B/B2C Booking Flows",
+                "Supplier Management",
+                "Commission Tracking",
+                "White-label Capabilities",
             ],
             gradient: "from-purple-500 to-pink-600",
             iconBg: "bg-gradient-to-br from-purple-500 to-pink-600",
@@ -69,14 +69,14 @@ export default function SolutionTypes() {
         },
         {
             icon: Home,
-            title: "Vacation Rental Platforms",
+            title: "Vacation Rental Management",
             description:
-                "Property management solutions with owner portals, cleaning schedules, and channel synchronization.",
+                "End-to-end platforms for managing property portfolios. Incorporate Hospitality Social Media Management Services, smart lock sync, and owner reporting portals.",
             features: [
-                "Owner Dashboard",
-                "Cleaning Management",
-                "Channel Sync",
-                "Guest Messaging",
+                "Automated Scheduling",
+                "Smart Lock Sync",
+                "Owner Reporting",
+                "Social Media Integration",
             ],
             gradient: "from-orange-500 to-red-600",
             iconBg: "bg-gradient-to-br from-orange-500 to-red-600",
@@ -86,12 +86,12 @@ export default function SolutionTypes() {
             icon: UtensilsCrossed,
             title: "Restaurant & Dining Systems",
             description:
-                "Table reservation systems with floor planning, waitlist management, and dining experience customization.",
+                "Digital solutions for the F&B sector. Table reservation systems, digital menu apps with QR integration, and kitchen display systems (KDS).",
             features: [
-                "Table Management",
-                "Waitlist System",
-                "Menu Integration",
-                "Event Booking",
+                "Table Reservations",
+                "QR Digital Menus",
+                "Kitchen Display Systems",
+                "Dining Personalization",
             ],
             gradient: "from-emerald-500 to-teal-600",
             iconBg: "bg-gradient-to-br from-emerald-500 to-teal-600",
@@ -99,14 +99,14 @@ export default function SolutionTypes() {
         },
         {
             icon: CarFront,
-            title: "Transport & Transfer Booking",
+            title: "Transport & Logistics Booking",
             description:
-                "Vehicle rental and transfer booking platforms with fleet management and driver assignment systems.",
+                "Fleet management and transfer solutions. Mobile App Development for Travel Agencies ensures real-time tracking and seamless customer communication.",
             features: [
                 "Fleet Management",
                 "Driver Assignment",
-                "Route Optimization",
                 "Real-time Tracking",
+                "Transfer Booking",
             ],
             gradient: "from-amber-500 to-orange-600",
             iconBg: "bg-gradient-to-br from-amber-500 to-orange-600",
@@ -157,8 +157,7 @@ export default function SolutionTypes() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        From boutique hotels to global tour operators, we create digital
-                        platforms that elevate every travel experience.
+                        Whether you are a startup needing a Custom Travel Booking Platform Development or an established resort seeking Digital Marketing for Luxury Hotels and Resorts, we deliver measurable results. Partner with us to leverage the power of Next.js, AI analytics, and cloud-native infrastructure, ensuring your business stays ahead of the curve.
                     </p>
                     <div
                         className="w-24 h-1.5 mx-auto mt-8 rounded-full"

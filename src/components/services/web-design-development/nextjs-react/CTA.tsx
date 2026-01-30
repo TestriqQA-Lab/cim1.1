@@ -46,7 +46,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="relative p-6 md:p-16 rounded-3xl border-2 overflow-hidden"
+                    className="relative p-6 sm:p-10 md:p-16 rounded-3xl border-2 overflow-hidden"
                     style={{
                         background: "linear-gradient(135deg, var(--card-bg), color-mix(in srgb, #61dafb 5%, var(--card-bg)))",
                         borderColor: "color-mix(in srgb, #61dafb 40%, var(--border-color))",
@@ -80,7 +80,7 @@ export default function CTA() {
                             className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Build with the{" "}
+                            Global Reach &{" "}
                             <span
                                 style={{
                                     background: "linear-gradient(135deg, #61dafb, #00d4ff)",
@@ -88,7 +88,7 @@ export default function CTA() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Best Stack
+                                Niche Expertise
                             </span>
                         </h2>
 
@@ -96,22 +96,21 @@ export default function CTA() {
                             className="text-base md:text-xl mb-10 leading-relaxed"
                             style={{ color: "var(--secondary-text)" }}
                         >
-                            Whether you&apos;re building a marketing site, SaaS application, or
-                            e-commerce platform, we&apos;ll help you ship faster with Next.js and React.
+                            We are proud to serve as a leading Next.js development agency and React JS development company for clients across the USA, UK, Canada, Australia, and the Middle East. Beyond general web development, we have deep niche expertise in Real Estate, Fintech, SaaS, and Healthcare, providing tailor-made React development services that address the unique challenges of your industry.
                         </p>
 
                         {/* CTA Button */}
                         <div className="flex items-center justify-center">
                             <Link
                                 href="/contact"
-                                className="w-full sm:w-auto group inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                                className="group inline-flex items-center justify-center text-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                                 style={{
                                     background: "linear-gradient(135deg, #61dafb, #00d4ff)",
                                     color: "#000000",
                                     boxShadow: "0 8px 32px rgba(97, 218, 251, 0.4)",
                                 }}
                             >
-                                Start Your Project
+                                <span className="max-w-[200px] sm:max-w-none">Book Your Free Next.js Strategy Session Today</span>
                                 <ArrowRight className="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                             </Link>
                         </div>

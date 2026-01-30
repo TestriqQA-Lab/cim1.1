@@ -6,33 +6,33 @@ export default function ServiceOverview() {
     const highlights = [
         {
             icon: Zap,
-            title: "Blazing Fast Performance",
-            description: "Automatic code splitting, image optimization, and edge caching deliver sub-second page loads.",
+            title: "Next.js SSR Services",
+            description: "Deliver content instantly to users and search engines alike with server-side rendering.",
         },
         {
             icon: Shield,
-            title: "Type-Safe Development",
-            description: "Full TypeScript support with strict typing catches errors at compile time, not runtime.",
+            title: "Static Site Generation",
+            description: "Pre-render pages for unparalleled speed and security using Next.js SSG capabilities.",
         },
         {
             icon: Globe,
-            title: "SEO-First Architecture",
-            description: "Server-side rendering and static generation ensure perfect indexability and Core Web Vitals.",
+            title: "Incremental Static Regeneration",
+            description: "Update static content in milliseconds without rebuilding the entire application via ISR.",
         },
         {
             icon: Code2,
-            title: "Server Components",
-            description: "Render components on the server to reduce client JavaScript and improve performance.",
+            title: "API Routes & Backend",
+            description: "Seamless serverless web application development with TypeScript and Next.js API routes.",
         },
         {
             icon: Layers,
-            title: "Flexible Rendering",
-            description: "Choose SSR, SSG, or ISR per page. Mix and match for optimal performance.",
+            title: "Tailwind CSS & UI/UX",
+            description: "Beautiful, responsive interfaces that convert visitors into loyal customers with modern design.",
         },
         {
             icon: Rocket,
-            title: "Edge-Ready Deployment",
-            description: "Deploy globally with Vercel Edge Functions for near-instant response times worldwide.",
+            title: "App Router Expertise",
+            description: "Leveraging the latest patterns for optimized data fetching and layout management.",
         },
     ];
 
@@ -64,7 +64,7 @@ export default function ServiceOverview() {
                     >
                         <Code2 className="w-4 h-4" style={{ color: "#61dafb" }} />
                         <span className="text-sm font-medium" style={{ color: "#61dafb" }}>
-                            Why Next.js & React
+                            Technical Excellence
                         </span>
                     </div>
 
@@ -72,7 +72,7 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        The{" "}
+                        High-Performance{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #61dafb, #00d4ff)",
@@ -80,16 +80,14 @@ export default function ServiceOverview() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Modern Stack
-                        </span>{" "}
-                        for Modern Apps
+                            Technical expertise
+                        </span>
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Build production-ready applications with the most popular React framework,
-                        trusted by leading startups and enterprises worldwide.
+                        In the post-December 2025 Google update landscape, speed and user experience are non-negotiable. As a global React JS development company, we focus on Next.js speed optimization and Core Web Vitals to ensure your site stays at the top of Google&apos;s AI Overviews.
                     </p>
                 </div>
 
