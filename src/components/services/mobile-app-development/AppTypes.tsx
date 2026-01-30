@@ -22,7 +22,7 @@ export default function AppTypes() {
             description: "Native iOS apps built with Swift and SwiftUI. We create beautiful, performant apps that leverage Apple's latest technologies and frameworks.",
             features: ["Swift & SwiftUI", "App Store Optimization", "iCloud Integration", "Push Notifications"],
             gradient: "from-[#000000] to-[#434343]",
-            link: "/services/mobile-app-development/ios-app-development"
+            link: "/services/mobile-app-development/ios-app-development-company"
         },
         {
             icon: Android,
@@ -30,7 +30,7 @@ export default function AppTypes() {
             description: "Robust Android applications using Kotlin and Jetpack. Our apps are optimized for the diverse Android ecosystem and device variations.",
             features: ["Kotlin & Jetpack", "Play Store Optimization", "Firebase Integration", "Material Design"],
             gradient: "from-[#3ddc84] to-[#07c160]",
-            link: "/services/mobile-app-development/android-app-development"
+            link: "/services/mobile-app-development/android-app-development-company"
         },
         {
             icon: GitMerge,
@@ -38,7 +38,7 @@ export default function AppTypes() {
             description: "React Native and Flutter solutions that work seamlessly across iOS and Android. Reduce development time while maintaining native performance.",
             features: ["React Native", "Flutter", "Code Reusability", "Faster Time-to-Market"],
             gradient: "from-[#667eea] to-[#764ba2]",
-            link: "/services/mobile-app-development/cross-platform-app-development"
+            link: "/services/mobile-app-development/cross-platform-app-development-company"
         },
         {
             icon: Globe,
@@ -54,7 +54,7 @@ export default function AppTypes() {
             description: "Large-scale, mission-critical applications for enterprises. We handle complex requirements, security, and integration with existing systems.",
             features: ["Enterprise Security", "Legacy System Integration", "Scalability", "Compliance & Governance"],
             gradient: "from-[#4facfe] to-[#00f2fe]",
-            link: "/services/mobile-app-development/enterprise-app-development"
+            link: "/services/mobile-app-development/enterprise-application-development-services"
         },
         {
             icon: Huawei,
@@ -67,7 +67,7 @@ export default function AppTypes() {
                 "IoT & Multi-Device Support"
             ],
             gradient: "from-[#ff4b4b] to-[#d6001c]",
-            link: "/services/mobile-app-development/harmonyos-app-development"
+            link: "/services/mobile-app-development/harmony-OS-app-development-services"
         },
         // {
         //     icon: Rocket,

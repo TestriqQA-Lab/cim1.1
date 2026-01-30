@@ -30,7 +30,7 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #E1306C, #C13584)",
             icon: Instagram,
             accentColor: "#E1306C",
-            link: "/services/social-media-marketing/instagram-marketing",
+            link: "/services/social-media-marketing-services/instagram-marketing-services",
         },
 
         {
@@ -39,20 +39,20 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #0A66C2, #0A63BC)",
             icon: Linkedin,
             accentColor: "#0A66C2",
-            link: "/services/social-media-marketing/linkedin-marketing",
+            link: "/services/social-media-marketing-services/linkedin-marketing-services",
         },
         {
             name: "YouTube",
             description: "Developing high-value video content, optimizing for search, and utilizing YouTube Ads to capture attention and educate potential customers.",
-            link: "/services/social-media-marketing/youtube-marketing",
+            link: "/services/social-media-marketing-services/video-marketing-agency",
             gradient: "linear-gradient(135deg, #FF0000, #282828)",
             icon: Youtube,
             accentColor: "#FF0000",
         },
         {
-            name: "X (Twitter)",
+            name: "Twitter Ads Management",
             description: "Real-time engagement, trend-jacking, and building a strong, authoritative brand voice through concise and impactful messaging.",
-            link: "/services/social-media-marketing/x-twitter-marketing",
+            link: "/services/social-media-marketing-services/twitter-ads-management",
             gradient: "linear-gradient(135deg, #000000, #333333)",
             icon: TwitterX,
             accentColor: "#000000",

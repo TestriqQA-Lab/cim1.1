@@ -21,7 +21,7 @@ export default function Techniques() {
             badge: "Foundation",
             color: "#3b82f6",
             gradient: "from-blue-500 to-cyan-500",
-            link: "/services/seo-services/on-page-seo",
+            link: "/services/seo-services/on-page-seo-services",
         },
         {
             icon: Code,
@@ -32,7 +32,7 @@ export default function Techniques() {
             badge: "Technical",
             color: "#8b5cf6",
             gradient: "from-purple-500 to-pink-500",
-            link: "/services/seo-services/technical-seo",
+            link: "/services/seo-services/technical-seo-services",
         },
         {
             icon: Globe,
@@ -43,7 +43,7 @@ export default function Techniques() {
             badge: "Content",
             color: "#10b981",
             gradient: "from-green-500 to-emerald-500",
-            link: "/services/seo-services/content-seo",
+            link: "/services/seo-services/seo-content-writing-services",
         },
         {
             icon: Settings,
@@ -54,7 +54,7 @@ export default function Techniques() {
             badge: "Local",
             color: "#f59e0b",
             gradient: "from-amber-500 to-orange-500",
-            link: "/services/seo-services/local-seo",
+            link: "/services/seo-services/local-seo-services",
         },
         {
             icon: Store,
@@ -65,7 +65,7 @@ export default function Techniques() {
             badge: "E-commerce",
             color: "#0EA5E9",
             gradient: "from-sky-400 to-cyan-500",
-            link: "/services/seo-services/ecommerce-seo",
+            link: "/services/seo-services/ecommerce-seo-services",
         },
         {
             icon: Link2,

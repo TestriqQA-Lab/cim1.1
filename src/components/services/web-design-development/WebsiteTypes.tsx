@@ -93,7 +93,7 @@ export default function WebsiteTypes() {
             description: "Booking engines with dynamic global pricing, inventory management, and multi-language support.",
             features: ["Booking engine", "Inventory sync", "Payment gateway", "Reviews & ratings"],
             color: "from-[#fab900] to-[#00efd6]",
-            href: "/services/web-design-development/travel-hospitality",
+            href: "/services/web-design-development/travel-and-hospitality-services",
         },
         {
             icon: Clapperboard,
@@ -112,7 +112,7 @@ export default function WebsiteTypes() {
             description: "High-performance, server-rendered applications for maximum speed and SEO.",
             features: ["Server-side rendering", "Static generation", "Optimized performance", "SEO friendly"],
             color: "from-[#000000] to-[#333333]",
-            href: "/services/web-design-development/nextjs-react",
+            href: "/services/web-design-development/nextjs-development-services",
         },
         {
             icon: Settings,
@@ -128,7 +128,7 @@ export default function WebsiteTypes() {
             description: "Custom themes and functionality for robust online stores on Shopify or WooCommerce.",
             features: ["Custom themes", "App integration", "Store setup", "Optimization"],
             color: "from-[#96bf48] to-[#96bf48]",
-            href: "/services/web-design-development/shopify-ecommerce",
+            href: "/services/web-design-development/shopify-development-services",
         },
         {
             icon: Server,
@@ -152,7 +152,7 @@ export default function WebsiteTypes() {
             description: "Custom WordPress themes, plugins, and WooCommerce stores for businesses of all sizes.",
             features: ["Custom Themes", "WooCommerce", "Plugin Development", "Performance Optimization"],
             color: "from-[#0073AA] to-[#0096D6]",
-            href: "/services/web-design-development/wordpress-development",
+            href: "/services/web-design-development/wordpress-development-services",
         },
         {
             icon: Code2,
@@ -168,7 +168,7 @@ export default function WebsiteTypes() {
             description: "Lightning-fast content sites with Islands Architecture and zero JavaScript by default.",
             features: ["Zero JS Default", "Islands Architecture", "Multi-Framework", "SSG & SSR"],
             color: "from-[#7C3AED] to-[#FF5D01]",
-            href: "/services/web-design-development/astro-framework",
+            href: "/services/web-design-development/astro-framework-services",
         },
         {
             icon: Coffee,
