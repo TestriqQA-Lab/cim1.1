@@ -15,7 +15,7 @@ export default function TechStack() {
             description: "The TALL stack and core PHP technologies",
             technologies: [
                 { name: "Laravel", description: "PHP Framework", logo: "/images/techstack_logos/Laravel-logo.png" },
-                { name: "PHP 8.2+", description: "Core Language", logo: "/images/techstack_logos/php-logo.svg" },
+                { name: "PHP 8.4+", description: "Core Language", logo: "/images/techstack_logos/php-logo.svg" },
                 { name: "Livewire", description: "Full-stack Framework", logo: "/images/techstack_logos/Livewire-logo.png" },
                 { name: "Alpine.js", description: "Minimal JS", logo: "/images/techstack_logos/Alpinejs-logo.svg" },
                 { name: "Filament", description: "Admin Panels", logo: "/images/techstack_logos/Filament-logo.png" },

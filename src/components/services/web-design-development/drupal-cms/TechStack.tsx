@@ -15,7 +15,7 @@ export default function TechStack() {
             description: "Drupal ecosystem fundamentals",
             technologies: [
                 { name: "Drupal 10/11", description: "CMS Platform", logo: "/images/techstack_logos/Drupal-logo.png" },
-                { name: "PHP 8.2+", description: "Server Language", logo: "/images/techstack_logos/php-logo.svg" },
+                { name: "PHP 8.4+", description: "Server Language", logo: "/images/techstack_logos/php-logo.svg" },
                 { name: "Symfony", description: "PHP Framework", logo: "/images/techstack_logos/symfony-logo.png" },
                 { name: "Twig", description: "Templating Engine", logo: "/images/techstack_logos/twig-logo.png" },
                 { name: "Composer", description: "Dependency Manager", logo: "/images/techstack_logos/composer-logo.svg" },

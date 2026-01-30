@@ -288,7 +288,7 @@ export default function Hero() {
                                 Built With Modern Stack
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Drupal 10", "PHP 8", "Symfony", "Twig", "Composer", "MySQL"].map((tech, idx) => (
+                                {["Drupal 11", "PHP 8.4", "Symfony", "Twig", "Composer", "MySQL"].map((tech, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"

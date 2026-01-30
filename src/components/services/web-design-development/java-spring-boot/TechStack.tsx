@@ -14,8 +14,8 @@ export default function TechStack() {
             icon: Coffee,
             description: "Java ecosystem fundamentals",
             technologies: [
-                { name: "Java 21", description: "Core Language", logo: "/images/techstack_logos/java-logo.svg" },
-                { name: "Spring Boot 3", description: "Application Framework", logo: "/images/techstack_logos/spring-logo.svg" },
+                { name: "Java 25", description: "Core Language", logo: "/images/techstack_logos/java-logo.svg" },
+                { name: "Spring Boot 3.4", description: "Application Framework", logo: "/images/techstack_logos/spring-logo.svg" },
                 { name: "Spring Framework", description: "Enterprise Foundation", logo: "/images/techstack_logos/spring-logo.svg" },
                 { name: "Maven", description: "Build Tool", logo: "/images/techstack_logos/Maven-logo.png" },
                 { name: "Gradle", description: "Modern Build", logo: "/images/techstack_logos/Gradle-logo.png" },

@@ -284,7 +284,7 @@ export default function Hero() {
                                 Technologies We Use
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Python 3.12", "Django 5.0", "FastAPI", "PostgreSQL", "Redis", "Docker"].map((tech, idx) => (
+                                {["Python 3.13", "Django 5.1", "FastAPI", "PostgreSQL", "Redis", "Docker"].map((tech, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"

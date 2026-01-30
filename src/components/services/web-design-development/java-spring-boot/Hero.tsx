@@ -284,7 +284,7 @@ export default function Hero() {
                                 Technologies We Master
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Java 21", "Spring Boot 3", "Spring Cloud", "Hibernate", "Kafka", "Docker"].map((tech, idx) => (
+                                {["Java 25", "Spring Boot 3.4", "Spring Cloud", "Hibernate", "Kafka", "Docker"].map((tech, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"
