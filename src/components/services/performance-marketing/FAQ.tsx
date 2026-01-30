@@ -37,7 +37,7 @@ export default function FAQ() {
                         <MessageSquare className="w-4 h-4 text-[var(--brand-orange)]" />
                         <span className="text-sm font-bold tracking-wider uppercase" style={{ color: "var(--foreground)" }}>FAQ</span>
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-black mb-6">Frequently Asked Questions</h2>
+                    <h2 className="text-3xl md:text-4xl font-black mb-6" style={{ color: "var(--foreground)" }}>Frequently Asked Questions</h2>
                     <p className="text-lg text-[var(--foreground)] max-w-2xl mx-auto">
                         Answers to common questions about our performance marketing services, pricing, and approach.
                     </p>
@@ -69,7 +69,7 @@ export default function FAQ() {
                                         >
                                             <span className="font-bold">{i + 1}</span>
                                         </div>
-                                        <h3 className="font-bold text-lg md:text-xl pr-8">{faq.q}</h3>
+                                        <h3 className="font-bold text-lg md:text-xl pr-8" style={{ color: "var(--foreground)" }}>{faq.q}</h3>
                                     </div>
                                     <ChevronDown
                                         className={`w-5 h-5 transition-transform duration-300 flex-shrink-0 ${faqOpen === i ? "rotate-180" : ""}`}

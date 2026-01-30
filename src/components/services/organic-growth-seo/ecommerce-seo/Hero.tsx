@@ -94,12 +94,12 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Turn Traffic Into{" "}
+                            Turn Traffic Into Revenue With{" "}
                             <span className="relative inline-block" style={{ color: commerceBlue }}>
-                                Revenue
+                                Ecommerce SEO Services
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
                                     style={{ color: commerceBlue }}
@@ -112,17 +112,22 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Drive qualified buyers to your product pages.
-                            We optimize site architecture, technical performance, and content to boost your store&apos;s visibility and sales.
+                            Drive qualified buyers to your product pages with data-driven ecommerce SEO optimization delivering 200% average ROI. $50M+ revenue driven through strategic product page SEO, technical fixes, and conversion-focused strategies.
                         </p>
+
+                        <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100 mt-4" style={{ color: "var(--secondary-text)" }}>
+                            We optimize Shopify, Magento, WooCommerce, and BigCommerce stores at scale - fixing roadblocks, implementing schema markup, and targeting high-intent buyer keywords that drive sales.
+                        </p>
+
+
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Product SEO",
-                                "Category Optimization",
-                                "Technical Audits",
-                                "Conversion Rate Optimization",
+                                "Product Page SEO",
+                                "Shopify SEO",
+                                "Magento SEO",
+                                "Schema Markup",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -145,7 +150,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
                                 style={{ backgroundColor: commerceBlue }}
                             >
-                                Get Store Audit
+                                Get Free Store Audit
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -157,7 +162,7 @@ export default function Hero() {
                                     color: "var(--foreground)"
                                 }}
                             >
-                                Our Strategy
+                                View Our Strategy
                             </Link>
                         </div>
 

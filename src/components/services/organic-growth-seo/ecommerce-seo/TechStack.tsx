@@ -10,17 +10,19 @@ export default function TechStack() {
     const commerceBlue = "#0EA5E9";
 
     const categories = [
-        { id: "platforms", label: "CMS Platforms" },
+        { id: "platforms", label: "E-commerce Platforms" },
         { id: "analysis", label: "Analysis & Audit" },
         { id: "performance", label: "Performance" },
     ];
 
     const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
         platforms: [
-            { name: "Shopify", description: "SaaS Commerce", logo: "/images/techstack_logos/shopify-logo-hero.png" },
+            { name: "Shopify", description: "SaaS Commerce Platform", logo: "/images/techstack_logos/shopify-logo-hero.png" },
             { name: "Magento", description: "Adobe Commerce", logo: "/images/techstack_logos/Magento-logo.svg" },
-            { name: "WooCommerce", description: "WordPress", logo: "/images/techstack_logos/WooCommerce-logo.png" },
+            { name: "WooCommerce", description: "WordPress E-commerce", logo: "/images/techstack_logos/WooCommerce-logo.png" },
             { name: "BigCommerce", description: "Enterprise SaaS", logo: "/images/techstack_logos/bigcommerce-logo.png" },
+            { name: "Headless Commerce", description: "API-First Architecture", logo: "/images/techstack_logos/Shopify-logo-hero.png" },
+            { name: "Custom Platforms", description: "Proprietary Builds", logo: "/images/techstack_logos/nextjs-logo.svg" },
         ],
         analysis: [
             { name: "Semrush", description: "Keyword Research", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
@@ -45,10 +47,10 @@ export default function TechStack() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        E-commerce <span style={{ color: commerceBlue }}>Tech Stack</span>
+                        Ecommerce Tech Stack <span style={{ color: commerceBlue }}>Mastery</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Mastery over the platforms and tools that power modern online retail.
+                        Deep expertise across platforms and tools that power modern online retail.
                     </p>
                 </div>
 

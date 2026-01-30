@@ -9,6 +9,8 @@ import {
     Gem,
     CreditCard,
     Layers,
+    Sparkles,
+    Home,
 } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -21,44 +23,58 @@ export default function SolutionTypes() {
         {
             id: "shopify",
             title: "Shopify SEO",
-            description: "Optimization specific to Shopify's liquid structure and app ecosystem.",
+            description: "Shopify-Specific Optimization: Master Shopify's Liquid template structure, app ecosystem, and built-in limitations. We optimize Shopify collection pages, implement 301 redirects, fix duplicate content issues from /collections/ and /products/ URLs, and leverage Shopify apps for reviews and schema. Perfect for ecommerce SEO for small business and DTC brands.",
             icon: ShoppingBag,
             color: "#96bf48", // Shopify green
         },
         {
             id: "magento",
-            title: "Magento (Adobe)",
-            description: "Enterprise-grade technical SEO for complex, large-scale Magento stores.",
+            title: "Magento SEO",
+            description: "Enterprise-Grade Magento SEO: Complex technical optimization for large-scale Adobe Commerce stores managing 10,000+ SKUs. We configure layered navigation SEO, optimize MySQL queries, implement Varnish caching, fix canonical chains, and manage multi-store/multi-language instances. Ideal for enterprise ecommerce SEO services for large brands.",
             icon: LayersIcon,
             color: "#f46f25", // Magento orange
         },
         {
             id: "woocommerce",
             title: "WooCommerce",
-            description: "Leveraging WordPress flexibility to dominate search results for your store.",
+            description: "WordPress + WooCommerce Power: Leverage WordPress flexibility with WooCommerce ecommerce functionality. We optimize product schema, category taxonomies, WooCommerce-specific permalinks, and integrate Yoast/RankMath for perfect on-page optimization. Great for content-rich stores needing ecommerce content marketing and SEO strategy.",
             icon: ShoppingCart,
             color: "#96588a", // WooCommerce purple
         },
         {
             id: "bigcommerce",
             title: "BigCommerce",
-            description: "Strategic implementation for BigCommerce's SaaS environment.",
+            description: "BigCommerce SaaS Excellence: Strategic implementation for BigCommerce's robust SaaS environment. Optimize faceted search, custom fields, AMP pages, and headless BigCommerce builds. We handle 301 redirects, CDN optimization, and BigCommerce's unique URL structure for maximum rankings.",
             icon: Globe,
             color: "var(--secondary-text)", // BigCommerce black/dark
         },
         {
             id: "fashion",
-            title: "Fashion & Lifestyle",
-            description: "Visual-heavy strategies for apparel and luxury goods brands.",
+            title: "Fashion & Apparel",
+            description: "Ecommerce SEO for Fashion and Apparel Brands: Visual-heavy strategies for clothing, accessories, and luxury goods. Optimize size/color variants, seasonal collections, and visual search optimization.",
             icon: Gem,
             color: commerceBlue,
         },
         {
-            id: "b2b",
-            title: "B2B E-commerce",
-            description: "Targeting wholesale buyers and decision-makers with technical precision.",
+            id: "electronics",
+            title: "Electronics & Tech",
+            description: "Ecommerce SEO for Electronics and Tech Stores: Technical spec optimization, comparison pages, and detailed product specifications that rank for high-value tech queries.",
             icon: Server,
             color: "#3B82F6",
+        },
+        {
+            id: "health",
+            title: "Health & Beauty",
+            description: "Ecommerce SEO for Health and Beauty Products: Navigate supplement/cosmetic regulations, optimize ingredient-focused content, and build authority with scientific backing.",
+            icon: Sparkles,
+            color: "#EC4899",
+        },
+        {
+            id: "home",
+            title: "Home & Furniture",
+            description: "Ecommerce SEO for Home and Furniture Stores: Large-item optimization, room-specific categories, style guides, and visual merchandising SEO tactics.",
+            icon: Home,
+            color: "#F59E0B",
         },
     ];
 
@@ -108,7 +124,7 @@ export default function SolutionTypes() {
                         Platform & Industry <span style={{ color: commerceBlue }}>Expertise</span>
                     </h2>
                     <p className="text-lg text-gray-400">
-                        Whether you're on a SaaS platform or a custom headless build, we tailor our strategy to your technology.
+                        Whether you&apos;re on a SaaS platform or custom headless build, we tailor ecommerce SEO services to your technology stack and industry vertical.
                     </p>
                 </div>
 
