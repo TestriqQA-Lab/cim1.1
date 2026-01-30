@@ -144,11 +144,18 @@ export function mapSanityBlocksToContentBlocks(sanityBlocks: any[]): ContentBloc
             }
 
             if (block._type === 'tableBlock') {
+                // Adapter for @sanity/table
+                // The plugin returns: { rows: [{ cells: ["val1", "val2"], _type: "tableRow", _key: "..." }] }
+                // We assume the first row is the header
+                const rawRows = block.rows || [];
+                const headers = rawRows.length > 0 ? rawRows[0].cells : [];
+                const rows = rawRows.length > 1 ? rawRows.slice(1).map((r: any) => r.cells) : [];
+
                 contentBlocks.push({
                     id: block._key,
                     type: 'table',
-                    headers: block.headers,
-                    rows: block.rows?.map((r: any) => r.cells)
+                    headers: headers,
+                    rows: rows
                 });
                 continue;
             }

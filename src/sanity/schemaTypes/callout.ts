@@ -31,4 +31,24 @@ export default defineType({
             validation: (rule) => rule.required(),
         }),
     ],
+    preview: {
+        select: {
+            title: 'title',
+            subtitle: 'content',
+            variant: 'variant',
+        },
+        prepare({ title, subtitle, variant }) {
+            const emojis: Record<string, string> = {
+                info: 'ℹ️',
+                warning: '⚠️',
+                tip: '💡',
+                note: '📝',
+            }
+            return {
+                title: title || (variant ? variant.charAt(0).toUpperCase() + variant.slice(1) : 'Callout'),
+                subtitle: subtitle,
+                media: () => emojis[variant as string] || '📌',
+            }
+        },
+    },
 })

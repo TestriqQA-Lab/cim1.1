@@ -17,4 +17,16 @@ export default defineType({
             type: 'string',
         }),
     ],
+    preview: {
+        select: {
+            title: 'content',
+            subtitle: 'author',
+        },
+        prepare({ title, subtitle }) {
+            return {
+                title: title,
+                subtitle: subtitle ? `- ${subtitle}` : 'Quote',
+            }
+        },
+    },
 })
