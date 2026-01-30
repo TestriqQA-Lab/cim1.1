@@ -35,6 +35,27 @@ const services = [
   { icon: Headphones, title: "Additional Support Services", description: "Ongoing assistance & maintenance", color: "bg-gradient-to-br from-[#4b277a] to-[#97288e]" },
 ];
 
+// Helper function to get correct slug for services
+const getServiceSlug = (title: string) => {
+  if (title === "Social Media Marketing") {
+    return "social-media-marketing-services";
+  }
+  if (title === "Facebook Marketing") {
+    return "facebook-marketing-services";
+  }
+  if (title === "AI Workflows & Automations") {
+    return "ai-workflows-automations-services";
+  }
+  if (title === "AI-Powered Chatbots") {
+    return "ai-chatbots-services";
+  }
+  if (title === "Organic Growth & SEO") {
+    return "seo-services";
+  }
+  return title.toLowerCase().replace(/[&\s]+/g, "-");
+};
+
+
 export default function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -212,7 +233,7 @@ export default function Navbar() {
                           return (
                             <Link
                               key={index}
-                              href={`/services/${service.title.toLowerCase().replace(/[&\s]+/g, "-")}`}
+                              href={`/services/${getServiceSlug(service.title)}`}
                               className="group p-4 rounded-xl transition-all duration-200 border hover:shadow-md"
                               style={{
                                 backgroundColor: "transparent",
@@ -482,7 +503,7 @@ export default function Navbar() {
                   {services.map((service, index) => {
                     const Icon = service.icon;
                     return (
-                      <Link key={index} href={`/services/${service.title.toLowerCase().replace(/[&\s]+/g, "-")}`} onClick={toggleMobileMenu} className="flex items-center space-x-3 p-3 rounded-lg transition-all" onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")} onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}>
+                      <Link key={index} href={`/services/${getServiceSlug(service.title)}`} onClick={toggleMobileMenu} className="flex items-center space-x-3 p-3 rounded-lg transition-all" onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")} onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}>
                         <div className={`flex-shrink-0 w-10 h-10 rounded-lg ${service.color} p-2 shadow-md`}>
                           <Icon className="w-full h-full text-white" />
                         </div>

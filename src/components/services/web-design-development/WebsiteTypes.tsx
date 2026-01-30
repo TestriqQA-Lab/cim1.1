@@ -26,7 +26,7 @@ export default function WebsiteTypes() {
             description: "Complex, scalable software solutions built with modern stacks (React, Node.js) for multi-tenant global platforms.",
             features: ["Real-time interactions", "Complex logic", "Scalable", "Subscription ready"],
             color: "from-[#008ac1] to-[#bc3feb]",
-            href: "/services/web-design-development/web-applications-saas",
+            href: "/services/web-design-development/saas-development-services",
         },
         {
             icon: ShoppingCart,
@@ -34,7 +34,7 @@ export default function WebsiteTypes() {
             description: "Advanced online stores with global payment gateways, multi-currency support, and seamless omnichannel fulfillment.",
             features: ["Global payments", "Inventory sync", "Conversion optimized", "Scalable architecture"],
             color: "from-[#00b5ca] to-[#00efd6]",
-            href: "/services/web-design-development/ecommerce-stores",
+            href: "/services/web-design-development/ecommerce-development-company",
         },
         {
             icon: Zap,
@@ -42,7 +42,7 @@ export default function WebsiteTypes() {
             description: "High-traffic content platforms with advanced CMS integration, engineered for speed and global reader engagement.",
             features: ["Content management", "Database-driven", "High performance", "Engagement tools"],
             color: "from-[#a855f7] to-[#ec4899]",
-            href: "/services/web-design-development/blogs-news-portals",
+            href: "/services/web-design-development/blog-design-services",
         },
         {
             icon: ImageIcon,
@@ -50,7 +50,7 @@ export default function WebsiteTypes() {
             description: "Visually stunning showcases for creators and professionals, designed to highlight global achievements and case studies.",
             features: ["Visual showcase", "Case studies", "Professional presentation", "Client testimonials"],
             color: "from-[#06b6d4] to-[#0891b2]",
-            href: "/services/web-design-development/portfolio-personal",
+            href: "/services/web-design-development/branding-services",
         },
     ];
 

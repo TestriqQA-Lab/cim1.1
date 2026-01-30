@@ -44,7 +44,7 @@ const services = [
     {
         icon: Workflow,
         title: "AI Workflows & Automations",
-        slug: "ai-workflows-automations",
+        slug: "ai-workflows-automations-services",
         description: "Streamline operations with intelligent automation and workflow optimization.",
         features: ["Process Automation", "Custom Integrations", "n8n / Zapier"],
         gradient: "linear-gradient(135deg, var(--brand-purple), var(--brand-cyan))",
@@ -52,7 +52,7 @@ const services = [
     {
         icon: Bot,
         title: "AI-Powered Chatbots",
-        slug: "ai-powered-chatbots",
+        slug: "ai-chatbots-services",
         description: "Deploy intelligent chatbots that enhance customer experience and reduce support costs.",
         features: ["24/7 Support", "Lead Qualification", "NLP Integration"],
         gradient: "linear-gradient(135deg, var(--brand-cyan), var(--brand-teal))",
@@ -60,7 +60,7 @@ const services = [
     {
         icon: Search,
         title: "Organic Growth & SEO",
-        slug: "organic-growth-seo",
+        slug: "seo-services",
         description: "Boost your search rankings and drive sustainable organic traffic to your website.",
         features: ["Technical SEO", "Content Strategy", "Link Building"],
         gradient: "linear-gradient(135deg, var(--brand-yellow), var(--brand-orange))",

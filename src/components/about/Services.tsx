@@ -109,7 +109,7 @@ export default function Services() {
             description: "Data-driven strategies designed for sustainable traffic growth and improved search visibility aligned with 2026 algorithms",
             badgeGrad: "from-[var(--brand-blue)] to-[var(--brand-purple)]",
             brandText: "var(--brand-blue)",
-            href: "/services/organic-growth-seo",
+            href: "/services/seo-services",
             details: [
                 "Comprehensive Website Audits",
                 "On-Page & Technical SEO",
@@ -141,7 +141,7 @@ export default function Services() {
             description: "Intelligent automation solutions that streamline operations, reduce errors, and unlock new productivity levels",
             badgeGrad: "from-[var(--brand-yellow)] to-[var(--brand-orange)]",
             brandText: "var(--brand-yellow)",
-            href: "/services/ai-workflows-automations",
+            href: "/services/ai-workflows-automations-services",
             details: [
                 "Business Process Automation (BPA)",
                 "CRM & ERP Integration",
@@ -157,7 +157,7 @@ export default function Services() {
             description: "24/7 intelligent conversational agents for customer support, lead generation, and engagement at scale",
             badgeGrad: "from-[var(--brand-teal)] to-[var(--brand-cyan)]",
             brandText: "var(--brand-teal)",
-            href: "/services/ai-powered-chatbots",
+            href: "/services/ai-chatbots-services",
             details: [
                 "AI Sales Agents & Lead Qualification",
                 "Multilingual Chatbot Systems",

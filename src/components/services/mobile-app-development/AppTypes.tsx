@@ -46,7 +46,7 @@ export default function AppTypes() {
             description: "Web-based mobile apps using technologies like Ionic and Cordova. Perfect for rapid prototyping and MVP development.",
             features: ["Ionic Framework", "Cordova", "Web Technologies", "Quick Deployment"],
             gradient: "from-[#f093fb] to-[#f5576c]",
-            link: "/services/mobile-app-development/hybrid-app-development"
+            link: "/services/mobile-app-development/hybrid-app-development-services"
         },
         {
             icon: Building2,

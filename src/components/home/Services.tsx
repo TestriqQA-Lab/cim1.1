@@ -47,7 +47,7 @@ export default function Services() {
         {
             icon: <Workflow className="w-6 h-6" />,
             title: "AI Workflows & Automations",
-            slug: "ai-workflows-automations",
+            slug: "ai-workflows-automations-services",
             bullets: [
                 "Business process automation (BPA)",
                 "Document processing & OCR",
@@ -59,7 +59,7 @@ export default function Services() {
         {
             icon: <Bot className="w-6 h-6" />,
             title: "AI-Powered Chatbots",
-            slug: "ai-powered-chatbots",
+            slug: "ai-chatbots-services",
             bullets: [
                 "Custom AI chatbot development",
                 "E-commerce sales & support bots",
@@ -71,7 +71,7 @@ export default function Services() {
         {
             icon: <Search className="w-6 h-6" />,
             title: "Organic Growth & SEO",
-            slug: "organic-growth-seo",
+            slug: "seo-services",
             bullets: [
                 "Technical SEO & site audits",
                 "On-page & off-page optimization",

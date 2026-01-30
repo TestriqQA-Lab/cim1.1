@@ -22,7 +22,7 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #1877F2, #0A66C2)",
             icon: Facebook,
             accentColor: "#1877F2",
-            link: "/services/social-media-marketing/facebook-marketing",
+            link: "/services/social-media-marketing-services/facebook-marketing-services",
         },
         {
             name: "Instagram Marketing",
