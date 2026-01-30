@@ -27,7 +27,7 @@ export default function CTA() {
 
             <div className="max-w-4xl mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="p-10 md:p-16 rounded-3xl border text-center relative overflow-hidden"
+                    className="p-6 md:p-16 rounded-3xl border text-center relative overflow-hidden"
                     style={{
                         backgroundColor: "var(--card-bg)",
                         borderColor: "var(--border-color)",
@@ -55,7 +55,7 @@ export default function CTA() {
                         </div>
 
                         {/* Heading */}
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
+                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                             Ready to Launch Your Next <span
                                 className="bg-clip-text text-transparent"
                                 style={{
@@ -68,33 +68,33 @@ export default function CTA() {
                         </h2>
 
                         {/* Description */}
-                        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                        <p className="text-base md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
                             Don&apos;t let technical debt hold back your editorial potential. Partner with a Blogs & News Portals Development agency that understands the rhythm of the news cycle.
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-semibold text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-4 md:px-10 md:py-5 rounded-2xl font-bold text-sm sm:text-base md:text-lg text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                                 style={{
                                     background: "linear-gradient(135deg, #a855f7, #ec4899)",
                                     boxShadow: "0 8px 20px -4px rgba(168, 85, 247, 0.4)",
                                 }}
                             >
                                 <span style={{ color: "inherit" }}>Start Your Project</span>
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
                             </Link>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-semibold border transition-all duration-300 hover:bg-violet-500/5"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-4 md:px-10 md:py-5 rounded-2xl font-bold text-sm sm:text-base md:text-lg border transition-all duration-300 hover:bg-violet-500/5"
                                 style={{
                                     borderColor: "#a855f7",
                                     color: "#a855f7",
                                 }}
                             >
                                 Schedule a Consultation
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
                             </Link>
                         </div>
 

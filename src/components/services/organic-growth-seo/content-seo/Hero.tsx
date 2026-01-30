@@ -92,18 +92,18 @@ export default function Hero() {
                         >
                             <PenTool className="w-4 h-4" style={{ color: contentEmerald }} />
                             <span className="text-sm font-medium" style={{ color: contentEmerald }}>
-                                Content that Converts
+                                Scale with ROI-First Content
                             </span>
                         </div>
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Drive Growth with{" "}
+                            Drive Exponential ROI with{" "}
                             <span className="relative inline-block" style={{ color: contentEmerald }}>
-                                Strategic Content
+                                Strategic SEO Content
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
                                     style={{ color: contentEmerald }}
@@ -116,8 +116,8 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Create high-quality, data-driven content that ranks at the top of search results and
-                            engages your audience at every stage of the funnel.
+                            Unlock scalable growth with precision-engineered content that ranks #1 globally,
+                            satisfies 2026 Google EEAT signals, and converts high-intent traffic into loyal customers.
                         </p>
 
                         {/* Feature Pills */}
@@ -149,7 +149,7 @@ export default function Hero() {
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
                                 style={{ backgroundColor: contentEmerald }}
                             >
-                                Start Content Plan
+                                Get My Free Content Audit Today
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
@@ -161,25 +161,25 @@ export default function Hero() {
                                     color: "var(--foreground)"
                                 }}
                             >
-                                How We Write
+                                Explore Our Writing Framework
                             </Link>
                         </div>
-
+                        electoral
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: contentEmerald }}>10x</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Traffic Growth</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Content Traffic Growth</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: contentEmerald }}>Top 3</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Keyword Rankings</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Sustainable Keyword Rankings</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: contentEmerald }}>200%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Engagement Rate</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Engagement Rate Lift</p>
                             </div>
                         </div>
                     </div>

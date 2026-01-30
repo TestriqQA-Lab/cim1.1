@@ -17,7 +17,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10 text-center">
                 <div
-                    className="relative rounded-3xl overflow-hidden border p-12 md:p-20"
+                    className="relative rounded-3xl overflow-hidden border p-8 md:p-20"
                     style={{
                         background: `linear-gradient(135deg, ${youtubeRed}05, var(--background))`,
                         borderColor: "var(--border-color)"
@@ -27,26 +27,28 @@ export default function CTA() {
                         <Play className="w-8 h-8 ml-1" fill="currentColor" />
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                         Ready to Start{" "}
                         <span style={{ color: youtubeRed }}>Recording?</span>
                     </h2>
 
-                    <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
                         Let's create video campaigns that drive real growth. Schedule your strategy session today.
                     </p>
 
-                    <Link
-                        href="/contact"
-                        className="inline-flex items-center justify-center px-10 py-5 rounded-full font-bold text-lg text-white transition-all transform hover:scale-105 hover:shadow-xl"
-                        style={{
-                            backgroundColor: youtubeRed,
-                            boxShadow: `0 4px 20px ${youtubeRed}40`
-                        }}
-                    >
-                        Get Your Proposal
-                        <ArrowRight className="w-6 h-6 ml-2" />
-                    </Link>
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <Link
+                            href="/contact"
+                            className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-xl"
+                            style={{
+                                backgroundColor: youtubeRed,
+                                boxShadow: `0 4px 20px ${youtubeRed}40`
+                            }}
+                        >
+                            Get Your Proposal
+                            <ArrowRight className="w-5 h-5 flex-shrink-0 md:w-6 md:h-6 ml-2" />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

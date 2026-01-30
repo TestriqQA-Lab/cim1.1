@@ -46,7 +46,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="relative p-8 md:p-16 rounded-3xl border-2 overflow-hidden"
+                    className="relative p-6 md:p-16 rounded-3xl border-2 overflow-hidden"
                     style={{
                         background: "linear-gradient(135deg, var(--card-bg), color-mix(in srgb, #339933 5%, var(--card-bg)))",
                         borderColor: "color-mix(in srgb, #339933 40%, var(--border-color))",
@@ -77,7 +77,7 @@ export default function CTA() {
 
                         {/* Heading */}
                         <h2
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+                            className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
                             Ready to{" "}
@@ -94,7 +94,7 @@ export default function CTA() {
                         </h2>
 
                         <p
-                            className="text-lg md:text-xl mb-10 leading-relaxed"
+                            className="text-base md:text-xl mb-10 leading-relaxed"
                             style={{ color: "var(--secondary-text)" }}
                         >
                             Whether you&apos;re building from scratch or scaling existing systems,
@@ -105,7 +105,7 @@ export default function CTA() {
                         <div className="flex items-center justify-center">
                             <Link
                                 href="/contact"
-                                className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                                className="w-full sm:w-auto group inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold text-sm sm:text-base md:text-lg text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                                 style={{
                                     background: "linear-gradient(135deg, #339933, #215732)",
                                     color: "#ffffff",
@@ -113,7 +113,7 @@ export default function CTA() {
                                 }}
                             >
                                 Start Your Backend Project
-                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                <ArrowRight className="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                             </Link>
                         </div>
 

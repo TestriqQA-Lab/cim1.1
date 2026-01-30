@@ -130,7 +130,7 @@ export default function CTA() {
 
                 {/* Final CTA Card */}
                 <div
-                    className="relative p-8 md:p-16 rounded-3xl border-2 overflow-hidden"
+                    className="relative p-6 md:p-16 rounded-3xl border-2 overflow-hidden"
                     style={{
                         background: "linear-gradient(135deg, var(--card-bg), color-mix(in srgb, #96bf48 5%, var(--card-bg)))",
                         borderColor: "color-mix(in srgb, #96bf48 40%, var(--border-color))",
@@ -151,7 +151,7 @@ export default function CTA() {
                         </div>
 
                         <h2
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+                            className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
                             Your Global E-commerce{" "}
@@ -167,7 +167,7 @@ export default function CTA() {
                         </h2>
 
                         <p
-                            className="text-lg md:text-xl mb-10 leading-relaxed"
+                            className="text-base md:text-xl mb-10 leading-relaxed"
                             style={{ color: "var(--secondary-text)" }}
                         >
                             Don&apos;t let a generic store hold back your revenue. Partner with the hire Shopify experts who deliver measurable results. Whether you need a simple store audit or a complete Shopify Plus migration, our team is ready to scale your brand.
@@ -176,7 +176,7 @@ export default function CTA() {
                         <div className="flex flex-wrap items-center justify-center gap-4">
                             <Link
                                 href="/contact"
-                                className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                                className="w-full sm:w-auto group inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold text-sm sm:text-base md:text-lg text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                                 style={{
                                     background: "linear-gradient(135deg, #96bf48, #5c8a1e)",
                                     color: "#ffffff",
@@ -186,17 +186,7 @@ export default function CTA() {
                                 Contact Us Today for a Free Quote
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
-                            <Link
-                                href="/portfolio"
-                                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold border transition-all duration-300 hover:scale-105"
-                                style={{
-                                    borderColor: "var(--border-color)",
-                                    color: "var(--foreground)",
-                                    backgroundColor: "var(--card-bg)",
-                                }}
-                            >
-                                View Our E-commerce Case Studies
-                            </Link>
+
                         </div>
                     </div>
                 </div>

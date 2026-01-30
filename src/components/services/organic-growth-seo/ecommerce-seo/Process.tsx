@@ -10,38 +10,38 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Technical Audit",
-            description: "Deep crawl of your store to identify indexing issues, orphan pages, and crawl budget wasters.",
+            title: "Comprehensive Technical Ecommerce SEO Audit",
+            description: "Deep crawl of your entire store using enterprise tools (Screaming Frog, Sitebulb, SEMrush) to identify indexing issues, orphan product pages, duplicate content, crawl budget wasters, broken links, and mobile usability errors. We analyze site architecture, internal linking structure, page speed metrics, and Core Web Vitals. Deliverable: 40+ page audit report with prioritized fixes.",
             animation: "slide-right"
         },
         {
             icon: PenTool,
-            title: "Keyword Mapping",
-            description: "Assigning high-value transactional keywords to specific product and category pages.",
+            title: "Keyword Research & Mapping",
+            description: "Exhaustive research into high-value transactional keywords specific to your products. We analyze search volume, competition, buyer intent, and commercial value - then assign specific keywords to product pages, category pages, and blog content. Focus on ecommerce SEO ranking factors for 2026 including semantic search, featured snippets, and voice search optimization.",
             animation: "slide-left"
         },
         {
             icon: Layout,
-            title: "Site Architecture",
-            description: "Refining URL structure and internal linking to pass authority to key products.",
+            title: "Site Architecture & Internal Linking Optimization",
+            description: "Refining URL structure, breadcrumb navigation, and internal linking to pass authority to your highest-converting products. We create topic clusters, implement hub-and-spoke linking, fix orphan pages, and optimize faceted navigation SEO to prevent indexing issues while maintaining user experience.",
             animation: "fade-up"
         },
         {
             icon: Zap,
-            title: "On-Page Optimization",
-            description: "Enhancing product descriptions, meta tags, and schema markup for maximum CTR.",
+            title: "On-Page Optimization & Schema Implementation",
+            description: "Enhancing every product page with optimized titles (50-60 chars with primary keywords), meta descriptions (150-155 chars with CTR hooks), H1/H2 headers, and unique product descriptions (300+ words). Implement comprehensive schema markup for ecommerce products including Product, Offer, Review, AggregateRating, and Breadcrumb markup for maximum SERP visibility.",
             animation: "scale"
         },
         {
             icon: Link2,
-            title: "Link Acquisition",
-            description: "Building high-quality backlinks from relevant industry niches to boost domain power.",
+            title: "Ecommerce Link Building & Authority Services",
+            description: "Building high-quality backlinks from relevant industry niches, trade publications, and authoritative blogs. Strategies include digital PR, product reviews, influencer outreach, broken link building, and resource page placements. Focus on editorial links that boost domain authority and drive referral traffic. Perfect for ecommerce link building and authority services needs.",
             animation: "rotate"
         },
         {
             icon: BarChart,
-            title: "Revenue Reporting",
-            description: "Tracking rankings, traffic, and most importantly - revenue generated from organic search.",
+            title: "Revenue Reporting & Monthly Ecommerce SEO Maintenance",
+            description: "Tracking rankings, organic traffic, conversion rates, and most importantly - revenue generated from organic search. Monthly reports show keyword movements, technical health scores, backlink growth, and ROI. Ecommerce SEO maintenance and monthly reporting includes ongoing optimization, content updates, and algorithm response.",
             animation: "flip"
         },
     ];
@@ -139,10 +139,10 @@ export default function Process() {
                 <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                     <div className="text-center mb-20">
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Our E-commerce <span style={{ color: commerceBlue }}>Playbook</span>
+                            Our Ecommerce SEO <span style={{ color: commerceBlue }}>Playbook</span>
                         </h2>
                         <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            A rigorous 6-step process designed to scale store revenue.
+                            A rigorous, data-driven process designed to scale your store revenue through organic search. We optimize thousands of product pages and implement our ecommerce SEO strategy combining mobile-first ecommerce SEO, Core Web Vitals optimization, and semantic search for online shopping to dominate 2026 rankings.
                         </p>
                     </div>
 

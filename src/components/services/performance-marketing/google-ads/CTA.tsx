@@ -22,7 +22,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="relative rounded-3xl overflow-hidden border p-12 md:p-20 text-center"
+                    className="relative rounded-3xl overflow-hidden border p-8 md:p-20 text-center"
                     style={{
                         background: "linear-gradient(180deg, var(--background) 0%, var(--card-bg) 100%)",
                         borderColor: "var(--border-color)"
@@ -36,7 +36,7 @@ export default function CTA() {
                         <Search className="w-24 h-24" style={{ color: googleGreen }} />
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
                         Ready to Grow with <br />
                         <span
                             className="bg-clip-text text-transparent"
@@ -46,21 +46,21 @@ export default function CTA() {
                         </span>
                     </h2>
 
-                    <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
                         Get a free account audit and discover how we can improve your ROAS by 50% or more.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                            className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
                             style={{
                                 background: `linear-gradient(135deg, ${googleBlue}, ${googleGreen})`,
                                 boxShadow: `0 4px 20px ${googleBlue}40`
                             }}
                         >
                             Get Free Audit
-                            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
+                            <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2 flex-shrink-0" />
                         </Link>
                     </div>
 

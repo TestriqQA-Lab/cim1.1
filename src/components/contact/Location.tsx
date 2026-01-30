@@ -72,7 +72,7 @@ export default function Location() {
 
                         {/* Floating info card (keeps CTA on top of iframe) */}
                         <div
-                            className="absolute bottom-6 left-6 rounded-xl p-4 shadow-lg max-w-xs pointer-events-auto"
+                            className="absolute bottom-4 left-4 right-4 lg:bottom-6 lg:left-6 lg:right-auto rounded-xl p-4 shadow-lg lg:max-w-xs pointer-events-auto"
                             style={{
                                 // was bg-white/90 backdrop-blur-sm border border-gray-100
                                 background: "color-mix(in srgb, var(--card-bg) 90%, transparent)",

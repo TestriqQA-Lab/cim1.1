@@ -21,9 +21,9 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="relative rounded-3xl overflow-hidden border p-12 md:p-20 text-center"
+                    className="relative rounded-3xl overflow-hidden border p-8 md:p-20 text-center"
                     style={{
-                        background: "linear-gradient(180deg, var(--card-bg) 0%, var(--background) 100%)",
+                        background: "linear-gradient(180deg, var(--background) 0%, var(--card-bg) 100%)",
                         borderColor: "var(--border-color)"
                     }}
                 >
@@ -43,10 +43,10 @@ export default function CTA() {
                         Stop losing customers to competitors who rank higher. 83% of local searches lead to in-store visits within 24 hours. If you're not in the top 3 Google Map Pack results, you're handing high-intent customers to competitors on a silver platter.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center px-6 py-3 md:px-10 md:py-5 rounded-full font-bold text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                            className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg"
                             style={{
                                 backgroundColor: localAmber,
                                 boxShadow: `0 4px 20px ${localAmber}40`

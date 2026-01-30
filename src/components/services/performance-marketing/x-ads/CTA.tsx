@@ -18,7 +18,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10 text-center">
                 <div
-                    className="relative rounded-3xl overflow-hidden border p-12 md:p-20 backdrop-blur-md group hover:border-blue-500/50 transition-colors duration-500"
+                    className="relative rounded-3xl overflow-hidden border p-8 md:p-20 backdrop-blur-md group hover:border-blue-500/50 transition-colors duration-500"
                     style={{
                         borderColor: "var(--border-color)",
                         backgroundColor: "var(--card-bg)"
@@ -40,21 +40,23 @@ export default function CTA() {
                         />
                     </div>
 
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
                         Start the Conversation
                     </h2>
 
-                    <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
                         Join the world's most influential audience. Launch your X Ads campaign today.
                     </p>
 
-                    <Link
-                        href="/contact"
-                        className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-base md:text-lg bg-black text-white dark:bg-white dark:text-black transition-all transform hover:scale-105 shadow-lg"
-                    >
-                        Launch Campaign
-                        <ArrowRight className="w-6 h-6 ml-2" />
-                    </Link>
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <Link
+                            href="/contact"
+                            className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-full font-bold text-sm sm:text-base md:text-lg bg-black text-white dark:bg-white dark:text-black transition-all transform hover:scale-105 shadow-lg"
+                        >
+                            Launch Campaign
+                            <ArrowRight className="w-5 h-5 flex-shrink-0 ml-2" />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

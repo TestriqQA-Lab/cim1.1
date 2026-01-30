@@ -43,14 +43,11 @@ export default function FAQ() {
         <section className="py-24 bg-background relative overflow-hidden">
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
-                    <span className="text-sm font-semibold text-[#667eea] tracking-wide uppercase mb-2 block">
-                        FAQ
-                    </span>
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
                         <span className="text-foreground">Frequently Asked </span>
                         <span className="text-[#667eea]">Questions</span>
                     </h2>
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto" style={{ color: "var(--foreground)" }}>
                         Common questions about our efficient cross-platform development services.
                     </p>
                 </div>
@@ -66,7 +63,7 @@ export default function FAQ() {
                                 <AccordionTrigger className="text-left font-semibold text-foreground hover:text-[#667eea] hover:no-underline py-4 text-base md:text-lg">
                                     {faq.question}
                                 </AccordionTrigger>
-                                <AccordionContent className="text-muted-foreground text-base pb-4 leading-relaxed">
+                                <AccordionContent className="text-muted-foreground text-base pb-4 leading-relaxed" style={{ color: "var(--foreground)" }}>
                                     {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>

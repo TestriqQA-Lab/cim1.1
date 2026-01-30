@@ -12,33 +12,33 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: DollarSign,
-            title: "Revenue First",
-            description: "We focus on ranking keywords that drive sales, not just vanity traffic metrics.",
+            title: "Revenue-First Mindset",
+            description: "We obsess over ecommerce SEO ranking factors that drive sales, not vanity traffic metrics. Every optimization decision is filtered through: 'Will this increase revenue?' Our hire ecommerce SEO expert team focuses on transactional keywords, product page conversion optimization, and customer lifetime value - not just rankings.",
         },
         {
             icon: Search,
-            title: "Scalable Strategy",
-            description: "Programmatic approaches to optimize thousands of SKU pages efficiently.",
+            title: "Scalable Programmatic Strategies",
+            description: "Optimizing 10,000+ product pages manually is impossible. We use programmatic approaches, template optimization, and automation to efficiently scale across massive catalogs while maintaining quality. Perfect for enterprise ecommerce SEO services for large brands managing complex inventories.",
         },
         {
             icon: Zap,
-            title: "Technical Expertise",
-            description: "We speak perfectly with developers to fix critical site speed and crawling issues.",
+            title: "Deep Technical Expertise",
+            description: "Our developers and SEO specialists work in perfect harmony to fix critical site speed issues, JavaScript rendering problems, server response time bottlenecks, and architectural inefficiencies. We speak the language of CTOs and can implement complex technical solutions that most agencies can't handle.",
         },
         {
             icon: Globe,
-            title: "Multi-Platform Pros",
-            description: "Deep experience with Shopify, Magento, BigCommerce, and Headless builds.",
+            title: "Multi-Platform Ecommerce Pros",
+            description: "Extensive experience with Shopify, Magento, WooCommerce, BigCommerce, and custom headless builds. We understand each platform's unique technical limitations, optimization opportunities, and best practices - no cookie-cutter strategies.",
         },
         {
             icon: Users,
-            title: "UX Integrated",
-            description: "We optimize for both search bots and human shoppers to maximize conversions.",
+            title: "UX & CRO Integration",
+            description: "We optimize for both search bots AND human shoppers. Every change considers user experience, conversion rate optimization, cart abandonment reduction, and mobile usability. Our ecommerce conversion rate optimization approach ensures traffic actually converts.",
         },
         {
             icon: TrendingUp,
-            title: "Data-Driven Decisions",
-            description: "Every move is backed by deep analytics and competitor intelligence.",
+            title: "Data-Driven Decision Making",
+            description: "Every recommendation is backed by deep analytics, competitor intelligence, A/B testing results, and historical performance data. We don't guess - we analyze, test, and prove strategies before implementing at scale.",
         },
     ];
 
@@ -68,10 +68,10 @@ export default function WhyChooseUs() {
 
                             <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                                 Why Top Brands <br />
-                                <span style={{ color: commerceBlue }}>Choose Us</span>
+                                <span style={{ color: commerceBlue }}>Choose Our Ecommerce SEO Agency</span>
                             </h2>
                             <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                E-commerce SEO is a different beast. You need a partner who understands merchandise, not just metadata.
+                                Ecommerce SEO is a different beast. You need the best ecommerce SEO agency for high-growth brands who understands merchandise, not just metadata. We don't just drive traffic - we optimize for buyers ready to purchase. Every tactic aligns with conversion rate optimization, targeting transactional searches that drive sales, not vanity metrics. Whether you're a small business online store or an enterprise ecommerce brand, we deliver results.
                             </p>
 
                             <div
@@ -81,8 +81,8 @@ export default function WhyChooseUs() {
                                     backgroundColor: `${commerceBlue}05`
                                 }}
                             >
-                                <div className="text-4xl font-bold mb-2" style={{ color: commerceBlue }}>35%</div>
-                                <p style={{ color: "var(--secondary-text)" }}>Average increase in organic revenue in first 6 months.</p>
+                                <div className="text-4xl font-bold mb-2" style={{ color: commerceBlue }}>300%+</div>
+                                <p style={{ color: "var(--secondary-text)" }}>average increase in organic revenue in first 6 months (based on 50+ client case studies).</p>
                             </div>
                         </div>
                     </div>

@@ -17,7 +17,7 @@ export default function CTA() {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div
-                    className="max-w-4xl mx-auto rounded-[2.5rem] p-8 md:p-16 text-center border overflow-hidden relative"
+                    className="max-w-4xl mx-auto rounded-[2.5rem] p-6 md:p-16 text-center border overflow-hidden relative"
                     style={{
                         background: "linear-gradient(135deg, rgba(0, 115, 170, 0.05), rgba(0, 150, 214, 0.05))",
                         borderColor: "rgba(0, 115, 170, 0.2)",
@@ -57,7 +57,7 @@ export default function CTA() {
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-xl w-full sm:w-auto"
+                                className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-xl"
                                 style={{
                                     background: "linear-gradient(135deg, #0073AA, #0096D6)",
                                     boxShadow: "0 8px 30px rgba(0, 115, 170, 0.2)",

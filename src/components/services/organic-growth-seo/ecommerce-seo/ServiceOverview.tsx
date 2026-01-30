@@ -19,38 +19,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: ShoppingBag,
-            title: "Product Optimization",
-            description: "Crafting compelling titles and descriptions that rank for high-intent buyer keywords.",
+            title: "Product Page Optimization",
+            description: "Transform underperforming product pages into revenue engines. Our ecommerce product page SEO service crafts compelling titles, descriptions, and meta tags optimized for high-intent buyer keywords. We analyze user intent for ecommerce search to match what shoppers actually search for - implementing semantic search optimization that captures long-tail product queries. Each page gets unique, conversion-focused content that ranks and converts.",
             color: commerceBlue,
         },
         {
             icon: Layers,
-            title: "Category Architecture",
-            description: "Structuring tailored category pages to capture broad search intent and improve navigation.",
+            title: "Category Architecture & Faceted Navigation SEO",
+            description: "Structuring intuitive category pages that capture broad search intent while solving the faceted navigation SEO challenge. We implement canonical tags, parameter handling, and crawl budget optimization to ensure search engines index the right pages. Our internal linking for ecommerce stores strategy passes authority to your best-selling products while improving user navigation.",
             color: "#8B5CF6",
         },
         {
             icon: Code,
-            title: "Technical SEO",
-            description: "Fixing crawl errors, optimizing site speed, and ensuring clean indexing for thousands of SKUs.",
+            title: "Technical SEO for Ecommerce Websites",
+            description: "Deep technical ecommerce SEO audit identifies critical issues killing your rankings: duplicate content from filter pages, orphaned products, slow page speed, mobile usability errors, and crawl budget waste. We fix XML sitemap errors, implement proper robots.txt directives, optimize Core Web Vitals for ecommerce sites (LCP, FID, CLS), and ensure clean indexing for thousands of SKUs. Perfect for enterprise ecommerce SEO services requiring complex technical solutions.",
             color: "#3B82F6",
         },
         {
             icon: Tag,
-            title: "Schema Markup",
-            description: "Implementing Product, Review, and Offer structured data to get rich snippets in search results.",
+            title: "Schema Markup for Ecommerce Products",
+            description: "Implementing Product, Review, Offer, and Breadcrumb structured data to get rich snippets in search results - increasing CTR by 30-40%. We add schema for price, availability, ratings, brand, and SKU to make your products stand out in SERPs with star ratings, pricing info, and stock status visible before users click.",
             color: "#F59E0B",
         },
         {
             icon: Smartphone,
-            title: "Mobile Experience",
-            description: "Ensuring a seamless, fast, and responsive shopping experience for mobile users.",
+            title: "Mobile-First Ecommerce SEO & Page Speed",
+            description: "Ensuring seamless, fast, responsive shopping experiences for mobile users who represent 65%+ of ecommerce traffic. We optimize images, leverage browser caching, minimize JavaScript, and implement lazy loading to achieve sub-2-second load times - critical for ecommerce website optimization and Google's mobile-first indexing.",
             color: "#10B981",
         },
         {
             icon: TrendingUp,
-            title: "Conversion Optimization",
-            description: "Aligning user experience with SEO to not just get traffic, but drive sales.",
+            title: "Ecommerce Conversion Rate Optimization (CRO)",
+            description: "Aligning user experience with SEO to not just get traffic, but drive sales. We A/B test product page layouts, optimize call-to-action buttons, streamline checkout flows, and reduce cart abandonment. Our ecommerce SEO strategy integrates heat mapping, session recording, and user behavior analysis to maximize revenue per visitor.",
             color: "#EF4444",
         },
     ];
@@ -93,13 +93,13 @@ export default function ServiceOverview() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        E-commerce <span style={{ color: commerceBlue }}>Solutions</span>
+                        Comprehensive Ecommerce SEO <span style={{ color: commerceBlue }}>Solutions</span>
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Holistic strategies to maximize visibility for every product in your catalog.
+                        Holistic ecommerce SEO services designed to maximize visibility for every product in your catalog and drive measurable online sales growth.
                     </p>
                 </div>
 

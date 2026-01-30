@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
     Globe,
+    Smartphone,
     Palette,
     Share2,
     Search,
@@ -41,129 +42,145 @@ export default function Services() {
         {
             Icon: Globe,
             title: "Websites & Web Apps",
-            description: "Fast, conversion-ready, and responsive digital experiences",
+            description: "Fast, conversion-ready, and responsive digital experiences built with cutting-edge technology and global performance standards",
             badgeGrad: "from-[var(--brand-blue)] to-[var(--brand-teal)]",
             brandText: "var(--brand-blue)",
             href: "/services/web-design-development",
             details: [
-                "Custom Web Development",
+                "Custom Web Development & SaaS Solutions",
                 "High-Converting Landing Pages",
-                "E-commerce Stores",
-                "API Development & Integrations",
-                "Performance Optimization",
-                "SSL & Security"
+                "E-commerce Stores & Complex Portals",
+                "API Development & Third-Party Integrations",
+                "Performance Optimization (Sub-2s Core Web Vitals)",
+                "Enterprise-Grade Security & SSL Implementation"
+            ]
+        },
+        {
+            Icon: Smartphone,
+            title: "Mobile App Development",
+            description: "High-performance native and cross-platform mobile applications that drive business growth and user engagement",
+            badgeGrad: "from-[var(--brand-teal)] to-[var(--brand-cyan)]",
+            brandText: "var(--brand-teal)",
+            href: "/services/mobile-app-development",
+            details: [
+                "iOS, Android & Cross-Platform Development",
+                "Enterprise Mobile Applications",
+                "40% Faster Time-to-Market",
+                "98.7% Bug-Free Delivery Rate",
+                "App Store Optimization",
+                "Scalable Backend Architecture"
             ]
         },
         {
             Icon: Palette,
             title: "Brand Identity & Creative Design",
-            description: "Designs that help brands stand out and communicate value",
+            description: "Strategic designs that help brands stand out, communicate value, and build recognition",
             badgeGrad: "from-[var(--brand-purple)] to-[var(--brand-yellow)]",
             brandText: "var(--brand-purple)",
             href: "/services/brand-identity-design",
             details: [
-                "Logo & Brand Kits",
-                "UI/UX Design",
-                "Graphic Design",
-                "Video Editing & Motion Graphics",
-                "Brand Guidelines",
-                "Marketing Collateral"
+                "Logo Design & Complete Brand Kits",
+                "UI/UX Design Systems",
+                "Typography & Color Architecture",
+                "Brand Guidelines & Style Systems",
+                "Marketing Collateral & Visual Assets",
+                "Video Editing & Motion Graphics"
             ]
         },
         {
             Icon: Share2,
             title: "Social Media Marketing",
-            description: "Content, community-building, and brand presence",
+            description: "Platform-specific strategies focused on content, community-building, and measurable brand growth",
             badgeGrad: "from-[var(--brand-cyan)] to-[var(--brand-teal)]",
             brandText: "var(--brand-cyan)",
             href: "/services/social-media-marketing",
             details: [
-                "Social Strategy & Content Calendar",
+                "Social Strategy & Content Calendars",
                 "Short/Long Form Video Planning",
                 "Static & Carousel Post Design",
-                "Community Management",
+                "Community Management & Engagement",
                 "Creator & Influencer Partnerships",
-                "Social Listening & Insights"
+                "Social Listening & Performance Insights"
             ]
         },
         {
             Icon: Search,
             title: "Organic Growth & SEO",
-            description: "Data-driven strategies to improve visibility and ranking",
+            description: "Data-driven strategies designed for sustainable traffic growth and improved search visibility aligned with 2026 algorithms",
             badgeGrad: "from-[var(--brand-blue)] to-[var(--brand-purple)]",
             brandText: "var(--brand-blue)",
             href: "/services/organic-growth-seo",
             details: [
-                "Website Audits",
-                "On-Page Optimization",
-                "Keyword Research",
-                "Backlink Building",
-                "Local SEO & GMB",
-                "E-commerce SEO"
+                "Comprehensive Website Audits",
+                "On-Page & Technical SEO",
+                "Strategic Keyword Research",
+                "Authority Link Building",
+                "Local SEO & Google Business Profile",
+                "E-commerce SEO Optimization"
             ]
         },
         {
             Icon: BarChart3,
             title: "Performance Marketing & Ads",
-            description: "Meta, Google & LinkedIn campaigns focused on leads",
+            description: "ROI-focused paid advertising campaigns across Meta, Google, LinkedIn and other major platforms",
             badgeGrad: "from-[var(--brand-orange)] to-[var(--brand-yellow)]",
             brandText: "var(--brand-orange)",
             href: "/services/performance-marketing",
             details: [
-                "Meta, Google, LinkedIn Ads",
-                "Retargeting",
-                "Lead Funnel Strategy",
-                "Pixel/Analytics Setup",
-                "Campaign Performance Reports",
-                "A/B Testing & Optimization"
+                "Google Ads & PPC Management",
+                "Meta (Facebook/Instagram) Advertising",
+                "LinkedIn B2B Lead Generation",
+                "Precision Retargeting & Remarketing",
+                "Programmatic & Display Advertising",
+                "Full-Funnel Lead Strategy"
             ]
         },
         {
             Icon: Zap,
             title: "AI Workflows & Automations",
-            description: "CRM, reporting, nurturing & operational automation",
+            description: "Intelligent automation solutions that streamline operations, reduce errors, and unlock new productivity levels",
             badgeGrad: "from-[var(--brand-yellow)] to-[var(--brand-orange)]",
             brandText: "var(--brand-yellow)",
             href: "/services/ai-workflows-automations",
             details: [
-                "Setup & Integration",
-                "Full-Funnel Lead Nurturing",
-                "Meta DPA Automations",
-                "Google Apps Script",
-                "WhatsApp (WACA) Automations",
-                "Reporting Dashboards"
+                "Business Process Automation (BPA)",
+                "CRM & ERP Integration",
+                "Full-Funnel Lead Nurturing Systems",
+                "Meta DPA & Shopping Feed Automations",
+                "WhatsApp Business API Automations",
+                "Custom Reporting Dashboards"
             ]
         },
         {
             Icon: MessageSquare,
             title: "AI-Powered Chatbots",
-            description: "24/7 smart assistants for lead generation & support",
+            description: "24/7 intelligent conversational agents for customer support, lead generation, and engagement at scale",
             badgeGrad: "from-[var(--brand-teal)] to-[var(--brand-cyan)]",
             brandText: "var(--brand-teal)",
             href: "/services/ai-powered-chatbots",
             details: [
-                "AI Sales Agents",
-                "Multilingual Chatbots",
-                "AI Surveys & Feedback",
+                "AI Sales Agents & Lead Qualification",
+                "Multilingual Chatbot Systems",
+                "AI-Powered Surveys & Feedback Collection",
                 "Lead Enrichment Bots",
-                "Custom Training",
-                "Platform Integration"
+                "Retrieval-Augmented Generation (RAG)",
+                "Custom Training & Platform Integration"
             ]
         },
         {
             Icon: Headphones,
             title: "Additional Support Services",
-            description: "Analytics, virtual assistance & backend operations",
+            description: "Comprehensive business support solutions including analytics, virtual assistance, and backend operations",
             badgeGrad: "from-[var(--brand-cyan)] to-[var(--brand-purple)]",
             brandText: "var(--brand-cyan)",
             href: "/services/additional-support-services",
             details: [
                 "Data Processing & Analysis",
-                "Virtual Assistance",
-                "Customer Support",
-                "Administrative Tasks",
+                "Virtual Assistance & Administrative Tasks",
+                "Customer Support Management",
                 "Research & Documentation",
-                "Quality Assurance"
+                "Quality Assurance & Testing",
+                "IT Business Support Services"
             ]
         }
     ];

@@ -26,7 +26,7 @@ export default function CTA() {
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div
-                    className="rounded-3xl p-8 md:p-12 lg:p-16 border overflow-hidden relative"
+                    className="rounded-3xl p-6 md:p-12 lg:p-16 border overflow-hidden relative"
                     style={{
                         background: "color-mix(in srgb, #0ea5e9 8%, var(--card-bg))",
                         borderColor: "color-mix(in srgb, #0ea5e9 30%, var(--border-color))",
@@ -42,32 +42,32 @@ export default function CTA() {
 
                     <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
                         <div>
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
+                            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                                 Building the Future of <span style={{ color: "#0ea5e9" }}>Finance</span>?
                             </h2>
 
-                            <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                            <p className="text-base md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
                                 Let's build a secure, compliant, and high-performance financial platform that scales with your ambition.
                             </p>
 
-                            <div className="flex flex-wrap gap-4">
+                            <div className="flex flex-col sm:flex-row gap-4 items-center">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl group"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-white font-bold text-sm sm:text-base md:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl group"
                                     style={{ backgroundColor: "#0ea5e9" }}
                                 >
                                     Start FinTech Project
-                                    <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                                    <ArrowRight className="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
                                 </Link>
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-lg border transition-all duration-300 hover:scale-105"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-bold text-sm sm:text-base md:text-lg border transition-all duration-300 hover:scale-105"
                                     style={{
                                         borderColor: "#0ea5e9",
                                         color: "#0ea5e9",
                                     }}
                                 >
-                                    <Smartphone className="w-5 h-5" />
+                                    <Smartphone className="w-5 h-5 flex-shrink-0" />
                                     Book a Demo
                                 </Link>
                             </div>

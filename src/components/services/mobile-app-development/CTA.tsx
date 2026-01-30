@@ -29,7 +29,7 @@ export default function CTA() {
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative">
                 {/* Main CTA Card */}
                 <div
-                    className="p-12 md:p-16 rounded-3xl border text-center overflow-hidden relative"
+                    className="p-8 md:p-16 rounded-3xl border text-center overflow-hidden relative"
                     style={{
                         backgroundColor: "var(--card-bg)",
                         borderColor: "var(--border-color)",
@@ -44,11 +44,11 @@ export default function CTA() {
                     />
 
                     <div className="relative z-10">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4" style={{ color: "var(--foreground)" }}>
+                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4" style={{ color: "var(--foreground)" }}>
                             Ready to Build Your Mobile App?
                         </h2>
 
-                        <p className="text-lg md:text-xl mb-4 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                        <p className="text-base md:text-xl mb-4 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
                             Let's Turn Your Idea Into Reality (Free 30-Min Consultation)
                         </p>
 
@@ -85,21 +85,21 @@ export default function CTA() {
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-sm md:text-base font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
                                 style={{
                                     background: "linear-gradient(135deg, var(--brand-purple), var(--brand-yellow))",
                                     color: "white",
                                 }}
                             >
-                                Book Free Consultation Now
-                                <ArrowRight className="w-5 h-5" />
+                                Book Your Free Consultation Now
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
                             </Link>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-semibold border transition-all hover:scale-105"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-sm md:text-base font-semibold border transition-all hover:scale-105"
                                 style={{
                                     borderColor: "var(--border-color)",
                                     color: "var(--foreground)",
@@ -108,7 +108,7 @@ export default function CTA() {
                                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
                             >
                                 Schedule Consultation
-                                <Phone className="w-5 h-5" />
+                                <Phone className="w-5 h-5 flex-shrink-0" />
                             </Link>
                         </div>
 

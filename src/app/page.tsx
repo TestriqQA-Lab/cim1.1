@@ -5,7 +5,7 @@ import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schema"
 
 export const metadata: Metadata = {
   ...getPageMetadata({
-    title: "Web Development Company 🚀 | AI-Powered Digital Solutions",
+    title: "Web Development Company | AI-Powered Digital Solutions",
     description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. 320% ROI proven. 300+ global projects. Free audit today! ✨",
     url: "/",
     keywords: [

@@ -65,8 +65,8 @@ export default function Hero() {
         {
             icon: Mail,
             title: "Email Us",
-            info: "Drop us a line anytime",
-            description: "Mail Us your queries",
+            info: "contact@cinuteinfomedia.com",
+            description: "24-hour response guaranteed",
             colorStartVar: "--brand-blue",
             colorEndVar: "--brand-teal",
             href: "mailto:contact@cinuteinfomedia.com",
@@ -76,7 +76,7 @@ export default function Hero() {
             icon: Phone,
             title: "Call Us",
             info: "+91 900 498 8859",
-            description: "Mon-Fri 9AM-6PM IST",
+            description: "Direct expert consultation",
             colorStartVar: "--brand-purple",
             colorEndVar: "--brand-yellow",
             href: "tel:+919004988859",
@@ -86,7 +86,7 @@ export default function Hero() {
             icon: MapPin,
             title: "Visit Office",
             info: "Mumbai, India",
-            description: "Come say hello",
+            description: "Global standards, local presence",
             colorStartVar: "--brand-cyan",
             colorEndVar: "--brand-teal",
             href: "https://maps.app.goo.gl/ak5SjeUnrDyWLXFNA",
@@ -96,7 +96,7 @@ export default function Hero() {
             icon: MessageSquare,
             title: "Live Chat",
             info: "Start Conversation",
-            description: "Get instant answers",
+            description: "Quick project guidance & quotes",
             colorStartVar: "--brand-yellow",
             colorEndVar: "--brand-orange",
             href: "#contact-form",
@@ -333,7 +333,7 @@ export default function Hero() {
                 </nav>
 
                 {/* Badge */}
-                <div
+                {/* <div
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full border transition-colors mb-4"
                     style={{
                         background:
@@ -344,7 +344,7 @@ export default function Hero() {
                 >
                     <MessageSquare className="w-5 h-5 text-current relative animate-bounce" style={{ color: "var(--brand-blue)" }} />
                     <span className="text-sm font-semibold">Get in Touch</span>
-                </div>
+                </div> */}
 
                 <div className="grid xl:grid-cols-2 items-start gap-16">
                     {/* LEFT: Intro + contact cards */}
@@ -384,9 +384,9 @@ export default function Hero() {
                             </div>
 
                             <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                Have a project in mind? We're here to turn your vision into reality.
+                                Whether you need a high-performance website, AI-powered marketing automation, or a complete digital transformation, our team of experts is ready to help you succeed.
                                 <span className="block mt-2 font-semibold" style={{ color: "var(--foreground)" }}>
-                                    Choose your preferred way to reach us.
+                                    With 300+ successful projects and 95% client retention, we're your trusted partner for scalable digital growth.
                                 </span>
                             </p>
                         </div>
@@ -404,7 +404,7 @@ export default function Hero() {
                                         style={{ animationDelay: `${index * 0.08}s` }}
                                     >
                                         <div
-                                            className="relative rounded-2xl p-6 transition-all duration-300"
+                                            className="relative rounded-2xl pl-3 pr-7 py-4 transition-all duration-300"
                                             style={{ background: "var(--card-bg)", backdropFilter: "blur(6px)", border: `2px solid var(--border-color)` }}
                                         >
                                             <div
@@ -418,10 +418,10 @@ export default function Hero() {
 
                                             <div className="relative flex items-center gap-5">
                                                 <div
-                                                    className="relative w-16 h-16 rounded-xl flex items-center justify-center transition-all duration-300"
+                                                    className="relative w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 flex-shrink-0"
                                                     style={{ background: gradient(method.colorStartVar, method.colorEndVar, "135deg"), boxShadow: "0 12px 30px rgba(0,0,0,0.06)" }}
                                                 >
-                                                    <Icon className="w-8 h-8 text-white" />
+                                                    <Icon className="w-7 h-7 text-white" />
                                                     {activeCard === index && <div className="absolute inset-0 rounded-xl animate-ping" style={{ opacity: 0.45, background: gradient(method.colorStartVar, method.colorEndVar, "135deg") }} />}
                                                 </div>
 
@@ -429,7 +429,7 @@ export default function Hero() {
                                                     <h2 className="text-xl font-bold" style={{ color: "var(--foreground)" }}>
                                                         {method.title}
                                                     </h2>
-                                                    <p className="text-base font-semibold" style={{ color: "var(--foreground)" }}>
+                                                    <p className="text-sm font-semibold break-words" style={{ color: "var(--foreground)" }}>
                                                         {method.info}
                                                     </p>
                                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
@@ -466,7 +466,7 @@ export default function Hero() {
                                         ✓
                                     </span>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                        <strong style={{ color: "var(--foreground)" }}>Personalized Support</strong> - We respond quickly & guide you at every step.
+                                        <strong style={{ color: "var(--foreground)" }}>Fast Response</strong> - 24-hour response time with expert project guidance at every stage.
                                     </p>
                                 </li>
 
@@ -478,7 +478,7 @@ export default function Hero() {
                                         ✓
                                     </span>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                        <strong style={{ color: "var(--foreground)" }}>Transparent Communication</strong> - No hidden costs, no confusion.
+                                        <strong style={{ color: "var(--foreground)" }}>Proven Results</strong> - Measurable ROI with transparent reporting and performance tracking.
                                     </p>
                                 </li>
 
@@ -490,7 +490,7 @@ export default function Hero() {
                                         ✓
                                     </span>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                        <strong style={{ color: "var(--foreground)" }}>Expert Project Guidance</strong> - We help shape your idea the right way.
+                                        <strong style={{ color: "var(--foreground)" }}>Trusted Partner</strong> - 2,500+ businesses trust us globally with zero security breaches since 2014.
                                     </p>
                                 </li>
                             </ul>

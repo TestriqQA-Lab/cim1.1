@@ -19,38 +19,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Search,
-            title: "Keyword Research",
-            description: "Identifying high-value search terms that your target audience is actively searching for.",
+            title: "SEO Content Strategy",
+            description: "Topic clusters, gap analysis, and 2026 trend forecasting for dominant topical authority.",
             color: contentEmerald,
         },
         {
             icon: PenTool,
-            title: "SEO Copywriting",
-            description: "Crafting compelling content that satisfies user intent and search engine algorithms.",
+            title: "SEO Content Writing Services",
+            description: "High-EEAT, long-form articles with data-driven insights driving 300%+ traffic growth.",
             color: "#3B82F6",
         },
         {
             icon: Target,
-            title: "Topic Clusters",
-            description: "Building authoritative content hubs that cover subjects in-depth and boost topical authority.",
+            title: "Content Optimization Services",
+            description: "Metadata refresh, internal link audits, and LSI integration for 50%+ rank recovery.",
             color: "#F59E0B",
         },
         {
             icon: RefreshCw,
-            title: "Content Optimization",
-            description: "Revamping existing content to improve relevance, freshness, and ranking potential.",
+            title: "SEO Copywriting Agency",
+            description: "Conversion-focused landing pages elevating CTR by 20% and conversion by 15%.",
             color: "#8B5CF6",
         },
         {
             icon: Users,
-            title: "Audience Analysis",
-            description: "Understanding your persona's pain points to create content that resonates.",
+            title: "SEO Content Audit",
+            description: "Technical readiness and EEAT scoring to identify high-ROI low-hanging fruits.",
             color: "#EC4899",
         },
         {
             icon: BarChart,
-            title: "Performance Tracking",
-            description: "Monitoring content metrics to refine strategy and maximize ROI.",
+            title: "SEO Content Refresh",
+            description: "Post-2025 algorithm alignment and stat updates to maintain AI-overview leadership.",
             color: "#06B6D4",
         },
     ];
@@ -86,20 +86,22 @@ export default function ServiceOverview() {
                                 color: contentEmerald,
                             }}
                         >
-                            Our Expertise
+                            Elite SEO Content Agency
                         </span>
                     </div>
                     <h2
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Comprehensive Content <span style={{ color: contentEmerald }}>Services</span>
+                        Elite SEO Content Agency for <span style={{ color: contentEmerald }}>Global Market Leaders</span>
                     </h2>
                     <p
-                        className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
+                        className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        From strategy to execution, we handle every aspect of your content marketing engine.
+                        In the post-December 2025 Google core update era, "content is king" is an understatement. Today, content relevance and authority are the only currencies that matter. At Cinute Infomedia, we don't just write; we architect search engine friendly content that bridges the gap between AI-driven search intent and human experience.
+                        <br /><br />
+                        Our SEO content strategy is rooted in deep user intent analysis, ensuring every word aligns with the specific needs of your audience whether they are in the US, EU, or APAC. From SEO copywriting agency excellence to complex topic clusters SEO, we deliver the technical depth and creative flair required to dominate the SERPs in 2026.
                     </p>
                 </div>
 

@@ -77,7 +77,7 @@ export default function CTA() {
 
                         {/* Heading */}
                         <h2
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+                            className="text-2xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
                             Global Reach &{" "}
@@ -93,7 +93,7 @@ export default function CTA() {
                         </h2>
 
                         <p
-                            className="text-lg md:text-xl mb-10 leading-relaxed"
+                            className="text-base md:text-xl mb-10 leading-relaxed"
                             style={{ color: "var(--secondary-text)" }}
                         >
                             We are proud to serve as a leading Next.js development agency and React JS development company for clients across the USA, UK, Canada, Australia, and the Middle East. Beyond general web development, we have deep niche expertise in Real Estate, Fintech, SaaS, and Healthcare, providing tailor-made React development services that address the unique challenges of your industry.

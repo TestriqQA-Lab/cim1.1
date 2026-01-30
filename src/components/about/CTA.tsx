@@ -32,8 +32,12 @@ export default function CTA() {
                             Ready to Transform Your Business?
                         </h2>
 
-                        <p className="text-xl text-white/90 dark:text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
-                            Let’s build a growth ecosystem that drives real results for your brand.
+                        <p className="text-xl text-white/90 dark:text-white/80 mb-4 max-w-2xl mx-auto leading-relaxed">
+                            Let's build your growth ecosystem together
+                        </p>
+
+                        <p className="text-lg text-white/85 dark:text-white/75 mb-10 max-w-3xl mx-auto leading-relaxed">
+                            Whether you need a high-performance website, a comprehensive digital marketing strategy, intelligent automation systems, or a complete brand transformation, Cinute InfoMedia has the expertise, technology, and proven track record to make it happen.
                         </p>
 
                         {/* Buttons */}
@@ -63,7 +67,7 @@ export default function CTA() {
                   rounded-2xl text-sm md:text-lg font-semibold transition-all hover:scale-105
                 "
                             >
-                                Explore Services
+                                View Our Services
                             </Link>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ export default function CTA() {
         <section className="py-16 md:py-24 transition-colors duration-300" style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}>
             <div className="mx-auto px-6 md:px-12 xl:px-20 max-w-5xl">
                 <div
-                    className="relative p-8 md:p-12 rounded-3xl text-center shadow-2xl overflow-hidden border"
+                    className="relative p-6 md:p-12 rounded-3xl text-center shadow-2xl overflow-hidden border"
                     style={{
                         backgroundColor: "color-mix(in srgb, var(--brand-seo) 8%, var(--card-bg))",
                         borderColor: "var(--brand-seo)",
@@ -36,10 +36,10 @@ export default function CTA() {
                             <Search className="w-full h-full text-white" />
                         </div>
 
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
+                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4">
                             Ready to See Your <span style={{ color: "var(--brand-seo)" }}>Organic Traffic Grow</span>?
                         </h2>
-                        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
+                        <p className="text-base md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
                             Stop relying on expensive ads. Book an SEO audit today and discover the untapped potential of your website. Let's build a sustainable growth engine together.
                         </p>
 
@@ -60,14 +60,16 @@ export default function CTA() {
                         </div>
 
                         {/* CTA Button */}
-                        <Link
-                            href="/contact"
-                            className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-white"
-                            style={{ backgroundColor: "var(--brand-seo)" }}
-                        >
-                            Book Free Audit Today
-                            <ArrowRight className="w-5 h-5" />
-                        </Link>
+                        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                            <Link
+                                href="/contact"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 text-sm sm:text-base md:text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-white"
+                                style={{ backgroundColor: "var(--brand-seo)" }}
+                            >
+                                Book Free Audit Today
+                                <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
