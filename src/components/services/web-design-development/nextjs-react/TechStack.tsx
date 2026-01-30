@@ -183,7 +183,7 @@ export default function TechStack() {
 
                 {/* Active Category Content */}
                 <div
-                    className="rounded-3xl border p-8 md:p-12"
+                    className="rounded-3xl border p-5 sm:p-8 md:p-12"
                     style={{
                         backgroundColor: "var(--card-bg)",
                         borderColor: "var(--border-color)",
@@ -239,13 +239,13 @@ export default function TechStack() {
                                 {/* Text */}
                                 <div className="flex-1 min-w-0">
                                     <p
-                                        className="font-semibold truncate"
+                                        className="font-semibold"
                                         style={{ color: "#61dafb" }}
                                     >
                                         {tech.name}
                                     </p>
                                     <p
-                                        className="text-sm truncate"
+                                        className="text-sm"
                                         style={{ color: "var(--secondary-text)" }}
                                     >
                                         {tech.description}

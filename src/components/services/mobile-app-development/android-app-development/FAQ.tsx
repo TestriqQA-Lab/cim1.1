@@ -91,13 +91,13 @@ export default function FAQ() {
                                 {openIndex === idx ? (
                                     <Minus className="w-5 h-5 text-[#3DDC84]" />
                                 ) : (
-                                    <Plus className="w-5 h-5 text-[var(--secondary-text)]" />
+                                    <Plus className="w-5 h-5 text-[var(--foreground)]" />
                                 )}
                             </button>
                             <div
                                 className={`overflow-hidden transition-all duration-300 ${openIndex === idx ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
                             >
-                                <div className="p-6 pt-0 text-[var(--secondary-text)] leading-relaxed">
+                                <div className="p-6 pt-0 text-[var(--foreground)] leading-relaxed" style={{ color: "var(--foreground)" }}>
                                     {faq.answer}
                                 </div>
                             </div>

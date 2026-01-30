@@ -5,48 +5,48 @@ import { Zap, Globe, Shield, Users, BarChart3, HeadphonesIcon, Sparkles } from "
 export default function WhyChooseUs() {
     const reasons = [
         {
-            icon: Zap,
-            title: "Real-time Availability",
-            description: "Lightning-fast booking engines with instant availability updates across all channels - no more overbookings.",
-            color: "#0d9488",
-        },
-        {
             icon: Globe,
-            title: "Multi-channel Distribution",
-            description: "Seamless integration with OTAs, metasearch engines, and direct booking channels from a single dashboard.",
-            color: "#0d9488",
-        },
-        {
-            icon: Shield,
-            title: "Secure Payments",
-            description: "PCI-compliant payment processing with multi-currency support and fraud protection built-in.",
-            color: "#0d9488",
-        },
-        {
-            icon: Users,
-            title: "Guest Experience",
-            description: "Personalized booking journeys, loyalty programs, and automated pre/post-stay communication.",
+            title: "Over 3 Decades of Expertise",
+            description: "Our expertise spans over three decades, delivering custom Travel Technology Solutions that solve complex challenges and drive growth.",
             color: "#0d9488",
         },
         {
             icon: BarChart3,
-            title: "Revenue Optimization",
-            description: "Dynamic pricing tools, demand forecasting, and comprehensive analytics to maximize RevPAR.",
+            title: "Data-Driven Results",
+            description: "Our Travel Data Analytics and Business Intelligence focus ensures every feature drives ROI and maximizes profitability.",
+            color: "#0d9488",
+        },
+        {
+            icon: Shield,
+            title: "E-E-A-T Certified Quality",
+            description: "Content and code adhere strictly to Google's E-E-A-T guidelines, building Authority and Trust through secure, compliant systems.",
+            color: "#0d9488",
+        },
+        {
+            icon: Sparkles,
+            title: "Innovation First",
+            description: "Stay ahead of Hospitality Technology Trends 2026. From AI chatbots to sustainable travel features, we integrate forward-thinking solutions.",
+            color: "#0d9488",
+        },
+        {
+            icon: Users,
+            title: "360° Digital Partnership",
+            description: "Beyond development, we offer Hospitality Social Media Management, SEO, and Travel Lead Generation to ensure your platform thrives.",
             color: "#0d9488",
         },
         {
             icon: HeadphonesIcon,
-            title: "24/7 Support",
-            description: "Round-the-clock technical support because hospitality never sleeps - neither does our team.",
+            title: "24/7 Support & Maintenance",
+            description: "Our Travel and Hospitality Maintenance teams provide round-the-clock monitoring and rapid response for consistent uptime.",
             color: "#0d9488",
         },
     ];
 
     const stats = [
-        { value: "40%", label: "Booking Increase" },
-        { value: "60%", label: "Fewer Manual Tasks" },
-        { value: "99.9%", label: "Uptime Guarantee" },
-        { value: "24/7", label: "Support Available" },
+        { value: "300%", label: "Traffic Growth" },
+        { value: "95%", label: "Bug-Free Delivery" },
+        { value: "50+", label: "Global Partners" },
+        { value: "24/7", label: "Monitoring" },
     ];
 
     return (

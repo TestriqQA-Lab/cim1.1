@@ -25,19 +25,19 @@ const defaultMetadata: Partial<Metadata> = {
     siteName: "Cinute Infomedia",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Cinute Infomedia - Digital Solutions",
+        alt: "Cinute InfoMedia | Web Development Company & Digital Marketing Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cinute Infomedia - Digital Solutions",
-    description: "Web Design, Mobile App Development, UI/UX Branding, and Digital Marketing Services",
-    images: ["/images/og-image.png"],
-    creator: "@cim",
+    title: "Cinute InfoMedia | Web Development Company & Digital Marketing Agency",
+    description: "Transform your digital presence with our web development services, mobile apps, AI automation & marketing solutions. 95% client retention.",
+    images: ["/og-image.jpg"],
+    creator: "@cinute_infomedia",
   },
   robots: {
     index: true,

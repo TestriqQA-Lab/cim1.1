@@ -90,10 +90,10 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Lightning Fast Sites with{" "}
+                            Lightning-Fast Sites with{" "}
                             <span
                                 className="relative inline-block"
                                 style={{
@@ -102,7 +102,7 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Astro
+                                Astro Framework Services
                                 {/* Underline decoration */}
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
@@ -116,16 +116,16 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Build blazing-fast content sites, blogs, and marketing pages with Astro&apos;s revolutionary Islands Architecture and zero JavaScript by default.
+                            Build blazing-fast content sites, marketing pages, and modern web applications with our expert Astro framework services. As a leading Astro development agency, we harness Astro&apos;s revolutionary Islands Architecture and zero JavaScript by default to deliver custom Astro website development that achieves 100% PageSpeed scores and sub-1-second load times.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Islands Architecture",
-                                "Zero JS Default",
-                                "Multi-Framework",
-                                "SSG & SSR",
+                                "✓ Zero JS by Default",
+                                "✓ Islands Architecture",
+                                "✓ Framework Agnostic",
+                                "✓ SEO Excellence",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -177,7 +177,7 @@ export default function Hero() {
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#7C3AED" }}>&lt;1s</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Load Times</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Average Load Time</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
@@ -239,7 +239,7 @@ export default function Hero() {
                                             Zero JS by Default
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Ship Less JavaScript
+                                            Ship 90% less JavaScript
                                         </p>
                                     </div>
                                 </div>
@@ -265,7 +265,7 @@ export default function Hero() {
                                             Islands Architecture
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                            Selective Hydration
+                                            Selective hydration
                                         </p>
                                     </div>
                                 </div>

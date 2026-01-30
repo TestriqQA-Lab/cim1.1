@@ -18,79 +18,79 @@ export default function Process() {
         {
             number: "01",
             icon: Search,
-            title: "Discovery & Strategy",
-            description: "Understand your business goals, target market, and competitive landscape.",
+            title: "Discovery & Strategic Audit",
+            description: "We begin by analyzing your business goals and current pain points to identify growth opportunities.",
             details: [
-                "Business goals analysis",
-                "Target audience research",
-                "Competitor analysis",
-                "Feature requirements",
-                "Platform evaluation",
+                "Business goal analysis",
+                "Shopify store audit",
+                "Competitor benchmarking",
+                "Technical bottleneck ID",
+                "Growth roadmap creation",
             ],
         },
         {
             number: "02",
-            icon: Settings,
-            title: "Platform Selection",
-            description: "Choose the right e-commerce platform based on your specific needs.",
+            icon: Palette,
+            title: "Design & UX Prototyping",
+            description: "Creating interactive wireframes focusing on Ecommerce UX design to ensure an intuitive path to purchase.",
             details: [
-                "Platform comparison",
-                "Scalability assessment",
-                "Cost analysis",
-                "Integration needs",
-                "Team capabilities",
+                "Interactive wireframing",
+                "Brand-aligned UI/UX",
+                "Mobile-first architecture",
+                "High-conversion mapping",
+                "User journey optimization",
             ],
         },
         {
             number: "03",
-            icon: Palette,
-            title: "Design & UX",
-            description: "Create a custom design focused on conversion and brand identity.",
+            icon: Code2,
+            title: "Custom Development",
+            description: "Using the latest Shopify CLI and Liquid standards to build your custom theme or headless storefront.",
             details: [
-                "Brand-aligned design",
-                "User journey mapping",
-                "Checkout optimization",
-                "Mobile-first approach",
-                "A/B testing plans",
+                "Liquid & React coding",
+                "Custom theme build",
+                "Hydrogen/Oxygen setup",
+                "Speed-first foundation",
+                "Clean code standards",
             ],
         },
         {
             number: "04",
-            icon: Code2,
-            title: "Development",
-            description: "Build custom features, integrations, and payment systems.",
+            icon: Settings,
+            title: "Third-Party Integrations",
+            description: "Connecting your store to essential tools: POS for retail, ERPs for logistics, and marketing automation.",
             details: [
-                "Custom theme build",
-                "Payment integration",
-                "Third-party APIs",
-                "Inventory systems",
-                "Shipping setup",
+                "Shopify POS integration",
+                "ERP & CRM connection",
+                "Klaviyo & GA4 setup",
+                "API orchestration",
+                "Logistics automation",
             ],
         },
         {
             number: "05",
             icon: TestTube,
-            title: "Testing & QA",
-            description: "Rigorous testing for payments, performance, and mobile experience.",
+            title: "Rigorous Testing & QA",
+            description: "Extensive performance tests (Lighthouse 95+) and end-to-end payment gateway validation.",
             details: [
-                "Payment testing",
-                "Load testing",
-                "Mobile QA",
-                "Cross-browser testing",
-                "Security audit",
+                "Performance benchmarking",
+                "Mobile responsiveness",
+                "Payment flow validation",
+                "Security & Load testing",
+                "Cross-device QA",
             ],
         },
         {
             number: "06",
             icon: Rocket,
-            title: "Launch & Growth",
-            description: "Go-live support, marketing setup, and ongoing optimization.",
+            title: "Launch & SEO Deployment",
+            description: "Technical go-live with full SEO implementation and real-time monitoring post-launch.",
             details: [
-                "Launch support",
-                "Marketing setup",
-                "Analytics config",
-                "SEO optimization",
-                "Growth consulting",
+                "Technical launch support",
+                "Advanced SEO setup",
+                "Real-time monitoring",
+                "Schema implementation",
+                "Ongoing maintenance",
             ],
         },
     ];
@@ -136,7 +136,7 @@ export default function Process() {
                     >
                         <Settings className="w-4 h-4" style={{ color: "#96bf48" }} />
                         <span className="text-sm font-medium" style={{ color: "#96bf48" }}>
-                            Our Process
+                            How We Build Your Store
                         </span>
                     </div>
 
@@ -144,7 +144,7 @@ export default function Process() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        How We{" "}
+                        Our{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #96bf48, #5c8a1e)",
@@ -152,16 +152,16 @@ export default function Process() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Build
+                            Shopify
                         </span>{" "}
-                        Your Store
+                        Development Process
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        A proven methodology for launching successful e-commerce stores,
-                        from strategy through growth.
+                        A precision-engineered methodology for launching high-performance
+                        stores optimized for global trade and maximum ROI.
                     </p>
                     <div
                         className="w-24 h-1.5 mx-auto mt-8 rounded-full"

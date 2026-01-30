@@ -16,43 +16,43 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Paintbrush,
-            title: "Custom Theme Development",
-            description: "Bespoke WordPress themes designed from scratch, perfectly aligned with your brand identity and optimized for performance.",
+            title: "WordPress Theme Development Services",
+            description: "Custom WordPress website design and development for startups and global corporations alike. High speed, unique UI, and zero code bloat.",
             gradient: "from-purple-500 to-pink-500",
             shadowColor: "rgba(168, 85, 247, 0.4)",
         },
         {
             icon: ShoppingBag,
             title: "WooCommerce Development",
-            description: "Full-featured e-commerce solutions with custom checkout flows, payment integrations, and inventory management.",
+            description: "Specialized WooCommerce development and customization services. High conversion flows, secure payments, and smart inventory management.",
             gradient: "from-emerald-500 to-teal-500",
             shadowColor: "rgba(16, 185, 129, 0.4)",
         },
         {
             icon: Package,
-            title: "Plugin Development",
-            description: "Custom WordPress plugins to extend functionality, from simple utilities to complex business logic integrations.",
+            title: "WordPress Plugin Development Services",
+            description: "We don't just install plugins; we engineer custom solutions for small business and large enterprises, focusing on core stability and niche features.",
             gradient: "from-orange-500 to-red-500",
             shadowColor: "rgba(249, 115, 22, 0.4)",
         },
         {
             icon: ArrowLeftRight,
             title: "WordPress Migration",
-            description: "Seamless migration from other platforms (Wix, Squarespace, Joomla) to WordPress with zero data loss.",
+            description: "Seamless WordPress migration services from other platforms. Zero data loss, full SEO retention, and 2026-ready architecture.",
             gradient: "from-blue-500 to-cyan-500",
             shadowColor: "rgba(59, 130, 246, 0.4)",
         },
         {
             icon: Gauge,
-            title: "Performance Optimization",
-            description: "Speed optimization, Core Web Vitals improvements, and caching strategies for lightning-fast load times.",
+            title: "Performance & Speed",
+            description: "Elite WordPress speed optimization services. Better Core Web Vitals, 90+ PageSpeed scores, and advanced caching strategies.",
             gradient: "from-yellow-500 to-amber-500",
             shadowColor: "rgba(245, 158, 11, 0.4)",
         },
         {
             icon: ShieldCheck,
-            title: "Security & Maintenance",
-            description: "Ongoing security hardening, malware removal, regular updates, and proactive monitoring to keep your site safe.",
+            title: "Security & Hardening",
+            description: "24/7 WordPress security audit and hardening services. Malware protection, SSL encryption, and robust firewall setup.",
             gradient: "from-indigo-500 to-violet-500",
             shadowColor: "rgba(99, 102, 241, 0.4)",
         },
@@ -117,8 +117,8 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        From simple blogs to complex enterprise solutions, we leverage the power of WordPress
-                        to build digital experiences that drive results.
+                        We specialize in delivering enterprise-grade, SEO-optimized, and lightning-fast WordPress solutions.
+                        From core stability to advanced API integrations, we engineer websites that turn visitors into loyal customers.
                     </p>
                 </div>
 

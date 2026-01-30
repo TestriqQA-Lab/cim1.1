@@ -97,10 +97,10 @@ export default function Hero() {
 
                         {/* Title */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Powerful Websites with{" "}
+                            Custom WordPress Development Services for{" "}
                             <span
                                 className="relative inline-block"
                                 style={{
@@ -109,7 +109,7 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                WordPress
+                                Scalable Global Growth
                                 {/* Underline decoration */}
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
@@ -122,8 +122,8 @@ export default function Hero() {
                             </span>
                         </h1>
 
-                        <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            From stunning blogs to powerful e-commerce stores, we build custom WordPress solutions that scale with your business and deliver exceptional user experiences.
+                        <p className="text-base md:text-lg leading-relaxed text-balance" style={{ color: "var(--secondary-text)" }}>
+                            Scale your business with enterprise-grade WordPress development services built for the 2026 digital landscape. From custom-engineered themes to complex WooCommerce solutions, we blend technical mastery with ROI-driven marketing to turn your digital vision into a global success story.
                         </p>
 
                         {/* Feature Pills */}
@@ -131,8 +131,8 @@ export default function Hero() {
                             {[
                                 "Custom Themes",
                                 "WooCommerce",
-                                "Plugin Development",
-                                "SEO Ready",
+                                "Security Audit",
+                                "SEO Optimized",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -158,11 +158,11 @@ export default function Hero() {
                                     boxShadow: "0 4px 20px rgba(0, 115, 170, 0.25)",
                                 }}
                             >
-                                Start Your Project
+                                Get a Quick Quote
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
 
-                            <Link
+                            {/* <Link
                                 href="#process"
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border transition-all hover:bg-accent"
                                 style={{
@@ -171,25 +171,25 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                Our Process
-                            </Link>
+                                View Case Studies
+                            </Link> */}
                         </div>
 
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>500+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Sites Delivered</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Projects Delivered</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>10+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Years Experience</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>95%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Bug-free Deployment</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>24/7</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Support & Maint.</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>300%</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Traffic Growth</p>
                             </div>
                         </div>
                     </div>

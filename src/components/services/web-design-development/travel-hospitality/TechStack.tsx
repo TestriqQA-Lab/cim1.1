@@ -6,57 +6,55 @@ import Image from "next/image";
 export default function TechStack() {
     const technologies = [
         {
-            category: "Booking & Backend",
+            category: "Backend & Cloud",
             icon: Code2,
             items: [
-                { name: "Node.js", description: "High-performance APIs", logos: ["/images/techstack_logos/nodejs-logo.svg"] },
-                { name: "Python/Django", description: "Complex booking logic", logos: ["/images/techstack_logos/python-logo.svg", "/images/techstack_logos/django-logo.svg"] },
-                { name: "PostgreSQL", description: "Reliable data storage", logos: ["/images/techstack_logos/postgresql-logo.svg"] },
+                { name: "Node.js / NestJS", description: "Scalable booking microservices", logos: ["/images/techstack_logos/nodejs-logo.svg"] },
+                { name: "Python / Django", description: "AI/ML & complex processing", logos: ["/images/techstack_logos/python-logo.svg", "/images/techstack_logos/django-logo.svg"] },
+                { name: "AWS / Google Cloud", description: "99.99% uptime infrastructure", logos: ["/images/techstack_logos/aws-logo.png", "/images/techstack_logos/googlecloud-logo.svg"] },
             ],
         },
         {
             category: "Frontend & Mobile",
             icon: Globe,
             items: [
-                { name: "React/Next.js", description: "Fast, SEO-friendly", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: "React / Next.js", description: "SEO-optimized interfaces", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: "React Native / Flutter", description: "Cross-platform mobile apps", logos: ["/images/techstack_logos/react-logo.svg"] },
                 { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
-                { name: "React Native", description: "Mobile apps", logos: ["/images/techstack_logos/react-logo.svg"] },
             ],
         },
         {
-            category: "Maps & Location",
-            icon: Map,
-            items: [
-                { name: "Mapbox", description: "Interactive maps", logos: ["/images/techstack_logos/mapbox-logo.webp"] },
-                { name: "OpenStreetMap", description: "Open mapping data", logos: ["/images/techstack_logos/Openstreetmap-logo.png"] },
-                { name: "Google Maps", description: "Location services", logos: ["/images/techstack_logos/googlecloud-logo.svg"] },
-            ],
-        },
-        {
-            category: "Payments",
-            icon: CreditCard,
-            items: [
-                { name: "Stripe", description: "Global payments", logos: ["/images/techstack_logos/Stripe-logo.png"] },
-                { name: "PayPal", description: "Trusted checkout", logos: ["/images/techstack_logos/paypal-logo.png"] },
-                { name: "Adyen", description: "Multi-currency", logos: ["/images/techstack_logos/Adyen-Logo.png"] },
-            ],
-        },
-        {
-            category: "Cloud & Hosting",
-            icon: Cloud,
-            items: [
-                { name: "AWS", description: "Scalable infrastructure", logos: ["/images/techstack_logos/aws-logo.png"] },
-                { name: "Google Cloud", description: "Global CDN", logos: ["/images/techstack_logos/googlecloud-logo.svg"] },
-                { name: "Vercel", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-logo.webp"] },
-            ],
-        },
-        {
-            category: "Analytics & Marketing",
+            category: "Database & Storage",
             icon: Database,
             items: [
-                { name: "Mixpanel", description: "User analytics", logos: ["/images/techstack_logos/mixpanel-logo.png"] },
-                { name: "Segment", description: "Data pipeline", logos: ["/images/techstack_logos/Segment-logo.png"] },
-                { name: "Hotjar", description: "Behavior tracking", logos: ["/images/techstack_logos/Hotjar-logo.png"] },
+                { name: "PostgreSQL", description: "Transactional integrity", logos: ["/images/techstack_logos/postgresql-logo.svg"] },
+                { name: "MongoDB", description: "Flexible content storage", logos: ["/images/techstack_logos/mongodb-logo.svg"] },
+                { name: "Redis", description: "Real-time cache checks", logos: ["/images/techstack_logos/redis-logo.svg"] },
+            ],
+        },
+        {
+            category: "APIs & Integrations",
+            icon: Code2,
+            items: [
+                { name: "Stripe / PayPal", description: "Secure global payments", logos: ["/images/techstack_logos/Stripe-logo.png", "/images/techstack_logos/paypal-logo.png"] },
+                { name: "Google Maps Platform", description: "Immersive location services", logos: ["/images/techstack_logos/googlecloud-logo.svg"] },
+            ],
+        },
+        {
+            category: "CMS & Content",
+            icon: Cloud,
+            items: [
+                { name: "WordPress (Headless)", description: "Flexible content management", logos: ["/images/techstack_logos/wordpress-logo.svg"] },
+                { name: "Sanity / Strapi", description: "Omnichannel delivery", logos: ["/images/techstack_logos/Sanity-square-logo.png", "/images/techstack_logos/Strapi-logo.png"] },
+                { name: "Contentful", description: "Enterprise infrastructure", logos: ["/images/techstack_logos/Contentful-logo.webp"] },
+            ],
+        },
+        {
+            category: "Analytics & Growth",
+            icon: Database,
+            items: [
+                { name: "GA4 / Mixpanel", description: "Travel Data Analytics", logos: ["/images/organic_growth_and_seo/google-analytics-logo.webp", "/images/techstack_logos/mixpanel-logo.png"] },
+                { name: "Segment / HubSpot", description: "Lead generation & BI", logos: ["/images/techstack_logos/Segment-logo.png", "/images/ai_automation_logos/hubspot-logo.png"] },
             ],
         },
     ];

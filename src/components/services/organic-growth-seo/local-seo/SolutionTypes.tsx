@@ -21,44 +21,65 @@ export default function SolutionTypes() {
         {
             id: "hospitality",
             title: "Hospitality",
-            description: "Restaurants, cafes, and hotels wanting to capture hungry locals and tourists.",
+            description: "Rank #1 for 'best restaurants near me' - We optimize menus, hours, and booking integrations. Implemented reservation schema drives 42% more table bookings.",
             icon: Utensils,
             color: localAmber,
         },
         {
             id: "medical",
             title: "Medical & Dental",
-            description: "Clinics and practitioners looking to be the top choice for patient care nearby.",
+            description: "#1 for 'doctor near me' - HIPAA-compliant review strategies, patient testimonial optimization, and medical schema markup help clinics rank for high-intent queries.",
             icon: Stethoscope,
             color: "#EF4444",
         },
         {
             id: "legal",
             title: "Legal Services",
-            description: "Law firms and attorneys needing maintain authority in their jurisdiction.",
+            description: "Dominate 'lawyer near me' - We build authoritative citations on Avvo, Justia, and FindLaw, optimize for practice area + city keywords (e.g., 'DUI attorney Chicago').",
             icon: Scale,
             color: "#1E40AF",
         },
         {
             id: "homeservices",
             title: "Home Services",
-            description: "Plumbers, HVAC, and contractors targeting homeowners in specific service areas.",
+            description: "Rank for 'emergency plumber,' 'HVAC repair' - Service area business (SAB) optimization with radius targeting. Our contractors average 198% more service calls from Maps.",
             icon: Hammer,
             color: "#EA580C",
         },
         {
             id: "retail",
             title: "Local Retail",
-            description: "Brick-and-mortar stores driving foot traffic from online searches.",
+            description: "Drive foot traffic from online searches - Product inventory feeds synced to GBP. Brick-and-mortar stores see 67% increase in store visits tracked via Google's foot traffic analytics.",
             icon: ShoppingBag,
             color: "#DB2777",
         },
         {
             id: "realestate",
             title: "Real Estate",
-            description: "Agents and brokers showcasing their local market expertise and listings.",
+            description: "Become the go-to expert in your market - Hyperlocal content targeting neighborhood names, MLS integration for property listings. Realtors gain 83% more buyer/seller inquiries.",
             icon: Home,
             color: "#059669",
+        },
+        {
+            id: "dental",
+            title: "Dental Practices",
+            description: "Top rankings for 'dentist near me' - We optimize appointment booking systems, dental procedure schema, insurance information. Practices achieve 215% more new patient appointments.",
+            icon: Stethoscope,
+            color: "#06B6D4",
+        },
+        {
+            id: "automotive",
+            title: "Automotive",
+            description: "Rank for 'car dealerships near me' - Inventory feed optimization (auto schema markup), service department promotion. Dealerships report 127% more test drive bookings.",
+            icon: Building2,
+            color: "#8B5CF6",
+        },
+        {
+            id: "insurance",
+            title: "Insurance",
+            description: "Top 3 for 'insurance agent near me' - We create location-based landing pages for each insurance type, optimize agent bios with local expertise.",
+            icon: Building2,
+            color: "#F97316",
         },
     ];
 
@@ -88,7 +109,7 @@ export default function SolutionTypes() {
                             Industries We <span style={{ color: localAmber }}>Grow</span>
                         </h2>
                         <p className="text-lg text-gray-400 mb-8">
-                            Local SEO strategies tailored to the unique buying journey of your specific customer base.
+                            Hyperlocal strategies tailored to your customer's buying journey. We've delivered top 3 rankings for diverse sectors.
                         </p>
                     </div>
                     <div className="hidden lg:block">

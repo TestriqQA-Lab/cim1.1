@@ -54,7 +54,7 @@ export default function Hero() {
             </div>
 
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-start">
                     {/* LEFT CONTENT */}
                     <div className="space-y-8 text-center lg:text-left">
                         {/* Breadcrumbs */}
@@ -84,10 +84,10 @@ export default function Hero() {
 
                         {/* Headline */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Build{" "}
+                            Premier{" "}
                             <span
                                 style={{
                                     background: "linear-gradient(135deg, #61dafb, #00d4ff)",
@@ -95,15 +95,16 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Lightning-Fast
+                                Next.js Development
                             </span>{" "}
-                            Web Apps
+                            Services & React JS Development Company for Global Enterprises
                         </h1>
 
-                        <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Leverage the power of Next.js and React to create blazing-fast, SEO-optimized
-                            web applications with server-side rendering, static generation, and modern tooling.
-                        </p>
+                        <div className="space-y-4">
+                            <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                As a premier Next.js development agency and React JS development company, we build lightning-fast, SEO-optimized, and highly scalable web applications. Our expert React development services deliver seamless user experiences that dominate search rankings and maximize ROI for global brands.
+                            </p>
+                        </div>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap gap-3">
@@ -159,7 +160,7 @@ export default function Hero() {
                                     boxShadow: "0 4px 20px rgba(97, 218, 251, 0.4)",
                                 }}
                             >
-                                Start Your Project
+                                Get a Free Audit & Quote Today
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
                             <Link

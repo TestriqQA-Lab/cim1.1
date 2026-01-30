@@ -84,10 +84,10 @@ export default function Hero() {
 
                         {/* Headline */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Sell More With{" "}
+                            Professional{" "}
                             <span
                                 style={{
                                     background: "linear-gradient(135deg, #96bf48, #5c8a1e)",
@@ -95,14 +95,16 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Powerful E-commerce
-                            </span>
+                                Shopify Development Services
+                            </span>{" "}
+                            for High-Growth Global Brands
                         </h1>
 
-                        <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            From Shopify to WooCommerce, we build online stores that convert visitors
-                            into customers. Custom themes, seamless payments, and growth-focused optimization.
-                        </p>
+                        <div className="space-y-4">
+                            <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                Partner with a leading Shopify marketing agency to scale your brand with expert Shopify development services built for the 2026 digital landscape. From high-converting store setup to enterprise-grade Shopify Plus solutions, we deliver precision-engineered experiences that dominate search rankings and drive sustainable ROI across global markets.
+                            </p>
+                        </div>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3">
@@ -158,7 +160,7 @@ export default function Hero() {
                                     boxShadow: "0 4px 20px rgba(150, 191, 72, 0.4)",
                                 }}
                             >
-                                Launch Your Store
+                                Book Your Free Shopify Audit Today
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
                             <Link

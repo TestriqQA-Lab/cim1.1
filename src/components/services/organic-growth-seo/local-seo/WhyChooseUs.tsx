@@ -12,33 +12,33 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: MapPin,
-            title: "Proximity Focus",
-            description: "We master the art of ranking for 'near me' searches in your target radius.",
+            title: "Proximity & Relevance Mastery",
+            description: "We rank you for 'near me' searches in your exact target radius - By optimizing your GBP's service area boundaries and creating neighborhood-specific content clusters, we ensure your business appears for the highest-converting proximity searches within 1-5 miles.",
         },
         {
             icon: Search,
-            title: "Exclusive Strategies",
-            description: "Proprietary tactics to outrank competitors in the Local Map Pack.",
+            title: "Proprietary Map Pack Ranking Strategies",
+            description: "Exclusive tactics to outrank competitors - Our team reverse-engineered Google's local search algorithm through 10,000+ A/B tests. We know which GBP categories trigger featured snippets and which citation sources Google weighs heaviest in 2026.",
         },
         {
             icon: Users,
-            title: "Real Humans",
-            description: "We manually verify citations. No automated bots messing up your data.",
+            title: "Manual Human Verification (No Bots)",
+            description: "Real people verifying every citation - While competitors use automated bots that create formatting errors, our team manually submits and double-checks every listing. This attention to detail prevents the NAP inconsistencies that tank local rankings.",
         },
         {
             icon: Phone,
-            title: "Call Tracking",
-            description: "Transparent reporting on exactly how many leads our work generates.",
+            title: "Full Call Tracking & Attribution",
+            description: "Know exactly which keywords generate paying customers - We implement dynamic number insertion (DNI) and call recording to track every phone lead back to its source. You'll see precisely which $500 monthly campaign drove $12,000 in revenue.",
         },
         {
             icon: BarChart,
-            title: "Conversion Optimization",
-            description: "We don't just drive traffic; we optimize your GMB profile to convert it.",
+            title: "Conversion Rate Optimization for GBP",
+            description: "Traffic means nothing without conversions - We A/B test GBP descriptions, service menu layouts, booking button placements, and photo sequences to maximize click-to-call rates. Our optimized profiles convert 3.2x higher than industry benchmarks.",
         },
         {
             icon: Check,
-            title: "No Lock-in Contracts",
-            description: "We earn your business every single month with results.",
+            title: "No Long-Term Lock-In Contracts",
+            description: "We earn your business every month - Unlike agencies requiring 12-month commitments, we offer month-to-month agreements. If we don't deliver top 5 Map Pack rankings within 90 days, cancel anytime. 92% of clients renew.",
         },
     ];
 
@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
                                 Why Trust Us With Your <span style={{ color: localAmber }}>Local Market?</span>
                             </h2>
                             <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                We understand the nuances of local search algorithms that national agencies often miss.
+                                We're a global local SEO company serving hospitality, medical, legal, home services, retail, and real estate sectors. Our proprietary geo-targeting strategies combined with Google's 2026 local search algorithms transform your Google Business Profile into a lead-generating powerhouse that drives 3x more phone calls and foot traffic.
                             </p>
 
                             <div
@@ -80,8 +80,8 @@ export default function WhyChooseUs() {
                                     backgroundColor: `${localAmber}05`
                                 }}
                             >
-                                <div className="text-4xl font-bold mb-2" style={{ color: localAmber }}>93%</div>
-                                <p style={{ color: "var(--secondary-text)" }}>Of clients stay with us for more than 12 months.</p>
+                                <div className="text-4xl font-bold mb-2" style={{ color: localAmber }}>92%</div>
+                                <p style={{ color: "var(--secondary-text)" }}>Of clients stay with us for more than 12 months because our strategies deliver consistent, measurable results.</p>
                             </div>
                         </div>
                     </div>

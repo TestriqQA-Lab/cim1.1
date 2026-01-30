@@ -12,63 +12,51 @@ export default function TechStack() {
             id: "core",
             title: "Core Technologies",
             icon: Rocket,
-            description: "Astro ecosystem fundamentals",
+            description: "Astro ecosystem fundamentals for 100% PageSpeed",
             technologies: [
-                { name: "Astro", description: "Web Framework", logo: "/images/techstack_logos/Astro-logo.svg" },
-                { name: "TypeScript", description: "Type Safety", logo: "/images/techstack_logos/typescript-logo.svg" },
-                { name: "JavaScript", description: "Core Language", logo: "/images/techstack_logos/javascript-logo.svg" },
-                { name: "HTML5", description: "Semantic Markup", logo: "/images/techstack_logos/html5-logo.svg" },
-                { name: "CSS3", description: "Modern Styling", logo: "/images/techstack_logos/css3-logo.svg" },
+                { name: "Astro", description: "Zero JS by default, Islands Architecture, 100% PageSpeed", logo: "/images/techstack_logos/Astro-logo.svg" },
+                { name: "TypeScript", description: "Type safety, better IDE support, enterprise-ready", logo: "/images/techstack_logos/typescript-logo.svg" },
+                { name: "JavaScript", description: "Universal language, ecosystem compatibility", logo: "/images/techstack_logos/javascript-logo.svg" },
+                { name: "HTML5", description: "SEO excellence, accessibility, web standards", logo: "/images/techstack_logos/html5-logo.svg" },
+                { name: "CSS3", description: "Modern styling, responsive design, animations", logo: "/images/techstack_logos/css3-logo.svg" },
             ],
         },
         {
             id: "frameworks",
             title: "UI Frameworks",
             icon: Layers,
-            description: "Component frameworks for islands",
+            description: "Reusable islands for rich ecosystem features",
             technologies: [
-                { name: "React", description: "UI Library", logo: "/images/techstack_logos/react-logo.svg" },
-                { name: "Vue.js", description: "Progressive Framework", logo: "/images/techstack_logos/vuejs-logo.svg" },
-                { name: "Svelte", description: "Compiler Framework", logo: "/images/techstack_logos/Svelte-Logo.png" },
+                { name: "React", description: "Rich ecosystem, familiar developer experience", logo: "/images/techstack_logos/react-logo.svg" },
+                { name: "Vue.js", description: "Lightweight components, simple integration", logo: "/images/techstack_logos/vuejs-logo.svg" },
+                { name: "Svelte", description: "Zero runtime, smallest bundles, blazing performance", logo: "/images/techstack_logos/Svelte-Logo.png" },
                 { name: "Solid.js", description: "Reactive Framework", logo: "/images/techstack_logos/solidjs-logo.png" },
-                { name: "Preact", description: "Lightweight React", logo: "/images/techstack_logos/Preact-logo.png" },
+                { name: "Tailwind CSS", description: "Rapid prototyping, design consistency", logo: "/images/techstack_logos/tailwindcss-logo.svg" },
             ],
         },
         {
             id: "content",
             title: "Content & CMS",
             icon: FileText,
-            description: "Content management solutions",
+            description: "Optimized content management solutions",
             technologies: [
-                { name: "MDX", description: "Markdown + JSX", logo: "/images/techstack_logos/mdx-logo.webp" },
-                { name: "Markdown", description: "Content Format", logo: "/images/techstack_logos/Markdown-logo.png" },
-                { name: "Contentful", description: "Headless CMS", logo: "/images/techstack_logos/Contentful-logo.webp" },
-                { name: "Sanity", description: "Content Platform", logo: "/images/techstack_logos/Sanity-square-logo.png" },
-                { name: "Strapi", description: "Open Source CMS", logo: "/images/techstack_logos/Strapi-logo.png" },
+                { name: "MDX", description: "Rich content, component embedding", logo: "/images/techstack_logos/mdx-logo.webp" },
+                { name: "Markdown", description: "Simple authoring, version control friendly", logo: "/images/techstack_logos/Markdown-logo.png" },
+                { name: "Contentful", description: "Headless CMS, API-first publishing", logo: "/images/techstack_logos/Contentful-logo.webp" },
+                { name: "Sanity", description: "Structured content platform", logo: "/images/techstack_logos/Sanity-square-logo.png" },
+                { name: "Strapi", description: "Open source CMS, flexible management", logo: "/images/techstack_logos/Strapi-logo.png" },
             ],
         },
         {
-            id: "styling",
-            title: "Styling",
-            icon: Palette,
-            description: "CSS and design systems",
-            technologies: [
-                { name: "Tailwind CSS", description: "Utility Framework", logo: "/images/techstack_logos/tailwindcss-logo.svg" },
-                { name: "Sass/SCSS", description: "CSS Preprocessor", logo: "/images/techstack_logos/Sass-SCSS-logo.png" },
-                { name: "CSS Modules", description: "Scoped Styles", logo: "/images/techstack_logos/css3-logo.svg" },
-                { name: "PostCSS", description: "CSS Processing", logo: "/images/techstack_logos/PostCSS-Logo.png" },
-            ],
-        },
-        {
-            id: "deployment",
-            title: "Deployment",
+            id: "tools",
+            title: "Build & Deploy",
             icon: Cloud,
-            description: "Hosting and deployment",
+            description: "Modern static site generator solutions",
             technologies: [
-                { name: "Vercel", description: "Edge Deployment", logo: "/images/techstack_logos/vercel-logo.webp" },
-                { name: "Netlify", description: "Web Platform", logo: "/images/techstack_logos/netlify-logo.svg" },
+                { name: "Vite", description: "Lightning-fast HMR, optimized builds", logo: "/images/techstack_logos/vitejs-logo.svg" },
+                { name: "Vercel", description: "Global CDN, edge deployment, instant rollbacks", logo: "/images/techstack_logos/vercel-logo.webp" },
+                { name: "Netlify", description: "Global CDN, preview deployments", logo: "/images/techstack_logos/netlify-logo.svg" },
                 { name: "Cloudflare", description: "Edge Network", logo: "/images/techstack_logos/Cloudflare-logo.webp" },
-                { name: "GitHub Pages", description: "Static Hosting", logo: "/images/techstack_logos/github-logo1.webp" },
             ],
         },
     ];
@@ -117,7 +105,7 @@ export default function TechStack() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Astro integrates seamlessly with your favorite tools and frameworks.
+                        Astro framework ecosystem and integrations seamlessly connect with your favorite tools and frameworks for modern static site generator solutions.
                     </p>
                 </div>
 

@@ -18,9 +18,9 @@ export default function Hero() {
     ];
 
     const stats = [
-        { value: "500K+", label: "Bookings Processed" },
-        { value: "200+", label: "Properties Managed" },
-        { value: "99%", label: "Guest Satisfaction" },
+        { value: "300%", label: "Traffic Growth" },
+        { value: "95%", label: "Bug-Free Deliveries" },
+        { value: "50+", label: "Global Partners" },
     ];
 
     return (
@@ -75,22 +75,21 @@ export default function Hero() {
 
                         {/* Headline */}
                         <h1
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                            className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Transform Travel{" "}
+                            Transform Your Business with{" "}
                             <span
                                 style={{
                                     color: "#0d9488",
                                 }}
                             >
-                                With Digital Innovation
+                                Future-Ready Travel and Hospitality Services
                             </span>
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Build powerful booking platforms, hospitality management systems, and immersive
-                            travel experiences that delight guests and drive revenue growth.
+                            At Cinute Infomedia, we provide premier Travel and Hospitality Services designed for the 2026 digital ecosystem. As a leading Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that empower global travel brands and luxury resorts to scale effortlessly.
                         </p>
 
                         {/* Feature Pills */}
@@ -141,7 +140,7 @@ export default function Hero() {
                                 className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105"
                                 style={{ backgroundColor: "#0d9488" }}
                             >
-                                Start Your Project
+                                Start Your Transformation
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
                             <Link
@@ -153,7 +152,7 @@ export default function Hero() {
                                     backgroundColor: "var(--card-bg)",
                                 }}
                             >
-                                View Solutions
+                                View Case Studies
                             </Link>
                         </div>
                     </div>
@@ -240,10 +239,10 @@ export default function Hero() {
                             }}
                         >
                             <p className="text-sm font-semibold mb-3" style={{ color: "#0d9488" }}>
-                                Integrated With
+                                Certifications
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Booking.com", "Expedia", "Airbnb", "Stripe", "PayPal"].map((partner, idx) => (
+                                {["AWS Certified", "Google Partner", "Meta Business Partner"].map((partner, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"

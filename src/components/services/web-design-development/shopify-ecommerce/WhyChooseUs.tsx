@@ -6,7 +6,7 @@ import {
     Target,
     Layers,
     Zap,
-    HeadphonesIcon,
+    Globe,
     TrendingUp,
 } from "lucide-react";
 
@@ -16,44 +16,44 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Award,
-            title: "Certified Partners",
+            title: "Certified Shopify Partners",
             description:
-                "Official Shopify and WooCommerce experts with proven track records and certifications.",
+                "As a certified Shopify marketing agency, we have direct access to the latest beta features and priority support from Shopify experts.",
             gradient: "from-[#96bf48] to-[#5c8a1e]",
         },
         {
             icon: Target,
-            title: "Conversion Focused",
+            title: "Conversion-First Approach",
             description:
-                "Every design decision is made to drive sales. We optimize for revenue, not just aesthetics.",
+                "Our Shopify conversion rate optimization (CRO) services help clients see a 35% average increase in AOV through strategic upsells.",
             gradient: "from-[#5c8a1e] to-[#b4d97c]",
         },
         {
-            icon: Layers,
-            title: "Full-Stack Capability",
+            icon: TrendingUp,
+            title: "2026 SEO Readiness",
             description:
-                "Frontend, backend, and integrations - we handle everything in-house for seamless delivery.",
+                "Optimized for the post-December 2025 Google core update, we implement high-E-E-A-T content and JSON-LD schema to dominate AI search results.",
             gradient: "from-[#96bf48] to-[#b4d97c]",
         },
         {
-            icon: Zap,
-            title: "Performance Obsessed",
+            icon: Globe,
+            title: "Global Scale Support",
             description:
-                "Fast-loading stores that rank well in search and convert better. Speed is revenue.",
+                "Specializing in multi-currency setups and global trade nuances to help brands expand seamlessly into US, EU, and APAC markets.",
             gradient: "from-[#b4d97c] to-[#96bf48]",
         },
         {
-            icon: HeadphonesIcon,
-            title: "Ongoing Support",
+            icon: Zap,
+            title: "99.9% Bug-Free Deployment",
             description:
-                "Maintenance, updates, and growth support. We're your long-term e-commerce partner.",
+                "Rigorous QA involving automated load testing and manual checks to ensure stable launches and maintain customer trust.",
             gradient: "from-[#5c8a1e] to-[#96bf48]",
         },
         {
-            icon: TrendingUp,
-            title: "Proven Results",
+            icon: Layers,
+            title: "Data Security & Trust",
             description:
-                "100+ successful store launches with measurable increases in sales and conversions.",
+                "Prioritizing Shopify maintenance and ongoing support with regular security patches and GDPR/CCPA compliance audits.",
             gradient: "from-[#96bf48] to-[#5c8a1e]",
         },
     ];
@@ -115,7 +115,7 @@ export default function WhyChooseUs() {
                     >
                         <Zap className="w-4 h-4" style={{ color: "#96bf48" }} />
                         <span className="text-sm font-medium" style={{ color: "#96bf48" }}>
-                            Why Work With Us
+                            Why Partner With Our Shopify Agency?
                         </span>
                     </div>
 
@@ -139,8 +139,8 @@ export default function WhyChooseUs() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        We specialize in building e-commerce stores that
-                        drive revenue, not just traffic.
+                        Stop losing customers to slow load times and generic designs. We combine technical
+                        excellence with data-driven marketing to build Shopify stores that dominate search and drive revenue.
                     </p>
                 </div>
 

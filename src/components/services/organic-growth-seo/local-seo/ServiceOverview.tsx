@@ -19,38 +19,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: MapPin,
-            title: "Google Business Profile",
-            description: "Complete setup, verification, and ongoing optimization of your GMB listing.",
+            title: "Google Business Profile Management",
+            description: "Complete GBP setup, verification & ongoing optimization - We claim and optimize every field in your Google Business Profile (formerly GMB), including Q&As, posts, booking buttons, and product catalogs.",
             color: localAmber,
         },
         {
             icon: Link,
-            title: "Local Citations",
-            description: "Building consistent NAP (Name, Address, Phone) mentions across high-authority directories.",
+            title: "Local Citations & NAP Consistency",
+            description: "Building authoritative citations across 50+ high-DA directories - Inconsistent NAP data is the #1 reason local businesses fail to rank. We manually audit and correct your business listings.",
             color: "#3B82F6",
         },
         {
             icon: MessageSquare,
-            title: "Review Management",
-            description: "Strategies to generate more positive reviews and professionally respond to feedback.",
+            title: "Review Management & Reputation SEO",
+            description: "Generate 5-star reviews & professionally respond to all feedback - Reviews account for 15.4% of Google's local ranking algorithm. We implement automated SMS/email review request workflows.",
             color: "#10B981",
         },
         {
             icon: Layout,
-            title: "On-Page Localization",
-            description: "Adding location-specific schema, keywords, and landing pages to your website.",
+            title: "On-Page Localization & Landing Pages",
+            description: "Location-specific schema, keywords & geo-targeted content - We create dedicated landing pages for each service area with unique LocalBusiness schema markup and city-specific keywords.",
             color: "#8B5CF6",
         },
         {
             icon: Navigation,
-            title: "Map Pack Optimization",
-            description: "Tactics specifically designed to get you into the coveted Local 3-Pack.",
+            title: "Google Map Pack Optimization",
+            description: "Proprietary tactics to secure the Local 3-Pack - The Map Pack appears above organic results for 93% of local searches. We optimize for Google's proximity, relevance, and prominence signals.",
             color: "#EC4899",
         },
         {
             icon: Smartphone,
-            title: "Mobile Optimization",
-            description: 'Ensuring your site is perfect for on-the-go "near me" searches.',
+            title: "Mobile & 'Near Me' Search Optimization",
+            description: 'Flawless mobile experience for on-the-go searchers - 76% of local searches happen on mobile devices, with 28% converting within 24 hours. We ensure your site has <2-second load times on 4G.',
             color: "#06B6D4",
         },
     ];
@@ -99,7 +99,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Comprehensive strategies to make your business visible where it matters most: your neighborhood.
+                        Comprehensive strategies to dominate your neighborhood's search results. Our full-service local SEO company provides end-to-end solutions tailored to your geographic market.
                     </p>
                 </div>
 

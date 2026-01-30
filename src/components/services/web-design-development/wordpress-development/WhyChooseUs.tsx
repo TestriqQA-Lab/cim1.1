@@ -7,7 +7,7 @@ import {
     TrendingUp,
     Store,
     ShieldCheck,
-    Users,
+    Globe,
 } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -16,57 +16,57 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Trophy,
-            title: "WordPress Experts",
-            description: "10+ years of dedicated WordPress experience across hundreds of projects.",
+            title: "Verified Expertise",
+            description: "500+ successful projects delivered globally, including retail sites seeing 300% traffic growth.",
             gradient: "from-amber-500 via-yellow-500 to-orange-500",
             bgColor: "rgba(251, 191, 36, 0.15)",
             iconColor: "#f59e0b",
             particles: 3,
         },
         {
-            icon: Sparkles,
-            title: "Custom Solutions",
-            description: "No cookie-cutter templates - every site is built to match your unique brand and needs.",
-            gradient: "from-purple-500 via-pink-500 to-rose-500",
-            bgColor: "rgba(168, 85, 247, 0.15)",
-            iconColor: "#a855f7",
-            particles: 4,
-        },
-        {
             icon: TrendingUp,
-            title: "SEO-First Approach",
-            description: "Built from the ground up for search visibility with clean code and fast load times.",
+            title: "Performance First",
+            description: "Beating 2025 Google Core update signals with 90+ PageSpeed scores and mobile-first engineering.",
             gradient: "from-green-500 via-emerald-500 to-teal-500",
             bgColor: "rgba(34, 197, 94, 0.15)",
             iconColor: "#22c55e",
             particles: 5,
         },
         {
-            icon: Store,
-            title: "WooCommerce Specialists",
-            description: "Expert e-commerce development with custom checkout flows and integrations.",
-            gradient: "from-blue-500 via-cyan-500 to-sky-500",
-            bgColor: "rgba(59, 130, 246, 0.15)",
-            iconColor: "#3b82f6",
-            particles: 3,
-        },
-        {
             icon: ShieldCheck,
-            title: "Security Focused",
-            description: "Hardened installations with best practices to protect your site and data.",
+            title: "Security Hardening",
+            description: "Hardening fintech platforms with 95% bug-free deployment and military-grade encryption.",
             gradient: "from-red-500 via-orange-500 to-amber-500",
             bgColor: "rgba(239, 68, 68, 0.15)",
             iconColor: "#ef4444",
             particles: 4,
         },
         {
-            icon: Users,
-            title: "Ongoing Support",
-            description: "Long-term partnership with maintenance, updates, and continuous improvements.",
+            icon: Store,
+            title: "White Label Ready",
+            description: "Reliable white label WordPress development for agencies at a global scale.",
+            gradient: "from-blue-500 via-cyan-500 to-sky-500",
+            bgColor: "rgba(59, 130, 246, 0.15)",
+            iconColor: "#3b82f6",
+            particles: 3,
+        },
+        {
+            icon: Globe,
+            title: "Global Reach",
+            description: "Expertise in complex multilingual setups and international WordPress SEO.",
             gradient: "from-indigo-500 via-violet-500 to-purple-500",
             bgColor: "rgba(99, 102, 241, 0.15)",
             iconColor: "#6366f1",
             particles: 5,
+        },
+        {
+            icon: Sparkles,
+            title: "Custom Solutions",
+            description: "No templates. Every site is engineered to match your unique brand identity.",
+            gradient: "from-purple-500 via-pink-500 to-rose-500",
+            bgColor: "rgba(168, 85, 247, 0.15)",
+            iconColor: "#a855f7",
+            particles: 4,
         },
     ];
 
@@ -107,11 +107,11 @@ export default function WhyChooseUs() {
                         }}>
                         <Trophy className="w-4 h-4" style={{ color: "#0073AA" }} />
                         <span className="text-sm font-semibold tracking-wide uppercase" style={{ color: "#0073AA" }}>
-                            Why Choose Us
+                            Why Choose Cinute
                         </span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        <span style={{ color: "var(--foreground)" }}>Why We&apos;re the </span>{" "}
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
+                        <span style={{ color: "var(--foreground)" }}>Why We’re the #1 WordPress Agency for </span>{" "}
                         <span
                             className="inline-block"
                             style={{
@@ -120,11 +120,12 @@ export default function WhyChooseUs() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Right Choice
+                            Startups & Global Brands
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        Combining deep WordPress expertise with business understanding to deliver exceptional results.
+                        In an era where digital first impressions are everything, generic templates no longer cut it.
+                        We combine 10+ years of technical mastery with ROI-driven marketing strategies to help you dominate search results.
                     </p>
                 </div>
 

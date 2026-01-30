@@ -81,7 +81,7 @@ export default function FAQ() {
                                 <AccordionTrigger className="text-left py-6 hover:no-underline hover:text-[#00b4d8] font-bold text-lg" style={{ color: "var(--foreground)" }}>
                                     {faq.question}
                                 </AccordionTrigger>
-                                <AccordionContent className="text-lg leading-relaxed pb-6" style={{ color: "var(--secondary-text)" }}>
+                                <AccordionContent className="text-lg leading-relaxed pb-6" style={{ color: "var(--foreground)" }}>
                                     {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>

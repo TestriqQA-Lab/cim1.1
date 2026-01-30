@@ -16,44 +16,44 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Zap,
-            title: "Next.js Experts Since v9",
+            title: "30+ Years Experience",
             description:
-                "We've been building with Next.js since early versions, evolving with every major release from Pages to App Router.",
+                "Our team brings 30+ years of combined expertise in web design and development, ensuring enterprise-grade solutions for every project.",
             gradient: "from-[#61dafb] to-[#00d4ff]",
         },
         {
             icon: Shield,
-            title: "Type-Safe First",
+            title: "Vercel & AWS Partners",
             description:
-                "Every project starts with TypeScript and strict type checking. Catch bugs at compile time, not runtime.",
+                "As certified Vercel and AWS partners, we specialize in advanced Next.js SEO audit and optimization services that drive results.",
             gradient: "from-[#00d4ff] to-[#61dafb]",
         },
         {
             icon: Globe,
-            title: "SEO Specialists",
+            title: "Top React Agency",
             description:
-                "Our SSR and SSG implementations consistently achieve 100 Lighthouse SEO scores and top search rankings.",
+                "Ranked as a top React development agency for three consecutive years, delivering high-performance applications globally.",
             gradient: "from-[#61dafb] to-[#00d4ff]",
         },
         {
             icon: Code2,
-            title: "Clean Architecture",
+            title: "Expert Maintenance",
             description:
-                "Scalable folder structures, reusable components, and maintainable code patterns that grow with your business.",
+                "Our Next.js maintenance and ongoing support services ensure your app stays updated with the latest security patches and features.",
             gradient: "from-[#00d4ff] to-[#61dafb]",
         },
         {
             icon: TrendingUp,
             title: "Performance Obsessed",
             description:
-                "Sub-second load times, optimal Core Web Vitals, and efficient bundle sizes through code splitting.",
+                "Our implementations consistently achieve 100 Lighthouse scores, focusing on Next.js speed optimization and Core Web Vitals.",
             gradient: "from-[#61dafb] to-[#00d4ff]",
         },
         {
             icon: HeadphonesIcon,
-            title: "Ongoing Support",
+            title: "E-E-A-T Driven",
             description:
-                "We don't just launch and leave. Continuous monitoring, updates, and support to keep your app running smoothly.",
+                "We follow Google's E-E-A-T guidelines to ensure your platform is authoritative, trustworthy, and expert-led.",
             gradient: "from-[#00d4ff] to-[#61dafb]",
         },
     ];
@@ -122,7 +122,7 @@ export default function WhyChooseUs() {
                     >
                         <Zap className="w-4 h-4" style={{ color: "#61dafb" }} />
                         <span className="text-sm font-medium" style={{ color: "#61dafb" }}>
-                            Why Work With Us
+                            E-E-A-T Verified
                         </span>
                     </div>
 
@@ -130,7 +130,7 @@ export default function WhyChooseUs() {
                         className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Your{" "}
+                        Why Choose Our{" "}
                         <span
                             style={{
                                 background: "linear-gradient(135deg, #61dafb, #00d4ff)",
@@ -138,21 +138,20 @@ export default function WhyChooseUs() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            React
+                            React Development
                         </span>{" "}
-                        Experts
+                        Agency?
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        We specialize in building high-performance Next.js applications
-                        that scale with your business and delight your users.
+                        Our Next.js development services leverage the latest JavaScript framework expertise to solve complex needs for disruptive startups and established brands. We maintain a track record of delivering 95% bug-free applications globally.
                     </p>
                 </div>
 
                 {/* Reasons Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
                     {reasons.map((reason, idx) => {
                         const Icon = reason.icon;
                         const isHovered = hoveredIndex === idx;
@@ -279,6 +278,31 @@ export default function WhyChooseUs() {
                             </div>
                         );
                     })}
+                </div>
+
+                {/* Testimonial Section */}
+                <div
+                    className="p-8 md:p-12 rounded-3xl border-2 text-center relative overflow-hidden"
+                    style={{
+                        borderColor: "color-mix(in srgb, #61dafb 30%, var(--border-color))",
+                        background: "linear-gradient(135deg, var(--card-bg), color-mix(in srgb, #61dafb 5%, var(--card-bg)))",
+                    }}
+                >
+                    <div className="absolute top-0 left-0 w-full h-1" style={{ background: "linear-gradient(90deg, #61dafb, #00d4ff)" }} />
+                    <div className="max-w-4xl mx-auto">
+                        <p className="text-2xl md:text-3xl font-medium mb-8 italic" style={{ color: "var(--foreground)" }}>
+                            &quot;Cinute Infomedia developed our website using Next.js, which dramatically enhanced our SEO and page performance. This technical superiority has directly helped us secure major deals for our QA and testing services.&quot;
+                        </p>
+                        <div className="flex items-center justify-center gap-4">
+                            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#61dafb] to-[#00d4ff] flex items-center justify-center text-black font-bold">
+                                T
+                            </div>
+                            <div className="text-left">
+                                <p className="font-bold" style={{ color: "var(--foreground)" }}>Testriq QA Lab</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Leading Software Testing Provider</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
