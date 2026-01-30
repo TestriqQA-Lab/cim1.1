@@ -10,6 +10,9 @@ export default function Industries() {
         "Healthcare & Wellness",
         "Retail, Jewelry & E-Commerce",
         "Entertainment & Media",
+        "Finance & Banking",
+        "Real Estate",
+        "Travel & Hospitality",
     ];
 
     return (

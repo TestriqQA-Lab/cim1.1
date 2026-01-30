@@ -15,7 +15,7 @@ export default function Process() {
         {
             icon: Lightbulb,
             title: "Discover",
-            description: "Understand your business, goals, market & audience",
+            description: "Understand your business, goals, market positioning, and target audience through comprehensive discovery sessions and competitive analysis",
             // use CSS variables from globals.css via Tailwind arbitrary classes
             colorFrom: "var(--brand-blue)",
             colorTo: "var(--brand-teal)",
@@ -29,7 +29,7 @@ export default function Process() {
         {
             icon: Palette,
             title: "Design",
-            description: "Build digital assets & brand touchpoints that resonate",
+            description: "Build digital assets, brand touchpoints, and user experiences that resonate with your audience and align with business objectives",
             colorFrom: "var(--brand-purple)",
             colorTo: "var(--brand-yellow)",
             details: ["Brand strategy", "Creative concepts", "UI/UX design", "Content planning"],
@@ -37,7 +37,7 @@ export default function Process() {
         {
             icon: Rocket,
             title: "Deploy",
-            description: "Launch campaigns backed by data & targeting",
+            description: "Launch campaigns backed by data-driven targeting, technical precision, and performance optimization strategies",
             colorFrom: "var(--brand-cyan)",
             colorTo: "var(--brand-teal)",
             details: ["Campaign setup", "Technical integration", "Quality assurance", "Go-live execution"],
@@ -45,7 +45,7 @@ export default function Process() {
         {
             icon: TrendingUp,
             title: "Optimize",
-            description: "Analyze performance, automate workflows & scale growth",
+            description: "Continuously analyze performance metrics, automate workflows, refine strategies, and scale growth based on real-time insights",
             colorFrom: "var(--brand-yellow)",
             colorTo: "var(--brand-orange)",
             details: ["Performance tracking", "A/B testing", "Workflow automation", "Continuous improvement"],
@@ -180,13 +180,6 @@ export default function Process() {
                                                         </div>
                                                     </div>
 
-                                                    <div
-                                                        className="flex items-center gap-2 text-sm font-semibold mt-4 transition-all duration-300 opacity-100 translate-x-0"
-                                                        style={{ background: grad, WebkitBackgroundClip: "text", color: "transparent" }}
-                                                    >
-                                                        Learn more
-                                                        <ArrowRight className="w-4 h-4 text-[var(--brand-blue)] dark:text-[var(--brand-teal)]" />
-                                                    </div>
                                                 </article>
                                             ) : (
                                                 <div className="flex flex-col items-center justify-center relative">
@@ -293,13 +286,6 @@ export default function Process() {
                                                         </div>
                                                     </div>
 
-                                                    <div
-                                                        className="flex items-center gap-2 text-sm font-semibold mt-4 transition-all duration-300 opacity-100 translate-x-0"
-                                                        style={{ background: grad, WebkitBackgroundClip: "text", color: "transparent" }}
-                                                    >
-                                                        Learn more
-                                                        <ArrowRight className="w-4 h-4 text-[var(--brand-blue)] dark:text-[var(--brand-teal)]" />
-                                                    </div>
                                                 </article>
                                             ) : (
                                                 <div className="flex flex-col items-center justify-center relative">

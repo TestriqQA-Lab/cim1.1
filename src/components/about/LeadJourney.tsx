@@ -4,11 +4,11 @@ import { Target } from "lucide-react";
 
 export default function LeadJourney() {
     const journeyStages = [
-        { stage: "Visibility", desc: "Build awareness with the right audience" },
-        { stage: "Consideration", desc: "Prospects explore your services" },
-        { stage: "Nurturing", desc: "Build trust through engagement" },
-        { stage: "Conversion", desc: "Turn prospects into clients" },
-        { stage: "Retention", desc: "Foster long-term relationships" },
+        { stage: "Visibility", desc: "Build awareness with the right audience through strategic content, SEO, and targeted advertising" },
+        { stage: "Consideration", desc: "Prospects explore your services, compare alternatives, and evaluate your value proposition" },
+        { stage: "Nurturing", desc: "Build trust through consistent engagement, valuable content, and multi-touchpoint communication" },
+        { stage: "Conversion", desc: "Turn prospects into clients through optimized user experiences and clear calls-to-action" },
+        { stage: "Retention", desc: "Foster long-term relationships with ongoing value delivery, support, and strategic guidance" },
     ];
 
     return (
@@ -65,7 +65,7 @@ export default function LeadJourney() {
                                 </p>
                                 <p className="text-lg text-[var(--secondary-text)] leading-relaxed">
                                     This staged approach ensures that leads are not only generated but also nurtured into high-value, long-term clients.{" "}
-                                    <span className="font-semibold text-[var(--brand-blue)]">Results won't appear on day one</span>, but with consistent execution, the funnel delivers sustainable growth.
+                                    <span className="font-semibold text-[var(--brand-blue)]">Results won't appear on day one</span>, but with consistent execution and strategic optimization, the funnel delivers sustainable, scalable growth.
                                 </p>
                             </div>
                         </div>

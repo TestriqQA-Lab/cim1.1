@@ -116,7 +116,7 @@ export default function Hero() {
                             </p>
 
                             <p style={{ color: "var(--secondary-text)" }}>
-                                We don't just run campaigns - we build{" "}
+                                We don't just execute isolated campaigns or build standalone websites. We architect comprehensive{" "}
                                 <span className="relative inline-block">
                                     <span
                                         className="relative z-10"
@@ -131,7 +131,7 @@ export default function Hero() {
                                         }}
                                     />
                                 </span>{" "}
-                                connecting websites, branding, SEO, ads, automations & AI-driven systems.
+                                that seamlessly connect web development, brand identity, SEO, performance marketing, AI-powered automations, and intelligent chatbot systems into a unified revenue engine.
                             </p>
 
                             <p
@@ -141,7 +141,7 @@ export default function Hero() {
                                     fontWeight: 600,
                                 }}
                             >
-                                Creating systems that help brands grow{" "}
+                                Our mission is simple: create scalable, sustainable systems that help brands grow{" "}
                                 <span
                                     className="bg-clip-text text-transparent"
                                     style={{
@@ -149,9 +149,9 @@ export default function Hero() {
                                             "linear-gradient(90deg, var(--brand-purple), var(--brand-yellow))", WebkitBackgroundClip: "text", color: "transparent",
                                     }}
                                 >
-                                    faster, smarter, and sustainably
-                                </span>
-                                .
+                                    faster, smarter, and more profitably
+                                </span>{" "}
+                                in an increasingly competitive digital landscape.
                             </p>
                         </div>
                     </div>
