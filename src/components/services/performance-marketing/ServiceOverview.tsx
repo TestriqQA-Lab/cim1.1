@@ -12,28 +12,28 @@ export default function ServiceOverview() {
         {
             icon: MousePointerClick,
             title: "ROI-Focused Google Ads & PPC",
-            description: "Dominate search results with high-intent Paid Search (PPC). We don't just bid on keywords; we dominate search intent.",
+            description: <span>Dominate search results with high-intent <Link href="/services/performance-marketing/google-ads" className="hover:text-[var(--brand-orange)]">Paid Search (PPC)</Link>. We don't just bid on keywords; we dominate search intent.</span>,
             features: ["Search Ads", "Shopping Ads", "Local Services Ads", "Quality Score Optimization"],
             color: "#4285f4",
         },
         {
             icon: Share2,
             title: "Paid Social Media Marketing",
-            description: "Turn scrollers into buyers on Meta, TikTok, and LinkedIn. Social media is no longer just for brand awareness - it is a performance engine.",
+            description: <span>Turn scrollers into buyers on <Link href="/services/performance-marketing/meta-ads" className="hover:text-[var(--brand-orange)]">Meta</Link>, TikTok, and LinkedIn. Social media is no longer just for brand awareness - it is a performance engine.</span>,
             features: ["Meta Ads", "LinkedIn B2B Ads", "TikTok Viral Ads", "Advanced Segmentation"],
             color: "#34a853",
         },
         {
             icon: RefreshCw,
             title: "Precision Retargeting & Remarketing",
-            description: "Did you know 97% of visitors leave your site without buying? We bring them back with Cross-Platform Retargeting.",
+            description: <span>Did you know 97% of visitors leave your site without buying? We bring them back with <Link href="/services/performance-marketing/ppc-services" className="hover:text-[var(--brand-orange)]">Cross-Platform Retargeting</Link>.</span>,
             features: ["Cross-Platform Retargeting", "Dynamic Product Ads", "Cart Abandonment Flows", "Recover Lost Revenue"],
             color: "#ea4335",
         },
         {
             icon: Layers,
             title: "Programmatic Advertising & Display",
-            description: "Scale beyond the 'walled gardens'. Access premium inventory across websites, apps, and CTV channels.",
+            description: <span>Scale beyond the 'walled gardens'. Access premium <Link href="/services/performance-marketing" className="hover:text-[var(--brand-orange)]">inventory</Link> across websites, apps, and CTV channels.</span>,
             features: ["Real-Time Bidding (RTB)", "Contextual Targeting", "Native Advertising", "Premium Inventory"],
             color: "#fbbc04",
         },
@@ -62,7 +62,7 @@ export default function ServiceOverview() {
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        From the first click to the final sale (and beyond to retention), we optimize every single touchpoint of the user journey. Our integrated approach ensures no leak in your funnels.
+                        From the first click to the final sale (and beyond to retention), we optimize every single touchpoint. Whether through <Link href="/services/performance-marketing/google-ads" style={{ color: "var(--brand-orange)" }}>Google Ads</Link>, <Link href="/services/performance-marketing/meta-ads" style={{ color: "var(--brand-orange)" }}>Meta advertising</Link>, or strategic <Link href="/services/performance-marketing/ppc-services" style={{ color: "var(--brand-orange)" }}>PPC consulting</Link>, our integrated approach ensures no leak in your funnels. Build sustainable growth by pairing performance marketing with <Link href="/services/seo-services" style={{ color: "var(--brand-orange)" }}>organic SEO</Link>.
                     </p>
                 </div>
 
@@ -164,6 +164,27 @@ export default function ServiceOverview() {
                         Start Your Campaign
                         <ArrowRight className="w-5 h-5" />
                     </Link>
+                </div>
+
+                {/* Related Resources */}
+                <div className="mt-8 p-6 rounded-2xl border" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+                    <h3 className="text-lg font-bold mb-4" style={{ color: "var(--foreground)" }}>📚 Related Resources</h3>
+                    <div className="flex flex-col gap-3">
+                        <Link href="/blog/seo-ppc-hybrid-full-stack-funnels-convert-2x-better-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">🔥</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-orange)] transition-colors">SEO + PPC Hybrid Funnels</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Why combining organic and paid converts 2x better</p>
+                            </div>
+                        </Link>
+                        <Link href="/blog/performance-marketing-roi-guide" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">📊</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-orange)] transition-colors">Maximizing ROI with Performance Marketing</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Complete guide to measuring and improving campaign ROI</p>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

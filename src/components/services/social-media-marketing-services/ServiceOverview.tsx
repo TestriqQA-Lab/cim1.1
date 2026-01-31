@@ -2,6 +2,7 @@
 
 import { Zap } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     return (
@@ -50,7 +51,7 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            We craft campaigns that are not only visually compelling but also strategically aligned with your core business objectives. Every post, every ad, and every interaction is purposefully designed to deliver measurable results and build genuine community engagement.
+                            We craft campaigns that are not only visually compelling but also strategically aligned with your core business objectives. Explore our specific <Link href="/services/social-media-marketing-services/instagram-marketing-services" style={{ color: "var(--brand-teal)" }}>Instagram marketing services</Link>, <Link href="/services/social-media-marketing-services/facebook-marketing-services" style={{ color: "var(--brand-teal)" }}>Facebook ad strategies</Link>, and professional <Link href="/services/social-media-marketing-services/linkedin-marketing-services" style={{ color: "var(--brand-teal)" }}>LinkedIn marketing</Link> to build genuine community engagement. Amplify your organic reach with <Link href="/services/performance-marketing" style={{ color: "var(--brand-teal)" }}>performance marketing campaigns</Link> or <Link href="/services/social-media-marketing-services/video-marketing-agency" style={{ color: "var(--brand-teal)" }}>video marketing</Link>.
                         </p>
 
                         <div className="pt-4">
@@ -59,10 +60,10 @@ export default function ServiceOverview() {
                             </h3>
                             <ul className="space-y-3">
                                 {[
-                                    "Data-driven strategies tailored to your audience and goals",
-                                    "Transparent reporting with clear ROI metrics",
-                                    "Continuous optimization based on performance analytics",
-                                    "Dedicated account management and ongoing support",
+                                    <span key="1">Data-driven strategies tailored to your <Link href="/services/social-media-marketing-services/instagram-marketing-services" className="hover:text-[var(--brand-teal)]">audience and goals</Link></span>,
+                                    <span key="2">Transparent reporting with clear <Link href="/services/performance-marketing" className="hover:text-[var(--brand-teal)]">ROI metrics</Link></span>,
+                                    <span key="3">Continuous optimization based on performance analytics</span>,
+                                    <span key="4">Dedicated account management and ongoing support</span>,
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3">
                                         <span
@@ -165,6 +166,27 @@ export default function ServiceOverview() {
                                 <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z" />
                             </svg>
                         </div>
+                    </div>
+                </div>
+
+                {/* Related Resources */}
+                <div className="mt-8 p-6 rounded-2xl border max-w-6xl mx-auto" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+                    <h3 className="text-lg font-bold mb-4" style={{ color: "var(--foreground)" }}>📚 Related Resources</h3>
+                    <div className="flex flex-col gap-3">
+                        <Link href="/blog/social-media-marketing-strategy-guide" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">📱</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-teal)] transition-colors">Social Media Marketing Strategy Guide</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Build a winning social media strategy for your business</p>
+                            </div>
+                        </Link>
+                        <Link href="/blog/social-media-trends-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">🔥</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-teal)] transition-colors">Social Media Trends in 2026</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Latest trends shaping social media marketing</p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

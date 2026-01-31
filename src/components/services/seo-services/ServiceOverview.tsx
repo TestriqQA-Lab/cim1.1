@@ -8,22 +8,22 @@ export default function ServiceOverview() {
         {
             icon: TrendingUp,
             title: "Sustainable Traffic",
-            description: "Unlike PPC, Organic SEO services build an evergreen funnel. We focus on ranking for high-intent keywords that drive qualified traffic 24/7 without the recurring cost per click.",
+            description: <span>Unlike PPC, <Link href="/services/seo-services" className="hover:text-[var(--brand-seo)]">Organic SEO services</Link> build an evergreen funnel. We focus on ranking for high-intent keywords that drive qualified traffic 24/7 without the recurring cost per click.</span>,
         },
         {
             icon: Users,
             title: "High-Intent Leads",
-            description: "We target the \"money keywords.\" Our Organic SEO for lead generation targets users at the bottom of the funnel—those ready to buy—ensuring your traffic converts into revenue.",
+            description: <span>We target the "money keywords." Our <Link href="/services/seo-services/local-seo-services" className="hover:text-[var(--brand-seo)]">local SEO strategies</Link> target users at the bottom of the funnel—those ready to buy—ensuring your traffic converts into revenue.</span>,
         },
         {
             icon: Globe,
             title: "Brand Authority",
-            description: "Ranking #1 signals trust. We use E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) principles to position your brand as the industry leader, critical for Organic SEO for brand authority.",
+            description: <span>Ranking #1 signals trust. We use E-E-A-T principles to position your brand as the industry leader, critical for <Link href="/services/seo-services/on-page-seo-services" className="hover:text-[var(--brand-seo)]">on-page authority</Link> and trust.</span>,
         },
         {
             icon: Eye,
             title: "ROI-Focused Growth",
-            description: "We don't just chase rankings; we chase revenue. Our ROI-focused organic SEO services are aligned with your business KPIs, ensuring every optimization contributes to your bottom line.",
+            description: <span>We don't just chase rankings; we chase revenue. Our <Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-seo)]">technical SEO audits</Link> are aligned with your business KPIs, ensuring every optimization contributes to your bottom line.</span>,
         },
     ];
 
@@ -48,7 +48,7 @@ export default function ServiceOverview() {
                         The Power of <span style={{ color: "var(--brand-seo)" }}>Organic Growth</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        In an era of AI Overviews and evolving core updates, Long-term organic search visibility is your most valuable asset.
+                        In an era of AI Overviews and evolving core updates, long-term organic search visibility is your most valuable asset. We combine <Link href="/services/seo-services/technical-seo-services" style={{ color: "var(--brand-seo)" }}>Technical SEO</Link>, <Link href="/services/seo-services/local-seo-services" style={{ color: "var(--brand-seo)" }}>Local SEO strategies</Link>, and <Link href="/services/seo-services/on-page-seo-services" style={{ color: "var(--brand-seo)" }}>On-Page optimization</Link> with <Link href="/services/seo-services/link-building" style={{ color: "var(--brand-seo)" }}>link building</Link> to create authority. Pair this with <Link href="/services/performance-marketing" style={{ color: "var(--brand-seo)" }}>performance marketing</Link> for maximum reach.
                     </p>
                 </div>
 
@@ -116,6 +116,27 @@ export default function ServiceOverview() {
                         >
                             Get Started
                             <ArrowRight className="w-5 h-5" />
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Related Resources */}
+                <div className="mt-8 p-6 rounded-2xl border" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+                    <h3 className="text-lg font-bold mb-4" style={{ color: "var(--foreground)" }}>📚 Related Resources</h3>
+                    <div className="flex flex-col gap-3">
+                        <Link href="/blog/mastering-seo-organic-growth" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">🚀</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-seo)] transition-colors">Mastering SEO for Organic Growth</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Complete guide to sustainable SEO strategies</p>
+                            </div>
+                        </Link>
+                        <Link href="/blog/seo-ppc-hybrid-full-stack-funnels-convert-2x-better-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">⚡</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-seo)] transition-colors">SEO + PPC Hybrid Funnels</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>How combining organic and paid converts 2x better</p>
+                            </div>
                         </Link>
                     </div>
                 </div>

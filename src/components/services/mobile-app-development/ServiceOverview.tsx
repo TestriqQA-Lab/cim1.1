@@ -2,19 +2,20 @@
 
 import { Smartphone, Rocket, Palette, Server, Shield, Zap, MonitorSmartphone } from "lucide-react";
 import { ReactLogo, Android, Apple } from "../../Icons";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const services = [
         {
             icon: Smartphone,
             title: "Native App Development",
-            description: "Build high-performance iOS and Android apps with Swift 6/SwiftUI and Kotlin/Jetpack Compose. Leverage 100% device capabilities, AR/VR integration, and platform-specific features for optimal user experience.",
+            description: <span>Build high-performance <Link href="/services/mobile-app-development/ios-app-development" className="hover:text-[var(--brand-purple)]">iOS</Link> and <Link href="/services/mobile-app-development/android-app-development" className="hover:text-[var(--brand-purple)]">Android apps</Link> with Swift 6/SwiftUI and Kotlin/Jetpack Compose. Leverage 100% device capabilities and AR/VR integration.</span>,
             gradient: "from-[#667eea] to-[#764ba2]"
         },
         {
             icon: ReactLogo,
             title: "Cross-Platform Solutions",
-            description: "Deploy to iOS & Android simultaneously with Flutter 3.5+ and React Native New Architecture. Save 40% development cost while maintaining native-like performance and single codebase efficiency.",
+            description: <span>Deploy to iOS & Android simultaneously with <Link href="/services/mobile-app-development/flutter-app-development" className="hover:text-[var(--brand-purple)]">Flutter</Link> and <Link href="/services/mobile-app-development/react-native-app-development" className="hover:text-[var(--brand-purple)]">React Native</Link>. Save 40% development cost while maintaining native-like performance.</span>,
             gradient: "from-[#f093fb] to-[#f5576c]"
         },
         {
@@ -56,7 +57,7 @@ export default function ServiceOverview() {
                         Comprehensive <span style={{ color: "var(--brand-purple)" }}>Mobile App Development Services</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-5xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        End-to-end mobile application development services tailored to your business needs. From MVP to enterprise-grade solutions, we deliver measurable results across iOS, Android, and cross-platform ecosystems.
+                        End-to-end mobile application development services tailored to your business needs. From MVP to enterprise-grade solutions, we deliver measurable results across iOS, Android, and cross-platform ecosystems. Many businesses pair mobile apps with <Link href="/services/web-design-development" style={{ color: "var(--brand-purple)" }}>custom web development</Link> for a complete digital presence.
                     </p>
                 </div>
 
@@ -139,6 +140,27 @@ export default function ServiceOverview() {
                                 <p style={{ color: "var(--secondary-text)" }}>98.7% bug-free delivery with 80%+ test coverage, rigorous QA across 100+ devices, and 99.9% crash-free sessions.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                {/* Related Resources */}
+                <div className="mt-8 p-6 rounded-2xl border" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+                    <h3 className="text-lg font-bold mb-4" style={{ color: "var(--foreground)" }}>📚 Related Resources</h3>
+                    <div className="flex flex-col gap-3">
+                        <Link href="/blog/mobile-app-development-trends-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">📱</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-purple)] transition-colors">Mobile App Development Trends in 2026</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Discover the latest trends shaping mobile development</p>
+                            </div>
+                        </Link>
+                        <Link href="/blog/mobile-ux-trends-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">🎨</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-purple)] transition-colors">Mobile UX Trends in 2026</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Latest design patterns and UX best practices</p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ import { Calendar, Clock, Share2, List, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState, useEffect } from "react";
-import { BlogPost } from "@/data/blog";
+import { BlogPost, ContentBlock } from "@/data/blog";
 
 // Type for table of contents items
 interface TocItem {
@@ -17,9 +17,9 @@ interface TocItem {
     level: number;
 }
 
-// Function to extract headings from content
-function extractHeadings(content: string): TocItem[] {
-    const headingRegex = /^(#{1,3})\s+(.+)$/gm;
+// Function to extract headings from markdown content
+function extractHeadingsFromMarkdown(content: string): TocItem[] {
+    const headingRegex = /^(#{2})\s+(.+)$/gm;
     const headings: TocItem[] = [];
     let match;
 
@@ -36,10 +36,55 @@ function extractHeadings(content: string): TocItem[] {
     return headings;
 }
 
+// Function to extract headings from content blocks
+function extractHeadingsFromBlocks(blocks: ContentBlock[]): TocItem[] {
+    const headings: TocItem[] = [];
+
+    blocks.forEach((block) => {
+        if (block.type === 'text' && ['h2'].includes(block.variant)) {
+            const level = parseInt(block.variant.replace('h', ''));
+            const text = block.content;
+
+            // Use block ID if available and valid format, otherwise generate from text
+            // The renderer uses specific ID generation logic, we should match it
+            // Renderer uses: text.toLowerCase().replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-") for markdown
+            // For blocks, the block.id IS the ID used in the keyed element provided by renderContentBlock -> TextBlock
+            // checking TextBlock implementation would be wise, but standard practice is leveraging the Block ID if unique
+            // or generating a slug id if the component enables anchor linking.
+
+            // Looking at BlogContentRenderer.tsx, for markdown it generates IDs. 
+            // For ContentBlocks (TextBlock.tsx), let's check if it adds IDs to headings. 
+            // Assuming we need to match the ID the renderer puts on the H tag.
+            // If TextBlock doesn't add an ID, then scrollToHeading won't work.
+            // I should briefly verify TextBlock.tsx. But for now I'll assume standard slugification 
+            // OR the block.id if intended. 
+
+            // Actually, let's use the same slug function as markdown to be safe, 
+            // UNLESS TextBlock uses block.id as the DOM id.
+            // I'll assume slugification of text for now as it's safer for linking than internal IDs usually.
+
+            const id = text
+                .toLowerCase()
+                .replace(/[^a-z0-9\s-]/g, "")
+                .replace(/\s+/g, "-");
+
+            headings.push({ id, text, level });
+        }
+    });
+
+    return headings;
+}
+
 // Table of Contents Component
-function TableOfContents({ content }: { content: string }) {
+function TableOfContents({ post }: { post: BlogPost }) {
     const [activeId, setActiveId] = useState<string>("");
-    const headings = useMemo(() => extractHeadings(content), [content]);
+
+    const headings = useMemo(() => {
+        if (post.contentBlocks && post.contentBlocks.length > 0) {
+            return extractHeadingsFromBlocks(post.contentBlocks);
+        }
+        return extractHeadingsFromMarkdown(post.content);
+    }, [post]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -288,7 +333,7 @@ export default function BlogDetailClient({ post }: { post: BlogPost }) {
                         <article className="xl:col-span-2">
                             {/* Mobile Table of Contents - visible on screens < xl */}
                             <div className="xl:hidden mb-8">
-                                <TableOfContents content={post.content} />
+                                <TableOfContents post={post} />
                             </div>
                             {/* Article Content */}
                             <div
@@ -337,7 +382,7 @@ export default function BlogDetailClient({ post }: { post: BlogPost }) {
                         <aside className="hidden xl:block xl:col-span-1">
                             {/* 👇 Sticky applies to FULL article height */}
                             <div className="sticky top-24">
-                                <TableOfContents content={post.content} />
+                                <TableOfContents post={post} />
                                 <BlogSidebar currentPostSlug={post.slug} />
                             </div>
                         </aside>

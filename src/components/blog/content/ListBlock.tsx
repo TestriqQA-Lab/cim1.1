@@ -19,10 +19,15 @@ export default function ListBlock({ block }: ListBlockProps) {
                 <li
                     key={index}
                     dangerouslySetInnerHTML={{
-                        __html: item.replace(
-                            /\*\*(.+?)\*\*/g,
-                            "<strong style='color: var(--foreground)'>$1</strong>"
-                        ),
+                        __html: item
+                            .replace(
+                                /\*\*(.+?)\*\*/g,
+                                "<strong style='color: var(--foreground)'>$1</strong>"
+                            )
+                            .replace(
+                                /\[([^\]]+)\]\(([^)]+)\)/g,
+                                "<a href='$2' class='text-[var(--brand-purple)] transition-colors'>$1</a>"
+                            ),
                     }}
                 />
             ))}
