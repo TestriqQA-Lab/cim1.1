@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Blog & Insights | CIM - Digital Marketing & Web Development",
   description: "Explore expert insights on web development, digital marketing, SEO strategies, and business growth.",
   alternates: {
-    canonical: "https://cim.com/blog",
+    canonical: "https://www.cinuteinfomedia.com/blog",
   },
 };
 
@@ -37,7 +37,7 @@ export default function BlogPage() {
     "@type": "Blog",
     name: "CIM Blog",
     description: "Expert insights on web development, digital marketing, and business growth.",
-    url: "https://cim.com/blog",
+    url: "https://www.cinuteinfomedia.com/blog",
     publisher: {
       "@type": "Organization",
       name: "CIM",

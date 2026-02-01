@@ -5,6 +5,13 @@ import TechStack from "@/components/services/performance-marketing/youtube-ads/T
 import Process from "@/components/services/performance-marketing/youtube-ads/Process";
 import WhyChooseUs from "@/components/services/performance-marketing/youtube-ads/WhyChooseUs";
 import CTA from "@/components/services/performance-marketing/youtube-ads/CTA";
+import { getPageMetadata } from '@/lib/metadata';
+
+export const metadata = getPageMetadata({
+    title: "YouTube Ads Agency | YouTube Advertising Services",
+    description: "Engage your audience with compelling video ads on YouTube. Our YouTube Ads agency manages TrueView, Bumper, and Discovery ads for impact.",
+    url: "/services/performance-marketing/youtube-ads",
+});
 
 export default function YouTubeAdsPage() {
     return (

@@ -14,7 +14,7 @@ export default function TechStack() {
                 { name: "WordPress VIP", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
                 { name: "Strapi", logo: "/images/techstack_logos/Strapi-logo.png" },
                 { name: "Ghost", logo: "/images/techstack_logos/Ghost-logo.jpg" },
-                { name: "Drupal", logo: "/images/techstack_logos/drupal-logo.png" },
+                { name: "Drupal", logo: "/images/techstack_logos/Drupal-logo.png" },
             ],
         },
         {

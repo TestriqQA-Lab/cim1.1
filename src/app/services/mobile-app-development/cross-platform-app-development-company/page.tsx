@@ -10,7 +10,7 @@ import FAQ from "@/components/services/mobile-app-development/cross-platform-app
 import Script from "next/script";
 
 export const metadata: Metadata = {
-    title: "Cross-Platform App Development Services | React Native & Flutter Agency | Top-Rated",
+    title: "Cross-Platform App Development Services | React Native & Flutter",
     description:
         "🚀 Award-winning Cross-Platform App Development Services. We build high-performance, native-like iOS & Android apps with a single codebase. 70% faster delivery. 40% cost savings. Start your project today! 📱",
     keywords: [

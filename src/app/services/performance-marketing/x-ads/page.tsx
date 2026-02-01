@@ -5,6 +5,13 @@ import TechStack from "@/components/services/performance-marketing/x-ads/TechSta
 import Process from "@/components/services/performance-marketing/x-ads/Process";
 import WhyChooseUs from "@/components/services/performance-marketing/x-ads/WhyChooseUs";
 import CTA from "@/components/services/performance-marketing/x-ads/CTA";
+import { getPageMetadata } from '@/lib/metadata';
+
+export const metadata = getPageMetadata({
+    title: "X Ads Agency | Twitter Advertising Services",
+    description: "Join the conversation and amplify your message with X (Twitter) Ads. We help you reach real-time audiences and drive engagement.",
+    url: "/services/performance-marketing/x-ads",
+});
 
 export default function XAdsPage() {
     return (

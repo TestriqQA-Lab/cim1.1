@@ -4618,7 +4618,7 @@ du -sh public/images/`
   },
   {
     id: "21",
-    title: "Social Commerce Playbook 2026: AI Shopping Features Turning Scrolls into Sales",
+    title: "Social Commerce Playbook 2026: AI Shopping Features",
     slug: "social-commerce-playbook-2026-ai-shopping-features-scrolls-sales",
     excerpt: "Unlock 2026 social commerce growth with AI shopping features that convert 67% higher. Complete playbook reveals Instagram Shops, TikTok Shop strategies, live commerce frameworks, and AI product tagging that turns passive scrolls into $500B+ revenue.",
     content: "Social commerce explodes to $500B+ in 2026 with AI-powered shopping features dominating Instagram, TikTok, Facebook. Discover proven playbooks turning 3-second scrolls into impulse purchases through live commerce, shoppable posts, AI recommendations, and seamless checkout.",

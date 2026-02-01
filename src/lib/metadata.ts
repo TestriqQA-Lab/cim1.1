@@ -102,7 +102,7 @@ export function generateBlogPostMetadata(
 
   return {
     ...defaultMetadata,
-    title: title,
+    title: `${title} | Cinute Infomedia`,
     description: excerpt,
     keywords: ["blog", "article", "insights", ...excerpt.split(" ").slice(0, 5)],
     authors: [{ name: author }],
@@ -111,7 +111,7 @@ export function generateBlogPostMetadata(
     },
     openGraph: {
       ...defaultMetadata.openGraph,
-      title: title,
+      title: `${title} | Cinute Infomedia`,
       description: excerpt,
       type: "article",
       url: `${siteUrl}${url}`,
@@ -128,7 +128,7 @@ export function generateBlogPostMetadata(
     },
     twitter: {
       ...defaultMetadata.twitter,
-      title: title,
+      title: `${title} | Cinute Infomedia`,
       description: excerpt,
       images: [image],
     },
