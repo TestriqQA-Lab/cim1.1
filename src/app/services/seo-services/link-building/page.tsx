@@ -5,6 +5,13 @@ import TechStack from "@/components/services/seo-services/link-building/TechStac
 import Process from "@/components/services/seo-services/link-building/Process";
 import WhyChooseUs from "@/components/services/seo-services/link-building/WhyChooseUs";
 import CTA from "@/components/services/seo-services/link-building/CTA";
+import { getPageMetadata } from '@/lib/metadata';
+
+export const metadata = getPageMetadata({
+    title: "Link Building Services | High Quality Backlink Agency",
+    description: "Boost your domain authority and search rankings with our ethical white-hat link building services. High-quality backlinks that drive results.",
+    url: "/services/seo-services/link-building",
+});
 
 export default function LinkBuildingPage() {
     return (

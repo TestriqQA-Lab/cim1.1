@@ -9,7 +9,7 @@ import FAQ from "@/components/services/web-design-development/travel-and-hospita
 import CTA from "@/components/services/web-design-development/travel-and-hospitality-services/CTA";
 
 export const metadata: Metadata = {
-    title: "Travel and Hospitality Services | Custom Travel Technology Solutions & Marketing (2026)",
+    title: "Travel & Hospitality Services | Custom Tech Solutions",
     description: "Expert web design and digital marketing services for the travel and hospitality industry. We build high-converting websites and apps for hotels, agencies, and airlines.",
     alternates: {
         canonical: "/services/web-design-development/travel-and-hospitality-services",

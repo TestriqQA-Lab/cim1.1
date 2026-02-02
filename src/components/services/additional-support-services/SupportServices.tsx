@@ -12,6 +12,7 @@ import {
     Headset,
     ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SupportServices() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -20,7 +21,7 @@ export default function SupportServices() {
         {
             icon: Wrench,
             title: "IT Business Support Services",
-            description: "Keep your digital assets secure and optimized.",
+            description: <span>Keep your <Link href="/services/web-design-development" className="hover:text-[var(--foreground)] font-medium">digital assets</Link> secure and optimized.</span>,
             features: ["Regular updates & Patch Management", "99.9% Uptime Monitoring", "Additional technical support"],
         },
         {
@@ -44,7 +45,7 @@ export default function SupportServices() {
         {
             icon: Headset,
             title: "Customer Support & Lead Gen",
-            description: "Grow your revenue with active engagement.",
+            description: <span>Grow your revenue with active <Link href="/services/performance-marketing" className="hover:text-[var(--foreground)] font-medium">engagement</Link>.</span>,
             features: ["Supplementary customer support", "Supplementary lead generation", "24/7 chat resolution"],
         },
     ];

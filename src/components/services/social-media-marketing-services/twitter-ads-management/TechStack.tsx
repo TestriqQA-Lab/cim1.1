@@ -19,7 +19,7 @@ export default function TechStack() {
             { name: "Buffer", description: "Cross-Platform Publishing", logo: "/images/techstack_logos/Buffer-logo.webp" },
             { name: "Sprout Social", description: "Enterprise-grade CRM", logo: "/images/techstack_logos/Sprout-Social-logo.png" },
             { name: "Typefully", description: "Advanced Thread Writing", logo: "/images/techstack_logos/Typefully-logo.jpg" },
-            { name: "Salesforce", description: "CRM Integration", logo: "/images/techstack_logos/salesforce-logo.png" },
+            { name: "Salesforce", description: "CRM Integration", logo: "/images/techstack_logos/Salesforce-logo.png" },
         ],
         analytics: [
             { name: "X Campaign Manager", description: "Deep-Dive Ads Analytics", logo: "/images/techstack_logos/X-logo-hero-image.png" },

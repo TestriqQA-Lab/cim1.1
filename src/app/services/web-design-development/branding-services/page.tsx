@@ -29,7 +29,7 @@ import { getPageMetadata } from '@/lib/metadata';
 import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata = getPageMetadata({
-    title: 'Personal Branding Services & Portfolio Website Design | Build Your Brand 2026 🚀',
+    title: 'Personal Branding Services & Portfolio Website Design',
     description: 'Elevate your digital presence with global Personal Branding Services & Portfolio Website Design. Expert development for creatives, execs & founders. Get a Free Strategy Audit! ⚡',
     url: '/services/web-design-development/branding-services',
     keywords: [

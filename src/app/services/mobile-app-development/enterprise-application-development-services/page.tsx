@@ -9,7 +9,7 @@ import CTA from "@/components/services/mobile-app-development/enterprise-applica
 import FAQ from "@/components/services/mobile-app-development/enterprise-application-development-services/FAQ";
 
 export const metadata: Metadata = {
-    title: "Enterprise Application Development Services | Secure & Scalable Solutions 🚀",
+    title: "Enterprise App Development Services | Secure & Scalable",
     description:
         "Empower your business with Enterprise Application Development services. Custom, secure, & scalable enterprise software development for global ROI. Get a quote today! 💼",
     keywords: [
@@ -20,45 +20,47 @@ export const metadata: Metadata = {
         "Enterprise Web Applications",
     ],
     alternates: {
-        canonical: "/services/mobile-app-development/enterprise-application-development-services",
+        canonical: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services",
     },
 };
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Enterprise Application Development Services",
-    "operatingSystem": "iOS, Android, Windows, macOS",
-    "applicationCategory": "BusinessApplication",
-    "about": "Custom enterprise software development services for global organizations.",
-    "provider": {
-        "@type": "Organization",
-        "name": "Cinute Infomedia",
-        "url": "https://www.cinuteinfomedia.com/"
-    },
-    "serviceType": "Enterprise App Development",
-    "areaServed": ["US", "EU", "India", "APAC"],
-    "mainEntity": {
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is enterprise application development?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Enterprise application development is the process of building complex, scalable, and secure software solutions designed to support the mission-critical operations of large organizations."
-                }
+    "@graph": [
+        {
+            "@type": "Service",
+            "name": "Enterprise Application Development Services",
+            "description": "Custom enterprise software development services for global organizations.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Cinute Infomedia",
+                "url": "https://www.cinuteinfomedia.com/"
             },
-            {
-                "@type": "Question",
-                "name": "How much does enterprise app development cost?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The cost of Enterprise Application Development services typically ranges from $50,000 to $500,000+, depending on complexity and integration needs."
+            "serviceType": "Enterprise App Development",
+            "areaServed": ["US", "EU", "India", "APAC"]
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is enterprise application development?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Enterprise application development is the process of building complex, scalable, and secure software solutions designed to support the mission-critical operations of large organizations."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much does enterprise app development cost?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The cost of Enterprise Application Development services typically ranges from $50,000 to $500,000+, depending on complexity and integration needs."
+                    }
                 }
-            }
-        ]
-    }
+            ]
+        }
+    ]
 };
 
 export default function EnterpriseAppDevelopmentPage() {

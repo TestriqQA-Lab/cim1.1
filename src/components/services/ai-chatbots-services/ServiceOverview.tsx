@@ -1,13 +1,14 @@
 "use client";
 
 import { Bot, MessageCircle, Clock, PiggyBank, Sparkles, Zap, Users, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const features = [
         {
             icon: Bot,
             title: "Automation",
-            description: "Automate repetitive customer interactions and reduce manual workload by up to 80%.",
+            description: <span>Automate repetitive customer interactions and reduce manual workload by up to 80% with <Link href="/services/ai-workflows-automations-services" className="hover:text-blue-500">intelligent workflows</Link>.</span>,
             gradient: "from-cyan-500 via-blue-500 to-indigo-600",
             iconBg: "bg-blue-500/10",
             iconColor: "text-blue-500",
@@ -18,7 +19,7 @@ export default function ServiceOverview() {
         {
             icon: MessageCircle,
             title: "Customer Engagement",
-            description: "Deliver personalized, context-aware conversations that improve customer satisfaction and loyalty.",
+            description: <span>Deliver personalized, context-aware conversations that improve <Link href="/services/social-media-marketing-services" className="hover:text-purple-500">customer satisfaction</Link> and loyalty.</span>,
             gradient: "from-purple-500 via-pink-500 to-rose-500",
             iconBg: "bg-purple-500/10",
             iconColor: "text-purple-500",
@@ -161,7 +162,7 @@ export default function ServiceOverview() {
                                 Gone are the days of clunky, rule-based responses. Our AI Chatbot Services leverage state-of-the-art Generative AI and Machine Learning (ML) in Chatbots to create dynamic, human-like experiences. Unlike traditional scripts, our bots utilize Retrieval-Augmented Generation (RAG) to pull real-time, accurate data from your internal knowledge base, ensuring every answer is precise, trustworthy, and compliant with 2026 E-E-A-T guidelines.
                             </p>
                             <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                From Sentiment Analysis for Customer Support to Intent Detection and Classification, our intelligent agents adapt to user behavior in real-time. We help you move beyond simple automation to true Omnichannel Customer Experience (CX) excellence.
+                                From Sentiment Analysis for <Link href="/services/additional-support-services" className="hover:text-[var(--brand-chatbot)]">Customer Support</Link> to Intent Detection and Classification, our intelligent agents adapt to user behavior in real-time. We help you move beyond simple automation to true Omnichannel Customer Experience (CX) excellence.
                             </p>
                         </div>
                     </div>

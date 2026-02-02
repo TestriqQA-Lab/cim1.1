@@ -5,6 +5,13 @@ import TechStack from "@/components/services/performance-marketing/tiktok-ads/Te
 import Process from "@/components/services/performance-marketing/tiktok-ads/Process";
 import WhyChooseUs from "@/components/services/performance-marketing/tiktok-ads/WhyChooseUs";
 import CTA from "@/components/services/performance-marketing/tiktok-ads/CTA";
+import { getPageMetadata } from '@/lib/metadata';
+
+export const metadata = getPageMetadata({
+    title: "TikTok Ads Agency | TikTok Advertising Services",
+    description: "Go viral and reach Gen Z audiences with creative TikTok advertising campaigns. Our agency helps you leverage the power of short-form video.",
+    url: "/services/performance-marketing/tiktok-ads",
+});
 
 export default function TikTokAdsPage() {
     return (

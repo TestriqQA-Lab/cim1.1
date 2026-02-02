@@ -7,6 +7,7 @@ import {
     ShieldCheck,
     Sparkles
 } from "lucide-react";
+import Link from "next/link";
 
 
 export default function ServiceOverview() {
@@ -52,11 +53,11 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            From <span className="font-semibold text-[var(--foreground)]">responsive web design services</span> to complex enterprise portals, our <span className="font-semibold text-[var(--foreground)]">web development agency</span> delivers scalable, secure, and SEO-optimized platforms for global markets like US, EU, and APAC.
+                            From <Link href="/services/web-design-development/nextjs-development-services" style={{ color: "var(--brand-blue)" }}>Next.js applications</Link> and <Link href="/services/web-design-development/wordpress-development-services" style={{ color: "var(--brand-blue)" }}>WordPress sites</Link> to complex enterprise portals, our <span className="font-semibold text-[var(--foreground)]">web development agency</span> delivers scalable, secure, and SEO-optimized platforms for global markets like US, EU, and APAC.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            We don&apos;t just build websites; we engineer digital growth engines. Our <span className="font-semibold text-[var(--foreground)]">custom website development</span> solutions are designed to outperform competition, achieving an average 300% organic traffic growth for our global clients.
+                            We don&apos;t just build websites; we engineer digital growth engines. Whether you need <Link href="/services/web-design-development/ecommerce-website-development-services" style={{ color: "var(--brand-blue)" }}>ecommerce development</Link> or <Link href="/services/web-design-development/nodejs-backend" style={{ color: "var(--brand-blue)" }}>custom web apps</Link>, our solutions are designed to outperform competition, achieving an average 300% organic traffic growth. Every site is optimized with <Link href="/services/seo-services/technical-seo-services" style={{ color: "var(--brand-blue)" }}>technical SEO best practices</Link>.
                         </p>
 
                         <div className="pt-4">
@@ -65,10 +66,10 @@ export default function ServiceOverview() {
                             </h3>
                             <ul className="grid sm:grid-cols-2 gap-4">
                                 {[
-                                    "Global reach with performance-first architecture",
-                                    "95% bug-free delivery on first deployment",
-                                    "Built-in SEO that delivers 300% traffic growth",
-                                    "24/7 technical support across timezones",
+                                    <span key="1">Global reach with <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[var(--brand-blue)]">performance-first architecture</Link></span>,
+                                    <span key="2">95% bug-free delivery on first deployment</span>,
+                                    <span key="3">Built-in SEO that delivers <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)]">300% traffic growth</Link></span>,
+                                    <span key="4">24/7 technical support across timezones</span>,
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3">
                                         <span
@@ -437,6 +438,27 @@ export default function ServiceOverview() {
                     </div>
 
 
+                </div>
+
+                {/* Related Resources */}
+                <div className="mt-8 p-6 rounded-2xl border max-w-6xl mx-auto" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
+                    <h3 className="text-lg font-bold mb-4" style={{ color: "var(--foreground)" }}>📚 Related Resources</h3>
+                    <div className="flex flex-col gap-3">
+                        <Link href="/blog/web-design-trends-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">💡</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-blue)] transition-colors">Web Design Trends in 2026</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Latest trends in modern web design and UX</p>
+                            </div>
+                        </Link>
+                        <Link href="/blog/choosing-right-web-technology-stack" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                            <span className="text-2xl">⚙️</span>
+                            <div>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-blue)] transition-colors">Choosing the Right Web Technology Stack</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Guide to selecting the best tech stack for your project</p>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

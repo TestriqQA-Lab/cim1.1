@@ -21,7 +21,7 @@ export default function TechStack() {
             { name: "Magento", description: "Adobe Commerce", logo: "/images/techstack_logos/Magento-logo.svg" },
             { name: "WooCommerce", description: "WordPress E-commerce", logo: "/images/techstack_logos/WooCommerce-logo.png" },
             { name: "BigCommerce", description: "Enterprise SaaS", logo: "/images/techstack_logos/bigcommerce-logo.png" },
-            { name: "Headless Commerce", description: "API-First Architecture", logo: "/images/techstack_logos/Shopify-logo-hero.png" },
+            { name: "Headless Commerce", description: "API-First Architecture", logo: "/images/techstack_logos/shopify-logo-hero.png" },
             { name: "Custom Platforms", description: "Proprietary Builds", logo: "/images/techstack_logos/nextjs-logo.svg" },
         ],
         analysis: [

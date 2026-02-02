@@ -1,6 +1,7 @@
 "use client";
 
 import { Zap, Palette, FileText, Target, Users, TrendingUp } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     return (
@@ -46,11 +47,11 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            Whether you are a fintech startup looking to disrupt the market or an established enterprise seeking rebranding services for small business, our strategic approach bridges the gap between creative vision and business objectives. We specialize in brand identity design for SaaS products, ecommerce platforms, and luxury brands, delivering pixel-perfect assets that work seamlessly across web, mobile, and print.
+                            Whether you are a fintech startup looking to disrupt the market or an established enterprise seeking <span className="font-semibold text-[var(--foreground)]">rebranding services</span>, our strategic approach bridges the gap between creative vision and business objectives. We specialize in brand identity design for <Link href="/services/web-design-development/saas-development-services" className="hover:text-[var(--brand-yellow)]">SaaS products</Link>, <Link href="/services/web-design-development/ecommerce-website-development-services" className="hover:text-[var(--brand-yellow)]">ecommerce platforms</Link>, and luxury brands, delivering pixel-perfect assets that work seamlessly across web, mobile, and print.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            Our team has delivered over <span style={{ color: "var(--foreground)", fontWeight: "bold" }}>500+ successful brand launches</span>, achieving an average of <span style={{ color: "var(--foreground)", fontWeight: "bold" }}>300% traffic growth</span> for our partners. We leverage advanced design psychology and sustainable brand identity design strategy to create future-proof identities that resonate with global audiences in the US, EU, India, and APAC.
+                            Our team has delivered over <span style={{ color: "var(--foreground)", fontWeight: "bold" }}>500+ successful brand launches</span>, achieving an average of <Link href="/services/seo-services" className="font-bold hover:text-[var(--brand-yellow)]">300% traffic growth</Link> for our partners. We leverage advanced design psychology and sustainable brand identity design strategy to create future-proof identities that resonate with global audiences in the US, EU, India, and APAC.
                         </p>
 
                         <div className="pt-4">

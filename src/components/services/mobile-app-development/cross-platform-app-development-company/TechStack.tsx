@@ -19,7 +19,7 @@ export default function TechStack() {
             { name: "React Native", description: "Core Framework", logo: "/images/techstack_logos/react-logo.svg" },
             { name: "TypeScript", description: "Type Safety", logo: "/images/techstack_logos/typescript-logo.svg" },
             { name: "Expo", description: "Development Platform", logo: "/images/techstack_logos/Expo-logo.png" },
-            { name: "Redux", description: "State Management", logo: "/images/techstack_logos/redux-logo.svg" },
+            { name: "Redux", description: "State Management", logo: "/images/techstack_logos/Redux-logo.svg" },
             { name: "Native Modules", description: "Platform Bridge", logo: "" },
         ],
         flutter: [

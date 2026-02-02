@@ -29,7 +29,7 @@ import { getPageMetadata } from '@/lib/metadata';
 import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata = getPageMetadata({
-    title: 'AI Workflow Automation Services | Custom Agentic AI Agency | Enterprise & SME',
+    title: 'AI Workflow Automation Services | Agentic AI Agency',
     description: 'Scale faster with expert AI Business Process Automation. We build custom agentic workflows, LLM integrations, and ROI-driven automation solutions for global enterprises.',
     url: '/services/ai-workflows-automations-services',
     keywords: [

@@ -15,7 +15,20 @@ export default function QuoteBlock({ block }: QuoteBlockProps) {
                 color: "var(--secondary-text)",
             }}
         >
-            <p className="text-lg mb-2">{block.content}</p>
+            <p
+                className="text-lg mb-2"
+                dangerouslySetInnerHTML={{
+                    __html: block.content
+                        .replace(
+                            /\*\*(.+?)\*\*/g,
+                            "<strong style='color: var(--foreground)'>$1</strong>"
+                        )
+                        .replace(
+                            /\[([^\]]+)\]\(([^)]+)\)/g,
+                            "<a href='$2' class='text-[var(--brand-purple)] transition-colors'>$1</a>"
+                        ),
+                }}
+            />
             {block.author && (
                 <cite
                     className="text-sm not-italic font-medium"

@@ -201,7 +201,7 @@ export default function Hero() {
                                 {/* Laravel - Top Left */}
                                 <div className="absolute top-8 left-8 md:top-12 md:left-12 w-32 h-32 md:w-64 md:h-64 animate-slideUp z-10">
                                     <Image
-                                        src="/images/techstack_logos/laravel-logo.png"
+                                        src="/images/techstack_logos/Laravel-logo.png"
                                         alt="Laravel"
                                         fill
                                         className="object-contain"

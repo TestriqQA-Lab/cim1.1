@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Contact Us | Cinute InfoMedia - Get in Touch',
         description: 'Get in touch with Cinute InfoMedia. We are ready to help you build your next digital success story. Reach out for consultations and quotes.',
-        url: 'https://cim.com/contact',
+        url: 'https://www.cinuteinfomedia.com/contact',
     },
     alternates: {
-        canonical: 'https://cim.com/contact',
+        canonical: 'https://www.cinuteinfomedia.com/contact',
     },
 };
 

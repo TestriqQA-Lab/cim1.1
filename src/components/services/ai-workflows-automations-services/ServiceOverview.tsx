@@ -1,13 +1,14 @@
 "use client";
 
 import { Zap, Cpu, TrendingUp, Shield, Workflow, Clock, Target, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const benefits = [
         {
             icon: Workflow,
             title: "Process Automation",
-            description: "Streamline repetitive tasks and eliminate manual work with intelligent automation workflows that run 24/7.",
+            description: <span>Streamline repetitive tasks and eliminate manual work with <Link href="/services/ai-chatbots-services" className="hover:text-blue-500">intelligent automation workflows</Link> that run 24/7.</span>,
             gradient: "from-blue-500 to-cyan-500",
             iconBg: "bg-blue-500/10",
             iconColor: "text-blue-500",
@@ -23,7 +24,7 @@ export default function ServiceOverview() {
         {
             icon: TrendingUp,
             title: "Cost Reduction",
-            description: "Achieve significant savings through reduced labor costs, fewer errors, and optimized resource utilization.",
+            description: <span>Achieve significant savings through reduced <Link href="/services/additional-support-services" className="hover:text-green-500">labor costs</Link>, fewer errors, and optimized resource utilization.</span>,
             gradient: "from-green-500 to-emerald-500",
             iconBg: "bg-green-500/10",
             iconColor: "text-green-500",
