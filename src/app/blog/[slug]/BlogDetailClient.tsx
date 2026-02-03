@@ -260,6 +260,7 @@ export default function BlogDetailClient({
                                         height={48}
                                         className="w-12 h-12 rounded-full object-cover border-2"
                                         style={{ borderColor: "var(--border-color)" }}
+                                        unoptimized
                                     />
                                     <div>
                                         <p className="font-semibold group-hover:text-[var(--brand-purple)] transition-colors">
@@ -300,6 +301,7 @@ export default function BlogDetailClient({
                                     sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="object-fit"
                                     priority
+                                    unoptimized
                                 />
                             </div>
                         </div>

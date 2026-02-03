@@ -17,6 +17,7 @@ export default function ImageBlock({ block }: ImageBlockProps) {
                     width={800}
                     height={450}
                     className="w-full h-full object-fill"
+                    unoptimized
                 />
             </div>
             {block.caption && (

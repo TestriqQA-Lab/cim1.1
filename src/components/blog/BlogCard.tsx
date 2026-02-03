@@ -35,6 +35,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           <div className="absolute bottom-4 left-4 right-4">
@@ -83,6 +84,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
                   height={32}
                   className="w-8 h-8 rounded-full object-cover"
                   aria-hidden="true"
+                  unoptimized
                 />
                 <span className="text-sm font-medium hover:text-[var(--brand-purple)] transition-colors">
                   {post.author.name}
@@ -114,6 +116,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
             fill
             sizes="80px"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
+            unoptimized
           />
         </div>
         <div className="flex-1 min-w-0">
@@ -148,6 +151,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover group-hover:scale-105 transition-transform duration-300"
+          unoptimized
         />
       </div>
       <div className="p-5">
@@ -189,6 +193,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
                 width={24}
                 height={24}
                 className="w-6 h-6 rounded-full object-cover"
+                unoptimized
               />
               <span className="text-xs font-medium hover:text-[var(--brand-purple)] transition-colors">
                 {post.author.name}
