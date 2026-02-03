@@ -76,7 +76,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-xl max-w-2xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            We are your full-stack partner for online success, specializing in high-converting websites, strategic SEO, AI-powered automation, and performance marketing to ensure your brand stands out and scales globally.
+                            We are your full-stack partner for online success, specializing in <Link href="/services/web-design-development" className="hover:text-[var(--brand-cyan)] transition-colors border-b border-transparent hover:border-[var(--brand-cyan)]">high-converting websites</Link>, <Link href="/services/seo-services" className="hover:text-[var(--brand-cyan)] transition-colors border-b border-transparent hover:border-[var(--brand-cyan)]">strategic SEO</Link>, <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-cyan)] transition-colors border-b border-transparent hover:border-[var(--brand-cyan)]">AI-powered automation</Link>, and <Link href="/services/performance-marketing" className="hover:text-[var(--brand-cyan)] transition-colors border-b border-transparent hover:border-[var(--brand-cyan)]">performance marketing</Link> to ensure your brand stands out and scales globally.
                         </p>
 
                         <div className="flex flex-wrap gap-4 mb-12">

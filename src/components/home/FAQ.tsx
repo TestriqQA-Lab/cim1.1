@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { MessageSquare } from 'lucide-react';
 
 export default function FAQ() {
@@ -13,7 +14,7 @@ export default function FAQ() {
         },
         {
             q: "What web development services do you offer?",
-            a: "We offer comprehensive solutions including custom website development (corporate, e-commerce, SaaS), mobile app development (iOS, Android, cross-platform), web applications with modern frameworks (Next.js, React, Laravel), WordPress development, e-commerce development (Shopify, WooCommerce), Progressive Web Apps (PWA), and API development & integrations.",
+            a: <>We offer comprehensive solutions including <Link href="/services/web-design-development" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">custom website development</Link> (corporate, <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">e-commerce</Link>, <Link href="/services/web-design-development/saas-development-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">SaaS</Link>), <Link href="/services/mobile-app-development" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">mobile app development</Link> (<Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">iOS</Link>, <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Android</Link>, <Link href="/blog/mobile-app-development-trends-2024" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">cross-platform</Link>), web applications with modern frameworks (<Link href="/blog/future-web-development-nextjs" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Next.js</Link>, React, Laravel), <Link href="/services/web-design-development/wordpress-development-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">WordPress development</Link>, e-commerce development (<Link href="/services/web-design-development/shopify-development-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Shopify</Link>, <Link href="/services/web-design-development/wordpress-development-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">WooCommerce</Link>), Progressive Web Apps (PWA), and API development & integrations.</>,
         },
         {
             q: "How much does professional website development cost?",
@@ -21,7 +22,7 @@ export default function FAQ() {
         },
         {
             q: "Do you provide SEO services with web development?",
-            a: "Yes! Every website we build includes foundational technical SEO - optimized code structure, mobile responsiveness, fast loading speeds, semantic HTML, and proper schema markup. We also offer comprehensive SEO services as an ongoing engagement, including keyword strategy, content optimization, link building, and performance tracking.",
+            a: <>Yes! Every website we build includes foundational <Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">technical SEO</Link> - optimized code structure, mobile responsiveness, fast loading speeds, semantic HTML, and proper schema markup. We also offer comprehensive <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">SEO services</Link> as an ongoing engagement, including keyword strategy, content optimization, link building, and performance tracking.</>,
         },
         {
             q: "What is your web development process and timeline?",
@@ -37,7 +38,7 @@ export default function FAQ() {
         },
         {
             q: "Can you integrate AI and automation into my website?",
-            a: "Yes! We're pioneers in AI-driven web solutions including AI-powered chatbots for customer support, workflow automation (CRM, email, reporting), personalized user experiences with machine learning, intelligent search and recommendation engines, and pred ictive analytics dashboards.",
+            a: <>Yes! We&apos;re pioneers in <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">AI-driven web solutions</Link> including <Link href="/services/ai-chatbots-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">AI-powered chatbots</Link> for customer support, <Link href="/blog/ai-workflows-automating-business" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">workflow automation</Link> (CRM, email, reporting), personalized user experiences with machine learning, intelligent search and recommendation engines, and predictive analytics dashboards.</>,
         },
     ];
 
