@@ -1,17 +1,17 @@
 "use client";
 
-import { getBlogPostsByAuthor, getCategorySlug } from "@/data/blog";
+import { getCategorySlug } from "@/data/blog";
 import BlogCard from "@/components/blog/BlogCard";
 import { Mail, Linkedin, Twitter, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
-import { Author } from "@/data/blog";
+import { Author, BlogPost } from "@/data/blog";
 
-export default function AuthorClient({ author }: { author: Author }) {
+export default function AuthorClient({ author, posts }: { author: Author; posts: BlogPost[] }) {
     const authorPosts = useMemo(() => {
-        return getBlogPostsByAuthor(author.id);
-    }, [author]);
+        return posts;
+    }, [posts]);
 
     const authorSlug = author.name.toLowerCase().replace(/\s+/g, "-");
 

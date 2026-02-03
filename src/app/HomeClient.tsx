@@ -46,7 +46,13 @@ const CTA = dynamic(() => import('@/components/home/CTA'), {
   loading: () => <div className="w-full h-80 flex items-center justify-center bg-gray-50/50 dark:bg-gray-900/50">loading...</div>
 });
 
-export default function HomeClient() {
+import { BlogPost } from '@/data/blog';
+
+interface HomeClientProps {
+  latestPosts: BlogPost[];
+}
+
+export default function HomeClient({ latestPosts }: HomeClientProps) {
   return (
     <main style={{ backgroundColor: "var(--background)", color: "var(--foreground)", scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }} className="min-h-screen overflow-hidden">
       <style jsx global>{`
@@ -87,7 +93,9 @@ export default function HomeClient() {
       <Process />
       <CaseStudies />
       <Industries />
-      <BlogInsights />
+      <Industries />
+      <BlogInsights posts={latestPosts} />
+      <Testimonials />
       <Testimonials />
       <FAQ />
       <CTA />

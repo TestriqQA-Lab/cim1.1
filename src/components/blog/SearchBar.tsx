@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 import { Search, X, Clock, Tag, User, TrendingUp, ArrowRight, Sparkles } from "lucide-react";
-import { blogPosts, getAllTags } from "@/data/blog";
+import { BlogPost } from "@/data/blog";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -10,6 +10,7 @@ interface SearchBarProps {
   onSearch?: (query: string) => void;
   placeholder?: string;
   value?: string;
+  posts?: BlogPost[];
 }
 
 interface Suggestion {
@@ -20,7 +21,7 @@ interface Suggestion {
   image?: string;
 }
 
-export default function SearchBar({ onSearch, placeholder = "Search articles, tags, authors...", value = "" }: SearchBarProps) {
+export default function SearchBar({ onSearch, placeholder = "Search articles, tags, authors...", value = "", posts = [] }: SearchBarProps) {
   const [query, setQuery] = useState(value);
   const [isFocused, setIsFocused] = useState(false);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -42,7 +43,7 @@ export default function SearchBar({ onSearch, placeholder = "Search articles, ta
     const results: Suggestion[] = [];
 
     // Search posts
-    const matchingPosts = blogPosts
+    const matchingPosts = posts
       .filter(
         (post) =>
           post.title.toLowerCase().includes(q) ||
@@ -59,7 +60,7 @@ export default function SearchBar({ onSearch, placeholder = "Search articles, ta
     results.push(...matchingPosts);
 
     // Search tags
-    const allTags = getAllTags();
+    const allTags = Array.from(new Set(posts.flatMap(post => post.tags)));
     const matchingTags = allTags
       .filter((tag) => tag.toLowerCase().includes(q))
       .slice(0, 3)
@@ -72,7 +73,7 @@ export default function SearchBar({ onSearch, placeholder = "Search articles, ta
     results.push(...matchingTags);
 
     // Search authors
-    const uniqueAuthors = Array.from(new Set(blogPosts.map((p) => JSON.stringify(p.author)))).map((a) =>
+    const uniqueAuthors = Array.from(new Set(posts.map((p) => JSON.stringify(p.author)))).map((a) =>
       JSON.parse(a)
     );
     const matchingAuthors = uniqueAuthors
@@ -88,9 +89,9 @@ export default function SearchBar({ onSearch, placeholder = "Search articles, ta
     results.push(...matchingAuthors);
 
     // Search categories
-    const categories = Array.from(new Set(blogPosts.map((p) => p.category)));
+    const categories = Array.from(new Set(posts.map((p) => p.category)));
     const matchingCategories = categories
-      .filter((cat) => cat.toLowerCase().includes(q))
+      .filter((cat) => cat && cat.toLowerCase().includes(q))
       .slice(0, 2)
       .map((cat) => ({
         type: "category" as const,
@@ -101,7 +102,7 @@ export default function SearchBar({ onSearch, placeholder = "Search articles, ta
     results.push(...matchingCategories);
 
     return results.slice(0, 10);
-  }, [query]);
+  }, [query, posts]);
 
   // Handle input change - NO IMMEDIATE SEARCH TRIGGER
   const handleChange = useCallback(

@@ -1,9 +1,10 @@
 import { MetadataRoute } from 'next';
 import fs from 'fs';
 import path from 'path';
-import { blogPosts, categoryDetails, authors } from '@/data/blog';
+import { client } from "@/sanity/lib/client";
+import { allPostsQuery, categoriesQuery, authorsQuery } from "@/sanity/lib/queries";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://www.cinuteinfomedia.com';
 
     // 1. Static Routes
@@ -55,8 +56,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     crawlServices(servicesPath, '');
 
+    // Fetch data from Sanity
+    const [posts, categories, authors] = await Promise.all([
+        client.fetch(allPostsQuery),
+        client.fetch(categoriesQuery),
+        client.fetch(authorsQuery),
+    ]);
+
     // 3. Dynamic Blog Routes
-    const blogPostRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    const blogPostRoutes: MetadataRoute.Sitemap = posts.map((post: any) => ({
         url: `${baseUrl}/blog/${post.slug}`,
         lastModified: new Date(post.publishedAt).toISOString(),
         changeFrequency: 'monthly' as const,
@@ -64,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
 
     // 4. Dynamic Category Routes
-    const blogCategoryRoutes: MetadataRoute.Sitemap = categoryDetails.map((cat) => ({
+    const blogCategoryRoutes: MetadataRoute.Sitemap = categories.map((cat: any) => ({
         url: `${baseUrl}/blog/category/${cat.slug}`,
         lastModified: new Date().toISOString(),
         changeFrequency: 'weekly' as const,
@@ -72,10 +80,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
 
     // 5. Dynamic Author Routes
-    const blogAuthorRoutes: MetadataRoute.Sitemap = authors.map((author) => {
-        const authorSlug = author.name.toLowerCase().replace(/\s+/g, '-');
+    const blogAuthorRoutes: MetadataRoute.Sitemap = authors.map((author: any) => {
         return {
-            url: `${baseUrl}/blog/author/${authorSlug}`,
+            url: `${baseUrl}/blog/author/${author.slug}`,
             lastModified: new Date().toISOString(),
             changeFrequency: 'monthly' as const,
             priority: 0.5,

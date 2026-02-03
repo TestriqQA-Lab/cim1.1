@@ -1,40 +1,53 @@
-import { categoryDetails, categories, getCategorySlug, getCategoryDetails, getBlogPostsByCategory } from "@/data/blog";
 import CategoryClient from "./CategoryClient";
 import { generateCategoryMetadata } from "@/lib/metadata";
 import { generateBlogCollectionSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { client } from "@/sanity/lib/client";
+import { categoryQuery, categoryPostsQuery, categoriesQuery } from "@/sanity/lib/queries";
+import { mapSanityPostToBlogPost } from "@/sanity/lib/mapper";
+import { getSidebarData } from "@/sanity/lib/data";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
+export const revalidate = 60;
+
 export async function generateStaticParams() {
-  return categoryDetails.map((category) => ({
+  const categories = await client.fetch(categoriesQuery);
+  return categories.map((category: any) => ({
     slug: category.slug,
   }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const category = categoryDetails.find((c) => c.slug === slug);
+  const category = await client.fetch(categoryQuery, { slug });
 
   if (!category) return {};
 
-  const posts = getBlogPostsByCategory(category.name);
+  // For metadata counts, we might need a separate query or just fetch posts
+  const posts = await client.fetch(categoryPostsQuery, { slug });
+
   return generateCategoryMetadata(category.name, posts.length, category.slug);
 }
 
 export default async function CategoryPage({ params }: Props) {
   const { slug } = await params;
-  const categoryName = categories.find((cat) => getCategorySlug(cat) === slug);
-  const categoryInfo = getCategoryDetails(slug);
 
-  if (!categoryName || !categoryInfo) {
+  // Fetch from Sanity
+  const categoryInfo = await client.fetch(categoryQuery, { slug });
+
+  if (!categoryInfo) {
     notFound();
   }
 
-  const posts = getBlogPostsByCategory(categoryName);
+  const sanityPosts = await client.fetch(categoryPostsQuery, { slug });
+  const posts = sanityPosts.map(mapSanityPostToBlogPost);
+
+  const { categories, popularPosts, tags } = await getSidebarData();
+
   const collectionSchema = generateBlogCollectionSchema(
     `${categoryInfo.name} Articles`,
     categoryInfo.description,
@@ -57,7 +70,14 @@ export default async function CategoryPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <CategoryClient categoryName={categoryName} categoryInfo={categoryInfo} />
+      <CategoryClient
+        categoryName={categoryInfo.name}
+        categoryInfo={categoryInfo}
+        posts={posts}
+        categories={categories}
+        popularPosts={popularPosts}
+        tags={tags}
+      />
     </>
   );
 }
