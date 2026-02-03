@@ -1,7 +1,12 @@
 import { Suspense } from "react";
-import { blogPosts } from "@/data/blog";
+// import { blogPosts } from "@/data/blog"; // Removed local import
 import BlogClient from "./BlogClient";
 import { Metadata } from "next";
+import { client } from "@/sanity/lib/client";
+import { allPostsQuery } from "@/sanity/lib/queries";
+import { mapSanityPostToBlogPost } from "@/sanity/lib/mapper";
+import { getSidebarData } from "@/sanity/lib/data";
+import { BlogPost } from "@/data/blog";
 
 export const metadata: Metadata = {
   title: "Blog & Insights | CIM - Digital Marketing & Web Development",
@@ -10,6 +15,8 @@ export const metadata: Metadata = {
     canonical: "https://www.cinuteinfomedia.com/blog",
   },
 };
+
+export const revalidate = 60; // Revalidate every minute
 
 function BlogLoadingFallback() {
   return (
@@ -30,7 +37,13 @@ function BlogLoadingFallback() {
   );
 }
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  // Fetch data from Sanity
+  const sanityPosts = await client.fetch(allPostsQuery);
+  const blogPosts = sanityPosts.map(mapSanityPostToBlogPost);
+
+  const { categories, popularPosts, tags } = await getSidebarData();
+
   // Schema.org Structured Data
   const jsonLd = {
     "@context": "https://schema.org",
@@ -42,7 +55,7 @@ export default function BlogPage() {
       "@type": "Organization",
       name: "CIM",
     },
-    blogPost: blogPosts.slice(0, 10).map((post) => ({
+    blogPost: blogPosts.slice(0, 10).map((post: BlogPost) => ({
       "@type": "BlogPosting",
       headline: post.title,
       description: post.excerpt,
@@ -63,7 +76,12 @@ export default function BlogPage() {
         }}
       />
       <Suspense fallback={<BlogLoadingFallback />}>
-        <BlogClient initialPosts={blogPosts} />
+        <BlogClient
+          initialPosts={blogPosts}
+          categories={categories}
+          popularPosts={popularPosts}
+          tags={tags}
+        />
       </Suspense>
     </>
   );

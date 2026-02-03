@@ -11,9 +11,12 @@ import Image from "next/image";
 
 interface BlogClientProps {
     initialPosts: BlogPost[];
+    categories: string[];
+    popularPosts: BlogPost[];
+    tags: string[];
 }
 
-export default function BlogClient({ initialPosts }: BlogClientProps) {
+export default function BlogClient({ initialPosts, categories, popularPosts, tags }: BlogClientProps) {
     const searchParams = useSearchParams();
     const [searchQuery, setSearchQuery] = useState("");
     const [isTagSearch, setIsTagSearch] = useState(false);
@@ -399,7 +402,11 @@ export default function BlogClient({ initialPosts }: BlogClientProps) {
                         {/* Sidebar */}
                         <div className="lg:col-span-1">
                             <div className="sticky top-32">
-                                <BlogSidebar />
+                                <BlogSidebar
+                                    categories={categories}
+                                    popularPosts={popularPosts}
+                                    tags={tags}
+                                />
                             </div>
                         </div>
                     </div>

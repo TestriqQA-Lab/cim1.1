@@ -22,9 +22,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+import { client } from "@/sanity/lib/client";
+import { moreStoriesQuery } from "@/sanity/lib/queries";
+import { mapSanityPostToBlogPost } from "@/sanity/lib/mapper";
+
+export const revalidate = 60;
+
+export default async function Home() {
   const organizationSchema = generateOrganizationSchema();
   const websiteSchema = generateWebSiteSchema();
+
+  // Fetch latest 3 posts
+  const sanityPosts = await client.fetch(moreStoriesQuery, { limit: 3, skip: "" });
+  const latestPosts = sanityPosts.map(mapSanityPostToBlogPost);
 
   return (
     <>
@@ -36,7 +46,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
-      <HomeClient />
+      <HomeClient latestPosts={latestPosts} />
     </>
   );
 }

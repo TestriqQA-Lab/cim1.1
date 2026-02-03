@@ -4,10 +4,14 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BookOpen, ArrowRight, Calendar, Clock, User } from 'lucide-react';
-import { getLatestPosts } from '@/data/blog';
+import { BlogPost } from '@/data/blog';
 
-export default function BlogInsights() {
-    const latestPosts = getLatestPosts(3);
+interface BlogInsightsProps {
+    posts: BlogPost[];
+}
+
+export default function BlogInsights({ posts }: BlogInsightsProps) {
+    const latestPosts = posts || [];
 
     return (
         <section className="py-20 relative overflow-hidden" style={{

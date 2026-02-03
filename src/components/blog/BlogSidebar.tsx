@@ -3,17 +3,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { categories, getPopularPosts, getAllTags, getCategorySlug } from "@/data/blog";
+import { BlogPost, getCategorySlug } from "@/data/blog";
 import { TrendingUp, Folder, Tag, ArrowRight } from "lucide-react";
 
 interface BlogSidebarProps {
   currentPostSlug?: string;
+  categories: string[];
+  popularPosts: BlogPost[];
+  tags: string[];
 }
 
-export default function BlogSidebar({ currentPostSlug }: BlogSidebarProps) {
+export default function BlogSidebar({ currentPostSlug, categories, popularPosts, tags }: BlogSidebarProps) {
   const router = useRouter();
-  const popularPosts = getPopularPosts(5);
-  const tags = getAllTags();
 
   const handleTagClick = (tag: string) => {
     // Navigate to blog page with tag as search parameter and scroll to search bar

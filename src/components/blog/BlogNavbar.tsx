@@ -2,7 +2,6 @@
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useState, useEffect, useCallback, useRef } from "react";
-import { categories, blogPosts, getCategorySlug } from "@/data/blog";
 import SearchBar from "./SearchBar";
 import {
     Code,
@@ -45,7 +44,14 @@ const categoryColors: Record<string, string> = {
     "Case Studies": "#F39C12",
 };
 
-export default function BlogNavbar() {
+import { BlogPost } from "@/data/blog";
+
+interface BlogNavbarProps {
+    categories?: { name: string; slug: string; count: number }[];
+    posts?: BlogPost[];
+}
+
+export default function BlogNavbar({ categories = [], posts = [] }: BlogNavbarProps) {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
@@ -63,6 +69,18 @@ export default function BlogNavbar() {
 
     const [isOverlayMode, setIsOverlayMode] = useState(false);
 
+    // Filter out invalid categories early
+    const validCategories = categories.filter(c => c?.name && c?.slug);
+
+    // Helper for getSlug
+    const getSlug = (name: string) => validCategories.find(c => c.name === name)?.slug || name.toLowerCase().replace(/\s+/g, '-');
+
+    // Get category counts
+    const categoryCounts = validCategories.reduce((acc, cat) => {
+        acc[cat.name] = cat.count;
+        return acc;
+    }, {} as Record<string, number>);
+
     // Handle scroll effect - hide on scroll down, show on scroll up
     useEffect(() => {
         const handleScroll = () => {
@@ -70,23 +88,14 @@ export default function BlogNavbar() {
 
             setIsScrolled(currentScrollY > 10);
 
-            // Always overlay Main Navbar when scrolled down past threshold
-            // This ensures Blog Navbar takes precedence in both scroll directions
-            // Always overlay Main Navbar when scrolled down past threshold
-            // This ensures Blog Navbar takes precedence in both scroll directions
             if (currentScrollY > 10) {
                 setIsOverlayMode(true);
             } else {
-                // At the very top, revert to standard stacking (Main Navbar visible)
                 setIsOverlayMode(false);
             }
 
-            // Existing partial logic for hiding (can be kept or adapted if needed, 
-            // but user specifically requested overlay behavior "on scroll up" and "standard" on scroll down)
             if (window.innerWidth < 1280) {
                 if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-                    // specific mobile hide logic if needed, or we can just stick to overlay
-                    // For now, let's keep the overlay logic dominant
                     setIsHidden(false);
                 } else {
                     setIsHidden(false);
@@ -108,7 +117,6 @@ export default function BlogNavbar() {
             if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
                 setShowCategoryDropdown(false);
             }
-            // Only close mobile menu if click is outside both the menu AND the button
             if (
                 mobileMenuRef.current &&
                 !mobileMenuRef.current.contains(e.target as Node) &&
@@ -132,12 +140,6 @@ export default function BlogNavbar() {
         }
     }, [searchParams]);
 
-    // Get category counts
-    const categoryCounts: Record<string, number> = {};
-    blogPosts.forEach((post) => {
-        categoryCounts[post.category] = (categoryCounts[post.category] || 0) + 1;
-    });
-
     // Handle search
     const handleSearch = useCallback(
         (query: string) => {
@@ -158,12 +160,12 @@ export default function BlogNavbar() {
             setShowCategoryDropdown(false);
             setShowMobileMenu(false);
             if (category) {
-                router.push(`/blog/category/${getCategorySlug(category)}`);
+                router.push(`/blog/category/${getSlug(category)}`);
             } else {
                 router.push("/blog");
             }
         },
-        [router]
+        [router] // eslint-disable-next-line react-hooks/exhaustive-deps
     );
 
     // Clear filters
@@ -234,13 +236,15 @@ export default function BlogNavbar() {
                                 onSearch={handleSearch}
                                 value={searchQuery}
                                 placeholder="Search articles, tags, authors..."
+                                posts={posts}
                             />
                         </div>
 
                         {/* Right: Categories (Desktop) */}
                         <div className="hidden xl:flex items-center gap-2">
-                            {categories.slice(0, 3).map((category) => {
-                                const categorySlug = getCategorySlug(category);
+                            {validCategories.slice(0, 3).map((catObj) => {
+                                const category = catObj.name;
+                                const categorySlug = catObj.slug;
                                 const isActive =
                                     pathname === `/blog/category/${categorySlug}` || selectedCategory === category;
                                 const color = categoryColors[category] || "var(--brand-purple)";
@@ -274,7 +278,7 @@ export default function BlogNavbar() {
                             })}
 
                             {/* More Categories Dropdown (Desktop) */}
-                            {categories.length > 3 && (
+                            {validCategories.length > 3 && (
                                 <div ref={dropdownRef} className="relative">
                                     <button
                                         onClick={() => setShowCategoryDropdown(!showCategoryDropdown)}
@@ -309,8 +313,9 @@ export default function BlogNavbar() {
                                                 >
                                                     More Categories
                                                 </p>
-                                                {categories.slice(3).map((category) => {
-                                                    const categorySlug = getCategorySlug(category);
+                                                {validCategories.slice(3).map((catObj) => {
+                                                    const category = catObj.name;
+                                                    const categorySlug = catObj.slug;
                                                     const isActive =
                                                         pathname === `/blog/category/${categorySlug}` ||
                                                         selectedCategory === category;
@@ -372,6 +377,7 @@ export default function BlogNavbar() {
                             onSearch={handleSearch}
                             value={searchQuery}
                             placeholder="Search articles..."
+                            posts={posts}
                         />
                     </div>
 
@@ -396,8 +402,9 @@ export default function BlogNavbar() {
                             Categories
                         </p>
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
-                            {categories.map((category) => {
-                                const categorySlug = getCategorySlug(category);
+                            {validCategories.map((catObj) => {
+                                const category = catObj.name;
+                                const categorySlug = catObj.slug;
                                 const isActive =
                                     pathname === `/blog/category/${categorySlug}` || selectedCategory === category;
                                 const color = categoryColors[category] || "var(--brand-purple)";

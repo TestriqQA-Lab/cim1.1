@@ -10,8 +10,8 @@ export default function ListBlock({ block }: ListBlockProps) {
     const ListTag = block.style === "numbered" ? "ol" : "ul";
     const listClass =
         block.style === "numbered"
-            ? "list-decimal list-inside mb-4 space-y-2"
-            : "list-disc list-inside mb-4 space-y-2";
+            ? "list-decimal list-outside ms-6 mb-4 space-y-2"
+            : "list-disc list-outside ms-6 mb-4 space-y-2";
 
     return (
         <ListTag className={listClass} style={{ color: "var(--secondary-text)" }}>
