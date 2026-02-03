@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Search, Monitor, Share2, Play, ShoppingCart, RefreshCw, TrendingUp, DollarSign, Users, ArrowRight, Shield } from "lucide-react";
 
 export default function CampaignTypes() {
@@ -11,7 +12,7 @@ export default function CampaignTypes() {
         {
             icon: ShoppingCart,
             title: "Performance Marketing for eCommerce",
-            description: "For retail brands, it’s all about ROAS and LTV. We implement advanced shopping campaigns, dynamic retargeting, and influencer whitelisting to drive direct sales.",
+            description: <span>For retail brands, it’s all about ROAS and LTV. We implement advanced <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[var(--brand-orange)]">shopping campaigns</Link>, dynamic retargeting, and influencer whitelisting to drive direct sales.</span>,
             metrics: { purchases: "Direct Sales", roas: "Maximized", ltv: "Enhanced" },
             features: ["Shopping Campaigns", "Dynamic Retargeting", "Influencer Whitelisting"],
             color: "#4285f4",
@@ -19,7 +20,7 @@ export default function CampaignTypes() {
         {
             icon: Monitor,
             title: "Performance Marketing for SaaS & B2B",
-            description: "For software companies, the cycle is longer. We focus on Lead Generation, MQLs, and content syndication to fill the top of the funnel.",
+            description: <span>For software companies, the cycle is longer. We focus on Lead Generation, MQLs, and content syndication for <Link href="/services/web-design-development/saas-development-services" className="hover:text-[var(--brand-orange)]">SaaS</Link> to fill the top of the funnel.</span>,
             metrics: { leads: "MQLs", cost: "Cost Per Demo", arr: "Revenue Growth" },
             features: ["LinkedIn Ads", "Content Syndication", "Email Remarketing"],
             color: "#34a853",
@@ -27,7 +28,7 @@ export default function CampaignTypes() {
         {
             icon: Shield,
             title: "Performance Marketing for Fintech & Healthcare",
-            description: "Trust is the currency here. We navigate strict compliance regulations (Google’s YMYL) to build authority and acquire high-value customers.",
+            description: <span>Trust is the currency here. We navigate strict compliance regulations (Google’s YMYL) for <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-orange)]">Fintech</Link> and <Link href="/services/web-design-development/healthcare-portals" className="hover:text-[var(--brand-orange)]">Healthcare</Link> to build authority.</span>,
             metrics: { leads: "Verified Leads", accts: "Account Opens", bookings: "Patient Bookings" },
             features: ["Compliance-Ready", "Authority Building", "High-Value Acquisition"],
             color: "#1877f2",

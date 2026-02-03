@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle2, Lightbulb, Target, Palette, Sparkles, TrendingUp, Shield, Award, Search } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -19,7 +20,7 @@ export default function WhyChooseUs() {
             icon: Target,
             decorIcon: Sparkles,
             title: "Global Expertise",
-            description: "We understand how design translates to code. Our assets are optimized for React, Next.js, and mobile frameworks, ensuring 100% implementation fidelity.",
+            description: <span>We understand how design translates to code. Our assets are optimized for <Link href="/services/web-design-development" className="hover:text-[#ee6500]">React</Link>, <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[#ee6500]">Next.js</Link>, and <Link href="/services/mobile-app-development" className="hover:text-[#ee6500]">mobile frameworks</Link>, ensuring 100% implementation fidelity.</span>,
             highlight: "Tech-Ready",
             color: "#ee6500",
         },
@@ -27,7 +28,7 @@ export default function WhyChooseUs() {
             icon: Search,
             decorIcon: Award,
             title: "SEO-First Design",
-            description: "We integrate Graphic Design Principles with SEO visibility. Our assets are optimized for Core Web Vitals, aiding your organic ranking efforts.",
+            description: <span>We integrate <Link href="/services/web-design-development" className="hover:text-[#bc3feb]">Graphic Design Principles</Link> with <Link href="/services/seo-services" className="hover:text-[#bc3feb]">SEO visibility</Link>. Our assets are optimized for Core Web Vitals, aiding your organic ranking efforts.</span>,
             highlight: "SEO-Optimized",
             color: "#bc3feb",
         },

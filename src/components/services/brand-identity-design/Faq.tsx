@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -21,7 +22,7 @@ export default function Faq() {
         },
         {
             question: "How much does brand identity design cost?",
-            answer: "Costs vary based on scope. An affordable brand identity design service for a small business might start from $1,500 - $3,000. Comprehensive agencies packages for B2B or SaaS companies often range from $5,000 to $20,000+ depending on the depth of strategy, number of deliverables, and market research required."
+            answer: <span>Costs vary based on scope. An affordable brand identity design service for a small business might start from $1,500 - $3,000. Comprehensive agencies packages for <Link href="/services/web-design-development/business-corporate" className="hover:text-[var(--brand-yellow)]">B2B</Link> or <Link href="/services/web-design-development/saas-development-services" className="hover:text-[var(--brand-yellow)]">SaaS companies</Link> often range from $5,000 to $20,000+ depending on the depth of strategy, number of deliverables, and market research required.</span>
         },
         {
             question: "What are the key elements of a brand identity?",
@@ -29,7 +30,7 @@ export default function Faq() {
         },
         {
             question: "Do you offer rebranding services for established companies?",
-            answer: "Yes, we specialize in rebranding services for small business and large enterprises. We carefully audit your existing brand equity to ensure we retain what works while modernizing your visual language to meet current market standards and Graphic Design Principles."
+            answer: <span>Yes, we specialize in <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--brand-yellow)]">rebranding services</Link> for small business and large enterprises. We carefully audit your existing brand equity to ensure we retain what works while modernizing your visual language to meet current market standards and Graphic Design Principles.</span>
         },
         {
             question: "Will I own the copyright to my brand files?",

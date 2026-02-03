@@ -40,12 +40,12 @@ export default function SupportServices() {
             icon: ShieldCheck,
             title: "Specialized Industry Support",
             description: "Tailored solutions for niche sectors.",
-            features: ["Healthcare admin assistance", "Real estate listing management", "Additional marketing support"],
+            features: [<span><Link href="/services/web-design-development/healthcare-portals" className="hover:text-[var(--foreground)]">Healthcare</Link> admin assistance</span>, <span><Link href="/services/web-design-development/real-estate-platforms" className="hover:text-[var(--foreground)]">Real estate</Link> listing management</span>, <span>Additional <Link href="/services/performance-marketing" className="hover:text-[var(--foreground)]">marketing support</Link></span>],
         },
         {
             icon: Headset,
             title: "Customer Support & Lead Gen",
-            description: <span>Grow your revenue with active <Link href="/services/performance-marketing" className="hover:text-[var(--foreground)] font-medium">engagement</Link>.</span>,
+            description: <span>Grow your revenue with active <Link href="/services/social-media-marketing-services" className="hover:text-[var(--foreground)] font-medium">engagement</Link>.</span>,
             features: ["Supplementary customer support", "Supplementary lead generation", "24/7 chat resolution"],
         },
     ];

@@ -92,7 +92,7 @@ export default function Hero() {
 
 
                         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Stop guessing where your marketing budget goes. Start scaling with precision. We allow you to lower your Customer Acquisition Cost (CAC) while maximizing your Return on Ad Spend (ROAS). Join 50+ global brands who trust us to manage over $50M in annual ad spend.
+                            Stop guessing where your marketing budget goes. Start scaling with precision. We allow you to lower your <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--brand-orange)] transition-colors">Customer Acquisition Cost (CAC)</Link> while maximizing your Return on Ad Spend (ROAS). Join 50+ global brands who trust us to manage over $50M in annual ad spend.
                         </p>
 
                         {/* Feature Pills */}
@@ -186,18 +186,45 @@ export default function Hero() {
                                 Only pay for results. Track every conversion. Scale what works.
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Google Ads", "Meta Ads", "LinkedIn", "Programmatic"].map((tag) => (
-                                    <span
-                                        key={tag}
-                                        className="px-3 py-1 rounded-full text-xs font-medium"
-                                        style={{
-                                            backgroundColor: "color-mix(in srgb, var(--brand-orange) 15%, transparent)",
-                                            color: "var(--brand-orange)",
-                                        }}
-                                    >
-                                        {tag}
-                                    </span>
-                                ))}
+                                <Link
+                                    href="/services/performance-marketing/google-ads"
+                                    className="px-3 py-1 rounded-full text-xs font-medium hover:scale-105 transition-transform"
+                                    style={{
+                                        backgroundColor: "color-mix(in srgb, var(--brand-orange) 15%, transparent)",
+                                        color: "var(--brand-orange)",
+                                    }}
+                                >
+                                    Google Ads
+                                </Link>
+                                <Link
+                                    href="/services/performance-marketing/meta-ads"
+                                    className="px-3 py-1 rounded-full text-xs font-medium hover:scale-105 transition-transform"
+                                    style={{
+                                        backgroundColor: "color-mix(in srgb, var(--brand-orange) 15%, transparent)",
+                                        color: "var(--brand-orange)",
+                                    }}
+                                >
+                                    Meta Ads
+                                </Link>
+                                <Link
+                                    href="/services/performance-marketing/linkedin-ads"
+                                    className="px-3 py-1 rounded-full text-xs font-medium hover:scale-105 transition-transform"
+                                    style={{
+                                        backgroundColor: "color-mix(in srgb, var(--brand-orange) 15%, transparent)",
+                                        color: "var(--brand-orange)",
+                                    }}
+                                >
+                                    LinkedIn
+                                </Link>
+                                <span
+                                    className="px-3 py-1 rounded-full text-xs font-medium"
+                                    style={{
+                                        backgroundColor: "color-mix(in srgb, var(--brand-orange) 15%, transparent)",
+                                        color: "var(--brand-orange)",
+                                    }}
+                                >
+                                    Programmatic
+                                </span>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ClipboardList, Search, Rocket, Settings, TrendingUp, FileText, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function Process() {
@@ -11,19 +12,19 @@ export default function Process() {
         {
             icon: ClipboardList,
             title: "Discovery & Deep-Dive Audit",
-            description: "We start by understanding your business DNA. We dive deep into your historical data, audit your existing accounts (Google/Meta), and analyze your competitors.",
+            description: <span>We start by understanding your business DNA. We dive deep into your historical data, audit your existing accounts (<Link href="/services/performance-marketing/google-ads" className="hover:text-[var(--brand-orange)]">Google</Link>/<Link href="/services/performance-marketing/meta-ads" className="hover:text-[var(--brand-orange)]">Meta</Link>), and analyze your competitors.</span>,
             details: ["Business DNA", "Data Audit", "Competitor Analysis", "KPI Definition"],
         },
         {
             icon: Search,
             title: "Strategy & Media Planning",
-            description: "We craft a tailored performance marketing strategy. We identify the 'low-hanging fruit' for quick wins while building a long-term roadmap.",
+            description: <span>We craft a tailored <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--brand-orange)]">performance marketing strategy</Link>. We identify the 'low-hanging fruit' for quick wins while building a long-term roadmap.</span>,
             details: ["Channel Mix", "Budget Allocation", "Quick Wins", "Long-term Roadmap"],
         },
         {
             icon: Rocket,
             title: "Creative & Asset Production",
-            description: "Performance is 50% media buying and 50% creative. Our design team builds high-converting assets - banners, videos, and carousels.",
+            description: <span>Performance is 50% media buying and 50% <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--brand-orange)]">creative</Link>. Our design team builds high-converting assets - banners, videos, and carousels.</span>,
             details: ["Ad Banners", "Video Ads", "Copywriting", "High-Converting Assets"],
         },
         {

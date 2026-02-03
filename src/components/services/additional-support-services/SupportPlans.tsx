@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, Zap, Star, Crown, ArrowRight, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function SupportPlans() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -30,7 +31,7 @@ export default function SupportPlans() {
         {
             name: "Professional",
             icon: Star,
-            description: "Ideal for startups requiring Supplementary administrative services and tech maintenance.",
+            description: <span>Ideal for <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#4b277a]">startups</Link> requiring Supplementary administrative services and tech maintenance.</span>,
             monthlyPrice: 599,
             yearlyPrice: 5990,
             color: "#fab900",

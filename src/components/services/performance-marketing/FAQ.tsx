@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from 'react';
 import { MessageSquare, ChevronDown } from 'lucide-react';
 
@@ -9,7 +10,7 @@ export default function FAQ() {
     const faqs = [
         {
             q: "What is the difference between digital marketing and performance marketing?",
-            a: "While digital marketing encompasses all online efforts, performance marketing is specifically focused on paid channels where you pay only for results - clicks, leads, or sales. It is highly measurable and ROI-centric.",
+            a: <span>While <Link href="/blog/category/digital-marketing" className="hover:text-[var(--brand-orange)]">digital marketing</Link> encompasses all online efforts, performance marketing is specifically focused on paid channels where you pay only for results - clicks, leads, or sales. It is highly measurable and ROI-centric.</span>,
         },
         {
             q: "How much do your performance marketing services cost?",
@@ -25,7 +26,7 @@ export default function FAQ() {
         },
         {
             q: "Can you help with B2B lead generation?",
-            a: "Absolutely. We specialize in B2B performance marketing, leveraging LinkedIn Ads and high-intent Google Search to fill your pipeline with qualified decision-makers.",
+            a: <span>Absolutely. We specialize in B2B performance marketing, leveraging <Link href="/services/performance-marketing/linkedin-ads" className="hover:text-[var(--brand-orange)]">LinkedIn Ads</Link> and high-intent <Link href="/services/performance-marketing/google-ads" className="hover:text-[var(--brand-orange)]">Google Search</Link> to fill your pipeline with qualified decision-makers.</span>,
         },
     ];
 

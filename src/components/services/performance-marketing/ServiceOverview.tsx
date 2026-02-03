@@ -19,21 +19,21 @@ export default function ServiceOverview() {
         {
             icon: Share2,
             title: "Paid Social Media Marketing",
-            description: <span>Turn scrollers into buyers on <Link href="/services/performance-marketing/meta-ads" className="hover:text-[var(--brand-orange)]">Meta</Link>, TikTok, and LinkedIn. Social media is no longer just for brand awareness - it is a performance engine.</span>,
+            description: <span>Turn scrollers into buyers on <Link href="/services/performance-marketing/meta-ads" className="hover:text-[var(--brand-orange)]">Meta</Link>, TikTok, and LinkedIn. <Link href="/services/social-media-marketing-services" className="hover:text-[var(--brand-orange)]">Social media</Link> is no longer just for brand awareness - it is a performance engine.</span>,
             features: ["Meta Ads", "LinkedIn B2B Ads", "TikTok Viral Ads", "Advanced Segmentation"],
             color: "#34a853",
         },
         {
             icon: RefreshCw,
             title: "Precision Retargeting & Remarketing",
-            description: <span>Did you know 97% of visitors leave your site without buying? We bring them back with <Link href="/services/performance-marketing/ppc-services" className="hover:text-[var(--brand-orange)]">Cross-Platform Retargeting</Link>.</span>,
+            description: <span>Did you know 97% of visitors leave your site without buying? We bring them back with <Link href="/services/performance-marketing/google-ads" className="hover:text-[var(--brand-orange)]">Cross-Platform Retargeting</Link>.</span>,
             features: ["Cross-Platform Retargeting", "Dynamic Product Ads", "Cart Abandonment Flows", "Recover Lost Revenue"],
             color: "#ea4335",
         },
         {
             icon: Layers,
             title: "Programmatic Advertising & Display",
-            description: <span>Scale beyond the 'walled gardens'. Access premium <Link href="/services/performance-marketing" className="hover:text-[var(--brand-orange)]">inventory</Link> across websites, apps, and CTV channels.</span>,
+            description: <span>Scale beyond the 'walled gardens'. Access premium inventory across websites, apps, and CTV channels.</span>,
             features: ["Real-Time Bidding (RTB)", "Contextual Targeting", "Native Advertising", "Premium Inventory"],
             color: "#fbbc04",
         },
@@ -62,7 +62,7 @@ export default function ServiceOverview() {
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        From the first click to the final sale (and beyond to retention), we optimize every single touchpoint. Whether through <Link href="/services/performance-marketing/google-ads" style={{ color: "var(--brand-orange)" }}>Google Ads</Link>, <Link href="/services/performance-marketing/meta-ads" style={{ color: "var(--brand-orange)" }}>Meta advertising</Link>, or strategic <Link href="/services/performance-marketing/ppc-services" style={{ color: "var(--brand-orange)" }}>PPC consulting</Link>, our integrated approach ensures no leak in your funnels. Build sustainable growth by pairing performance marketing with <Link href="/services/seo-services" style={{ color: "var(--brand-orange)" }}>organic SEO</Link>.
+                        From the first click to the final sale (and beyond to retention), we optimize every single touchpoint. Whether through <Link href="/services/performance-marketing/google-ads" style={{ color: "var(--brand-orange)" }}>Google Ads</Link>, <Link href="/services/performance-marketing/meta-ads" style={{ color: "var(--brand-orange)" }}>Meta advertising</Link>, or strategic <Link href="/services/performance-marketing/google-ads" style={{ color: "var(--brand-orange)" }}>PPC consulting</Link>, our integrated approach ensures no leak in your funnels. Build sustainable growth by pairing performance marketing with <Link href="/services/seo-services" style={{ color: "var(--brand-orange)" }}>organic SEO</Link>.
                     </p>
                 </div>
 
@@ -177,7 +177,7 @@ export default function ServiceOverview() {
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Why combining organic and paid converts 2x better</p>
                             </div>
                         </Link>
-                        <Link href="/blog/performance-marketing-roi-guide" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                        <Link href="/blog/digital-marketing-strategy-planning-execution" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">📊</span>
                             <div>
                                 <h4 className="font-semibold group-hover:text-[var(--brand-orange)] transition-colors">Maximizing ROI with Performance Marketing</h4>

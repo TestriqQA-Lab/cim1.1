@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { TrendingUp, DollarSign, Users, Target, ArrowUpRight, Sparkles } from "lucide-react";
 
 export default function CaseStudies() {
@@ -58,7 +59,7 @@ export default function CaseStudies() {
 
     const caseStudies = [
         {
-            industry: "E-commerce",
+            industry: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[var(--brand-orange)] transition-colors">E-commerce</Link>,
             icon: TrendingUp,
             before: { spend: "$10K/mo", roas: "150%", leads: "500" },
             after: { spend: "$25K/mo", roas: "520%", leads: "3,200" },
@@ -66,7 +67,7 @@ export default function CaseStudies() {
             color: "#34a853",
         },
         {
-            industry: "SaaS",
+            industry: <Link href="/services/web-design-development/saas-development-services" className="hover:text-[var(--brand-orange)] transition-colors">SaaS</Link>,
             icon: Users,
             before: { spend: "$5K/mo", cpa: "$120", demos: "25" },
             after: { spend: "$15K/mo", cpa: "$45", demos: "180" },
@@ -74,7 +75,7 @@ export default function CaseStudies() {
             color: "#4285f4",
         },
         {
-            industry: "Local Services",
+            industry: <Link href="/services/seo-services/local-seo-services" className="hover:text-[var(--brand-orange)] transition-colors">Local Services</Link>,
             icon: Target,
             before: { spend: "$2K/mo", leads: "30", costPerLead: "$67" },
             after: { spend: "$5K/mo", leads: "150", costPerLead: "$33" },

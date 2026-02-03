@@ -91,7 +91,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Unlock your global potential with a custom visual identity. We craft data-driven brand systems for startups, SaaS, and enterprises to dominate markets.
+                            Unlock your global potential with a custom visual identity. We craft data-driven brand systems for startups, <Link href="/services/web-design-development/saas-development-services" className="hover:text-[var(--brand-yellow)] transition-colors">SaaS</Link>, and <Link href="/services/web-design-development/business-corporate" className="hover:text-[var(--brand-yellow)] transition-colors">enterprises</Link> to dominate markets.
                         </p>
 
                         {/* Feature Pills */}

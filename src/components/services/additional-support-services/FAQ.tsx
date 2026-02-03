@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -9,7 +10,7 @@ export default function FAQ() {
     const faqs = [
         {
             question: "What are additional support services in business?",
-            answer: "Additional support services encompass external assistance for non-core business activities, including IT business support, outsourced administrative tasks, data management, and customer service. These services allow your core team to focus on strategic growth while we handle the operational details."
+            answer: <span>Additional support services encompass external assistance for non-core business activities, including <Link href="/services/web-design-development" className="hover:text-[#97288e]">IT business support</Link>, outsourced administrative tasks, data management, and customer service. These services allow your core team to focus on strategic growth while we handle the operational details.</span>
         },
         {
             question: "Why should businesses outsource their support services?",
@@ -17,7 +18,7 @@ export default function FAQ() {
         },
         {
             question: "What are the benefits of supplementary business support?",
-            answer: "Benefits include increased Operational Efficiency, access to Core Competencies not available in-house, Workflow Automation, and reduced operational risks. Our clients often see a 20-30% reduction in overhead costs."
+            answer: <span>Benefits include increased Operational Efficiency, access to Core Competencies not available in-house, <Link href="/services/ai-workflows-automations-services" className="hover:text-[#97288e]">Workflow Automation</Link>, and reduced operational risks. Our clients often see a 20-30% reduction in overhead costs.</span>
         },
         {
             question: "How do I choose the right business support service provider?",

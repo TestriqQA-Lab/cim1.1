@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Search, Lightbulb, PenTool, Palette, RefreshCw, Rocket, ClipboardList, CheckCircle2, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function DesignProcess() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -10,7 +11,7 @@ export default function DesignProcess() {
         {
             icon: Search,
             title: "Discovery & Brand Audit",
-            description: "We begin with a deep dive into your market. We analyze competitors, interview stakeholders, and audit existing assets to define your Brand Strategy.",
+            description: <span>We begin with a deep dive into your market. We analyze competitors, interview stakeholders, and audit existing assets to define your <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--brand-yellow)]">Brand Strategy</Link>.</span>,
             details: ["Brand audit", "Competitor analysis", "Stakeholder interviews", "Positioning"],
         },
         {
@@ -22,7 +23,7 @@ export default function DesignProcess() {
         {
             icon: Palette,
             title: "Design & Iteration",
-            description: "We move to high-fidelity design using industry-standard tools. You receive interactive presentations and have the opportunity to refine the direction.",
+            description: <span>We move to high-fidelity design using <Link href="#tools" className="hover:text-[var(--brand-yellow)]">industry-standard tools</Link>. You receive interactive presentations and have the opportunity to refine the direction.</span>,
             details: ["High-fidelity design", "Interactive presentations", "Iterative refinement", "Feedback loops"],
         },
         {

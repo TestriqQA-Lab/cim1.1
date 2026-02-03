@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { BarChart3, Shield, Eye, Award, CheckCircle2, Sparkles } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -20,7 +21,7 @@ export default function WhyChooseUs() {
             icon: Shield,
             decorIcon: CheckCircle2,
             title: "Transparent Reporting & Analytics",
-            description: "Tired of vague reports? You get 24/7 access to live dashboards showing ROAS, CAC, LTV, and Net Profit - not just clicks.",
+            description: <span>Tired of vague reports? You get 24/7 access to <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--brand-orange)]">live dashboards showing ROAS, CAC, LTV</Link>, and Net Profit - not just clicks.</span>,
             highlight: "Full Visibility",
             color: "#34a853",
         },

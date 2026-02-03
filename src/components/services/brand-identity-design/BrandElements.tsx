@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Sparkles, Palette, Type, Image, MessageSquare, FileText, Hexagon, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 
 export default function BrandElements() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -18,7 +19,7 @@ export default function BrandElements() {
         {
             icon: Type,
             title: "Typography Systems",
-            description: "We select and customize typefaces that embody your brand voice, ensuring specific readability and accessibility (WCAG 2.1 compliant).",
+            description: <span>We select and customize typefaces that embody your brand voice, ensuring specific <Link href="/services/web-design-development" className="hover:text-[var(--brand-yellow)]">readability and accessibility</Link> (WCAG 2.1 compliant).</span>,
             features: ["Modern sans-serifs", "Elegant serifs", "Readability focused", "WCAG 2.1 compliant"],
             color: "#bc3feb",
             preview: "type",
@@ -34,7 +35,7 @@ export default function BrandElements() {
         {
             icon: MessageSquare,
             title: "Brand Messaging",
-            description: "We develop custom brand voice and visual identity guides that define how your brand speaks, from punchy marketing copy to technical documentation.",
+            description: <span>We develop custom brand voice and visual identity guides that define how your brand speaks, from punchy <Link href="/services/seo-services/seo-content-writing-services" className="hover:text-[var(--brand-yellow)]">marketing copy</Link> to technical documentation.</span>,
             features: ["Voice & Tone", "Storytelling", "Key messaging", "Content guidelines"],
             color: "#008ac1",
             preview: "voice",

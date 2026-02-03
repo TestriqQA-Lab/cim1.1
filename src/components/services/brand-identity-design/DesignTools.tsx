@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Sparkles, Wrench } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function DesignTools() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -22,7 +23,7 @@ export default function DesignTools() {
         },
         {
             name: "Figma",
-            description: "Scalable UI/UX assets",
+            description: <span>Scalable <Link href="/services/web-design-development" className="hover:text-[var(--brand-yellow)]">UI/UX</Link> assets</span>,
             logo: "/images/brand-identity-design-logos/Figma-logo.svg",
             color: "#A259FF", // Figma Purple
         },

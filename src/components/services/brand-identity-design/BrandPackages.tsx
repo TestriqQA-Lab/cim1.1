@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Package, Check, Star, Sparkles, ArrowRight, Crown, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function BrandPackages() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -31,7 +32,7 @@ export default function BrandPackages() {
         {
             name: "Growth / Corporate",
             icon: Star,
-            description: "Complete brand identity for SaaS & Healthcare companies",
+            description: <span>Complete brand identity for <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#fab900]">SaaS</Link> & <Link href="/services/web-design-development/healthcare-portals" className="hover:text-[#fab900]">Healthcare</Link> companies</span>,
             price: "Investment",
             amount: "Most Popular",
             popular: true,
@@ -52,7 +53,7 @@ export default function BrandPackages() {
         {
             name: "Enterprise / Global",
             icon: Crown,
-            description: "Premium brand ecosystem for Multi-National & Luxury Brands",
+            description: <span>Premium brand ecosystem for Multi-National & <Link href="/services/web-design-development/business-corporate" className="hover:text-[#bc3feb]">Luxury Brands</Link></span>,
             price: "Investment",
             amount: "Contact Us",
             popular: false,
