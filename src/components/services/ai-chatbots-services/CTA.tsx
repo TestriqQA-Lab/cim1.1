@@ -32,7 +32,7 @@ export default function CTA() {
                     >
                         {/* Heading */}
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                            Ready to <span style={{ color: "var(--brand-chatbot)" }}>Scale with AI?</span>
+                            Ready to <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-chatbot)] transition-colors">Scale with AI?</Link>
                         </h2>
 
                         {/* Subheading */}

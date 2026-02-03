@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { TrendingUp, ShieldCheck, Zap, BarChart3, CheckCircle2, ArrowUpRight, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -19,7 +20,7 @@ export default function WhyChooseUs() {
             icon: ShieldCheck,
             decorIcon: Sparkles,
             title: "White Hat Organic SEO Services",
-            description: "Safety first. We strictly adhere to Google's webmaster guidelines. Our ethical, White hat organic SEO services protect your site from penalties while building a \"moat\" around your rankings that survives core updates.",
+            description: <span>Safety first. We strictly adhere to Google's webmaster guidelines. Our ethical, White hat <Link href="/services/seo-services/link-building" className="hover:text-[var(--brand-seo)] transition-colors">organic SEO services</Link> protect your site from penalties while building a "moat" around your rankings that survives core updates.</span>,
             highlight: "Google Compliant",
             color: "#10b981",
         },
@@ -27,7 +28,7 @@ export default function WhyChooseUs() {
             icon: Zap,
             decorIcon: ArrowUpRight,
             title: "Technical Excellence",
-            description: "Our team has delivered 95% bug-free web architectures for 50+ clients. We speak the language of developers, ensuring your Technical SEO Audit translates into perfect code, schema, and Core Web Vitals scores.",
+            description: <span>Our team has delivered 95% bug-free web architectures for 50+ clients. We speak the language of developers, ensuring your <Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-seo)] transition-colors">Technical SEO Audit</Link> translates into perfect code, schema, and Core Web Vitals scores.</span>,
             highlight: "Dev-Ready Code",
             color: "#8b5cf6",
         },
@@ -35,7 +36,7 @@ export default function WhyChooseUs() {
             icon: BarChart3,
             decorIcon: CheckCircle2,
             title: "Continuous Optimization",
-            description: "SEO is a marathon, not a sprint. We provide Organic search engine optimization for growth that evolves. We monitor daily, adapting to algorithm shifts like the 2026 Helpful Content Update to keep you ahead.",
+            description: <span>SEO is a marathon, not a sprint. We provide Organic search engine optimization for growth that evolves. We monitor daily, adapting to algorithm shifts like the <Link href="/services/seo-services/seo-content-writing-services" className="hover:text-[var(--brand-seo)] transition-colors">2026 Helpful Content Update</Link> to keep you ahead.</span>,
             highlight: "Always Improving",
             color: "#f59e0b",
         },

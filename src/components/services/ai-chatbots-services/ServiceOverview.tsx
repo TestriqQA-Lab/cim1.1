@@ -8,7 +8,7 @@ export default function ServiceOverview() {
         {
             icon: Bot,
             title: "Automation",
-            description: <span>Automate repetitive customer interactions and reduce manual workload by up to 80% with <Link href="/services/ai-workflows-automations-services" className="hover:text-blue-500">intelligent workflows</Link>.</span>,
+            description: <span>Automate repetitive customer interactions and reduce manual workload by up to 80% with <Link href="/services/ai-workflows-automations-services" className="hover:text-blue-500 transition-colors">intelligent workflows</Link>.</span>,
             gradient: "from-cyan-500 via-blue-500 to-indigo-600",
             iconBg: "bg-blue-500/10",
             iconColor: "text-blue-500",
@@ -157,12 +157,12 @@ export default function ServiceOverview() {
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                             What Are <span style={{ color: "var(--brand-chatbot)" }}>AI-Powered Chatbots</span>?
                         </h2>
-                        <div className="max-w-6xl mx-auto space-y-4">
+                        <div className="max-w-6xl mx-auto space-y-4 relative z-10">
                             <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                Gone are the days of clunky, rule-based responses. Our AI Chatbot Services leverage state-of-the-art Generative AI and Machine Learning (ML) in Chatbots to create dynamic, human-like experiences. Unlike traditional scripts, our bots utilize Retrieval-Augmented Generation (RAG) to pull real-time, accurate data from your internal knowledge base, ensuring every answer is precise, trustworthy, and compliant with 2026 E-E-A-T guidelines.
+                                Gone are the days of clunky, rule-based responses. Our AI Chatbot Services leverage state-of-the-art Generative AI and Machine Learning (ML) in Chatbots to create dynamic, human-like experiences. Unlike traditional scripts, our bots utilize <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-chatbot)] transition-colors">Retrieval-Augmented Generation (RAG)</Link> to pull real-time, accurate data from your internal knowledge base, ensuring every answer is precise, trustworthy, and compliant with 2026 E-E-A-T guidelines.
                             </p>
                             <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                From Sentiment Analysis for <Link href="/services/additional-support-services" className="hover:text-[var(--brand-chatbot)]">Customer Support</Link> to Intent Detection and Classification, our intelligent agents adapt to user behavior in real-time. We help you move beyond simple automation to true Omnichannel Customer Experience (CX) excellence.
+                                From Sentiment Analysis for <Link href="/services/additional-support-services" className="hover:text-[var(--brand-chatbot)] transition-colors">Customer Support</Link> to Intent Detection and Classification, our intelligent agents adapt to user behavior in real-time. We help you move beyond simple automation to true <Link href="/services/social-media-marketing-services" className="hover:text-[var(--brand-chatbot)] transition-colors">Omnichannel Customer Experience (CX)</Link> excellence.
                             </p>
                         </div>
                     </div>

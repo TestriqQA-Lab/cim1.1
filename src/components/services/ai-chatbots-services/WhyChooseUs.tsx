@@ -1,13 +1,14 @@
 "use client";
 
 import { TrendingUp, MessageSquare, Languages, Shield, Sparkles, ChevronRight, Check } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const benefits = [
         {
             icon: TrendingUp,
             title: "Proven Track Record",
-            description: "300% Traffic Growth via SEO-optimized conversational flows. 95% Bug-Free Apps delivered for 50+ Fintech & Healthcare clients.",
+            description: <span>300% Traffic Growth via <Link href="/services/seo-services" className="hover:text-violet-500 transition-colors">SEO-optimized</Link> conversational flows. 95% Bug-Free Apps delivered for 50+ Fintech & Healthcare clients.</span>,
             gradient: "from-violet-500 via-purple-500 to-indigo-500",
             iconBg: "bg-violet-500/10",
             iconColor: "text-violet-500",
@@ -27,7 +28,7 @@ export default function WhyChooseUs() {
         {
             icon: Languages,
             title: "Global Reach, Local Feel",
-            description: "We build Multilingual AI chatbots that speak your customers' language-literally. Target audiences in the US, EU, India, and APAC with seamless Natural Language Understanding (NLU) in 100+ languages.",
+            description: <span>We build Multilingual AI chatbots that speak your customers' language-literally. Target audiences in the US, EU, India, and APAC with seamless <Link href="/services/ai-workflows-automations-services" className="hover:text-emerald-500 transition-colors">Natural Language Understanding (NLU)</Link> in 100+ languages.</span>,
             gradient: "from-emerald-500 via-green-500 to-teal-500",
             iconBg: "bg-emerald-500/10",
             iconColor: "text-emerald-500",

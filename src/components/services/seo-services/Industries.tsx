@@ -6,6 +6,7 @@ import {
     TrendingUp, Zap, Package, MapPin, Globe2, Target, Star, Sparkles,
     BarChart3, Award, ChevronRight
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Industries() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -16,7 +17,7 @@ export default function Industries() {
             decorIcon: BarChart3,
             accentIcon: Target,
             title: "Organic SEO for SaaS Companies",
-            description: "We understand B2B cycles. We reduce CAC and increase LTV by targeting decision-makers searching for software solutions.",
+            description: <span>We understand B2B cycles. We reduce CAC and increase LTV by targeting decision-makers searching for <Link href="/services/web-design-development/saas-application-development" className="hover:text-white transition-colors">software solutions</Link>.</span>,
             color: "#14b8a6",
             gradient: "from-emerald-500 to-teal-600",
             stats: "High LTV",
@@ -25,7 +26,7 @@ export default function Industries() {
             icon: ShoppingCart,
             decorIcon: Package,
             accentIcon: Star,
-            title: "Organic Growth SEO for Ecommerce",
+            title: <span><Link href="/services/seo-services/ecommerce-seo-services" className="hover:text-white transition-colors">Organic Growth SEO for Ecommerce</Link></span>,
             description: "Scale your store. We optimize thousands of SKUs programmatically to capture traffic from every product search.",
             color: "#06b6d4",
             gradient: "from-teal-500 to-cyan-600",

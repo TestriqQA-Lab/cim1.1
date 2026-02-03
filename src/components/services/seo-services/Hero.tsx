@@ -108,7 +108,7 @@ export default function Hero() {
                             Scale Your Business with <span style={{ color: "var(--brand-seo)", fontWeight: 700 }}>Data-Driven Organic Search Strategies</span> Designed for the 2026 Algorithms.
                         </p>
                         <p className="text-base md:text-lg mb-8" style={{ color: "var(--secondary-text)" }}>
-                            Stop relying on paid ads. As a premier global SEO Agency, we Engineer long-term search dominance. Our Organic SEO Services combine technical precision, authority-building content, and white-hat strategies to deliver consistent leads and revenue. Whether you are a startup needing a sustainable organic traffic growth strategy or an enterprise seeking global dominance, our 30+ years of expertise ensures you own your niche.
+                            Stop relying on paid ads. As a premier global SEO Agency, we Engineer long-term search dominance. Our Organic SEO Services combine <Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-seo)] transition-colors">technical precision</Link>, <Link href="/services/seo-services/seo-content-writing-services" className="hover:text-[var(--brand-seo)] transition-colors">authority-building content</Link>, and <Link href="/services/seo-services/link-building" className="hover:text-[var(--brand-seo)] transition-colors">white-hat strategies</Link> to deliver consistent leads and revenue. Whether you are a startup needing a sustainable organic traffic growth strategy or an enterprise seeking global dominance, our 30+ years of expertise ensures you own your niche.
                         </p>
 
                         {/* Feature Highlights */}

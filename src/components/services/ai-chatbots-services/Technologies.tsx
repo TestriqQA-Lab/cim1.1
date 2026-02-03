@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Brain, Zap, Lock, BarChart3 } from "lucide-react";
+import Link from "next/link";
 
 export default function Technologies() {
     const capabilities = [
@@ -14,7 +15,7 @@ export default function Technologies() {
         {
             icon: Zap,
             title: "Retrieval-Augmented Generation (RAG)",
-            description: "Eliminate hallucinations. Our RAG pipelines connect your chatbot to your live internal data sources.",
+            description: <span>Eliminate hallucinations. Our <Link href="/services/ai-workflows-automations-services" className="hover:text-yellow-500 transition-colors">RAG pipelines</Link> connect your chatbot to your live internal data sources.</span>,
             details: ["Vector Databases", "Semantic Search", "Real-time sync", "Source citation"],
         },
         {
@@ -26,7 +27,7 @@ export default function Technologies() {
         {
             icon: BarChart3,
             title: "Predictive Analytics Dashboard",
-            description: "Go beyond basic metrics. Track user sentiment, intent trends, and conversation drop-off points.",
+            description: <span>Go beyond basic metrics. Track <Link href="/services/performance-marketing" className="hover:text-pink-500 transition-colors">user sentiment</Link>, intent trends, and conversation drop-off points.</span>,
             details: ["Sentiment tracking", "Intent heatmaps", "Conversion attribution", "Custom reports"],
         },
     ];

@@ -8,7 +8,7 @@ export default function ServiceOverview() {
         {
             icon: TrendingUp,
             title: "Sustainable Traffic",
-            description: <span>Unlike PPC, <Link href="/services/seo-services" className="hover:text-[var(--brand-seo)]">Organic SEO services</Link> build an evergreen funnel. We focus on ranking for high-intent keywords that drive qualified traffic 24/7 without the recurring cost per click.</span>,
+            description: <span>Unlike PPC, Organic SEO services build an evergreen funnel. We focus on ranking for high-intent keywords that drive qualified traffic 24/7 without the recurring cost per click.</span>,
         },
         {
             icon: Users,

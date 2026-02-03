@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { MessageSquare, ChevronDown } from 'lucide-react';
+import Link from "next/link";
 
 export default function FAQ() {
     const [faqOpen, setFaqOpen] = useState<number | null>(null);
@@ -9,11 +10,11 @@ export default function FAQ() {
     const faqs = [
         {
             q: "What are the benefits of using AI chatbots for business?",
-            a: "AI Chatbot Services maximize efficiency by handling high volumes of queries 24/7 without human fatigue. Key benefits include a 40-60% reduction in customer support costs, increased lead conversion through instant engagement, and scalable multilingual support. An ROI-driven AI chatbot implementation typically pays for itself within 6 months.",
+            a: <span>AI Chatbot Services maximize efficiency by handling high volumes of queries 24/7 without human fatigue. Key benefits include a 40-60% reduction in <Link href="/services/additional-support-services" className="hover:text-[var(--brand-chatbot)] transition-colors">customer support costs</Link>, increased lead conversion through instant engagement, and scalable multilingual support. An ROI-driven AI chatbot implementation typically pays for itself within 6 months.</span>,
         },
         {
             q: "How do AI-powered chatbots improve customer service?",
-            a: "AI chatbots improve customer service by providing instant, zero-latency responses to inquiries, resolving common issues without wait times. Using Sentiment Analysis for Customer Support, they can detect frustrated users and escalate them to human agents immediately (HITL), ensuring a high-quality Omnichannel Customer Experience (CX).",
+            a: <span>AI chatbots improve customer service by providing instant, zero-latency responses to inquiries, resolving common issues without wait times. Using <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-chatbot)] transition-colors">Sentiment Analysis</Link> for Customer Support, they can detect frustrated users and escalate them to human agents immediately (HITL), ensuring a high-quality Omnichannel Customer Experience (CX).</span>,
         },
         {
             q: "What is the difference between a rule-based chatbot and an AI chatbot?",
@@ -25,7 +26,7 @@ export default function FAQ() {
         },
         {
             q: "How do I choose the right AI chatbot for my company?",
-            a: "Look for an AI Chatbot Agency that prioritizes your business goals. If you need sales, choose a bot specialized in Automated lead qualification. For support, ensure it offers integration for Zendesk and Multilingual capabilities. Always check for E-E-A-T compliance and security certifications.",
+            a: <span>Look for an AI Chatbot Agency that prioritizes your business goals. If you need sales, choose a bot specialized in <Link href="/services/performance-marketing" className="hover:text-[var(--brand-chatbot)] transition-colors">Automated lead qualification</Link>. For support, ensure it offers integration for Zendesk and Multilingual capabilities. Always check for E-E-A-T compliance and security certifications.</span>,
         },
     ];
 

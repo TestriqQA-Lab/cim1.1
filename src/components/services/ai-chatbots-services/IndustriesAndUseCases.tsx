@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
     Scale,
     ShoppingBag,
@@ -34,7 +35,7 @@ export default function IndustriesAndUseCases() {
         {
             icon: Zap,
             title: "SaaS",
-            description: "Reduced churn by 15% via guided tours. Automate customer onboarding and support.",
+            description: <span>Reduced churn by 15% via <Link href="/services/web-design-development/saas-application-development" className="hover:text-[#4ECDC4] transition-colors">guided tours</Link>. Automate customer onboarding and support.</span>,
             benefits: ["Reduced churn", "Guided tours", "Automated onboarding"],
             accentColor: "#4ECDC4",
             secondaryIcon: Star,
@@ -50,7 +51,7 @@ export default function IndustriesAndUseCases() {
         {
             icon: ShoppingBag,
             title: "Retail",
-            description: "30% increase in average order value. Deliver real-time personalized shopping experiences.",
+            description: <span>30% increase in average order value. Deliver real-time <Link href="/services/web-design-development/shopify-development" className="hover:text-[#A78BFA] transition-colors">personalized shopping</Link> experiences.</span>,
             benefits: ["Increased AOV", "Personalized shopping", "Inventory checks"],
             accentColor: "#A78BFA",
             secondaryIcon: ShoppingCart,
@@ -66,7 +67,7 @@ export default function IndustriesAndUseCases() {
         {
             icon: Plane,
             title: "Travel",
-            description: "Instant changes & multilingual support. Automate booking and itinerary management.",
+            description: <span>Instant changes & multilingual support. Automate <Link href="/services/web-design-development" className="hover:text-[#10B981] transition-colors">booking</Link> and itinerary management.</span>,
             benefits: ["Instant changes", "Booking management", "24/7 Support"],
             accentColor: "#10B981",
             secondaryIcon: Globe,
@@ -91,7 +92,7 @@ export default function IndustriesAndUseCases() {
                         className="text-lg md:text-xl max-w-3xl mx-auto"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Intelligent AI chatbots adapt seamlessly across industries, delivering automation,
+                        <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-chatbot)] transition-colors">Intelligent AI chatbots</Link> adapt seamlessly across industries, delivering automation,
                         engagement, and real business impact.
                     </p>
                 </div>

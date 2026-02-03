@@ -7,6 +7,7 @@ import {
     BarChart3, TrendingUp, Eye, Activity, Zap,
     ChevronRight, Sparkles
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ToolsReporting() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -40,7 +41,7 @@ export default function ToolsReporting() {
             icon: Monitor,
             decorIcon: Eye,
             title: "Custom Data Studio Reports",
-            description: "Real-time ROI-focused organic SEO services reporting.",
+            description: <span>Real-time <Link href="/services/performance-marketing" className="hover:text-[var(--brand-seo)]">ROI-focused</Link> organic SEO services reporting.</span>,
             tools: [
                 { name: "Google Data Studio", logo: "/images/organic_growth_and_seo/google-data-studio-logo.webp" },
                 { name: "Tableau", logo: "/images/organic_growth_and_seo/tableau-logo.svg" },
@@ -52,7 +53,7 @@ export default function ToolsReporting() {
             icon: Layers,
             decorIcon: Zap,
             title: "Screaming Frog",
-            description: "Deep technical crawls.",
+            description: <span><Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-seo)]">Deep technical crawls</Link>.</span>,
             tools: [
                 { name: "Screaming Frog", logo: "/images/organic_growth_and_seo/screaming-frog-logo.png" },
                 { name: "Moz", logo: "/images/organic_growth_and_seo/Moz_logo.png" },

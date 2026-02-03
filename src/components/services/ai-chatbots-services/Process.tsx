@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
     CheckCircle2,
     Search,
@@ -45,7 +46,7 @@ export default function Process() {
         {
             number: "04",
             title: "Integration",
-            description: "We connect the chatbot to your Tech Stack-CRM, ERP, Helpdesk, and eCommerce platforms-for real-time data sync.",
+            description: <span>We connect the chatbot to your <Link href="/services/web-design-development" className="hover:text-blue-500 transition-colors">Tech Stack</Link>-CRM, ERP, Helpdesk, and eCommerce platforms-for real-time data sync.</span>,
             icon: Plug,
             color: "#F59E0B",
         },

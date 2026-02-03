@@ -115,7 +115,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            As a premier AI Chatbot Agency, we specialize in <span style={{ color: "var(--brand-chatbot)", fontWeight: 700 }}>Custom AI Chatbot Development</span> that drives real ROI. Our Enterprise AI Chatbot Platform solutions don't just answer questions-they understand context, gauge sentiment, and personalize every interaction using advanced Large Language Models (LLMs) and Natural Language Processing (NLP).
+                            As a premier AI Chatbot Agency, we specialize in <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-chatbot)] transition-colors">Custom AI Chatbot Development</Link> that drives real <Link href="/services/performance-marketing" className="hover:text-[var(--brand-chatbot)] transition-colors">ROI</Link>. Our Enterprise AI Chatbot Platform solutions don't just answer questions-they understand context, gauge sentiment, and personalize every interaction using advanced Large Language Models (LLMs) and <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-chatbot)] transition-colors">Natural Language Processing (NLP)</Link>.
                         </p>
 
                         {/* Feature Highlights */}

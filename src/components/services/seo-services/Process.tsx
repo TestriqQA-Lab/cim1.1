@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ListChecks, Search, FileText, Code, Shield, TrendingUp, ArrowRight, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -10,7 +11,7 @@ export default function Process() {
         {
             icon: ListChecks,
             title: "Organic SEO Audit and Growth Roadmap",
-            description: "We start with a deep dive. Our 100+ point audit covers technical health, content gaps, and off-page factors to build a custom Organic SEO audit and growth roadmap.",
+            description: <span>We start with a deep dive. Our 100+ point audit covers technical health, content gaps, and off-page factors to build a custom <Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-seo)] transition-colors">Organic SEO audit</Link> and growth roadmap.</span>,
             details: ["Site health analysis", "Competitor research", "Keyword gap analysis", "Content audit"],
         },
         {
@@ -22,19 +23,19 @@ export default function Process() {
         {
             icon: Code,
             title: "Technical Fixes & Enhancements",
-            description: "We lay the rails. Our devs fix broken links, improve speed, and implement structured data to ensure Google can crawl and index your site without friction.",
+            description: <span>We lay the rails. Our devs fix broken links, improve speed, and implement <Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-seo)] transition-colors">structured data</Link> to ensure Google can crawl and index your site without friction.</span>,
             details: ["Core Web Vitals", "Mobile optimization", "Schema markup", "Crawl optimization"],
         },
         {
             icon: FileText,
             title: "Content Optimization & Creation",
-            description: "We craft content that ranks. Whether it's Organic SEO for startups or established brands, we produce \"Helpful Content\" that satisfies user intent and earns backlinks.",
+            description: <span>We craft content that ranks. Whether it's Organic SEO for startups or established brands, we produce <Link href="/services/seo-services/seo-content-writing-services" className="hover:text-[var(--brand-seo)] transition-colors">"Helpful Content"</Link> that satisfies user intent and earns backlinks.</span>,
             details: ["Content planning", "On-page optimization", "E-A-T signals", "Content refresh"],
         },
         {
             icon: Shield,
             title: "Authority Building",
-            description: "We build your reputation. Through strategic partnerships and outreach, we earn the links that signal authority to Google's algorithms.",
+            description: <span>We build your reputation. Through strategic partnerships and outreach, we earn the <Link href="/services/seo-services/link-building" className="hover:text-[var(--brand-seo)] transition-colors">links</Link> that signal authority to Google's algorithms.</span>,
             details: ["Outreach campaigns", "Guest posting", "Digital PR", "Broken link building"],
         },
         {

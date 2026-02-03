@@ -9,7 +9,7 @@ export default function TypesOfChatbots() {
         {
             icon: ShoppingCart,
             title: "AI Chatbot for Ecommerce Sales and Support",
-            description: "Rocket your conversion rates with a Shopify-integrated AI chatbot. Automatically recommend products, recover abandoned carts, and track orders 24/7.",
+            description: <span>Rocket your conversion rates with a <Link href="/services/web-design-development/shopify-development" className="hover:text-blue-500 transition-colors">Shopify-integrated AI chatbot</Link>. Automatically recommend products, recover abandoned carts, and track orders 24/7.</span>,
             features: ["Visual product search", "Personalized upsells", "Order tracking", "Cart recovery"],
             gradient: "from-blue-600 to-cyan-500",
             iconBg: "bg-blue-500/10",
@@ -20,7 +20,7 @@ export default function TypesOfChatbots() {
         {
             icon: Users,
             title: "Conversational AI for B2B Lead Generation",
-            description: "Automate your top-of-funnel. Our Automated lead qualification with AI chatbots engages visitors instantly, scores leads based on behavior, and syncs directly with your CRM.",
+            description: <span>Automate your top-of-funnel. Our <Link href="/services/performance-marketing" className="hover:text-purple-500 transition-colors">Automated lead qualification</Link> with AI chatbots engages visitors instantly, scores leads based on behavior, and syncs directly with your CRM.</span>,
             features: ["Salesforce integration", "Lead scoring", "Instant engagement", "CRM sync"],
             gradient: "from-purple-600 to-pink-500",
             iconBg: "bg-purple-500/10",
@@ -31,7 +31,7 @@ export default function TypesOfChatbots() {
         {
             icon: Stethoscope,
             title: "AI Chatbot for Healthcare Patient Engagement",
-            description: "HIPAA-compliant assistants that handle Automated appointment booking and symptom triage, freeing up your medical staff to focus on care.",
+            description: <span>HIPAA-compliant assistants that handle <Link href="/services/additional-support-services" className="hover:text-emerald-500 transition-colors">Automated appointment booking</Link> and symptom triage, freeing up your medical staff to focus on care.</span>,
             features: ["Secure patient intake", "Medical terminology NLU", "Appointment booking", "Symptom triage"],
             gradient: "from-emerald-600 to-teal-500",
             iconBg: "bg-emerald-500/10",
@@ -65,7 +65,7 @@ export default function TypesOfChatbots() {
             icon: null,
             customIcon: "/images/ai_powered_chatbots_logos/WhatsApp-logo.webp",
             title: "AI Chatbot for WhatsApp and Social Media Automation",
-            description: "Meet your customers where they are. We deploy AI chatbot for WhatsApp, Messenger, and Instagram to automate engagement and broadcast updates.",
+            description: <span>Meet your customers where they are. We deploy <Link href="/services/social-media-marketing-services" className="hover:text-green-500 transition-colors">AI chatbot for WhatsApp</Link>, Messenger, and Instagram to automate engagement and broadcast updates.</span>,
             features: ["Multimedia support", "Broadcast analytics", "Instagram automation", "Messenger bots"],
             gradient: "from-green-600 to-emerald-500",
             iconBg: "bg-green-500/10",
