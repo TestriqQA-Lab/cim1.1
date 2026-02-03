@@ -120,8 +120,8 @@ export const authorPostsQuery = defineQuery(`
 `);
 
 export const categoriesWithPostCountQuery = defineQuery(`
-  *[_type == "category"] | order(title asc) {
-    "name": title,
+  *[_type == "category"] | order(name asc) {
+    name,
     "slug": slug.current,
     "count": count(*[_type == "post" && references(^._id)])
   }
