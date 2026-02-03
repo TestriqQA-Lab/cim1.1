@@ -121,7 +121,7 @@ export default function AppTypes() {
                         <span style={{ color: "var(--brand-purple)" }}>Types</span> of Mobile App Development
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We specialize in all types of mobile app development, from native platforms to cross-platform solutions. Choose the approach that best fits your business needs.
+                        We specialize in all types of mobile app development, from <Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">native platforms</Link> to <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">cross-platform solutions</Link>. Choose the approach that best fits your business needs.
                     </p>
                 </div>
 

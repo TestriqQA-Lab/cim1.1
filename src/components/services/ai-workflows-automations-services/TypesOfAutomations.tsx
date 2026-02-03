@@ -7,7 +7,7 @@ export default function TypesOfAutomations() {
     const automationTypes = [
         {
             icon: Workflow,
-            title: "Business Process Automation (BPA)",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:text-[var(--brand-orange)] transition-colors">Business Process Automation (BPA)</Link>,
             description: "Revolutionize your back office. We automate end-to-end cycles - from procurement to payroll - reducing cycle times by up to 70%.",
             features: ["Workflow Orchestration", "Multi-step Automation", "Conditional Logic", "Error Handling"],
             gradient: "from-blue-600 to-cyan-500",
@@ -17,7 +17,7 @@ export default function TypesOfAutomations() {
         },
         {
             icon: Bot,
-            title: "AI-Powered Chatbots & Assistants",
+            title: <Link href="/services/ai-chatbots-services" className="hover:text-[var(--brand-orange)] transition-colors">AI-Powered Chatbots & Assistants</Link>,
             description: "Deploy next-gen support. Unlike basic bots, our agents understand context, sentiment, and intent, resolving 80% of queries instantly.",
             features: ["Natural Language Processing", "Multi-language Support", "Context Awareness", "Escalation Handling"],
             gradient: "from-purple-600 to-pink-500",
@@ -28,7 +28,7 @@ export default function TypesOfAutomations() {
         {
             icon: BarChart3,
             title: "Data & Reporting Automation",
-            description: "Stop copy-pasting Excel sheets. We create pipelines that pull from 50+ sources to build live, self-updating BI dashboards.",
+            description: <span>Stop copy-pasting Excel sheets. We create pipelines that pull from 50+ sources to build live, self-updating <Link href="/blog/ai-workflows-automating-business" className="hover:text-emerald-500 underline decoration-dotted transition-colors">BI dashboards</Link>.</span>,
             features: ["Data Extraction", "Real-time Dashboards", "Scheduled Reports", "Data Validation"],
             gradient: "from-emerald-600 to-teal-500",
             iconBg: "bg-emerald-500/10",
@@ -38,7 +38,7 @@ export default function TypesOfAutomations() {
         {
             icon: TrendingUp,
             title: "Content & Marketing Automation",
-            description: "Multiply your reach. Automatically turn one webinar into blog posts, LinkedIn carousels, and tweets with AI-powered LinkedIn research and outreach automation.",
+            description: <span>Multiply your reach. Automatically turn one webinar into blog posts, <Link href="/services/social-media-marketing-services/linkedin-marketing-services" className="hover:text-rose-500 underline decoration-dotted transition-colors">LinkedIn carousels</Link>, and tweets with AI-powered <Link href="/services/social-media-marketing-services/linkedin-marketing-services" className="hover:text-rose-500 underline decoration-dotted transition-colors">LinkedIn marketing</Link> and outreach automation using proven <Link href="/blog/content-marketing-strategies-work" className="hover:text-rose-500 underline decoration-dotted transition-colors">Content Repurposing</Link> strategies.</span>,
             features: ["Content Repurposing", "Social Media Scheduling", "SEO Optimization", "Sentiment Analysis"],
             gradient: "from-rose-600 to-pink-500",
             iconBg: "bg-rose-500/10",
@@ -47,7 +47,7 @@ export default function TypesOfAutomations() {
         },
         {
             icon: FileText,
-            title: "Document Processing & OCR",
+            title: <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-orange)] transition-colors">Document Processing & OCR</Link>,
             description: "Unlock trapped data. Our Topical Authority & Entity Extraction systems read invoices, contracts, and IDs with 99% accuracy.",
             features: ["OCR Technology", "Document Classification", "Data Extraction", "Compliance Validation"],
             gradient: "from-indigo-600 to-blue-500",
@@ -58,7 +58,7 @@ export default function TypesOfAutomations() {
         {
             icon: Sparkles,
             title: "Custom AI Workflow Solutions",
-            description: "Need something unique? We build bespoke Custom AI agents for business operations tailored to your exact edge cases.",
+            description: <span>Need something unique? We build bespoke <Link href="/services/ai-chatbots-services" className="hover:text-violet-500 underline decoration-dotted transition-colors">Custom AI agents</Link> for business operations tailored to your exact edge cases.</span>,
             features: ["Custom Development", "API Integrations", "Predictive Models", "Scalable Architecture"],
             gradient: "from-violet-600 to-purple-500",
             iconBg: "bg-violet-500/10",

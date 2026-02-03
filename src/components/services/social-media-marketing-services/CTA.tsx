@@ -78,7 +78,7 @@ export default function CTA() {
 
                         {/* Description */}
                         <p className="text-base md:text-xl max-w-3xl mx-auto mb-12" style={{ color: "var(--secondary-text)" }}>
-                            Don't let your competitors capture your audience. Partner with the <span style={{ fontWeight: 700, color: "var(--brand-teal)" }}>Social Media Marketing Agency</span> that delivers measurable results. Contact us today to discuss your <span style={{ fontWeight: 700, color: "var(--brand-teal)" }}>Social Media Marketing</span> needs and receive a personalized strategy.
+                            Don't let your competitors capture your audience. Partner with the <span style={{ fontWeight: 700, color: "var(--brand-teal)" }}>Social Media Marketing Agency</span> that delivers measurable results. Contact us today to discuss your <span style={{ fontWeight: 700, color: "var(--brand-teal)" }}>Social Media Marketing</span> needs and receive a <Link href="/blog/social-media-strategy-building-brand" className="hover:text-[var(--brand-teal)] hover:underline transition-colors" style={{ fontWeight: 700 }}>personalized strategy</Link>.
                         </p>
 
                         {/* CTA Buttons */}

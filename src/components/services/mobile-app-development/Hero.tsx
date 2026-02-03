@@ -116,7 +116,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
-                            As a <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>premier mobile app development company</span> with <span style={{ color: "var(--foreground)", fontWeight: 700 }}>12+ years of proven expertise</span>, we craft custom mobile app development solutions that transform businesses globally. Our award-winning team has delivered <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>300+ high-performance mobile applications</span> across iOS, Android, and cross-platform ecosystems.
+                            As a <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>premier mobile app development company</span> with <span style={{ color: "var(--foreground)", fontWeight: 700 }}>12+ years of proven expertise</span>, we craft <span style={{ color: "var(--foreground)" }}>custom mobile app development solutions</span> that transform businesses globally. Our award-winning team has delivered <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>300+ high-performance mobile applications</span> across <Link href="/services/mobile-app-development/ios-app-development-company" className="hover:underline transition-colors">iOS</Link>, <Link href="/services/mobile-app-development/android-app-development-company" className="hover:underline transition-colors">Android</Link>, and <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:underline transition-colors">cross-platform</Link> ecosystems.
                         </p>
 
                         {/* Feature Highlights */}
@@ -161,7 +161,7 @@ export default function Hero() {
                                     Scalable
                                 </span>
                             </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
+                            <Link href="/services/mobile-app-development/enterprise-application-development-services" className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, var(--brand-purple) 8%, transparent)",
                                 }}
@@ -170,7 +170,7 @@ export default function Hero() {
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
                                     Enterprise Secure
                                 </span>
-                            </div>
+                            </Link>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, var(--brand-purple) 8%, transparent)",

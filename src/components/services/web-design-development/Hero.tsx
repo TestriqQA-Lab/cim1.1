@@ -117,10 +117,10 @@ export default function Hero() {
                         {/* Tagline */}
                         <div className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
                             <p>
-                                As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span> with 15+ years of proven expertise, we deliver <span className="text-[var(--brand-teal)] font-bold">custom website development</span> solutions that drive measurable ROI.
+                                As a premier <Link href="/services/web-design-development" className="text-[var(--brand-blue)] font-bold hover:underline transition-colors">web development company</Link> with 15+ years of proven expertise, we deliver <Link href="/services/web-design-development/business-corporate" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">custom website development</Link> solutions that drive measurable ROI.
                             </p>
                             <p className="text-base md:text-lg">
-                                Our professional web design agency has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue)] font-bold">300% traffic growth</span> and 20% conversion rate improvements.
+                                Our <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">professional web design agency</Link> has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue)] font-bold">300% traffic growth</span> and 20% conversion rate improvements.
                             </p>
                         </div>
 
@@ -141,7 +141,21 @@ export default function Hero() {
                                 >
                                     <item.icon className="w-4 h-4 flex-shrink-0 text-[var(--brand-blue)]" />
                                     <span className="text-xs font-bold text-[var(--foreground)]">
-                                        {item.text}
+                                        {item.text === "Responsive Design" ? (
+                                            <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
+                                                {item.text}
+                                            </Link>
+                                        ) : item.text === "Global SEO" ? (
+                                            <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
+                                                {item.text}
+                                            </Link>
+                                        ) : item.text === "Enterprise Security" ? (
+                                            <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
+                                                {item.text}
+                                            </Link>
+                                        ) : (
+                                            item.text
+                                        )}
                                     </span>
                                 </div>
                             ))}
@@ -189,18 +203,6 @@ export default function Hero() {
                             >
                                 Get Your Free Website Audit
                                 <ArrowRight className="w-5 h-5" />
-                            </Link>
-                            <Link
-                                href="/portfolio"
-                                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl text-base font-bold border transition-all duration-300"
-                                style={{
-                                    borderColor: "var(--border-color)",
-                                    color: "var(--foreground)",
-                                }}
-                                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")}
-                                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
-                            >
-                                View Our Portfolio
                             </Link>
                         </div>
                     </div>
@@ -252,7 +254,9 @@ export default function Hero() {
                                         color: "var(--brand-blue)",
                                     }}
                                 >
-                                    React & Next.js
+                                    <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
+                                        React & Next.js
+                                    </Link>
                                 </span>
                                 <span
                                     className="px-3 py-1 rounded-full text-xs font-semibold"
@@ -261,7 +265,9 @@ export default function Hero() {
                                         color: "var(--brand-blue)",
                                     }}
                                 >
-                                    Tailwind CSS
+                                    <Link href="/blog/future-web-development-nextjs" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
+                                        Tailwind CSS
+                                    </Link>
                                 </span>
                                 <span
                                     className="px-3 py-1 rounded-full text-xs font-semibold"
@@ -270,7 +276,9 @@ export default function Hero() {
                                         color: "var(--brand-blue)",
                                     }}
                                 >
-                                    SEO Optimized
+                                    <Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
+                                        SEO Optimized
+                                    </Link>
                                 </span>
                                 <span
                                     className="px-3 py-1 rounded-full text-xs font-semibold"
@@ -279,7 +287,9 @@ export default function Hero() {
                                         color: "var(--brand-blue)",
                                     }}
                                 >
-                                    Mobile Responsive
+                                    <Link href="/services/mobile-app-development" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
+                                        Mobile Responsive
+                                    </Link>
                                 </span>
                             </div>
                         </div>

@@ -1,13 +1,14 @@
 "use client";
 
 import { Sparkles, TrendingUp, Target, BarChart3, Users, Zap, Award, Shield } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const benefits = [
         {
             icon: Target,
             title: "Platform-Specific Strategies",
-            description: "We don't use a one-size-fits-all approach. Our experts develop unique strategies tailored to the nuances of each platform-from LinkedIn B2B networking to TikTok viral trends-maximizing your reach and impact.",
+            description: <>We don't use a one-size-fits-all approach. Our experts develop unique strategies tailored to the nuances of each platform-from <Link href="/services/social-media-marketing-services/linkedin-marketing-services" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">LinkedIn B2B networking</Link> to TikTok viral trends-maximizing your reach and impact.</>,
             color: "var(--brand-teal)",
             gradient: "linear-gradient(135deg, var(--brand-teal), var(--brand-cyan))",
         },
@@ -21,14 +22,14 @@ export default function WhyChooseUs() {
         {
             icon: Sparkles,
             title: "Consistent Branding",
-            description: "We ensure your voice, visuals, and values are perfectly aligned across all channels, reinforcing your brand identity and building trust with our expert brand awareness & engagement tactics.",
+            description: <>We ensure your voice, visuals, and values are perfectly aligned across all channels, reinforcing your brand identity and building trust with our expert <Link href="/services/brand-identity-design" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">brand awareness & engagement</Link> tactics.</>,
             color: "var(--brand-cyan)",
             gradient: "linear-gradient(135deg, var(--brand-cyan), var(--brand-teal))",
         },
         {
             icon: TrendingUp,
             title: "Growth-Focused Execution",
-            description: "Our focus is always on your bottom line. We execute ROI-driven social media marketing campaigns designed to scale your business and deliver a strong return on investment.",
+            description: <>Our focus is always on your bottom line. We execute <Link href="/services/performance-marketing" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">ROI-driven social media marketing campaigns</Link> designed to scale your business and deliver a strong return on investment.</>,
             color: "var(--brand-teal)",
             gradient: "linear-gradient(135deg, var(--brand-teal), var(--brand-cyan))",
         },

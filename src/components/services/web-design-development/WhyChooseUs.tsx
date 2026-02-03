@@ -14,19 +14,19 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Global SEO Foundation",
-            description: "Built-in technical SEO that has delivered 300% organic traffic growth for enterprise clients across 15+ countries.",
+            description: <>Built-in <Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">technical SEO</Link> that has delivered 300% <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">organic traffic growth</Link> for enterprise clients across 15+ countries.</>,
             color: "from-[#008ac1] to-[#bc3feb]",
         },
         {
             icon: Smartphone,
             title: "Responsive Web Design",
-            description: "Mobile-first approach ensuring flawless display on all devices. Average 20% conversion rate improvement post-launch.",
+            description: <>Mobile-first approach ensuring flawless display on all devices. Average <Link href="/services/performance-marketing" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">20% conversion rate</Link> improvement post-launch by using <Link href="/services/web-design-development" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Responsive Web Design</Link>.</>,
             color: "from-[#00efd6] to-[#00b5ca]",
         },
         {
             icon: Lock,
             title: "Enterprise-Grade Security",
-            description: "Advanced protocols and AWS-secured architecture. 95% bug-free delivery on first deployment for peace of mind.",
+            description: <>Advanced protocols and AWS-secured architecture. <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Enterprise-Grade Security</Link> ensuring 95% bug-free delivery on first deployment for peace of mind.</>,
             color: "from-[#bc3feb] to-[#fab900]",
         },
         {
@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
         {
             icon: Accessibility,
             title: "ROI-Driven UX Design",
-            description: "Data-backed UI/UX focused on business value. Our sites have increased online leads by up to 425% for our clients.",
+            description: <>Data-backed <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">UI/UX</Link> focused on business value. Our sites have increased <Link href="/services/performance-marketing" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">online leads</Link> by up to 425% for our clients.</>,
             color: "from-[#00efd6] to-[#bc3feb]",
         },
     ];
@@ -256,7 +256,7 @@ export default function WhyChooseUs() {
                                 Transformation Success Story
                             </h3>
                             <blockquote className="text-xl md:text-2xl italic leading-relaxed mb-8 text-[var(--secondary-text)]">
-                                &quot;This <span className="text-[var(--brand-blue)] font-bold">web design agency</span> increased our online leads by <span className="text-[var(--brand-teal)] font-bold">425% in 6 months</span> through their custom web development approach. Their responsive web design services transformed our mobile conversion rate from 1.2% to 8.7%.&quot;
+                                &quot;This <Link href="/services/web-design-development" className="text-[var(--brand-blue)] font-bold hover:underline transition-colors">web design agency</Link> increased our online leads by <span className="text-[var(--brand-teal)] font-bold">425% in 6 months</span> through their <Link href="/services/web-design-development/business-corporate" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">custom web development</Link> approach. Their <Link href="/services/web-design-development" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">responsive web design services</Link> transformed our mobile conversion rate from 1.2% to 8.7%.&quot;
                             </blockquote>
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[var(--brand-blue)] to-[var(--brand-teal)]" />

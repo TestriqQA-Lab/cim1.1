@@ -1,13 +1,14 @@
 "use client";
 
 import { Zap, Layers, TrendingUp, Link2, Shield, CheckCircle, Clock, Target, BarChart3, Lock } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Clock,
             title: "Faster Execution & ROI",
-            description: "Accelerate delivery times by 10x. Our AI automation for lead generation and sales ensures you never miss an opportunity, instantly qualifying and routing prospects while your team sleeps.",
+            description: <span>Accelerate delivery times by 10x. Our AI automation for <Link href="/services/performance-marketing/google-ads" className="hover:text-blue-500 underline decoration-dotted transition-colors">lead generation</Link> and sales ensures you never miss an opportunity, instantly qualifying and routing prospects while your team sleeps. Achieve faster <Link href="/services/performance-marketing" className="hover:text-blue-500 underline decoration-dotted transition-colors">ROI</Link> with precision targeting.</span>,
             gradient: "from-blue-500 to-cyan-500",
             iconBg: "bg-blue-500/10",
             iconColor: "text-blue-500",
@@ -24,7 +25,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Layers,
-            title: "Scalable Workflows",
+            title: <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-purple-500 transition-colors">Scalable Workflows</Link>,
             description: "Grow without the growing pains. Our architectures are designed for infinite scale, handling everything from AI-powered email triage and response automation for startups to complex ERP synchronizations for Fortune 500s.",
             gradient: "from-purple-500 to-indigo-500",
             iconBg: "bg-purple-500/10",
@@ -43,7 +44,7 @@ export default function WhyChooseUs() {
         {
             icon: Link2,
             title: "Seamless Integrations (API-First)",
-            description: "No silos. We specialize in AI workflow integration for CRM and ERP systems (Salesforce, HubSpot, SAP), ensuring your Large Language Model (LLM) Integration speaks fluent data with your existing stack.",
+            description: <span>No silos. We specialize in <Link href="/blog/ai-workflows-automating-business" className="hover:text-amber-500 underline decoration-dotted transition-colors">AI workflow integration</Link> for CRM and ERP systems (Salesforce, HubSpot, SAP), ensuring your Large Language Model (LLM) Integration speaks fluent data with your existing stack.</span>,
             gradient: "from-amber-500 to-orange-500",
             iconBg: "bg-amber-500/10",
             iconColor: "text-amber-500",
@@ -52,7 +53,7 @@ export default function WhyChooseUs() {
         {
             icon: Lock,
             title: "Enterprise-Grade Security",
-            description: "Sleep soundly. We deploy Secure Data Pipelines with end-to-end encryption, ensuring your Automated legal document analysis workflows and sensitive customer data remain compliant (GDPR/SOC2).",
+            description: <span>Sleep soundly. We deploy Secure Data Pipelines with end-to-end encryption, ensuring your Automated legal document analysis workflows and sensitive customer data remain compliant with <Link href="/blog/cybersecurity-small-businesses" className="hover:text-slate-600 underline decoration-dotted transition-colors">GDPR/SOC2</Link> standards.</span>,
             gradient: "from-slate-600 to-slate-800",
             iconBg: "bg-slate-500/10",
             iconColor: "text-slate-600",

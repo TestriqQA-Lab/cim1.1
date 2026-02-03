@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { MessageSquare, ChevronDown } from 'lucide-react';
+import Link from "next/link";
 
 export default function SocialMediaFAQ() {
     const [faqOpen, setFaqOpen] = useState<number | null>(null);
@@ -17,15 +18,15 @@ export default function SocialMediaFAQ() {
         },
         {
             q: "Which social media platforms are best for my business?",
-            a: "The best platforms depend on your target audience and industry. For B2B, LinkedIn marketing services are essential. For visual brands and ecommerce, Instagram and Pinterest are key. We conduct a thorough social media audit and analysis to recommend the most effective mix for you.",
+            a: <>The best platforms depend on your target audience and industry. For B2B, <Link href="/services/social-media-marketing-services/linkedin-marketing-services" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">LinkedIn marketing services</Link> are essential. For visual brands and ecommerce, Instagram and Pinterest are key. We conduct a thorough <Link href="/services/performance-marketing" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">social media audit and analysis</Link> to recommend the most effective mix for you.</>,
         },
         {
             q: "How do I measure the ROI of social media marketing?",
-            a: "We track specific Key Performance Indicators (KPIs) such as conversion rates, lead generation costs, and direct sales. Our social media reporting and analytics services provide transparent insights, showing you exactly how our efforts translate into revenue.",
+            a: <>We track specific Key Performance Indicators (KPIs) such as conversion rates, lead generation costs, and direct sales. Our <Link href="/services/performance-marketing" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">social media reporting and analytics services</Link> provide transparent insights, showing you exactly how our efforts translate into revenue.</>,
         },
         {
             q: "What is included in social media management services?",
-            a: "Our full-service social media marketing company packages typically include strategy development, content creation, community management, paid advertising, and monthly reporting. We also offer specialized add-ons like influencer marketing management services.",
+            a: <>Our full-service social media marketing company packages typically include strategy development, content creation, community management, paid advertising, and monthly reporting. We also offer specialized add-ons like <Link href="/services/social-media-marketing-services/instagram-marketing-services" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">influencer marketing management services</Link>.</>,
         },
     ];
 

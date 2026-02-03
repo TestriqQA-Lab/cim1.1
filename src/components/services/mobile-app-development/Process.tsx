@@ -2,6 +2,7 @@
 
 import { Lightbulb, Pencil, Code, TestTube, Rocket, Wrench, Sparkles } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const steps = [
@@ -13,14 +14,14 @@ export default function Process() {
         },
         {
             icon: Pencil,
-            title: "UI/UX Design (Week 3-5)",
+            title: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-purple)] transition-colors">UI/UX Design (Week 3-5)</Link>,
             description: "Low to high-fidelity wireframing, interactive prototypes in Figma/Adobe XD, user flow mapping, and accessibility audit. 35% higher engagement through conversion-focused design backed by 10,000+ hours A/B testing.",
             details: ["Wireframing", "Interactive Prototypes", "Design System", "WCAG 2.2 AA Compliance", "Usability Testing (5+ users)"]
         },
         {
             icon: Code,
             title: "Development & Coding (Week 6-16)",
-            description: "2-week agile sprints with backend API development, frontend implementation, third-party integrations, and DevOps CI/CD pipelines. 80%+ unit test coverage with code review for every PR.",
+            description: <span>2-week agile sprints with backend API development, frontend implementation, third-party integrations, and DevOps CI/CD pipelines. 80%+ unit test coverage with <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[var(--brand-purple)] transition-colors">code review for every PR</Link>.</span>,
             details: ["Sprint Planning", "Backend (Node.js/Python/.NET)", "Frontend (Swift/Kotlin/Flutter)", "API Integration", "Git Workflow (Gitflow)"]
         },
         {
@@ -32,7 +33,7 @@ export default function Process() {
         {
             icon: Rocket,
             title: "Deployment & Launch (Week 20-21)",
-            description: "App Store and Play Store submission with compliance docs, beta testing via TestFlight/Internal Track, and App Store Optimization. Average 40% increase in organic downloads with top 10 keyword rankings within 90 days.",
+            description: <span>App Store and Play Store submission with compliance docs, beta testing via TestFlight/Internal Track, and <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">App Store Optimization</Link>. Average 40% increase in organic downloads with top 10 keyword rankings within 90 days.</span>,
             details: ["App Store Submission", "ASO (Keyword Research)", "Beta Testing", "Screenshot Optimization", "Pre-Launch Marketing"]
         },
         {

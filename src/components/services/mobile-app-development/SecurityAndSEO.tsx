@@ -1,12 +1,13 @@
 "use client";
 
 import { Lock, Zap, Search, Shield, Server, Gauge, ShieldCheck, UserCheck, Store, Fingerprint, CheckCircle, Rocket } from "lucide-react";
+import Link from "next/link";
 
 export default function SecurityAndSEO() {
     const securityPractices = [
         {
             icon: Shield,
-            title: "Data Protection (AES-256, TLS 1.3)",
+            title: <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)] transition-colors">Data Protection (AES-256, TLS 1.3)</Link>,
             description: "End-to-end AES-256 encryption for data at rest, TLS 1.3 for data in transit, certificate pinning, and secure key storage in Keychain/KeyStore.",
             gradient: "from-[#667eea] to-[#764ba2]"
         },
@@ -33,8 +34,8 @@ export default function SecurityAndSEO() {
     const appStoreOptimization = [
         {
             icon: Search,
-            title: "ASO (120% Organic Increase)",
-            description: "Keyword research, competitor analysis, search volume data, and A/B tested descriptions. Average 120% increase in organic installs with top 10 rankings in 90 days.",
+            title: <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">ASO (120% Organic Increase)</Link>,
+            description: <span>Keyword research, competitor analysis, search volume data, and A/B tested descriptions. Average 120% increase in <Link href="/blog/mastering-seo-organic-growth" className="hover:text-[var(--brand-purple)] transition-colors">organic installs</Link> with top 10 rankings in 90 days.</span>,
             gradient: "from-[#fa709a] to-[#fee140]"
         },
         {

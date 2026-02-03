@@ -269,18 +269,18 @@ export default function Hero() {
                                 Why Choose Us?
                             </h2>
                             <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
-                                We combine data-driven strategies with creative storytelling to build meaningful connections and drive real business growth.
+                                We combine <Link href="/services/performance-marketing" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">data-driven strategies</Link> with creative storytelling to build meaningful connections and drive real business growth.
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                <span
-                                    className="px-3 py-1 rounded-full text-xs font-semibold"
+                                <Link href="/blog/content-marketing-strategies-work"
+                                    className="px-3 py-1 rounded-full text-xs font-semibold hover:bg-[color-mix(in srgb, var(--brand-teal) 25%, transparent)] transition-colors"
                                     style={{
                                         backgroundColor: "color-mix(in srgb, var(--brand-teal) 15%, transparent)",
                                         color: "var(--brand-teal)",
                                     }}
                                 >
                                     Content Strategy
-                                </span>
+                                </Link>
                                 <span
                                     className="px-3 py-1 rounded-full text-xs font-semibold"
                                     style={{
@@ -290,24 +290,24 @@ export default function Hero() {
                                 >
                                     Community Mgmt
                                 </span>
-                                <span
-                                    className="px-3 py-1 rounded-full text-xs font-semibold"
+                                <Link href="/services/performance-marketing"
+                                    className="px-3 py-1 rounded-full text-xs font-semibold hover:bg-[color-mix(in srgb, var(--brand-teal) 25%, transparent)] transition-colors"
                                     style={{
                                         backgroundColor: "color-mix(in srgb, var(--brand-teal) 15%, transparent)",
                                         color: "var(--brand-teal)",
                                     }}
                                 >
                                     Paid Ads
-                                </span>
-                                <span
-                                    className="px-3 py-1 rounded-full text-xs font-semibold"
+                                </Link>
+                                <Link href="/services/performance-marketing"
+                                    className="px-3 py-1 rounded-full text-xs font-semibold hover:bg-[color-mix(in srgb, var(--brand-teal) 25%, transparent)] transition-colors"
                                     style={{
                                         backgroundColor: "color-mix(in srgb, var(--brand-teal) 15%, transparent)",
                                         color: "var(--brand-teal)",
                                     }}
                                 >
                                     Analytics
-                                </span>
+                                </Link>
                             </div>
                         </div>
                     </div>

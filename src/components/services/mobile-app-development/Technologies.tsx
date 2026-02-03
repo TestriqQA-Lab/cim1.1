@@ -2,6 +2,7 @@
 
 import { Code2, Server, Database, Cloud } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Technologies() {
     const techCategories = [
@@ -11,9 +12,9 @@ export default function Technologies() {
             technologies: [
                 { name: "React Native", description: "Cross-platform development", logo: "/images/techstack_logos/react-logo.svg" },
                 { name: "Flutter", description: "High-performance apps", logo: "/images/techstack_logos/flutter-logo.svg" },
-                { name: "Swift", description: "Native iOS development", logo: "/images/techstack_logos/swift-logo.svg" },
-                { name: "Kotlin", description: "Native Android development", logo: "/images/techstack_logos/kotlin-logo.svg" },
-                { name: "Ionic", description: "Hybrid app development", logo: "/images/techstack_logos/ionic-logo.svg" },
+                { name: "Swift", description: <Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-purple)] transition-colors">Native iOS development</Link>, logo: "/images/techstack_logos/swift-logo.svg" },
+                { name: "Kotlin", description: <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-purple)] transition-colors">Native Android development</Link>, logo: "/images/techstack_logos/kotlin-logo.svg" },
+                { name: "Ionic", description: <Link href="/services/mobile-app-development/hybrid-app-development-services" className="hover:text-[var(--brand-purple)] transition-colors">Hybrid app development</Link>, logo: "/images/techstack_logos/ionic-logo.svg" },
                 { name: "Xamarin", description: "Cross-platform .NET", logo: "/images/techstack_logos/xamarin-logo.svg" }
             ]
         },
@@ -21,7 +22,7 @@ export default function Technologies() {
             icon: Server,
             title: "Backend & APIs",
             technologies: [
-                { name: "Node.js", description: "JavaScript runtime", logo: "/images/techstack_logos/nodejs-logo.svg" },
+                { name: "Node.js", description: <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[var(--brand-purple)] transition-colors">JavaScript runtime</Link>, logo: "/images/techstack_logos/nodejs-logo.svg" },
                 { name: "Python", description: "Fast backend development", logo: "/images/techstack_logos/python-logo.svg" },
                 { name: "Java", description: "Enterprise solutions", logo: "/images/techstack_logos/java-logo.svg" },
                 { name: "Firebase", description: "Real-time database", logo: "/images/techstack_logos/firebase-logo.svg" },

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { MessageSquare, ChevronDown } from 'lucide-react';
+import Link from "next/link";
 
 export default function FAQ() {
     const [faqOpen, setFaqOpen] = useState<number | null>(null);
@@ -9,7 +10,7 @@ export default function FAQ() {
     const faqs = [
         {
             q: "What are the benefits of AI workflow automation for businesses?",
-            a: "AI workflow automation drastically reduces operational costs, minimizes human error, and accelerates process execution. It allows your team to focus on high-value strategic work rather than repetitive data entry.",
+            a: <span><Link href="/blog/ai-workflows-automating-business" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">AI workflow automation</Link> drastically reduces operational costs, minimizes human error, and accelerates process execution. It allows your team to focus on high-value strategic work rather than repetitive data entry.</span>,
         },
         {
             q: "How do I implement AI into my existing business workflows?",
@@ -21,7 +22,7 @@ export default function FAQ() {
         },
         {
             q: "How much does it cost to hire an AI automation agency?",
-            a: "Costs vary based on complexity. A simple Low-code AI automation setup might start lower, while complex Enterprise AI Automation Solutions require custom development. We offer flexible engagement models focused on ROI.",
+            a: <span>Costs vary based on complexity. A simple Low-code AI automation setup might start lower, while complex Enterprise AI Automation Solutions require custom development from professional <Link href="/services/web-design-development" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">web development</Link> teams. We offer flexible engagement models focused on ROI.</span>,
         },
         {
             q: "What are the best AI workflow automation tools in 2026?",

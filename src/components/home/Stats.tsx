@@ -1,14 +1,15 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { TrendingUp, Users, Star } from 'lucide-react';
 
 export default function Stats() {
     const stats = [
-        { value: "320%", label: "Qualified Leads Increase", description: "Lead-gen overhaul, paid media optimization", icon: <TrendingUp className="w-5 h-5" /> },
-        { value: "300+", label: "Successful Projects", description: "Web, mobile, AI solutions globally", icon: <Users className="w-5 h-5" /> },
-        { value: "200+", label: "Hours Saved/Month", description: "AI automation & chatbot implementations", icon: <Star className="w-5 h-5" /> },
-        { value: "3x", label: "Organic Growth", description: "SEO & content strategy in 6 months", icon: <TrendingUp className="w-5 h-5" /> },
+        { value: "320%", label: "Qualified Leads Increase", description: <>Lead-gen overhaul, <Link href="/services/performance-marketing" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">paid media optimization</Link></>, icon: <TrendingUp className="w-5 h-5" /> },
+        { value: "300+", label: "Successful Projects", description: <>Web, mobile, <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">AI solutions</Link> globally</>, icon: <Users className="w-5 h-5" /> },
+        { value: "200+", label: "Hours Saved/Month", description: <><Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">AI automation</Link> & <Link href="/services/ai-chatbots-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">chatbot</Link> implementations</>, icon: <Star className="w-5 h-5" /> },
+        { value: "3x", label: "Organic Growth", description: <><Link href="/services/seo-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">SEO</Link> & <Link href="/services/seo-services/seo-content-writing-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">content strategy</Link> in 6 months</>, icon: <TrendingUp className="w-5 h-5" /> },
         { value: "95%", label: "Client Retention Rate", description: "Partner-centric approach, continuous support", icon: <Star className="w-5 h-5" /> },
         { value: "10+", label: "Years in Business", description: "Established 2014, zero security breaches", icon: <TrendingUp className="w-5 h-5" /> },
         { value: "25+", label: "Countries Served", description: "US, EU, India, APAC, Middle East", icon: <Users className="w-5 h-5" /> },

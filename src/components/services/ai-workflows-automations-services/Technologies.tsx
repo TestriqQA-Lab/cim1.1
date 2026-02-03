@@ -64,7 +64,7 @@ export default function Technologies() {
         },
         {
             icon: Database,
-            title: "CRM / ERP Integrations",
+            title: <Link href="/services/web-design-development" className="hover:text-emerald-500 transition-colors">CRM / ERP Integrations</Link>,
             description: "Seamless connectivity with your existing business systems",
             gradient: "from-emerald-600 to-teal-500",
             iconBg: "bg-emerald-500/10",
@@ -300,7 +300,7 @@ export default function Technologies() {
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold transition-colors duration-300 " style={{ color: "var(--foreground)" }}>
-                                        Security & Compliance
+                                        <Link href="/blog/ai-workflows-automating-business" className="hover:text-green-500 transition-colors">Security & Compliance</Link>
                                     </h3>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Enterprise-grade protection</p>
                                 </div>

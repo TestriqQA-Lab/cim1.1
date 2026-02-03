@@ -9,13 +9,13 @@ export default function ServiceOverview() {
         {
             icon: Smartphone,
             title: "Native App Development",
-            description: <span>Build high-performance <Link href="/services/mobile-app-development/ios-app-development" className="hover:text-[var(--brand-purple)]">iOS</Link> and <Link href="/services/mobile-app-development/android-app-development" className="hover:text-[var(--brand-purple)]">Android apps</Link> with Swift 6/SwiftUI and Kotlin/Jetpack Compose. Leverage 100% device capabilities and AR/VR integration.</span>,
+            description: <span>Build high-performance <Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-purple)]">iOS</Link> and <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-purple)]">Android apps</Link> with Swift 6/SwiftUI and Kotlin/Jetpack Compose. Leverage 100% device capabilities and AR/VR integration.</span>,
             gradient: "from-[#667eea] to-[#764ba2]"
         },
         {
             icon: ReactLogo,
             title: "Cross-Platform Solutions",
-            description: <span>Deploy to iOS & Android simultaneously with <Link href="/services/mobile-app-development/flutter-app-development" className="hover:text-[var(--brand-purple)]">Flutter</Link> and <Link href="/services/mobile-app-development/react-native-app-development" className="hover:text-[var(--brand-purple)]">React Native</Link>. Save 40% development cost while maintaining native-like performance.</span>,
+            description: "Deploy to iOS & Android simultaneously with Flutter and React Native. Save 40% development cost while maintaining native-like performance.",
             gradient: "from-[#f093fb] to-[#f5576c]"
         },
         {
@@ -27,19 +27,19 @@ export default function ServiceOverview() {
         {
             icon: Palette,
             title: "User-Centric Design",
-            description: "Create conversion-optimized interfaces with 35% higher engagement. WCAG 2.2 AA compliant designs backed by 10,000+ hours of user research and A/B testing data.",
+            description: <span>Create conversion-optimized interfaces with 35% higher engagement. <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-purple)]">WCAG 2.2 AA compliant designs</Link> backed by 10,000+ hours of user research and A/B testing data.</span>,
             gradient: "from-[#43e97b] to-[#38f9d7]"
         },
         {
             icon: Server,
             title: "Scalable Backend",
-            description: "Build enterprise-grade infrastructure supporting 10,000+ concurrent users. Multi-tenant architecture with Node.js, Python, .NET, and cloud services (AWS, Google Cloud, Azure).",
+            description: <span>Build enterprise-grade infrastructure supporting 10,000+ concurrent users. Multi-tenant architecture with <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[var(--brand-purple)]">Node.js</Link>, Python, .NET, and cloud services (AWS, Google Cloud, Azure).</span>,
             gradient: "from-[#fa709a] to-[#fee140]"
         },
         {
             icon: Shield,
             title: "Enterprise Security",
-            description: "Implement AES-256 encryption, OAuth 2.0 authentication, and OWASP Mobile Top 10 compliance. GDPR, HIPAA, PCI-DSS, and SOC 2 certified solutions with zero breaches since 2014.",
+            description: <span>Implement AES-256 encryption, OAuth 2.0 authentication, and OWASP Mobile Top 10 compliance. GDPR, HIPAA, PCI-DSS, and <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)]">SOC 2 certified solutions</Link> with zero breaches since 2014.</span>,
             gradient: "from-[#30cfd0] to-[#330867]"
         }
     ];
@@ -154,10 +154,10 @@ export default function ServiceOverview() {
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Discover the latest trends shaping mobile development</p>
                             </div>
                         </Link>
-                        <Link href="/blog/mobile-ux-trends-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                        <Link href="/blog/stunning-ui-ux-design-principles" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">🎨</span>
                             <div>
-                                <h4 className="font-semibold group-hover:text-[var(--brand-purple)] transition-colors">Mobile UX Trends in 2026</h4>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-purple)] transition-colors">Mobile UX Design Principles</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Latest design patterns and UX best practices</p>
                             </div>
                         </Link>
