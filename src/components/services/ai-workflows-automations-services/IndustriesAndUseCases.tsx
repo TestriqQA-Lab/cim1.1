@@ -7,7 +7,7 @@ export default function IndustriesAndUseCases() {
     const industries = [
         {
             icon: Heart,
-            name: "Healthcare",
+            name: <Link href="/services/web-design-development/healthcare-portals" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">Healthcare</Link>,
             useCases: [
                 "Patient intake automation",
                 "Appointment scheduling",
@@ -21,7 +21,7 @@ export default function IndustriesAndUseCases() {
         },
         {
             icon: DollarSign,
-            name: "Finance",
+            name: <Link href="/services/web-design-development/fintech-solutions" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">Finance</Link>,
             useCases: [
                 "AI-powered financial forecasting",
                 "Fraud detection & prevention",
@@ -35,7 +35,7 @@ export default function IndustriesAndUseCases() {
         },
         {
             icon: ShoppingBag,
-            name: "E-commerce",
+            name: <Link href="/blog/case-study-local-business-digital-transformation" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">E-commerce</Link>,
             useCases: [
                 "AI-driven supply chain & logistics",
                 "Inventory prediction",
@@ -49,7 +49,7 @@ export default function IndustriesAndUseCases() {
         },
         {
             icon: TrendingUp,
-            name: "Marketing Agencies",
+            name: <Link href="/services/performance-marketing" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">Marketing Agencies</Link>,
             useCases: [
                 "Scalable AI workflows",
                 "Automated client reporting",
@@ -63,7 +63,7 @@ export default function IndustriesAndUseCases() {
         },
         {
             icon: Factory,
-            name: "Manufacturing",
+            name: <Link href="/services/web-design-development/business-corporate" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">Manufacturing</Link>,
             useCases: [
                 "Predictive maintenance",
                 "Supply chain resilience",
@@ -77,7 +77,7 @@ export default function IndustriesAndUseCases() {
         },
         {
             icon: Briefcase,
-            name: "SaaS & Startups",
+            name: <Link href="/services/web-design-development/saas-development-services" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">SaaS & Startups</Link>,
             useCases: [
                 "End-to-end AI implementation",
                 "User onboarding automation",

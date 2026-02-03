@@ -1,13 +1,14 @@
 "use client";
 
 import { CheckCircle, Search, Pencil, Brain, Rocket, TestTube, Activity, ArrowRight, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const steps = [
         {
             number: "01",
             title: "Process Analysis",
-            description: "We start with a deep-dive audit. We map your current \"happy path\" and identifying edge cases to design the perfect API-First Automation Strategy.",
+            description: <span>We start with a deep-dive audit. We map your current "happy path" and identifying edge cases to design the perfect <Link href="/services/ai-chatbots-services" className="hover:text-blue-500 underline decoration-dotted transition-colors">API-First Automation Strategy</Link>.</span>,
             icon: Search,
             color: "from-blue-500 to-cyan-500",
             iconBg: "bg-blue-500/10",
@@ -15,7 +16,7 @@ export default function Process() {
         },
         {
             number: "02",
-            title: "Workflow Design",
+            title: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-purple-500 transition-colors">Workflow Design</Link>,
             description: "Our architects draft the blueprint, selecting the best-fit Machine Learning Model Deployment strategies and defining human touchpoints.",
             icon: Pencil,
             color: "from-purple-500 to-pink-500",
@@ -43,7 +44,7 @@ export default function Process() {
         {
             number: "05",
             title: "Testing & Optimization",
-            description: "We stress-test with Real-time AI workflow monitoring. We run thousands of scenarios to ensure your Agentic AI Frameworks don't hallucinate.",
+            description: <span>We stress-test with <Link href="/blog/ai-workflows-automating-business" className="hover:text-green-500 underline decoration-dotted transition-colors">Real-time AI workflow monitoring</Link>. We run thousands of scenarios using <Link href="/blog/web-performance-optimization-speed" className="hover:text-green-500 underline decoration-dotted transition-colors">Testing & Optimization</Link> to ensure your Agentic AI Frameworks don't hallucinate.</span>,
             icon: TestTube,
             color: "from-green-500 to-emerald-500",
             iconBg: "bg-green-500/10",
@@ -52,7 +53,7 @@ export default function Process() {
         {
             number: "06",
             title: "Deployment & Monitoring",
-            description: "Go live with confidence. We provide ROI-driven AI automation consulting post-launch to continuously improve efficiency.",
+            description: <span>Go live with confidence. We provide <Link href="/services/web-design-development" className="hover:text-rose-500 underline decoration-dotted transition-colors">ROI-driven AI automation consulting</Link> post-launch to continuously improve efficiency.</span>,
             icon: Activity,
             color: "from-rose-500 to-red-500",
             iconBg: "bg-rose-500/10",
@@ -199,12 +200,14 @@ export default function Process() {
                                                     Step {step.number}
                                                 </div>
 
-                                                <h3 className="text-2xl font-bold mb-3 transition-colors duration-300 group-hover:text-[var(--brand-orange)]">
-                                                    {step.title}
-                                                </h3>
-                                                <p className="text-base leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                                    {step.description}
-                                                </p>
+                                                <div className="relative z-10">
+                                                    <h3 className="text-2xl font-bold mb-3 transition-colors duration-300 group-hover:text-[var(--brand-orange)]">
+                                                        {step.title}
+                                                    </h3>
+                                                    <p className="text-base leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                                        {step.description}
+                                                    </p>
+                                                </div>
 
                                                 {/* Arrow indicator */}
                                                 <div className={`absolute top-1/2 ${isEven ? '-right-8' : '-left-8'} transform -translate-y-1/2`}>
@@ -269,7 +272,7 @@ export default function Process() {
                                         </div>
 
                                         {/* Content */}
-                                        <div className="flex-1 p-6 rounded-xl border" style={{
+                                        <div className="flex-1 p-6 rounded-xl border relative z-10" style={{
                                             backgroundColor: "var(--card-bg)",
                                             borderColor: "var(--border-color)",
                                         }}>
@@ -347,7 +350,7 @@ export default function Process() {
                                         icon: TestTube,
                                     },
                                     {
-                                        phase: "Deployment",
+                                        phase: <Link href="/services/web-design-development" className="hover:text-orange-500 transition-colors">Deployment</Link>,
                                         duration: "1 week",
                                         deliverables: "Production setup, documentation, training",
                                         color: "from-amber-500 to-orange-500",

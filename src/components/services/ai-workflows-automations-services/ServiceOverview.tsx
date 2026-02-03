@@ -16,7 +16,7 @@ export default function ServiceOverview() {
         {
             icon: Cpu,
             title: "Operational Efficiency",
-            description: "Reduce operational costs by automating complex business processes and improving resource allocation.",
+            description: <span>Reduce operational costs by automating complex business processes and improving resource allocation with <Link href="/blog/web-performance-optimization-speed" className="hover:text-purple-500">Operational Efficiency</Link>.</span>,
             gradient: "from-purple-500 to-pink-500",
             iconBg: "bg-purple-500/10",
             iconColor: "text-purple-500",
@@ -32,7 +32,7 @@ export default function ServiceOverview() {
         {
             icon: Sparkles,
             title: "Intelligent Decision-Making",
-            description: "Leverage AI-driven insights to make data-backed decisions faster and with greater accuracy.",
+            description: <span>Leverage <Link href="/blog/data-analytics-insights-action" className="hover:text-orange-500">Intelligent Decision-Making</Link> and AI-driven insights to make data-backed decisions faster and with greater accuracy.</span>,
             gradient: "from-orange-500 to-amber-500",
             iconBg: "bg-orange-500/10",
             iconColor: "text-orange-500",
@@ -51,7 +51,7 @@ export default function ServiceOverview() {
                         What Are <span style={{ color: "var(--brand-orange)" }}>AI Workflows & Automations?</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        AI Workflows & Automations represent the intersection of intelligent technology and business optimization. By combining artificial intelligence with workflow automation, we help organizations transform their operations into intelligent, self-optimizing systems that work smarter, not harder.
+                        <Link href="/blog/ai-workflows-automating-business" className="hover:text-[var(--brand-orange)] transition-colors">AI Workflows & Automations</Link> represent the intersection of intelligent technology and business optimization. By combining artificial intelligence with workflow automation, we help organizations transform their operations into intelligent, self-optimizing systems that work smarter, not harder.
                     </p>
                 </div>
 
@@ -90,12 +90,14 @@ export default function ServiceOverview() {
                                 </div>
 
                                 {/* Content */}
-                                <h3 className="text-lg font-bold mb-3 transition-colors duration-300 group-hover:text-[var(--brand-orange)]">
-                                    {benefit.title}
-                                </h3>
-                                <p className="text-sm leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                    {benefit.description}
-                                </p>
+                                <div className="relative z-10">
+                                    <h3 className="text-lg font-bold mb-3 transition-colors duration-300 group-hover:text-[var(--brand-orange)]">
+                                        {benefit.title}
+                                    </h3>
+                                    <p className="text-sm leading-relaxed" style={{ color: "var(--secondary-text)" }}>
+                                        {benefit.description}
+                                    </p>
+                                </div>
 
                                 {/* Bottom accent line */}
                                 <div
