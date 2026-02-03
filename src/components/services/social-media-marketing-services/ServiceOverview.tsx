@@ -173,14 +173,14 @@ export default function ServiceOverview() {
                 <div className="mt-8 p-6 rounded-2xl border max-w-6xl mx-auto" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
                     <h3 className="text-lg font-bold mb-4" style={{ color: "var(--foreground)" }}>📚 Related Resources</h3>
                     <div className="flex flex-col gap-3">
-                        <Link href="/blog/social-media-marketing-strategy-guide" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                        <Link href="/blog/social-media-strategy-building-brand" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">📱</span>
                             <div>
                                 <h4 className="font-semibold group-hover:text-[var(--brand-teal)] transition-colors">Social Media Marketing Strategy Guide</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Build a winning social media strategy for your business</p>
                             </div>
                         </Link>
-                        <Link href="/blog/social-media-trends-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                        <Link href="/blog/content-marketing-strategies-work" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">🔥</span>
                             <div>
                                 <h4 className="font-semibold group-hover:text-[var(--brand-teal)] transition-colors">Social Media Trends in 2026</h4>
