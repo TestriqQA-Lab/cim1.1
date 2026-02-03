@@ -49,7 +49,7 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span>, we provide full-spectrum digital engineering. Our <span className="text-[var(--brand-teal)] font-bold">professional web design agency</span> combines creative excellence with technical precision.
+                            As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span>, we provide full-spectrum digital engineering. Our <Link href="/blog/stunning-ui-ux-design-principles" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">professional web design agency</Link> combines <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">creative excellence</Link> with technical precision.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
@@ -444,18 +444,18 @@ export default function ServiceOverview() {
                 <div className="mt-8 p-6 rounded-2xl border max-w-6xl mx-auto" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
                     <h3 className="text-lg font-bold mb-4" style={{ color: "var(--foreground)" }}>📚 Related Resources</h3>
                     <div className="flex flex-col gap-3">
-                        <Link href="/blog/web-design-trends-2026" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                        <Link href="/blog/mobile-app-development-trends-2024" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">💡</span>
                             <div>
-                                <h4 className="font-semibold group-hover:text-[var(--brand-blue)] transition-colors">Web Design Trends in 2026</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Latest trends in modern web design and UX</p>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-blue)] transition-colors" style={{ color: "var(--foreground)" }}>Mobile App Trends 2026</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Latest trends in mobile and web development</p>
                             </div>
                         </Link>
-                        <Link href="/blog/choosing-right-web-technology-stack" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                        <Link href="/blog/future-web-development-nextjs" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">⚙️</span>
                             <div>
-                                <h4 className="font-semibold group-hover:text-[var(--brand-blue)] transition-colors">Choosing the Right Web Technology Stack</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Guide to selecting the best tech stack for your project</p>
+                                <h4 className="font-semibold group-hover:text-[var(--brand-blue)] transition-colors" style={{ color: "var(--foreground)" }}>Future of Web Development</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Why Next.js is shaping the future of web</p>
                             </div>
                         </Link>
                     </div>
