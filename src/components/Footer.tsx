@@ -28,6 +28,7 @@ export default function Footer() {
         { name: "Contact Us", href: "/contact" },
         { name: "Privacy Policy", href: "/privacy-policy" },
         { name: "Terms of Service", href: "/terms-of-service" },
+        { name: "CMS Login", href: "/cms" },
     ];
 
     // Service sub-categories for expanded grid
