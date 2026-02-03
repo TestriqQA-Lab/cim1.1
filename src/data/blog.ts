@@ -532,8 +532,8 @@ SEO is a long-term investment that requires patience and consistency. By impleme
   {
     id: "3",
     title: "Mobile App Development Trends in 2026",
-    slug: "mobile-app-development-trends-2024",
-    excerpt: "Discover the latest trends and technologies shaping mobile app development in 2026.",
+    slug: "mobile-app-development-trends-2026",
+    excerpt: "Discover the latest trends shaping the future of mobile app development, from AI integration to 5G and foldable devices.",
     content: `
 # Mobile App Development Trends in 2026
 
@@ -592,13 +592,13 @@ The mobile app landscape is more exciting than ever. By staying updated with the
     author: authors[4],  // Harsh Mishra
     category: "Mobile Apps",
     tags: ["Mobile Development", "React Native", "Flutter", "Technology"],
-    image: "/images/blog/blog-images/mobile-app-development-trends-2024/Mobile-App-Development-hero-section.png",
+    image: "/images/blog/blog-images/mobile-app-development-trends-2026/Mobile-App-Development-hero-section.png",
     publishedAt: "2025-12-20",
     readTime: 7,
     contentBlocks: [
       { id: "mob-h1", type: "text", variant: "h1", content: "Mobile App Development Trends in 2026" },
       { id: "mob-intro", type: "text", variant: "paragraph", content: "Mobile app development is constantly evolving. In this article, we'll explore the latest trends and technologies that are shaping the industry in 2026 through professional [mobile app development](/services/mobile-app-development) and [user experience design](/blog/mobile-ux-trends-2024)." },
-      { id: "mob-hero-img", type: "image", src: "/images/blog/blog-images/mobile-app-development-trends-2024/Mobile-App-Development-hero-section.png", alt: "Mobile app development illustration", caption: "The mobile landscape continues to evolve rapidly" },
+      { id: "mob-hero-img", type: "image", src: "/images/blog/blog-images/mobile-app-development-trends-2026/Mobile-App-Development-hero-section.png", alt: "Mobile app development illustration", caption: "The mobile landscape continues to evolve rapidly" },
       { id: "mob-h2-1", type: "text", variant: "h2", content: "Cross-Platform Development" },
       { id: "mob-p1", type: "text", variant: "paragraph", content: "Cross-platform frameworks like React Native and Flutter continue to dominate. They allow developers to write code once and deploy to multiple platforms." },
       { id: "mob-h3-1", type: "text", variant: "h3", content: "React Native" },
@@ -608,11 +608,11 @@ The mobile app landscape is more exciting than ever. By staying updated with the
       { id: "mob-code", type: "code", language: "dart", filename: "main.dart", code: "// Simple Flutter app\nimport 'package:flutter/material.dart';\n\nvoid main() => runApp(MyApp());\n\nclass MyApp extends StatelessWidget {\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      home: Scaffold(\n        appBar: AppBar(title: Text('Hello Flutter')),\n      ),\n    );\n  }\n}" },
       { id: "mob-table", type: "table", headers: ["Feature", "React Native", "Flutter", "Native"], rows: [["Language", "JavaScript", "Dart", "Swift/Kotlin"], ["Performance", "Good", "Excellent", "Best"], ["Dev Speed", "Fast", "Fast", "Slower"], ["Hot Reload", "Yes", "Yes", "Limited"]] },
       { id: "mob-callout1", type: "callout", variant: "info", title: "Framework Comparison", content: "**React Native** is ideal for JavaScript teams, while **Flutter** offers better performance and a rich widget library." },
-      { id: "mob-frameworks-img", type: "image", src: "/images/blog/blog-images/mobile-app-development-trends-2024/Mobile-App-Development-types.png", alt: "Cross-platform frameworks comparison", caption: "React Native vs Flutter: Choosing the right framework" },
+      { id: "mob-frameworks-img", type: "image", src: "/images/blog/blog-images/mobile-app-development-trends-2026/Mobile-App-Development-types.png", alt: "Cross-platform frameworks comparison", caption: "React Native vs Flutter: Choosing the right framework" },
       { id: "mob-h2-2", type: "text", variant: "h2", content: "AI and Machine Learning Integration" },
       { id: "mob-p4", type: "text", variant: "paragraph", content: "AI is no longer a luxury feature-it's becoming essential:" },
       { id: "mob-list1", type: "list", style: "bullet", items: ["Machine learning models for personalization", "Natural language processing for chatbots", "Computer vision for image recognition", "Predictive analytics for user behavior"] },
-      { id: "mob-ai-img", type: "image", src: "/images/blog/blog-images/mobile-app-development-trends-2024/AI-and-Machine-Learning-Integration.png", alt: "AI in mobile apps", caption: "AI integration is transforming mobile experiences" },
+      { id: "mob-ai-img", type: "image", src: "/images/blog/blog-images/mobile-app-development-trends-2026/AI-and-Machine-Learning-Integration.png", alt: "AI in mobile apps", caption: "AI integration is transforming mobile experiences" },
       { id: "mob-quote", type: "quote", content: "The best apps are those that anticipate user needs before they even know them. AI makes this possible.", author: "Mobile Development Expert" },
       { id: "mob-h2-3", type: "text", variant: "h2", content: "Progressive Web Apps (PWAs)" },
       { id: "mob-p5", type: "text", variant: "paragraph", content: "PWAs bridge the gap between web and mobile apps:" },
@@ -1923,7 +1923,7 @@ Mobile UX in 2026 is about creating intuitive, personalized, and accessible expe
     readTime: 8,
     contentBlocks: [
       { id: "mux-h1", type: "text", variant: "h1", content: "Mobile UX Trends to Watch in 2026" },
-      { id: "mux-intro", type: "text", variant: "paragraph", content: "Mobile UX continues to evolve as user expectations grow and technology advances through [mobile app development](/services/mobile-app-development) and emerging [mobile trends](/blog/mobile-app-development-trends-2024)." },
+      { id: "mux-intro", type: "text", variant: "paragraph", content: "Mobile UX continues to evolve as user expectations grow and technology advances through [mobile app development](/services/mobile-app-development) and emerging [mobile trends](/blog/mobile-app-development-trends-2026)." },
       { id: "mux-hero-img", type: "image", src: "/images/blog/blog-images/mobile-ux-trends-2024/The-future-of-mobile-UX-design.png", alt: "Mobile UX trends", caption: "The future of mobile UX design" },
       { id: "mux-h2-1", type: "text", variant: "h2", content: "Gesture-Based Navigation" },
       { id: "mux-list1", type: "list", style: "bullet", items: ["Swipe navigation", "Pinch and zoom", "Long-press actions", "Pull-to-refresh variations"] },

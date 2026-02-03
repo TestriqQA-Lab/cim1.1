@@ -3,6 +3,7 @@
 import { Zap, Lock, TrendingUp, Palette, Smartphone, Award, Sparkles } from "lucide-react";
 import { CheckCircle2, XCircle, ShieldCheck, Rocket, Gauge, Wrench, Layers, Building2 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function WhyChooseUs() {
@@ -19,13 +20,13 @@ export default function WhyChooseUs() {
         },
         {
             icon: Lock,
-            title: "Enterprise-Grade Security",
+            title: <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)] transition-colors">Enterprise-Grade Security</Link>,
             description: "Zero security breaches since 2014. AES-256 encryption, OAuth 2.0, OWASP compliance. GDPR, HIPAA, PCI-DSS, SOC 2 certified solutions."
         },
         {
             icon: Palette,
             title: "35% Higher User Engagement",
-            description: "Conversion-optimized UX backed by 10,000+ hours of A/B testing. WCAG 2.2 AA compliant designs that reduce churn by 40%."
+            description: <span>Conversion-optimized UX backed by 10,000+ hours of A/B testing. <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn by 40%.</span>
         },
         {
             icon: Gauge,
@@ -35,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: Smartphone,
             title: "Multi-Platform Expertise",
-            description: "Masters of Swift 6, Kotlin, Flutter 3.5+, React Native New Architecture. Native, cross-platform, and hybrid solutions with single codebase efficiency."
+            description: <span>Masters of Swift 6, Kotlin, Flutter 3.5+, React Native New Architecture. <Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-purple)] transition-colors">Native</Link>, <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[var(--brand-purple)] transition-colors">cross-platform</Link>, and hybrid solutions with single codebase efficiency.</span>
         }
     ];
 
