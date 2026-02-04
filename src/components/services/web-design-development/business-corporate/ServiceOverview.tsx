@@ -1,6 +1,7 @@
 "use client";
 
 import { Building2, Target, TrendingUp, Users, FileText, Globe } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     return (
@@ -41,7 +42,7 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            A <span style={{ color: "#f97316", fontWeight: 700 }}>corporate website</span> is more than a digital brochure-it's the foundation of your organization's online identity and the first impression for investors, partners, and potential clients.
+                            A <Link href="/services/web-design-development" className="hover:underline" style={{ color: "#f97316", fontWeight: 700 }}>corporate website</Link> is more than a digital brochure-it's the foundation of your organization's online identity and the first impression for investors, partners, and potential clients.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
@@ -49,7 +50,7 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            From investor relations portals to global enterprise sites with multi-region support, we engineer solutions that meet the rigorous standards of modern corporate governance and brand excellence.
+                            From <Link href="/services/web-design-development/fintech-solutions" className="hover:underline" style={{ color: "#f97316" }}>investor relations portals</Link> to global enterprise sites with multi-region support, we engineer solutions that meet the rigorous standards of modern corporate governance and brand excellence.
                         </p>
 
                         <div className="pt-4">
@@ -111,7 +112,7 @@ export default function ServiceOverview() {
                                 <div className="p-3 rounded-lg bg-orange-50">
                                     <Target className="w-6 h-6 text-orange-600" />
                                 </div>
-                                <span className="text-sm font-bold text-center" style={{ color: "var(--foreground)" }}>Strategic Positioning</span>
+                                <Link href="/blog/digital-marketing-strategy-planning-execution" className="text-sm font-bold text-center hover:underline" style={{ color: "var(--foreground)" }}>Strategic Positioning</Link>
                             </div>
                         </div>
 
@@ -122,7 +123,7 @@ export default function ServiceOverview() {
                                 <div className="p-3 rounded-lg bg-orange-50">
                                     <TrendingUp className="w-6 h-6 text-orange-600" />
                                 </div>
-                                <span className="text-sm font-bold text-center" style={{ color: "var(--foreground)" }}>Growth Engine</span>
+                                <Link href="/services/performance-marketing" className="text-sm font-bold text-center hover:underline" style={{ color: "var(--foreground)" }}>Growth Engine</Link>
                             </div>
                         </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Palette, ImageIcon, Layout, Sparkles, Users, Award, Globe, Zap } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -28,19 +29,19 @@ export default function ServiceOverview() {
         {
             icon: Users,
             title: "About & Bio",
-            description: "People buy from people. We specialize in professional bio writing and branding services that humanize your digital presence and foster genuine connection.",
+            description: <>People buy from people. We specialize in <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-[#06b6d4]">professional bio writing</Link> and branding services that humanize your digital presence and foster genuine connection.</>,
             details: ["Professional bio writing", "Authentic storytelling", "Personal journey", "Humanized presence"]
         },
         {
             icon: Award,
             title: "Testimonials",
-            description: "Social proof is non-negotiable. We integrate dynamic testimonial sections and Knowledge Panel Optimization signals that validate your expertise.",
+            description: <>Social proof is non-negotiable. We integrate dynamic testimonial sections and <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-[#06b6d4]">Knowledge Panel Optimization</Link> signals that validate your expertise.</>,
             details: ["Dynamic testimonials", "Knowledge Panel Optimization", "Real feedback", "Professional credibility"]
         },
         {
             icon: Globe,
             title: "Contact Integration",
-            description: "Turn traffic into conversations. Our personal website SEO and visibility optimization includes strategic CTA placement and seamless contact forms.",
+            description: <>Turn traffic into conversations. Our <Link href="/services/seo-services" className="hover:underline text-[#06b6d4]">personal website SEO</Link> and visibility optimization includes strategic CTA placement and seamless contact forms.</>,
             details: ["Strategic CTA placement", "Seamless contact forms", "Calendar booking", "Effortless inquiry"]
         }
     ];

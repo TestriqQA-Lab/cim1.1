@@ -2,34 +2,35 @@
 
 import React, { useState } from 'react';
 import { MessageSquare, Lightbulb, Rocket, BarChart3, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const steps = [
     {
         number: "01",
         icon: MessageSquare,
         title: "Discovery & Consultation",
-        description: "We start by understanding your business, goals, and challenges through in-depth discussions.",
+        description: <span>We start by understanding your <Link href="/services/web-design-development/business-corporate" className="hover:text-[var(--brand-blue)] transition-colors">business</Link>, goals, and challenges through in-depth discussions.</span>,
         gradient: "linear-gradient(135deg, var(--brand-purple), var(--brand-blue))",
     },
     {
         number: "02",
         icon: Lightbulb,
         title: "Strategy & Planning",
-        description: "Our team develops a comprehensive strategy and roadmap tailored to your specific needs.",
+        description: <span>Our team develops a comprehensive <Link href="/services/brand-identity-design" className="hover:text-[var(--brand-cyan)] transition-colors">strategy</Link> and roadmap tailored to your specific needs.</span>,
         gradient: "linear-gradient(135deg, var(--brand-cyan), var(--brand-teal))",
     },
     {
         number: "03",
         icon: Rocket,
         title: "Design & Development",
-        description: "We bring your vision to life with cutting-edge design and development practices.",
+        description: <span>We bring your vision to life with cutting-edge <Link href="/services/brand-identity-design" className="hover:text-[var(--brand-orange)] transition-colors">design</Link> and <Link href="/services/web-design-development" className="hover:text-[var(--brand-orange)] transition-colors">development</Link> practices.</span>,
         gradient: "linear-gradient(135deg, var(--brand-orange), var(--brand-purple))",
     },
     {
         number: "04",
         icon: BarChart3,
         title: "Launch & Optimize",
-        description: "After launch, we continuously monitor, analyze, and optimize for maximum results.",
+        description: <span>After launch, we continuously monitor, analyze, and <Link href="/services/seo-services" className="hover:text-[var(--brand-yellow)] transition-colors">optimize</Link> for maximum results.</span>,
         gradient: "linear-gradient(135deg, var(--brand-yellow), var(--brand-orange))",
     },
 ];

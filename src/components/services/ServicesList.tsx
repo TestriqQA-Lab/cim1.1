@@ -22,7 +22,7 @@ const services = [
         title: "Web Design & Development",
         slug: "web-design-development",
         description: "Create stunning, high-performance websites that captivate users and drive conversions.",
-        features: ["Responsive Design", "SEO Optimized", "Next.js / React"],
+        features: ["Responsive Design", "SEO Optimized", <span><Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[var(--brand-blue)] transition-colors">Next.js</Link> / React</span>],
         gradient: "linear-gradient(135deg, var(--brand-cyan), var(--brand-blue))",
     },
     {
@@ -30,7 +30,7 @@ const services = [
         title: "Mobile App Development",
         slug: "mobile-app-development",
         description: "Build native and cross-platform mobile apps that deliver exceptional user experiences.",
-        features: ["iOS & Android", "React Native", "Flutter"],
+        features: [<span><Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">iOS</Link> & <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">Android</Link></span>, "React Native", "Flutter"],
         gradient: "linear-gradient(135deg, var(--brand-purple), var(--brand-blue))",
     },
     {
@@ -38,7 +38,7 @@ const services = [
         title: "Social Media Marketing",
         slug: "social-media-marketing-services",
         description: "Grow your brand presence and engage your audience across all social platforms.",
-        features: ["Content Strategy", "Community Management", "Analytics"],
+        features: [<span><Link href="/services/seo-services/seo-content-writing-services" className="hover:text-[var(--brand-orange)] transition-colors">Content Strategy</Link></span>, "Community Management", "Analytics"],
         gradient: "linear-gradient(135deg, var(--brand-orange), var(--brand-purple))",
     },
     {
@@ -46,7 +46,7 @@ const services = [
         title: "AI Workflows & Automations",
         slug: "ai-workflows-automations-services",
         description: "Streamline operations with intelligent automation and workflow optimization.",
-        features: ["Process Automation", "Custom Integrations", "n8n / Zapier"],
+        features: [<span><Link href="/services/web-design-development/business-corporate" className="hover:text-[var(--brand-purple)] transition-colors">Process Automation</Link></span>, "Custom Integrations", "n8n / Zapier"],
         gradient: "linear-gradient(135deg, var(--brand-purple), var(--brand-cyan))",
     },
     {
@@ -62,7 +62,7 @@ const services = [
         title: "Organic Growth & SEO",
         slug: "seo-services",
         description: "Boost your search rankings and drive sustainable organic traffic to your website.",
-        features: ["Technical SEO", "Content Strategy", "Link Building"],
+        features: [<span><Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-blue)] transition-colors">Technical SEO</Link></span>, "Content Strategy", <span><Link href="/services/seo-services/link-building" className="hover:text-[var(--brand-blue)] transition-colors">Link Building</Link></span>],
         gradient: "linear-gradient(135deg, var(--brand-yellow), var(--brand-orange))",
     },
     {
@@ -70,7 +70,7 @@ const services = [
         title: "Performance Marketing",
         slug: "performance-marketing",
         description: "Maximize ROI with data-driven paid advertising campaigns across platforms.",
-        features: ["Google Ads", "Meta Ads", "Conversion Optimization"],
+        features: [<span><Link href="/services/performance-marketing/google-ads" className="hover:text-[var(--brand-orange)] transition-colors">Google Ads</Link></span>, <span><Link href="/services/performance-marketing/meta-ads" className="hover:text-[var(--brand-orange)] transition-colors">Meta Ads</Link></span>, "Conversion Optimization"],
         gradient: "linear-gradient(135deg, var(--brand-orange), var(--brand-purple))",
     },
     {
@@ -78,7 +78,7 @@ const services = [
         title: "Brand Identity & Design",
         slug: "brand-identity-design",
         description: "Create a memorable brand identity that resonates with your target audience.",
-        features: ["Logo Design", "Visual Identity", "Brand Guidelines"],
+        features: [<span><Link href="/services/brand-identity-design" className="hover:text-[var(--brand-purple)] transition-colors">Logo Design</Link></span>, "Visual Identity", "Brand Guidelines"],
         gradient: "linear-gradient(135deg, var(--brand-purple), var(--brand-orange))",
     },
     {
@@ -86,7 +86,7 @@ const services = [
         title: "Additional Support Services",
         slug: "additional-support-services",
         description: "Comprehensive support and maintenance to keep your digital assets running smoothly.",
-        features: ["24/7 Monitoring", "Regular Updates", "SLA Support"],
+        features: ["24/7 Monitoring", "Regular Updates", <span><Link href="/services/additional-support-services" className="hover:text-[var(--brand-blue)] transition-colors">SLA Support</Link></span>],
         gradient: "linear-gradient(135deg, var(--brand-blue), var(--brand-teal))",
     },
 ];
@@ -123,9 +123,8 @@ export default function ServicesList() {
                         const isHovered = hoveredIndex === index;
 
                         return (
-                            <Link
+                            <div
                                 key={service.slug}
-                                href={`/services/${service.slug}`}
                                 className="group relative block"
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
@@ -161,7 +160,9 @@ export default function ServicesList() {
 
                                         {/* Title */}
                                         <h3 className="text-xl font-bold mb-3 transition-colors duration-300 group-hover:text-[var(--brand-purple)]" style={{ color: "var(--foreground)" }}>
-                                            {service.title}
+                                            <Link href={`/services/${service.slug}`} className="hover:underline focus:outline-none">
+                                                {service.title}
+                                            </Link>
                                         </h3>
 
                                         {/* Description */}
@@ -183,16 +184,17 @@ export default function ServicesList() {
                                         </ul>
 
                                         {/* Learn More */}
-                                        <div
-                                            className="flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3"
+                                        <Link
+                                            href={`/services/${service.slug}`}
+                                            className="inline-flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3"
                                             style={{ color: "var(--brand-purple)" }}
                                         >
                                             Learn More
                                             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                                        </div>
+                                        </Link>
                                     </div>
                                 </article>
-                            </Link>
+                            </div>
                         );
                     })}
                 </div>

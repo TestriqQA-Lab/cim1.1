@@ -8,27 +8,27 @@ export default function WhyChooseUs() {
         {
             icon: Shield,
             title: "E-E-A-T Focused Architecture",
-            description: "We code with Google's Experience, Expertise, Authoritativeness, and Trustworthiness guidelines. Your site structure will signal authority from Day 1."
+            description: <>We code with Google&apos;s Experience, Expertise, Authoritativeness, and Trustworthiness guidelines. Your site structure will signal <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-[#a855f7]">authority</Link> from Day 1.</>
         },
         {
             icon: Zap,
             title: "Performance Obsessed",
-            description: "We guarantee News portal performance and speed optimization. Passing Core Web Vitals is our baseline, not a goal."
+            description: <>We guarantee News portal performance and speed optimization. Passing <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-[#a855f7]">Core Web Vitals</Link> is our baseline, not a goal.</>
         },
         {
             icon: Award,
             title: "Global Reach, Hyper-Local Focus",
-            description: "Experience in building Hyper-local news portal development services that dominate regional search, while scaling to global traffic."
+            description: <>Experience in building <Link href="/services/seo-services/local-seo-services" className="hover:underline text-[#a855f7]">Hyper-local news portal</Link> development services that dominate regional search, while scaling to global traffic.</>
         },
         {
             icon: CheckCircle2,
             title: "Custom CMS Mastery",
-            description: "Whether it's Custom CMS development for news websites or headless setups, we give you control."
+            description: <>Whether it&apos;s <Link href="/services/web-design-development/headless-traditional-cms" className="hover:underline text-[#a855f7]">Custom CMS development</Link> for news websites or headless setups, we give you control.</>
         },
         {
             icon: TrendingUp,
             title: "Proven ROI",
-            description: "Our clients see an average of 300% traffic growth within 12 months via our integrated technical SEO."
+            description: <>Our clients see an average of 300% traffic growth within 12 months via our integrated <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-[#a855f7]">technical SEO</Link>.</>
         }
     ];
 

@@ -47,9 +47,9 @@ export default function Services() {
             brandText: "var(--brand-blue)",
             href: "/services/web-design-development",
             details: [
-                "Custom Web Development & SaaS Solutions",
+                <span><Link href="/services/web-design-development/saas-development-services" className="hover:text-[var(--brand-blue)] transition-colors">Custom Web Development & SaaS Solutions</Link></span>,
                 "High-Converting Landing Pages",
-                "E-commerce Stores & Complex Portals",
+                <span><Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[var(--brand-blue)] transition-colors">E-commerce Stores & Complex Portals</Link></span>,
                 "API Development & Third-Party Integrations",
                 "Performance Optimization (Sub-2s Core Web Vitals)",
                 "Enterprise-Grade Security & SSL Implementation"
@@ -63,8 +63,8 @@ export default function Services() {
             brandText: "var(--brand-teal)",
             href: "/services/mobile-app-development",
             details: [
-                "iOS, Android & Cross-Platform Development",
-                "Enterprise Mobile Applications",
+                <span><Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">iOS</Link>, <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">Android</Link> & <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">Cross-Platform Development</Link></span>,
+                <span><Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-teal)] transition-colors">Enterprise Mobile Applications</Link></span>,
                 "40% Faster Time-to-Market",
                 "98.7% Bug-Free Delivery Rate",
                 "App Store Optimization",
@@ -112,11 +112,11 @@ export default function Services() {
             href: "/services/seo-services",
             details: [
                 "Comprehensive Website Audits",
-                "On-Page & Technical SEO",
+                <span><Link href="/services/seo-services/technical-seo-services" className="hover:text-[var(--brand-blue)] transition-colors">On-Page & Technical SEO</Link></span>,
                 "Strategic Keyword Research",
-                "Authority Link Building",
-                "Local SEO & Google Business Profile",
-                "E-commerce SEO Optimization"
+                <span><Link href="/services/seo-services/link-building" className="hover:text-[var(--brand-blue)] transition-colors">Authority Link Building</Link></span>,
+                <span><Link href="/services/seo-services/local-seo-services" className="hover:text-[var(--brand-blue)] transition-colors">Local SEO & Google Business Profile</Link></span>,
+                <span><Link href="/services/seo-services/ecommerce-seo-services" className="hover:text-[var(--brand-blue)] transition-colors">E-commerce SEO Optimization</Link></span>
             ]
         },
         {
@@ -143,7 +143,7 @@ export default function Services() {
             brandText: "var(--brand-yellow)",
             href: "/services/ai-workflows-automations-services",
             details: [
-                "Business Process Automation (BPA)",
+                <span><Link href="/services/web-design-development/business-corporate" className="hover:text-[var(--brand-yellow)] transition-colors">Business Process Automation (BPA)</Link></span>,
                 "CRM & ERP Integration",
                 "Full-Funnel Lead Nurturing Systems",
                 "Meta DPA & Shopping Feed Automations",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Camera, Code2, Palette, Briefcase, Mic, PenTool, ArrowRight } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -13,6 +14,7 @@ export default function SolutionTypes() {
             description: "Stunning, immersive, full-screen galleries with smart lazy-loading and image protection to showcase your art safely.",
             features: ["Full-screen galleries", "Smart lazy-loading", "Image protection", "High-end presentation"],
             accentColor: "#06b6d4",
+            link: "/services/web-design-development"
         },
         {
             icon: Code2,
@@ -20,6 +22,7 @@ export default function SolutionTypes() {
             description: "Show, don't just tell. Integrate live GitHub repositories, technical blogs, and interactive code snippets.",
             features: ["Live GitHub repos", "Technical blogs", "Code snippets", "Full stack demos"],
             accentColor: "#0891b2",
+            link: "/services/web-design-development/nextjs-development-services"
         },
         {
             icon: Palette,
@@ -27,11 +30,12 @@ export default function SolutionTypes() {
             description: "A canvas for your creativity. Custom blog and portfolio setup featuring before-and-after sliders and Figma prototype embeds.",
             features: ["Before/after sliders", "Process documentation", "Figma embeds", "Design thinking"],
             accentColor: "#14b8a6",
+            link: "/services/web-design-development"
         },
         {
             icon: Briefcase,
             title: "Freelancer Portfolio",
-            description: "Your 24/7 sales rep. Sites that highlight offerings and packages, integrated with digital footprint cleanup services.",
+            description: <>Your 24/7 sales rep. Sites that highlight offerings and packages, integrated with <Link href="/services/seo-services" className="hover:underline text-inherit">digital footprint cleanup</Link> services.</>,
             features: ["Service offerings", "Package highlights", "Polished image", "High-value contracts"],
             accentColor: "#0d9488",
         },
@@ -133,7 +137,15 @@ export default function SolutionTypes() {
 
                                     {/* Title */}
                                     <h3 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>
-                                        {solution.title}
+                                        {/* @ts-ignore */}
+                                        {solution.link ? (
+                                            /* @ts-ignore */
+                                            <Link href={solution.link} className="hover:underline">
+                                                {solution.title}
+                                            </Link>
+                                        ) : (
+                                            solution.title
+                                        )}
                                     </h3>
 
                                     {/* Description */}

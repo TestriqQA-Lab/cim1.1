@@ -113,7 +113,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="text-lg md:text-xl mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.2s" }}>
-                            Empower your editorial team and <span style={{ color: "#a855f7", fontWeight: 700 }}>engage millions of readers</span> with our high-performance Web Portal development Services. We build scalable, secure, and SEO-dominant digital publishing platforms.
+                            Empower your editorial team and <span style={{ color: "#a855f7", fontWeight: 700 }}>engage millions of readers</span> with our high-performance <Link href="/services/web-design-development" className="hover:underline" style={{ color: "#a855f7" }}>Web Portal development Services</Link>. We build scalable, secure, and SEO-dominant digital publishing platforms.
                         </p>
 
                         {/* Feature Highlights */}
@@ -129,7 +129,7 @@ export default function Hero() {
                                     Custom CMS
                                 </span>
                             </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
+                            <Link href="/services/seo-services" className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, #a855f7 8%, transparent)",
                                     animationDelay: "0.15s"
@@ -139,7 +139,7 @@ export default function Hero() {
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
                                     SEO-Ready
                                 </span>
-                            </div>
+                            </Link>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, #a855f7 8%, transparent)",

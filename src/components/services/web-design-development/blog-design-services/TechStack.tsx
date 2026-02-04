@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -11,18 +12,18 @@ export default function TechStack() {
             category: "CMS Platforms",
             description: "Powerful CMS options for every scale of publishing",
             items: [
-                { name: "WordPress VIP", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
-                { name: "Strapi", logo: "/images/techstack_logos/Strapi-logo.png" },
+                { name: "WordPress VIP", logo: "/images/techstack_logos/wordpress-logo-hero1.png", url: "/services/web-design-development/wordpress-development-services" },
+                { name: "Strapi", logo: "/images/techstack_logos/Strapi-logo.png", url: "/services/web-design-development/strapi-headless-cms" },
                 { name: "Ghost", logo: "/images/techstack_logos/Ghost-logo.jpg" },
-                { name: "Drupal", logo: "/images/techstack_logos/Drupal-logo.png" },
+                { name: "Drupal", logo: "/images/techstack_logos/Drupal-logo.png", url: "/services/web-design-development/drupal-cms" },
             ],
         },
         {
             category: "Frontend",
             description: "Fast, SEO-friendly rendering engines",
             items: [
-                { name: "Next.js", logo: "/images/techstack_logos/nextjs-logo.svg" },
-                { name: "React", logo: "/images/techstack_logos/react-logo.svg" },
+                { name: "Next.js", logo: "/images/techstack_logos/nextjs-logo.svg", url: "/services/web-design-development/nextjs-development-services" },
+                { name: "React", logo: "/images/techstack_logos/react-logo.svg", url: "/services/web-design-development/nextjs-development-services" },
                 { name: "Vue.js", logo: "/images/techstack_logos/vuejs-logo.svg" },
                 { name: "Svelte", logo: "/images/techstack_logos/Svelte-Logo.png" },
             ],
@@ -31,17 +32,17 @@ export default function TechStack() {
             category: "Backend",
             description: "Robust backend technologies for scalability",
             items: [
-                { name: "Node.js", logo: "/images/techstack_logos/nodejs-logo.svg" },
-                { name: "Python", logo: "/images/techstack_logos/python-logo.svg" },
-                { name: "Laravel", logo: "/images/techstack_logos/Laravel-logo.png" },
-                { name: "Django", logo: "/images/techstack_logos/django-logo.svg" },
+                { name: "Node.js", logo: "/images/techstack_logos/nodejs-logo.svg", url: "/services/web-design-development/nodejs-backend" },
+                { name: "Python", logo: "/images/techstack_logos/python-logo.svg", url: "/services/web-design-development/python-django" },
+                { name: "Laravel", logo: "/images/techstack_logos/Laravel-logo.png", url: "/services/web-design-development/laravel-php" },
+                { name: "Django", logo: "/images/techstack_logos/django-logo.svg", url: "/services/web-design-development/python-django" },
             ],
         },
         {
             category: "Infrastructure",
             description: "Cloud infrastructure for global speed and uptime",
             items: [
-                { name: "AWS", logo: "/images/techstack_logos/aws-logo.png" },
+                { name: "AWS", logo: "/images/techstack_logos/aws-logo.png", url: "/services/web-design-development/saas-development-services" },
                 { name: "Google Cloud", logo: "/images/techstack_logos/googlecloud-logo.svg" },
                 { name: "Vercel", logo: "/images/techstack_logos/vercel-logo.webp" },
                 { name: "DigitalOcean", logo: "/images/techstack_logos/DigitalOcean-logo.svg" },
@@ -53,7 +54,7 @@ export default function TechStack() {
             items: [
                 { name: "Google Trends", logo: "/images/techstack_logos/Google-Trends-logo.jpg" },
                 { name: "SendGrid", logo: "/images/techstack_logos/SendGrid-logo.png" },
-                { name: "Mailchimp", logo: "/images/ai_automation_logos/mailchimp-logo.svg" },
+                { name: "Mailchimp", logo: "/images/ai_automation_logos/mailchimp-logo.svg", url: "/services/performance-marketing" },
                 { name: "Display & Video 360", logo: "/images/techstack_logos/DV360-Logo.webp" },
             ],
         },
@@ -115,32 +116,53 @@ export default function TechStack() {
                     </p>
 
                     <div className="flex flex-wrap justify-center items-start gap-8 md:gap-12">
-                        {technologies[activeCategory].items.map((item, lidx) => (
-                            <div
-                                key={lidx}
-                                className="flex flex-col items-center gap-3 transition-all duration-300 hover:scale-110"
-                            >
+                        {technologies[activeCategory].items.map((item, lidx) => {
+                            const commonClasses = "flex flex-col items-center gap-3 transition-all duration-300 hover:scale-110 cursor-pointer";
+                            const content = (
+                                <>
+                                    <div
+                                        className="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center p-4 rounded-2xl"
+                                        style={{
+                                            backgroundColor: "color-mix(in srgb, #a855f7 5%, var(--background))",
+                                        }}
+                                    >
+                                        <Image
+                                            src={item.logo}
+                                            alt={`${item.name} logo`}
+                                            fill
+                                            className="object-contain p-3 filter dark:brightness-90"
+                                        />
+                                    </div>
+                                    <span
+                                        className="text-xs md:text-sm font-medium text-center"
+                                        style={{ color: "var(--secondary-text)" }}
+                                    >
+                                        {item.name}
+                                    </span>
+                                </>
+                            );
+
+                            if (item.url) {
+                                return (
+                                    <Link
+                                        key={lidx}
+                                        href={item.url}
+                                        className={commonClasses}
+                                    >
+                                        {content}
+                                    </Link>
+                                );
+                            }
+
+                            return (
                                 <div
-                                    className="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center p-4 rounded-2xl"
-                                    style={{
-                                        backgroundColor: "color-mix(in srgb, #a855f7 5%, var(--background))",
-                                    }}
+                                    key={lidx}
+                                    className={commonClasses}
                                 >
-                                    <Image
-                                        src={item.logo}
-                                        alt={`${item.name} logo`}
-                                        fill
-                                        className="object-contain p-3 filter dark:brightness-90"
-                                    />
+                                    {content}
                                 </div>
-                                <span
-                                    className="text-xs md:text-sm font-medium text-center"
-                                    style={{ color: "var(--secondary-text)" }}
-                                >
-                                    {item.name}
-                                </span>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
 

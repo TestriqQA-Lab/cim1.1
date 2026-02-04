@@ -1,6 +1,7 @@
 "use client";
 
 import { Lightbulb, Palette, Code, TestTube, Rocket, RefreshCw } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const steps = [
@@ -120,7 +121,17 @@ export default function Process() {
                                         {step.number}
                                     </div>
                                     <h3 className="text-xl font-bold" style={{ color: "var(--foreground)" }}>
-                                        {step.title}
+                                        {step.title === "UX/UI Design & Prototyping" ? (
+                                            <>
+                                                <Link href="/services/web-design-development/branding-services" className="hover:underline">UX/UI Design</Link> & <Link href="/blog/category/ui-ux-design" className="hover:underline">Prototyping</Link>
+                                            </>
+                                        ) : step.title === "Quality Assurance & Testing" ? (
+                                            <Link href="/services/seo-services/technical-seo-services" className="hover:underline">
+                                                {step.title}
+                                            </Link>
+                                        ) : (
+                                            step.title
+                                        )}
                                     </h3>
                                 </div>
 

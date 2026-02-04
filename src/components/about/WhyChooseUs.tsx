@@ -1,11 +1,12 @@
 import { Award, Users, Globe2, Rocket, Shield, TrendingUp } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Rocket,
             title: "Full-Stack Strategy & Execution",
-            description: "From custom website development to AI-powered marketing automation, we provide end-to-end services that eliminate the need for multiple vendors. Our integrated approach ensures your web design, mobile apps, SEO, and performance marketing work in perfect harmony to drive business growth.",
+            description: <span>From <Link href="/services/web-design-development" className="hover:text-[var(--brand-blue)] transition-colors">custom website development</Link> to <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-blue)] transition-colors">AI-powered marketing automation</Link>, we provide end-to-end services that eliminate the need for multiple vendors. Our integrated approach ensures your web design, <Link href="/services/mobile-app-development" className="hover:text-[var(--brand-blue)] transition-colors">mobile apps</Link>, <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)] transition-colors">SEO</Link>, and <Link href="/services/performance-marketing" className="hover:text-[var(--brand-blue)] transition-colors">performance marketing</Link> work in perfect harmony to drive business growth.</span>,
             colorFrom: "var(--brand-blue)",
             colorTo: "var(--brand-teal)",
         },
@@ -33,7 +34,7 @@ export default function WhyChooseUs() {
         {
             icon: Shield,
             title: "Cutting-Edge Technology & Innovation",
-            description: "We leverage the latest technologies - from Next.js and React to advanced AI models and automation tools - to future-proof your digital infrastructure. Our enterprise-grade security, performance-first architecture, and scalable systems ensure your business stays ahead of the curve.",
+            description: <span>We leverage the latest technologies - from <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[var(--brand-purple)] transition-colors">Next.js</Link> and React to advanced AI models and automation tools - to future-proof your digital infrastructure. Our enterprise-grade security, performance-first architecture, and scalable systems ensure your business stays ahead of the curve.</span>,
             colorFrom: "var(--brand-blue)",
             colorTo: "var(--brand-purple)",
         },

@@ -65,7 +65,7 @@ export default function Hero() {
 
                 {/* Description */}
                 <p className="text-xl md:text-2xl mb-8 leading-relaxed max-w-3xl mx-auto animate-slideUp" style={{ color: "var(--secondary-text)", animationDelay: "0.1s" }}>
-                    Explore our comprehensive digital services including web development, mobile apps, SEO, social media marketing, AI automation, and more. Transform your business with CIM.
+                    Explore our comprehensive digital services including <Link href="/services/web-design-development" className="hover:text-[var(--brand-blue)] transition-colors">web development</Link>, <Link href="/services/mobile-app-development" className="hover:text-[var(--brand-teal)] transition-colors">mobile apps</Link>, <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)] transition-colors">SEO</Link>, <Link href="/services/social-media-marketing-services" className="hover:text-[var(--brand-orange)] transition-colors">social media marketing</Link>, <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-purple)] transition-colors">AI automation</Link>, and more. Transform your business with CIM.
                 </p>
 
                 {/* Decorator */}

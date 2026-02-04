@@ -128,9 +128,9 @@ export default function Hero() {
                                 }}
                             >
                                 <Award className="w-5 h-5 flex-shrink-0" style={{ color: "#f97316" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <Link href="/services/web-design-development/branding-services" className="text-sm font-semibold hover:underline" style={{ color: "var(--foreground)" }}>
                                     Brand Authority
-                                </span>
+                                </Link>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105"
                                 style={{
@@ -168,9 +168,9 @@ export default function Hero() {
                                 }}
                             >
                                 <Sparkles className="w-5 h-5 flex-shrink-0" style={{ color: "#f97316" }} />
-                                <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                                <Link href="/services/web-design-development" className="text-sm font-semibold hover:underline" style={{ color: "var(--foreground)" }}>
                                     Premium Design
-                                </span>
+                                </Link>
                             </div>
                         </div>
 

@@ -1,18 +1,19 @@
 
 
 import { CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 
 export default function Industries() {
     const industries = [
-        "IT, SaaS & Software Development",
-        "EdTech & E-Learning",
-        "HR & Recruitment",
-        "Healthcare & Wellness",
-        "Retail, Jewelry & E-Commerce",
-        "Entertainment & Media",
-        "Finance & Banking",
-        "Real Estate",
-        "Travel & Hospitality",
+        { name: "IT, SaaS & Software Development", href: "/services/web-design-development/saas-development-services" },
+        { name: "EdTech & E-Learning", href: "/services/web-design-development/edtech-lms" },
+        { name: "HR & Recruitment", href: "/services/web-design-development/business-corporate" },
+        { name: "Healthcare & Wellness", href: "/services/web-design-development/healthcare-portals" },
+        { name: "Retail, Jewelry & E-Commerce", href: "/services/web-design-development/ecommerce-development-company" },
+        { name: "Entertainment & Media", href: "/services/web-design-development/entertainment-media" },
+        { name: "Finance & Banking", href: "/services/web-design-development/fintech-solutions" },
+        { name: "Real Estate", href: "/services/web-design-development/real-estate-platforms" },
+        { name: "Travel & Hospitality", href: "/services/web-design-development/travel-and-hospitality-services" },
     ];
 
     return (
@@ -41,9 +42,9 @@ export default function Industries() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                    {industries.map((industry, index) => (
+                    {industries.map((item, index) => (
                         <div
-                            key={industry}
+                            key={item.name}
                             // note: using arbitrary animate shorthand so each item delays slightly
                             className={`
                 group relative rounded-2xl p-6 transition-all duration-300
@@ -71,7 +72,12 @@ export default function Industries() {
                             </div>
 
                             <p className="text-base font-semibold transition-colors duration-300 text-[var(--foreground)] group-hover:text-[var(--brand-blue)]">
-                                {industry}
+                                <Link
+                                    href={item.href}
+                                    className="hover:text-[var(--brand-blue)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--brand-blue)] rounded"
+                                >
+                                    {item.name}
+                                </Link>
                             </p>
                         </div>
                     ))}

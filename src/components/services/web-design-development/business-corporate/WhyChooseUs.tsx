@@ -197,7 +197,21 @@ export default function WhyChooseUs() {
                                     </div>
 
                                     <h3 className="text-2xl font-bold mb-4 transition-colors duration-300" style={{ color: "var(--foreground)" }}>
-                                        {reason.title}
+                                        {reason.title === "Enterprise Security Standards" ? (
+                                            <Link href="/services/seo-services/technical-seo-services" className="hover:underline">
+                                                {reason.title}
+                                            </Link>
+                                        ) : reason.title === "Regulatory Compliance" ? (
+                                            <Link href="/services/seo-services/technical-seo-services" className="hover:underline">
+                                                {reason.title}
+                                            </Link>
+                                        ) : reason.title === "Performance Excellence" ? (
+                                            <Link href="/services/web-design-development/nextjs-development-services" className="hover:underline">
+                                                {reason.title}
+                                            </Link>
+                                        ) : (
+                                            reason.title
+                                        )}
                                     </h3>
 
                                     <p className="text-base leading-relaxed mb-6" style={{ color: "var(--secondary-text)" }}>

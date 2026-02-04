@@ -1,6 +1,7 @@
 "use client";
 
 import { Code, Layers, Rocket, Shield, Users, RefreshCw } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const reasons = [
@@ -103,7 +104,17 @@ export default function WhyChooseUs() {
                                     <div className="absolute inset-0 opacity-10" style={{ background: "linear-gradient(135deg, white, transparent)" }} />
                                     <Icon className="w-8 h-8 text-white relative z-10" />
                                     <h3 className="text-lg font-bold text-white relative z-10">
-                                        {reason.title}
+                                        {reason.title === "Clean, Maintainable Code" ? (
+                                            <Link href="/services/web-design-development" className="hover:underline text-white">
+                                                {reason.title}
+                                            </Link>
+                                        ) : reason.title.includes("Scalable Architecture") ? (
+                                            <Link href="/services/web-design-development/nextjs-development-services" className="hover:underline text-white">
+                                                {reason.title}
+                                            </Link>
+                                        ) : (
+                                            reason.title
+                                        )}
                                     </h3>
                                 </div>
 

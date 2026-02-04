@@ -18,17 +18,17 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Fast Performance",
-            description: "Speed is a feature. In the era of Core Web Vitals, we optimize images and leverage global CDNs to ensure instant loads."
+            description: <>Speed is a feature. In the era of <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-[#06b6d4]">Core Web Vitals</Link>, we optimize images and leverage global CDNs to ensure instant loads.</>
         },
         {
             icon: Award,
             title: "SEO Optimized",
-            description: "Get found by the people who matter. We optimize for Contextual Modifiers and long-tail queries like \"Personal branding for entrepreneurs\"."
+            description: <>Get found by the people who matter. We <Link href="/services/seo-services" className="hover:underline text-[#06b6d4]">optimize for SEO</Link> and long-tail queries like &quot;Personal branding for entrepreneurs&quot;.</>
         },
         {
             icon: Shield,
             title: "Future-Proof",
-            description: "We build with modern frameworks like Next.js allowing easy updates and features like Video portfolio development as the web evolves."
+            description: <>We build with modern frameworks like Next.js allowing easy updates and features like <Link href="/blog/future-web-development-nextjs" className="hover:underline text-[#06b6d4]">Video portfolio development</Link> as the web evolves.</>
         }
     ];
 

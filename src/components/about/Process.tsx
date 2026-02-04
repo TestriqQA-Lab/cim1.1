@@ -32,7 +32,7 @@ export default function Process() {
             description: "Build digital assets, brand touchpoints, and user experiences that resonate with your audience and align with business objectives",
             colorFrom: "var(--brand-purple)",
             colorTo: "var(--brand-yellow)",
-            details: ["Brand strategy", "Creative concepts", "UI/UX design", "Content planning"],
+            details: ["Brand strategy", "Creative concepts", <span><Link href="/services/brand-identity-design" className="hover:text-[var(--brand-purple)] transition-colors">UI/UX design</Link></span>, "Content planning"],
         },
         {
             icon: Rocket,
@@ -48,7 +48,7 @@ export default function Process() {
             description: "Continuously analyze performance metrics, automate workflows, refine strategies, and scale growth based on real-time insights",
             colorFrom: "var(--brand-yellow)",
             colorTo: "var(--brand-orange)",
-            details: ["Performance tracking", "A/B testing", "Workflow automation", "Continuous improvement"],
+            details: [<span><Link href="/services/performance-marketing" className="hover:text-[var(--brand-orange)] transition-colors">Performance tracking</Link></span>, "A/B testing", <span><Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-yellow)] transition-colors">Workflow automation</Link></span>, "Continuous improvement"],
         },
     ];
 
