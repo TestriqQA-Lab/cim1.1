@@ -2,6 +2,7 @@
 
 import { Code2, Video, Database, Cloud, Play, BarChart3 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const technologies = [
@@ -9,9 +10,9 @@ export default function TechStack() {
             category: "Frontend Frameworks",
             icon: Code2,
             items: [
-                { name: "React/Next.js", description: "Fast, interactive apps", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: <Link href="/services/web-design-development/nextjs-development-services" className="hover:underline">React/Next.js</Link>, description: "Fast, interactive apps", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
                 { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
-                { name: "React Native", description: "Mobile learning apps", logos: ["/images/techstack_logos/react-logo.svg"] },
+                { name: <Link href="/services/mobile-app-development" className="hover:underline">React Native</Link>, description: "Mobile learning apps", logos: ["/images/techstack_logos/react-logo.svg"] },
             ],
         },
         {
@@ -27,9 +28,9 @@ export default function TechStack() {
             category: "Content Management",
             icon: Play,
             items: [
-                { name: "Sanity", description: "Headless CMS", logos: ["/images/techstack_logos/Sanity-square-logo.png"] },
-                { name: "Contentful", description: "Content platform", logos: ["/images/techstack_logos/Contentful-logo.webp"] },
-                { name: "Strapi", description: "Open-source CMS", logos: ["/images/techstack_logos/Strapi-logo.png"] },
+                { name: <Link href="/blog/headless-cms-sanity-nextjs-decoupled-frontends-2026" className="hover:underline">Sanity</Link>, description: "Headless CMS", logos: ["/images/techstack_logos/Sanity-square-logo.png"] },
+                { name: <Link href="/services/web-design-development/contentful-headless-cms" className="hover:underline">Contentful</Link>, description: "Content platform", logos: ["/images/techstack_logos/Contentful-logo.webp"] },
+                { name: <Link href="/services/web-design-development/strapi-headless-cms" className="hover:underline">Strapi</Link>, description: "Open-source CMS", logos: ["/images/techstack_logos/Strapi-logo.png"] },
             ],
         },
         {
@@ -56,7 +57,7 @@ export default function TechStack() {
             items: [
                 { name: "AWS", description: "Scalable cloud", logos: ["/images/techstack_logos/aws-logo.png"] },
                 { name: "Vercel", description: "Edge deployment", logos: ["/images/techstack_logos/vercel-logo.webp"] },
-                { name: "Cloudflare", description: "Global CDN", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
+                { name: <Link href="/services/seo-services/technical-seo-services" className="hover:underline">Cloudflare</Link>, description: "Global CDN", logos: ["/images/techstack_logos/Cloudflare-logo.webp"] },
             ],
         },
     ];

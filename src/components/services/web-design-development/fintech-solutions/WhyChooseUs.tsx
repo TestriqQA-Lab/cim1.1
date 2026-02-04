@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Scale,
-            title: "Regulatory Compliance",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Regulatory Compliance</Link>,
             description: "Our architectures are built to meet global financial regulations including GDPR, PSD2, PCI-DSS, and local banking standards.",
             highlights: [
                 { icon: Scale, text: "GDPR & CCPA" },
@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: TrendingUp,
-            title: "Scalable Architecture",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">Scalable Architecture</Link>,
             description: "Microservices-ready infrastructure that grows with your AUM (Assets Under Management) and user base without downtime.",
             highlights: [
                 { icon: TrendingUp, text: "Auto-scaling" },

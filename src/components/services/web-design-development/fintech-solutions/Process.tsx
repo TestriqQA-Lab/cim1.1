@@ -21,7 +21,7 @@ export default function Process() {
             deliverables: [
                 { icon: ShieldCheck, text: "Compliance roadmap" },
                 { icon: Lock, text: "Security audit" },
-                { icon: Users, text: "User personas" },
+                { icon: Users, text: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">User personas</Link> },
                 { icon: Target, text: "Risk assessment" }
             ],
             color: "#0ea5e9", // Sky blue
@@ -35,7 +35,7 @@ export default function Process() {
             deliverables: [
                 { icon: Server, text: "System architecture" },
                 { icon: FileText, text: "API specification" },
-                { icon: Users, text: "UX/UI prototypes" },
+                { icon: Users, text: <Link href="/services/web-design-development/branding-services" className="hover:underline">UX/UI prototypes</Link> },
                 { icon: Lock, text: "Data flow diagrams" }
             ],
             color: "#0ea5e9", // Sky blue
@@ -49,7 +49,7 @@ export default function Process() {
             deliverables: [
                 { icon: Code, text: "Core banking logic" },
                 { icon: Key, text: "Auth integration" },
-                { icon: Globe, text: "API development" },
+                { icon: Globe, text: <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">API development</Link> },
                 { icon: Zap, text: "Performance tuning" }
             ],
             color: "#0ea5e9", // Sky blue

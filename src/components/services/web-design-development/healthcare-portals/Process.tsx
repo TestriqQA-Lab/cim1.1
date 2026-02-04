@@ -31,7 +31,7 @@ export default function Process() {
         {
             number: "02",
             icon: Palette,
-            title: "UX Design & Prototyping",
+            title: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">UX Design & Prototyping</Link>,
             description: "Design patient-centered interfaces that are accessible, intuitive, and optimized for clinical workflows with empathy-driven user experience.",
             deliverables: [
                 { icon: Users, text: "User research" },
@@ -49,9 +49,9 @@ export default function Process() {
             description: "Build HIPAA-compliant solutions with end-to-end encryption, comprehensive audit logging, and secure multi-factor authentication.",
             deliverables: [
                 { icon: Shield, text: "Secure architecture" },
-                { icon: Database, text: "API development" },
+                { icon: Database, text: <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">API development</Link> },
                 { icon: Activity, text: "EHR integration" },
-                { icon: Smartphone, text: "Mobile apps" }
+                { icon: Smartphone, text: <Link href="/services/mobile-app-development" className="hover:underline">Mobile apps</Link> }
             ],
             color: "#8b5cf6",
             gradient: "from-[#8b5cf6] to-[#3b82f6]",

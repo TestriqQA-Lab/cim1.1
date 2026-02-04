@@ -7,23 +7,23 @@ export default function ServiceOverview() {
     const deliverables = [
         {
             icon: Calendar,
-            title: "Custom Booking Engines",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Custom Booking Engines</Link>,
             description: "Develop high-conversion Travel Booking Engine Optimization systems with real-time inventory updates and zero overbookings.",
         },
         {
             icon: Globe,
             title: "GDS & OTA Integration",
-            description: "Seamless Travel API Integration Services (GDS/OTA) for Amadeus, Sabre, Expedia, and Airbnb with bidirectional data sync.",
+            description: <span>Seamless <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">Travel API Integration Services</Link> (GDS/OTA) for Amadeus, Sabre, Expedia, and Airbnb with bidirectional data sync.</span>,
         },
         {
             icon: Users,
             title: "Guest Experience Platforms",
-            description: "Elevate engagement with Hospitality Guest Experience Optimization Services, from mobile check-in to AI concierge chatbots.",
+            description: <span>Elevate engagement with Hospitality Guest Experience Optimization Services, from mobile check-in to <Link href="/services/ai-chatbots-services" className="hover:underline">AI concierge chatbots</Link>.</span>,
         },
         {
             icon: CreditCard,
             title: "Revenue Management Systems",
-            description: "Implement advanced Hospitality Revenue Management Services using AI to predict demand and optimize dynamic pricing.",
+            description: <span>Implement advanced <Link href="/services/ai-workflows-automations-services" className="hover:underline">Hospitality Revenue Management Services</Link> using AI to predict demand and optimize dynamic pricing.</span>,
         },
     ];
 

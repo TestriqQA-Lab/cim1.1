@@ -34,7 +34,7 @@ export default function ServiceOverview() {
                         </p>
 
                         <p className="text-lg leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            From corporate training portals to massive open online courses (MOOCs),
+                            From <Link href="/services/web-design-development/business-corporate" className="hover:underline text-[#a855f7]">corporate training portals</Link> to massive open online courses (<Link href="/services/web-design-development/entertainment-media" className="hover:underline text-[#a855f7]">MOOCs</Link>),
                             we deliver solutions that scale with your educational mission and drive
                             measurable learning outcomes.
                         </p>

@@ -1,6 +1,7 @@
 "use client";
 
 import { Zap, Globe, Shield, Users, BarChart3, HeadphonesIcon, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const reasons = [
@@ -13,7 +14,7 @@ export default function WhyChooseUs() {
         {
             icon: BarChart3,
             title: "Data-Driven Results",
-            description: "Our Travel Data Analytics and Business Intelligence focus ensures every feature drives ROI and maximizes profitability.",
+            description: <span>Our <Link href="/services/ai-workflows-automations-services" className="hover:underline">Travel Data Analytics</Link> and Business Intelligence focus ensures every feature drives ROI and maximizes profitability.</span>,
             color: "#0d9488",
         },
         {
@@ -31,7 +32,7 @@ export default function WhyChooseUs() {
         {
             icon: Users,
             title: "360° Digital Partnership",
-            description: "Beyond development, we offer Hospitality Social Media Management, SEO, and Travel Lead Generation to ensure your platform thrives.",
+            description: <span>Beyond development, we offer <Link href="/services/social-media-marketing-services" className="hover:underline">Hospitality Social Media Management</Link>, SEO, and <Link href="/services/performance-marketing" className="hover:underline">Travel Lead Generation</Link> to ensure your platform thrives.</span>,
             color: "#0d9488",
         },
         {

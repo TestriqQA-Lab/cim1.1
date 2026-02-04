@@ -2,6 +2,7 @@
 
 import { Code2, Globe, Database, Cloud, CreditCard, Map } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const technologies = [
@@ -9,8 +10,8 @@ export default function TechStack() {
             category: "Backend & Cloud",
             icon: Code2,
             items: [
-                { name: "Node.js / NestJS", description: "Scalable booking microservices", logos: ["/images/techstack_logos/nodejs-logo.svg"] },
-                { name: "Python / Django", description: "AI/ML & complex processing", logos: ["/images/techstack_logos/python-logo.svg", "/images/techstack_logos/django-logo.svg"] },
+                { name: <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">Node.js / NestJS</Link>, description: "Scalable booking microservices", logos: ["/images/techstack_logos/nodejs-logo.svg"] },
+                { name: <Link href="/services/web-design-development/python-django" className="hover:underline">Python / Django</Link>, description: "AI/ML & complex processing", logos: ["/images/techstack_logos/python-logo.svg", "/images/techstack_logos/django-logo.svg"] },
                 { name: "AWS / Google Cloud", description: "99.99% uptime infrastructure", logos: ["/images/techstack_logos/aws-logo.png", "/images/techstack_logos/googlecloud-logo.svg"] },
             ],
         },
@@ -18,7 +19,7 @@ export default function TechStack() {
             category: "Frontend & Mobile",
             icon: Globe,
             items: [
-                { name: "React / Next.js", description: "SEO-optimized interfaces", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: <Link href="/services/web-design-development/nextjs-development-services" className="hover:underline">React / Next.js</Link>, description: "SEO-optimized interfaces", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
                 { name: "React Native / Flutter", description: "Cross-platform mobile apps", logos: ["/images/techstack_logos/react-logo.svg"] },
                 { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
             ],
@@ -44,9 +45,9 @@ export default function TechStack() {
             category: "CMS & Content",
             icon: Cloud,
             items: [
-                { name: "WordPress (Headless)", description: "Flexible content management", logos: ["/images/techstack_logos/wordpress-logo.svg"] },
-                { name: "Sanity / Strapi", description: "Omnichannel delivery", logos: ["/images/techstack_logos/Sanity-square-logo.png", "/images/techstack_logos/Strapi-logo.png"] },
-                { name: "Contentful", description: "Enterprise infrastructure", logos: ["/images/techstack_logos/Contentful-logo.webp"] },
+                { name: <Link href="/services/web-design-development/wordpress-development-services" className="hover:underline">WordPress (Headless)</Link>, description: "Flexible content management", logos: ["/images/techstack_logos/wordpress-logo.svg"] },
+                { name: <span><Link href="/services/web-design-development/strapi-headless-cms" className="hover:underline">Sanity / Strapi</Link></span>, description: "Omnichannel delivery", logos: ["/images/techstack_logos/Sanity-square-logo.png", "/images/techstack_logos/Strapi-logo.png"] },
+                { name: <Link href="/services/web-design-development/contentful-headless-cms" className="hover:underline">Contentful</Link>, description: "Enterprise infrastructure", logos: ["/images/techstack_logos/Contentful-logo.webp"] },
             ],
         },
         {

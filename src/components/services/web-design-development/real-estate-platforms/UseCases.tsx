@@ -43,7 +43,7 @@ export default function UseCases() {
         },
         {
             icon: Store,
-            title: "Property Marketplaces",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Property Marketplaces</Link>,
             description: "Multi-vendor platforms connecting buyers, sellers, agents, and property managers in one unified ecosystem.",
             features: [
                 { icon: Users, text: "Multi-vendor" },
@@ -69,7 +69,7 @@ export default function UseCases() {
         },
         {
             icon: Briefcase,
-            title: "Commercial Real Estate",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Commercial Real Estate</Link>,
             description: "Office, retail, and industrial property platforms with specialized search filters and investment analytics.",
             features: [
                 { icon: Search, text: "Advanced filters" },

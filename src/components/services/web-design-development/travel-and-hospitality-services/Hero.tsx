@@ -10,11 +10,11 @@ import Link from "next/link";
 export default function Hero() {
     const features = [
         { icon: Calendar, text: "Booking Systems" },
-        { icon: Hotel, text: "Property Management" },
+        { icon: Hotel, text: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">Property Management</Link> },
         { icon: Globe, text: "Virtual Tours" },
         { icon: Users, text: "Guest Portals" },
         { icon: CreditCard, text: "Multi-Currency" },
-        { icon: BarChart3, text: "Analytics" },
+        { icon: BarChart3, text: <Link href="/services/ai-workflows-automations-services" className="hover:underline">Analytics</Link> },
     ];
 
     const stats = [

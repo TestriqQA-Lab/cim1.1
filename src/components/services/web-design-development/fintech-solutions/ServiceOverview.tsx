@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function ServiceOverview() {
     const deliverables = [
-        { icon: Smartphone, title: "Mobile Banking Apps", description: "Native iOS & Android apps with biometric security and seamless UX" },
-        { icon: CreditCard, title: "Payment Processing", description: "Secure gateways supporting global currencies and crypto" },
+        { icon: Smartphone, title: <Link href="/services/mobile-app-development" className="hover:underline">Mobile Banking Apps</Link>, description: "Native iOS & Android apps with biometric security and seamless UX" },
+        { icon: CreditCard, title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Payment Processing</Link>, description: "Secure gateways supporting global currencies and crypto" },
         { icon: TrendingUp, title: "Wealth Management", description: "Robo-advisory, portfolio tracking, and trading interfaces" },
-        { icon: ShieldCheck, title: "Fraud Detection", description: "AI-driven risk assessment and transaction monitoring" },
+        { icon: ShieldCheck, title: <Link href="/services/ai-workflows-automations-services" className="hover:underline">Fraud Detection</Link>, description: "AI-driven risk assessment and transaction monitoring" },
         { icon: Landmark, title: "Core Banking", description: "Modern ledger systems and API-first banking infrastructure" },
         { icon: Globe, title: "Cross-Border Payments", description: "Low-latency international transfer networks" },
     ];

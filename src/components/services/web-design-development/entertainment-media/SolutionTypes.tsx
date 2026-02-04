@@ -11,6 +11,7 @@ import {
     Sparkles,
     Check,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -64,7 +65,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Newspaper,
-            title: "News & Magazine Portals",
+            title: <Link href="/services/web-design-development/wordpress-development-services" className="hover:underline">News & Magazine Portals</Link>,
             description:
                 "Digital publication platforms with paywalls, newsletter integration, and dynamic content delivery.",
             features: [

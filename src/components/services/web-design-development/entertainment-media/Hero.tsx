@@ -14,7 +14,7 @@ export default function Hero() {
         { icon: Tv, text: "Live Broadcasting" },
         { icon: Users, text: "Social Features" },
         { icon: Radio, text: "Podcasting" },
-        { icon: TrendingUp, text: "Analytics" },
+        { icon: TrendingUp, text: <Link href="/services/ai-workflows-automations-services" className="hover:underline">Analytics</Link> },
     ];
 
     const stats = [
@@ -100,7 +100,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Build powerful streaming platforms, content management systems, and engaging
+                            Build powerful streaming platforms, <Link href="/services/web-design-development" className="hover:underline">content management systems</Link>, and engaging
                             entertainment experiences that captivate audiences and drive subscriber growth.
                         </p>
 

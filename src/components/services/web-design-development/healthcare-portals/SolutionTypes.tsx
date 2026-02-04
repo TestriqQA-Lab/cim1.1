@@ -46,7 +46,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Building2,
-            title: "Practice Management",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Practice Management</Link>,
             description: "Streamline clinical operations with scheduling, billing, documentation, and workflow automation tools.",
             features: [
                 { icon: Calendar, text: "Scheduling Systems" },
@@ -60,7 +60,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Pill,
-            title: "Pharmacy Systems",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Pharmacy Systems</Link>,
             description: "Digital platforms for medication management, prescription processing, and pharmacy operations.",
             features: [
                 { icon: FileText, text: "Prescription Processing" },
@@ -74,7 +74,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Brain,
-            title: "Mental Health Platforms",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">Mental Health Platforms</Link>,
             description: "Specialized solutions for behavioral health including therapy scheduling, progress tracking, and secure communication.",
             features: [
                 { icon: Calendar, text: "Therapy Scheduling" },

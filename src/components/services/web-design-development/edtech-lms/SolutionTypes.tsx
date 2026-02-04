@@ -15,7 +15,7 @@ export default function SolutionTypes() {
         {
             icon: BookOpen,
             title: "Online Course Platforms",
-            description: "Create and sell online courses with video lessons, quizzes, assignments, and progress tracking like Udemy or Skillshare.",
+            description: <>Create and sell <Link href="/services/web-design-development/edtech-lms" className="hover:underline text-[#a855f7]">online courses</Link> with video lessons, quizzes, assignments, and progress tracking like Udemy or Skillshare.</>,
             features: [
                 { icon: Video, text: "Video Lessons" },
                 { icon: FileText, text: "Downloadable Resources" },
@@ -29,7 +29,7 @@ export default function SolutionTypes() {
         {
             icon: Building2,
             title: "Corporate LMS",
-            description: "Enterprise learning management for employee training, onboarding, compliance, and skill development.",
+            description: <>Enterprise <Link href="/services/web-design-development/business-corporate" className="hover:underline text-[#ec4899]">learning management</Link> for employee training, onboarding, compliance, and skill development.</>,
             features: [
                 { icon: Users, text: "Team Management" },
                 { icon: Target, text: "Skill Tracking" },
@@ -57,7 +57,7 @@ export default function SolutionTypes() {
         {
             icon: Video,
             title: "Live Learning Platforms",
-            description: "Real-time virtual classrooms with video conferencing, screen sharing, and interactive whiteboards.",
+            description: <>Real-time <Link href="/services/web-design-development/entertainment-media" className="hover:underline text-[#a855f7]">virtual classrooms</Link> with video conferencing, screen sharing, and interactive whiteboards.</>,
             features: [
                 { icon: Video, text: "Live Video Classes" },
                 { icon: MessageSquare, text: "Real-time Chat" },

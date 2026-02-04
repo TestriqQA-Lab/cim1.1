@@ -2,6 +2,7 @@
 
 import { Code2, Shield, Database, Cloud, Video, Activity } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const technologies = [
@@ -9,9 +10,9 @@ export default function TechStack() {
             category: "Frontend Frameworks",
             icon: Code2,
             items: [
-                { name: "React/Next.js", description: "Fast, accessible apps", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: <Link href="/services/web-design-development/nextjs-development-services" className="hover:underline">React/Next.js</Link>, description: "Fast, accessible apps", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
                 { name: "TypeScript", description: "Type-safe development", logos: ["/images/techstack_logos/typescript-logo.svg"] },
-                { name: "React Native", description: "Mobile applications", logos: ["/images/techstack_logos/react-logo.svg"] },
+                { name: <Link href="/services/mobile-app-development" className="hover:underline">React Native</Link>, description: "Mobile applications", logos: ["/images/techstack_logos/react-logo.svg"] },
             ],
         },
         {
@@ -37,7 +38,7 @@ export default function TechStack() {
             icon: Database,
             items: [
                 { name: "HL7 FHIR", description: "Healthcare standards", logos: [] },
-                { name: "PostgreSQL", description: "Secure database", logos: ["/images/techstack_logos/postgresql-logo.svg"] },
+                { name: <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">PostgreSQL</Link>, description: "Secure database", logos: ["/images/techstack_logos/postgresql-logo.svg"] },
                 { name: "Redis", description: "Caching layer", logos: ["/images/techstack_logos/redis-logo.svg"] },
             ],
         },

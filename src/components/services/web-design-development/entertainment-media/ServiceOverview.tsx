@@ -1,13 +1,14 @@
 "use client";
 
 import { Play, Zap, Shield, Globe, Smartphone, BarChart3 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const highlights = [
         {
             icon: Play,
             title: "Streaming Excellence",
-            description: "Build Netflix-quality streaming experiences with adaptive bitrate, multi-device support, and seamless playback.",
+            description: <span>Build Netflix-quality streaming experiences with adaptive bitrate, <Link href="/services/mobile-app-development" className="hover:underline">multi-device support</Link>, and seamless playback.</span>,
         },
         {
             icon: Zap,
@@ -32,7 +33,7 @@ export default function ServiceOverview() {
         {
             icon: BarChart3,
             title: "Deep Analytics",
-            description: "Real-time viewer insights, engagement metrics, and AI-powered content recommendations.",
+            description: <span>Real-time viewer insights, engagement metrics, and <Link href="/services/ai-workflows-automations-services" className="hover:underline">AI-powered</Link> content recommendations.</span>,
         },
     ];
 

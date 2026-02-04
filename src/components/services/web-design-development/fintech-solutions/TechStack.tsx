@@ -2,6 +2,7 @@
 
 import { Code2, ShieldCheck, Database, Cloud, Globe, BarChart3, Lock } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const technologies = [
@@ -9,16 +10,16 @@ export default function TechStack() {
             category: "Core Banking & Backend",
             icon: Code2,
             items: [
-                { name: "Node.js/Go", description: "High-concurrency systems", logos: ["/images/techstack_logos/nodejs-logo.svg", "/images/techstack_logos/go-logo-new.png"] },
+                { name: <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">Node.js/Go</Link>, description: "High-concurrency systems", logos: ["/images/techstack_logos/nodejs-logo.svg", "/images/techstack_logos/go-logo-new.png"] },
                 { name: "Java/Spring", description: "Enterprise services", logos: ["/images/techstack_logos/java-logo.svg", "/images/techstack_logos/spring-logo.svg"] },
-                { name: "Python", description: "Data analysis & AI", logos: ["/images/techstack_logos/python-logo.svg"] },
+                { name: <Link href="/services/web-design-development/python-django" className="hover:underline">Python</Link>, description: "Data analysis & AI", logos: ["/images/techstack_logos/python-logo.svg"] },
             ],
         },
         {
             category: "Frontend & Terminals",
             icon: Globe,
             items: [
-                { name: "Fast & Interactive", description: "React, Next.js", logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
+                { name: "Fast & Interactive", description: <Link href="/services/web-design-development/nextjs-development-services" className="hover:underline">React, Next.js</Link>, logos: ["/images/techstack_logos/react-logo.svg", "/images/techstack_logos/nextjs-logo.svg"] },
                 { name: "Type Safety", description: "TypeScript", logos: ["/images/techstack_logos/typescript-logo.svg"] },
                 { name: "Desktop Apps", description: "Electron (Trading)", logos: ["/images/techstack_logos/electron-logo.png"] },
             ],

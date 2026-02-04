@@ -8,6 +8,8 @@ import {
     HeadphonesIcon,
     TrendingUp,
 } from "lucide-react";
+import Link from "next/link";
+
 
 export default function WhyChooseUs() {
     const reasons = [
@@ -32,8 +34,7 @@ export default function WhyChooseUs() {
         {
             icon: Smartphone,
             title: "Cross-Platform",
-            description:
-                "Seamless experience across web, mobile apps, smart TVs, and gaming consoles with unified user profiles.",
+            description: <span>Seamless experience across web, <Link href="/services/mobile-app-development" className="hover:underline">mobile apps</Link>, smart TVs, and gaming consoles with unified user profiles.</span>,
         },
         {
             icon: TrendingUp,

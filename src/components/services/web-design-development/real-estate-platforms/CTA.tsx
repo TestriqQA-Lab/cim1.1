@@ -61,15 +61,17 @@ export default function CTA() {
                         style={{ color: "var(--foreground)" }}
                     >
                         Let&apos;s Build Your{" "}
-                        <span
-                            className="bg-clip-text text-transparent"
-                            style={{
-                                background: "linear-gradient(135deg, #0d9488, #14b8a6)",
-                                WebkitBackgroundClip: "text",
-                            }}
-                        >
-                            Property Platform
-                        </span>
+                        <Link href="/services/web-design-development" className="hover:underline">
+                            <span
+                                className="bg-clip-text text-transparent"
+                                style={{
+                                    background: "linear-gradient(135deg, #0d9488, #14b8a6)",
+                                    WebkitBackgroundClip: "text",
+                                }}
+                            >
+                                Property Platform
+                            </span>
+                        </Link>
                     </h2>
 
                     <p

@@ -7,9 +7,9 @@ export default function CTA() {
     const features = [
         "Secure Banking Tech",
         "Payment Processors",
-        "Investment Platforms",
+        <Link href="/services/web-design-development/saas-development-services" className="hover:underline">Investment Platforms</Link>,
         "Blockchain Solutions",
-        "Mobile Finance Apps",
+        <Link href="/services/mobile-app-development" className="hover:underline">Mobile Finance Apps</Link>,
         "Regulatory Compliance",
     ];
 

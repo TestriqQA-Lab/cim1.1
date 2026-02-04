@@ -88,7 +88,7 @@ export default function CTA() {
                             className="text-base md:text-xl mb-10 leading-relaxed"
                             style={{ color: "var(--secondary-text)" }}
                         >
-                            Whether you&apos;re launching a streaming service, podcast network, or
+                            Whether you&apos;re launching a <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:underline">streaming service</Link>, podcast network, or
                             interactive media platform, we have the expertise to bring your vision to life.
                         </p>
 
