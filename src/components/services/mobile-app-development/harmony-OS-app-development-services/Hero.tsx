@@ -100,7 +100,7 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Distributed Apps,{" "}
+                            <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[#C7000B] transition-colors">Distributed Apps</Link>,{" "}
                             <span
                                 className="relative inline-block"
                                 style={{ color: "#C7000B" }}
@@ -118,7 +118,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Build next-generation apps for Huawei&apos;s HarmonyOS ecosystem. Create distributed applications that run seamlessly across smartphones, tablets, wearables, and IoT devices.
+                            Build next-generation apps for Huawei&apos;s HarmonyOS ecosystem. Create <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="text-[#C7000B] hover:underline">distributed applications</Link> that run seamlessly across <Link href="/services/mobile-app-development" className="text-[#C7000B] hover:underline">smartphones</Link>, tablets, wearables, and IoT devices.
                         </p>
 
                         {/* Feature Pills */}

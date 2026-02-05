@@ -10,6 +10,7 @@ import {
     BarChart3,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -108,7 +109,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        We specialize in developing robust Enterprise Web Applications and mobile solutions that solve complex workflow challenges and drive operational efficiency.
+                        We specialize in developing robust <Link href="/services/web-design-development" className="text-[#2563eb] hover:underline">Enterprise Web Applications</Link> and <Link href="/services/mobile-app-development" className="text-[#2563eb] hover:underline">mobile solutions</Link> that solve complex workflow challenges and drive operational efficiency.
                     </p>
                 </div>
 

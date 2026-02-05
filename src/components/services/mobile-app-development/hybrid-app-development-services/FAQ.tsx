@@ -7,12 +7,13 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQ() {
     const faqs = [
         {
             question: "What is hybrid app development?",
-            answer: "Hybrid app development is a software development approach where a single codebase is written using web technologies (HTML, CSS, JavaScript) and then wrapped in a native container. This allows the app to run on multiple platforms like iOS and Android while still accessing native device features like GPS and Camera.",
+            answer: <><span className="text-inherit">Hybrid app development is a software development approach where a single codebase is written using web technologies (HTML, CSS, JavaScript) and then wrapped in a native container. This allows the app to run on multiple platforms like </span><Link href="/services/mobile-app-development/ios-app-development-company" className="text-[#00b4d8] hover:underline">iOS</Link> and <Link href="/services/mobile-app-development/android-app-development-company" className="text-[#00b4d8] hover:underline">Android</Link> while still accessing native device features like GPS and Camera.</>,
         },
         {
             question: "What are the benefits of hybrid apps vs native apps?",
@@ -28,7 +29,7 @@ export default function FAQ() {
         },
         {
             question: "How long does it take to develop a custom hybrid app?",
-            answer: "A standard hybrid app MVP can be developed in 8 to 12 weeks. Complex enterprise applications may take 4 to 6 months. The single codebase approach significantly reduces the timeline compared to native development.",
+            answer: <><span className="text-inherit">A standard hybrid app MVP can be developed in 8 to 12 weeks. Complex </span><Link href="/services/mobile-app-development/enterprise-application-development-services" className="text-[#00b4d8] hover:underline">enterprise applications</Link> may take 4 to 6 months. The single codebase approach significantly reduces the timeline compared to native development.</>,
         },
     ];
 

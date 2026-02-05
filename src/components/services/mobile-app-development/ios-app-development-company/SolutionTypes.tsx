@@ -12,6 +12,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -36,7 +37,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: ShoppingCart,
-            title: "E-commerce & Retail",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[#007AFF] transition-colors">E-commerce & Retail</Link>,
             description: "Boost sales with Ecommerce and retail iOS app solutions. We integrate Apple Pay, ARKit, and personalized recommendation engines.",
             features: [
                 "Apple Pay checkout",
@@ -48,7 +49,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Building2,
-            title: "Enterprise & B2B",
+            title: <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[#5AC8FA] transition-colors">Enterprise & B2B</Link>,
             description: "Streamline operations with B2B iOS app development. Secure MDM-compatible apps featuring SSO, VPN, and custom analytics.",
             features: [
                 "MDM compatibility",
@@ -60,7 +61,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Heart,
-            title: "Healthcare & Fitness",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:text-[#0055D4] transition-colors">Healthcare & Fitness</Link>,
             description: "Trust is paramount. We deliver HIPAA-compliant iOS apps. Secure patient portals, telemedicine, and fitness trackers with HealthKit.",
             features: [
                 "HIPAA compliance",
@@ -72,7 +73,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Wallet,
-            title: "Fintech & Banking",
+            title: <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[#007AFF] transition-colors">Fintech & Banking</Link>,
             description: "Bank on security. Fintech solutions with biometric auth (FaceID/TouchID), data privacy consulting, and secure Metal visualization.",
             features: [
                 "Biometric auth",
@@ -84,7 +85,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Gamepad2,
-            title: "Gaming & Entertainment",
+            title: <Link href="/services/web-design-development/entertainment-media" className="hover:text-[#5AC8FA] transition-colors">Gaming & Entertainment</Link>,
             description: "Create immersive worlds. We utilize Metal, SpriteKit, and SceneKit to build console-quality games and AR adventures.",
             features: [
                 "Metal graphics",
@@ -96,13 +97,13 @@ export default function SolutionTypes() {
         },
         {
             icon: GraduationCap,
-            title: "Education & eLearning",
+            title: <Link href="/services/web-design-development/edtech-lms" className="hover:text-[#0055D4] transition-colors">Education & eLearning</Link>,
             description: "Revolutionize learning. Interactive apps leveraging ClassKit for progress tracking, PencilKit for drawing, and AR demonstrations.",
             features: [
                 "ClassKit tracking",
                 "PencilKit drawing",
                 "AR demonstrations",
-                "Interactive UI/UX",
+                <Link key="ui" href="/services/web-design-development/branding-services" className="hover:text-[#007AFF] transition-colors">Interactive UI/UX</Link>,
             ],
             gradient: "from-[#0055D4] to-[#5AC8FA]",
         },
@@ -180,7 +181,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

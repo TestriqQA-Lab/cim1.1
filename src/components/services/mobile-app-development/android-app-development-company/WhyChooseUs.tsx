@@ -10,6 +10,7 @@ import {
     Clock,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -18,14 +19,14 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Native Performance Mastery",
-            description: "We squeeze every ounce of performance from the hardware. Our native Android development ensures instant startup times and buttery smooth animations that hybrid apps can't match.",
+            description: <><span className="text-inherit">We squeeze every ounce of performance from the hardware. Our native Android development ensures instant startup times and buttery smooth animations that </span><Link href="/services/mobile-app-development/hybrid-app-development-services" className="text-[#3DDC84] hover:underline">hybrid apps</Link> can&apos;t match.</>,
             gradient: "from-[#3DDC84] to-[#78C257]",
             shadowColor: "rgba(61, 220, 132, 0.3)",
         },
         {
             icon: Shield,
             title: "Material Design Guidelines Expert",
-            description: "Our UI/UX team are purists of Google's design language, ensuring your app feels at home on any Android device while maintaining your unique brand identity.",
+            description: <><span className="text-inherit">Our UI/UX team are purists of Google&apos;s design language, ensuring your app feels at home on any Android device while maintaining your </span><Link href="/services/brand-identity-design" className="text-[#3DDC84] hover:underline">unique brand identity</Link>.</>,
             gradient: "from-[#78C257] to-[#3DDC84]",
             shadowColor: "rgba(120, 194, 87, 0.3)",
         },
@@ -126,7 +127,7 @@ export default function WhyChooseUs() {
                                 {/* Glow Effect */}
                                 <div
                                     className={`
-                                        absolute -inset-1 rounded-3xl blur-xl transition-opacity duration-500
+                                        absolute -inset-1 rounded-3xl blur-xl transition-opacity duration-500 pointer-events-none
                                         ${isHovered ? "opacity-100" : "opacity-0"}
                                     `}
                                     style={{ background: reason.shadowColor }}

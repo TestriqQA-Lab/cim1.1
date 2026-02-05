@@ -6,12 +6,13 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 export default function FAQ() {
     const faqs = [
         {
             question: "What is cross-platform app development?",
-            answer: "Cross-platform app development helps in building mobile applications that are compatible with multiple operating systems, such as iOS and Android, using a single codebase. This approach saves time and reduces costs compared to native development."
+            answer: <><span className="text-inherit">Cross-platform app development helps in building mobile applications that are compatible with multiple operating systems, such as </span><Link href="/services/mobile-app-development/ios-app-development-company" className="text-[#667eea] hover:underline">iOS</Link> and <Link href="/services/mobile-app-development/android-app-development-company" className="text-[#667eea] hover:underline">Android</Link>, using a single codebase. This approach saves time and reduces costs compared to native development.</>
         },
         {
             question: "Which is better: Flutter or React Native in 2026?",
@@ -27,7 +28,7 @@ export default function FAQ() {
         },
         {
             question: "How long does it take to develop a multi-platform mobile app?",
-            answer: "A typical MVP (Minimum Viable Product) can be delivered in 3-4 months. More complex enterprise solutions may take 6-8 months. Our agile process ensures you see progress every sprint."
+            answer: <><span className="text-inherit">A typical MVP (Minimum Viable Product) can be delivered in 3-4 months. More complex </span><Link href="/services/mobile-app-development/enterprise-application-development-services" className="text-[#667eea] hover:underline">enterprise solutions</Link> may take 6-8 months. Our agile process ensures you see progress every sprint.</>
         },
         {
             question: "Can you convert my existing native app to cross-platform?",

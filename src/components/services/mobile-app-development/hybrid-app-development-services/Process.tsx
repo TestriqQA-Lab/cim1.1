@@ -10,6 +10,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -31,7 +32,7 @@ export default function Process() {
         {
             icon: Palette,
             title: "Hybrid Mobile App Design (UI/UX)",
-            description: "Our designers craft high-fidelity interfaces optimized for cross-platform compatibility and user retention.",
+            description: <><span className="text-inherit">Our designers craft high-fidelity interfaces optimized for cross-platform compatibility and </span><Link href="/services/brand-identity-design" className="text-[#00b4d8] hover:underline">UI/UX</Link> retention.</>,
             details: [
                 "Cross-platform UI patterns",
                 "User retention focus",

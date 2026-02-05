@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("frameworks");
@@ -14,7 +15,7 @@ export default function TechStack() {
         { id: "backend", label: "Backend" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: React.ReactNode; logo: string }[]> = {
         frameworks: [
             { name: "Ionic", description: "UI/UX Excellence", logo: "/images/techstack_logos/ionic-logo.svg" },
             { name: "Capacitor", description: "Modern Native Runtime", logo: "/images/techstack_logos/capacitor-logo.png" },
@@ -25,7 +26,7 @@ export default function TechStack() {
         ],
         frontend: [
             { name: "Angular", description: "TypeScript Framework", logo: "/images/techstack_logos/angularjs-logo.svg" },
-            { name: "React", description: "UI Library", logo: "/images/techstack_logos/react-logo.svg" },
+            { name: "React", description: <Link href="/services/nextjs-development-services" className="hover:text-[#00b4d8] transition-colors">UI Library</Link>, logo: "/images/techstack_logos/react-logo.svg" },
             { name: "Vue.js", description: "Progressive Framework", logo: "/images/techstack_logos/vuejs-logo.svg" },
             { name: "TypeScript", description: "Type Safety", logo: "/images/techstack_logos/typescript-logo.svg" },
             { name: "Sass", description: "CSS Preprocessor", logo: "/images/techstack_logos/Sass-SCSS-logo.png" },
@@ -49,7 +50,7 @@ export default function TechStack() {
         ],
         backend: [
             { name: "Firebase", description: "Backend Services", logo: "/images/techstack_logos/firebase-logo.svg" },
-            { name: "Node.js", description: "API Backend", logo: "/images/techstack_logos/nodejs-logo.svg" },
+            { name: "Node.js", description: <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#00b4d8] transition-colors">API Backend</Link>, logo: "/images/techstack_logos/nodejs-logo.svg" },
             { name: "Supabase", description: "Open Source BaaS", logo: "/images/techstack_logos/supabase-logo.webp" },
             { name: "AWS Amplify", description: "Cloud Platform", logo: "/images/techstack_logos/aws-logo.png" },
             { name: "GraphQL", description: "API Layer", logo: "/images/techstack_logos/graphql-logo.svg" },

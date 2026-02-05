@@ -9,6 +9,7 @@ import {
     Cpu,
     Share2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -17,7 +18,7 @@ export default function ServiceOverview() {
         {
             icon: Smartphone,
             title: "HarmonyOS Phone Apps",
-            description: "Native applications for Huawei smartphones using ArkTS and ArkUI. Full access to HMS Core services.",
+            description: <><Link href="/services/mobile-app-development" className="text-[#C7000B] hover:underline">Native applications</Link> for Huawei smartphones using ArkTS and ArkUI. Full access to HMS Core services.</>,
             shadowColor: "rgba(199, 0, 11, 0.4)",
         },
         {
@@ -47,7 +48,7 @@ export default function ServiceOverview() {
         {
             icon: Share2,
             title: "Distributed Applications",
-            description: "Cross-device apps using HarmonyOS distributed capabilities. Seamless data and task sharing.",
+            description: <><Link href="/services/mobile-app-development/cross-platform-app-development-company" className="text-[#C7000B] hover:underline">Cross-device apps</Link> using HarmonyOS distributed capabilities. Seamless data and task sharing.</>,
             shadowColor: "rgba(199, 0, 11, 0.4)",
         },
     ];

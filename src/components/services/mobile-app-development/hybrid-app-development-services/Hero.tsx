@@ -123,9 +123,9 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Forge a formidable mobile presence with the speed of web development and the punch of native performance. In 2026, staying ahead means deploying faster without sacrificing quality. Our hybrid mobile app development company leverages HTML5, CSS3, and JavaScript, encapsulated in a robust native shell, to deliver seamless experiences on both the App Store and Play Store.
+                            Forge a formidable mobile presence with the speed of <Link href="/services/web-design-development" className="text-[#00b4d8] hover:underline">web development</Link> and the punch of native performance. In 2026, staying ahead means deploying faster without sacrificing quality. Our hybrid mobile app development company leverages HTML5, CSS3, and JavaScript, encapsulated in a robust native shell, to deliver seamless experiences on both the App Store and Play Store.
                             <br /><br />
-                            Whether you are seeking custom hybrid app development for startups or enterprise-grade multi-platform hybrid tablet and mobile apps, our team ensures a single codebase efficiency that slashes time-to-market by 60%.
+                            Whether you are seeking custom hybrid app development for startups or <Link href="/services/mobile-app-development/enterprise-application-development-services" className="text-[#00b4d8] hover:underline">enterprise-grade</Link> multi-platform hybrid tablet and mobile apps, our team ensures a single codebase efficiency that slashes time-to-market by 60%.
                         </p>
 
                         {/* Feature Pills */}

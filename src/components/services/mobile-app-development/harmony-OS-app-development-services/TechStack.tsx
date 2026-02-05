@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("core");
@@ -14,11 +15,11 @@ export default function TechStack() {
         { id: "deployment", label: "Deployment" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: React.ReactNode; logo: string }[]> = {
         core: [
             { name: "ArkTS", description: "TypeScript-based", logo: "/images/techstack_logos/ArkUI-logo.png" },
             { name: "ArkUI", description: "Declarative UI", logo: "/images/techstack_logos/ArkUI-logo.png" },
-            { name: "JavaScript", description: "Web Runtime", logo: "/images/techstack_logos/javascript-logo.svg" },
+            { name: "JavaScript", description: <Link href="/services/web-design-development" className="hover:text-[#C7000B] transition-colors">Web Runtime</Link>, logo: "/images/techstack_logos/javascript-logo.svg" },
             { name: "C/C++", description: "Native APIs", logo: "/images/techstack_logos/c++-logo.png" },
             { name: "Cangjie", description: "New Language", logo: "" },
             { name: "DevEco Studio", description: "Official IDE", logo: "/images/techstack_logos/DevEco-Studio-logo.png" },
@@ -34,7 +35,7 @@ export default function TechStack() {
         ui: [
             { name: "ArkUI", description: "Declarative UI", logo: "/images/techstack_logos/ArkUI-logo.png" },
             { name: "HarmonyOS Design", description: "Design System", logo: "" },
-            { name: "Figma", description: "Design Tool", logo: "/images/techstack_logos/figma-logo.svg" },
+            { name: "Figma", description: <Link href="/services/brand-identity-design" className="hover:text-[#C7000B] transition-colors">Design Tool</Link>, logo: "/images/techstack_logos/figma-logo.svg" },
             { name: "Atomic Design", description: "Component System", logo: "" },
             { name: "Motion Design", description: "Animations", logo: "" },
             { name: "Adaptive Layout", description: "Multi-device", logo: "" },

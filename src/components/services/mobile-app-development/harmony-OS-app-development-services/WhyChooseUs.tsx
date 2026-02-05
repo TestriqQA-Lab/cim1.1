@@ -10,6 +10,7 @@ import {
     Headphones,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -48,7 +49,7 @@ export default function WhyChooseUs() {
         {
             icon: Headphones,
             title: "Ongoing Support",
-            description: "Post-launch maintenance, AppGallery optimization, and feature updates to keep your app competitive.",
+            description: <><Link href="/services/additional-support-services" className="text-[#C7000B] hover:underline">Post-launch maintenance</Link>, AppGallery optimization, and feature updates to keep your app competitive.</>,
             shadowColor: "rgba(199, 0, 11, 0.3)",
         },
     ];

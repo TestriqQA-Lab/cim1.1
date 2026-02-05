@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("react-native");
@@ -14,7 +15,7 @@ export default function TechStack() {
         { id: "backend", label: "Backend & Cloud" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: React.ReactNode; logo: string }[]> = {
         "react-native": [
             { name: "React Native", description: "Core Framework", logo: "/images/techstack_logos/react-logo.svg" },
             { name: "TypeScript", description: "Type Safety", logo: "/images/techstack_logos/typescript-logo.svg" },
@@ -39,7 +40,7 @@ export default function TechStack() {
         ],
         backend: [
             { name: "Firebase", description: "Backend Services", logo: "/images/techstack_logos/firebase-logo.svg" },
-            { name: "Node.js", description: "API Backend", logo: "/images/techstack_logos/nodejs-logo.svg" },
+            { name: "Node.js", description: <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#667eea] transition-colors">API Backend</Link>, logo: "/images/techstack_logos/nodejs-logo.svg" },
         ],
     };
 
