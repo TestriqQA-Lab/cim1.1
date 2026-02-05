@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ShoppingCart, CreditCard, Truck, Mail, BarChart3, Layers } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -15,9 +16,9 @@ export default function TechStack() {
             description: "Leading e-commerce platforms",
             technologies: [
                 { name: "Shopify", description: "Leading e-commerce platform", logo: "/images/techstack_logos/shopify-logo.png" },
-                { name: "WooCommerce", description: "WordPress e-commerce", logo: "/images/techstack_logos/WooCommerce-logo.png" },
+                { name: "WooCommerce", link: "/services/web-design-development/wordpress-development-services", description: "WordPress e-commerce", logo: "/images/techstack_logos/WooCommerce-logo.png" },
                 { name: "BigCommerce", description: "Enterprise SaaS", logo: "/images/techstack_logos/bigcommerce-logo.png" },
-                { name: "Magento", description: "Adobe Commerce", logo: "/images/techstack_logos/Magento-logo.svg" },
+                { name: "Magento", link: "/services/web-design-development/ecommerce-development-company", description: "Adobe Commerce", logo: "/images/techstack_logos/Magento-logo.svg" },
                 { name: "PrestaShop", description: "Open-source e-commerce", logo: "/images/techstack_logos/PrestaShop-logo.png" },
                 { name: "Squarespace", description: "Design-focused", logo: "/images/techstack_logos/Squarespace-logo.webp" },
             ],
@@ -70,7 +71,7 @@ export default function TechStack() {
             icon: BarChart3,
             description: "Data-driven optimization",
             technologies: [
-                { name: "Google Analytics", description: "Web analytics", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+                { name: "Google Analytics", link: "/services/seo-services/technical-seo-services", description: "Web analytics", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
                 { name: "Segment", description: "Customer data", logo: "/images/techstack_logos/Segment-logo.png" },
                 { name: "Amplitude", description: "Product analytics", logo: "/images/techstack_logos/Amplitude-logo.webp" },
                 { name: "Hotjar", description: "Behavior analytics", logo: "/images/techstack_logos/Hotjar-logo.png" },
@@ -227,7 +228,14 @@ export default function TechStack() {
                                         className="font-semibold truncate"
                                         style={{ color: "#96bf48" }}
                                     >
-                                        {tech.name}
+                                        {/* @ts-ignore */}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:text-[#96bf48] transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </p>
                                     <p
                                         className="text-sm truncate"

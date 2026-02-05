@@ -12,6 +12,7 @@ import {
     Check,
     ArrowUpRight,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -34,28 +35,26 @@ export default function SolutionTypes() {
         },
         {
             icon: Store,
-            title: "WooCommerce Stores",
-            description:
-                "WordPress-based e-commerce with unlimited customization. Full control over your store.",
+            title: "Custom Development",
+            description: "Tailored functionality for unique business needs.",
             features: [
-                "Custom Plugin Development",
+                "Custom App Development",
                 "Theme Customization",
-                "Payment Gateway Setup",
-                "Performance Optimization",
+                <Link key="react" href="/services/web-design-development/nextjs-development-services" className="hover:text-[#96bf48] transition-colors">Custom React Components</Link>,
+                "Checkout Extensions",
             ],
             accentColor: "#5c8a1e",
             type: "platform",
         },
         {
             icon: Building2,
-            title: "BigCommerce Projects",
-            description:
-                "Enterprise SaaS solution for high-growth businesses. Built-in features, less maintenance.",
+            title: "Migration Solutions",
+            description: "Safe and secure platform migration services.",
             features: [
-                "Multi-channel Selling",
-                "B2B Functionality",
-                "Headless Setup",
-                "Custom Integrations",
+                <Link key="woo" href="/services/web-design-development/wordpress-development-services" className="hover:text-[#96bf48] transition-colors">WooCommerce to Shopify</Link>,
+                <Link key="big" href="/services/web-design-development/ecommerce-development-company" className="hover:text-[#96bf48] transition-colors">BigCommerce to Shopify</Link>,
+                <Link key="mag" href="/services/web-design-development/ecommerce-development-company" className="hover:text-[#96bf48] transition-colors">Magento to Shopify</Link>,
+                "Data Integrity Check",
             ],
             accentColor: "#b4d97c",
             type: "platform",
@@ -77,13 +76,12 @@ export default function SolutionTypes() {
         {
             icon: Globe,
             title: "Headless Commerce",
-            description:
-                "Decouple your frontend for ultimate flexibility. Use any framework with commerce backend.",
+            description: "Decoupled front-end for maximum flexibility.",
             features: [
-                "Next.js Storefronts",
-                "Shopify Hydrogen",
-                "Custom React Stores",
-                "API-First Design",
+                <Link key="next" href="/services/web-design-development/nextjs-development-services" className="hover:text-[#96bf48] transition-colors">Next.js Storefronts</Link>,
+                <Link key="hydro" href="/services/web-design-development/headless-traditional-cms" className="hover:text-[#96bf48] transition-colors">Shopify Hydrogen</Link>,
+                "Sanity CMS Integration",
+                "Omnichannel APIs",
             ],
             accentColor: "#5c8a1e",
             type: "modern",

@@ -13,13 +13,13 @@ export default function Hero() {
         { icon: Layers, text: "App Router" },
         { icon: Zap, text: "SSR & SSG" },
         { icon: Code2, text: "TypeScript" },
-        { icon: Globe, text: "API Routes" },
+        { icon: Globe, text: <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#61dafb] transition-colors">API Routes</Link> },
         { icon: Shield, text: "Edge Functions" },
     ];
 
     const stats = [
         { value: "<100ms", label: "Load Time" },
-        { value: "100", label: "Lighthouse Score" },
+        { value: "100", label: <Link href="/blog/lazy-loading-image-optimization-boost-lighthouse-scores" className="hover:text-[#61dafb] transition-colors">Lighthouse Score</Link> },
         { value: "-70%", label: "Bundle Size" },
     ];
 

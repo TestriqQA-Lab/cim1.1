@@ -1,6 +1,7 @@
 "use client";
 
 import { Zap, Shield, Globe, Code2, Layers, Rocket } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const highlights = [
@@ -22,16 +23,16 @@ export default function ServiceOverview() {
         {
             icon: Code2,
             title: "API Routes & Backend",
-            description: "Seamless serverless web application development with TypeScript and Next.js API routes.",
+            description: <>Seamless serverless web application development with TypeScript and <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#61dafb] transition-colors">Next.js API routes</Link>.</>,
         },
         {
             icon: Layers,
             title: "Tailwind CSS & UI/UX",
-            description: "Beautiful, responsive interfaces that convert visitors into loyal customers with modern design.",
+            description: <>Beautiful, responsive interfaces that convert visitors into loyal customers with <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[#61dafb] transition-colors">modern design</Link>.</>,
         },
         {
             icon: Rocket,
-            title: "App Router Expertise",
+            title: <Link href="/blog/future-web-development-nextjs" className="hover:text-[#61dafb] transition-colors">App Router Expertise</Link>,
             description: "Leveraging the latest patterns for optimized data fetching and layout management.",
         },
     ];
@@ -87,7 +88,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        In the post-December 2025 Google update landscape, speed and user experience are non-negotiable. As a global React JS development company, we focus on Next.js speed optimization and Core Web Vitals to ensure your site stays at the top of Google&apos;s AI Overviews.
+                        In the post-December 2025 Google update landscape, speed and user experience are non-negotiable. As a global React JS development company, we focus on Next.js speed optimization and <Link href="/blog/lazy-loading-image-optimization-boost-lighthouse-scores" className="hover:text-[#61dafb] transition-colors">Core Web Vitals</Link> to ensure your site stays at the top of Google&apos;s AI Overviews.
                     </p>
                 </div>
 

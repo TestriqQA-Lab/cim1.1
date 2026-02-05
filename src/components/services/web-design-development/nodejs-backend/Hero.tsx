@@ -11,7 +11,7 @@ export default function Hero() {
     const features = [
         { icon: Code2, text: "REST APIs" },
         { icon: Database, text: "GraphQL" },
-        { icon: Server, text: "Microservices" },
+        { icon: Server, text: <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#339933] transition-colors">Microservices</Link> },
         { icon: Zap, text: "Real-time" },
         { icon: Shield, text: "Authentication" },
         { icon: Cloud, text: "Cloud Native" },
@@ -100,7 +100,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            High-performance APIs and microservices that power your applications.
+                            High-performance <Link href="/services/web-design-development/headless-traditional-cms" className="text-[#339933] hover:underline">APIs</Link> and microservices that power your applications.
                             Node.js, Express, NestJS, and cloud-native architecture for modern businesses.
                         </p>
 

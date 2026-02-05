@@ -277,10 +277,10 @@ export default function Hero() {
                                 <Package className="w-4 h-4" style={{ color: "#00b5ca" }} />
                                 <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>WooCommerce</span>
                             </Link>
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                            <Link href="/services/web-design-development/ecommerce-development-company" className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm hover:scale-105 transition-transform" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
                                 <CreditCard className="w-4 h-4" style={{ color: "#00b5ca" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Stripe Ready</span>
-                            </div>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Magento Ready</span>
+                            </Link>
                         </div>
 
                         {/* Performance Metrics Section */}

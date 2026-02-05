@@ -64,7 +64,7 @@ export default function Platforms() {
             gradient: "linear-gradient(135deg, #E60023, #AD081B)",
             icon: Pinterest,
             accentColor: "#E60023",
-            link: "/services/social-media-marketing/pinterest-marketing",
+            link: "/services/social-media-marketing-services/pinterest-marketing",
         },
     ];
 

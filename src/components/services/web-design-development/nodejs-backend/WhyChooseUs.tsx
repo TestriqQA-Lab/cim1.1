@@ -9,6 +9,7 @@ import {
     HeadphonesIcon,
     TrendingUp,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -23,7 +24,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Zap,
-            title: "Performance First",
+            title: <Link href="/services/seo-services/technical-seo-services" className="hover:text-[#339933] transition-colors">Performance First</Link>,
             description:
                 "Every API we build is optimized for speed. We obsess over response times and throughput.",
             gradient: "from-[#68a063] to-[#339933]",

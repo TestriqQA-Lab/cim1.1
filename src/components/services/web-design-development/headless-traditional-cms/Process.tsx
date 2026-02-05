@@ -10,6 +10,7 @@ import {
     Rocket,
     Check,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -18,7 +19,7 @@ export default function Process() {
         {
             number: "01",
             icon: Search,
-            title: "Discovery & Strategy",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[#9333ea] transition-colors">Discovery & Strategy</Link>,
             description: "Deep dive into your content needs, workflows, and integration requirements.",
             details: [
                 "Content audit and analysis",
@@ -62,7 +63,7 @@ export default function Process() {
             details: [
                 "Custom theme development",
                 "Plugin/extension creation",
-                "API integration",
+                <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#9333ea] transition-colors">API integration</Link>,
                 "Frontend connection",
                 "Workflow automation",
             ],

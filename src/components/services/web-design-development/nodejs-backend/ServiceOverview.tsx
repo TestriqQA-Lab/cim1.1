@@ -1,17 +1,18 @@
 "use client";
 
+import Link from "next/link";
 import { Code2, Database, Server, Zap, Shield, Cloud } from "lucide-react";
 
 export default function ServiceOverview() {
     const highlights = [
         {
             icon: Code2,
-            title: "Custom API Development",
+            title: <Link href="/services/web-design-development/headless-traditional-cms" className="hover:text-[#339933] transition-colors">Custom API Development</Link>,
             description: "RESTful and GraphQL APIs designed for performance, security, and seamless integration.",
         },
         {
             icon: Server,
-            title: "Microservices Architecture",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#339933] transition-colors">Microservices Architecture</Link>,
             description: "Scalable, independent services that can be deployed, updated, and scaled individually.",
         },
         {
@@ -21,7 +22,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Zap,
-            title: "Real-time Systems",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[#339933] transition-colors">Real-time Systems</Link>,
             description: "WebSockets, Server-Sent Events, and pub/sub patterns for live data and notifications.",
         },
         {

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 const faqs = [
     {
@@ -10,7 +11,7 @@ const faqs = [
     },
     {
         question: "How much does it cost to build a custom Next.js website?",
-        answer: "The cost vary significantly depending on complexity, features, and integrations. Typically, a professional Next.js project can range from $5,000 for a straightforward marketing site to $50,000+ for complex enterprise SaaS platforms or large-scale e-commerce solutions. We provide tailored quotes after a strategic discovery phase."
+        answer: <>The cost vary significantly depending on complexity, features, and integrations. Typically, a professional Next.js project can range from $5,000 for a straightforward <Link href="/services/web-design-development/branding-services" className="hover:text-[#61dafb] transition-colors">marketing site</Link> to $50,000+ for complex enterprise <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#61dafb] transition-colors">SaaS</Link> platforms or large-scale <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[#61dafb] transition-colors">e-commerce</Link> solutions. We provide tailored quotes after a strategic discovery phase.</>
     },
     {
         question: "How do I choose the best React development agency?",
