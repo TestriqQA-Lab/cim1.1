@@ -11,6 +11,7 @@ import {
     ArrowRight,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -51,7 +52,7 @@ export default function SolutionTypes() {
         {
             icon: ShoppingCart,
             title: "E-commerce Platforms",
-            description: "High-performance, scalable online stores built with Laravel to handle high traffic and sales.",
+            description: <>High-performance, scalable <Link href="/services/web-design-development/ecommerce-development-company" className="text-[#FF2D20] hover:underline">online stores</Link> built with Laravel to handle high traffic and sales.</>,
             features: [
                 "Multi-vendor support",
                 "Custom checkout flows",
@@ -63,7 +64,7 @@ export default function SolutionTypes() {
         {
             icon: LayoutDashboard,
             title: "SaaS Applications",
-            description: "Multi-tenant SaaS solutions with robust subscription billing and user management.",
+            description: <>Multi-tenant <Link href="/services/web-design-development/saas-development-services" className="text-[#FF2D20] hover:underline">SaaS solutions</Link> with robust subscription billing and user management.</>,
             features: [
                 "Tenant isolation",
                 "Subscription billing (Stripe/Paddle)",
@@ -99,7 +100,7 @@ export default function SolutionTypes() {
         {
             icon: Zap,
             title: "API Backends",
-            description: "Robust REST and GraphQL APIs to power mobile apps and frontend frameworks.",
+            description: <>Robust REST and GraphQL APIs to power <Link href="/services/mobile-app-development" className="text-[#FF2D20] hover:underline">mobile apps</Link> and frontend frameworks.</>,
             features: [
                 "High performance",
                 "Swagger documentation",
@@ -172,7 +173,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover (Active Row) */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

@@ -9,6 +9,7 @@ import {
     Users,
     Zap,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -35,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Performance Optimized",
-            description: "We fine-tune database queries, caching strategies, and server configs for maximum speed.",
+            description: <>We fine-tune database queries, caching strategies, and server configs for <Link href="/services/performance-marketing" className="text-[#FF2D20] hover:underline">maximum speed</Link>.</>,
             gradient: "from-[#FF2D20] to-[#C92218]",
         },
         {
@@ -47,7 +48,7 @@ export default function WhyChooseUs() {
         {
             icon: HeartHandshake,
             title: "Long-Term Partnership",
-            description: "We provide ongoing maintenance, updates, and support to ensure your app grows with you.",
+            description: <>We provide ongoing <Link href="/services/additional-support-services" className="text-[#FF2D20] hover:underline">maintenance, updates, and support</Link> to ensure your app grows with you.</>,
             gradient: "from-[#FF2D20] to-[#F05340]",
         },
     ];
@@ -113,7 +114,7 @@ export default function WhyChooseUs() {
                                 {/* Animated Background Blob */}
                                 <div
                                     className={`
-                                        absolute -right-20 -top-20 w-64 h-64 rounded-full opacity-0 transition-opacity duration-500 blur-3xl
+                                        absolute -right-20 -top-20 w-64 h-64 rounded-full opacity-0 transition-opacity duration-500 blur-3xl pointer-events-none
                                         ${isHovered ? "opacity-10" : ""}
                                     `}
                                     style={{ background: "#FF2D20" }}

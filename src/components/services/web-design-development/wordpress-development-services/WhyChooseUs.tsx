@@ -9,6 +9,7 @@ import {
     ShieldCheck,
     Globe,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -17,7 +18,7 @@ export default function WhyChooseUs() {
         {
             icon: Trophy,
             title: "Verified Expertise",
-            description: "500+ successful projects delivered globally, including retail sites seeing 300% traffic growth.",
+            description: <>500+ successful projects delivered globally, including retail sites seeing <Link href="/services/seo-services" className="text-[#f59e0b] hover:underline">300% traffic growth</Link>.</>,
             gradient: "from-amber-500 via-yellow-500 to-orange-500",
             bgColor: "rgba(251, 191, 36, 0.15)",
             iconColor: "#f59e0b",
@@ -53,7 +54,7 @@ export default function WhyChooseUs() {
         {
             icon: Globe,
             title: "Global Reach",
-            description: "Expertise in complex multilingual setups and international WordPress SEO.",
+            description: <>Expertise in complex multilingual setups and <Link href="/services/seo-services" className="text-[#6366f1] hover:underline">International WordPress SEO</Link>.</>,
             gradient: "from-indigo-500 via-violet-500 to-purple-500",
             bgColor: "rgba(99, 102, 241, 0.15)",
             iconColor: "#6366f1",
@@ -179,7 +180,7 @@ export default function WhyChooseUs() {
                                 >
                                     {/* Animated gradient background overlay */}
                                     <div
-                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                                         style={{
                                             background: `radial-gradient(circle at top right, ${reason.bgColor}, transparent 70%)`,
                                         }}

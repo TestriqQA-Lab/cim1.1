@@ -8,6 +8,7 @@ import {
     RefreshCw,
     Rocket,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const services = [
@@ -19,12 +20,12 @@ export default function ServiceOverview() {
         {
             icon: Rocket,
             title: "SaaS Application Development",
-            description: "Scalable multi-tenant SaaS platforms with subscription management, role-based access, and robust billing systems.",
+            description: <>Scalable multi-tenant <Link href="/services/web-design-development/saas-development-services" className="text-[#FF2D20] hover:underline">SaaS platforms</Link> with subscription management, role-based access, and robust billing systems.</>,
         },
         {
             icon: RefreshCw,
             title: "API Development & Integration",
-            description: "RESTful and GraphQL API development for mobile apps and third-party integrations (Stripe, Salesforce, etc.).",
+            description: <>RESTful and GraphQL API development for <Link href="/services/mobile-app-development" className="text-[#FF2D20] hover:underline">mobile apps</Link> and third-party integrations (Stripe, Salesforce, etc.).</>,
         },
         {
             icon: Database,

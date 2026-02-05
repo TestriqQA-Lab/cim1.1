@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -17,7 +18,7 @@ export default function FAQ() {
         },
         {
             question: "How do I choose the best WordPress development agency?",
-            answer: "Look for an agency with a deep portfolio, transparent WordPress maintenance and support services, and verifiable reviews. A top-tier agency should prioritize SEO, speed, and mobile responsiveness."
+            answer: <>Look for an agency with a deep portfolio, transparent <Link href="/services/additional-support-services" className="text-[#0073AA] hover:underline">WordPress maintenance and support services</Link>, and verifiable reviews. A top-tier agency should prioritize SEO, speed, and mobile responsiveness.</>
         },
         {
             question: "What is included in WordPress maintenance services?",
@@ -25,7 +26,7 @@ export default function FAQ() {
         },
         {
             question: "How long does it take to develop a custom WordPress site?",
-            answer: "A custom project typically takes 4–12 weeks depending on features like WooCommerce development or WordPress API integration. We provide a detailed timeline during the discovery phase."
+            answer: <>A custom project typically takes 4–12 weeks depending on features like <Link href="/services/web-design-development/ecommerce-development-company" className="text-[#0073AA] hover:underline">WooCommerce development</Link> or WordPress API integration. We provide a detailed timeline during the discovery phase.</>
         }
     ];
 
