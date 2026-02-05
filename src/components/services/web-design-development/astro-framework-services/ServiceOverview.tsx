@@ -9,6 +9,7 @@ import {
     Layers,
     ArrowRightLeft,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -24,14 +25,14 @@ export default function ServiceOverview() {
         {
             icon: FileText,
             title: "Content-Driven Websites",
-            description: "Best Astro agency for high-performance blogs, portfolios, and publishing platforms optimized for SEO and reader experience. Built-in MDX support.",
+            description: <>Best Astro agency for high-performance <Link href="/services/web-design-development/headless-traditional-cms" className="text-[#FF5D01] hover:underline">blogs, portfolios, and publishing platforms</Link> optimized for SEO and reader experience. Built-in MDX support.</>,
             gradient: "from-orange-500 to-amber-400",
             shadowColor: "rgba(255, 93, 1, 0.4)",
         },
         {
             icon: ShoppingBag,
             title: "E-commerce Storefronts",
-            description: "Fast Astro framework for ecommerce websites with product catalogs and storefronts that convert. Integrate with Shopify or headless CMSs.",
+            description: <>Fast Astro framework for <Link href="/services/web-design-development/ecommerce-development-company" className="text-[#ec4899] hover:underline">ecommerce websites</Link> with product catalogs and storefronts that convert. Integrate with Shopify or headless CMSs.</>,
             gradient: "from-pink-500 to-rose-400",
             shadowColor: "rgba(236, 72, 153, 0.4)",
         },
@@ -52,7 +53,7 @@ export default function ServiceOverview() {
         {
             icon: ArrowRightLeft,
             title: "Migration to Astro",
-            description: "Astro migration services from Next.js or Gatsby to reduce bundle sizes by 90% and improve Core Web Vitals instantly.",
+            description: <>Astro migration services from <Link href="/services/web-design-development/nextjs-development-services" className="text-[#6366f1] hover:underline">Next.js</Link> or Gatsby to reduce bundle sizes by 90% and improve <Link href="/blog/web-performance-optimization-speed" className="text-[#6366f1] hover:underline">Core Web Vitals</Link> instantly.</>,
             gradient: "from-indigo-500 to-violet-400",
             shadowColor: "rgba(99, 102, 241, 0.4)",
         },

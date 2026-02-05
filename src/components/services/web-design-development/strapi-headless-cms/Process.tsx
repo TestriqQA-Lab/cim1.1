@@ -9,6 +9,7 @@ import {
     Rocket,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -25,7 +26,7 @@ export default function Process() {
                 "Integration mapping",
                 "User role definitions",
                 "Frontend requirements",
-                "Performance targets"
+                <Link href="/blog/web-performance-optimization-speed" className="hover:text-[#4945FF] transition-colors">Performance targets</Link>
             ],
             deliverable: "Technical specification",
             duration: "1-2 weeks",
@@ -89,7 +90,7 @@ export default function Process() {
                 "Monitoring setup",
                 "Admin training",
                 "Documentation",
-                "Ongoing maintenance"
+                <Link href="/services/additional-support-services" className="hover:text-[#4945FF] transition-colors">Ongoing maintenance</Link>
             ],
             deliverable: "Live application",
             duration: "1 week + ongoing",
@@ -202,7 +203,7 @@ export default function Process() {
                                         >
                                             {/* Animated background gradient */}
                                             <div
-                                                className="absolute inset-0 transition-opacity duration-700"
+                                                className="absolute inset-0 transition-opacity duration-700 pointer-events-none"
                                                 style={{
                                                     background: "radial-gradient(circle at top right, rgba(73, 69, 255, 0.08), transparent 70%)",
                                                     opacity: isHovered ? 1 : 0,

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -21,7 +22,7 @@ export default function FAQ() {
         },
         {
             question: "What is the difference between Astro.js and Next.js?",
-            answer: "Astro.js outputs static HTML with zero JavaScript by default, achieving 98-100 PageSpeed scores and <1s load times, ideal for content sites, blogs, and marketing pages. Next.js is JavaScript-heavy with React runtime, achieving 85-95 PageSpeed and 1-3s load times, best for dynamic apps and SaaS. Astro bundles are 10-50 KB vs Next.js 200-500 KB, resulting in lower hosting costs and better SEO."
+            answer: <>Astro.js outputs static HTML with zero JavaScript by default, achieving 98-100 PageSpeed scores and &lt;1s load times, ideal for content sites, blogs, and marketing pages. <Link href="/services/web-design-development/nextjs-development-services" className="text-[#6366f1] hover:underline">Next.js</Link> is JavaScript-heavy with React runtime, achieving 85-95 PageSpeed and 1-3s load times, best for dynamic apps and SaaS. Astro bundles are 10-50 KB vs Next.js 200-500 KB, resulting in lower hosting costs and better SEO.</>
         },
         {
             question: "How long does it take to develop an Astro.js web application?",
@@ -33,7 +34,7 @@ export default function FAQ() {
         },
         {
             question: "Do you offer ongoing Astro maintenance and support?",
-            answer: "Yes! We offer Standard Support ($500/month) with content updates, 48-hour bug fixes, CMS training, monthly reports, and security updates; Premium Support ($1,200/month) with 24/7 emergency support, 15 hours development time, A/B testing, and quarterly audits; Enterprise Support (custom pricing) with dedicated account manager, 1-hour SLA, unlimited updates, and multi-site management."
+            answer: <>Yes! We offer <Link href="/services/additional-support-services" className="text-[#7C3AED] hover:underline">Standard Support</Link> ($500/month) with content updates, 48-hour bug fixes, CMS training, monthly reports, and security updates; Premium Support ($1,200/month) with 24/7 emergency support, 15 hours development time, A/B testing, and quarterly audits; Enterprise Support (custom pricing) with dedicated account manager, 1-hour SLA, unlimited updates, and multi-site management.</>
         }
     ];
 

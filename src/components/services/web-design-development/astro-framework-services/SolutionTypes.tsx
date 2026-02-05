@@ -11,6 +11,7 @@ import {
     ArrowRight,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -36,7 +37,7 @@ export default function SolutionTypes() {
         {
             icon: Megaphone,
             title: "Marketing Websites",
-            description: "High-performance marketing sites that rank well and convert visitors with Astro SEO audit and optimization services built-in.",
+            description: <>High-performance marketing sites that rank well and convert visitors with <Link href="/services/seo-services/technical-seo-services" className="text-[#7C3AED] hover:underline">Astro SEO audit</Link> and optimization services built-in.</>,
             features: [
                 "SaaS & B2B focus",
                 "SEO audit included",
@@ -48,7 +49,7 @@ export default function SolutionTypes() {
         {
             icon: Building2,
             title: "Corporate Sites",
-            description: "Professional company websites that establish credibility and trust. Custom Astro website development with brand consistency.",
+            description: <><Link href="/services/web-design-development/business-corporate" className="text-[#FF5D01] hover:underline">Professional company websites</Link> that establish credibility and trust. Custom Astro website development with brand consistency.</>,
             features: [
                 "Enterprise security",
                 "Brand consistency",
@@ -84,7 +85,7 @@ export default function SolutionTypes() {
         {
             icon: ShoppingCart,
             title: "E-commerce Catalogs",
-            description: "Fast product showcases that drive purchases with Astro headless CMS integration services for flexible management.",
+            description: <>Fast product showcases that drive purchases with <Link href="/services/web-design-development/headless-traditional-cms" className="text-[#7C3AED] hover:underline">Astro headless CMS integration services</Link> for flexible management.</>,
             features: [
                 "Headless CMS sync",
                 "Product filtering",
@@ -179,7 +180,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

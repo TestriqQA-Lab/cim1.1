@@ -116,7 +116,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            From enterprise web applications to powerful APIs, we leverage Python&apos;s versatility and Django&apos;s rapid development to build secure, scalable solutions.
+                            From <Link href="/services/web-design-development/business-corporate" className="text-[#306998] hover:underline">enterprise web applications</Link> to <Link href="/services/mobile-app-development" className="text-[#306998] hover:underline">powerful APIs</Link>, we leverage Python&apos;s versatility and Django&apos;s rapid development to build secure, scalable solutions.
                         </p>
 
                         {/* Feature Pills */}

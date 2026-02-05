@@ -9,6 +9,7 @@ import {
     RefreshCcw,
     Headphones,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -38,21 +39,21 @@ export default function ServiceOverview() {
         {
             icon: Link2,
             title: "Frontend Integration",
-            description: "Seamlessly connect Strapi with React, Next.js, Vue, Nuxt, or any frontend framework of your choice.",
+            description: <><span className="text-inherit">Seamlessly connect Strapi with React, </span><Link href="/services/web-design-development/nextjs-development-services" className="text-[#c084fc] hover:underline">Next.js</Link>, Vue, Nuxt, or any frontend framework of your choice.</>,
             gradient: "from-fuchsia-500 to-purple-400",
             shadowColor: "rgba(192, 132, 252, 0.4)",
         },
         {
             icon: RefreshCcw,
             title: "Migration Services",
-            description: "Migrate from WordPress, Contentful, or legacy CMS platforms to Strapi with zero data loss.",
+            description: <><span className="text-inherit">Migrate from </span><Link href="/services/web-design-development/wordpress-development-services" className="text-[#ec4899] hover:underline">WordPress</Link>, <Link href="/services/web-design-development/contentful-headless-cms" className="text-[#ec4899] hover:underline">Contentful</Link>, or legacy CMS platforms to Strapi with zero data loss.</>,
             gradient: "from-pink-500 to-fuchsia-400",
             shadowColor: "rgba(236, 72, 153, 0.4)",
         },
         {
             icon: Headphones,
-            title: "Support & Maintenance",
-            description: "Ongoing support with security updates, performance optimization, and 24/7 technical assistance.",
+            title: <Link href="/services/additional-support-services" className="hover:text-[#4945FF] transition-colors">Support & Maintenance</Link>,
+            description: <><span className="text-inherit">Ongoing support with security updates, </span><Link href="/blog/web-performance-optimization-speed" className="text-[#8b5cf6] hover:underline">performance optimization</Link>, and 24/7 technical assistance.</>,
             gradient: "from-violet-500 to-pink-400",
             shadowColor: "rgba(139, 92, 246, 0.4)",
         },
@@ -148,7 +149,7 @@ export default function ServiceOverview() {
                             >
                                 {/* Glow effect on hover */}
                                 <div
-                                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl"
+                                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl pointer-events-none"
                                     style={{
                                         background: `linear-gradient(135deg, ${service.shadowColor}, transparent)`,
                                     }}

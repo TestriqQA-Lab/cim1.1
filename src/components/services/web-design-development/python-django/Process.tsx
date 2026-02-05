@@ -9,6 +9,7 @@ import {
     Rocket,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -70,7 +71,7 @@ export default function Process() {
             details: [
                 "Unit & integration testing",
                 "API endpoint testing",
-                "Security vulnerability scan",
+                <Link href="/blog/cybersecurity-small-businesses" className="hover:text-[#306998] transition-colors">Security vulnerability scan</Link>,
                 "Performance load testing",
                 "Code quality analysis",
                 "Penetration testing"

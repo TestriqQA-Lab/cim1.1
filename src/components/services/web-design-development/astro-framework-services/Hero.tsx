@@ -116,7 +116,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Build blazing-fast content sites, marketing pages, and modern web applications with our expert Astro framework services. As a leading Astro development agency, we harness Astro&apos;s revolutionary Islands Architecture and zero JavaScript by default to deliver custom Astro website development that achieves 100% PageSpeed scores and sub-1-second load times.
+                            Build blazing-fast content sites, marketing pages, and <Link href="/services/web-design-development" className="text-[#7C3AED] hover:underline">modern web applications</Link> with our expert Astro framework services. As a leading Astro development agency, we harness Astro&apos;s revolutionary Islands Architecture and zero JavaScript by default to deliver custom Astro website development that achieves 100% <Link href="/blog/web-performance-optimization-speed" className="text-[#7C3AED] hover:underline">PageSpeed scores</Link> and sub-1-second load times.
                         </p>
 
                         {/* Feature Pills */}

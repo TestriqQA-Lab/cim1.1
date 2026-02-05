@@ -9,6 +9,7 @@ import {
     ArrowRightLeft,
     Gauge,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -17,7 +18,7 @@ export default function ServiceOverview() {
         {
             icon: Code2,
             title: "Custom Django Applications",
-            description: "Bespoke web applications tailored to your business logic, from startups to enterprise-grade solutions.",
+            description: <>Bespoke web applications tailored to your business logic, from startups to <Link href="/services/web-design-development/business-corporate" className="text-[#306998] hover:underline">enterprise-grade solutions</Link>.</>,
             gradient: "from-blue-600 to-blue-400",
             shadowColor: "rgba(48, 105, 152, 0.4)",
         },
@@ -31,14 +32,14 @@ export default function ServiceOverview() {
         {
             icon: FileJson,
             title: "Django CMS Solutions",
-            description: "Content management systems with Wagtail or Django CMS for flexible content editing workflows.",
+            description: <><Link href="/services/web-design-development/headless-traditional-cms" className="text-[#306998] hover:underline">Content management systems</Link> with Wagtail or Django CMS for flexible content editing workflows.</>,
             gradient: "from-teal-500 to-cyan-400",
             shadowColor: "rgba(20, 184, 166, 0.4)",
         },
         {
             icon: ShoppingCart,
             title: "E-commerce with Django",
-            description: "Custom online stores and marketplaces using Django Oscar or bespoke e-commerce solutions.",
+            description: <>Custom <Link href="/services/web-design-development/ecommerce-development-company" className="text-[#306998] hover:underline">online stores</Link> and marketplaces using Django Oscar or bespoke e-commerce solutions.</>,
             gradient: "from-purple-500 to-pink-400",
             shadowColor: "rgba(168, 85, 247, 0.4)",
         },
@@ -52,7 +53,7 @@ export default function ServiceOverview() {
         {
             icon: Gauge,
             title: "Performance & Scaling",
-            description: "Optimize and scale with Celery, Redis, caching strategies, and database optimization.",
+            description: <>Optimize and scale with Celery, Redis, <Link href="/blog/web-performance-optimization-speed" className="text-[#306998] hover:underline">caching strategies</Link>, and database optimization.</>,
             gradient: "from-green-500 to-emerald-400",
             shadowColor: "rgba(34, 197, 94, 0.4)",
         },

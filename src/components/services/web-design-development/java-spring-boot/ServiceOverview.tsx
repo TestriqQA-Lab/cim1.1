@@ -9,6 +9,7 @@ import {
     ArrowRightLeft,
     Gauge,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -17,7 +18,7 @@ export default function ServiceOverview() {
         {
             icon: Building2,
             title: "Enterprise Applications",
-            description: "Large-scale business applications with complex workflows, multi-tenancy, and high availability.",
+            description: <><Link href="/services/web-design-development/business-corporate" className="text-green-600 hover:underline">Large-scale business applications</Link> with complex workflows, multi-tenancy, and high availability.</>,
             gradient: "from-green-600 to-emerald-400",
             shadowColor: "rgba(109, 179, 63, 0.4)",
         },
@@ -31,7 +32,7 @@ export default function ServiceOverview() {
         {
             icon: Server,
             title: "RESTful & GraphQL APIs",
-            description: "High-performance APIs with Spring Web, WebFlux for reactive programming, and comprehensive documentation.",
+            description: <><Link href="/blog/web-performance-optimization-speed" className="text-blue-500 hover:underline">High-performance APIs</Link> with Spring Web, WebFlux for reactive programming, and comprehensive documentation.</>,
             gradient: "from-blue-500 to-cyan-400",
             shadowColor: "rgba(59, 130, 246, 0.4)",
         },
@@ -52,7 +53,7 @@ export default function ServiceOverview() {
         {
             icon: Gauge,
             title: "Performance Optimization",
-            description: "JVM tuning, caching strategies, database optimization, and high-throughput processing.",
+            description: <>JVM tuning, <Link href="/blog/web-performance-optimization-speed" className="text-teal-500 hover:underline">caching strategies</Link>, database optimization, and high-throughput processing.</>,
             gradient: "from-teal-500 to-green-400",
             shadowColor: "rgba(20, 184, 166, 0.4)",
         },

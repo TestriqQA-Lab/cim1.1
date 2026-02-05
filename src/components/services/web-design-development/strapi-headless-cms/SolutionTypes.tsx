@@ -11,6 +11,7 @@ import {
     ArrowRight,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -35,8 +36,8 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: ShoppingCart,
-            title: "E-commerce Platforms",
-            description: "Headless commerce with Strapi powering product catalogs, inventory, and content for Shopify, Medusa, or custom storefronts.",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[#4945FF] transition-colors">E-commerce Platforms</Link>,
+            description: <><span className="text-inherit">Headless commerce with Strapi powering product catalogs, inventory, and content for </span><Link href="/services/web-design-development/shopify-development-services" className="text-[#2F2DC8] hover:underline">Shopify</Link>, Medusa, or custom storefronts.</>,
             features: [
                 "Product management",
                 "Multi-store support",
@@ -59,8 +60,8 @@ export default function SolutionTypes() {
         },
         {
             icon: Smartphone,
-            title: "Mobile Applications",
-            description: "Power iOS and Android apps with Strapi's REST and GraphQL APIs for real-time content delivery.",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[#4945FF] transition-colors">Mobile Applications</Link>,
+            description: <><span className="text-inherit">Power </span><Link href="/services/mobile-app-development/ios-app-development-company" className="text-[#4945FF] hover:underline">iOS</Link> and <Link href="/services/mobile-app-development/android-app-development-company" className="text-[#4945FF] hover:underline">Android</Link> apps with Strapi&apos;s REST and GraphQL APIs for real-time content delivery.</>,
             features: [
                 "Push notifications",
                 "Offline sync",
@@ -83,7 +84,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Briefcase,
-            title: "SaaS Products",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#4945FF] transition-colors">SaaS Products</Link>,
             description: "Build multi-tenant SaaS applications with Strapi managing user content, settings, and configurations.",
             features: [
                 "Multi-tenancy",
@@ -124,7 +125,7 @@ export default function SolutionTypes() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Strapi powers content for any digital experience - from e-commerce to enterprise applications.
+                        Strapi powers content for any digital experience - from e-commerce to <Link href="/services/web-design-development/business-corporate" className="text-[#4945FF] hover:underline">enterprise applications</Link>.
                     </p>
                 </div>
 
@@ -165,7 +166,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

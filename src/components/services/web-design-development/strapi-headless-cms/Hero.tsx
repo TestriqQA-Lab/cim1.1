@@ -83,9 +83,9 @@ export default function Hero() {
                             }}
                         >
                             <Layers className="w-4 h-4" style={{ color: "#7B79FF" }} />
-                            <span className="text-sm font-medium" style={{ color: "#4945FF" }}>
+                            <Link href="/services/web-design-development/headless-traditional-cms" className="hover:underline text-sm font-medium" style={{ color: "#4945FF" }}>
                                 API-First Headless CMS
-                            </span>
+                            </Link>
                         </div>
 
                         {/* Title */}
@@ -284,7 +284,7 @@ export default function Hero() {
                                 Built With Modern Stack
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Strapi v5", "Node.js", "TypeScript", "PostgreSQL", "GraphQL", "React Admin"].map((tech, idx) => (
+                                {["Strapi v5", <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#4945FF] transition-colors">Node.js</Link>, "TypeScript", "PostgreSQL", "GraphQL", "React Admin"].map((tech, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"

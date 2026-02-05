@@ -9,6 +9,7 @@ import {
     Link2,
     Headphones,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -37,7 +38,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Layers,
-            title: "Multisite Management",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:text-[#0678BE] transition-colors">Multisite Management</Link>,
             description: "Centralized management of multiple Drupal sites from a single codebase with consistent branding.",
             gradient: "from-purple-500 to-indigo-400",
             shadowColor: "rgba(168, 85, 247, 0.4)",
@@ -51,8 +52,8 @@ export default function ServiceOverview() {
         },
         {
             icon: Headphones,
-            title: "Support & Maintenance",
-            description: "Ongoing security updates, performance optimization, and 24/7 technical support for your Drupal site.",
+            title: <Link href="/services/additional-support-services" className="hover:text-[#0678BE] transition-colors">Support & Maintenance</Link>,
+            description: <><span className="text-inherit">Ongoing security updates, </span><Link href="/blog/web-performance-optimization-speed" className="text-teal-500 hover:underline">performance optimization</Link>, and 24/7 technical support for your Drupal site.</>,
             gradient: "from-emerald-500 to-teal-400",
             shadowColor: "rgba(16, 185, 129, 0.4)",
         },
@@ -149,7 +150,7 @@ export default function ServiceOverview() {
                             >
                                 {/* Glow effect on hover */}
                                 <div
-                                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl"
+                                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl pointer-events-none"
                                     style={{
                                         background: `linear-gradient(135deg, ${service.shadowColor}, transparent)`,
                                     }}

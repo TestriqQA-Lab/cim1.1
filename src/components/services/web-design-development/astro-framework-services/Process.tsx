@@ -9,6 +9,7 @@ import {
     Rocket,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -54,7 +55,7 @@ export default function Process() {
             details: [
                 "Core Setup & TypeScript",
                 "Island Components (React/Vue)",
-                "Headless CMS Integration",
+                <Link href="/services/web-design-development/headless-traditional-cms" className="hover:text-[#7C3AED] transition-colors">Headless CMS Integration</Link>,
                 "MDX Setup & Routing",
                 "Analytics & Form Setup",
                 "Peer Code Reviews"
@@ -72,7 +73,7 @@ export default function Process() {
                 "WebP/AVIF Image conversion",
                 "JS Bundle & Tree-shaking",
                 "Caching & CDN Config",
-                "LCP, FID & CLS Optimization",
+                <Link href="/blog/web-performance-optimization-speed" className="hover:text-[#7C3AED] transition-colors">LCP, FID & CLS Optimization</Link>,
                 "SEO Validation & Tags"
             ],
             deliverable: "98+ PageSpeed & CWV Report",

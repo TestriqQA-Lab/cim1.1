@@ -84,7 +84,7 @@ export default function Hero() {
                         >
                             <Coffee className="w-4 h-4" style={{ color: "#F89820" }} />
                             <span className="text-sm font-medium" style={{ color: "#6DB33F" }}>
-                                Enterprise-Grade Java Solutions
+                                <Link href="/services/web-design-development/business-corporate" className="hover:underline">Enterprise-Grade Java Solutions</Link>
                             </span>
                         </div>
 
@@ -116,7 +116,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Build scalable, secure, and high-performance enterprise applications with the world&apos;s most trusted technology stack.
+                            Build scalable, secure, and high-performance <Link href="/services/web-design-development/business-corporate" className="text-[#6DB33F] hover:underline">enterprise applications</Link> with the world&apos;s most trusted technology stack.
                         </p>
 
                         {/* Feature Pills */}

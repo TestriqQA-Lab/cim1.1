@@ -9,6 +9,7 @@ import {
     Rocket,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -18,7 +19,7 @@ export default function Process() {
             number: "01",
             icon: Search,
             title: "Discovery & Strategy",
-            description: "Understanding your content strategy, channel requirements, and integration landscape.",
+            description: <><span className="text-inherit">Understanding your </span><Link href="/services/branding-services" className="text-[#0286FF] hover:underline">content strategy</Link>, channel requirements, and integration landscape.</>,
             details: [
                 "Content audit & strategy",
                 "Channel mapping",
@@ -52,7 +53,7 @@ export default function Process() {
             title: "Development & Integration",
             description: "Building frontend applications and integrating with Contentful's APIs.",
             details: [
-                "Frontend development",
+                <Link key="frontend" href="/services/web-design-development/nextjs-development-services" className="hover:text-[#0286FF] transition-colors">Frontend development</Link>,
                 "API integration",
                 "Preview setup",
                 "Webhook configuration",
@@ -202,7 +203,7 @@ export default function Process() {
                                         >
                                             {/* Animated background gradient */}
                                             <div
-                                                className="absolute inset-0 transition-opacity duration-700"
+                                                className="absolute inset-0 transition-opacity duration-700 pointer-events-none"
                                                 style={{
                                                     background: "radial-gradient(circle at top right, rgba(2, 134, 255, 0.08), transparent 70%)",
                                                     opacity: isHovered ? 1 : 0,

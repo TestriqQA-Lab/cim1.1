@@ -9,6 +9,7 @@ import {
     FileText,
     Rocket,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -17,7 +18,7 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Blazing Fast Performance ⚡",
-            description: "Zero JavaScript by default means your site loads instantly. Our performance optimization achieves consistent sub-1-second load times.",
+            description: <>Zero JavaScript by default means your site loads instantly. Our <Link href="/blog/web-performance-optimization-speed" className="text-[#7C3AED] hover:underline">performance optimization</Link> achieves consistent sub-1-second load times.</>,
             gradient: "from-violet-500 via-purple-500 to-indigo-500",
             bgColor: "rgba(124, 58, 237, 0.15)",
             iconColor: "#7C3AED",
@@ -26,7 +27,7 @@ export default function WhyChooseUs() {
         {
             icon: Search,
             title: "SEO Excellence 🔍",
-            description: "Static HTML output and fast load times result in superior rankings with built-in SEO audit and optimization services.",
+            description: <>Static HTML output and fast load times result in superior rankings with built-in <Link href="/services/seo-services/technical-seo-services" className="text-[#FF5D01] hover:underline">SEO audit</Link> and optimization services.</>,
             gradient: "from-orange-500 via-amber-500 to-yellow-500",
             bgColor: "rgba(255, 93, 1, 0.15)",
             iconColor: "#FF5D01",
@@ -178,7 +179,7 @@ export default function WhyChooseUs() {
                                 >
                                     {/* Animated gradient background overlay */}
                                     <div
-                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                                         style={{
                                             background: `radial-gradient(circle at top right, ${reason.bgColor}, transparent 70%)`,
                                         }}

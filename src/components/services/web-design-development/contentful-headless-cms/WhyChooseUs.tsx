@@ -9,6 +9,7 @@ import {
     Award,
     Headphones,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -17,7 +18,7 @@ export default function WhyChooseUs() {
         {
             icon: Layers,
             title: "Composable Architecture",
-            description: "Build modular, reusable content structures that adapt to any channel or experience without refactoring.",
+            description: <><span className="text-inherit">Build modular, </span><Link href="/services/web-design-development/headless-traditional-cms" className="text-[#0286FF] hover:underline">reusable content</Link> structures that adapt to any channel or experience without refactoring.</>,
             gradient: "from-blue-600 via-cyan-500 to-sky-500",
             bgColor: "rgba(2, 134, 255, 0.15)",
             iconColor: "#0286FF",
@@ -35,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: Globe,
             title: "Global CDN Delivery",
-            description: "Content delivered at the edge with 99ms average response times across 200+ points of presence worldwide.",
+            description: <><span className="text-inherit">Content delivered at the edge with </span><Link href="/blog/web-performance-optimization-speed" className="text-[#4DA3FF] hover:underline">99ms average response times</Link> across 200+ points of presence worldwide.</>,
             gradient: "from-sky-500 via-blue-500 to-cyan-500",
             bgColor: "rgba(77, 163, 255, 0.15)",
             iconColor: "#4DA3FF",
@@ -43,7 +44,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Lock,
-            title: "Enterprise Security",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:text-[#6366f1] transition-colors">Enterprise Security</Link>,
             description: "SOC 2 Type II certified, GDPR compliant, with SSO, role-based access, and comprehensive audit logs.",
             gradient: "from-indigo-500 via-blue-500 to-violet-500",
             bgColor: "rgba(99, 102, 241, 0.15)",
@@ -61,7 +62,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Headphones,
-            title: "Premium Support",
+            title: <Link href="/services/additional-support-services" className="hover:text-[#14b8a6] transition-colors">Premium Support</Link>,
             description: "Dedicated success managers, 24/7 support, and professional services for enterprise customers.",
             gradient: "from-cyan-500 via-teal-500 to-emerald-500",
             bgColor: "rgba(20, 184, 166, 0.15)",
@@ -156,7 +157,7 @@ export default function WhyChooseUs() {
                             >
                                 {/* Outer glow effect */}
                                 <div
-                                    className="absolute -inset-0.5 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-700 blur-lg"
+                                    className="absolute -inset-0.5 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-700 blur-lg pointer-events-none"
                                     style={{
                                         background: `linear-gradient(135deg, ${reason.bgColor}, transparent)`,
                                     }}
@@ -178,7 +179,7 @@ export default function WhyChooseUs() {
                                 >
                                     {/* Animated gradient background overlay */}
                                     <div
-                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                                         style={{
                                             background: `radial-gradient(circle at top right, ${reason.bgColor}, transparent 70%)`,
                                         }}
