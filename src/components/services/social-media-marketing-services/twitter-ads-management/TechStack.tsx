@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("management");
@@ -12,7 +13,7 @@ export default function TechStack() {
         { id: "content", label: "Content Creation" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string; logo: string; link?: string }[]> = {
         management: [
             { name: "X Pro (TweetDeck)", description: "Power User Suite", logo: "/images/techstack_logos/X-logo-hero-image.png" },
             { name: "Hootsuite", description: "Scheduling & Unified Messaging", logo: "/images/techstack_logos/Hootsuite-logo.png" },
@@ -110,7 +111,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:underline hover:text-blue-400 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

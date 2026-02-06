@@ -9,6 +9,7 @@ import {
     TrendingUp,
     ShieldAlert,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -17,18 +18,18 @@ export default function ServiceOverview() {
         {
             icon: Megaphone,
             title: "X Advertising & Twitter Ads Management",
-            description: "ROI-driven Twitter ads management including promoted tweets, X video ads, and Twitter conversion tracking setup.",
+            description: <>ROI-driven <Link href="/services/performance-marketing" className="hover:underline">Twitter ads management</Link> including promoted tweets, <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:underline">X video ads</Link>, and <Link href="/services/seo-services/technical-seo-services" className="hover:underline">Twitter conversion tracking</Link> setup.</>,
             color: "var(--secondary-text)",
         },
         {
             icon: MessageSquare,
             title: "Professional X Account Management",
-            description: "Comprehensive X channel audit and strategy with technical X profile optimization for maximum business authority.",
+            description: <>Comprehensive <Link href="/services/social-media-marketing-services" className="hover:underline">X channel audit</Link> and strategy with technical X profile optimization for maximum business authority.</>,
             color: "#1D9BF0", // Twitter Blue accent
         },
         {
             icon: Users,
-            title: "Influencer Marketing & Community",
+            title: <Link href="/services/social-media-marketing-services" className="hover:underline">Influencer Marketing & Community</Link>,
             description: "Connecting brands with niche leaders for X algorithm visibility optimization and active community management.",
             color: "var(--secondary-text)",
         },

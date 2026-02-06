@@ -11,6 +11,7 @@ import {
     ChevronRight,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -18,28 +19,28 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "crypto",
-            title: "Web3, Crypto & Fintech",
+            title: <Link href="/services/web-design-development/fintech-solutions" className="hover:underline">Web3, Crypto & Fintech</Link>,
             description: "X is the heartbeat of the decentralized world. We build hype, manage communities, and drive token adoption through X premium marketing.",
             icon: Coins,
             color: "#F7931A", // Bitcoin Orange
         },
         {
             id: "saas",
-            title: "Tech & SaaS Startups",
+            title: <Link href="/services/web-design-development/saas-application-development" className="hover:underline">Tech & SaaS Startups</Link>,
             description: "Ranked as the best X agency for tech startups, we help generate B2B leads through strategic threads and targeted X Campaign Manager tactics.",
             icon: Laptop,
             color: "#00E676", // Tech Green
         },
         {
             id: "ecommerce",
-            title: "E-commerce & Retail",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">E-commerce & Retail</Link>,
             description: "Drive instant sales with Twitter ads management for ecommerce brands, leveraging audience targeting segments to find ready shoppers.",
             icon: Megaphone,
             color: "#1D9BF0",
         },
         {
             id: "realestate",
-            title: "Real Estate & Professionals",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">Real Estate & Professionals</Link>,
             description: "Build local authority and generate high-value inquiries through geo-targeted campaigns and X search keyword ads.",
             icon: Award,
             color: "#FFD700",

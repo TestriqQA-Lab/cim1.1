@@ -9,6 +9,7 @@ import {
     Megaphone,
     FileText,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -19,7 +20,7 @@ export default function ServiceOverview() {
         {
             icon: Target,
             title: "LinkedIn Ads Management",
-            description: "Our LinkedIn advertising agency specialists manage full-funnel campaigns including Sponsored Content, InMail, and Video Ads. We leverage LinkedIn Campaign Manager expertise to optimize bidding and creative for maximum ROI.",
+            description: <>Our LinkedIn advertising agency specialists manage full-funnel campaigns including Sponsored Content, InMail, and <Link href="/services/performance-marketing/youtube-ads" className="hover:underline text-blue-600">Video Ads</Link>. We leverage LinkedIn Campaign Manager expertise to optimize bidding and creative for maximum ROI.</>,
             color: "#0A66C2",
         },
         {
@@ -37,7 +38,7 @@ export default function ServiceOverview() {
         {
             icon: FileText,
             title: "B2B Content Marketing & Thought Leadership",
-            description: "Establish dominance with a LinkedIn content marketing strategy for businesses. From newsletters to LinkedIn Live, we turn your executives into industry thought leaders.",
+            description: <>Establish dominance with a LinkedIn <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-blue-600">content marketing strategy</Link> for businesses. From newsletters to LinkedIn Live, we turn your executives into industry thought leaders.</>,
             color: "#0A66C2",
         },
         {
@@ -49,7 +50,7 @@ export default function ServiceOverview() {
         {
             icon: BarChart3,
             title: "ROI Tracking & Analytics",
-            description: "Navigate your growth with LinkedIn ads reporting and ROI tracking. We set up LinkedIn Insight Tags and Matched Audiences to provide 100% transparency on every dollar spent.",
+            description: <>Navigate your growth with <Link href="/services/performance-marketing" className="hover:underline text-blue-600">LinkedIn ads reporting</Link> and ROI tracking. We set up LinkedIn Insight Tags and Matched Audiences to provide 100% transparency on every dollar spent.</>,
             color: "#004182",
         },
     ];

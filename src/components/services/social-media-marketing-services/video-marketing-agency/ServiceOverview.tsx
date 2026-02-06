@@ -9,6 +9,7 @@ import {
     MonitorPlay,
     Clapperboard,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -18,13 +19,13 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: PlayCircle,
-            title: "YouTube Ads & PPC",
+            title: <Link href="/services/performance-marketing" className="hover:underline">YouTube Ads & PPC</Link>,
             description: "Expertly managed TrueView, Bumper, and In-stream ads. Rigorous A/B creative testing to maximize your ROAS.",
             color: "#FF0000",
         },
         {
             icon: Search,
-            title: "YouTube SEO Services",
+            title: <Link href="/services/seo-services" className="hover:underline">YouTube SEO Services</Link>,
             description: "Advanced video SEO beyond tags. Optimizing titles, descriptions, and transcripts for 2026 AI Overviews.",
             color: "#CC0000",
         },
@@ -36,13 +37,13 @@ export default function ServiceOverview() {
         },
         {
             icon: Clapperboard,
-            title: "Ecommerce Ads",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Ecommerce Ads</Link>,
             description: "Direct-to-consumer shoppable ads leveraging YouTube bumper and TrueView for action formats.",
             color: "#CC0000",
         },
         {
             icon: MonitorPlay,
-            title: "Influencer Marketing",
+            title: <Link href="/services/social-media-marketing-services" className="hover:underline">Influencer Marketing</Link>,
             description: "Access our verified creator network. Talent identification, contract management, and ROI tracking.",
             color: "#FF0000",
         },

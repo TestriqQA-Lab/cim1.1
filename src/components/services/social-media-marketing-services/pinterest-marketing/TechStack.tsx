@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("management");
@@ -15,7 +16,7 @@ export default function TechStack() {
         { id: "design", label: "Design Tools" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string; logo: string; link?: string }[]> = {
         management: [
             { name: "Pinterest Business", description: "Native Platform", logo: "/images/techstack_logos/Pinterest-logo.png" },
             { name: "Tailwind", description: "Smart Scheduler", logo: "/images/techstack_logos/tailwindcss-logo.svg" },
@@ -26,12 +27,12 @@ export default function TechStack() {
         ],
         analytics: [
             { name: "Pinterest Analytics", description: "Native Insights", logo: "/images/techstack_logos/Pinterest-logo.png" },
-            { name: "Google Analytics 4", description: "Traffic Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics 4", description: "Traffic Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp", link: "/services/seo-services/technical-seo-services" },
             { name: "Iconosquare", description: "Advanced Metrics", logo: "/images/techstack_logos/Iconosquare-logo.webp" },
             { name: "Pinterest Trends", description: "Trend Research", logo: "/images/techstack_logos/Pinterest-logo.png" },
         ],
         design: [
-            { name: "Canva Pro", description: "Pin Design", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva Pro", description: "Pin Design", logo: "/images/brand-identity-design-logos/canva-logo.png", link: "/services/web-design-development/branding-services" },
             { name: "Adobe Creative Suite", description: "Pro Design", logo: "/images/ai_automation_logos/adobe-logo.png" },
             { name: "Figma", description: "Templates", logo: "/images/techstack_logos/figma-logo.svg" },
             { name: "Vista Create", description: "Quick Graphics", logo: "/images/techstack_logos/Vista-Create-logo.png" },
@@ -113,7 +114,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:underline hover:text-blue-400 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

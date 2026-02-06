@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, PenTool, Layers, Rocket, BarChart, RefreshCw } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     // Pinterest brand color
@@ -9,17 +10,17 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Pinterest Audit",
+            title: <Link href="/services/social-media-marketing-services" className="hover:underline">Pinterest Audit</Link>,
             description: "We analyze your current presence, competitor boards, and identify high-intent keyword opportunities.",
         },
         {
             icon: PenTool,
-            title: "Visual Strategy",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:underline">Visual Strategy</Link>,
             description: "Developing pin designs, board themes, and a content calendar aligned with Pinterest trends.",
         },
         {
             icon: Layers,
-            title: "Board Architecture",
+            title: <Link href="/services/seo-services" className="hover:underline">Board Architecture</Link>,
             description: "Creating SEO-optimized boards with strategic keyword placement for maximum discoverability.",
         },
         {

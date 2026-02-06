@@ -134,13 +134,13 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Dominate the world's most visual stage. With over 2+ billion monthly active users, Instagram is no longer just a photo-sharing app - it’s a global marketplace. As a premier Instagram Marketing Company, we help brands transition from "just posting" to high-impact ROI systems. Our data-driven Instagram Marketing Services leverage the latest 2026 algorithm updates to ensure your content doesn’t just look good - it converts.
+                            Dominate the world's most visual stage. With over 2+ billion monthly active users, Instagram is no longer just a photo-sharing app - it’s a global marketplace. As a premier <Link href="/services/social-media-marketing-services" className="text-pink-500 hover:text-pink-600 transition-colors">Instagram Marketing Company</Link>, we help brands transition from "just posting" to high-impact ROI systems. Our data-driven Instagram Marketing Services leverage the latest 2026 algorithm updates to ensure your content doesn’t just look good - it converts.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "95% Success Rate for High-Growth E-commerce Brands",
+                                <span key="1">95% Success Rate for <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-pink-500 transition-colors">High-Growth E-commerce Brands</Link></span>,
                                 "300% Average Increases in Organic Reach & Engagement",
                                 "30+ Years of Combined Digital Marketing & Creative Expertise",
                                 "Direct-to-Consumer (D2C) & B2B Strategic Specialists",
@@ -154,7 +154,7 @@ export default function Hero() {
                                     }}
                                 >
                                     <div className="w-1.5 h-1.5 rounded-full" style={{ background: `linear-gradient(135deg, ${instagramPink}, ${instagramOrange})` }} />
-                                    <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{feature}</span>
+                                    <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{typeof feature === 'string' ? feature : feature}</span>
                                 </div>
                             ))}
                         </div>

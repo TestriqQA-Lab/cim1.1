@@ -10,6 +10,7 @@ import {
     GraduationCap,
     ChevronRight,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -20,14 +21,14 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "ecommerce",
-            title: "E-commerce & Retail",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">E-commerce & Retail</Link>,
             description: "Showcase products with shoppable pins and drive direct sales from inspiration to checkout.",
             icon: ShoppingBag,
             color: pinterestRed,
         },
         {
             id: "home",
-            title: "Home & Decor",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">Home & Decor</Link>,
             description: "Connect with users designing their dream spaces through room visualization and style boards.",
             icon: Home,
             color: "#F7DC6F",
@@ -41,7 +42,7 @@ export default function SolutionTypes() {
         },
         {
             id: "fashion",
-            title: "Fashion & Beauty",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:underline">Fashion & Beauty</Link>,
             description: "Showcase seasonal trends and beauty looks with shoppable outfit and product pins.",
             icon: Shirt,
             color: "#9B59B6",

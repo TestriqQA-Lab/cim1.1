@@ -11,6 +11,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -20,7 +21,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Briefcase,
-            title: "Financial Services",
+            title: <Link href="/services/web-design-development/fintech-solutions" className="hover:underline">Financial Services</Link>,
             description: "High-trust content for fintech & banking. We build authoritativeness through expert interviews.",
             features: [
                 "Compliance-ready video",
@@ -32,7 +33,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Home,
-            title: "Real Estate Agents",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">Real Estate Agents</Link>,
             description: "Immersive property tours and neighborhood spotlights optimized for local search dominance.",
             features: [
                 "Immersive tours",
@@ -56,7 +57,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Monitor,
-            title: "B2B Tech & SaaS",
+            title: <Link href="/services/web-design-development/saas-application-development" className="hover:underline">B2B Tech & SaaS</Link>,
             description: "Deep-dive demos and founder-led thought leadership. Teams that understand technical product-market fit.",
             features: [
                 "Software demos",
@@ -68,7 +69,7 @@ export default function SolutionTypes() {
         },
         {
             icon: ShoppingBag,
-            title: "Ecommerce & Retail",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Ecommerce & Retail</Link>,
             description: "Drive direct sales with shoppable ads and high-intent audience targeting.",
             features: [
                 "Shoppable integrations",
@@ -80,7 +81,7 @@ export default function SolutionTypes() {
         },
         {
             icon: HeartPulse,
-            title: "Health & Wellness",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:underline">Health & Wellness</Link>,
             description: "Build trust with informative videos, client transformations, and expert advice.",
             features: [
                 "Patient stories",

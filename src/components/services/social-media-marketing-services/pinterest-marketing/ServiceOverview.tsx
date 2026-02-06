@@ -9,6 +9,7 @@ import {
     Search,
     BarChart,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -19,7 +20,7 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Megaphone,
-            title: "Pinterest Advertising",
+            title: <Link href="/services/performance-marketing" className="hover:underline">Pinterest Advertising</Link>,
             description: "Promoted Pins, Shopping Ads, and Video campaigns that reach users at the moment of inspiration.",
             color: pinterestRed,
         },
@@ -31,7 +32,7 @@ export default function ServiceOverview() {
         },
         {
             icon: ShoppingCart,
-            title: "Shopping Catalog Integration",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Shopping Catalog Integration</Link>,
             description: "Seamless product catalog sync to enable shoppable pins and drive direct sales.",
             color: "#4ECDC4",
         },
@@ -43,13 +44,13 @@ export default function ServiceOverview() {
         },
         {
             icon: Search,
-            title: "Pinterest SEO",
+            title: <Link href="/services/seo-services" className="hover:underline">Pinterest SEO</Link>,
             description: "Keyword-optimized boards, pins, and descriptions to maximize organic discovery.",
             color: "#95E1D3",
         },
         {
             icon: BarChart,
-            title: "Analytics & Insights",
+            title: <Link href="/services/seo-services/technical-seo-services" className="hover:underline">Analytics & Insights</Link>,
             description: "Comprehensive reporting on pin performance, audience insights, and conversion tracking.",
             color: "#DDA0DD",
         },

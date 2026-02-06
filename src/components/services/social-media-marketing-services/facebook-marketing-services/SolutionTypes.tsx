@@ -12,6 +12,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -19,8 +20,8 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Store,
-            title: "E-commerce Brands",
-            description: "Dynamic Catalog Ads + Shopify Integration. Scale your online store with Facebook ads management for ecommerce.",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline text-inherit">E-commerce Brands</Link>,
+            description: <>Dynamic Catalog Ads + <Link href="/services/web-design-development/shopify-development-services" className="hover:underline text-blue-500">Shopify</Link> Integration. Scale your online store with Facebook ads management for ecommerce.</>,
             features: [
                 "12x ROAS Growth",
                 "Product catalog sync",
@@ -45,7 +46,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Home,
-            title: "Real Estate",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline text-inherit">Real Estate</Link>,
             description: "Real estate Facebook advertising services. Showcase properties to qualified buyers via map-based targeting and virtual tour ads.",
             features: [
                 "90% Lead Quality Rate",
@@ -58,7 +59,7 @@ export default function SolutionTypes() {
         },
         {
             icon: GraduationCap,
-            title: "Education & Courses",
+            title: <Link href="/services/web-design-development/edtech-lms" className="hover:underline text-inherit">Education & Courses</Link>,
             description: "Course Enrollment + Webinar Funnels. Enroll students with targeted campaigns promoting online courses and educational content.",
             features: [
                 "300% Scaling Results",
@@ -71,7 +72,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Sparkles,
-            title: "Healthcare Services",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:underline text-inherit">Healthcare Services</Link>,
             description: "Facebook marketing for healthcare services. HIPPA compliant strategies to build trust and increase patient registrations.",
             features: [
                 "HIPAA Compliant Ads",
@@ -84,7 +85,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Briefcase,
-            title: "Professional Services",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline text-inherit">Professional Services</Link>,
             description: "Facebook advertising for professional services. Build authority and generate leads for consulting, legal, and financial services.",
             features: [
                 "Trust-First Ad Creative",

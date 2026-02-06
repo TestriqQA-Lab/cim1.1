@@ -67,7 +67,7 @@ export default function CTA() {
                             </h2>
 
                             <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl mx-auto lg:mx-0">
-                                Stop wasting budget on underperforming campaigns. Get a free audit of your current Facebook advertising and partner with the Facebook marketing experts who deliver measurable growth.
+                                Stop wasting budget on underperforming campaigns. Get a free audit of your current Facebook advertising and partner with the <Link href="/about" className="underline hover:text-white">Facebook marketing experts</Link> who deliver measurable growth.
                             </p>
 
                             {/* Benefits */}

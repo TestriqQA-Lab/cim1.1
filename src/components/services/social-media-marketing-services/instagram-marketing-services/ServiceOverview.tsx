@@ -9,6 +9,7 @@ import {
     Megaphone,
     BarChart3,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -19,19 +20,19 @@ export default function ServiceOverview() {
         {
             icon: Film,
             title: "Instagram Reels Marketing & Production Agency",
-            description: "Reels are the primary growth lever in 2026. Our production team crafts viral-worthy, short-form video content that hooks viewers in the first 0.5 seconds.",
+            description: <><Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:underline text-pink-500">Reels</Link> are the primary growth lever in 2026. Our production team crafts viral-worthy, short-form video content that hooks viewers in the first 0.5 seconds.</>,
             color: "#E1306C",
         },
         {
             icon: Camera,
             title: "Custom Instagram Content Creation Services",
-            description: "Static images aren't enough. We build a cohesive Brand Identity and Aesthetic Design Service that makes your profile a destination.",
+            description: <>Static images aren't enough. We build a cohesive <Link href="/services/web-design-development/branding-services" className="hover:underline text-pink-500">Brand Identity</Link> and Aesthetic Design Service that makes your profile a destination.</>,
             color: "#C13584",
         },
         {
             icon: Megaphone,
             title: "Instagram Advertising Services & Ad Management",
-            description: "Go beyond 'Boost Post.' Our Instagram ad campaign management for ecommerce utilizes advanced Meta Pixel tracking and CAPI integration.",
+            description: <>Go beyond 'Boost Post.' Our <Link href="/services/performance-marketing" className="hover:underline text-pink-500">Instagram ad campaign management</Link> for ecommerce utilizes advanced Meta Pixel tracking and CAPI integration.</>,
             color: "#F77737",
         },
         {
@@ -43,7 +44,7 @@ export default function ServiceOverview() {
         {
             icon: ShoppingBag,
             title: "Instagram Shopping & Commerce",
-            description: "Set up and optimize your Instagram Shop to drive direct sales with shoppable posts and product tags.",
+            description: <>Set up and optimize your <Link href="/services/web-design-development/shopify-development-services" className="hover:underline text-pink-500">Instagram Shop</Link> to drive direct sales with shoppable posts and product tags.</>,
             color: "#FD1D1D",
         },
         {

@@ -12,6 +12,7 @@ import {
     Clock,
     Zap,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -26,7 +27,7 @@ export default function Process() {
             details: [
                 "2026 Growth Roadmap",
                 "KW Gap Analysis",
-                "Technical SEO check",
+                <Link key="tech-seo" href="/services/seo-services/technical-seo-services" className="hover:text-red-500 transition-colors">Technical SEO check</Link>,
                 "Competitor audit",
                 "Historical data review",
             ],
@@ -36,7 +37,7 @@ export default function Process() {
         {
             icon: PenTool,
             title: "Content & Scripting",
-            description: "Expert YouTube video script writing weaving LSI keywords and EEAT signals for maximum retention.",
+            description: <>Expert <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-red-500">YouTube video script</Link> writing weaving LSI keywords and EEAT signals for maximum retention.</>,
             details: [
                 "Retention-hook design",
                 "Conversion-focused CTAs",
@@ -52,7 +53,7 @@ export default function Process() {
             title: "Production Support",
             description: "From professional production to high-CTR thumbnail design, matching your brand's authority.",
             details: [
-                "High-CTR thumbnails",
+                <Link key="thumbnails" href="/services/web-design-development/branding-services" className="hover:text-red-500 transition-colors">High-CTR thumbnails</Link>,
                 "Production workflow",
                 "Audio optimization",
                 "Visual branding",

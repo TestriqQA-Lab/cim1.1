@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle, TrendingUp, Target, Award, Clock, Users, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -12,7 +13,7 @@ export default function WhyChooseUs() {
     const benefits = [
         {
             icon: CheckCircle,
-            title: "Pinterest Partner",
+            title: <Link href="/about" className="hover:underline">Pinterest Partner</Link>,
             description: "Certified expertise with access to beta features and priority support from Pinterest.",
         },
         {

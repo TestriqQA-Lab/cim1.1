@@ -1,6 +1,7 @@
 "use client";
 
 import { Zap, ShieldCheck, Globe, Trophy, Users, BarChart, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const benefits = [
@@ -12,7 +13,7 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "300% Traffic Growth",
-            description: "We've consistently delivered 300% traffic growth for tech and SaaS clients, helping them dominate through aggressive X business strategies.",
+            description: <>We've consistently delivered 300% <Link href="/services/seo-services" className="hover:underline text-blue-500">traffic growth</Link> for tech and SaaS clients, helping them dominate through aggressive X business strategies.</>,
         },
         {
             icon: ShieldCheck,
