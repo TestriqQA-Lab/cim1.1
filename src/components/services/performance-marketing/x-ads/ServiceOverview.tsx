@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Hash, MessageSquare, Video, Zap, Users, BarChart3 } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -12,19 +13,19 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Hash,
-            title: "Trend Takeover",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--primary)] transition-colors">Trend Takeover</Link>,
             description: "Own the #1 spot on the Explore tab for 24 hours. Maximum impact for launches.",
             highlight: "Massive Reach",
         },
         {
             icon: Video,
-            title: "Vertical Video Ads",
+            title: <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Vertical Video Ads</Link>,
             description: "Immersive, full-screen video ads that captivate users in the feed.",
             highlight: "High Engagement",
         },
         {
             icon: MessageSquare,
-            title: "Conversation Ads",
+            title: <Link href="/services/social-media-marketing-services" className="hover:text-[var(--primary)] transition-colors">Conversation Ads</Link>,
             description: "Prompt users to tweet about your brand with customizable hashtags and buttons.",
             highlight: "Viral Potential",
         },
@@ -42,7 +43,7 @@ export default function ServiceOverview() {
         },
         {
             icon: BarChart3,
-            title: "Performance Ads",
+            title: <Link href="/services/performance-marketing" className="hover:text-[var(--primary)] transition-colors">Performance Ads</Link>,
             description: "Drive lower-funnel results like app installs and website clicks.",
             highlight: "Measurable ROI",
         },

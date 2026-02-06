@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Play, Video, Sparkles, Megaphone, ShoppingBag, Users } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -14,7 +15,7 @@ export default function ServiceOverview() {
         {
             icon: Play,
             title: "In-Feed Ads",
-            description: "Native video ads that appear in users' For You feed with full-screen immersive experience.",
+            description: <><Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Native video ads</Link> that appear in users' For You feed with full-screen immersive experience.</>,
             highlights: ["Up to 60s video", "CTA buttons", "Sound-on default", "Full-screen"],
             color: tiktokPink,
         },
@@ -41,14 +42,14 @@ export default function ServiceOverview() {
         },
         {
             icon: ShoppingBag,
-            title: "Shopping Ads",
+            title: <Link href="/services/web-design-development/shopify-development-services" className="hover:text-[var(--primary)] transition-colors">Shopping Ads</Link>,
             description: "Drive e-commerce sales with product-focused video ads and catalog integration.",
             highlights: ["Product tags", "Catalog sync", "Shop now CTA", "Dynamic ads"],
             color: tiktokPink,
         },
         {
             icon: Users,
-            title: "Lead Generation",
+            title: <Link href="/services/web-design-development/landing-pages" className="hover:text-[var(--primary)] transition-colors">Lead Generation</Link>,
             description: "Capture leads directly within TikTok with native instant forms.",
             highlights: ["Instant forms", "Pre-filled data", "CRM integration", "Low friction"],
             color: tiktokCyan,

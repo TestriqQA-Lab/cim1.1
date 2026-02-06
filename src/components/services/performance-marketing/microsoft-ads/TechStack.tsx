@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("platform");
@@ -14,7 +15,7 @@ export default function TechStack() {
         { id: "integration", label: "Integrations" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string | React.ReactNode; logo: string }[]> = {
         platform: [
             { name: "Microsoft Advertising", description: "Campaign Manager", logo: "/images/techstack_logos/Microsoft-Advertising-logo.webp" },
             { name: "Editor", description: "Bulk Management", logo: "/images/ai_powered_chatbots_logos/Microsoft-Office-Teams-logo.png" }, // Placeholder for Editor
@@ -22,13 +23,13 @@ export default function TechStack() {
         ],
         analytics: [
             { name: "UET Tag", description: "Conversion Tracking", logo: "/images/techstack_logos/UET-Tag-logo.png" }, // Updated to specific UET logo
-            { name: "Microsoft Clarity", description: "Heatmaps & Recordings", logo: "/images/techstack_logos/Microsoft-Clarity-logo.png" },
+            { name: "Microsoft Clarity", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Heatmaps & Recordings</Link>, logo: "/images/techstack_logos/Microsoft-Clarity-logo.png" },
             { name: "Google Import", description: "Sync Campaigns", logo: "/images/performance-marketing-logos/google-ads-logo.svg" },
         ],
         integration: [
-            { name: "LinkedIn", description: "Profile Targeting", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
+            { name: "LinkedIn", description: <Link href="/services/performance-marketing/linkedin-ads" className="hover:text-[var(--primary)] transition-colors">Profile Targeting</Link>, logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
             { name: "Dynamics 365", description: "CRM Sync", logo: "/images/techstack_logos/Microsoft-365-logo.webp" },
-            { name: "Shopify", description: "E-commerce", logo: "/images/techstack_logos/shopify-logo.png" },
+            { name: "Shopify", description: <Link href="/services/web-design-development/shopify-development-services" className="hover:text-[var(--primary)] transition-colors">E-commerce</Link>, logo: "/images/techstack_logos/shopify-logo.png" },
         ],
     };
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Search, Trophy, TrendingUp, Users, DollarSign, BarChart, Target } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -12,14 +13,14 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Search,
-            title: "Search Visibility",
+            title: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Search Visibility</Link>,
             description: "Own the top spots for high-value keywords.",
             backDetails: ["Keyword Research", "Bid Optimization", "Negative Keywords", "Search Term Isolation"],
             color: amazonOrange,
         },
         {
             icon: Trophy,
-            title: "Brand Defense",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--primary)] transition-colors">Brand Defense</Link>,
             description: "Protect your branded keywords from competitors.",
             backDetails: ["Brand Protection", "Competitor Conquering", "Share of Voice", "Trademark Defense"],
             color: "#ffffff",

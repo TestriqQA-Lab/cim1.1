@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("management");
@@ -15,22 +16,22 @@ export default function TechStack() {
         { id: "analytics", label: "Analytics & Reporting" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string | React.ReactNode; logo: string }[]> = {
         management: [
             { name: "Meta Ads Manager", description: "Campaign Control", logo: "/images/techstack_logos/Meta-Ads-Manager-logo.png" },
             { name: "Meta Business Suite", description: "Unified Management", logo: "/images/performance-marketing-logos/meta-ads-logo.png" },
-            { name: "HubSpot", description: "CRM Integration", logo: "/images/ai_automation_logos/hubspot-logo.png" },
+            { name: "HubSpot", description: <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--primary)] transition-colors">CRM Integration</Link>, logo: "/images/ai_automation_logos/hubspot-logo.png" },
             { name: "Zapier", description: "Workflow Automation", logo: "/images/ai_automation_logos/zapier-logo.svg" },
         ],
         creative: [
-            { name: "Canva", description: "Design Creation", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva", description: <Link href="/services/brand-identity-design" className="hover:text-[var(--primary)] transition-colors">Design Creation</Link>, logo: "/images/brand-identity-design-logos/canva-logo.png" },
             { name: "CapCut", description: "Video Editing", logo: "/images/techstack_logos/Capcut-logo.png" },
             { name: "Figma", description: "Design System", logo: "/images/techstack_logos/figma-logo.svg" },
             { name: "Midjourney", description: "AI Imagery", logo: "/images/techstack_logos/Midjourney-logo.png" },
         ],
         analytics: [
             { name: "Meta Pixel", description: "Conversion Tracking", logo: "/images/performance-marketing-logos/meta-ads-logo.png" },
-            { name: "Google Analytics", description: "Web Analytics", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Web Analytics</Link>, logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
             { name: "Triple Whale", description: "Attribution", logo: "/images/techstack_logos/triple-whale-logo.png" },
             { name: "Northbeam", description: "MMM Analytics", logo: "/images/techstack_logos/Northbeam-logo.png" },
         ],

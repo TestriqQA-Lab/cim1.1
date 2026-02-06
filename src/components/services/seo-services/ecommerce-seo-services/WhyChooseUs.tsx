@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { TrendingUp, Users, Zap, Search, Globe, DollarSign, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -13,7 +14,7 @@ export default function WhyChooseUs() {
         {
             icon: DollarSign,
             title: "Revenue-First Mindset",
-            description: "We obsess over ecommerce SEO ranking factors that drive sales, not vanity traffic metrics. Every optimization decision is filtered through: 'Will this increase revenue?' Our hire ecommerce SEO expert team focuses on transactional keywords, product page conversion optimization, and customer lifetime value - not just rankings.",
+            description: <>We obsess over <Link href="/services/seo-services" className="hover:underline" style={{ color: commerceBlue }}>ecommerce SEO ranking factors</Link> that drive sales, not vanity traffic metrics. Every optimization decision is filtered through: &apos;Will this increase revenue?&apos; Our hire ecommerce SEO expert team focuses on transactional keywords, product page conversion optimization, and customer lifetime value - not just rankings.</>,
         },
         {
             icon: Search,
@@ -23,17 +24,17 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Deep Technical Expertise",
-            description: "Our developers and SEO specialists work in perfect harmony to fix critical site speed issues, JavaScript rendering problems, server response time bottlenecks, and architectural inefficiencies. We speak the language of CTOs and can implement complex technical solutions that most agencies can't handle.",
+            description: <>Our developers and SEO specialists work in perfect harmony to fix critical site speed issues, JavaScript rendering problems, server response time bottlenecks, and architectural inefficiencies. We speak the language of CTOs and can implement complex <Link href="/services/seo-services/technical-seo-services" className="hover:underline" style={{ color: commerceBlue }}>technical solutions</Link> that most agencies can&apos;t handle.</>,
         },
         {
             icon: Globe,
             title: "Multi-Platform Ecommerce Pros",
-            description: "Extensive experience with Shopify, Magento, WooCommerce, BigCommerce, and custom headless builds. We understand each platform's unique technical limitations, optimization opportunities, and best practices - no cookie-cutter strategies.",
+            description: <>Extensive experience with <Link href="/services/web-design-development/shopify-development-services" className="hover:underline" style={{ color: commerceBlue }}>Shopify</Link>, Magento, WooCommerce, BigCommerce, and custom headless builds. We understand each platform&apos;s unique technical limitations, optimization opportunities, and best practices - no cookie-cutter strategies.</>,
         },
         {
             icon: Users,
             title: "UX & CRO Integration",
-            description: "We optimize for both search bots AND human shoppers. Every change considers user experience, conversion rate optimization, cart abandonment reduction, and mobile usability. Our ecommerce conversion rate optimization approach ensures traffic actually converts.",
+            description: <>We optimize for both search bots AND human shoppers. Every change considers <Link href="/services/web-design-development" className="hover:underline" style={{ color: commerceBlue }}>user experience</Link>, conversion rate optimization, cart abandonment reduction, and mobile usability. Our ecommerce conversion rate optimization approach ensures traffic actually converts.</>,
         },
         {
             icon: TrendingUp,

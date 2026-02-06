@@ -4,11 +4,12 @@ import { useState } from "react";
 import {
     MapPin,
     MessageSquare,
-    Link,
+    Link as LinkIcon,
     Layout,
     Navigation,
     Smartphone,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -19,38 +20,38 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: MapPin,
-            title: "Google Business Profile Management",
+            title: <Link href="/services/seo-services" className="hover:underline">Google Business Profile Management</Link>,
             description: "Complete GBP setup, verification & ongoing optimization - We claim and optimize every field in your Google Business Profile (formerly GMB), including Q&As, posts, booking buttons, and product catalogs.",
             color: localAmber,
         },
         {
-            icon: Link,
-            title: "Local Citations & NAP Consistency",
+            icon: LinkIcon,
+            title: <span><Link href="/services/seo-services/link-building" className="hover:underline">Local Citations</Link> & <Link href="/services/seo-services/technical-seo-services" className="hover:underline">NAP Consistency</Link></span>,
             description: "Building authoritative citations across 50+ high-DA directories - Inconsistent NAP data is the #1 reason local businesses fail to rank. We manually audit and correct your business listings.",
             color: "#3B82F6",
         },
         {
             icon: MessageSquare,
-            title: "Review Management & Reputation SEO",
+            title: <Link href="/services/performance-marketing" className="hover:underline">Review Management & Reputation SEO</Link>,
             description: "Generate 5-star reviews & professionally respond to all feedback - Reviews account for 15.4% of Google's local ranking algorithm. We implement automated SMS/email review request workflows.",
             color: "#10B981",
         },
         {
             icon: Layout,
-            title: "On-Page Localization & Landing Pages",
-            description: "Location-specific schema, keywords & geo-targeted content - We create dedicated landing pages for each service area with unique LocalBusiness schema markup and city-specific keywords.",
+            title: <span><Link href="/services/seo-services/on-page-seo-services" className="hover:underline">On-Page Localization</Link> & <Link href="/services/web-design-development/landing-pages" className="hover:underline">Landing Pages</Link></span>,
+            description: <>Location-specific schema, keywords & geo-targeted content - We create dedicated <Link href="/services/web-design-development/landing-pages" className="hover:text-purple-500 transition-colors">landing pages</Link> for each service area with unique LocalBusiness schema markup and city-specific keywords.</>,
             color: "#8B5CF6",
         },
         {
             icon: Navigation,
-            title: "Google Map Pack Optimization",
+            title: <Link href="/services/seo-services" className="hover:underline">Google Map Pack Optimization</Link>,
             description: "Proprietary tactics to secure the Local 3-Pack - The Map Pack appears above organic results for 93% of local searches. We optimize for Google's proximity, relevance, and prominence signals.",
             color: "#EC4899",
         },
         {
             icon: Smartphone,
-            title: "Mobile & 'Near Me' Search Optimization",
-            description: 'Flawless mobile experience for on-the-go searchers - 76% of local searches happen on mobile devices, with 28% converting within 24 hours. We ensure your site has <2-second load times on 4G.',
+            title: <span><Link href="/services/web-design-development" className="hover:underline">Mobile</Link> & 'Near Me' Search Optimization</span>,
+            description: 'Flawless mobile experience for on-the-go searchers - 76% of local searches happen on mobile devices, with 28% converting within 24 hours. We ensure your site has 2-second load times on 4G.',
             color: "#06B6D4",
         },
     ];
@@ -128,7 +129,7 @@ export default function ServiceOverview() {
                                 >
                                     {/* Hover Gradient BG */}
                                     <div
-                                        className={`absolute inset-0 opacity-0 transition-opacity duration-500 ${isHovered ? "opacity-10" : ""}`}
+                                        className={`absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none ${isHovered ? "opacity-10" : ""}`}
                                         style={{
                                             background: `linear-gradient(135deg, ${service.color}, transparent)`,
                                         }}
@@ -157,13 +158,13 @@ export default function ServiceOverview() {
 
                                     {/* Content */}
                                     <h3
-                                        className="text-xl font-bold mb-3 transition-colors duration-300"
+                                        className="text-xl font-bold mb-3 transition-colors duration-300 relative z-10"
                                         style={{ color: "var(--foreground)" }}
                                     >
                                         {service.title}
                                     </h3>
                                     <p
-                                        className="leading-relaxed"
+                                        className="leading-relaxed relative z-10"
                                         style={{ color: "var(--secondary-text)" }}
                                     >
                                         {service.description}

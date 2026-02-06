@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+import Link from "next/link";
 import { Import, Settings, TrendingUp, Search } from "lucide-react";
 
 export default function Process() {
@@ -13,7 +15,7 @@ export default function Process() {
         },
         {
             icon: Search,
-            title: "Keyword Expansion",
+            title: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Keyword Expansion</Link>,
             description: "Identify unique keywords and opportunities specific to the Bing search landscape.",
         },
         {
@@ -23,7 +25,7 @@ export default function Process() {
         },
         {
             icon: TrendingUp,
-            title: "Scale & Optimize",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Scale & Optimize</Link>,
             description: "Expand to the Audience Network and optimize for ROAS across all placements.",
         },
     ];

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Award, Shield, TrendingUp, Users, Zap, BarChart3, CheckCircle } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -49,7 +50,7 @@ export default function WhyChooseUs() {
         {
             id: 6,
             icon: BarChart3,
-            title: "Data-Driven",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Data-Driven</Link>,
             description: "Every decision backed by data. Weekly optimization cycles for continuous improvement.",
             stat: "100+ Data Points",
         },

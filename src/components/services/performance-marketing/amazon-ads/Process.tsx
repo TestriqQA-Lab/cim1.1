@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Search, Package, TrendingUp, BarChart2, Zap, Award } from "lucide-react";
 
 export default function Process() {
@@ -14,13 +15,13 @@ export default function Process() {
             id: 1,
             icon: Search,
             title: "Listing Audit",
-            description: "Deep dive into product content, SEO keywords, and conversion rate readiness.",
+            description: <>Deep dive into product content, <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">SEO keywords</Link>, and conversion rate readiness.</>,
             color: amazonOrange,
         },
         {
             id: 2,
             icon: Package,
-            title: "Retail Readiness",
+            title: <Link href="/services/seo-services/ecommerce-seo-services" className="hover:text-[var(--primary)] transition-colors">Retail Readiness</Link>,
             description: "Optimizing titles, bullets, images, and A+ content for maximum conversion.",
             color: amazonBlue,
         },

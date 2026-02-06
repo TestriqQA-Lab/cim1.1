@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ShieldCheck, TrendingUp, DollarSign, Users, Award, Zap } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -18,7 +19,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: TrendingUp,
-            title: "Profitable Growth",
+            title: <Link href="/services/performance-marketing" className="hover:text-[var(--primary)] transition-colors">Profitable Growth</Link>,
             description: "Focus on increasing Net Profit, not just vanity revenue metrics.",
             color: amazonOrange,
         },

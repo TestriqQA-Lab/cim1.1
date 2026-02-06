@@ -9,6 +9,7 @@ import {
     Globe,
     LayoutGrid,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -20,37 +21,37 @@ export default function ServiceOverview() {
         {
             icon: Gauge,
             title: "Website Performance Analysis & Site Speed",
-            description: "Speed isn't just a luxury; it's a critical ranking factor. Our professional website speed optimization services leverage server-side rendering and edge caching to ensure your site loads faster than the competition.",
+            description: <>Speed isn't just a luxury; it's a critical ranking factor. Our <Link href="/services/web-design-development" className="hover:text-purple-500 transition-colors">professional website speed optimization services</Link> leverage server-side rendering and edge caching to ensure your site loads faster than the competition.</>,
             color: techPurple,
         },
         {
             icon: Smartphone,
             title: "Mobile-First Indexing Optimization Services",
-            description: "With Google's mobile-first approach, your mobile site is your primary site. We conduct a thorough technical SEO audit for WordPress sites and custom builds to ensure 100% mobile parity and responsiveness.",
+            description: <>With Google's mobile-first approach, your mobile site is your primary site. We conduct a thorough <Link href="/services/web-design-development/wordpress-development-services" className="hover:text-purple-500 transition-colors">technical SEO audit for WordPress</Link> sites and custom builds to ensure 100% mobile parity and responsiveness.</>,
             color: "#3B82F6",
         },
         {
             icon: Shield,
             title: "HTTPS, SSL & Security for SEO",
-            description: "Security is a core trust signal. We implement advanced HTTPS and SSL security for SEO, including security headers (HSTS) and malware protection, to build ultimate E-E-A-T.",
+            description: <>Security is a core trust signal. We implement advanced <Link href="/services/web-design-development" className="hover:text-purple-500 transition-colors">HTTPS and SSL security for SEO</Link>, including security headers (HSTS) and malware protection, to build ultimate E-E-A-T.</>,
             color: "#22C55E",
         },
         {
             icon: FileCode,
             title: "XML Sitemap & Robots.txt Optimization",
-            description: "Guide search engines to your most valuable content. We provide expert XML sitemap and robots.txt optimization to prevent crawl waste and ensure your priority pages are indexed instantly.",
+            description: <>Guide search engines to your most valuable content. We provide expert <Link href="/services/seo-services" className="hover:text-purple-500 transition-colors">XML sitemap and robots.txt optimization</Link> to prevent crawl waste and ensure your priority pages are indexed instantly.</>,
             color: "#F59E0B",
         },
         {
             icon: Globe,
-            title: "Technical SEO for International Websites",
-            description: "Scaling globally? Our technical SEO for international websites includes precise hreflang tag implementation and geo-targeting strategies to capture audiences in the US, EU, and APAC markets.",
+            title: <Link href="/services/seo-services/local-seo-services" className="hover:underline">Technical SEO for International Websites</Link>,
+            description: <>Scaling globally? Our <Link href="/services/seo-services" className="hover:text-purple-500 transition-colors">technical SEO for international websites</Link> includes precise hreflang tag implementation and geo-targeting strategies to capture audiences in the US, EU, and APAC markets.</>,
             color: "#EC4899",
         },
         {
             icon: LayoutGrid,
             title: "Scalable Website Architecture",
-            description: "Structure is everything. We optimize your website structure and internal link structure optimization to distribute authority efficiently, ensuring even the deepest pages find their way to the top of SERPs.",
+            description: <>Structure is everything. We optimize your website structure and <Link href="/services/seo-services/link-building" className="hover:text-purple-500 transition-colors">internal link structure optimization</Link> to distribute authority efficiently, ensuring even the deepest pages find their way to the top of SERPs.</>,
             color: "#06B6D4",
         },
     ];

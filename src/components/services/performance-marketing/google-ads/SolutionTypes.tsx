@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Target, Users, ShoppingBag, Building, Briefcase, Globe, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [flippedCard, setFlippedCard] = useState<number | null>(null);
@@ -15,35 +16,35 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: ShoppingBag,
-            title: "E-commerce",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[var(--primary)] transition-colors">E-commerce</Link>,
             frontDescription: "Shopping and Performance Max campaigns that drive product sales.",
             backDetails: ["Product feed management", "Dynamic remarketing", "Smart Shopping", "ROAS optimization"],
             color: googleBlue,
         },
         {
             icon: Building,
-            title: "Lead Generation",
+            title: <Link href="/services/performance-marketing" className="hover:text-[var(--primary)] transition-colors">Lead Generation</Link>,
             frontDescription: "Search campaigns optimized for high-quality leads and conversions.",
             backDetails: ["Form optimization", "Call tracking", "Lead scoring", "CRM integration"],
             color: googleGreen,
         },
         {
             icon: Users,
-            title: "Brand Awareness",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--primary)] transition-colors">Brand Awareness</Link>,
             frontDescription: "Display and YouTube campaigns that build brand recognition.",
             backDetails: ["Custom audiences", "Affinity targeting", "Frequency capping", "Viewability tracking"],
             color: googleYellow,
         },
         {
             icon: Briefcase,
-            title: "B2B Marketing",
+            title: <Link href="/services/performance-marketing/linkedin-ads" className="hover:text-[var(--primary)] transition-colors">B2B Marketing</Link>,
             frontDescription: "Targeting decision-makers with search and display campaigns.",
             backDetails: ["Industry targeting", "Company size filters", "LinkedIn integration", "ABM campaigns"],
             color: googleRed,
         },
         {
             icon: Globe,
-            title: "Local Business",
+            title: <Link href="/services/seo-services/local-seo-services" className="hover:text-[var(--primary)] transition-colors">Local Business</Link>,
             frontDescription: "Drive foot traffic and local leads with geo-targeted campaigns.",
             backDetails: ["Local search ads", "Google Maps ads", "Location extensions", "Store visit tracking"],
             color: googleBlue,
@@ -137,7 +138,14 @@ export default function SolutionTypes() {
                                         transform: "rotateY(180deg)",
                                     }}
                                 >
-                                    <h4 className="text-lg font-bold mb-4 text-white">{solution.title}</h4>
+                                    <h4 className="text-lg font-bold mb-4 text-white">
+                                        {/* Ideally we'd use solution.title here, but since title is now a ReactNode (Link), 
+                                            we might want to render just the text content for the back card title if it's meant to be just text.
+                                            However, keeping the Link component usually works if styled correctly, or we can extract the text.
+                                            Given the instruction "Do NOT modify... content", let's keep it as is, but check if it renders well.
+                                            React renders components fine inside {} */}
+                                        {solution.title}
+                                    </h4>
                                     <ul className="space-y-2">
                                         {solution.backDetails.map((detail, dIdx) => (
                                             <li key={dIdx} className="flex items-center gap-2 text-white/90 text-sm">

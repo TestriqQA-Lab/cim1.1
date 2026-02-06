@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { FileText, MessageSquare, UserPlus, Sparkles, Video, Image } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -26,7 +27,7 @@ export default function ServiceOverview() {
         },
         {
             icon: UserPlus,
-            title: "Lead Gen Forms",
+            title: <Link href="/services/web-design-development/landing-pages" className="hover:text-[var(--primary)] transition-colors">Lead Gen Forms</Link>,
             description: "Pre-filled forms that capture leads without leaving LinkedIn.",
             formats: ["Sponsored Content", "Message Ads", "Dynamic Ads"],
             bestFor: "High-quality B2B lead capture",
@@ -40,7 +41,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Video,
-            title: "Video Ads",
+            title: <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Video Ads</Link>,
             description: "Engaging video content to tell your brand story and drive action.",
             formats: ["In-feed Video", "Video Carousel", "Connected TV"],
             bestFor: "Brand storytelling & engagement",

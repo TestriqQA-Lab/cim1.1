@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ArrowLeft, ArrowRight, Target, Users, BarChart2, Briefcase, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -11,7 +12,7 @@ export default function SolutionTypes() {
 
     const solutions = [
         {
-            title: "B2B Targeting",
+            title: <Link href="/services/performance-marketing/linkedin-ads" className="hover:text-[var(--primary)] transition-colors">B2B Targeting</Link>,
             icon: Briefcase,
             frontDescription: "Reach decision-makers via LinkedIn profile targeting on search.",
             backDescription: "Target by Company, Job Function, and Industry directly within your search campaigns to capture high-value B2B leads.",
@@ -19,7 +20,7 @@ export default function SolutionTypes() {
             color: "#0077B5", // LinkedIn Blue
         },
         {
-            title: "Audience Intelligence",
+            title: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Audience Intelligence</Link>,
             icon: Users,
             frontDescription: "Connect with users across the Microsoft Audience Network.",
             backDescription: "Leverage Microsoft's graph to reach users on Outlook, Edge, and MSN with high accuracy intent signals.",
@@ -35,7 +36,7 @@ export default function SolutionTypes() {
             color: "#FFB900", // Yellow
         },
         {
-            title: "Cross-Channel",
+            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Cross-Channel</Link>,
             icon: BarChart2,
             frontDescription: "Unified reporting across Search and Native.",
             backDescription: "Manage and optimize your campaigns holistically to drive efficiency and incrementally across channels.",

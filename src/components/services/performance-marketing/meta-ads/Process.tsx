@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Lightbulb, Target, Palette, Rocket, BarChart, RefreshCw, CheckCircle } from "lucide-react";
 
 export default function Process() {
@@ -14,7 +15,7 @@ export default function Process() {
         {
             id: 1,
             icon: Lightbulb,
-            title: "Discovery & Strategy",
+            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Discovery & Strategy</Link>,
             description: "Deep-dive into your business, audience, and goals to craft a winning Meta Ads strategy.",
             deliverables: ["Audience research", "Competitor analysis", "Campaign roadmap"],
         },
@@ -42,7 +43,7 @@ export default function Process() {
         {
             id: 5,
             icon: BarChart,
-            title: "Optimization",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Optimization</Link>,
             description: "Continuous testing and optimization based on real performance data and insights.",
             deliverables: ["A/B testing", "Bid optimization", "Creative iteration"],
         },

@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, Users, Mail, FileText, CheckCircle, BarChart, Link2 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     // Link Building Cyan theme color
@@ -12,7 +13,7 @@ export default function Process() {
             icon: Search,
             title: "Research & Analysis",
             description: "We analyze your backlink profile, study competitors, and identify high-value link opportunities in your niche.",
-            details: ["Competitor backlink audit", "Gap analysis", "Industry opportunity mapping"],
+            details: [<Link href="/services/seo-services/technical-seo-services" className="hover:underline" style={{ color: linkCyan }}>Competitor backlink audit</Link>, "Gap analysis", "Industry opportunity mapping"],
         },
         {
             id: 2,
@@ -40,7 +41,7 @@ export default function Process() {
             icon: CheckCircle,
             title: "Link Placement",
             description: "We secure contextual, do-follow backlinks from approved, high-quality sources.",
-            details: ["Editorial review", "Anchor text optimization", "Contextual placement"],
+            details: ["Editorial review", <Link href="/services/seo-services/on-page-seo-services" className="hover:underline" style={{ color: linkCyan }}>Anchor text optimization</Link>, "Contextual placement"],
         },
         {
             id: 6,

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Award, Shield, TrendingUp, Users, Zap, BarChart3, CheckCircle } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -48,7 +49,7 @@ export default function WhyChooseUs() {
         {
             id: 6,
             icon: BarChart3,
-            title: "Transparent Reporting",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Transparent Reporting</Link>,
             description: "Weekly reports with full visibility into leads and pipeline.",
             stat: "Real-Time Data",
         },

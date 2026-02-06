@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle, TrendingUp, Target, Award, Clock, Users, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -28,17 +29,17 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Developer-First Collaboration",
-            description: "We provide clear technical SEO checklist for developers to ensure seamless implementation.",
+            description: <>We provide clear <Link href="/services/seo-services" className="hover:text-purple-500 transition-colors">technical SEO checklist</Link> for developers to ensure seamless implementation.</>,
         },
         {
             icon: Clock,
             title: "Platform Specialists",
-            description: "Expert technical SEO for headless CMS websites, WordPress, Shopify, and custom stacks.",
+            description: <>Expert <Link href="/services/web-design-development/headless-traditional-cms" className="hover:text-purple-500 transition-colors">technical SEO for headless CMS websites</Link>, <Link href="/services/web-design-development/wordpress-development-services" className="hover:text-purple-500 transition-colors">WordPress</Link>, Shopify, and custom stacks.</>,
         },
         {
             icon: Users,
             title: "Transparent Reporting",
-            description: "See exactly how your technical SEO cost for business websites 2026 translates into performance gains.",
+            description: <>See exactly how your <Link href="/contact" className="hover:text-purple-500 transition-colors">technical SEO cost for business websites 2026</Link> translates into performance gains.</>,
         },
     ];
 
@@ -69,7 +70,7 @@ export default function WhyChooseUs() {
                             Global Technical Expertise. <span style={{ color: techPurple }}>Measurable ROI.</span>
                         </h2>
                         <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Why hire a technical SEO expert from our team? Because we've delivered 300% traffic growth for clients by fixing the issues others miss.
+                            Why hire a <Link href="/about" className="hover:text-purple-500 transition-colors">technical SEO expert</Link> from our team? Because we've delivered 300% traffic growth for clients by fixing the issues others miss.
                         </p>
 
                         {/* Stats */}

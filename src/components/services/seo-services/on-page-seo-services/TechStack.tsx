@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("analysis");
@@ -15,24 +16,24 @@ export default function TechStack() {
         { id: "monitoring", label: "Monitoring" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string; logo: string; link?: string }[]> = {
         analysis: [
-            { name: "Screaming Frog", description: "Deep-crawl technical on-page SEO audits.", logo: "/images/organic_growth_and_seo/screaming-frog-logo.png" },
-            { name: "Ahrefs & SEMrush", description: "Competitive keyword mapping and gap analysis.", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
-            { name: "Surfer SEO", description: "Real-time content relevance and quality optimization.", logo: "/images/techstack_logos/Surfer-SEO-logo.webp" },
-            { name: "Google Search Console", description: "Monitoring Core Web Vitals optimization and indexing.", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
+            { name: "Screaming Frog", description: "Deep-crawl technical on-page SEO audits.", logo: "/images/organic_growth_and_seo/screaming-frog-logo.png", link: "/services/seo-services/technical-seo-services" },
+            { name: "Ahrefs & SEMrush", description: "Competitive keyword mapping and gap analysis.", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png", link: "/services/seo-services/link-building" },
+            { name: "Surfer SEO", description: "Real-time content relevance and quality optimization.", logo: "/images/techstack_logos/Surfer-SEO-logo.webp", link: "/services/seo-services/seo-content-writing-services" },
+            { name: "Google Search Console", description: "Monitoring Core Web Vitals optimization and indexing.", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp", link: "/services/performance-marketing" },
             { name: "Clearscope", description: "Ensuring semantic search optimization for AI-era rankings.", logo: "/images/techstack_logos/Clearscope-logo.jpg" },
             { name: "Hotjar", description: "Analyzing User experience SEO and page interaction.", logo: "/images/techstack_logos/Hotjar-logo.png" },
         ],
         optimization: [
-            { name: "Yoast SEO", description: "WordPress SEO", logo: "/images/techstack_logos/Yoast-SEO-logo.png" },
+            { name: "Yoast SEO", description: "WordPress SEO", logo: "/images/techstack_logos/Yoast-SEO-logo.png", link: "/services/web-design-development/wordpress-development-services" },
             { name: "Rank Math", description: "SEO Plugin", logo: "/images/techstack_logos/RankMath-logo.jpg" },
             { name: "Schema Pro", description: "Structured Data", logo: "/images/techstack_logos/Schema-Pro-logo.jpg" },
             { name: "TinyPNG", description: "Image Compression", logo: "/images/techstack_logos/Tinypng-logo.jpg" },
         ],
         monitoring: [
-            { name: "Google Search Console", description: "Performance Tracking", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
-            { name: "Google Analytics 4", description: "Traffic Analysis", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Search Console", description: "Performance Tracking", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp", link: "/services/performance-marketing" },
+            { name: "Google Analytics 4", description: "Traffic Analysis", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp", link: "/services/performance-marketing" },
             { name: "PageSpeed Insights", description: "Speed Testing", logo: "/images/techstack_logos/PageSpeed-Insights-logo.svg" },
             { name: "GTmetrix", description: "Performance", logo: "/images/techstack_logos/Gtmetrix-logo.webp" },
         ],
@@ -50,7 +51,7 @@ export default function TechStack() {
                         Precision Tools for <span style={{ color: seoGreen }}>Data-Backed Results</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We leverage the industry's most advanced tools to conduct your <strong>on-page SEO audit</strong> and monitor performance in real-time.
+                        We leverage the industry's most advanced tools to conduct your <strong><Link href="/contact" className="hover:underline">on-page SEO audit</Link></strong> and monitor performance in real-time.
                     </p>
                 </div>
 
@@ -113,7 +114,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:underline hover:text-blue-400 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

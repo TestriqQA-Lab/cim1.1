@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Search, Target, Palette, Rocket, BarChart, RefreshCw, CheckCircle } from "lucide-react";
 
 export default function Process() {
@@ -21,14 +22,14 @@ export default function Process() {
         {
             id: 2,
             icon: Target,
-            title: "Strategy Development",
+            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Strategy Development</Link>,
             description: "Build a content and targeting strategy aligned with TikTok best practices.",
             deliverables: ["Content pillars", "Targeting plan", "Budget allocation"],
         },
         {
             id: 3,
             icon: Palette,
-            title: "Creative Production",
+            title: <Link href="/services/brand-identity-design" className="hover:text-[var(--primary)] transition-colors">Creative Production</Link>,
             description: "Produce thumb-stopping video content optimized for TikTok's format.",
             deliverables: ["Video ads", "Spark ads", "UGC briefs"],
         },

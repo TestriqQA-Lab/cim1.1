@@ -10,8 +10,8 @@ export default function Hero() {
     const metaPurple = "#8b5cf6";
 
     const features = [
-        "Facebook Ads",
-        "Instagram Ads",
+        <Link href="/services/social-media-marketing-services/facebook-marketing-services" className="hover:text-blue-600 transition-colors">Facebook Ads</Link>,
+        <Link href="/services/social-media-marketing-services/instagram-marketing-services" className="hover:text-pink-600 transition-colors">Instagram Ads</Link>,
         "Messenger Ads",
         "Audience Network",
     ];
@@ -239,18 +239,40 @@ export default function Hero() {
                                 Platforms We Manage
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Facebook", "Instagram", "Messenger", "WhatsApp", "Audience Network", "Threads"].map((platform, idx) => (
-                                    <span
-                                        key={idx}
-                                        className="px-3 py-1.5 rounded-full text-xs font-medium border"
-                                        style={{
-                                            borderColor: `${metaBlue}30`,
-                                            backgroundColor: "var(--background)",
-                                            color: "var(--secondary-text)"
-                                        }}
-                                    >
-                                        {platform}
-                                    </span>
+                                {[
+                                    { name: "Facebook", url: "/services/social-media-marketing-services/facebook-marketing-services" },
+                                    { name: "Instagram", url: "/services/social-media-marketing-services/instagram-marketing-services" },
+                                    { name: "Messenger", url: null },
+                                    { name: "WhatsApp", url: null },
+                                    { name: "Audience Network", url: null },
+                                    { name: "Threads", url: null }
+                                ].map((platform, idx) => (
+                                    platform.url ? (
+                                        <Link
+                                            key={idx}
+                                            href={platform.url}
+                                            className="px-3 py-1.5 rounded-full text-xs font-medium border hover:border-[var(--primary)] hover:text-[var(--primary)] transition-colors"
+                                            style={{
+                                                borderColor: `${metaBlue}30`,
+                                                backgroundColor: "var(--background)",
+                                                color: "var(--secondary-text)"
+                                            }}
+                                        >
+                                            {platform.name}
+                                        </Link>
+                                    ) : (
+                                        <span
+                                            key={idx}
+                                            className="px-3 py-1.5 rounded-full text-xs font-medium border"
+                                            style={{
+                                                borderColor: `${metaBlue}30`,
+                                                backgroundColor: "var(--background)",
+                                                color: "var(--secondary-text)"
+                                            }}
+                                        >
+                                            {platform.name}
+                                        </span>
+                                    )
                                 ))}
                             </div>
                         </div>

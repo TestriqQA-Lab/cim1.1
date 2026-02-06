@@ -32,7 +32,9 @@ export default function CTA() {
 
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
                         Stop Guessing. Start Growing with a <br />
-                        <span style={{ color: seoGreen }}>Free On-Page SEO Audit.</span>
+                        <span style={{ color: seoGreen }}>
+                            <Link href="/contact" className="hover:underline">Free On-Page SEO Audit.</Link>
+                        </span>
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>

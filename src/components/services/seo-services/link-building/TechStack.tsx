@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("outreach");
@@ -15,7 +16,7 @@ export default function TechStack() {
         { id: "monitoring", label: "Monitoring" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; link?: string; description: string; logo: string }[]> = {
         outreach: [
             { name: "BuzzStream", description: "Outreach CRM", logo: "/images/techstack_logos/BuzzStream-logo.webp" },
             { name: "Hunter.io", description: "Email Finder", logo: "/images/techstack_logos/Hunterio-logo.svg" },
@@ -29,7 +30,7 @@ export default function TechStack() {
             { name: "Majestic", description: "Trust Flow", logo: "/images/techstack_logos/Majestic-logo.png" },
         ],
         monitoring: [
-            { name: "Google Search Console", description: "Link Tracking", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
+            { name: "Google Search Console", link: "/services/seo-services/technical-seo-services", description: "Link Tracking", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
             { name: "Monitor Backlinks", description: "Backlink Monitoring", logo: "/images/techstack_logos/Monitor-Backlinks-logo.png" },
             { name: "Brand24", description: "Mention Tracking", logo: "/images/techstack_logos/Brand24-logo.jpg" },
             { name: "Ahrefs Alerts", description: "Lost Link Alerts", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
@@ -111,7 +112,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold mb-1" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:underline transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Check, Wallet, Users, Zap, Award } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -22,7 +23,7 @@ export default function WhyChooseUs() {
             icon: Zap,
         },
         {
-            title: "Exclusive Partners",
+            title: <Link href="/services/performance-marketing" className="hover:text-[var(--primary)] transition-colors">Exclusive Partners</Link>,
             description: "Ads appear on trusted sites like Wall Street Journal, AOL, and InfoSpace.",
             icon: Award,
         },

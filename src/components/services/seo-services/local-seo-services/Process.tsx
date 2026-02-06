@@ -11,7 +11,7 @@ export default function Process() {
         {
             icon: Search,
             title: "Local Presence Audit & Competitor Analysis",
-            description: "What We Analyze: Current Google Map Pack rankings for your primary keywords, NAP consistency across top 50 citation sources, review count/rating vs. top 3 competitors, GBP completeness score, website technical SEO for mobile and local schema. Deliverable: 25-page audit report with actionable recommendations.",
+            description: <><Link href="/services/seo-services" className="hover:underline">Audit & Competitor Analysis</Link>: Current Google Map Pack rankings for your primary keywords, NAP consistency across top 50 citation sources, review count/rating vs. top 3 competitors, GBP completeness score, website technical SEO for mobile and local schema. Deliverable: 25-page audit report with actionable recommendations.</>,
             animation: "slide-right"
         },
         {
@@ -23,13 +23,13 @@ export default function Process() {
         {
             icon: FileCode,
             title: "On-Page Localization & Schema Implementation",
-            description: "Technical on-site work: Install LocalBusiness schema with exact coordinates, create location-specific landing pages, optimize title tags with city + service keywords. SEO Impact: 40-60% increase in geo-modified keyword rankings within 30 days.",
+            description: <><Link href="/services/seo-services/technical-seo-services" className="hover:text-emerald-500 transition-colors">Technical on-site work</Link>: Install LocalBusiness schema with exact coordinates, create <Link href="/services/web-design-development/landing-pages" className="hover:text-purple-500 transition-colors">location-specific landing pages</Link>, optimize title tags with city + service keywords. SEO Impact: 40-60% increase in geo-modified keyword rankings within 30 days.</>,
             animation: "fade-up"
         },
         {
             icon: Share2,
             title: "Citation Building & Data Cleanup",
-            description: "Building your digital footprint: Submit to 50+ high-authority directories, fix existing NAP inconsistencies, remove duplicate listings causing rank suppression. Result: Consistent NAP across 95%+ of citation sources within 45 days.",
+            description: <><Link href="/services/seo-services/link-building" className="hover:text-blue-500 transition-colors">Building your digital footprint</Link>: Submit to 50+ high-authority directories, fix existing NAP inconsistencies, remove duplicate listings causing rank suppression. Result: Consistent NAP across 95%+ of citation sources within 45 days.</>,
             animation: "scale"
         },
         {

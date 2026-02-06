@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -9,10 +10,10 @@ export default function FAQ() {
     // Local SEO Amber theme color
     const localAmber = "#F59E0B";
 
-    const faqs = [
+    const faqs: { question: string; answer: string | React.ReactNode }[] = [
         {
             question: "What is local SEO and how does it work?",
-            answer: "Local SEO (local search engine optimization) is the process of optimizing your online presence to attract customers searching for businesses 'near me' or in specific geographic areas. Unlike traditional SEO that targets national/global rankings, local SEO focuses on appearing in the Google Map Pack (top 3 local results), Google Business Profile panels, and geo-modified organic results.\n\nHow it works: Google's local algorithm evaluates three core factors:\n\n• Proximity - How close your business is to the searcher\n• Relevance - How well your GBP categories/description match the query\n• Prominence - Your reputation (reviews, citations, backlinks)\n\nOur local SEO services optimize all three signals to rank you #1 for high-intent local searches that drive calls, direction requests, and foot traffic."
+            answer: <><Link href="/services/seo-services" className="hover:underline text-amber-500">Local SEO</Link> (local search engine optimization) is the process of optimizing your online presence to attract customers searching for businesses 'near me' or in specific geographic areas. Unlike traditional SEO that targets national/global rankings, local SEO focuses on appearing in the Google Map Pack (top 3 local results), Google Business Profile panels, and geo-modified organic results.\n\nHow it works: Google's local algorithm evaluates three core factors:\n\n• Proximity - How close your business is to the searcher\n• Relevance - How well your GBP categories/description match the query\n• Prominence - Your reputation (reviews, citations, <Link href="/services/seo-services/link-building" className="hover:underline text-amber-500">backlinks</Link>)\n\nOur local SEO services optimize all three signals to rank you #1 for high-intent local searches that drive calls, direction requests, and foot traffic.</>
         },
         {
             question: "How much do local SEO services cost per month in 2026?",
@@ -24,7 +25,7 @@ export default function FAQ() {
         },
         {
             question: "What is the difference between SEO and local SEO?",
-            answer: "Traditional SEO: Targets national/global rankings with focus on backlink authority + content depth. Goal is to rank for broad keywords targeting anyone searching. Key metrics include organic traffic and domain authority. Top ranking signals are content quality, backlinks, and technical SEO.\n\nLocal SEO: Focuses on rankings in specific cities/neighborhoods through Google Business Profile + proximity optimization. Goal is to appear in the Google Map Pack for users within 5-25 mile radius. Key metrics include Map Pack rank, calls, directions, and foot traffic. Top ranking signals are NAP citations, reviews, and GBP optimization.\n\nWhen to use Traditional SEO: SaaS products, ecommerce sites selling nationally, informational blogs\n\nWhen to use Local SEO: Restaurants, medical practices, law firms, contractors, retail stores, real estate agents—any business serving a specific geographic area.\n\nOur approach: We combine both! Our local search engine optimization includes traditional on-page SEO + technical optimizations PLUS hyperlocal GBP and citation strategies for maximum visibility."
+            answer: <>Traditional SEO: Targets national/global rankings with focus on backlink authority + content depth. Goal is to rank for broad keywords targeting anyone searching. Key metrics include organic traffic and domain authority. Top ranking signals are content quality, backlinks, and <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-amber-500">technical SEO</Link>.\n\nLocal SEO: Focuses on rankings in specific cities/neighborhoods through Google Business Profile + proximity optimization. Goal is to appear in the Google Map Pack for users within 5-25 mile radius. Key metrics include Map Pack rank, calls, directions, and foot traffic. Top ranking signals are NAP citations, reviews, and GBP optimization.\n\nWhen to use Traditional SEO: SaaS products, ecommerce sites selling nationally, informational blogs\n\nWhen to use Local SEO: Restaurants, medical practices, law firms, contractors, retail stores, real estate agents—any business serving a specific geographic area.\n\nOur approach: We combine both! Our local search engine optimization includes <Link href="/services/seo-services/on-page-seo-services" className="hover:underline text-amber-500">traditional on-page SEO</Link> + technical optimizations PLUS hyperlocal GBP and citation strategies for maximum visibility.</>
         },
         {
             question: "How long does it take to see results from local SEO?",

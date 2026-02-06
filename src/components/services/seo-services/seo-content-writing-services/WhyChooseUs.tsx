@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle, Zap, UserCheck, Search, Database, Globe, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -13,32 +14,32 @@ export default function WhyChooseUs() {
         {
             icon: Sparkles,
             title: "Proven EEAT Portfolio",
-            description: "Managed 50+ enterprise-scale projects with 95% bug-free delivery on technical content.",
+            description: <>Managed 50+ enterprise-scale projects with 95% bug-free delivery on <Link href="/services/seo-services/technical-seo-services" className="hover:text-emerald-500 transition-colors">technical content</Link>.</>,
         },
         {
             icon: Globe,
             title: "Global Strategy, Local Reach",
-            description: "Expertise in SEO content for local business landing pages across US, EU, and India.",
+            description: <>Expertise in SEO content for <Link href="/services/seo-services/local-seo-services" className="hover:text-emerald-500 transition-colors">local business landing pages</Link> across US, EU, and India.</>,
         },
         {
             icon: Zap,
             title: "ROI-First Mindset",
-            description: "Clients see an average 30% lift in MQLs within 6 months of execution.",
+            description: <>Clients see an average 30% lift in <Link href="/services/performance-marketing" className="hover:text-emerald-500 transition-colors">MQLs</Link> within 6 months of execution.</>,
         },
         {
             icon: Database,
             title: "Future-Proof Content",
-            description: "Optimized for AI Overviews with semantic richness and direct answer formatting.",
+            description: <>Optimized for <Link href="/services/ai-chatbots-services" className="hover:text-emerald-500 transition-colors">AI Overviews</Link> with semantic richness and direct answer formatting.</>,
         },
         {
             icon: UserCheck,
             title: "Subject Matter Experts",
-            description: "We match you with industry-specific SMEs ensuring decade-long authority.",
+            description: <>We match you with <Link href="/about" className="hover:text-emerald-500 transition-colors">industry-specific SMEs</Link> ensuring decade-long authority.</>,
         },
         {
             icon: Search,
             title: "Data-Driven Strategy",
-            description: "Every word aligns with deep user intent and 2026 EEAT guidelines.",
+            description: <>Every word aligns with deep user intent and <Link href="/services/seo-services" className="hover:text-emerald-500 transition-colors">2026 EEAT guidelines</Link>.</>,
         },
     ];
 

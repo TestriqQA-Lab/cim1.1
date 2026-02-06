@@ -11,19 +11,19 @@ export default function Process() {
         {
             icon: Search,
             title: "Comprehensive Technical Ecommerce SEO Audit",
-            description: "Deep crawl of your entire store using enterprise tools (Screaming Frog, Sitebulb, SEMrush) to identify indexing issues, orphan product pages, duplicate content, crawl budget wasters, broken links, and mobile usability errors. We analyze site architecture, internal linking structure, page speed metrics, and Core Web Vitals. Deliverable: 40+ page audit report with prioritized fixes.",
+            description: <>Deep crawl of your entire store using enterprise tools (Screaming Frog, Sitebulb, SEMrush) to identify indexing issues, orphan product pages, duplicate content, crawl budget wasters, broken links, and mobile usability errors. We analyze site architecture, internal linking structure, page speed metrics, and Core Web Vitals. Deliverable: 40+ page <Link href="/services/seo-services/technical-seo-services" className="hover:underline" style={{ color: commerceBlue }}>audit report</Link> with prioritized fixes.</>,
             animation: "slide-right"
         },
         {
             icon: PenTool,
             title: "Keyword Research & Mapping",
-            description: "Exhaustive research into high-value transactional keywords specific to your products. We analyze search volume, competition, buyer intent, and commercial value - then assign specific keywords to product pages, category pages, and blog content. Focus on ecommerce SEO ranking factors for 2026 including semantic search, featured snippets, and voice search optimization.",
+            description: <>Exhaustive research into high-value transactional <Link href="/services/seo-services" className="hover:underline" style={{ color: commerceBlue }}>keywords</Link> specific to your products. We analyze search volume, competition, buyer intent, and commercial value - then assign specific keywords to product pages, category pages, and blog content. Focus on ecommerce SEO ranking factors for 2026 including semantic search, featured snippets, and voice search optimization.</>,
             animation: "slide-left"
         },
         {
             icon: Layout,
             title: "Site Architecture & Internal Linking Optimization",
-            description: "Refining URL structure, breadcrumb navigation, and internal linking to pass authority to your highest-converting products. We create topic clusters, implement hub-and-spoke linking, fix orphan pages, and optimize faceted navigation SEO to prevent indexing issues while maintaining user experience.",
+            description: <>Refining URL structure, breadcrumb navigation, and <Link href="/services/seo-services/link-building" className="hover:underline" style={{ color: commerceBlue }}>internal linking</Link> to pass authority to your highest-converting products. We create topic clusters, implement hub-and-spoke linking, fix orphan pages, and optimize faceted navigation SEO to prevent indexing issues while maintaining user experience.</>,
             animation: "fade-up"
         },
         {
@@ -35,13 +35,13 @@ export default function Process() {
         {
             icon: Link2,
             title: "Ecommerce Link Building & Authority Services",
-            description: "Building high-quality backlinks from relevant industry niches, trade publications, and authoritative blogs. Strategies include digital PR, product reviews, influencer outreach, broken link building, and resource page placements. Focus on editorial links that boost domain authority and drive referral traffic. Perfect for ecommerce link building and authority services needs.",
+            description: <>Building high-quality backlinks from relevant industry niches, trade publications, and authoritative blogs. Strategies include digital PR, product reviews, influencer outreach, broken link building, and resource page placements. Focus on editorial links that boost domain authority and drive referral traffic. Perfect for ecommerce <Link href="/services/seo-services/link-building" className="hover:underline" style={{ color: commerceBlue }}>link building</Link> and authority services needs.</>,
             animation: "rotate"
         },
         {
             icon: BarChart,
             title: "Revenue Reporting & Monthly Ecommerce SEO Maintenance",
-            description: "Tracking rankings, organic traffic, conversion rates, and most importantly - revenue generated from organic search. Monthly reports show keyword movements, technical health scores, backlink growth, and ROI. Ecommerce SEO maintenance and monthly reporting includes ongoing optimization, content updates, and algorithm response.",
+            description: <>Tracking rankings, organic traffic, conversion rates, and most importantly - revenue generated from organic search. Monthly reports show keyword movements, technical health scores, backlink growth, and <Link href="/services/performance-marketing" className="hover:underline" style={{ color: commerceBlue }}>ROI</Link>. Ecommerce SEO maintenance and monthly reporting includes ongoing optimization, content updates, and algorithm response.</>,
             animation: "flip"
         },
     ];
@@ -101,8 +101,10 @@ export default function Process() {
                     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                     -webkit-mask-composite: xor;
                     mask-composite: exclude;
+                    mask-composite: exclude;
                     opacity: 0;
                     transition: opacity 0.3s ease;
+                    pointer-events: none;
                 }
                 .gradient-border:hover::before { opacity: 1; }
 

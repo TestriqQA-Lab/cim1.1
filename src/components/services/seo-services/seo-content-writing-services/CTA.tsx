@@ -36,7 +36,7 @@ export default function CTA() {
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
-                        Don't let your competitors own the first page. Partner with the best SEO content agency for startups and enterprises today.
+                        Don't let your competitors own the first page. Partner with the best <Link href="/about" className="hover:text-emerald-500 transition-colors">SEO content agency</Link> for startups and enterprises today.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Link2, Mail, FileText, Megaphone, BookOpen, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredId, setHoveredId] = useState<number | null>(null);
@@ -22,21 +23,21 @@ export default function ServiceOverview() {
             icon: FileText,
             title: "Guest Posting",
             description: "High-quality guest articles on authoritative sites with contextual backlinks to your content.",
-            details: ["Content creation", "Site vetting", "Editorial links", "Brand mentions"],
+            details: [<Link href="/services/seo-services/seo-content-writing-services" className="hover:underline" style={{ color: "var(--secondary-text)" }}>Content creation</Link>, "Site vetting", "Editorial links", "Brand mentions"],
         },
         {
             id: 3,
             icon: Megaphone,
             title: "Digital PR",
             description: "Earn links through newsworthy content, press releases, and media coverage in your industry.",
-            details: ["Press releases", "Data studies", "Expert quotes", "Media pitching"],
+            details: ["Press releases", "Data studies", "Expert quotes", <Link href="/services/performance-marketing" className="hover:underline" style={{ color: "var(--secondary-text)" }}>Media pitching</Link>],
         },
         {
             id: 4,
             icon: BookOpen,
             title: "Resource Link Building",
             description: "Create linkable assets like guides, tools, and infographics that naturally attract backlinks.",
-            details: ["Resource pages", "Link magnets", "Skyscraper content", "Broken link reclamation"],
+            details: ["Resource pages", "Link magnets", "Skyscraper content", <Link href="/services/seo-services/technical-seo-services" className="hover:underline" style={{ color: "var(--secondary-text)" }}>Broken link reclamation</Link>],
         },
     ];
 
