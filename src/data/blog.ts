@@ -9,7 +9,8 @@ export type ContentBlockType =
   | 'code'       // Code blocks with syntax highlighting
   | 'quote'      // Blockquotes
   | 'callout'    // Info/warning/tip boxes
-  | 'table';     // Data tables
+  | 'table'      // Data tables
+  | 'contactButton'; // Contact Us button
 
 export interface BaseContentBlock {
   id: string;
@@ -61,6 +62,12 @@ export interface TableBlock extends BaseContentBlock {
   rows: string[][];
 }
 
+export interface ContactButtonBlock extends BaseContentBlock {
+  type: 'contactButton';
+  text: string;
+  variant: 'primary' | 'secondary';
+}
+
 export type ContentBlock =
   | TextBlock
   | ListBlock
@@ -68,7 +75,8 @@ export type ContentBlock =
   | CodeBlock
   | QuoteBlock
   | CalloutBlock
-  | TableBlock;
+  | TableBlock
+  | ContactButtonBlock;
 
 // ============================================================================
 // AUTHOR & POST TYPES

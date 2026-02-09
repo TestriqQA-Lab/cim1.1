@@ -5,3 +5,4 @@ export { default as CodeBlock } from "./CodeBlock";
 export { default as QuoteBlock } from "./QuoteBlock";
 export { default as CalloutBlock } from "./CalloutBlock";
 export { default as TableBlock } from "./TableBlock";
+export { default as ContactButton } from "./ContactButton";

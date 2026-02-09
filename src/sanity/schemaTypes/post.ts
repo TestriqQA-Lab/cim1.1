@@ -108,6 +108,7 @@ export default defineType({
                 { type: 'callout' },
                 { type: 'quoteBlock' },
                 { type: 'tableBlock' },
+                { type: 'contactButton' },
             ],
         }),
     ],

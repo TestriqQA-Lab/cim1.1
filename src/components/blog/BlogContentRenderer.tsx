@@ -9,6 +9,7 @@ import {
     QuoteBlock,
     CalloutBlock,
     TableBlock,
+    ContactButton,
 } from "./content";
 import { JSX } from "react";
 
@@ -150,6 +151,8 @@ function renderContentBlock(block: ContentBlock): JSX.Element {
             return <CalloutBlock key={block.id} block={block} />;
         case "table":
             return <TableBlock key={block.id} block={block} />;
+        case "contactButton":
+            return <ContactButton key={block.id} block={block} />;
         default:
             return <></>;
     }

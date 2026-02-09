@@ -7,7 +7,9 @@ interface TextBlockProps {
 }
 
 export default function TextBlock({ block }: TextBlockProps) {
-    const id = block.content
+    // Strip HTML tags for ID generation
+    const cleanText = block.content.replace(/<[^>]*>/g, '');
+    const id = cleanText
         .toLowerCase()
         .replace(/[^a-z0-9\s-]/g, "")
         .replace(/\s+/g, "-");
@@ -19,9 +21,8 @@ export default function TextBlock({ block }: TextBlockProps) {
                     id={id}
                     className="text-3xl font-bold mb-6 mt-8 scroll-mt-24"
                     style={{ color: "var(--foreground)" }}
-                >
-                    {block.content}
-                </h1>
+                    dangerouslySetInnerHTML={{ __html: block.content }}
+                />
             );
         case "h2":
             return (
@@ -29,9 +30,8 @@ export default function TextBlock({ block }: TextBlockProps) {
                     id={id}
                     className="text-2xl font-bold mb-4 mt-8 scroll-mt-24"
                     style={{ color: "var(--foreground)" }}
-                >
-                    {block.content}
-                </h2>
+                    dangerouslySetInnerHTML={{ __html: block.content }}
+                />
             );
         case "h3":
             return (
@@ -39,9 +39,8 @@ export default function TextBlock({ block }: TextBlockProps) {
                     id={id}
                     className="text-xl font-bold mb-3 mt-6 scroll-mt-24"
                     style={{ color: "var(--foreground)" }}
-                >
-                    {block.content}
-                </h3>
+                    dangerouslySetInnerHTML={{ __html: block.content }}
+                />
             );
         case "paragraph":
         default:

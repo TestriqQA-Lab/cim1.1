@@ -1,6 +1,43 @@
 import { BlogPost, Author, ContentBlock } from '@/data/blog';
 import { urlFor } from './image';
 
+/**
+ * Serializes Sanity Portable Text block children with marks into HTML
+ * Handles links, bold, italic, and other inline formatting
+ */
+function serializePortableTextBlock(block: any): string {
+    if (!block.children || !Array.isArray(block.children)) return '';
+
+    return block.children.map((child: any) => {
+        let text = child.text || '';
+
+        // Apply marks (links, bold, italic, etc.)
+        if (child.marks && Array.isArray(child.marks) && child.marks.length > 0) {
+            // Process marks in reverse to handle nested formatting correctly
+            const marks = [...child.marks].reverse();
+
+            marks.forEach((mark: string) => {
+                // Find mark definition for links
+                const markDef = block.markDefs?.find((def: any) => def._key === mark);
+
+                if (markDef?._type === 'link') {
+                    // Handle links with proper styling
+                    const href = markDef.href || '#';
+                    text = `<a href="${href}" class="text-[var(--brand-purple)] hover:underline transition-colors">${text}</a>`;
+                } else if (mark === 'strong') {
+                    text = `<strong style='color: var(--foreground)'>${text}</strong>`;
+                } else if (mark === 'em') {
+                    text = `<em>${text}</em>`;
+                } else if (mark === 'code') {
+                    text = `<code>${text}</code>`;
+                }
+            });
+        }
+
+        return text;
+    }).join('');
+}
+
 export function mapSanityPostToBlogPost(sanityPost: any): BlogPost {
     return {
         id: sanityPost._id,
@@ -85,7 +122,7 @@ export function mapSanityBlocksToContentBlocks(sanityBlocks: any[]): ContentBloc
                         id: block._key,
                         type: 'text',
                         variant: block.style,
-                        content: block.children?.map((c: any) => c.text).join('')
+                        content: serializePortableTextBlock(block)
                     });
                     continue;
                 }
@@ -95,7 +132,7 @@ export function mapSanityBlocksToContentBlocks(sanityBlocks: any[]): ContentBloc
                     id: block._key,
                     type: 'text',
                     variant: 'paragraph',
-                    content: block.children?.map((c: any) => c.text).join('')
+                    content: serializePortableTextBlock(block)
                 });
                 continue;
             }
@@ -156,6 +193,16 @@ export function mapSanityBlocksToContentBlocks(sanityBlocks: any[]): ContentBloc
                     type: 'table',
                     headers: headers,
                     rows: rows
+                });
+                continue;
+            }
+
+            if (block._type === 'contactButton') {
+                contentBlocks.push({
+                    id: block._key,
+                    type: 'contactButton',
+                    text: block.text || 'Contact Us',
+                    variant: block.variant || 'primary'
                 });
                 continue;
             }

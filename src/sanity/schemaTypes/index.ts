@@ -6,7 +6,8 @@ import codeBlock from './codeBlock'
 import callout from './callout'
 import quoteBlock from './quoteBlock'
 import tableBlock from './tableBlock'
+import contactButton from './contactButton'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-    types: [author, category, post, codeBlock, callout, quoteBlock, tableBlock],
+    types: [author, category, post, codeBlock, callout, quoteBlock, tableBlock, contactButton],
 }
