@@ -34,7 +34,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     post.image,
     post.slug,
     post.publishedAt,
-    post.author.name
+    post.author.name,
+    post.seo
   );
 }
 

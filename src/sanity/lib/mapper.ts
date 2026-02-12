@@ -16,6 +16,7 @@ export function mapSanityPostToBlogPost(sanityPost: any): BlogPost {
         publishedAt: sanityPost.publishedAt,
         readTime: sanityPost.readTime || 5,
         featured: sanityPost.featured || false,
+        seo: sanityPost.seo,
     };
 }
 
