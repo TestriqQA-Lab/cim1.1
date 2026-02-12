@@ -9,6 +9,7 @@ import {
     Award,
     Headphones,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -25,7 +26,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Gauge,
-            title: "High Performance",
+            title: <Link href="/blog/web-performance-optimization-speed" className="hover:text-[#F89820] transition-colors">High Performance</Link>,
             description: "Optimized JVM applications with sub-millisecond response times and massive throughput.",
             gradient: "from-orange-500 via-amber-500 to-yellow-500",
             bgColor: "rgba(248, 152, 32, 0.15)",
@@ -61,7 +62,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Headphones,
-            title: "24/7 Support",
+            title: <Link href="/services/additional-support-services" className="hover:text-[#06b6d4] transition-colors">24/7 Support</Link>,
             description: "Round-the-clock monitoring and support for mission-critical applications.",
             gradient: "from-cyan-500 via-sky-500 to-blue-500",
             bgColor: "rgba(6, 182, 212, 0.15)",
@@ -156,7 +157,7 @@ export default function WhyChooseUs() {
                             >
                                 {/* Outer glow effect */}
                                 <div
-                                    className="absolute -inset-0.5 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-700 blur-lg"
+                                    className="absolute -inset-0.5 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-700 blur-lg pointer-events-none"
                                     style={{
                                         background: `linear-gradient(135deg, ${reason.bgColor}, transparent)`,
                                     }}
@@ -178,7 +179,7 @@ export default function WhyChooseUs() {
                                 >
                                     {/* Animated gradient background overlay */}
                                     <div
-                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                                         style={{
                                             background: `radial-gradient(circle at top right, ${reason.bgColor}, transparent 70%)`,
                                         }}

@@ -10,6 +10,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -18,7 +19,7 @@ export default function Process() {
         {
             icon: Search,
             title: "Discovery & Strategy",
-            description: "We analyze your market, define user personas, and select the best tech stack (Native vs. Flutter/React Native).",
+            description: <><span className="text-inherit">We analyze your market, define user personas, and select the best tech stack (Native vs. Flutter/</span><Link href="/services/mobile-app-development/cross-platform-app-development-company" className="text-[#3DDC84] hover:underline">React Native</Link>).</>,
             details: [
                 "Technical Specification Document (TSD)",
                 "Market analysis",
@@ -30,8 +31,8 @@ export default function Process() {
         },
         {
             icon: Palette,
-            title: "UI/UX Design",
-            description: "Award-winning designs following Material Design 3 principles. We create intuitive wireframes and interactive prototypes.",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[#3DDC84]">UI/UX Design</Link>,
+            description: <><span className="text-inherit">Award-winning designs following Material Design 3 principles. We create intuitive wireframes and </span><Link href="/services/brand-identity-design" className="text-[#3DDC84] hover:underline">interactive prototypes</Link>.</>,
             details: [
                 "Material Design 3 compliance",
                 "Interactive prototypes",
@@ -82,7 +83,7 @@ export default function Process() {
         },
         {
             icon: CheckCircle2,
-            title: "Maintenance & Support",
+            title: <Link href="/services/additional-support-services" className="hover:text-[#3DDC84]">Maintenance & Support</Link>,
             description: "Ongoing Android app maintenance and support services including OS updates, security patches, and Android app performance optimization.",
             details: [
                 "OS updates support",

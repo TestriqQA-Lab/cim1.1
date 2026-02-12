@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ShoppingBag, LayoutGrid, Monitor, Video, Store, Target } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -37,7 +38,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Video,
-            title: "Video Ads",
+            title: <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Video Ads</Link>,
             description: "Engage shoppers with autoplay video in search results.",
             color: amazonOrange,
         },

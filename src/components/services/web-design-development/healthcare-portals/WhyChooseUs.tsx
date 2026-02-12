@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
             highlights: [
                 { icon: TrendingUp, text: "Rapid deployment" },
                 { icon: CheckCircle2, text: "Quality assured" },
-                { icon: Activity, text: "Agile process" }
+                { icon: Activity, text: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">Agile process</Link> }
             ],
             color: "#6366f1",
             gradient: "from-[#6366f1] to-[#8b5cf6]",
@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Heart,
-            title: "Patient-Centered Design",
+            title: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">Patient-Centered Design</Link>,
             description: "Accessible, intuitive interfaces designed for patients of all ages and abilities with empathy-driven UX.",
             highlights: [
                 { icon: Eye, text: "Accessibility" },

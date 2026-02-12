@@ -11,6 +11,7 @@ import {
     ArrowRight,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -47,7 +48,7 @@ export default function SolutionTypes() {
         },
         {
             icon: GraduationCap,
-            title: "Higher Education",
+            title: <Link href="/services/web-design-development/edtech-lms" className="hover:text-[#0678BE] transition-colors">Higher Education</Link>,
             description: "University websites, student portals, and learning management systems for academic institutions.",
             features: [
                 "Student portals",
@@ -59,7 +60,7 @@ export default function SolutionTypes() {
         },
         {
             icon: HeartPulse,
-            title: "Healthcare Organizations",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:text-[#0678BE] transition-colors">Healthcare Organizations</Link>,
             description: "HIPAA-compliant healthcare portals with patient engagement and provider directories.",
             features: [
                 "HIPAA compliance",
@@ -83,7 +84,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Newspaper,
-            title: "Media & Publishing",
+            title: <Link href="/services/web-design-development/entertainment-media" className="hover:text-[#0678BE] transition-colors">Media & Publishing</Link>,
             description: "High-traffic content platforms with editorial workflows and subscription management.",
             features: [
                 "Editorial workflows",
@@ -95,7 +96,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Building2,
-            title: "Enterprise Corporations",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:text-[#0678BE] transition-colors">Enterprise Corporations</Link>,
             description: "Large-scale corporate websites and intranets with complex content hierarchies.",
             features: [
                 "Multisite management",
@@ -165,7 +166,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

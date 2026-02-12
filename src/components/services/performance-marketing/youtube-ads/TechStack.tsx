@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("platform");
@@ -15,20 +16,20 @@ export default function TechStack() {
         { id: "analytics", label: "Analytics & Data" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string | React.ReactNode; logo: string }[]> = {
         platform: [
             { name: "Google Ads", description: "Campaign Manager", logo: "/images/performance-marketing-logos/google-ads-logo.svg" },
             { name: "YouTube Studio", description: "Channel Management", logo: "/images/performance-marketing-logos/youtube-ads-logo.png" },
             { name: "DV360", description: "Programmatic", logo: "/images/techstack_logos/DV360-Logo.webp" },
         ],
         creative: [
-            { name: "Adobe Premiere", description: "Video Editing", logo: "/images/techstack_logos/Adobe-Premiere-logo.png" },
+            { name: "Adobe Premiere", description: <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Video Editing</Link>, logo: "/images/techstack_logos/Adobe-Premiere-logo.png" },
             { name: "After Effects", description: "Motion Graphics", logo: "/images/brand-identity-design-logos/Adobe_After_Effects_logo.png" },
-            { name: "Canva", description: "Thumnails & Assets", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva", description: <Link href="/services/brand-identity-design" className="hover:text-[var(--primary)] transition-colors">Thumnails & Assets</Link>, logo: "/images/brand-identity-design-logos/canva-logo.png" },
             { name: "CapCut", description: "Shorts Editing", logo: "/images/techstack_logos/Capcut-logo.png" },
         ],
         analytics: [
-            { name: "Google Analytics 4", description: "Web Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics 4", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Web Tracking</Link>, logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
             { name: "Google Tag Manager", description: "Tag Implementation", logo: "/images/techstack_logos/google-tag-manager-logo.svg" },
             { name: "Looker Studio", description: "Reporting", logo: "/images/techstack_logos/Google-Looker-Studio-logo.svg" },
         ],

@@ -269,18 +269,18 @@ export default function Hero() {
 
                         {/* Info Section Below Image */}
                         <div className="mt-12 flex gap-4 justify-center w-full z-10 relative">
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                            <Link href="/services/web-design-development/shopify-development-services" className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm hover:scale-105 transition-transform" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
                                 <ShoppingCart className="w-4 h-4" style={{ color: "#00b5ca" }} />
                                 <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Shopify</span>
-                            </div>
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                            </Link>
+                            <Link href="/services/web-design-development/wordpress-development-services" className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm hover:scale-105 transition-transform" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
                                 <Package className="w-4 h-4" style={{ color: "#00b5ca" }} />
                                 <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>WooCommerce</span>
-                            </div>
-                            <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
+                            </Link>
+                            <Link href="/services/web-design-development/ecommerce-development-company" className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm hover:scale-105 transition-transform" style={{ borderColor: "rgba(0, 181, 202, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
                                 <CreditCard className="w-4 h-4" style={{ color: "#00b5ca" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Stripe Ready</span>
-                            </div>
+                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>Magento Ready</span>
+                            </Link>
                         </div>
 
                         {/* Performance Metrics Section */}

@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, PenTool, Calendar, Zap, BarChart, Rocket } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const steps = [
@@ -12,7 +13,7 @@ export default function Process() {
         {
             icon: PenTool,
             title: "Audience & Voice Development",
-            description: "Crafting a unique, authentic brand voice while setting up Twitter conversion tracking to ensure every interaction is measurable.",
+            description: <>Crafting a unique, authentic brand voice while setting up <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-blue-500">Twitter conversion tracking</Link> to ensure every interaction is measurable.</>,
         },
         {
             icon: Calendar,
@@ -27,7 +28,7 @@ export default function Process() {
         {
             icon: Rocket,
             title: "Growth Acceleration & X Ads",
-            description: "Scaling reach through targeted Twitter ads management, from promoted tweets to X video ads using data-driven tactics.",
+            description: <>Scaling reach through targeted <Link href="/services/performance-marketing" className="hover:underline text-blue-500">Twitter ads management</Link>, from promoted tweets to <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:underline text-blue-500">X video ads</Link> using data-driven tactics.</>,
         },
         {
             icon: BarChart,

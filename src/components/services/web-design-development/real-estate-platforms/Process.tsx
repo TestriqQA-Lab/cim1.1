@@ -32,13 +32,13 @@ export default function Process() {
         {
             number: "02",
             icon: Palette,
-            title: "UX Design & Property Presentation",
+            title: <><Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">UX Design</Link> & Property Presentation</>,
             description: "Creating visually stunning property showcases with intuitive search, interactive maps, and mobile-first experiences that engage property seekers.",
             deliverables: [
                 { icon: FileText, text: "Listing page wireframes" },
                 { icon: Layout, text: "Search interface design" },
                 { icon: Map, text: "Interactive map UX" },
-                { icon: Smartphone, text: "Mobile optimization" }
+                { icon: Smartphone, text: <Link href="/services/mobile-app-development" className="hover:underline">Mobile optimization</Link> }
             ],
             color: "#14b8a6",
             gradient: "from-[#14b8a6] to-[#2dd4bf]",
@@ -75,7 +75,7 @@ export default function Process() {
             number: "05",
             icon: Rocket,
             title: "Launch & Optimization",
-            description: "Coordinated launch with SEO configuration, analytics setup, and initial marketing integrations to capture early leads and maximize visibility.",
+            description: <>Coordinated launch with <Link href="/services/seo-services" className="hover:underline">SEO configuration</Link>, analytics setup, and initial marketing integrations to capture early leads and maximize visibility.</>,
             deliverables: [
                 { icon: Globe, text: "Local SEO setup" },
                 { icon: LineChart, text: "Analytics config" },

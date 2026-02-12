@@ -15,10 +15,10 @@ export default function WhyChooseUs() {
         {
             icon: Home,
             title: "Real Estate Expertise",
-            description: "Deep understanding of property marketing, MLS integration, and lead generation strategies tailored for real estate professionals.",
+            description: <>Deep understanding of property marketing, MLS integration, and <Link href="/services/performance-marketing" className="hover:underline">lead generation</Link> strategies tailored for real estate professionals.</>,
             highlights: [
                 { icon: Map, text: "Market insights" },
-                { icon: Target, text: "Lead generation" },
+                { icon: Target, text: <Link href="/services/performance-marketing" className="hover:underline">Lead generation</Link> },
                 { icon: BarChart3, text: "Analytics" }
             ],
             color: "#0d9488",
@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
             description: "Platforms that grow with your business, from startup to enterprise, with robust infrastructure and performance optimization.",
             highlights: [
                 { icon: TrendingUp, text: "Growth ready" },
-                { icon: Award, text: "Enterprise" },
+                { icon: Award, text: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Enterprise</Link> },
                 { icon: Zap, text: "Optimized" }
             ],
             color: "#14b8a6",

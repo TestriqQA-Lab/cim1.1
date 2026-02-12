@@ -68,7 +68,7 @@ export default function Process() {
             title: "UX/UI Design",
             subtitle: "Route Planning",
             description:
-                "Focus on User Experience (UX) for Travel Websites. We create intuitive and visually stunning prototypes that align with your Hospitality Brand Identity.",
+                <span>Focus on <Link href="/services/web-design-development/branding-services" className="hover:underline">UX/UI Design</Link> (UX) for Travel Websites. We create intuitive and visually stunning prototypes that align with your Hospitality Brand Identity.</span>,
             deliverables: [
                 "User journey mapping",
                 "Interactive prototypes",
@@ -100,7 +100,7 @@ export default function Process() {
             title: "Integration Excellence",
             subtitle: "Construction Phase",
             description:
-                "Expertly handle Travel API Integration Services (GDS/OTA) and Hotel Property Management System (PMS) Integration for unified operations.",
+                <span>Expertly handle <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">Travel API Integration Services</Link> (GDS/OTA) and Hotel Property Management System (PMS) Integration for unified operations.</span>,
             deliverables: [
                 "GDS & OTA connectivity",
                 "PMS system integration",
@@ -152,7 +152,7 @@ export default function Process() {
             deliverables: [
                 "Continuous monitoring",
                 "Trend-based updates",
-                "SEO refinement",
+                <Link href="/services/seo-services" className="hover:underline">SEO refinement</Link>,
                 "Performance reports",
             ],
             gradient: "from-green-500 to-teal-500",

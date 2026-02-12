@@ -10,6 +10,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -18,7 +19,7 @@ export default function Process() {
         {
             icon: Search,
             title: "Discovery & Planning",
-            description: "We continually audit your requirements. We define the cross-platform mobile app design and UI/UX strategy, selecting the right framework (Flutter vs. React Native) based on your specific needs.",
+            description: <><span className="text-inherit">We continually audit your requirements. We define the cross-platform mobile app design and </span><Link href="/services/brand-identity-design" className="text-[#667eea] hover:underline">UI/UX strategy</Link>, selecting the right framework (Flutter vs. React Native) based on your specific needs.</>,
             details: [
                 "Requirement audit",
                 "UI/UX strategy definition",
@@ -30,7 +31,7 @@ export default function Process() {
         {
             icon: Palette,
             title: "UI/UX Design",
-            description: "Our designers create platform-adaptive UI designs that respect iOS (Human Interface Guidelines) and Android (Material Design) conventions while maintaining your unique brand identity.",
+            description: <><span className="text-inherit">Our designers create platform-adaptive UI designs that respect </span><Link href="/services/mobile-app-development/ios-app-development-company" className="text-[#667eea] hover:underline">iOS</Link> (Human Interface Guidelines) and <Link href="/services/mobile-app-development/android-app-development-company" className="text-[#667eea] hover:underline">Android</Link> (Material Design) conventions while maintaining your unique brand identity.</>,
             details: [
                 "Platform-adaptive UI",
                 "Human Interface Guidelines",

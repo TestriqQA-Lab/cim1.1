@@ -1,28 +1,29 @@
 "use client";
 
-import { Palette, CreditCard, Package, Globe, TrendingUp, Smartphone, ShoppingCart } from "lucide-react";
+import { Palette, Play, RefreshCw, Smartphone, TrendingUp, ShoppingCart } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const highlights = [
         {
             icon: ShoppingCart,
-            title: "Custom Shopify Store Design",
-            description: "Providing bespoke Shopify store design services that blend unique brand aesthetics with optimized user journeys for maximum conversions.",
+            title: <Link href="/services/web-design-development" className="hover:text-[#96bf48] transition-colors">Shopify Store Design</Link>,
+            description: "Custom themes that reflect your brand identity. We don't just use templates; we create unique visual experiences.",
         },
         {
-            icon: CreditCard,
+            icon: Palette, // Changed from CreditCard to Palette based on the new import and the fact CreditCard was removed. Assuming this is the intended icon.
             title: "Shopify Plus Development",
             description: "Enterprise-grade scaling for high-volume merchants, featuring mobile-first architecture and bespoke checkout automation via Shopify Flow.",
         },
         {
-            icon: Package,
-            title: "Custom Theme Development",
-            description: "Building headless and traditional storefronts utilizing React, Liquid, and Next.js, optimized for 2026 Core Web Vitals and app-like speed.",
+            icon: Play,
+            title: <Link href="/services/web-design-development/headless-traditional-cms" className="hover:text-[#96bf48] transition-colors">Headless & Hydrogen</Link>,
+            description: <span>Future-proof your store with <Link href="/services/web-design-development/nextjs-development-services" className="text-[#96bf48] hover:underline">Next.js</Link> or Hydrogen. Blazing fast load times and ultimate design flexibility.</span>,
         },
         {
-            icon: Globe,
-            title: "Shopify Migration & Int'l SEO",
-            description: "Ensuring 100% data integrity and international SEO continuity when moving from Magento or WooCommerce with zero downtime.",
+            icon: RefreshCw,
+            title: "Seamless Migration",
+            description: <span>Moving from <Link href="/services/web-design-development/ecommerce-development-company" className="text-[#96bf48] hover:underline">Magento</Link>, <Link href="/services/web-design-development/wordpress-development-services" className="text-[#96bf48] hover:underline">WooCommerce</Link>, or BigCommerce? We ensure zero data loss and minimal downtime.</span>,
         },
         {
             icon: TrendingUp,
@@ -31,8 +32,8 @@ export default function ServiceOverview() {
         },
         {
             icon: Smartphone,
-            title: "Shopify SEO & Marketing",
-            description: "Comprehensive technical audits and product page optimization to align with 2026 AI Overviews and helpful content signals.",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[#96bf48] transition-colors">Mobile App Development</Link>,
+            description: "Turn your Shopify store into a native iOS/Android app. Increase retention with push notifications and one-tap checkout.",
         },
     ];
 
@@ -46,7 +47,7 @@ export default function ServiceOverview() {
                 <div
                     className="absolute inset-0"
                     style={{
-                        backgroundImage: `radial-gradient(circle at 2px 2px, #96bf48 1px, transparent 0)`,
+                        backgroundImage: `radial - gradient(circle at 2px 2px, #96bf48 1px, transparent 0)`,
                         backgroundSize: "48px 48px",
                     }}
                 />

@@ -12,6 +12,7 @@ import {
     Clock,
     Zap,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -35,7 +36,7 @@ export default function Process() {
         {
             icon: Target,
             title: "Strategy & Audience Building",
-            description: "We develop a custom social media marketing strategy using Lookalike audience creation and specific interest clusters. We map out the full funnel from awareness to conversion.",
+            description: <>We develop a custom <Link href="/services/social-media-marketing-services" className="hover:underline text-blue-600">social media marketing strategy</Link> using Lookalike audience creation and specific interest clusters. We map out the full funnel from awareness to conversion.</>,
             details: [
                 "TOFU/MOFU/BOFU funnel mapping",
                 "Lookalike audience creation",
@@ -50,11 +51,13 @@ export default function Process() {
         {
             icon: Palette,
             title: "Creative Development",
-            description: "Our designers provide professional Facebook ad creative design services, crafting a mix of carousel ads and high-definition video that stops the scroll.",
+            description: <>Our designers provide professional <Link href="/services/web-design-development/branding-services" className="hover:underline text-pink-600">Facebook ad creative design services</Link>, crafting a mix of carousel ads and high-definition <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:underline text-pink-600">video ads</Link> that stops the scroll.</>,
             details: [
                 "Scroll-stopping video ads",
                 "Carousel ads optimization",
-                "High-conversion copywriting",
+                "Carousel ads optimization",
+                <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-inherit" key="copywriting">High-conversion copywriting</Link>,
+                "Dynamic creative testing",
                 "Dynamic creative testing",
                 "Mobile-first design focus",
             ],
@@ -80,7 +83,7 @@ export default function Process() {
         {
             icon: BarChart3,
             title: "Optimization & Scaling",
-            description: "Data leads the way. We monitor Facebook ads reporting and analytics services daily, killing underperforming ads and aggressively scaling winners.",
+            description: <>Data leads the way. We monitor <Link href="/blog/data-analytics-insights-action" className="hover:underline text-green-600">Facebook ads reporting</Link> and analytics services daily, killing underperforming ads and aggressively scaling winners.</>,
             details: [
                 "Daily performance monitoring",
                 "Bid & budget optimization",

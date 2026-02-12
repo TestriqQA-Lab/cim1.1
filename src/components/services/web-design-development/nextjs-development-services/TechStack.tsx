@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Layers, Palette, Database, TestTube, Cloud, Code2 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -47,7 +48,7 @@ export default function TechStack() {
                 { name: "Prisma", description: "Type-safe ORM", logo: "/images/techstack_logos/prisma-logo.png" },
                 { name: "GraphQL", description: "Data query language", logo: "/images/techstack_logos/graphql-logo.svg" },
                 { name: "tRPC", description: "End-to-end typesafe APIs", logo: "/images/techstack_logos/tRPC-logo.png" },
-                { name: "PostgreSQL", description: "Relational database", logo: "/images/techstack_logos/postgresql-logo.svg" },
+                { name: "PostgreSQL", description: "Relational database", logo: "/images/techstack_logos/postgresql-logo.svg", link: "/services/web-design-development/nodejs-backend" },
             ],
         },
         {
@@ -242,7 +243,13 @@ export default function TechStack() {
                                         className="font-semibold"
                                         style={{ color: "#61dafb" }}
                                     >
-                                        {tech.name}
+                                        {(tech as any).link ? (
+                                            <Link href={(tech as any).link} className="hover:text-[#61dafb] transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </p>
                                     <p
                                         className="text-sm"

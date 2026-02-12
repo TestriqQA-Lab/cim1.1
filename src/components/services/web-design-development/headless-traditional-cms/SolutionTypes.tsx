@@ -12,6 +12,7 @@ import {
     Check,
     ArrowUpRight,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -20,7 +21,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Cloud,
-            title: "Contentful Projects",
+            title: <Link href="/services/web-design-development/contentful-headless-cms" className="hover:text-inherit">Contentful Projects</Link>,
             description:
                 "Enterprise content infrastructure for global brands. Structured content, powerful APIs, and scalable architecture.",
             features: [
@@ -34,7 +35,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Server,
-            title: "Strapi Development",
+            title: <Link href="/services/web-design-development/strapi-headless-cms" className="hover:text-inherit">Strapi Development</Link>,
             description:
                 "Open-source headless CMS with full customization. Self-hosted control with enterprise-grade features.",
             features: [
@@ -48,9 +49,9 @@ export default function SolutionTypes() {
         },
         {
             icon: Layers,
-            title: "Sanity Implementations",
+            title: <Link href="/blog/headless-cms-sanity-nextjs-decoupled-frontends-2026" className="hover:text-inherit">Sanity CMS</Link>,
             description:
-                "Real-time collaborative content platform. Structured content with GROQ queries and visual editing.",
+                "Real-time content collaboration and structured data. Flexible schemas for modern digital products.",
             features: [
                 "Real-time Collaboration",
                 "GROQ Query Language",
@@ -62,7 +63,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Globe,
-            title: "WordPress Development",
+            title: <Link href="/services/web-design-development/wordpress-development-services" className="hover:text-inherit">WordPress Development</Link>,
             description:
                 "World's most popular CMS with endless possibilities. Themes, plugins, and custom development.",
             features: [
@@ -76,7 +77,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Settings,
-            title: "Drupal Enterprise",
+            title: <Link href="/services/web-design-development/drupal-cms" className="hover:text-inherit">Drupal Enterprise</Link>,
             description:
                 "Robust security and complex content workflows. Perfect for government, healthcare, and enterprise.",
             features: [

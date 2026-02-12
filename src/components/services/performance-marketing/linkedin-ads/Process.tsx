@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Search, Target, Palette, Rocket, BarChart, RefreshCw, CheckCircle } from "lucide-react";
 
 export default function Process() {
@@ -21,14 +22,14 @@ export default function Process() {
         {
             id: 2,
             icon: Target,
-            title: "Targeting Strategy",
+            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Targeting Strategy</Link>,
             description: "Build precision audiences using LinkedIn's professional data.",
             deliverables: ["ICP development", "Audience segments", "ABM lists"],
         },
         {
             id: 3,
             icon: Palette,
-            title: "Creative Development",
+            title: <Link href="/services/brand-identity-design" className="hover:text-[var(--primary)] transition-colors">Creative Development</Link>,
             description: "Design professional, high-converting ads for B2B audiences.",
             deliverables: ["Ad creatives", "Copy variations", "A/B test plan"],
         },
@@ -42,7 +43,7 @@ export default function Process() {
         {
             id: 5,
             icon: BarChart,
-            title: "Optimize & Test",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Optimize & Test</Link>,
             description: "Continuous optimization based on engagement and conversion data.",
             deliverables: ["Bid optimization", "Audience refinement", "Creative testing"],
         },

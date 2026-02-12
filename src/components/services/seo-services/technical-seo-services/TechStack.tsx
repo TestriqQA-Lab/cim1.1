@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("performance");
@@ -15,7 +16,7 @@ export default function TechStack() {
         { id: "monitoring", label: "Monitoring" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string; logo: string; link?: string }[]> = {
         performance: [
             { name: "Google PageSpeed", description: "Speed Testing", logo: "/images/techstack_logos/PageSpeed-Insights-logo.svg" },
             { name: "GTmetrix", description: "Performance", logo: "/images/techstack_logos/Gtmetrix-logo.webp" },
@@ -29,7 +30,7 @@ export default function TechStack() {
             { name: "Botify", description: "Log Analysis", logo: "/images/techstack_logos/Botify-logo.png" },
         ],
         monitoring: [
-            { name: "Google Search Console", description: "Index Status", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
+            { name: "Google Search Console", description: "Index Status", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp", link: "/services/performance-marketing" },
             { name: "Bing Webmaster", description: "Bing Indexing", logo: "/images/techstack_logos/Bing-Webmaster-logo.svg" },
             { name: "Ahrefs", description: "Technical Audits", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
             { name: "SEMrush", description: "Site Audit", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
@@ -48,7 +49,7 @@ export default function TechStack() {
                         Precision Tools for <span style={{ color: techPurple }}>Deep Technical Audits</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We use the industry's most advanced tools to conduct your technical SEO audit and monitor performance in real-time.
+                        We use the industry's most advanced tools to conduct your <Link href="/contact" className="hover:text-purple-500 transition-colors">technical SEO audit</Link> and monitor performance in real-time.
                     </p>
                 </div>
 
@@ -111,7 +112,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:text-purple-500 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

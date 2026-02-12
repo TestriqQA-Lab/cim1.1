@@ -10,6 +10,7 @@ import {
     Globe,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -32,7 +33,7 @@ export default function WhyChooseUs() {
         {
             icon: Sparkles,
             title: "Post-2025 SEO & EEAT Strategy",
-            description: "Our content and apps are optimized for Google’s latest core updates, ensuring your brand ranks high and builds trust.",
+            description: <><span className="text-inherit">Our content and apps are optimized for Google’s latest core updates, ensuring your brand ranks high and builds trust with our </span><Link href="/services/seo-services" className="text-[#00b4d8] hover:underline">SEO</Link> strategy.</>,
             gradient: "from-[#48cae4] to-[#00b4d8]",
             shadowColor: "rgba(72, 202, 228, 0.3)",
         },
@@ -46,7 +47,7 @@ export default function WhyChooseUs() {
         {
             icon: RefreshCw,
             title: "Proactive Hybrid App Maintenance",
-            description: "Post-launch support includes performance monitoring, periodic security audits, and regular updates for latest OS versions.",
+            description: <><span className="text-inherit">Post-launch support includes performance monitoring, periodic security audits, and regular updates for latest OS versions and comprehensive </span><Link href="/services/additional-support-services" className="text-[#00b4d8] hover:underline">maintenance</Link>.</>,
             gradient: "from-[#0077b6] to-[#48cae4]",
             shadowColor: "rgba(0, 119, 182, 0.3)",
         },

@@ -10,6 +10,7 @@ import {
     Layers,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -20,14 +21,14 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "ecommerce",
-            title: "Technical SEO Audit for Ecommerce Websites",
-            description: "Optimize large-scale catalogs. We handle technical SEO audit for ecommerce websites (Shopify, Magento), fixing faceted navigation issues and canonical tag errors to prevent duplicate content.",
+            title: <Link href="/services/seo-services/ecommerce-seo-services" className="hover:underline">Technical SEO Audit for Ecommerce Websites</Link>,
+            description: <>Optimize large-scale catalogs. We handle <Link href="/services/seo-services/ecommerce-seo-services" className="hover:text-purple-500 transition-colors">technical SEO audit for ecommerce websites</Link> (<Link href="/services/web-design-development/shopify-development-services" className="hover:text-purple-500 transition-colors">Shopify</Link>, Magento), fixing faceted navigation issues and canonical tag errors to prevent duplicate content.</>,
             icon: Store,
             color: techPurple,
         },
         {
             id: "enterprise",
-            title: "Technical SEO for Large Enterprise Websites",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Technical SEO for Large Enterprise Websites</Link>,
             description: "Managing 100k+ pages? Our technical SEO for large enterprise websites focuses on crawl budget management and CDN configuration to maintain peak performance at scale.",
             icon: Building2,
             color: "#3B82F6",
@@ -35,28 +36,28 @@ export default function SolutionTypes() {
         {
             id: "publishers",
             title: "Technical SEO for News & Media Websites",
-            description: "Timing is everything. We optimize Technical SEO for news websites with accelerated indexation strategies and News-optimized schema markup for top-story placement.",
+            description: <>Timing is everything. We optimize <Link href="/services/seo-services/seo-content-writing-services" className="hover:text-purple-500 transition-colors">Technical SEO for news websites</Link> with accelerated indexation strategies and News-optimized schema markup for top-story placement.</>,
             icon: Newspaper,
             color: "#F59E0B",
         },
         {
             id: "saas",
-            title: "Technical SEO Services for SaaS Companies",
-            description: "For software platforms, we specialize in JavaScript SEO optimization and server-side rendering for SEO, ensuring your dynamic app content is fully readable by Googlebot.",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">Technical SEO Services for SaaS Companies</Link>,
+            description: <>For software platforms, we specialize in <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-purple-500 transition-colors">JavaScript SEO optimization</Link> and server-side rendering for SEO, ensuring your dynamic app content is fully readable by Googlebot.</>,
             icon: Layers,
             color: "#22C55E",
         },
         {
             id: "international",
-            title: "Technical SEO for International Markets",
+            title: <Link href="/services/seo-services/local-seo-services" className="hover:underline">Technical SEO for International Markets</Link>,
             description: "We manage complex multi-language setups with robust hreflang tag implementation and localized server configurations for global performance.",
             icon: Globe2,
             color: "#EC4899",
         },
         {
             id: "database",
-            title: "Technical SEO for Marketplace & Real Estate",
-            description: "Handle millions of dynamic listings. Our technical SEO for real estate platforms and marketplaces ensures efficient crawling of fast-changing data sets.",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">Technical SEO for Marketplace & Real Estate</Link>,
+            description: <>Handle millions of dynamic listings. Our <Link href="/services/web-design-development/real-estate-platforms" className="hover:text-purple-500 transition-colors">technical SEO for real estate platforms</Link> and marketplaces ensures efficient crawling of fast-changing data sets.</>,
             icon: Database,
             color: "#06B6D4",
         },

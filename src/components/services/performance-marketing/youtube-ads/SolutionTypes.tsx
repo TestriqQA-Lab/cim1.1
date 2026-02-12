@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Users, ShoppingBag, Eye, Megaphone, TrendingUp, Smartphone, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -12,25 +13,25 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Eye,
-            title: "Brand Awareness",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--primary)] transition-colors">Brand Awareness</Link>,
             description: "Maximize reach and ad recall with high-impact video formats.",
             metric: "+40% Recall",
         },
         {
             icon: Users,
-            title: "Lead Generation",
+            title: <Link href="/services/web-design-development/landing-pages" className="hover:text-[var(--primary)] transition-colors">Lead Generation</Link>,
             description: "Capture leads directly from video ads with custom forms.",
             metric: "2x Leads",
         },
         {
             icon: ShoppingBag,
-            title: "E-commerce Sales",
+            title: <Link href="/services/seo-services/ecommerce-seo-services" className="hover:text-[var(--primary)] transition-colors">E-commerce Sales</Link>,
             description: "Drive purchases with shoppable video ads and product feeds.",
             metric: "3.5x ROAS",
         },
         {
             icon: Smartphone,
-            title: "App Installs",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[var(--primary)] transition-colors">App Installs</Link>,
             description: "Scale app downloads across YouTube, Shorts, and Google play.",
             metric: "-20% CPI",
         },

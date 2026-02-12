@@ -7,6 +7,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQ() {
     const faqs = [
@@ -24,11 +25,11 @@ export default function FAQ() {
         },
         {
             question: "How long does it take to build an enterprise-grade app?",
-            answer: "A typical timeline for a production-ready enterprise app is 4 to 9 months. This includes strategy, UI/UX design, integration, security hardening, and deployment. Our Agile and DevOps approach allows for faster time-to-market through continuous delivery cycles.",
+            answer: <><span className="text-inherit">A typical timeline for a production-ready enterprise app is 4 to 9 months. This includes strategy, </span><Link href="/services/brand-identity-design" className="text-[#2563eb] hover:underline">UI/UX design</Link>, integration, security hardening, and deployment. Our Agile and DevOps approach allows for faster time-to-market through continuous delivery cycles.</>,
         },
         {
             question: "What is the difference between enterprise and regular app development?",
-            answer: "The primary differences lie in security, scale, and integration. Enterprise apps must meet strict compliance standards (SOC 2, HIPAA), integrate with complex corporate databases, and support massive concurrent user loads, whereas regular apps often focus on single-use cases for the general consumer.",
+            answer: <><span className="text-inherit">The primary differences lie in security, scale, and integration. Enterprise apps must meet strict compliance standards (SOC 2, HIPAA), integrate with complex corporate databases, and support massive concurrent user loads, whereas </span><Link href="/services/mobile-app-development" className="text-[#2563eb] hover:underline">regular apps</Link> often focus on single-use cases for the general consumer.</>,
         },
     ];
 

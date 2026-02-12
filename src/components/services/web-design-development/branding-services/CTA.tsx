@@ -113,7 +113,7 @@ export default function CTA() {
                                 </span>
                                 <span className="flex items-center gap-2">
                                     <div className="w-2 h-2 rounded-full bg-teal-500" />
-                                    World's Leading Agency
+                                    <Link href="/about-us" className="hover:underline text-inherit">World&apos;s Leading Agency</Link>
                                 </span>
                             </div>
                         </div>

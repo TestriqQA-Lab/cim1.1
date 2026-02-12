@@ -40,7 +40,7 @@ export default function CTA() {
                     </h2>
 
                     <p className="text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
-                        Stop losing customers to competitors who rank higher. 83% of local searches lead to in-store visits within 24 hours. If you're not in the top 3 Google Map Pack results, you're handing high-intent customers to competitors on a silver platter.
+                        Stop losing customers to <Link href="/services/seo-services/technical-seo-services" className="hover:text-amber-500 transition-colors">competitors</Link> who rank higher. 83% of local searches lead to in-store visits within 24 hours. If you're not in the top 3 Google Map Pack results, you're handing high-intent customers to competitors on a silver platter.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">

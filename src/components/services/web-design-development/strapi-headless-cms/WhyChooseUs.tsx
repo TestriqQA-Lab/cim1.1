@@ -9,6 +9,7 @@ import {
     Award,
     Headphones,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -43,7 +44,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Lock,
-            title: "Enterprise Security",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:text-[#c084fc] transition-colors">Enterprise Security</Link>,
             description: "Role-based access control, SSO integration, audit logs, and SOC 2 certified cloud hosting.",
             gradient: "from-fuchsia-500 via-pink-500 to-rose-500",
             bgColor: "rgba(192, 132, 252, 0.15)",
@@ -61,7 +62,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Headphones,
-            title: "Community & Support",
+            title: <Link href="/services/additional-support-services" className="hover:text-[#8b5cf6] transition-colors">Community & Support</Link>,
             description: "Active Discord community, extensive documentation, and enterprise support options.",
             gradient: "from-violet-500 via-purple-500 to-fuchsia-500",
             bgColor: "rgba(139, 92, 246, 0.15)",
@@ -156,7 +157,7 @@ export default function WhyChooseUs() {
                             >
                                 {/* Outer glow effect */}
                                 <div
-                                    className="absolute -inset-0.5 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-700 blur-lg"
+                                    className="absolute -inset-0.5 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-700 blur-lg pointer-events-none"
                                     style={{
                                         background: `linear-gradient(135deg, ${reason.bgColor}, transparent)`,
                                     }}
@@ -178,7 +179,7 @@ export default function WhyChooseUs() {
                                 >
                                     {/* Animated gradient background overlay */}
                                     <div
-                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                                         style={{
                                             background: `radial-gradient(circle at top right, ${reason.bgColor}, transparent 70%)`,
                                         }}

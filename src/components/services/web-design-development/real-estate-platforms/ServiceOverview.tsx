@@ -1,6 +1,7 @@
 "use client";
 
 import { Building, MapPin, CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const keyPoints = [
@@ -8,7 +9,7 @@ export default function ServiceOverview() {
         "MLS/IDX integration for real-time listing synchronization",
         "Interactive maps with neighborhood insights",
         "Virtual tour and 3D walkthrough integration",
-        "Lead capture forms with CRM automation",
+        <span key="crm">Lead capture forms with <Link href="/services/ai-workflows-automations-services" className="hover:underline">CRM automation</Link></span>,
         "Agent and broker management dashboards",
     ];
 

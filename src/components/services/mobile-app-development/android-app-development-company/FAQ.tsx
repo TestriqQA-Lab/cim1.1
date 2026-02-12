@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -9,11 +10,11 @@ export default function FAQ() {
     const faqs = [
         {
             question: "How much does it cost to develop an Android app?",
-            answer: "The cost varies based on complexity. A simple MVP starts from $10,000 to $25,000, while complex enterprise apps with AI/IoT features can range from $50,000 to $150,000+. We provide detailed, fixed-price quotes after our initial discovery call.",
+            answer: <><span className="text-inherit">The cost varies based on complexity. A simple MVP starts from $10,000 to $25,000, while complex </span><Link href="/services/mobile-app-development/enterprise-application-development-services" className="text-[#3DDC84] hover:underline">enterprise apps</Link> with <Link href="/services/ai-workflows-automations-services" className="text-[#3DDC84] hover:underline">AI/IoT features</Link> can range from $50,000 to $150,000+. We provide detailed, fixed-price quotes after our initial discovery call.</>,
         },
         {
             question: "What is the best language for Android app development?",
-            answer: "Kotlin is currently the industry standard and Google's preferred language for Android development due to its conciseness and safety features. However, we also support Java for legacy code modernization and C++ for high-performance NDK modules.",
+            answer: <><span className="text-inherit">Kotlin is currently the industry standard and Google&apos;s preferred language for Android development due to its conciseness and safety features. However, we also support </span><Link href="/services/web-design-development/java-spring-boot" className="text-[#3DDC84] hover:underline">Java</Link> for legacy code modernization and C++ for high-performance NDK modules.</>,
         },
         {
             question: "How long does it take to build a custom Android app?",
@@ -21,15 +22,15 @@ export default function FAQ() {
         },
         {
             question: "What are the benefits of native Android development vs hybrid?",
-            answer: "Native Android apps offer superior performance, better access to device hardware (camera, GPS), and a smoother UX compared to hybrid apps. However, hybrid solutions (Flutter/React Native) are faster to build and cost-effective if you need both iOS and Android apps simultaneously.",
+            answer: <><span className="text-inherit">Native Android apps offer superior performance, better access to device hardware (camera, GPS), and a smoother UX compared to </span><Link href="/services/mobile-app-development/hybrid-app-development-services" className="text-[#3DDC84] hover:underline">hybrid apps</Link>. However, hybrid solutions (<Link href="/services/mobile-app-development/cross-platform-app-development-company" className="text-[#3DDC84] hover:underline">Flutter/React Native</Link>) are faster to build and cost-effective if you need both iOS and Android apps simultaneously.</>,
         },
         {
             question: "How do I publish my app on the Google Play Store?",
-            answer: "We handle the entire end-to-end publishing process. This includes creating your Developer Account, preparing high-res screenshots, writing SEO-optimized descriptions, ensuring Google Play Protect compliance, and managing the review process for a guaranteed approval.",
+            answer: <><span className="text-inherit">We handle the entire end-to-end publishing process. This includes creating your Developer Account, preparing high-res screenshots, writing </span><Link href="/services/seo-services" className="text-[#3DDC84] hover:underline">SEO-optimized</Link> descriptions, ensuring Google Play Protect compliance, and managing the review process for a guaranteed approval.</>,
         },
         {
             question: "Do you offer Android app migration and legacy code modernization?",
-            answer: "Yes! We specialize in Android app migration services, helping businesses upgrade from Java to Kotlin or move from monolithic architectures to scalable microservices, improving maintainability and performance.",
+            answer: <><span className="text-inherit">Yes! We specialize in </span><Link href="/services/additional-support-services" className="text-[#3DDC84] hover:underline">Android app migration services</Link>, helping businesses upgrade from <Link href="/services/web-design-development/java-spring-boot" className="text-[#3DDC84] hover:underline">Java</Link> to Kotlin or move from monolithic architectures to scalable microservices, improving maintainability and performance.</>,
         },
         {
             question: "Can you integrate on-device AI and machine learning?",

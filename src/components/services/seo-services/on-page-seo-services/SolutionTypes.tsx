@@ -10,6 +10,7 @@ import {
     Scale,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -20,21 +21,21 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "ecommerce",
-            title: "E-commerce Websites",
-            description: "Specialized on-page SEO optimization for ecommerce websites (Shopify/Magento/WooCommerce). We optimize product pages for high-intent keywords and implement merchant-specific schema.",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">E-commerce Websites</Link>,
+            description: <span>Specialized on-page SEO optimization for <Link href="/services/seo-services/ecommerce-seo-services" className="hover:underline">ecommerce websites</Link> (Shopify/Magento/WooCommerce). We optimize product pages for high-intent keywords and implement merchant-specific schema.</span>,
             icon: Store,
             color: seoGreen,
         },
         {
             id: "saas",
-            title: "SaaS & Tech Companies",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">SaaS & Tech Companies</Link>,
             description: "Strategic on-page SEO strategy for SaaS companies. We focus on feature-driven content and technical debt reduction for fast-growing software platforms.",
             icon: Building2,
             color: "#3B82F6",
         },
         {
             id: "healthcare",
-            title: "Medical Practices & Healthcare",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:underline">Medical Practices & Healthcare</Link>,
             description: "Ensuring YMYL (Your Money Your Life) compliance. We implement strict E-E-A-T signals to build patient trust and dominate local healthcare search.",
             icon: HeartPulse,
             color: "#EC4899",
@@ -48,14 +49,14 @@ export default function SolutionTypes() {
         },
         {
             id: "realestate",
-            title: "Real Estate & Property Portals",
-            description: "Data-driven on-page SEO for real estate websites. We optimize dynamic listing pages and local map signals for hyper-local dominance.",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">Real Estate & Property Portals</Link>,
+            description: <span>Data-driven on-page SEO for <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">real estate websites</Link>. We optimize dynamic listing pages and local map signals for hyper-local dominance.</span>,
             icon: Building2,
             color: "#F59E0B",
         },
         {
             id: "wordpress",
-            title: "WordPress & CMS Optimization",
+            title: <Link href="/services/web-design-development/wordpress-development-services" className="hover:underline">WordPress & CMS Optimization</Link>,
             description: "Expert on-page SEO for WordPress websites. From technical plugin configuration to content pruning, we ensure your CMS isn't holding you back.",
             icon: GraduationCap,
             color: "#8B5CF6",
@@ -87,7 +88,7 @@ export default function SolutionTypes() {
                         Tailored On-Page <span style={{ color: seoGreen }}>SEO Strategy for Every Niche</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Different industries require different signals. We provide specialized <strong>on-page SEO services for small businesses</strong> and global enterprises alike.
+                        Different industries require different signals. We provide specialized <strong><Link href="/services/seo-services/local-seo-services" className="hover:underline">on-page SEO services for small businesses</Link></strong> and global enterprises alike.
                     </p>
                 </div>
 

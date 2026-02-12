@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle, TrendingUp, Target, Award, Clock, Users, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -69,7 +70,7 @@ export default function WhyChooseUs() {
                             Global Expertise. Local Impact. <span style={{ color: seoGreen }}>Proven ROI.</span>
                         </h2>
                         <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Why <strong>hire an on-page SEO expert</strong> from our team? Because we deliver results, not just reports.
+                            Why <strong><Link href="/contact" className="hover:underline">hire an on-page SEO expert</Link></strong> from our team? Because we deliver results, not just reports.
                         </p>
 
                         {/* Stats */}

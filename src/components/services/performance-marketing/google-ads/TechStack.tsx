@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("tracking");
@@ -15,7 +16,7 @@ export default function TechStack() {
         { id: "optimization", label: "Optimization" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string | React.ReactNode; logo: string }[]> = {
         tracking: [
             { name: "Google Analytics 4", description: "Event Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
             { name: "Google Tag Manager", description: "Tag Management", logo: "/images/techstack_logos/google-tag-manager-logo.svg" },
@@ -32,7 +33,7 @@ export default function TechStack() {
             { name: "Optmyzr", description: "PPC Management", logo: "/images/techstack_logos/Optmyzr-logo.webp" },
             { name: "Google Optimize", description: "A/B Testing", logo: "/images/techstack_logos/google-optimize-logo.svg" },
             { name: "Hotjar", description: "User Behavior", logo: "/images/techstack_logos/Hotjar-logo.png" },
-            { name: "Semrush", description: "Keyword Research", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
+            { name: "Semrush", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Keyword Research</Link>, logo: "/images/organic_growth_and_seo/semrush-logo.png" },
         ],
     };
 

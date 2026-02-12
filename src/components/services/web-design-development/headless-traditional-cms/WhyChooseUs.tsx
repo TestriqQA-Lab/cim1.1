@@ -9,6 +9,7 @@ import {
     Zap,
     HeadphonesIcon,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -18,7 +19,7 @@ export default function WhyChooseUs() {
             icon: Layers,
             title: "Multi-Platform Expertise",
             description:
-                "Deep experience across WordPress, Drupal, Contentful, Strapi, and Sanity. We know the strengths of each platform.",
+                <>Deep experience across <Link href="/services/web-design-development/wordpress-development-services" className="hover:text-[#9333ea] transition-colors">WordPress</Link>, <Link href="/services/web-design-development/drupal-cms" className="hover:text-[#9333ea] transition-colors">Drupal</Link>, <Link href="/services/web-design-development/contentful-headless-cms" className="hover:text-[#9333ea] transition-colors">Contentful</Link>, <Link href="/services/web-design-development/strapi-headless-cms" className="hover:text-[#9333ea] transition-colors">Strapi</Link>, and <Link href="/blog/headless-cms-sanity-nextjs-decoupled-frontends-2026" className="hover:text-[#9333ea] transition-colors">Sanity</Link>. We know the strengths of each platform.</>,
             gradient: "from-[#9333ea] to-[#a855f7]",
         },
         {

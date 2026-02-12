@@ -94,9 +94,9 @@ export default function Hero() {
                             }}
                         >
                             <Search className="w-4 h-4" style={{ color: seoGreen }} />
-                            <span className="text-sm font-medium" style={{ color: seoGreen }}>
+                            <Link href="/about" className="text-sm font-medium hover:underline" style={{ color: seoGreen }}>
                                 On-Page SEO Experts
-                            </span>
+                            </Link>
                         </div>
 
                         {/* Title */}
@@ -106,7 +106,7 @@ export default function Hero() {
                         >
                             Expert{" "}
                             <span className="relative inline-block" style={{ color: seoGreen }}>
-                                On-Page SEO
+                                <Link href="/services/seo-services" className="hover:underline">On-Page SEO</Link>
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
                                     style={{ color: seoGreen }}
@@ -120,7 +120,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Stop losing customers to the competition. Our <strong>On-page SEO optimization</strong> bridge the gap between "good content" and "Google's #1 spot." By integrating 2026 EEAT signals and advanced <strong>on-site SEO services</strong>, we turn your website into a high-performance lead generation engine.
+                            Stop losing customers to the competition. Our <strong><Link href="/services/seo-services" className="hover:underline">On-page SEO optimization</Link></strong> bridge the gap between "good content" and "Google's #1 spot." By integrating 2026 EEAT signals and advanced <strong><Link href="/services/seo-services/technical-seo-services" className="hover:underline">on-site SEO services</Link></strong>, we turn your website into a high-performance lead generation engine.
                         </p>
 
                         <p className="text-base md:text-lg animate-slideUp delay-200" style={{ color: "var(--secondary-text)" }}>

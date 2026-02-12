@@ -9,6 +9,7 @@ import {
     Cloud,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -45,13 +46,13 @@ export default function ServiceOverview() {
         {
             icon: Cloud,
             title: "iCloud Integration",
-            description: "Enable seamless continuity. We implement iOS app cloud integration and backend development using CloudKit with real-time data synchronization.",
+            description: <><span className="text-inherit">Enable seamless continuity. We implement iOS app cloud integration and </span><Link href="/services/web-design-development/nodejs-backend" className="text-[#007AFF] hover:underline">backend development</Link> using CloudKit with real-time data synchronization.</>,
             gradient: "from-[#5AC8FA] to-[#0055D4]",
             shadowColor: "rgba(90, 200, 250, 0.4)",
         },
         {
             icon: Sparkles,
-            title: "App Store Optimization (ASO)",
+            title: <Link href="/services/seo-services" className="hover:text-[#0055D4] transition-colors">App Store Optimization (ASO)</Link>,
             description: "Visibility is key. Our App Store Optimization (ASO) for iOS apps ensures your product gets found, optimizing visuals and descriptions.",
             gradient: "from-[#0055D4] to-[#5AC8FA]",
             shadowColor: "rgba(0, 85, 212, 0.4)",
@@ -149,7 +150,7 @@ export default function ServiceOverview() {
                             >
                                 {/* Glow effect on hover */}
                                 <div
-                                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl"
+                                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl pointer-events-none"
                                     style={{
                                         background: `linear-gradient(135deg, ${service.shadowColor}, transparent)`,
                                     }}

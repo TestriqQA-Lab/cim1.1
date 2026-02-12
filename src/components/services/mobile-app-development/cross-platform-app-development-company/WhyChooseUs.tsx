@@ -10,6 +10,7 @@ import {
     HeartHandshake,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -25,7 +26,7 @@ export default function WhyChooseUs() {
         {
             icon: DollarSign,
             title: "40% Cost Savings",
-            description: "Developing two separate native apps is expensive. Our Hybrid Mobile App Development Company approach saves you up to 40% by maintaining a Unified Codebase, reducing resource requirements.",
+            description: <><span className="text-inherit">Developing two separate native apps is expensive. Our </span><Link href="/services/mobile-app-development/hybrid-app-development-services" className="text-[#667eea] hover:underline">Hybrid Mobile App Development Company</Link> approach saves you up to 40% by maintaining a Unified Codebase, reducing resource requirements.</>,
             gradient: "from-[#764ba2] to-[#667eea]",
             shadowColor: "rgba(118, 75, 162, 0.3)",
         },
@@ -53,7 +54,7 @@ export default function WhyChooseUs() {
         {
             icon: HeartHandshake,
             title: "Post-Launch Support",
-            description: "We are your long-term partner. We provide ongoing cross-platform app maintenance and support, ensuring your app remains compatible with the latest OS versions and devices.",
+            description: <><span className="text-inherit">We are your long-term partner. We provide ongoing cross-platform app </span><Link href="/services/additional-support-services" className="text-[#667eea] hover:underline">maintenance and support</Link>, ensuring your app remains compatible with the latest OS versions and devices.</>,
             gradient: "from-[#00d4ff] to-[#764ba2]",
             shadowColor: "rgba(0, 212, 255, 0.3)",
         },

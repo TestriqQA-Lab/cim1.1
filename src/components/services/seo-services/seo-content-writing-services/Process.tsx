@@ -1,6 +1,7 @@
 "use client";
 
 import { FileSearch, PenTool, Edit3, CheckCircle2, TrendingUp, Share2 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     // Content SEO Emerald theme color
@@ -9,18 +10,18 @@ export default function Process() {
     const steps = [
         {
             icon: FileSearch,
-            title: "Phase 1: Deep Search Intent Analysis",
+            title: <Link href="/services/performance-marketing" className="hover:underline">Phase 1: Deep Search Intent Analysis</Link>,
             description: "We analyze the \"why\" behind the search, identifying keyword research for content opportunities that competitors miss.",
         },
         {
             icon: Share2,
             title: "Phase 2: Strategy & Topic Clusters",
-            description: "Creating topic clusters SEO patterns to distribute authority across your domain, making it impossible for Google to ignore you.",
+            description: <>Creating <Link href="/services/seo-services/on-page-seo-services" className="hover:text-emerald-500 transition-colors">topic clusters SEO</Link> patterns to distribute authority across your domain, making it impossible for Google to ignore you.</>,
         },
         {
             icon: PenTool,
             title: "Phase 3: High-EEAT Content Creation",
-            description: "Our SEO content experts craft long-form SEO content (1500-2500 words) that solve user pain points deeply.",
+            description: <>Our SEO content experts craft <Link href="/blog/mastering-seo-organic-growth" className="hover:text-emerald-500 transition-colors">long-form SEO content</Link> (1500-2500 words) that solve user pain points deeply.</>,
         },
         {
             icon: CheckCircle2,
@@ -34,7 +35,7 @@ export default function Process() {
         },
         {
             icon: Edit3,
-            title: "Phase 6: Continuous SEO Content Refresh",
+            title: <Link href="/services/seo-services" className="hover:underline">Phase 6: Continuous SEO Content Refresh</Link>,
             description: "Regularly updating services to align with the latest 2026 Google guidelines and AI-overview trends.",
         },
     ];

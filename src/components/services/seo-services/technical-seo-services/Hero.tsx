@@ -94,9 +94,11 @@ export default function Hero() {
                             }}
                         >
                             <Code className="w-4 h-4" style={{ color: techPurple }} />
-                            <span className="text-sm font-medium" style={{ color: techPurple }}>
-                                Technical SEO Experts
-                            </span>
+                            <Link href="/about" className="hover:underline">
+                                <span className="text-sm font-medium" style={{ color: techPurple }}>
+                                    Technical SEO Experts
+                                </span>
+                            </Link>
                         </div>
 
                         {/* Title */}
@@ -104,7 +106,7 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Expert Technical SEO Services for{" "}
+                            Expert <Link href="/services/seo-services" className="hover:underline decoration-2 underline-offset-4">Technical SEO Services</Link> for{" "}
                             <span className="relative inline-block" style={{ color: techPurple }}>
                                 2026 Peak Performance
                                 <svg
@@ -119,7 +121,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Stop letting technical debt bury your rankings. Our <strong>Technical SEO company</strong> specializes in building a flawless technical foundation that search engines love. From <strong>website performance analysis</strong> to advanced <strong>technical SEO consulting</strong>, we ensure your site is built for the global stage.
+                            Stop letting technical debt bury your rankings. Our <strong><Link href="/services/seo-services" className="hover:text-purple-500 transition-colors">Technical SEO company</Link></strong> specializes in building a flawless technical foundation that search engines love. From <strong><Link href="/blog/web-performance-optimization-speed" className="hover:text-purple-500 transition-colors">website performance analysis</Link></strong> to advanced <strong><Link href="/contact" className="hover:text-purple-500 transition-colors">technical SEO consulting</Link></strong>, we ensure your site is built for the global stage.
                         </p>
 
                         {/* Feature Pills */}

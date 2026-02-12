@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CTA() {
     const features = [
-        { icon: Calendar, text: "Custom Booking Engines" },
+        { icon: Calendar, text: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Custom Booking Engines</Link> },
         { icon: Globe, text: "GDS/OTA Integration" },
         { icon: CreditCard, text: "Secure Global Payments" },
     ];

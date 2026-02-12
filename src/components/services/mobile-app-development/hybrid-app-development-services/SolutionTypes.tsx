@@ -12,6 +12,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -49,7 +50,7 @@ export default function SolutionTypes() {
         {
             icon: ShoppingCart,
             title: "Ecommerce and Retail Hybrid App Solutions",
-            description: "Boost your sales with high-conversion mobile shopping. We integrate secure payment gateways and AR-driven product previews using modern web view architecture.",
+            description: <><span className="text-inherit">Boost your sales with high-conversion mobile shopping. We integrate secure payment gateways and AR-driven product previews using modern </span><Link href="/services/web-design-development/ecommerce-development-company" className="text-[#00b4d8] hover:underline">ecommerce</Link> web view architecture.</>,
             features: [
                 "Secure payments",
                 "AR product previews",
@@ -73,7 +74,7 @@ export default function SolutionTypes() {
         {
             icon: FileText,
             title: "Healthcare and HIPAA-Compliant Hybrid Apps",
-            description: "Trust and security are paramount. We deliver healthcare hybrid applications that strictly follow HIPAA guidelines, ensuring patient data privacy and secure telehealth capabilities.",
+            description: <><span className="text-inherit">Trust and security are paramount. We deliver </span><Link href="/services/web-design-development/healthcare-portals" className="text-[#00b4d8] hover:underline">healthcare</Link> hybrid applications that strictly follow HIPAA guidelines, ensuring patient data privacy and secure telehealth capabilities.</>,
             features: [
                 "HIPAA compliance",
                 "Telehealth features",
@@ -97,7 +98,7 @@ export default function SolutionTypes() {
         {
             icon: GraduationCap,
             title: "Content, Media & EdTech Solutions",
-            description: "Engage your audience with news portals or learning platforms. Our apps support offline reading, video streaming, and real-time progress tracking across all devices.",
+            description: <><span className="text-inherit">Engage your audience with news portals or learning platforms. Our </span><Link href="/services/web-design-development/edtech-lms" className="text-[#00b4d8] hover:underline">EdTech</Link> apps support offline reading, video streaming, and real-time progress tracking across all devices.</>,
             features: [
                 "Offline reading",
                 "Video streaming",
@@ -206,8 +207,8 @@ export default function SolutionTypes() {
                                     />
                                 </div>
 
-                                <h3 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>{solution.title}</h3>
-                                <p className="text-sm mb-6 line-clamp-3" style={{ color: "var(--secondary-text)" }}>
+                                <h3 className="text-xl font-bold mb-3 relative z-10" style={{ color: "var(--foreground)" }}>{solution.title}</h3>
+                                <p className="text-sm mb-6 line-clamp-3 relative z-10" style={{ color: "var(--secondary-text)" }}>
                                     {solution.description}
                                 </p>
 

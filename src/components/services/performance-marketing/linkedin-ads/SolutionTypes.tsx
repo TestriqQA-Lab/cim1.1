@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Building2, Briefcase, GraduationCap, Users, Target, Megaphone, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -19,7 +20,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Briefcase,
-            title: "B2B Lead Generation",
+            title: <Link href="/services/performance-marketing" className="hover:text-[var(--primary)] transition-colors">B2B Lead Generation</Link>,
             description: "Generate high-quality leads with Lead Gen Forms.",
             targeting: ["Job Function", "Skills targeting", "Company targeting"],
             color: "#0077B5",
@@ -47,7 +48,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Megaphone,
-            title: "Thought Leadership",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--primary)] transition-colors">Thought Leadership</Link>,
             description: "Build authority with sponsored content and articles.",
             targeting: ["Follower Lookalikes", "Engagement Retargeting", "Interest targeting"],
             color: "#0066B2",

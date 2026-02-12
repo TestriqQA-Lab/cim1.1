@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("core");
@@ -14,7 +15,7 @@ export default function TechStack() {
         { id: "cloud", label: "Cloud & Backend" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: React.ReactNode; logo: string }[]> = {
         core: [
             { name: "Swift", description: "Primary Language", logo: "/images/techstack_logos/swift-logo.svg" },
             { name: "Objective-C", description: "Legacy Support", logo: "/images/techstack_logos/objectivec_logo.webp" },
@@ -49,9 +50,9 @@ export default function TechStack() {
         ],
         cloud: [
             { name: "Firebase", description: "Backend Services", logo: "/images/techstack_logos/firebase-logo.svg" },
-            { name: "AWS Amplify", description: "Cloud Platform", logo: "/images/techstack_logos/aws-logo.png" },
+            { name: "AWS Amplify", description: <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#007AFF] transition-colors">Cloud Platform</Link>, logo: "/images/techstack_logos/aws-logo.png" },
             { name: "Supabase", description: "Open Source BaaS", logo: "/images/techstack_logos/supabase-logo.webp" },
-            { name: "Node.js", description: "API Backend", logo: "/images/techstack_logos/nodejs-logo.svg" },
+            { name: "Node.js", description: <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#007AFF] transition-colors">API Backend</Link>, logo: "/images/techstack_logos/nodejs-logo.svg" },
             { name: "GraphQL", description: "API Layer", logo: "/images/techstack_logos/graphql-logo.svg" },
             { name: "REST APIs", description: "Web Services", logo: "/images/techstack_logos/REST-API-logo.png" },
         ],

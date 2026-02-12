@@ -12,6 +12,7 @@ import {
     Sparkles,
     Home,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeIdx, setActiveIdx] = useState<number | null>(null);
@@ -23,28 +24,28 @@ export default function SolutionTypes() {
         {
             id: "shopify",
             title: "Shopify SEO",
-            description: "Shopify-Specific Optimization: Master Shopify's Liquid template structure, app ecosystem, and built-in limitations. We optimize Shopify collection pages, implement 301 redirects, fix duplicate content issues from /collections/ and /products/ URLs, and leverage Shopify apps for reviews and schema. Perfect for ecommerce SEO for small business and DTC brands.",
+            description: <>Shopify-Specific Optimization: Master Shopify&apos;s Liquid template structure, app ecosystem, and built-in limitations. We optimize <Link href="/services/web-design-development/shopify-development-services" className="hover:underline" style={{ color: commerceBlue }}>Shopify collection pages</Link>, implement 301 redirects, fix duplicate content issues from /collections/ and /products/ URLs, and leverage Shopify apps for reviews and schema. Perfect for ecommerce SEO for small business and DTC brands.</>,
             icon: ShoppingBag,
             color: "#96bf48", // Shopify green
         },
         {
             id: "magento",
             title: "Magento SEO",
-            description: "Enterprise-Grade Magento SEO: Complex technical optimization for large-scale Adobe Commerce stores managing 10,000+ SKUs. We configure layered navigation SEO, optimize MySQL queries, implement Varnish caching, fix canonical chains, and manage multi-store/multi-language instances. Ideal for enterprise ecommerce SEO services for large brands.",
+            description: <>Enterprise-Grade Magento SEO: Complex technical optimization for large-scale <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline" style={{ color: commerceBlue }}>Adobe Commerce</Link> stores managing 10,000+ SKUs. We configure layered navigation SEO, optimize MySQL queries, implement Varnish caching, fix canonical chains, and manage multi-store/multi-language instances. Ideal for enterprise ecommerce SEO services for large brands.</>,
             icon: LayersIcon,
             color: "#f46f25", // Magento orange
         },
         {
             id: "woocommerce",
             title: "WooCommerce",
-            description: "WordPress + WooCommerce Power: Leverage WordPress flexibility with WooCommerce ecommerce functionality. We optimize product schema, category taxonomies, WooCommerce-specific permalinks, and integrate Yoast/RankMath for perfect on-page optimization. Great for content-rich stores needing ecommerce content marketing and SEO strategy.",
+            description: <>WordPress + WooCommerce Power: Leverage WordPress flexibility with <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline" style={{ color: commerceBlue }}>WooCommerce ecommerce</Link> functionality. We optimize product schema, category taxonomies, WooCommerce-specific permalinks, and integrate Yoast/RankMath for perfect on-page optimization. Great for content-rich stores needing ecommerce content marketing and SEO strategy.</>,
             icon: ShoppingCart,
             color: "#96588a", // WooCommerce purple
         },
         {
             id: "bigcommerce",
             title: "BigCommerce",
-            description: "BigCommerce SaaS Excellence: Strategic implementation for BigCommerce's robust SaaS environment. Optimize faceted search, custom fields, AMP pages, and headless BigCommerce builds. We handle 301 redirects, CDN optimization, and BigCommerce's unique URL structure for maximum rankings.",
+            description: <>BigCommerce SaaS Excellence: Strategic implementation for <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline" style={{ color: commerceBlue }}>BigCommerce</Link>&apos;s robust SaaS environment. Optimize faceted search, custom fields, AMP pages, and headless BigCommerce builds. We handle 301 redirects, CDN optimization, and BigCommerce&apos;s unique URL structure for maximum rankings.</>,
             icon: Globe,
             color: "var(--secondary-text)", // BigCommerce black/dark
         },
@@ -65,7 +66,7 @@ export default function SolutionTypes() {
         {
             id: "health",
             title: "Health & Beauty",
-            description: "Ecommerce SEO for Health and Beauty Products: Navigate supplement/cosmetic regulations, optimize ingredient-focused content, and build authority with scientific backing.",
+            description: <>Ecommerce SEO for <Link href="/services/web-design-development/healthcare-portals" className="hover:underline" style={{ color: commerceBlue }}>Health and Beauty Products</Link>: Navigate supplement/cosmetic regulations, optimize ingredient-focused content, and build authority with scientific backing.</>,
             icon: Sparkles,
             color: "#EC4899",
         },

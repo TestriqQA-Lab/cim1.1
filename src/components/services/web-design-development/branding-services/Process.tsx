@@ -1,6 +1,7 @@
 "use client";
 
 import { MessageSquare, Palette, Code2, Rocket, Settings, HeartHandshake } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const steps = [
@@ -25,7 +26,7 @@ export default function Process() {
         {
             icon: Rocket,
             title: "Content Setup",
-            description: "Content is king. We assist with LinkedIn profile optimization ensuring cohesive cross-channel narrative.",
+            description: <>Content is king. We assist with <Link href="/services/performance-marketing" className="hover:underline text-[#06b6d4]">LinkedIn profile optimization</Link> ensuring cohesive cross-channel narrative.</>,
             details: ["Content assistance", "LinkedIn optimization", "Cohesive narrative", "Cross-channel sync"]
         },
         {
@@ -37,7 +38,7 @@ export default function Process() {
         {
             icon: HeartHandshake,
             title: "Ongoing Support",
-            description: "We're in it for the long haul. Personal portfolio hosting and maintenance solutions to keep your content fresh and secure.",
+            description: <>We're in it for the long haul. <Link href="/services/web-design-development/saas-development-services" className="hover:underline text-[#06b6d4]">Personal portfolio hosting</Link> and maintenance solutions to keep your content fresh and secure.</>,
             details: ["Hosting solutions", "Maintenance", "Fresh content", "Security updates"]
         }
     ];

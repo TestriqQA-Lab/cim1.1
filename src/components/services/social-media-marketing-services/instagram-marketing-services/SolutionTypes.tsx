@@ -10,6 +10,7 @@ import {
     Shirt,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -17,7 +18,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Store,
-            title: "E-commerce & D2C",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">E-commerce & D2C</Link>,
             description: "Instagram Shop Setup, Shoppable Posts. Driving product discovery and high-intent sales conversions.",
             features: [
                 "Return on Ad Spend (ROAS)",
@@ -29,7 +30,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Palette,
-            title: "Fashion & Beauty",
+            title: <Link href="/services/web-design-development/shopify-development-services" className="hover:underline">Fashion & Beauty</Link>,
             description: "Influencer Partnerships, Aesthetic Consistency. Showcase products with trend-driven visual storytelling.",
             features: [
                 "Brand Recognition",
@@ -41,7 +42,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Heart,
-            title: "Healthcare & Medical",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:underline">Healthcare & Medical</Link>,
             description: "Educational Content, Trust Signals, Compliance. Building patient community through credible content.",
             features: [
                 "Patient Appointments",
@@ -53,7 +54,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Shirt,
-            title: "Real Estate & Luxury",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">Real Estate & Luxury</Link>,
             description: "High-End Product Showcases, Visual Storytelling. Crafting aspirational content for premium audiences.",
             features: [
                 "Inquiry Volume",
@@ -65,7 +66,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Sparkles,
-            title: "B2B & Tech",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">B2B & Tech</Link>,
             description: "Thought Leadership, Case Studies, Lead Magnets. Positioning your brand as an industry authority.",
             features: [
                 "High-Quality Leads",

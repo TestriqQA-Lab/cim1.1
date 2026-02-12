@@ -97,9 +97,9 @@ export default function Hero() {
                             <svg className="w-4 h-4" style={{ color: "var(--foreground)" }} viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                             </svg>
-                            <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>
+                            <Link href="/about" className="text-sm font-medium hover:underline" style={{ color: "var(--foreground)" }}>
                                 X Advertising Partner
-                            </span>
+                            </Link>
                         </div>
 
                         {/* Title */}
@@ -109,7 +109,7 @@ export default function Hero() {
                         >
                             Dominate the Conversation:{" "}
                             <span className="relative inline-block" style={{ color: "var(--foreground)" }}>
-                                Full-Service X Marketing Services for Global Authority
+                                Full-Service <Link href="/services/social-media-marketing-services" className="hover:underline">X Marketing Services</Link> for Global Authority
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
                                     style={{ color: "var(--foreground)" }}
@@ -123,7 +123,7 @@ export default function Hero() {
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
                             Drive real-time engagement and build 100% brand authority with strategic X (Twitter) campaigns.
-                            From viral trend hijacking to high-conversion Twitter ads management, we amplify your voice in the global town square.
+                            From viral trend hijacking to high-conversion <Link href="/services/performance-marketing" className="hover:underline text-foreground">Twitter ads management</Link>, we amplify your voice in the global town square.
                         </p>
 
                         {/* Feature Pills */}

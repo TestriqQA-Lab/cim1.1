@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("ads");
@@ -15,11 +16,11 @@ export default function TechStack() {
         { id: "design", label: "Creative Design" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string; logo: string; link?: string }[]> = {
         ads: [
-            { name: "Google Ads", description: "Ad Management", logo: "/images/performance-marketing-logos/google-ads-logo.svg" },
+            { name: "Google Ads", description: "Ad Management", logo: "/images/performance-marketing-logos/google-ads-logo.svg", link: "/services/performance-marketing/google-ads" },
             { name: "YouTube Analytics", description: "Native Data", logo: "/images/performance-marketing-logos/youtube-ads-logo.png" },
-            { name: "Google Analytics 4", description: "Cross-Platform", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics 4", description: "Cross-Platform", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp", link: "/services/seo-services/technical-seo-services" },
             { name: "Google Tag Manager", description: "Tracking", logo: "/images/techstack_logos/google-tag-manager-logo.svg" },
             { name: "Looker Studio", description: "Reporting", logo: "/images/ai_automation_logos/looker-logo.svg" },
             { name: "Supermetrics", description: "Data Integration", logo: "/images/techstack_logos/Supermetrics-logo.jpg" },
@@ -37,11 +38,11 @@ export default function TechStack() {
             { name: "VidIQ", description: "Video SEO", logo: "/images/techstack_logos/VidIQ-logo.png" },
             { name: "Social Blade", description: "Competitor Stats", logo: "/images/techstack_logos/Social-Blade-logo.jpg" },
             { name: "Google Trends", description: "Topic Research", logo: "/images/techstack_logos/Google-Trends-logo.jpg" },
-            { name: "Ahrefs", description: "Keyword Research", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png" },
-            { name: "SEMrush", description: "Market Insights", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
+            { name: "Ahrefs", description: "Keyword Research", logo: "/images/organic_growth_and_seo/Ahrefs-logo.png", link: "/services/seo-services" },
+            { name: "SEMrush", description: "Market Insights", logo: "/images/organic_growth_and_seo/semrush-logo.png", link: "/services/seo-services" },
         ],
         design: [
-            { name: "Canva Pro", description: "Thumbnails", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva Pro", description: "Thumbnails", logo: "/images/brand-identity-design-logos/canva-logo.png", link: "/services/web-design-development/branding-services" },
             { name: "Photoshop", description: "Pro Graphics", logo: "/images/ai_automation_logos/adobe-logo.png" },
             { name: "Figma", description: "UI Design", logo: "/images/techstack_logos/figma-logo.svg" },
             { name: "Midjourney", description: "AI Art", logo: "/images/techstack_logos/Midjourney-logo.png" },
@@ -125,7 +126,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:text-red-500 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

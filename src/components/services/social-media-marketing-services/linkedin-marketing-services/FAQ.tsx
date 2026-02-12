@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { MessageSquare, ChevronDown } from 'lucide-react';
+import Link from "next/link";
 
 export default function FAQ() {
     const [faqOpen, setFaqOpen] = useState<number | null>(null);
@@ -10,7 +11,7 @@ export default function FAQ() {
     const faqs = [
         {
             q: "How much do LinkedIn marketing services cost in 2026?",
-            a: "LinkedIn marketing cost for small business typically ranges from $1,500 to $5,000+ per month for management, depending on ad spend and complexity. We offer tiered packages to ensure ROI at every level.",
+            a: <><Link href="/services/social-media-marketing-services" className="hover:underline text-blue-500">LinkedIn marketing cost</Link> for small business typically ranges from $1,500 to $5,000+ per month for management, depending on ad spend and complexity. We offer tiered packages to ensure ROI at every level.</>,
         },
         {
             q: "What are the benefits of hiring a LinkedIn advertising agency?",
@@ -18,7 +19,7 @@ export default function FAQ() {
         },
         {
             q: "How do I generate B2B leads on LinkedIn?",
-            a: "We utilize a mix of LinkedIn lead generation services, including Lead Gen Forms, LinkedIn ABM (Account Based Marketing), and high-value lead magnet creation services to capture high-intent data.",
+            a: <>We utilize a mix of <Link href="/services/performance-marketing" className="hover:underline text-blue-500">LinkedIn lead generation services</Link>, including Lead Gen Forms, LinkedIn ABM (Account Based Marketing), and high-value lead magnet creation services to capture high-intent data.</>,
         },
         {
             q: "What is included in LinkedIn ads management services?",

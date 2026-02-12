@@ -12,6 +12,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -49,7 +50,7 @@ export default function SolutionTypes() {
         {
             icon: ShoppingCart,
             title: "E-commerce & Retail Solutions",
-            description: "Drive sales with immersive ecommerce and retail multi-platform app solutions. We build shoppable apps with unified inventory management, secure checkout, and personalized recommendations that convert visitors into loyal customers.",
+            description: <><span className="text-inherit">Drive sales with immersive </span><Link href="/services/web-design-development/ecommerce-development-company" className="text-[#667eea] hover:underline">ecommerce</Link> and retail multi-platform app solutions. We build shoppable apps with unified inventory management, secure checkout, and personalized recommendations that convert visitors into loyal customers.</>,
             features: [
                 "Shoppable apps",
                 "Unified inventory",
@@ -61,7 +62,7 @@ export default function SolutionTypes() {
         {
             icon: Building2,
             title: "Enterprise Mobility",
-            description: "Empower your workforce. We deliver Flutter app development services for enterprise that streamline internal operations. Secure, scalable, and integrated with your existing IT infrastructure (SAP, Salesforce, Oracle).",
+            description: <><span className="text-inherit">Empower your workforce. We deliver Flutter app development services for </span><Link href="/services/mobile-app-development/enterprise-application-development-services" className="text-[#667eea] hover:underline">enterprise</Link> that streamline internal operations. Secure, scalable, and integrated with your existing IT infrastructure (SAP, Salesforce, Oracle).</>,
             features: [
                 "Streamlined operations",
                 "IT infrastructure integration",
@@ -73,7 +74,7 @@ export default function SolutionTypes() {
         {
             icon: MessageCircle,
             title: "Social & Chat Applications",
-            description: "Build the next big community. We develop real-time social and chat apps with features like live messaging, video calling, and media sharing, ensuring a consistent and engaging experience across devices.",
+            description: <><span className="text-inherit">Build the next big community. We develop real-time </span><Link href="/services/social-media-marketing-services" className="text-[#667eea] hover:underline">social and chat apps</Link> with features like live messaging, video calling, and media sharing, ensuring a consistent and engaging experience across devices.</>,
             features: [
                 "Real-time messaging",
                 "Video calling",
@@ -97,7 +98,7 @@ export default function SolutionTypes() {
         {
             icon: Wallet,
             title: "Fintech & Healthcare (HIPAA Compliant)",
-            description: "Security first. We build Healthcare and HIPAA-compliant cross-platform apps and secure Fintech apps with biometric authentication, encryption, and regulatory compliance baked into the core architecture.",
+            description: <><span className="text-inherit">Security first. We build </span><Link href="/services/web-design-development/healthcare-portals" className="text-[#667eea] hover:underline">Healthcare</Link> and HIPAA-compliant cross-platform apps and secure <Link href="/services/web-design-development/fintech-solutions" className="text-[#667eea] hover:underline">Fintech apps</Link> with biometric authentication, encryption, and regulatory compliance baked into the core architecture.</>,
             features: [
                 "HIPAA compliance",
                 "Biometric authentication",
@@ -191,7 +192,7 @@ export default function SolutionTypes() {
                                 {/* Icon */}
                                 <div
                                     className={`
-                                        w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-all duration-300
+                                        w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 relative z-10
                                         ${isActive ? "scale-110 rotate-3" : ""}
                                     `}
                                     style={{
@@ -206,8 +207,8 @@ export default function SolutionTypes() {
                                     />
                                 </div>
 
-                                <h3 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>{solution.title}</h3>
-                                <p className="text-sm mb-6 line-clamp-3" style={{ color: "var(--secondary-text)" }}>
+                                <h3 className="text-xl font-bold mb-3 relative z-10" style={{ color: "var(--foreground)" }}>{solution.title}</h3>
+                                <p className="text-sm mb-6 line-clamp-3 relative z-10" style={{ color: "var(--secondary-text)" }}>
                                     {solution.description}
                                 </p>
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FileEdit, Users, BookMarked, LinkIcon, Newspaper, ArrowRight, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [flippedCard, setFlippedCard] = useState<number | null>(null);
@@ -15,7 +16,7 @@ export default function SolutionTypes() {
             icon: FileEdit,
             title: "Editorial Links",
             frontDesc: "Natural links earned through quality content",
-            backDesc: "When other sites link to yours because your content is valuable, informative, or newsworthy. These are the most valuable type of backlinks.",
+            backDesc: <>When other sites link to yours because your <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline" style={{ color: "white" }}>content is valuable</Link>, informative, or newsworthy. These are the most valuable type of backlinks.</>,
             examples: ["Resource citations", "Expert quotes", "Data references"],
         },
         {
@@ -47,7 +48,7 @@ export default function SolutionTypes() {
             icon: Newspaper,
             title: "HARO & Press",
             frontDesc: "Media coverage and journalist requests",
-            backDesc: "Responding to journalist queries and getting featured in news articles, earning high-authority editorial links.",
+            backDesc: <>Responding to journalist queries and getting featured in <Link href="/services/performance-marketing" className="hover:underline" style={{ color: "white" }}>news articles</Link>, earning high-authority editorial links.</>,
             examples: ["News articles", "Expert roundups", "Industry reports"],
         },
     ];

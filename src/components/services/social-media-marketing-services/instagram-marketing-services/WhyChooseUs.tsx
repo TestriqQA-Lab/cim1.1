@@ -10,6 +10,7 @@ import {
     HeadphonesIcon,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -30,7 +31,7 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Authoritativeness (A)",
-            description: "Recognized leaders in Social Media Marketing with certifications from Meta Blueprint and a 95% success rate.",
+            description: <>Recognized leaders in <Link href="/services/social-media-marketing-services" className="hover:underline text-pink-500">Social Media Marketing</Link> with certifications from Meta Blueprint and a 95% success rate.</>,
             color: "#833AB4",
         },
         {
@@ -48,7 +49,7 @@ export default function WhyChooseUs() {
         {
             icon: Users,
             title: "Industry-Specific Elite",
-            description: "Custom blueprints for E-commerce, B2B, Luxury, and Healthcare industries that deliver precision targeting.",
+            description: <>Custom blueprints for E-commerce, B2B, Luxury, and <Link href="/services/web-design-development/healthcare-portals" className="hover:underline text-pink-500">Healthcare</Link> industries that deliver precision targeting.</>,
             color: "#FD1D1D",
         },
     ];

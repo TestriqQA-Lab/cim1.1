@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -11,8 +12,8 @@ export default function TechStack() {
             category: "Frontend",
             description: "Modern frameworks for fast, interactive portfolios",
             items: [
-                { name: "Next.js", logo: "/images/techstack_logos/nextjs-logo.svg" },
-                { name: "React", logo: "/images/techstack_logos/react-logo.svg" },
+                { name: "Next.js", logo: "/images/techstack_logos/nextjs-logo.svg", url: "/services/web-design-development/nextjs-development-services" },
+                { name: "React", logo: "/images/techstack_logos/react-logo.svg", url: "/services/web-design-development/nextjs-development-services" },
                 { name: "Tailwind CSS", logo: "/images/techstack_logos/tailwindcss-logo.svg" },
                 { name: "Framer Motion", logo: "/images/techstack_logos/framer-motion-logo.svg" },
             ],
@@ -22,9 +23,9 @@ export default function TechStack() {
             description: "Easy content management for your portfolio",
             items: [
                 { name: "Sanity", logo: "/images/techstack_logos/Sanity-square-logo.png" },
-                { name: "Contentful", logo: "/images/techstack_logos/Contentful-logo.webp" },
-                { name: "Strapi", logo: "/images/techstack_logos/Strapi-logo.png" },
-                { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo-hero1.png" },
+                { name: "Contentful", logo: "/images/techstack_logos/Contentful-logo.webp", url: "/services/web-design-development/contentful-headless-cms" },
+                { name: "Strapi", logo: "/images/techstack_logos/Strapi-logo.png", url: "/services/web-design-development/strapi-headless-cms" },
+                { name: "WordPress", logo: "/images/techstack_logos/wordpress-logo-hero1.png", url: "/services/web-design-development/wordpress-development-services" },
             ],
         },
         {
@@ -39,7 +40,7 @@ export default function TechStack() {
             category: "Hosting",
             description: "Fast, reliable hosting for global reach",
             items: [
-                { name: "Vercel", logo: "/images/techstack_logos/vercel-logo.webp" },
+                { name: "Vercel", logo: "/images/techstack_logos/vercel-logo.webp", url: "/services/web-design-development/saas-development-services" },
                 { name: "Netlify", logo: "/images/techstack_logos/netlify-logo.svg" },
                 { name: "Cloudflare", logo: "/images/techstack_logos/Cloudflare-logo.webp" },
             ],
@@ -49,7 +50,7 @@ export default function TechStack() {
             description: "Connect with your favorite tools and services",
             items: [
                 { name: "Calendly", logo: "/images/techstack_logos/calendly-logo.webp" },
-                { name: "Mailchimp", logo: "/images/ai_automation_logos/mailchimp-logo.svg" },
+                { name: "Mailchimp", logo: "/images/ai_automation_logos/mailchimp-logo.svg", url: "/services/performance-marketing" },
                 { name: "HubSpot", logo: "/images/ai_automation_logos/hubspot-logo.png" },
             ],
         },
@@ -111,32 +112,55 @@ export default function TechStack() {
                     </p>
 
                     <div className="flex flex-wrap justify-center items-start gap-8 md:gap-12">
-                        {technologies[activeCategory].items.map((item, lidx) => (
-                            <div
-                                key={lidx}
-                                className="flex flex-col items-center gap-3 transition-all duration-300 hover:scale-110"
-                            >
+                        {technologies[activeCategory].items.map((item, lidx) => {
+                            const commonClasses = "flex flex-col items-center gap-3 transition-all duration-300 hover:scale-110 cursor-pointer";
+                            const content = (
+                                <>
+                                    <div
+                                        className="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center p-4 rounded-2xl"
+                                        style={{
+                                            backgroundColor: "color-mix(in srgb, #06b6d4 5%, var(--background))",
+                                        }}
+                                    >
+                                        <Image
+                                            src={item.logo}
+                                            alt={`${item.name} logo`}
+                                            fill
+                                            className="object-contain p-3 filter dark:brightness-90"
+                                        />
+                                    </div>
+                                    <span
+                                        className="text-xs md:text-sm font-medium text-center"
+                                        style={{ color: "var(--secondary-text)" }}
+                                    >
+                                        {item.name}
+                                    </span>
+                                </>
+                            );
+
+                            // @ts-ignore
+                            if (item.url) {
+                                return (
+                                    <Link
+                                        key={lidx}
+                                        // @ts-ignore
+                                        href={item.url}
+                                        className={commonClasses}
+                                    >
+                                        {content}
+                                    </Link>
+                                );
+                            }
+
+                            return (
                                 <div
-                                    className="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center p-4 rounded-2xl"
-                                    style={{
-                                        backgroundColor: "color-mix(in srgb, #06b6d4 5%, var(--background))",
-                                    }}
+                                    key={lidx}
+                                    className={commonClasses}
                                 >
-                                    <Image
-                                        src={item.logo}
-                                        alt={`${item.name} logo`}
-                                        fill
-                                        className="object-contain p-3 filter dark:brightness-90"
-                                    />
+                                    {content}
                                 </div>
-                                <span
-                                    className="text-xs md:text-sm font-medium text-center"
-                                    style={{ color: "var(--secondary-text)" }}
-                                >
-                                    {item.name}
-                                </span>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
 

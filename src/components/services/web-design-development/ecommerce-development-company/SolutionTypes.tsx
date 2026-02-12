@@ -24,7 +24,7 @@ export default function SolutionTypes() {
         {
             icon: Building2,
             title: "B2B E-commerce Platforms",
-            description: "Streamline your wholesale operations with sophisticated B2B ecommerce platform development. We enable complex features like tiered pricing, bulk ordering, and Custom API integrations for ecommerce stores (ERP/CRM) to automate your back-office workflows.",
+            description: <>Streamline your wholesale operations with sophisticated <Link href="/services/web-design-development/business-corporate" className="hover:underline text-[#008ac1]">B2B ecommerce platform development</Link>. We enable complex features like tiered pricing, bulk ordering, and <Link href="/services/web-design-development/nodejs-backend" className="hover:underline text-[#008ac1]">Custom API integrations</Link> for ecommerce stores (ERP/CRM) to automate your back-office workflows.</>,
             features: [
                 { icon: CreditCard, text: "Custom pricing tiers" },
                 { icon: Package, text: "Quote requests" },
@@ -50,7 +50,7 @@ export default function SolutionTypes() {
         {
             icon: RefreshCw,
             title: "Subscription Commerce",
-            description: "Build predictable revenue streams with Subscription-based ecommerce store setup. We integrate flexible billing engines and churn-reduction tools, ensuring seamless recurring payments and superior subscriber management.",
+            description: <>Build predictable revenue streams with <Link href="/services/web-design-development/saas-development-services" className="hover:underline text-[#00b5ca]">Subscription-based ecommerce</Link> store setup. We integrate flexible billing engines and churn-reduction tools, ensuring seamless recurring payments and superior subscriber management.</>,
             features: [
                 { icon: RefreshCw, text: "Recurring billing" },
                 { icon: Package, text: "Skip/pause options" },
@@ -63,7 +63,7 @@ export default function SolutionTypes() {
         {
             icon: Layers,
             title: "Headless Commerce",
-            description: "Future-proof your business with Headless ecommerce development services. By decoupling the frontend from the backend, we deliver lightning-fast omnichannel experiences that let you sell anywhere - web, mobile, IoT, or voice.",
+            description: <>Future-proof your business with <Link href="/services/web-design-development/headless-traditional-cms" className="hover:underline text-[#008ac1]">Headless ecommerce development</Link> services. By decoupling the frontend from the backend, we deliver lightning-fast omnichannel experiences that let you sell anywhere - web, mobile, IoT, or voice.</>,
             features: [
                 { icon: Zap, text: "API-first design" },
                 { icon: Layers, text: "Custom frontends" },

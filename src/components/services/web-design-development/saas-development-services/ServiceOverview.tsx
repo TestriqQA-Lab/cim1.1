@@ -1,6 +1,7 @@
 "use client";
 
 import { Code2, Layers, Database, Zap, Lock, Settings } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     return (
@@ -49,11 +50,11 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            From B2B SaaS platforms to B2C customer solutions, our <span style={{ color: "#008ac1", fontWeight: 700 }}>SaaS agency</span> combines product thinking with technical excellence to architect scalable systems. Whether you're a startup launching an MVP to validate market fit or an enterprise scaling an existing product, we deliver <span style={{ color: "#008ac1", fontWeight: 700 }}>SaaS app development services</span> that transform your vision into a market-ready, production-grade solution.
+                            From B2B SaaS platforms to B2C customer solutions, our <Link href="/services/web-design-development" className="hover:underline" style={{ color: "#008ac1", fontWeight: 700 }}>SaaS agency</Link> combines product thinking with technical excellence to architect scalable systems. Whether you're a startup launching an MVP to validate market fit or an enterprise scaling an existing product, we deliver <span style={{ color: "#008ac1", fontWeight: 700 }}>SaaS app development services</span> that transform your vision into a market-ready, production-grade solution.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            Our team has delivered <span style={{ color: "#008ac1", fontWeight: 700 }}>95% bug-free SaaS applications</span> for 50+ global clients across fintech, healthcare, and e-commerce - driving <span style={{ color: "#008ac1", fontWeight: 700 }}>300% traffic growth</span> through technical SEO optimization and performance engineering.
+                            Our team has delivered <span style={{ color: "#008ac1", fontWeight: 700 }}>95% bug-free SaaS applications</span> for 50+ global clients across <Link href="/services/web-design-development/fintech-solutions" className="hover:underline" style={{ color: "var(--foreground)" }}>fintech</Link>, <Link href="/services/web-design-development/healthcare-portals" className="hover:underline" style={{ color: "var(--foreground)" }}>healthcare</Link>, and <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline" style={{ color: "var(--foreground)" }}>e-commerce</Link> - driving <span style={{ color: "#008ac1", fontWeight: 700 }}>300% traffic growth</span> through <Link href="/services/seo-services/technical-seo-services" className="hover:underline" style={{ color: "var(--foreground)" }}>technical SEO optimization</Link> and <Link href="/blog/web-performance-optimization-speed" className="hover:underline" style={{ color: "var(--foreground)" }}>performance engineering</Link>.
                         </p>
 
                         <div className="pt-4">

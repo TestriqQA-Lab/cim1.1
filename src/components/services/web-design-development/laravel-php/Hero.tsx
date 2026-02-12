@@ -115,14 +115,14 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Build scalable, secure, and maintainable web applications with the world's most popular PHP framework. We deliver enterprise-grade solutions tailored to your business.
+                            Build scalable, secure, and maintainable <Link href="/services/web-design-development" className="text-[#FF2D20] hover:underline">web applications</Link> with the world's most popular PHP framework. We deliver enterprise-grade solutions tailored to your business.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
                                 "Custom Development",
-                                "SaaS Platforms",
+                                <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#FF2D20] transition-colors">SaaS Platforms</Link>,
                                 "API Integration",
                                 "Legacy Migration",
                             ].map((feature, idx) => (

@@ -14,7 +14,7 @@ export default function Hero() {
         { icon: Wallet, text: "Payment Gateways" },
         { icon: TrendingUp, text: "Investment Tech" },
         { icon: Lock, text: "Blockchain Solutions" },
-        { icon: Smartphone, text: "Mobile Finance" },
+        { icon: Smartphone, text: <Link href="/services/mobile-app-development" className="hover:underline">Mobile Finance</Link> },
     ];
 
     const stats = [

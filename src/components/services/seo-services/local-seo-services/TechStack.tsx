@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("management");
@@ -15,7 +16,7 @@ export default function TechStack() {
         { id: "tracking", label: "Rank Tracking" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; link?: string; description: string; logo: string }[]> = {
         management: [
             { name: "Google Business", description: "Profile Mgmt", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
             { name: "Yext", description: "Listings Sync", logo: "/images/techstack_logos/Yext-logo.png" },
@@ -29,10 +30,10 @@ export default function TechStack() {
             { name: "GatherUp", description: "Customer Feedback", logo: "" },
         ],
         tracking: [
-            { name: "BrightLocal", description: "Local Rank", logo: "/images/techstack_logos/BrightLocal-logo.jpg" },
+            { name: "BrightLocal", link: "/services/seo-services", description: "Local Rank", logo: "/images/techstack_logos/BrightLocal-logo.jpg" },
             { name: "Mapbox", description: "Geocoding", logo: "/images/techstack_logos/mapbox-logo.webp" },
             { name: "OpenStreetMap", description: "Mapping", logo: "/images/techstack_logos/Openstreetmap-logo.png" },
-            { name: "Semrush", description: "Listing Mgmt", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
+            { name: "Semrush", link: "/services/performance-marketing", description: "Listing Mgmt", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
         ],
     };
 
@@ -111,7 +112,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold mb-1" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:text-amber-500 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

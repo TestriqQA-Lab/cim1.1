@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { PlayCircle, Target, Search, BarChart, Monitor, Video } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -19,7 +20,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Search,
-            title: "Video Discovery Ads",
+            title: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Video Discovery Ads</Link>,
             description: "Promote your videos in search results and next to related videos.",
             features: ["High intent", "Subscriber growth", "Content promotion", "Native look"],
         },
@@ -43,7 +44,7 @@ export default function ServiceOverview() {
         },
         {
             icon: BarChart,
-            title: "Performance Max",
+            title: <Link href="/services/performance-marketing" className="hover:text-[var(--primary)] transition-colors">Performance Max</Link>,
             description: "Goal-based campaigns accessing all Google video inventory.",
             features: ["Automated bidding", "Cross-channel", "Conversion focus", "AI optimization"],
         },

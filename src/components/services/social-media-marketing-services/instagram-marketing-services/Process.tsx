@@ -12,6 +12,7 @@ import {
     Clock,
     Zap,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -76,7 +77,7 @@ export default function Process() {
         {
             icon: Zap,
             title: "Ad Deployment & Scaling",
-            description: "Launching high-converting Instagram Advertising Services using Meta Pixel and CAPI for measurable ROI.",
+            description: <>Launching high-converting <Link href="/services/performance-marketing" className="hover:underline text-pink-500">Instagram Advertising Services</Link> using Meta Pixel and CAPI for measurable ROI.</>,
             details: [
                 "Full-funnel ad setup",
                 "Retargeting loop build",
@@ -90,7 +91,7 @@ export default function Process() {
         {
             icon: RefreshCw,
             title: "Analyze, Report & Iterate",
-            description: "Monthly deep-dives into ROI, CTR, and follower quality to ensure consistent exponential growth.",
+            description: <>Monthly deep-dives into <Link href="/blog/data-analytics-insights-action" className="hover:underline text-pink-500">ROI</Link>, CTR, and follower quality to ensure consistent exponential growth.</>,
             details: [
                 "ROI & CTR performance deep-dive",
                 "Follower quality analysis",

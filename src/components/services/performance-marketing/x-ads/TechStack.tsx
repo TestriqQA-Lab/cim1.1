@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("creative");
@@ -12,11 +13,11 @@ export default function TechStack() {
         { id: "analytics", label: "Measurement" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string; invert?: boolean }[]> = {
+    const technologies: Record<string, { name: string; description: string | React.ReactNode; logo: string; invert?: boolean }[]> = {
         creative: [
             { name: "X Ad Composer", description: "Native Ad Creation", logo: "/images/techstack_logos/X-logo-hero-image.png", invert: false },
-            { name: "Creative Studio", description: "Visual Design", logo: "/images/techstack_logos/Vista-Create-logo.png" }, // Better design placeholder
-            { name: "Adobe Premiere", description: "Video Editing", logo: "/images/techstack_logos/Adobe-Premiere-logo.png" },
+            { name: "Creative Studio", description: <Link href="/services/web-design-development" className="hover:text-[var(--primary)] transition-colors">Visual Design</Link>, logo: "/images/techstack_logos/Vista-Create-logo.png" }, // Better design placeholder
+            { name: "Adobe Premiere", description: <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Video Editing</Link>, logo: "/images/techstack_logos/Adobe-Premiere-logo.png" },
         ],
         targeting: [
             { name: "Keyword Targeting", description: "Contextual Reach", logo: "/images/techstack_logos/X-logo-hero-image.png", invert: true },
@@ -24,8 +25,8 @@ export default function TechStack() {
             { name: "Conversation Targeting", description: "Topic Based", logo: "/images/ai_powered_chatbots_logos/web-chat.png", invert: true },
         ],
         analytics: [
-            { name: "X Pixel", description: "Conversion Tracking", logo: "/images/techstack_logos/X-logo-hero-image.png", invert: true },
-            { name: "Google Analytics 4", description: "Cross-Channel", logo: "/images/performance-marketing-logos/google-ads-logo.svg" },
+            { name: "X Pixel", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Conversion Tracking</Link>, logo: "/images/techstack_logos/X-logo-hero-image.png", invert: true },
+            { name: "Google Analytics 4", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Cross-Channel</Link>, logo: "/images/performance-marketing-logos/google-ads-logo.svg" },
             { name: "Moat (Oracle)", description: "Viewability", logo: "/images/techstack_logos/Oracle-logo.svg" }, // Correct parent company
         ],
     };

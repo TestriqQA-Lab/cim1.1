@@ -22,7 +22,7 @@ export default function UseCases() {
         },
         {
             icon: Pill,
-            title: "Pharmacies & Labs",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Pharmacies & Labs</Link>,
             description: "Prescription management, lab results delivery, and medication adherence platforms.",
         },
         {

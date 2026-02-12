@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("ads");
@@ -16,23 +17,23 @@ export default function TechStack() {
         { id: "automation", label: "Automation" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string | React.ReactNode; logo: string }[]> = {
         ads: [
             { name: "TikTok Ads Manager", description: "Campaign Management", logo: "/images/performance-marketing-logos/tiktok-ads-logo.webp" },
             { name: "CapCut", description: "Video Editing", logo: "/images/techstack_logos/Capcut-logo.png" },
-            { name: "Canva", description: "Creative Design", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva", description: <Link href="/services/brand-identity-design" className="hover:text-[var(--primary)] transition-colors">Creative Design</Link>, logo: "/images/brand-identity-design-logos/canva-logo.png" },
             { name: "Figma", description: "Ad Design", logo: "/images/techstack_logos/figma-logo.svg" },
         ],
         tracking: [
             { name: "TikTok Pixel", description: "Conversion Tracking", logo: "/images/performance-marketing-logos/tiktok-ads-logo.webp" },
             { name: "TikTok Events API", description: "Server-Side Events", logo: "/images/performance-marketing-logos/tiktok-ads-logo.webp" },
-            { name: "Google Analytics", description: "Web Analytics", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Web Analytics</Link>, logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
             { name: "Triple Whale", description: "Attribution", logo: "/images/techstack_logos/triple-whale-logo.png" },
         ],
         automation: [
-            { name: "Zapier", description: "Workflow Automation", logo: "/images/ai_automation_logos/zapier-logo.svg" },
-            { name: "HubSpot", description: "CRM Integration", logo: "/images/ai_automation_logos/hubspot-logo.png" },
-            { name: "Shopify", description: "E-commerce Sync", logo: "/images/techstack_logos/shopify-logo.png" },
+            { name: "Zapier", description: <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--primary)] transition-colors">Workflow Automation</Link>, logo: "/images/ai_automation_logos/zapier-logo.svg" },
+            { name: "HubSpot", description: <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--primary)] transition-colors">CRM Integration</Link>, logo: "/images/ai_automation_logos/hubspot-logo.png" },
+            { name: "Shopify", description: <Link href="/services/web-design-development/shopify-development-services" className="hover:text-[var(--primary)] transition-colors">E-commerce Sync</Link>, logo: "/images/techstack_logos/shopify-logo.png" },
             { name: "Supermetrics", description: "Data Pipeline", logo: "/images/techstack_logos/Supermetrics-logo.jpg" },
         ],
     };

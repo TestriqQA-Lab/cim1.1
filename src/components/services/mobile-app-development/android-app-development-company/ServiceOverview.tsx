@@ -9,6 +9,7 @@ import {
     Car,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -17,7 +18,7 @@ export default function ServiceOverview() {
         {
             icon: Smartphone,
             title: "Android Phone Apps",
-            description: "Custom native Android apps built with Kotlin and Java that leverage device-specific features like cameras, GPS, and sensors. We ensure silky smooth 120Hz scrolling and instant load times.",
+            description: <><span className="text-inherit">Custom native Android apps built with Kotlin and </span><Link href="/services/web-design-development/java-spring-boot" className="text-[#3DDC84] hover:underline">Java</Link> that leverage device-specific features like cameras, GPS, and sensors. We ensure silky smooth 120Hz scrolling and instant load times.</>,
             gradient: "from-[#3DDC84] to-[#78C257]",
             shadowColor: "rgba(61, 220, 132, 0.4)",
         },
@@ -38,7 +39,7 @@ export default function ServiceOverview() {
         {
             icon: Tv,
             title: "Android TV and OTT Apps",
-            description: "Capture the living room with immersive Android TV app development solutions. We build streaming platforms using the Leanback library for intuitive remote-control navigation.",
+            description: <><span className="text-inherit">Capture the living room with immersive Android TV app development solutions. We build </span><Link href="/services/web-design-development/entertainment-media" className="text-[#3DDC84] hover:underline">streaming platforms</Link> using the Leanback library for intuitive remote-control navigation.</>,
             gradient: "from-[#3DDC84] to-[#073042]",
             shadowColor: "rgba(61, 220, 132, 0.4)",
         },
@@ -51,7 +52,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Sparkles,
-            title: "App Store Optimization (ASO)",
+            title: <Link href="/services/seo-services" className="hover:text-[#3DDC84] transition-colors">App Store Optimization (ASO)</Link>,
             description: "Our data-driven ASO services ensure your app ranks #1 for high-intent keywords. We optimize titles, descriptions, and visuals significantly improving organic downloads.",
             gradient: "from-[#073042] to-[#78C257]",
             shadowColor: "rgba(7, 48, 66, 0.4)",
@@ -149,7 +150,7 @@ export default function ServiceOverview() {
                             >
                                 {/* Glow effect on hover */}
                                 <div
-                                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl"
+                                    className="absolute -inset-1 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl pointer-events-none"
                                     style={{
                                         background: `linear-gradient(135deg, ${service.shadowColor}, transparent)`,
                                     }}

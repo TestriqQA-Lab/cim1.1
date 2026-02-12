@@ -98,7 +98,7 @@ export default function Hero() {
 
                         {/* Description */}
                         <p className="text-lg md:text-xl mb-8 max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Acquire high-quality, relevant backlinks from authoritative websites. Our white-hat link building strategies boost your domain authority and organic rankings.
+                            Acquire high-quality, relevant backlinks from authoritative websites. Our white-hat link building strategies boost your <Link href="/services/seo-services/technical-seo-services" className="hover:underline" style={{ color: linkCyan }}>domain authority</Link> and <Link href="/services/seo-services/on-page-seo-services" className="hover:underline" style={{ color: linkCyan }}>organic rankings</Link>.
                         </p>
 
                         {/* Feature Pills */}

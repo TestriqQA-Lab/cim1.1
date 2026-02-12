@@ -44,6 +44,7 @@ export default function UseCases() {
             gradient: "from-purple-500 via-pink-500 to-rose-500",
             stats: "100+ Partners",
             color: "#a855f7",
+            link: "/services/web-design-development",
         },
         {
             icon: GraduationCap,
@@ -53,6 +54,7 @@ export default function UseCases() {
             gradient: "from-amber-500 via-orange-500 to-red-500",
             stats: "200K+ Pages",
             color: "#f59e0b",
+            link: "/services/web-design-development/edtech-lms",
         },
         {
             icon: Stethoscope,
@@ -62,6 +64,7 @@ export default function UseCases() {
             gradient: "from-emerald-500 via-green-500 to-lime-500",
             stats: "15+ Facilities",
             color: "#10b981",
+            link: "/services/web-design-development/healthcare-portals",
         },
         {
             icon: Scale,
@@ -71,6 +74,7 @@ export default function UseCases() {
             gradient: "from-indigo-500 via-violet-500 to-purple-500",
             stats: "ADA Compliant",
             color: "#6366f1",
+            link: "/services/web-design-development/drupal-cms",
         },
         {
             icon: Landmark,
@@ -80,6 +84,7 @@ export default function UseCases() {
             gradient: "from-orange-500 via-red-500 to-pink-500",
             stats: "SOC 2 Certified",
             color: "#f97316",
+            link: "/services/web-design-development/fintech-solutions",
         },
     ];
 
@@ -246,7 +251,13 @@ export default function UseCases() {
                                                 color: isActive ? industry.color : "var(--foreground)"
                                             }}
                                         >
-                                            {industry.title}
+                                            {industry.link ? (
+                                                <Link href={industry.link} className="hover:underline">
+                                                    {industry.title}
+                                                </Link>
+                                            ) : (
+                                                industry.title
+                                            )}
                                         </h3>
                                         <ArrowUpRight
                                             className={`w-5 h-5 flex-shrink-0 transition-all duration-300 ${isActive ? "translate-x-1 -translate-y-1" : "translate-x-0 translate-y-0"

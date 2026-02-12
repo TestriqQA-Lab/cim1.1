@@ -10,6 +10,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -30,7 +31,7 @@ export default function Process() {
         },
         {
             icon: Palette,
-            title: "UI/UX Design",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[#5AC8FA]">UI/UX Design</Link>,
             description: "Adhering strictly to Human Interface Guidelines (HIG), we create high-fidelity prototypes. We focus on Spatial computing and visionOS readiness.",
             details: [
                 "HIG compliance",
@@ -73,7 +74,7 @@ export default function Process() {
             description: "We handle the complex App Store Connect submission process. Post-launch, we offer iOS app maintenance and support services.",
             details: [
                 "App Store submission",
-                "Maintenance & support",
+                <Link key="support" href="/services/additional-support-services" className="text-secondary-text hover:text-[#007AFF]">Maintenance & support</Link>,
                 "OS updates",
                 "New features",
                 "Performance monitoring",

@@ -2,6 +2,7 @@
 
 import { Code2, Database, Shield, Cloud, RefreshCw, Puzzle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const technologies = [
@@ -56,10 +57,18 @@ export default function TechStack() {
             items: [
                 { name: "Stripe/Paddle", description: "Subscription management", logos: ["/images/techstack_logos/Stripe-logo.png", "/images/techstack_logos/paddle-logo.png"] },
                 { name: "SendGrid/Twilio", description: "Transactional emails & SMS", logos: ["/images/techstack_logos/SendGrid-logo.png", "/images/techstack_logos/twilio-icon.webp"] },
-                { name: "Segment/Mixpanel", description: "User behavior tracking", logos: ["/images/techstack_logos/Segment-logo.png", "/images/techstack_logos/mixpanel-logo.png"] },
+                { name: "Segment/Mixpanel", description: <><Link href="/blog/category/digital-marketing" className="hover:underline text-inherit">User behavior tracking</Link></>, logos: ["/images/techstack_logos/Segment-logo.png", "/images/techstack_logos/mixpanel-logo.png"] },
             ],
         },
     ];
+
+    const getLink = (name: string) => {
+        if (name === "React/Next.js") return "/services/web-design-development/nextjs-development-services";
+        if (name === "Node.js (Express/NestJS)") return "/services/web-design-development/nodejs-backend";
+        if (name === "Python (FastAPI/Django)") return "/services/web-design-development/python-django";
+        if (name === "Stripe/Paddle") return "/services/web-design-development/ecommerce-development-company";
+        return null;
+    };
 
     return (
         <section
@@ -122,7 +131,13 @@ export default function TechStack() {
                                                 />
                                                 <div className="min-w-0">
                                                     <p className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>
-                                                        {item.name}
+                                                        {getLink(item.name) ? (
+                                                            <Link href={getLink(item.name)!} className="hover:underline">
+                                                                {item.name}
+                                                            </Link>
+                                                        ) : (
+                                                            item.name
+                                                        )}
                                                     </p>
                                                     <p className="text-xs" style={{ color: "var(--secondary-text)" }}>
                                                         {item.description}

@@ -2,12 +2,13 @@
 
 import React, { useState } from 'react';
 import { Shield, Zap, Users, Award, Headphones, TrendingUp, CheckCircle } from 'lucide-react';
+import Link from 'next/link';
 
 const reasons = [
     {
         icon: Shield,
         title: "Trusted Expertise",
-        description: "Years of experience delivering successful digital solutions across industries.",
+        description: <span>Years of experience delivering successful <Link href="/services/web-design-development" className="hover:text-[var(--brand-purple)] transition-colors">digital solutions</Link> across industries.</span>,
         gradient: "linear-gradient(135deg, var(--brand-purple), var(--brand-blue))",
     },
     {
@@ -44,11 +45,11 @@ const reasons = [
 
 const highlights = [
     "Transparent Pricing",
-    "Scalable Solutions",
+    <span><Link href="/services/web-design-development" className="hover:text-[var(--brand-cyan)] transition-colors">Scalable Solutions</Link></span>,
     "Custom Development",
     "Modern Tech Stack",
-    "SEO Best Practices",
-    "Mobile-First Approach",
+    <span><Link href="/services/seo-services" className="hover:text-[var(--brand-cyan)] transition-colors">SEO Best Practices</Link></span>,
+    <span><Link href="/services/mobile-app-development" className="hover:text-[var(--brand-cyan)] transition-colors">Mobile-First Approach</Link></span>,
 ];
 
 export default function WhyChooseUs() {

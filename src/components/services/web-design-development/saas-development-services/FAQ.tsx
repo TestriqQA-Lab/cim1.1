@@ -1,13 +1,14 @@
 "use client";
 
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function FAQ() {
     const faqs = [
         {
             question: "What is SaaS web application development?",
-            answer: "SaaS web application development is the process of building cloud-based software platforms delivered over the internet via subscription models. Unlike traditional software, SaaS applications are hosted on cloud infrastructure (AWS, GCP, Azure), support multiple users (multi-tenancy), and offer features like automated billing, user management, and API integrations. Examples include Salesforce, Slack, and Zoom."
+            answer: <><Link href="/services/web-design-development" className="text-[#008ac1] hover:underline">SaaS web application development</Link> is the process of building cloud-based software platforms delivered over the internet via subscription models. Unlike traditional software, SaaS applications are hosted on <Link href="/blog/category/web-development" className="text-[#008ac1] hover:underline">cloud infrastructure</Link> (AWS, GCP, Azure), support multiple users (multi-tenancy), and offer features like automated billing, user management, and API integrations. Examples include Salesforce, Slack, and Zoom.</>
         },
         {
             question: "How much does SaaS development cost in India?",
@@ -102,9 +103,9 @@ export default function FAQ() {
                                     }`}
                             >
                                 <div className="px-6 pb-6 pt-0">
-                                    <p style={{ color: "var(--foreground)", lineHeight: "1.7" }}>
+                                    <div style={{ color: "var(--foreground)", lineHeight: "1.7" }}>
                                         {faq.answer}
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, FileText, Code, Gauge, BarChart, RefreshCw } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     // SEO Green theme color
@@ -9,32 +10,32 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Comprehensive On-Page SEO Audit",
+            title: <Link href="/services/seo-services" className="hover:underline">Comprehensive On-Page SEO Audit</Link>,
             description: "We identify every technical bottleneck, from broken tags to thin content.",
         },
         {
             icon: FileText,
-            title: "Strategic Keyword Mapping",
+            title: <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline">Strategic Keyword Mapping</Link>,
             description: "Assigning high-intent KWs to specific pages to avoid cannibalization.",
         },
         {
             icon: Code,
-            title: "Technical Implementation",
+            title: <Link href="/services/seo-services/technical-seo-services" className="hover:underline">Technical Implementation</Link>,
             description: "Hands-on optimization of H1s, metas, and on-site optimization techniques.",
         },
         {
             icon: Gauge,
-            title: "Content & E-E-A-T Optimization",
+            title: <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline">Content & E-E-A-T Optimization</Link>,
             description: "Elevating professional on-page SEO content optimization with expert insights.",
         },
         {
             icon: BarChart,
-            title: "Schema & Rich Snippet Deployment",
+            title: <Link href="/services/web-design-development" className="hover:underline">Schema & Rich Snippet Deployment</Link>,
             description: "Adding structured data to capture Featured Snippets and AI Overviews.",
         },
         {
             icon: RefreshCw,
-            title: "Performance Monitoring & Refinement",
+            title: <Link href="/services/performance-marketing" className="hover:underline">Performance Monitoring & Refinement</Link>,
             description: "Daily tracking of rankings and page speed and performance.",
         },
     ];

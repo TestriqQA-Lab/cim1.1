@@ -16,6 +16,7 @@ import {
     ArrowRight,
     Check,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -26,7 +27,7 @@ export default function SolutionTypes() {
             icon: Building2,
             title: "Hotel & Resort Websites",
             description:
-                "Immersive digital experiences with Travel Agency Website Design and SEO. Stunning, fast-loading sites for luxury resorts that integrate seamlessly with Hotel Property Management System (PMS).",
+                <span>Immersive digital experiences with Travel Agency Website Design and <Link href="/services/seo-services" className="hover:underline">SEO</Link>. Stunning, fast-loading sites for luxury resorts that integrate seamlessly with Hotel Property Management System (PMS).</span>,
             features: [
                 "Virtual Tours & Visualizers",
                 "Direct Booking Incentives",
@@ -71,7 +72,7 @@ export default function SolutionTypes() {
             icon: Home,
             title: "Vacation Rental Management",
             description:
-                "End-to-end platforms for managing property portfolios. Incorporate Hospitality Social Media Management Services, smart lock sync, and owner reporting portals.",
+                <span>End-to-end platforms for managing property portfolios. Incorporate <Link href="/services/social-media-marketing-services" className="hover:underline">Hospitality Social Media Management Services</Link>, smart lock sync, and owner reporting portals.</span>,
             features: [
                 "Automated Scheduling",
                 "Smart Lock Sync",
@@ -101,7 +102,7 @@ export default function SolutionTypes() {
             icon: CarFront,
             title: "Transport & Logistics Booking",
             description:
-                "Fleet management and transfer solutions. Mobile App Development for Travel Agencies ensures real-time tracking and seamless customer communication.",
+                <span>Fleet management and transfer solutions. <Link href="/services/mobile-app-development" className="hover:underline">Mobile App Development for Travel Agencies</Link> ensures real-time tracking and seamless customer communication.</span>,
             features: [
                 "Fleet Management",
                 "Driver Assignment",
@@ -157,7 +158,7 @@ export default function SolutionTypes() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Whether you are a startup needing a Custom Travel Booking Platform Development or an established resort seeking Digital Marketing for Luxury Hotels and Resorts, we deliver measurable results. Partner with us to leverage the power of Next.js, AI analytics, and cloud-native infrastructure, ensuring your business stays ahead of the curve.
+                        Whether you are a startup needing a Custom Travel Booking Platform Development or an established resort seeking <Link href="/services/performance-marketing" className="hover:underline">Digital Marketing for Luxury Hotels and Resorts</Link>, we deliver measurable results. Partner with us to leverage the power of <Link href="/services/web-design-development/nextjs-development-services" className="hover:underline">Next.js</Link>, AI analytics, and cloud-native infrastructure, ensuring your business stays ahead of the curve.
                     </p>
                     <div
                         className="w-24 h-1.5 mx-auto mt-8 rounded-full"

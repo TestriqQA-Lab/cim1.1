@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ShoppingCart, CreditCard, Package, BarChart3, Mail, Search } from "lucide-react";
 import Image from "next/image";
 
@@ -9,9 +10,9 @@ export default function TechStack() {
             category: "E-commerce Platforms",
             icon: ShoppingCart,
             items: [
-                { name: "Shopify Plus", description: "Enterprise e-commerce", logos: ["/images/techstack_logos/shopify-logo.png"] },
+                { name: <Link href="/services/web-design-development/shopify-development-services" className="hover:underline">Shopify Plus</Link>, description: "Enterprise e-commerce", logos: ["/images/techstack_logos/shopify-logo.png"] },
                 { name: "Magento (Adobe Commerce)", description: "Flexible open-source", logos: ["/images/techstack_logos/Magento-logo.svg"] },
-                { name: "WooCommerce", description: "WordPress commerce", logos: ["/images/techstack_logos/WooCommerce-logo.png"] },
+                { name: <Link href="/services/web-design-development/wordpress-development-services" className="hover:underline">WooCommerce</Link>, description: "WordPress commerce", logos: ["/images/techstack_logos/WooCommerce-logo.png"] },
                 { name: "BigCommerce", description: "Scalable SaaS platform", logos: ["/images/techstack_logos/bigcommerce-logo.png"] },
             ],
         },
@@ -49,7 +50,7 @@ export default function TechStack() {
             icon: Mail,
             items: [
                 { name: "Klaviyo", description: "E-commerce email", logos: ["/images/techstack_logos/Klaviyo-logo.png"] },
-                { name: "HubSpot", description: "CRM & marketing", logos: ["/images/ai_automation_logos/hubspot-logo.png"] },
+                { name: <Link href="/services/ai-workflows-automations-services" className="hover:underline">HubSpot</Link>, description: "CRM & marketing", logos: ["/images/ai_automation_logos/hubspot-logo.png"] },
                 { name: "Mailchimp", description: "Email marketing", logos: ["/images/ai_automation_logos/mailchimp-logo.svg"] },
             ],
         },

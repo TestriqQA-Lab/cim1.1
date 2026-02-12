@@ -1,6 +1,7 @@
 "use client";
 
 import { Database, Globe, Search, Shield, Settings, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function TechStack() {
     const technologies = [
@@ -59,6 +60,18 @@ export default function TechStack() {
             ],
         },
     ];
+
+    const getLink = (name: string) => {
+        switch (name) {
+            case "WordPress Enterprise": return "/services/web-design-development/wordpress-development-services";
+            case "Contentful": return "/services/web-design-development/contentful-headless-cms";
+            case "Strapi": return "/services/web-design-development/strapi-headless-cms";
+            case "Next.js": return "/services/web-design-development/nextjs-development-services";
+            case "Schema Markup": return "/services/seo-services/technical-seo-services";
+            case "Google Analytics 4": return "/services/seo-services";
+            default: return null;
+        }
+    };
 
     return (
         <section
@@ -120,7 +133,13 @@ export default function TechStack() {
                                             />
                                             <div>
                                                 <p className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>
-                                                    {item.name}
+                                                    {getLink(item.name) ? (
+                                                        <Link href={getLink(item.name)!} className="hover:underline">
+                                                            {item.name}
+                                                        </Link>
+                                                    ) : (
+                                                        item.name
+                                                    )}
                                                 </p>
                                                 <p className="text-xs" style={{ color: "var(--secondary-text)" }}>
                                                     {item.description}

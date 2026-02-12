@@ -12,6 +12,7 @@ import {
     Check,
     ArrowUpRight,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -20,7 +21,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Globe,
-            title: "REST API Development",
+            title: <Link href="/services/web-design-development/headless-traditional-cms" className="hover:text-[#339933] transition-colors">REST API Development</Link>,
             description:
                 "Standard RESTful APIs with clean endpoints, proper HTTP methods, and comprehensive documentation.",
             features: [
@@ -48,7 +49,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Server,
-            title: "Microservices",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#339933] transition-colors">Microservices</Link>,
             description:
                 "Distributed systems with independent services that scale and deploy separately.",
             features: [
@@ -76,7 +77,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Smartphone,
-            title: "Backend for Mobile",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[#339933] transition-colors">Backend for Mobile</Link>,
             description:
                 "APIs optimized for iOS and Android applications with push notifications and offline sync.",
             features: [

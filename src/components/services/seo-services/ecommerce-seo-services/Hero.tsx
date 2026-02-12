@@ -116,7 +116,7 @@ export default function Hero() {
                         </p>
 
                         <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100 mt-4" style={{ color: "var(--secondary-text)" }}>
-                            We optimize Shopify, Magento, WooCommerce, and BigCommerce stores at scale - fixing roadblocks, implementing schema markup, and targeting high-intent buyer keywords that drive sales.
+                            We optimize <Link href="/services/web-design-development/shopify-development-services" className="hover:underline" style={{ color: commerceBlue }}>Shopify</Link>, Magento, WooCommerce, and BigCommerce stores at scale - fixing roadblocks, implementing schema markup, and targeting high-intent buyer keywords that drive sales.
                         </p>
 
 
@@ -124,22 +124,23 @@ export default function Hero() {
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "Product Page SEO",
-                                "Shopify SEO",
-                                "Magento SEO",
-                                "Schema Markup",
+                                { name: "Product Page SEO", link: "/services/seo-services/on-page-seo-services" },
+                                { name: "Shopify SEO", link: "/services/web-design-development/shopify-development-services" },
+                                { name: "Magento SEO", link: "/services/web-design-development/ecommerce-development-company" },
+                                { name: "Schema Markup", link: "/services/seo-services/technical-seo-services" },
                             ].map((feature, idx) => (
-                                <div
+                                <Link
                                     key={idx}
-                                    className="flex items-center gap-2 px-3 py-1.5 rounded-md border backdrop-blur-sm"
+                                    href={feature.link}
+                                    className="flex items-center gap-2 px-3 py-1.5 rounded-md border backdrop-blur-sm transition-all hover:bg-accent/10"
                                     style={{
                                         backgroundColor: "var(--card-bg)",
                                         borderColor: `${commerceBlue}30`
                                     }}
                                 >
                                     <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: commerceBlue }} />
-                                    <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{feature}</span>
-                                </div>
+                                    <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>{feature.name}</span>
+                                </Link>
                             ))}
                         </div>
 

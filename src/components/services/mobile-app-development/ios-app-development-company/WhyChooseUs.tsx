@@ -10,6 +10,7 @@ import {
     Clock,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -18,7 +19,7 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Native Performance First",
-            description: "We prioritize native technologies. Hybrid to native iOS app conversion services are a specialty. We help clients migrate from sluggish cross-platform apps.",
+            description: <><span className="text-inherit">We prioritize native technologies. </span><Link href="/services/mobile-app-development/hybrid-app-development-services" className="text-[#007AFF] hover:underline">Hybrid</Link> to native iOS app conversion services are a specialty. We help clients migrate from sluggish <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="text-[#5AC8FA] hover:underline">cross-platform apps</Link>.</>,
             gradient: "from-[#007AFF] to-[#5AC8FA]",
             shadowColor: "rgba(0, 122, 255, 0.3)",
         },
@@ -92,7 +93,7 @@ export default function WhyChooseUs() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Expertise that delivers measurable ROI.
+                        Expertise that delivers <Link href="/services/performance-marketing" className="text-[#007AFF] hover:underline">measurable ROI</Link>.
                     </p>
                 </div>
 
@@ -112,7 +113,7 @@ export default function WhyChooseUs() {
                                 {/* Glow Effect */}
                                 <div
                                     className={`
-                                        absolute -inset-1 rounded-3xl blur-xl transition-opacity duration-500
+                                        absolute -inset-1 rounded-3xl blur-xl transition-opacity duration-500 pointer-events-none
                                         ${isHovered ? "opacity-100" : "opacity-0"}
                                     `}
                                     style={{ background: reason.shadowColor }}
@@ -176,6 +177,6 @@ export default function WhyChooseUs() {
                     })}
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

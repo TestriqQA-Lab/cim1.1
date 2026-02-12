@@ -76,7 +76,7 @@ export default function Hero() {
                         >
                             <Play className="w-4 h-4" style={{ color: tiktokPink }} />
                             <span className="text-sm font-semibold" style={{ color: tiktokPink }}>
-                                TikTok Marketing Partner
+                                <Link href="/services/social-media-marketing-services" className="hover:underline">TikTok Marketing Partner</Link>
                             </span>
                         </div>
 

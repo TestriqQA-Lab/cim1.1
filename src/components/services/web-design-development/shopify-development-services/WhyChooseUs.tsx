@@ -9,6 +9,7 @@ import {
     Globe,
     TrendingUp,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -32,7 +33,7 @@ export default function WhyChooseUs() {
             icon: TrendingUp,
             title: "2026 SEO Readiness",
             description:
-                "Optimized for the post-December 2025 Google core update, we implement high-E-E-A-T content and JSON-LD schema to dominate AI search results.",
+                <span>Optimized for the post-December 2025 Google core update, we implement high-E-E-A-T content and JSON-LD schema to dominate <Link href="/services/seo-services/ecommerce-seo-services" className="text-[#5c8a1e] hover:underline">AI search results</Link>.</span>,
             gradient: "from-[#96bf48] to-[#b4d97c]",
         },
         {

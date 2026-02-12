@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { CheckCircle, Trophy, BarChart, Clock, Target, Users } from "lucide-react";
 
 export default function WhyChooseUs() {
@@ -21,7 +22,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: BarChart,
-            title: "Data-Driven",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Data-Driven</Link>,
             description: "Optimization based on view rate, CTR, and conversions.",
         },
         {

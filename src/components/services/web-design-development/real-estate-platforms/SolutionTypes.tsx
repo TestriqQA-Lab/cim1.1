@@ -10,7 +10,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Building2,
-            title: "Property Listing Portals",
+            title: <Link href="/services/web-design-development" className="hover:underline">Property Listing Portals</Link>,
             description: "Feature-rich property listing websites with advanced search, filtering, and MLS/IDX integration for real-time listing updates.",
             features: [
                 { icon: Search, text: "Advanced property search" },
@@ -23,7 +23,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Users,
-            title: "Broker & Agent Platforms",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Broker & Agent Platforms</Link>,
             description: "Multi-agent management systems with individual agent profiles, commission tracking, and performance dashboards.",
             features: [
                 { icon: Users, text: "Agent profiles" },
@@ -36,7 +36,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Store,
-            title: "Real Estate Marketplaces",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">Real Estate Marketplaces</Link>,
             description: "Multi-vendor platforms connecting buyers, sellers, agents, and developers with listing management and transaction tools.",
             features: [
                 { icon: Store, text: "Multi-vendor support" },

@@ -10,6 +10,7 @@ import {
     Home,
     Building2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeIdx, setActiveIdx] = useState<number | null>(null);
@@ -20,49 +21,49 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "hospitality",
-            title: "Hospitality",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Hospitality</Link>,
             description: "Rank #1 for 'best restaurants near me' - We optimize menus, hours, and booking integrations. Implemented reservation schema drives 42% more table bookings.",
             icon: Utensils,
             color: localAmber,
         },
         {
             id: "medical",
-            title: "Medical & Dental",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:text-red-500 transition-colors">Medical & Dental</Link>,
             description: "#1 for 'doctor near me' - HIPAA-compliant review strategies, patient testimonial optimization, and medical schema markup help clinics rank for high-intent queries.",
             icon: Stethoscope,
             color: "#EF4444",
         },
         {
             id: "legal",
-            title: "Legal Services",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:text-blue-700 transition-colors">Legal Services</Link>,
             description: "Dominate 'lawyer near me' - We build authoritative citations on Avvo, Justia, and FindLaw, optimize for practice area + city keywords (e.g., 'DUI attorney Chicago').",
             icon: Scale,
             color: "#1E40AF",
         },
         {
             id: "homeservices",
-            title: "Home Services",
+            title: <Link href="/services/seo-services" className="hover:text-orange-500 transition-colors">Home Services</Link>,
             description: "Rank for 'emergency plumber,' 'HVAC repair' - Service area business (SAB) optimization with radius targeting. Our contractors average 198% more service calls from Maps.",
             icon: Hammer,
             color: "#EA580C",
         },
         {
             id: "retail",
-            title: "Local Retail",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-pink-600 transition-colors">Local Retail</Link>,
             description: "Drive foot traffic from online searches - Product inventory feeds synced to GBP. Brick-and-mortar stores see 67% increase in store visits tracked via Google's foot traffic analytics.",
             icon: ShoppingBag,
             color: "#DB2777",
         },
         {
             id: "realestate",
-            title: "Real Estate",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:text-emerald-600 transition-colors">Real Estate</Link>,
             description: "Become the go-to expert in your market - Hyperlocal content targeting neighborhood names, MLS integration for property listings. Realtors gain 83% more buyer/seller inquiries.",
             icon: Home,
             color: "#059669",
         },
         {
             id: "dental",
-            title: "Dental Practices",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:text-cyan-500 transition-colors">Dental Practices</Link>,
             description: "Top rankings for 'dentist near me' - We optimize appointment booking systems, dental procedure schema, insurance information. Practices achieve 215% more new patient appointments.",
             icon: Stethoscope,
             color: "#06B6D4",
@@ -76,7 +77,7 @@ export default function SolutionTypes() {
         },
         {
             id: "insurance",
-            title: "Insurance",
+            title: <Link href="/services/web-design-development/fintech-solutions" className="hover:text-orange-500 transition-colors">Insurance</Link>,
             description: "Top 3 for 'insurance agent near me' - We create location-based landing pages for each insurance type, optimize agent bios with local expertise.",
             icon: Building2,
             color: "#F97316",

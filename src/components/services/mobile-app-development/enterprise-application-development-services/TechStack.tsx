@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("security");
@@ -14,7 +15,7 @@ export default function TechStack() {
         { id: "backend", label: "Backend" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: React.ReactNode; logo: string }[]> = {
         security: [
             { name: "SSL/TLS", description: "Standard Encryption", logo: "" },
             { name: "AES-256", description: "Advanced Data Encryption", logo: "" },
@@ -48,9 +49,9 @@ export default function TechStack() {
             { name: "Microsoft 365", description: "Office Suite", logo: "/images/techstack_logos/Microsoft-365-logo.webp" },
         ],
         backend: [
-            { name: "Node.js", description: "API Backend", logo: "/images/techstack_logos/nodejs-logo.svg" },
+            { name: "Node.js", description: <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#2563eb] transition-colors">API Backend</Link>, logo: "/images/techstack_logos/nodejs-logo.svg" },
             { name: ".NET", description: "Microsoft Stack", logo: "/images/techstack_logos/dotnet-logo.png" },
-            { name: "Java Spring", description: "Enterprise Java", logo: "/images/techstack_logos/spring-logo.svg" },
+            { name: "Java Spring", description: <Link href="/services/web-design-development/java-spring-boot" className="hover:text-[#2563eb] transition-colors">Enterprise Java</Link>, logo: "/images/techstack_logos/spring-logo.svg" },
             { name: "PostgreSQL", description: "Database", logo: "/images/techstack_logos/postgresql-logo.svg" },
             { name: "MongoDB", description: "NoSQL Database", logo: "/images/techstack_logos/mongodb-logo.svg" },
             { name: "Redis", description: "Caching", logo: "/images/techstack_logos/redis-logo.svg" },

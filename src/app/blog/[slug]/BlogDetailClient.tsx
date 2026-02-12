@@ -29,7 +29,9 @@ function extractHeadings(markdown: string, blocks?: ContentBlock[]): TocItem[] {
         blocks.forEach((block) => {
             if (block.type === 'text' && ['h1', 'h2', 'h3'].includes(block.variant)) {
                 const level = parseInt(block.variant.replace('h', ''));
-                const text = block.content;
+                // Strip HTML tags from content for clean text display
+                const text = block.content.replace(/<[^>]*>/g, '');
+                // Generate ID the same way as TextBlock component
                 const id = text
                     .toLowerCase()
                     .replace(/[^a-z0-9\s-]/g, "")

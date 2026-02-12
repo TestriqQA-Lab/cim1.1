@@ -35,6 +35,7 @@ export default function SolutionTypes() {
             color: "from-[#008ac1] to-[#00b5ca]",
             accentColor: "#008ac1",
             bgPattern: "dots",
+            link: "/services/web-design-development",
         },
         {
             icon: Users,
@@ -62,6 +63,7 @@ export default function SolutionTypes() {
             color: "from-[#00efd6] to-[#00b5ca]",
             accentColor: "#00efd6",
             bgPattern: "dots",
+            link: "/services/web-design-development/branding-services",
         },
         {
             icon: ShieldCheck,
@@ -71,6 +73,7 @@ export default function SolutionTypes() {
             color: "from-[#008ac1] to-[#bc3feb]",
             accentColor: "#008ac1",
             bgPattern: "grid",
+            link: "/services/seo-services/technical-seo-services",
         },
         {
             icon: Globe,
@@ -234,7 +237,13 @@ export default function SolutionTypes() {
                                             color: isHovered ? solution.accentColor : "var(--foreground)"
                                         }}
                                     >
-                                        {solution.title}
+                                        {solution.link ? (
+                                            <Link href={solution.link} className="hover:underline">
+                                                {solution.title}
+                                            </Link>
+                                        ) : (
+                                            solution.title
+                                        )}
                                     </h3>
 
                                     {/* Description */}

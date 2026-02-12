@@ -12,6 +12,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -48,7 +49,7 @@ export default function SolutionTypes() {
         {
             icon: Heart,
             title: "Healthcare",
-            description: "Launch HIPAA and GDPR compliant enterprise software designed for patient engagement, clinical workflows, and secure health record administration. Our healthcare apps meet the highest standards of Application Lifecycle Management (ALM).",
+            description: <><span className="text-inherit">Launch HIPAA and GDPR compliant enterprise software designed for patient engagement, clinical workflows, and secure health record administration. Our </span><Link href="/services/web-design-development/healthcare-portals" className="text-[#2563eb] hover:underline">healthcare</Link> apps meet the highest standards of Application Lifecycle Management (ALM).</>,
             features: [
                 "HIPAA & GDPR compliant",
                 "Patient engagement",
@@ -59,7 +60,7 @@ export default function SolutionTypes() {
         {
             icon: Landmark,
             title: "Financial Services",
-            description: "Our Custom fintech and banking enterprise applications feature bank-level encryption and regulatory compliance. We have a proven track record of delivering 100% secure transactional platforms for global financial institutions.",
+            description: <><span className="text-inherit">Our Custom </span><Link href="/services/web-design-development/fintech-solutions" className="text-[#2563eb] hover:underline">fintech</Link> and banking enterprise applications feature bank-level encryption and regulatory compliance. We have a proven track record of delivering 100% secure transactional platforms for global financial institutions.</>,
             features: [
                 "Custom fintech solutions",
                 "Bank-level encryption",
@@ -81,7 +82,7 @@ export default function SolutionTypes() {
         {
             icon: Store,
             title: "Retail Enterprise",
-            description: "Scale your retail operations with omnichannel solutions, automated inventory management, and high-performance employee apps designed for global retail chains.",
+            description: <><span className="text-inherit">Scale your </span><Link href="/services/web-design-development/ecommerce-development-company" className="text-[#2563eb] hover:underline">retail</Link> operations with omnichannel solutions, automated inventory management, and high-performance employee apps designed for global retail chains.</>,
             features: [
                 "Omnichannel solutions",
                 "Inventory automation",
@@ -92,7 +93,7 @@ export default function SolutionTypes() {
         {
             icon: Building,
             title: "Government & Public Sector",
-            description: "Deliver secure, compliant citizen portals and internal operations apps. We specialize in FedRAMP-ready solutions for field inspections and complex case management.",
+            description: <><span className="text-inherit">Deliver secure, compliant </span><Link href="/services/web-design-development" className="text-[#2563eb] hover:underline">citizen portals</Link> and internal operations apps. We specialize in FedRAMP-ready solutions for field inspections and complex case management.</>,
             features: [
                 "Secure citizen portals",
                 "Field inspection apps",
@@ -192,8 +193,8 @@ export default function SolutionTypes() {
                                     />
                                 </div>
 
-                                <h3 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>{solution.title}</h3>
-                                <p className="text-sm mb-6 line-clamp-3" style={{ color: "var(--secondary-text)" }}>
+                                <h3 className="text-xl font-bold mb-3 relative z-10" style={{ color: "var(--foreground)" }}>{solution.title}</h3>
+                                <p className="text-sm mb-6 line-clamp-3 relative z-10" style={{ color: "var(--secondary-text)" }}>
                                     {solution.description}
                                 </p>
 

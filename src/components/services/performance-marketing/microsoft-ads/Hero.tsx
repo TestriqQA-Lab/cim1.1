@@ -74,7 +74,7 @@ export default function Hero() {
                                 <div className="w-2 h-2 rounded-sm" style={{ backgroundColor: "#FFB900" }} />
                             </div>
                             <span className="text-sm font-semibold" style={{ color: msBlue }}>
-                                Reach High-Value Audiences
+                                <Link href="/services/performance-marketing/linkedin-ads" className="hover:underline">Reach High-Value Audiences</Link>
                             </span>
                         </div>
 

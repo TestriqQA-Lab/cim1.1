@@ -95,9 +95,9 @@ export default function Hero() {
                             }}
                         >
                             <Youtube className="w-4 h-4" style={{ color: youtubeRed }} />
-                            <span className="text-sm font-medium" style={{ color: youtubeRed }}>
+                            <Link href="/about" className="text-sm font-medium hover:underline" style={{ color: youtubeRed }}>
                                 YouTube Marketing Partner
-                            </span>
+                            </Link>
                         </div>
 
                         {/* Title */}
@@ -121,7 +121,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            As a globally recognized YouTube marketing agency with 30+ years of collective expertise in digital growth, we don't just "post videos", we engineer high-conversion ecosystems. Leveraging 2026 EEAT guidelines, we deliver YouTube marketing services that outrank, outperform, and outscale the competition.
+                            As a globally recognized YouTube marketing agency with 30+ years of collective expertise in <Link href="/services/performance-marketing" className="hover:underline text-red-600">digital growth</Link>, we don't just "post videos", we engineer high-conversion ecosystems. Leveraging 2026 EEAT guidelines, we deliver YouTube marketing services that outrank, outperform, and outscale the competition.
                         </p>
 
                         {/* Feature Pills */}
@@ -299,7 +299,13 @@ export default function Hero() {
                                             color: "var(--foreground)",
                                         }}
                                     >
-                                        {format}
+                                        {format === "Shorts Ads" ? (
+                                            <Link href="/services/performance-marketing/youtube-ads" className="hover:underline">
+                                                {format}
+                                            </Link>
+                                        ) : (
+                                            format
+                                        )}
                                     </span>
                                 ))}
                             </div>

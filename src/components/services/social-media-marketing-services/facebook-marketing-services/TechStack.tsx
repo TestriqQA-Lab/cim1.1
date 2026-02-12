@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("ads");
@@ -14,7 +15,7 @@ export default function TechStack() {
         { id: "reporting", label: "Reporting" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string; logo: string; link?: string }[]> = {
         ads: [
             { name: "Meta Ads Manager", description: "Campaign Management", logo: "/images/techstack_logos/Meta-Ads-Manager-logo.png" },
             { name: "Business Suite", description: "Business Hub", logo: "" },
@@ -26,22 +27,22 @@ export default function TechStack() {
         tracking: [
             { name: "Meta Pixel", description: "Website Tracking", logo: "" },
             { name: "Conversions API", description: "Server-Side", logo: "" },
-            { name: "Google Analytics", description: "Web Analytics", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics", description: "Web Analytics", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp", link: "/services/seo-services/technical-seo-services" },
             { name: "Google Tag Manager", description: "Tag Management", logo: "/images/techstack_logos/google-tag-manager-logo.svg" },
             { name: "Hotjar", description: "Heatmaps", logo: "/images/techstack_logos/Hotjar-logo.png" },
             { name: "Segment", description: "Data Pipeline", logo: "/images/techstack_logos/Segment-logo.png" },
         ],
         creative: [
             { name: "Figma", description: "Design Tool", logo: "/images/techstack_logos/figma-logo.svg" },
-            { name: "Canva", description: "Quick Graphics", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva", description: "Quick Graphics", logo: "/images/brand-identity-design-logos/canva-logo.png", link: "/services/web-design-development/branding-services" },
             { name: "Adobe Creative", description: "Pro Suite", logo: "/images/ai_automation_logos/adobe-logo.png" },
             { name: "Capcut", description: "Video Editing", logo: "/images/techstack_logos/Capcut-logo.png" },
             { name: "Lottie", description: "Animations", logo: "/images/techstack_logos/Lottie-logo.webp" },
             { name: "Unsplash", description: "Stock Images", logo: "/images/techstack_logos/Unsplash-logo.png" },
         ],
         automation: [
-            { name: "Zapier", description: "Workflow Automation", logo: "/images/ai_automation_logos/zapier-logo.svg" },
-            { name: "Make", description: "Integrations", logo: "/images/ai_automation_logos/make-logo.png" },
+            { name: "Zapier", description: "Workflow Automation", logo: "/images/ai_automation_logos/zapier-logo.svg", link: "/services/ai-workflows-automations-services" },
+            { name: "Make", description: "Integrations", logo: "/images/ai_automation_logos/make-logo.png", link: "/services/ai-workflows-automations-services" },
             { name: "Revealbot", description: "Ad Automation", logo: "/images/techstack_logos/Revealbot-logo.avif" },
             { name: "AdEspresso", description: "A/B Testing", logo: "" },
             { name: "Madgicx", description: "AI Optimization", logo: "/images/techstack_logos/Madgicx-logo.png" },
@@ -138,7 +139,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:underline hover:text-blue-500 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

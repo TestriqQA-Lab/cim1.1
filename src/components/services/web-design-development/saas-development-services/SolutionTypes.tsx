@@ -37,6 +37,7 @@ export default function SolutionTypes() {
             badge: "Most Flexible",
             timeline: "3-6 months",
             techStack: ["React", "Node.js", "PostgreSQL", "AWS"],
+            link: "/services/web-design-development",
         },
         {
             icon: Layers,
@@ -70,6 +71,7 @@ export default function SolutionTypes() {
             badge: "Data-Driven",
             timeline: "2-4 months",
             techStack: ["React Admin", "Recharts", "Node.js", "TimescaleDB"],
+            link: "/services/web-design-development/nextjs-development-services",
         },
         {
             icon: CreditCard,
@@ -81,17 +83,19 @@ export default function SolutionTypes() {
             badge: "Revenue-Ready",
             timeline: "2-3 months",
             techStack: ["Stripe Billing", "Chargebee", "Node.js webhooks"],
+            link: "/services/web-design-development/ecommerce-development-company",
         },
         {
             icon: Puzzle,
             title: "API-Driven Applications",
-            description: "Backend services and RESTful/GraphQL APIs that power mobile apps, third-party integrations, and headless frontend experiences. SDK generation and comprehensive documentation.",
+            description: <>Backend services and RESTful/GraphQL APIs that power <Link href="/blog/category/mobile-apps" className="hover:underline text-[#008ac1]">mobile apps</Link>, third-party integrations, and headless frontend experiences. SDK generation and comprehensive documentation.</>,
             features: ["REST & GraphQL API development", "Webhook systems for events", "SDK generation (JS, Python)", "OpenAPI/Swagger documentation"],
             color: "from-[#ee6500] to-[#fab900]",
             accentColor: "#ee6500",
             badge: "Integration-First",
             timeline: "2-4 months",
             techStack: ["Node.js", "FastAPI", "GraphQL", "Kong Gateway"],
+            link: "/services/web-design-development/nodejs-backend",
         },
     ];
 
@@ -238,7 +242,13 @@ export default function SolutionTypes() {
                                                 color: isHovered ? solution.accentColor : "var(--foreground)"
                                             }}
                                         >
-                                            {solution.title}
+                                            {solution.link ? (
+                                                <Link href={solution.link} className="hover:underline">
+                                                    {solution.title}
+                                                </Link>
+                                            ) : (
+                                                solution.title
+                                            )}
                                         </h3>
 
                                         {/* Description */}

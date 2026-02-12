@@ -262,19 +262,36 @@ export default function Hero() {
                                 Platforms We Master
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Shopify", "WooCommerce", "BigCommerce", "Magento", "Stripe", "PayPal"].map((tech, idx) => (
-                                    <span
-                                        key={idx}
-                                        className="px-3 py-1.5 rounded-full text-xs font-medium border"
-                                        style={{
-                                            backgroundColor: "color-mix(in srgb, #96bf48 8%, transparent)",
-                                            borderColor: "color-mix(in srgb, #96bf48 20%, transparent)",
-                                            color: "var(--foreground)",
-                                        }}
-                                    >
-                                        {tech}
-                                    </span>
-                                ))}
+                                <span className="px-3 py-1.5 rounded-full text-xs font-medium border" style={{ backgroundColor: "color-mix(in srgb, #96bf48 8%, transparent)", borderColor: "color-mix(in srgb, #96bf48 20%, transparent)", color: "var(--foreground)" }}>
+                                    Shopify
+                                </span>
+                                <Link
+                                    href="/services/web-design-development/wordpress-development-services"
+                                    className="px-3 py-1.5 rounded-full text-xs font-medium border hover:scale-105 transition-transform"
+                                    style={{ backgroundColor: "color-mix(in srgb, #96bf48 8%, transparent)", borderColor: "color-mix(in srgb, #96bf48 20%, transparent)", color: "var(--foreground)" }}
+                                >
+                                    WooCommerce
+                                </Link>
+                                <Link
+                                    href="/services/web-design-development/ecommerce-development-company"
+                                    className="px-3 py-1.5 rounded-full text-xs font-medium border hover:scale-105 transition-transform"
+                                    style={{ backgroundColor: "color-mix(in srgb, #96bf48 8%, transparent)", borderColor: "color-mix(in srgb, #96bf48 20%, transparent)", color: "var(--foreground)" }}
+                                >
+                                    BigCommerce
+                                </Link>
+                                <Link
+                                    href="/services/web-design-development/ecommerce-development-company"
+                                    className="px-3 py-1.5 rounded-full text-xs font-medium border hover:scale-105 transition-transform"
+                                    style={{ backgroundColor: "color-mix(in srgb, #96bf48 8%, transparent)", borderColor: "color-mix(in srgb, #96bf48 20%, transparent)", color: "var(--foreground)" }}
+                                >
+                                    Magento
+                                </Link>
+                                <span className="px-3 py-1.5 rounded-full text-xs font-medium border" style={{ backgroundColor: "color-mix(in srgb, #96bf48 8%, transparent)", borderColor: "color-mix(in srgb, #96bf48 20%, transparent)", color: "var(--foreground)" }}>
+                                    Stripe
+                                </span>
+                                <span className="px-3 py-1.5 rounded-full text-xs font-medium border" style={{ backgroundColor: "color-mix(in srgb, #96bf48 8%, transparent)", borderColor: "color-mix(in srgb, #96bf48 20%, transparent)", color: "var(--foreground)" }}>
+                                    PayPal
+                                </span>
                             </div>
                         </div>
                     </div>

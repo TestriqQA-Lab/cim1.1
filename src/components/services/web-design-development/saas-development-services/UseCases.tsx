@@ -46,6 +46,7 @@ export default function UseCases() {
             bgColor: "#2563eb",
             stats: "10K Users",
             tags: ["Enterprise", "SSO", "Compliance"],
+            link: "/services/web-design-development/business-corporate",
         },
         {
             icon: Briefcase,
@@ -56,6 +57,7 @@ export default function UseCases() {
             bgColor: "#d97706",
             stats: "65% Faster",
             tags: ["Portals", "Automation", "Secure"],
+            link: "/services/web-design-development/business-corporate",
         },
         {
             icon: Layers,
@@ -66,6 +68,7 @@ export default function UseCases() {
             bgColor: "#16a34a",
             stats: "$2M GMV",
             tags: ["Marketplace", "Payments", "Escrow"],
+            link: "/services/web-design-development/ecommerce-development-company",
         },
         {
             icon: Users,
@@ -76,6 +79,7 @@ export default function UseCases() {
             bgColor: "#4f46e5",
             stats: "200K Apts",
             tags: ["Real-time", "WebRTC", "Community"],
+            link: "/services/web-design-development/edtech-lms",
         },
         {
             icon: Cog,
@@ -203,7 +207,13 @@ export default function UseCases() {
 
                                         {/* Title */}
                                         <h3 className="relative z-10 text-xl font-bold mb-2" style={{ color: "var(--foreground)" }}>
-                                            {industry.title}
+                                            {industry.link ? (
+                                                <Link href={industry.link} className="hover:underline">
+                                                    {industry.title}
+                                                </Link>
+                                            ) : (
+                                                industry.title
+                                            )}
                                         </h3>
 
                                         {/* Tags */}
@@ -218,7 +228,17 @@ export default function UseCases() {
                                                         border: "1px solid var(--border-color)",
                                                     }}
                                                 >
-                                                    {tag}
+                                                    {tag === "Rapid MVP" ? (
+                                                        <Link href="/blog/category/web-development" className="hover:underline">
+                                                            {tag}
+                                                        </Link>
+                                                    ) : tag === "Automation" ? (
+                                                        <Link href="/blog/category/ai-automation" className="hover:underline">
+                                                            {tag}
+                                                        </Link>
+                                                    ) : (
+                                                        tag
+                                                    )}
                                                 </span>
                                             ))}
                                         </div>

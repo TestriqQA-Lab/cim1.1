@@ -9,6 +9,7 @@ import {
     Users,
     RefreshCw,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -19,7 +20,7 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Search,
-            title: "SEO Content Strategy",
+            title: <Link href="/services/seo-services" className="hover:underline">SEO Content Strategy</Link>,
             description: "Topic clusters, gap analysis, and 2026 trend forecasting for dominant topical authority.",
             color: contentEmerald,
         },
@@ -31,25 +32,25 @@ export default function ServiceOverview() {
         },
         {
             icon: Target,
-            title: "Content Optimization Services",
+            title: <Link href="/services/seo-services/on-page-seo-services" className="hover:underline">Content Optimization Services</Link>,
             description: "Metadata refresh, internal link audits, and LSI integration for 50%+ rank recovery.",
             color: "#F59E0B",
         },
         {
             icon: RefreshCw,
             title: "SEO Copywriting Agency",
-            description: "Conversion-focused landing pages elevating CTR by 20% and conversion by 15%.",
+            description: <>Conversion-focused <Link href="/services/web-design-development/landing-pages" className="hover:text-purple-500 transition-colors">landing pages</Link> elevating CTR by 20% and conversion by 15%.</>,
             color: "#8B5CF6",
         },
         {
             icon: Users,
-            title: "SEO Content Audit",
+            title: <Link href="/services/seo-services/technical-seo-services" className="hover:underline">SEO Content Audit</Link>,
             description: "Technical readiness and EEAT scoring to identify high-ROI low-hanging fruits.",
             color: "#EC4899",
         },
         {
             icon: BarChart,
-            title: "SEO Content Refresh",
+            title: <Link href="/services/seo-services/on-page-seo-services" className="hover:underline">SEO Content Refresh</Link>,
             description: "Post-2025 algorithm alignment and stat updates to maintain AI-overview leadership.",
             color: "#06B6D4",
         },

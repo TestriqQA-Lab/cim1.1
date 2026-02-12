@@ -12,6 +12,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -36,8 +37,8 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: ShoppingCart,
-            title: "Ecommerce and Retail Android App Solutions",
-            description: "Boost sales with custom shopping apps. Features include Google Pay integration, AR product previews, AI recommendations, and 1-click checkout.",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[#3DDC84] transition-colors">Ecommerce and Retail Android App Solutions</Link>,
+            description: <><span className="text-inherit">Boost sales with custom shopping apps. Features include </span><Link href="/services/web-design-development/ecommerce-development-company" className="text-[#3DDC84] hover:underline">Google Pay integration</Link>, AR product previews, <Link href="/services/ai-workflows-automations-services" className="text-[#3DDC84] hover:underline">AI recommendations</Link>, and 1-click checkout.</>,
             features: [
                 "45% mobile conversion uplift",
                 "Google Pay integration",
@@ -48,7 +49,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Building2,
-            title: "B2B Android App Development",
+            title: <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[#3DDC84] transition-colors">B2B Android App Development</Link>,
             description: "Streamline workflows with secure enterprise mobility solutions. We build employee portals, inventory trackers, and CRM apps integrated with your existing ERP.",
             features: [
                 "Employee portals",
@@ -60,8 +61,8 @@ export default function SolutionTypes() {
         },
         {
             icon: Heart,
-            title: "Healthcare and HIPAA-Compliant Apps",
-            description: "Patient-first apps with telemedicine features, appointment booking, and secure health record access. Fully compliant with HIPAA, GDPR, and Google Play Protect.",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:text-[#3DDC84] transition-colors">Healthcare and HIPAA-Compliant Apps</Link>,
+            description: <><span className="text-inherit">Patient-first apps with telemedicine features, appointment booking, and </span><Link href="/services/web-design-development/healthcare-portals" className="text-[#3DDC84] hover:underline">secure health records</Link> access. Fully compliant with HIPAA, GDPR, and Google Play Protect.</>,
             features: [
                 "Telemedicine features",
                 "HIPAA compliance",
@@ -72,19 +73,19 @@ export default function SolutionTypes() {
         },
         {
             icon: Wallet,
-            title: "Fintech & Banking Apps",
+            title: <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[#3DDC84] transition-colors">Fintech & Banking Apps</Link>,
             description: "Fort Knox-level security for digital wallets and trading platforms. We implement biometric auth, real-time fraud detection, and custom API integration.",
             features: [
                 "Biometric auth",
                 "Real-time fraud detection",
                 "Custom API integration",
-                "Bank-grade security",
+                <Link key="security" href="/services/web-design-development/fintech-solutions" className="text-[#3DDC84] hover:underline">Bank-grade security</Link>,
             ],
             gradient: "from-[#3DDC84] to-[#073042]",
         },
         {
             icon: Gamepad2,
-            title: "Gaming & Entertainment",
+            title: <Link href="/services/web-design-development/entertainment-media" className="hover:text-[#3DDC84] transition-colors">Gaming & Entertainment</Link>,
             description: "Immersive 2D/3D games built with Unity and native Android NDK. High-performance rendering for lag-free multiplayer experiences.",
             features: [
                 "Unity & Native NDK",
@@ -180,7 +181,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

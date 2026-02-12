@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("core");
@@ -14,10 +15,10 @@ export default function TechStack() {
         { id: "cloud", label: "Cloud & Backend" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: React.ReactNode; logo: string }[]> = {
         core: [
             { name: "Kotlin", description: "Primary Language", logo: "/images/techstack_logos/kotlin-logo.svg" },
-            { name: "Java", description: "Legacy Support", logo: "/images/techstack_logos/java-logo.svg" },
+            { name: "Java", description: <Link href="/services/web-design-development/java-spring-boot" className="hover:text-[#3DDC84] transition-colors">Legacy Support</Link>, logo: "/images/techstack_logos/java-logo.svg" },
             { name: "Android Studio", description: "IDE & Tools", logo: "/images/techstack_logos/Android-Studio-logo.png" },
             { name: "Gradle", description: "Build System", logo: "/images/techstack_logos/Gradle-logo.png" },
             { name: "Android SDK", description: "Platform SDK", logo: "/images/techstack_logos/Android-Studio-logo.png" },
@@ -49,9 +50,9 @@ export default function TechStack() {
         ],
         cloud: [
             { name: "Firebase", description: "Backend Services", logo: "/images/techstack_logos/firebase-logo.svg" },
-            { name: "Google Cloud", description: "Cloud Platform", logo: "/images/techstack_logos/googlecloud-logo.svg" },
-            { name: "AWS Amplify", description: "Cloud Platform", logo: "/images/techstack_logos/aws-logo.png" },
-            { name: "Node.js", description: "API Backend", logo: "/images/techstack_logos/nodejs-logo.svg" },
+            { name: "Google Cloud", description: <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#3DDC84] transition-colors">Cloud Platform</Link>, logo: "/images/techstack_logos/googlecloud-logo.svg" },
+            { name: "AWS Amplify", description: <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#3DDC84] transition-colors">Cloud Platform</Link>, logo: "/images/techstack_logos/aws-logo.png" },
+            { name: "Node.js", description: <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#3DDC84] transition-colors">API Backend</Link>, logo: "/images/techstack_logos/nodejs-logo.svg" },
             { name: "GraphQL", description: "API Layer", logo: "/images/techstack_logos/graphql-logo.svg" },
             { name: "REST APIs", description: "Web Services", logo: "/images/techstack_logos/REST-API-logo.png" },
         ],

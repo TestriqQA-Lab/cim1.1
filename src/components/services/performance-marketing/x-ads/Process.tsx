@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+import Link from "next/link";
 import { MessageCircle, Repeat2, Zap, TrendingUp } from "lucide-react";
 
 export default function Process() {
@@ -13,7 +15,7 @@ export default function Process() {
         },
         {
             icon: MessageCircle,
-            title: "Creative Strategy",
+            title: <Link href="/services/brand-identity-design" className="hover:text-[var(--primary)] transition-colors">Creative Strategy</Link>,
             description: "Design 'Stop the Scroll' assets optimized for mobile feed consumption.",
         },
         {
@@ -23,7 +25,7 @@ export default function Process() {
         },
         {
             icon: TrendingUp,
-            title: "Analysis & Scale",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Analysis & Scale</Link>,
             description: "Optimize based on engagement rates and cost-per-acquisition metrics.",
         },
     ];

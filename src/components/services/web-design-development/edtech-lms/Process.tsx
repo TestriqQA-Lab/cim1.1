@@ -32,12 +32,12 @@ export default function Process() {
             number: "02",
             icon: Palette,
             title: "UX Design & Prototyping",
-            description: "Create intuitive, engaging interfaces that make learning enjoyable. We design for accessibility, mobile-first, and optimal learning experiences.",
+            description: <>Create intuitive, engaging interfaces that make learning enjoyable. We design for accessibility, mobile-first, and optimal learning experiences.</>,
             deliverables: [
-                { icon: Palette, text: "Interface design" },
+                { icon: Palette, text: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">Interface design</Link> },
                 { icon: Play, text: "Interactive mockups" },
                 { icon: Users, text: "User testing" },
-                { icon: Settings, text: "Mobile optimization" }
+                { icon: Settings, text: <Link href="/services/mobile-app-development" className="hover:underline">Mobile optimization</Link> }
             ],
             color: "#ec4899",
             gradient: "from-[#ec4899] to-[#f472b6]",
@@ -49,7 +49,7 @@ export default function Process() {
             description: "Build your LMS with course management, video streaming, quizzes, progress tracking, and all the features needed for effective online learning.",
             deliverables: [
                 { icon: BookOpen, text: "Course builder" },
-                { icon: Video, text: "Video streaming" },
+                { icon: Video, text: <Link href="/services/web-design-development/entertainment-media" className="hover:underline">Video streaming</Link> },
                 { icon: Award, text: "Certification engine" },
                 { icon: Zap, text: "Quiz system" }
             ],

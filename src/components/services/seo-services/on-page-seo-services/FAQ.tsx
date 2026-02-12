@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { MessageSquare, ChevronDown } from 'lucide-react';
+import Link from "next/link";
 
 export default function FAQ() {
     const [faqOpen, setFaqOpen] = useState<number | null>(null);
@@ -23,7 +24,7 @@ export default function FAQ() {
         },
         {
             q: "How long does it take to see results from on-page SEO?",
-            a: "While technical fixes can show impact in weeks, sustainable organic growth typically takes 3-6 months. Our clients often see a 20%+ CTR lift within the first 60 days.",
+            a: <>While technical fixes can show impact in weeks, <Link href="/blog/mastering-seo-organic-growth" className="hover:underline text-blue-500">sustainable organic growth</Link> typically takes 3-6 months. Our clients often see a <Link href="/blog/seo-ppc-hybrid-full-stack-funnels-convert-2x-better-2026" className="hover:underline text-blue-500">20%+ CTR lift</Link> within the first 60 days.</>,
         },
         {
             q: "What is the difference between on-page and off-page SEO?",

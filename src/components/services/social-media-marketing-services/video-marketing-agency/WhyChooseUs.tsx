@@ -10,6 +10,7 @@ import {
     Clapperboard,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -20,7 +21,7 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "300% Traffic Growth",
-            description: "Proven results using the latest video SEO techniques. We use data to drive real scale.",
+            description: <>Proven results using the latest <Link href="/services/seo-services" className="hover:underline text-red-500">video SEO</Link> techniques. We use data to drive real scale.</>,
             color: "#FF0000",
         },
         {
@@ -31,7 +32,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: ShieldCheck,
-            title: "EEAT Certified",
+            title: <Link href="/services/seo-services" className="hover:underline">EEAT Certified</Link>,
             description: "Content is fact-checked, authority-driven, and compliant with the latest Google Core updates.",
             color: "#FF0000",
         },

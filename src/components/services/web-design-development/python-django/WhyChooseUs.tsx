@@ -9,6 +9,7 @@ import {
     Brain,
     HeartHandshake,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -26,7 +27,7 @@ export default function WhyChooseUs() {
         {
             icon: LayoutGrid,
             title: "Scalable Architecture",
-            description: "We design systems that grow with your business, from startup to enterprise scale.",
+            description: <>We design systems that grow with your business, from <Link href="/services/web-design-development/saas-development-services" className="text-[#306998] hover:underline">startup to enterprise scale</Link>.</>,
             gradient: "from-blue-600 via-blue-500 to-cyan-500",
             bgColor: "rgba(48, 105, 152, 0.15)",
             iconColor: "#306998",
@@ -35,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: Shield,
             title: "Security First",
-            description: "Leveraging Django's built-in security features and industry best practices.",
+            description: <>Leveraging <Link href="/blog/cybersecurity-small-businesses" className="text-[#22c55e] hover:underline">Django&apos;s built-in security features</Link> and industry best practices.</>,
             gradient: "from-emerald-500 via-green-500 to-teal-500",
             bgColor: "rgba(34, 197, 94, 0.15)",
             iconColor: "#22c55e",
@@ -53,7 +54,7 @@ export default function WhyChooseUs() {
         {
             icon: Brain,
             title: "Data & AI Ready",
-            description: "Seamlessly integrate machine learning and data science into your applications.",
+            description: <>Seamlessly integrate <Link href="/services/ai-workflows-automations-services" className="text-[#ec4899] hover:underline">machine learning</Link> and data science into your applications.</>,
             gradient: "from-pink-500 via-rose-500 to-red-500",
             bgColor: "rgba(236, 72, 153, 0.15)",
             iconColor: "#ec4899",
@@ -62,7 +63,7 @@ export default function WhyChooseUs() {
         {
             icon: HeartHandshake,
             title: "Ongoing Support",
-            description: "Long-term partnership with maintenance, updates, and continuous improvements.",
+            description: <>Long-term partnership with <Link href="/services/additional-support-services" className="text-[#f97316] hover:underline">maintenance, updates</Link>, and continuous improvements.</>,
             gradient: "from-orange-500 via-amber-500 to-yellow-500",
             bgColor: "rgba(249, 115, 22, 0.15)",
             iconColor: "#f97316",
@@ -178,7 +179,7 @@ export default function WhyChooseUs() {
                                 >
                                     {/* Animated gradient background overlay */}
                                     <div
-                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                                         style={{
                                             background: `radial-gradient(circle at top right, ${reason.bgColor}, transparent 70%)`,
                                         }}

@@ -118,7 +118,7 @@ export default function Hero() {
 
                         <div className="space-y-4 animate-slideUp delay-100">
                             <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                                In an era where mobile supremacy defines market leadership, our iOS App Development Services empower startups and enterprises to dominate the Apple ecosystem.
+                                In an era where mobile supremacy defines market leadership, our iOS App Development Services empower startups and <Link href="/services/mobile-app-development/enterprise-application-development-services" className="text-[#007AFF] hover:underline">enterprises</Link> to dominate the Apple ecosystem.
                             </p>
                             <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 hidden md:block" style={{ color: "var(--secondary-text)" }}>
                                 We specialize in crafting high-impact, user-centric applications that strictly adhere to Apple’s Human Interface Guidelines (HIG).

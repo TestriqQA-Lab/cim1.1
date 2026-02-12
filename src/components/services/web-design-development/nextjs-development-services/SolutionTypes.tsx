@@ -12,6 +12,7 @@ import {
     Check,
     ArrowUpRight,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -20,7 +21,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Building2,
-            title: "Enterprise React Development",
+            title: <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-inherit">Enterprise React Development</Link>,
             description:
                 "Scalable, multi-tenant architectures for large-scale operations. We build robust systems that handle high traffic with ease.",
             features: [
@@ -33,11 +34,11 @@ export default function SolutionTypes() {
         },
         {
             icon: ShoppingCart,
-            title: "Next.js Ecommerce",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-inherit">Next.js Ecommerce</Link>,
             description:
                 "High-performance storefronts with Shopify or BigCommerce integration. Boost your sales with blazing-fast shopping experiences.",
             features: [
-                "Shopify & BigCommerce",
+                <Link href="/services/web-design-development/shopify-development-services" className="hover:text-[#00d4ff] transition-colors">Shopify & BigCommerce</Link>,
                 "20%+ CTR Boost",
                 "Lower Bounce Rates",
                 "Optimized Checkout",
@@ -46,7 +47,7 @@ export default function SolutionTypes() {
         },
         {
             icon: LayoutDashboard,
-            title: "SaaS Product Development",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:text-inherit">SaaS Product Development</Link>,
             description:
                 "Best Next.js agency for SaaS products and dashboards. Secure, scalable, and high-performance applications.",
             features: [
@@ -59,11 +60,11 @@ export default function SolutionTypes() {
         },
         {
             icon: FileText,
-            title: "Next.js Headless CMS",
+            title: <Link href="/services/web-design-development/headless-traditional-cms" className="hover:text-inherit">Next.js Headless CMS</Link>,
             description:
                 "Integration with Contentful, Strapi, or Sanity. Manage your content dynamically with lightning-fast updates.",
             features: [
-                "Contentful & Strapi",
+                <><Link href="/services/web-design-development/contentful-headless-cms" className="hover:text-[#00d4ff] transition-colors">Contentful</Link> & <Link href="/services/web-design-development/strapi-headless-cms" className="hover:text-[#00d4ff] transition-colors">Strapi</Link></>,
                 "Sanity Integration",
                 "Dynamic Content",
                 "Faster CMS Updates",
@@ -72,7 +73,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Smartphone,
-            title: "React Native Mobile Apps",
+            title: <Link href="/services/mobile-app-development" className="hover:text-inherit">React Native Mobile Apps</Link>,
             description:
                 "Cross-platform mobile solutions with shared logic. Build faster and reduce costs while maintaining high quality.",
             features: [

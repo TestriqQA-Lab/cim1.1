@@ -15,7 +15,7 @@ export default function Hero() {
         "Search Ads",
         "Display Network",
         "Shopping Campaigns",
-        "YouTube Ads",
+        <Link key="youtube" href="/services/performance-marketing/youtube-ads" className="hover:text-[var(--primary)] transition-colors">YouTube Ads</Link>,
     ];
 
     return (
@@ -243,7 +243,14 @@ export default function Hero() {
                                 Campaign Types We Manage
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Search", "Display", "Shopping", "Video", "Performance Max", "App Campaigns"].map((type, idx) => (
+                                {[
+                                    "Search",
+                                    "Display",
+                                    <Link key="shopping" href="/services/seo-services/ecommerce-seo-services" className="hover:text-[var(--primary)] transition-colors">Shopping</Link>,
+                                    <Link key="video" href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Video</Link>,
+                                    "Performance Max",
+                                    <Link key="apps" href="/services/mobile-app-development" className="hover:text-[var(--primary)] transition-colors">App Campaigns</Link>
+                                ].map((type, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"

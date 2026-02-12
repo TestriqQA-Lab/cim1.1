@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ShoppingCart, Rocket, Eye, Users, Download, Repeat, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -13,7 +14,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Eye,
-            title: "Brand Awareness",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--primary)] transition-colors">Brand Awareness</Link>,
             description: "Maximize reach with TopView and In-Feed ads.",
             backDetails: ["Video views optimization", "Reach & frequency", "Brand lift studies", "Sound-on engagement"],
             color: tiktokPink,
@@ -27,7 +28,7 @@ export default function SolutionTypes() {
         },
         {
             icon: ShoppingCart,
-            title: "E-commerce Sales",
+            title: <Link href="/services/seo-services/ecommerce-seo-services" className="hover:text-[var(--primary)] transition-colors">E-commerce Sales</Link>,
             description: "Drive purchases with TikTok Shop and Shopping Ads.",
             backDetails: ["Shop integration", "Catalog ads", "Dynamic product ads", "Live shopping"],
             color: tiktokPink,
@@ -41,7 +42,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Download,
-            title: "App Installs",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[var(--primary)] transition-colors">App Installs</Link>,
             description: "Drive quality app downloads and in-app events.",
             backDetails: ["App installs", "In-app events", "Value optimization", "Playable ads"],
             color: tiktokPink,

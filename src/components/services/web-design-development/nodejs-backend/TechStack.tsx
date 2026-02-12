@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Code2, Server, Database, Cloud, Shield, Layers } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -196,6 +197,7 @@ export default function TechStack() {
                                     borderColor: "var(--border-color)",
                                 }}
                             >
+                                {/* Link rendering removed as per user request */}
                                 {/* Logo */}
                                 <div
                                     className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden"

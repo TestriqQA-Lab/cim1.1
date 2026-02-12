@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Search, ShoppingCart, Play, Monitor, Smartphone, Rocket, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -36,7 +37,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Play,
-            title: "YouTube Ads",
+            title: <Link href="/services/performance-marketing/youtube-ads" className="hover:text-[var(--primary)] transition-colors">YouTube Ads</Link>,
             description: "Engage audiences with video ads on the world's second-largest search engine.",
             highlights: ["Skippable ads", "Bumper ads", "Discovery ads"],
             color: googleRed,
@@ -50,7 +51,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Smartphone,
-            title: "App Campaigns",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[var(--primary)] transition-colors">App Campaigns</Link>,
             description: "Drive app installs and engagement across Google's entire ecosystem.",
             highlights: ["Install campaigns", "Engagement ads", "Pre-registration"],
             color: googleGreen,

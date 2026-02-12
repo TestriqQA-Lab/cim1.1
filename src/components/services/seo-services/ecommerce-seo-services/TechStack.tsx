@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("platforms");
@@ -15,9 +16,9 @@ export default function TechStack() {
         { id: "performance", label: "Performance" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; link?: string; description: string; logo: string }[]> = {
         platforms: [
-            { name: "Shopify", description: "SaaS Commerce Platform", logo: "/images/techstack_logos/shopify-logo-hero.png" },
+            { name: "Shopify", link: "/services/web-design-development/shopify-development-services", description: "SaaS Commerce Platform", logo: "/images/techstack_logos/shopify-logo-hero.png" },
             { name: "Magento", description: "Adobe Commerce", logo: "/images/techstack_logos/Magento-logo.svg" },
             { name: "WooCommerce", description: "WordPress E-commerce", logo: "/images/techstack_logos/WooCommerce-logo.png" },
             { name: "BigCommerce", description: "Enterprise SaaS", logo: "/images/techstack_logos/bigcommerce-logo.png" },
@@ -25,13 +26,13 @@ export default function TechStack() {
             { name: "Custom Platforms", description: "Proprietary Builds", logo: "/images/techstack_logos/nextjs-logo.svg" },
         ],
         analysis: [
-            { name: "Semrush", description: "Keyword Research", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
-            { name: "Ahrefs", description: "Backlink Analysis", logo: "/images/organic_growth_and_seo/ahrefs-logo.png" },
+            { name: "Semrush", link: "/services/performance-marketing", description: "Keyword Research", logo: "/images/organic_growth_and_seo/semrush-logo.png" },
+            { name: "Ahrefs", link: "/services/seo-services/link-building", description: "Backlink Analysis", logo: "/images/organic_growth_and_seo/ahrefs-logo.png" },
             { name: "Screaming Frog", description: "Crawling", logo: "/images/organic_growth_and_seo/screaming-frog-logo.png" },
             { name: "GSC", description: "Search Console", logo: "/images/organic_growth_and_seo/google-search-console-logo.webp" },
         ],
         performance: [
-            { name: "Google Analytics", description: "Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics", link: "/services/performance-marketing", description: "Tracking", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
             { name: "Hotjar", description: "Heatmaps", logo: "/images/techstack_logos/Hotjar-logo.png" },
             { name: "PageSpeed Insights", description: "Core Web Vitals", logo: "/images/techstack_logos/google-optimize-logo.svg" }, // Using optimize as proxy or change if exists
             { name: "Salesforce", description: "CRM Integrated", logo: "/images/techstack_logos/Salesforce-logo.png" },
@@ -113,7 +114,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold mb-1" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:text-[--commerceBlue] transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

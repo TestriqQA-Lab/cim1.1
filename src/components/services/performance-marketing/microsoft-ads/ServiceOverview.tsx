@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Search, Globe, UserCheck, ShoppingBag, PieChart, Laptop } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -15,7 +16,7 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Search,
-            title: "Search Ads",
+            title: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Search Ads</Link>,
             description: "Capture high-intent traffic on Bing, Yahoo, and AOL search results.",
             color: msBlue,
         },
@@ -27,7 +28,7 @@ export default function ServiceOverview() {
         },
         {
             icon: UserCheck,
-            title: "LinkedIn Profile Targeting",
+            title: <Link href="/services/performance-marketing/linkedin-ads" className="hover:text-[var(--primary)] transition-colors">LinkedIn Profile Targeting</Link>,
             description: "Target users based on LinkedIn profile data (Job Function, Industry).",
             color: "#0077B5", // LinkedIn Blue
         },

@@ -123,7 +123,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-base md:text-lg leading-relaxed text-balance" style={{ color: "var(--secondary-text)" }}>
-                            Scale your business with enterprise-grade WordPress development services built for the 2026 digital landscape. From custom-engineered themes to complex WooCommerce solutions, we blend technical mastery with ROI-driven marketing to turn your digital vision into a global success story.
+                            Scale your business with enterprise-grade WordPress development services built for the 2026 digital landscape. From custom-engineered themes to complex <Link href="/services/web-design-development/ecommerce-development-company" className="text-[#0073AA] hover:underline">WooCommerce solutions</Link>, we blend technical mastery with ROI-driven marketing to turn your digital vision into a global success story.
                         </p>
 
                         {/* Feature Pills */}
@@ -132,7 +132,7 @@ export default function Hero() {
                                 "Custom Themes",
                                 "WooCommerce",
                                 "Security Audit",
-                                "SEO Optimized",
+                                <Link href="/services/seo-services" className="hover:text-[#0073AA] transition-colors">SEO Optimized</Link>,
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}

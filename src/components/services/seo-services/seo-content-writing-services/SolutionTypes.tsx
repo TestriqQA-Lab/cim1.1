@@ -10,6 +10,7 @@ import {
     Gavel,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -20,42 +21,42 @@ export default function SolutionTypes() {
     const solutions = [
         {
             id: "b2b",
-            title: "B2B Technology & SaaS",
-            description: "High-convert SEO content for B2B lead generation and technical whitepapers. 95%+ accuracy for fintech.",
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">B2B Technology & SaaS</Link>,
+            description: <>High-convert SEO content for B2B lead generation and technical whitepapers. 95%+ accuracy for <Link href="/services/web-design-development/fintech-solutions" className="hover:text-emerald-500 transition-colors">fintech</Link>.</>,
             icon: Briefcase,
             color: contentEmerald,
         },
         {
             id: "ecommerce",
-            title: "E-commerce Brands",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">E-commerce Brands</Link>,
             description: "Strategic SEO content for ecommerce brands including product descriptions and high-intent buying guides.",
             icon: ShoppingBag,
             color: "#3B82F6",
         },
         {
             id: "legal",
-            title: "Law Firms",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Law Firms</Link>,
             description: "Authoritative SEO content for law firms following strict legal compliance and expertise benchmarks.",
             icon: Gavel,
             color: "#F59E0B",
         },
         {
             id: "health",
-            title: "Medical Practices",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:underline">Medical Practices</Link>,
             description: "High-trust SEO content for medical practices that meets YMYL (Your Money Your Life) standards.",
             icon: HeartPulse,
             color: "#8B5CF6",
         },
         {
             id: "realestate",
-            title: "Real Estate",
+            title: <Link href="/services/web-design-development/real-estate-platforms" className="hover:underline">Real Estate</Link>,
             description: "Hyper-local SEO content for real estate websites to dominate local property searches.",
             icon: Laptop,
             color: "#EC4899",
         },
         {
             id: "education",
-            title: "Education & Non-Profits",
+            title: <Link href="/services/web-design-development/edtech-lms" className="hover:underline">Education & Non-Profits</Link>,
             description: "SEO content for educational institutions and purpose-driven narratives for non-profits.",
             icon: GraduationCap,
             color: "#06B6D4",

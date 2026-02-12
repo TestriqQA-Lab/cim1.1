@@ -12,6 +12,7 @@ import {
     Clock,
     Zap,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -165,7 +166,7 @@ export default function Process() {
                         {
                             icon: Palette,
                             title: "Creative & Copy Excellence",
-                            description: "Developing high-CTR LinkedIn sponsored content and visuals.",
+                            description: <><Link href="/services/web-design-development/branding-services" className="hover:underline text-blue-500">Ad Creative</Link> - Developing high-CTR LinkedIn sponsored content and visuals.</>,
                             details: [
                                 "Persuasive ad copy",
                                 "Visual asset creation",
@@ -198,7 +199,7 @@ export default function Process() {
                                 "AI bidding management",
                                 "Dynamic ad iterations",
                                 "Real-time adjustments",
-                                "Conversion optimization",
+                                <Link key="conv-opt" href="/services/seo-services/conversion-rate-optimization-services" className="hover:text-blue-500 transition-colors">Conversion optimization</Link>,
                                 "Lead quality filtering",
                             ],
                             duration: "Ongoing",

@@ -80,7 +80,7 @@ export default function Process() {
         {
             number: "03",
             icon: Palette,
-            title: "UI/UX Design",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:underline">UI/UX Design</Link>,
             subtitle: "Creating Immersive Experiences",
             description:
                 "Design stunning, intuitive interfaces inspired by leading entertainment platforms.",
@@ -102,7 +102,7 @@ export default function Process() {
                 "Develop robust frontend and backend systems with streaming, payments, and analytics integrations.",
             deliverables: [
                 "Frontend development",
-                "Backend API development",
+                <Link href="/services/web-design-development/nodejs-backend" key="backend" className="hover:underline">Backend API development</Link>,
                 "Video player integration",
                 "Payment system setup",
             ],

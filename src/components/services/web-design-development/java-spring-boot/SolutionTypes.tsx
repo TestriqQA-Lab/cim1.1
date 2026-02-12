@@ -11,6 +11,7 @@ import {
     ArrowRight,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -35,7 +36,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Wallet,
-            title: "Banking & FinTech",
+            title: <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[#6DB33F] transition-colors">Banking & FinTech</Link>,
             description: "Secure financial applications with transaction processing, compliance, and real-time analytics.",
             features: [
                 "Payment processing",
@@ -47,7 +48,7 @@ export default function SolutionTypes() {
         },
         {
             icon: HeartPulse,
-            title: "Healthcare Systems",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:text-[#F89820] transition-colors">Healthcare Systems</Link>,
             description: "HIPAA-compliant healthcare applications with EHR integration and patient portals.",
             features: [
                 "EHR/EMR integration",
@@ -59,7 +60,7 @@ export default function SolutionTypes() {
         },
         {
             icon: ShoppingCart,
-            title: "E-commerce Platforms",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[#6DB33F] transition-colors">E-commerce Platforms</Link>,
             description: "High-traffic e-commerce solutions with inventory management and order processing.",
             features: [
                 "Catalog management",
@@ -179,7 +180,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

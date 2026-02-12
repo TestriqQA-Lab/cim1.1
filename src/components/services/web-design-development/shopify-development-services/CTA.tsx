@@ -10,7 +10,7 @@ export default function CTA() {
     const faqs = [
         {
             question: "What are the benefits of using Shopify for ecommerce?",
-            answer: "Shopify remains the world's leading e-commerce platform in 2026 due to its unparalleled reliability, security, and massive app ecosystem. It offers a user-friendly backend for merchants while allowing developers the flexibility to build highly customized stores via Shopify Plus and Headless Commerce architectures."
+            answer: <span>Shopify remains the world&apos;s leading e-commerce platform in 2026 due to its unparalleled reliability, security, and massive app ecosystem. It offers a user-friendly backend for merchants while allowing developers the flexibility to build highly customized stores via <Link href="/services/web-design-development/shopify-development-services" className="text-[#96bf48] hover:underline">Shopify Plus</Link> and <Link href="/services/web-design-development/headless-traditional-cms" className="text-[#96bf48] hover:underline">Headless Commerce</Link> architectures.</span>
         },
         {
             question: "How much do professional Shopify development services cost in 2026?",
@@ -22,7 +22,7 @@ export default function CTA() {
         },
         {
             question: "What is included in a full-service Shopify marketing package?",
-            answer: "A comprehensive package usually includes Shopify SEO services, PPC management (Google/Meta Ads), email marketing automation (Klaviyo), and Conversion Rate Optimization (CRO) to handle every stage of the funnel - from attraction to retention."
+            answer: <span>A comprehensive package usually includes <Link href="/services/seo-services/ecommerce-seo-services" className="text-[#96bf48] hover:underline">Shopify SEO services</Link>, <Link href="/services/performance-marketing" className="text-[#96bf48] hover:underline">PPC management</Link> (Google/Meta Ads), email marketing automation (Klaviyo), and <Link href="/services/performance-marketing" className="text-[#96bf48] hover:underline">Conversion Rate Optimization (CRO)</Link> to handle every stage of the funnel - from attraction to retention.</span>
         },
         {
             question: "How long does it take to launch a custom Shopify store?",
@@ -30,7 +30,7 @@ export default function CTA() {
         },
         {
             question: "Can you integrate Shopify POS with my existing retail software?",
-            answer: "Yes, we specialize in Shopify POS integration for retail businesses. We can sync your online Shopify store with physical retail locations, ensuring real-time inventory management, unified customer profiles, and consistent pricing across all channels."
+            answer: <span>Yes, we specialize in <Link href="/services/web-design-development/shopify-development-services" className="text-[#96bf48] hover:underline">Shopify POS integration</Link> for retail businesses. We can sync your online Shopify store with physical retail locations, ensuring real-time inventory management, unified customer profiles, and consistent pricing across all channels.</span>
         },
         {
             question: "Do you offer ongoing Shopify maintenance and support?",

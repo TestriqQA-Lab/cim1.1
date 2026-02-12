@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("content");
@@ -14,11 +15,11 @@ export default function TechStack() {
         { id: "growth", label: "Growth Tools" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string; logo: string; link?: string }[]> = {
         content: [
             { name: "Capcut", description: "Video Editing", logo: "/images/techstack_logos/Capcut-logo.png" },
             { name: "InShot", description: "Mobile Editing", logo: "/images/techstack_logos/InShot-logo.png" },
-            { name: "Canva", description: "Graphics Design", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva", description: "Graphics Design", logo: "/images/brand-identity-design-logos/canva-logo.png", link: "/services/web-design-development/branding-services" },
             { name: "Adobe Premiere", description: "Pro Video", logo: "/images/ai_automation_logos/adobe-logo.png" },
             { name: "Lightroom", description: "Photo Editing", logo: "/images/techstack_logos/Lightroom-logo.png" },
             { name: "Unfold", description: "Story Templates", logo: "/images/techstack_logos/Unfold-logo.jpg" },
@@ -34,7 +35,7 @@ export default function TechStack() {
         analytics: [
             { name: "Instagram Insights", description: "Native Analytics", logo: "" },
             { name: "Iconosquare", description: "Deep Analytics", logo: "/images/techstack_logos/Iconosquare-logo.webp" },
-            { name: "Google Analytics", description: "Web Traffic", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics", description: "Web Traffic", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp", link: "/services/seo-services/technical-seo-services" },
             { name: "Hotjar", description: "Heatmaps", logo: "/images/techstack_logos/Hotjar-logo.png" },
             { name: "HypeAuditor", description: "Influencer Data", logo: "/images/techstack_logos/HypeAuditor-logo.png" },
             { name: "Mixpanel", description: "User Analytics", logo: "/images/techstack_logos/mixpanel-logo.png" },
@@ -42,7 +43,7 @@ export default function TechStack() {
         design: [
             { name: "Figma", description: "UI Design", logo: "/images/techstack_logos/figma-logo.svg" },
             { name: "Adobe Creative", description: "Pro Suite", logo: "/images/ai_automation_logos/adobe-logo.png" },
-            { name: "Canva Pro", description: "Quick Design", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva Pro", description: "Quick Design", logo: "/images/brand-identity-design-logos/canva-logo.png", link: "/services/web-design-development/branding-services" },
             { name: "Lottie", description: "Animations", logo: "/images/techstack_logos/Lottie-logo.webp" },
             { name: "Unsplash", description: "Stock Photos", logo: "/images/techstack_logos/Unsplash-logo.png" },
             { name: "Pexels", description: "Free Media", logo: "/images/techstack_logos/Pexels-logo.jpg" },
@@ -50,9 +51,9 @@ export default function TechStack() {
         growth: [
             { name: "Linktree", description: "Bio Links", logo: "/images/techstack_logos/Linktree-logo.png" },
             { name: "ManyChat", description: "DM Automation", logo: "/images/techstack_logos/ManyChat-logo.png" },
-            { name: "HubSpot", description: "CRM & Marketing", logo: "/images/ai_automation_logos/hubspot-logo.png" },
+            { name: "HubSpot", description: "CRM & Marketing", logo: "/images/ai_automation_logos/hubspot-logo.png", link: "/services/ai-workflows-automations-services" },
             { name: "Mailchimp", description: "Email Marketing", logo: "/images/ai_automation_logos/mailchimp-logo.svg" },
-            { name: "Zapier", description: "Automation", logo: "/images/ai_automation_logos/zapier-logo.svg" },
+            { name: "Zapier", description: "Automation", logo: "/images/ai_automation_logos/zapier-logo.svg", link: "/services/ai-workflows-automations-services" },
             { name: "Notion", description: "Content Planning", logo: "/images/techstack_logos/Notion-logo.png" },
         ],
     };
@@ -132,7 +133,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:text-pink-500 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

@@ -58,7 +58,7 @@ export default function Hero() {
                         >
                             <ShoppingCart className="w-4 h-4" style={{ color: amazonOrange }} />
                             <span className="text-sm font-semibold" style={{ color: amazonOrange }}>
-                                E-commerce Growth Partners
+                                <Link href="/services/seo-services/ecommerce-seo-services" className="hover:underline">E-commerce Growth Partners</Link>
                             </span>
                         </div>
 

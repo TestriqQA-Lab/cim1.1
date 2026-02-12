@@ -100,8 +100,8 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            From headless platforms like Contentful, Strapi, and Sanity to traditional powerhouses
-                            like WordPress and Drupal - we build CMS solutions that empower your content teams.
+                            From headless platforms like <Link href="/services/web-design-development/contentful-headless-cms" className="hover:text-[#9333ea] transition-colors">Contentful</Link>, <Link href="/services/web-design-development/strapi-headless-cms" className="hover:text-[#9333ea] transition-colors">Strapi</Link>, and <Link href="/blog/headless-cms-sanity-nextjs-decoupled-frontends-2026" className="hover:text-[#9333ea] transition-colors">Sanity</Link> to traditional powerhouses
+                            like <Link href="/services/web-design-development/wordpress-development-services" className="hover:text-[#9333ea] transition-colors">WordPress</Link> and <Link href="/services/web-design-development/drupal-cms" className="hover:text-[#9333ea] transition-colors">Drupal</Link> - we build CMS solutions that empower your content teams.
                         </p>
 
                         {/* Feature Pills */}

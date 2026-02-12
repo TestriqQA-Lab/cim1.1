@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Newspaper, FileText, Rss, Search, Users, Zap, Shield, Globe, BarChart3, Palette } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -10,7 +11,7 @@ export default function ServiceOverview() {
         {
             icon: Newspaper,
             title: "Custom News Portal Design",
-            description: "Transform your journalism with a Custom news portal design for media agencies. We implement News portal security.",
+            description: <>Transform your journalism with a <Link href="/services/web-design-development" className="hover:underline text-[#a855f7]">Custom news portal design</Link> for media agencies. We implement News portal security.</>,
             details: ["Mobile-responsive layouts", "Video-centric design", "Seamless streaming", "Adaptive user interfaces"]
         },
         {
@@ -22,19 +23,19 @@ export default function ServiceOverview() {
         {
             icon: Zap,
             title: "Automated Publishing",
-            description: "Efficiency is key. We deploy Automated news aggregation and portal setup workflows to keep content fresh.",
+            description: <>Efficiency is key. We deploy <Link href="/services/ai-workflows-automations-services" className="hover:underline text-[#a855f7]">Automated news aggregation</Link> and portal setup workflows to keep content fresh.</>,
             details: ["Global CDN integration", "Reuters/AP API connect", "News portal analytics", "Reader behavior insights"]
         },
         {
             icon: BarChart3,
             title: "Monetization & Growth",
-            description: "Turn views into revenue. Our News portal monetization strategies optimize AdSense and paywalls.",
+            description: <>Turn views into revenue. Our <Link href="/services/performance-marketing" className="hover:underline text-[#a855f7]">News portal monetization</Link> strategies optimize AdSense and paywalls.</>,
             details: ["Programmatic ad setup", "Paywall integration", "Audience growth SEO", "UGC community modules"]
         },
         {
             icon: FileText,
             title: "Professional Content",
-            description: "Blog writing services and Professional editorial services providing high-E-E-A-T content that ranks.",
+            description: <><Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-[#a855f7]">Blog writing services</Link> and <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-[#a855f7]">Professional editorial services</Link> providing high-E-E-A-T content that ranks.</>,
             details: ["Content strategy", "Topic clusters", "Editorial workflows", "Brief creation"]
         }
     ];

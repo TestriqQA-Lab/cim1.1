@@ -12,6 +12,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -37,7 +38,7 @@ export default function SolutionTypes() {
         {
             icon: ShoppingCart,
             title: "E-commerce Apps",
-            description: "Shopping apps optimized for Huawei AppGallery with HMS payment and push notifications.",
+            description: <><Link href="/services/web-design-development/ecommerce-development-company" className="text-[#C7000B] hover:underline">Shopping apps</Link> optimized for Huawei AppGallery with HMS payment and push notifications.</>,
             features: [
                 "Huawei Pay integration",
                 "Push Kit notifications",
@@ -48,7 +49,7 @@ export default function SolutionTypes() {
         {
             icon: Heart,
             title: "Health & Fitness",
-            description: "Health apps leveraging Huawei Health Kit. Sync with Huawei Watch and fitness bands.",
+            description: <><Link href="/services/web-design-development/healthcare-portals" className="text-[#C7000B] hover:underline">Health apps</Link> leveraging Huawei Health Kit. Sync with Huawei Watch and fitness bands.</>,
             features: [
                 "Health Kit integration",
                 "Wearable sync",
@@ -59,7 +60,7 @@ export default function SolutionTypes() {
         {
             icon: Gamepad2,
             title: "Gaming Apps",
-            description: "High-performance games using HarmonyOS graphics APIs and Huawei Game Center.",
+            description: <><Link href="/services/web-design-development/entertainment-media" className="text-[#C7000B] hover:underline">High-performance games</Link> using HarmonyOS graphics APIs and Huawei Game Center.</>,
             features: [
                 "Game Service",
                 "Leaderboards",
@@ -70,7 +71,7 @@ export default function SolutionTypes() {
         {
             icon: GraduationCap,
             title: "Education Apps",
-            description: "E-learning platforms with multi-device screen sharing and distributed learning features.",
+            description: <><Link href="/services/web-design-development/edtech-lms" className="text-[#C7000B] hover:underline">E-learning platforms</Link> with multi-device screen sharing and distributed learning features.</>,
             features: [
                 "Screen sharing",
                 "Multi-device sync",
@@ -81,7 +82,7 @@ export default function SolutionTypes() {
         {
             icon: Wallet,
             title: "Fintech Apps",
-            description: "Secure financial apps with HMS Safety Detect and FIDO authentication.",
+            description: <><Link href="/services/web-design-development/fintech-solutions" className="text-[#C7000B] hover:underline">Secure financial apps</Link> with HMS Safety Detect and FIDO authentication.</>,
             features: [
                 "Safety Detect",
                 "FIDO authentication",
@@ -192,8 +193,8 @@ export default function SolutionTypes() {
                                     />
                                 </div>
 
-                                <h3 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>{solution.title}</h3>
-                                <p className="text-sm mb-6 line-clamp-3" style={{ color: "var(--secondary-text)" }}>
+                                <h3 className="text-xl font-bold mb-3 relative z-10" style={{ color: "var(--foreground)" }}>{solution.title}</h3>
+                                <p className="text-sm mb-6 line-clamp-3 relative z-10" style={{ color: "var(--secondary-text)" }}>
                                     {solution.description}
                                 </p>
 

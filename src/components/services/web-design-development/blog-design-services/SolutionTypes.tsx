@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { BookOpen, Newspaper, Globe, MessageSquare, GraduationCap, Briefcase, ArrowRight } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -13,6 +14,7 @@ export default function SolutionTypes() {
             description: "Beautiful, fast personal blogs that showcase your voice and build your personal brand.",
             features: ["Custom themes", "Social integration", "Newsletter signup", "Portfolio showcase"],
             accentColor: "#a855f7",
+            link: "/services/web-design-development/wordpress-development-services"
         },
         {
             icon: Briefcase,
@@ -20,6 +22,7 @@ export default function SolutionTypes() {
             description: "Professional content hubs that establish thought leadership and drive business growth.",
             features: ["Brand consistency", "Team collaboration", "Lead generation", "Analytics dashboard"],
             accentColor: "#8b5cf6",
+            link: "/services/web-design-development/business-corporate"
         },
         {
             icon: Newspaper,
@@ -48,6 +51,7 @@ export default function SolutionTypes() {
             description: "Organized documentation and resource centers for products, services, or education.",
             features: ["Search functionality", "Category hierarchy", "Version control", "Feedback system"],
             accentColor: "#9333ea",
+            link: "/services/web-design-development/edtech-lms"
         },
     ];
 
@@ -133,7 +137,13 @@ export default function SolutionTypes() {
 
                                     {/* Title */}
                                     <h3 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>
-                                        {solution.title}
+                                        {solution.link ? (
+                                            <Link href={solution.link} className="hover:underline">
+                                                {solution.title}
+                                            </Link>
+                                        ) : (
+                                            solution.title
+                                        )}
                                     </h3>
 
                                     {/* Description */}

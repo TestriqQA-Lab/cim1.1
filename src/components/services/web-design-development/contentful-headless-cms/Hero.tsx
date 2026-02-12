@@ -83,9 +83,9 @@ export default function Hero() {
                             }}
                         >
                             <Layers className="w-4 h-4" style={{ color: "#4DA3FF" }} />
-                            <span className="text-sm font-medium" style={{ color: "#0286FF" }}>
+                            <Link href="/services/web-design-development/headless-traditional-cms" className="hover:underline text-sm font-medium" style={{ color: "#0286FF" }}>
                                 Composable Content Platform
-                            </span>
+                            </Link>
                         </div>
 
                         {/* Title */}
@@ -125,7 +125,7 @@ export default function Hero() {
                                 "Content Graph",
                                 "GraphQL & REST",
                                 "99.99% Uptime",
-                                "Enterprise SaaS",
+                                <Link href="/services/web-design-development/saas-development-services" className="hover:underline text-inherit">Enterprise SaaS</Link>,
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -285,7 +285,7 @@ export default function Hero() {
                                 Built With Modern Stack
                             </p>
                             <div className="flex flex-wrap gap-2">
-                                {["Contentful", "GraphQL", "REST API", "React", "Next.js", "TypeScript"].map((tech, idx) => (
+                                {["Contentful", "GraphQL", "REST API", "React", <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[#0286FF] transition-colors">Next.js</Link>, "TypeScript"].map((tech, idx) => (
                                     <span
                                         key={idx}
                                         className="px-3 py-1.5 rounded-full text-xs font-medium border"

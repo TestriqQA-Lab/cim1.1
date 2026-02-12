@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
         {
             icon: Video,
             title: "Video Streaming Mastery",
-            description: "HD video delivery with adaptive bitrate streaming, DRM protection, and seamless playback across devices.",
+            description: <>HD video delivery with adaptive bitrate streaming, DRM protection, and seamless playback across <Link href="/services/web-design-development/entertainment-media" className="hover:underline text-[#ec4899]">devices</Link>.</>,
             highlights: [
                 { icon: Video, text: "4K streaming" },
                 { icon: Shield, text: "DRM protection" },
@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
         {
             icon: Users,
             title: "Engaging User Experience",
-            description: "Intuitive interfaces that keep learners motivated with gamification, progress tracking, and social features.",
+            description: <>Intuitive interfaces that keep learners motivated with <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline text-[#f97316]">gamification</Link>, progress tracking, and social features.</>,
             highlights: [
                 { icon: Sparkles, text: "Gamification" },
                 { icon: TrendingUp, text: "Progress tracking" },
@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
         {
             icon: BarChart3,
             title: "Data-Driven Insights",
-            description: "Comprehensive analytics dashboards that track learner engagement, course completion, and learning outcomes.",
+            description: <>Comprehensive <Link href="/services/seo-services" className="hover:underline text-[#a855f7]">analytics dashboards</Link> that track learner engagement, course completion, and learning outcomes.</>,
             highlights: [
                 { icon: BarChart3, text: "Learning analytics" },
                 { icon: Target, text: "Completion tracking" },

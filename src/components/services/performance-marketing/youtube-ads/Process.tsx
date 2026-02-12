@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Search, PenTool, Video, Target, Play, BarChart2 } from "lucide-react";
 
 export default function Process() {
@@ -13,7 +14,7 @@ export default function Process() {
         {
             id: 1,
             icon: Search,
-            title: "Audience Research",
+            title: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Audience Research</Link>,
             description: "Deep dive into viewer behaviors, interests, and competitor channels.",
             deliverables: ["Audience personas", "Keyword analysis", "Placement lists"],
         },
@@ -27,7 +28,7 @@ export default function Process() {
         {
             id: 3,
             icon: Video,
-            title: "Production & Editing",
+            title: <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Production & Editing</Link>,
             description: "Creating high-quality video assets optimized for all devices.",
             deliverables: ["Raw footage", "Motion graphics", "Sound design"],
         },
@@ -48,7 +49,7 @@ export default function Process() {
         {
             id: 6,
             icon: BarChart2,
-            title: "Analysis & Scaling",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Analysis & Scaling</Link>,
             description: "Detailed reporting and scale-up strategies for topperformers.",
             deliverables: ["Performance reports", "ROI analysis", "Scaling plan"],
         },

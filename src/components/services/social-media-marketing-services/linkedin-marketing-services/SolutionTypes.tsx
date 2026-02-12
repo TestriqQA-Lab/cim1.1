@@ -11,6 +11,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -20,7 +21,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Cpu,
-            title: "Technology & SaaS",
+            title: <Link href="/services/web-design-development/saas-application-development" className="hover:underline">Technology & SaaS</Link>,
             description: "LinkedIn ads management for SaaS tailored to reach CTOs and IT decision-makers.",
             features: [
                 "IT decision-maker targeting",
@@ -44,7 +45,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Stethoscope,
-            title: "Healthcare & Pharma",
+            title: <Link href="/services/web-design-development/healthcare-portals" className="hover:underline">Healthcare & Pharma</Link>,
             description: "Compliance-focused messaging for medical professionals and hospital administrators.",
             features: [
                 "HCP targeting",
@@ -56,7 +57,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Landmark,
-            title: "Financial Services",
+            title: <Link href="/services/web-design-development/fintech-solutions" className="hover:underline">Financial Services</Link>,
             description: "LinkedIn marketing for financial services designed to build high-level trust and authority.",
             features: [
                 "Wealth advisors",
@@ -68,7 +69,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Briefcase,
-            title: "Recruiting & HR",
+            title: <Link href="/services/web-design-development/portal-development" className="hover:underline">Recruiting & HR</Link>,
             description: "Dominate LinkedIn recruitment advertising services to attract top-tier global talent.",
             features: [
                 "Employer branding",

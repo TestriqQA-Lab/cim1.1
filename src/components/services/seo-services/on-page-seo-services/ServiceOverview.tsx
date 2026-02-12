@@ -9,6 +9,7 @@ import {
     Gauge,
     Code,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -19,37 +20,37 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Type,
-            title: "Multi-Step Title Tag Optimization",
+            title: <Link href="/services/seo-services" className="hover:underline">Multi-Step Title Tag Optimization</Link>,
             description: "We don't just add keywords; we engineer clicks. Our on-page SEO keyword mapping services ensure every title tag is a high-CTR hook that satisfies user intent.",
             color: seoGreen,
         },
         {
             icon: FileText,
-            title: "Meta Description & Snippet Engineering",
+            title: <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline">Meta Description & Snippet Engineering</Link>,
             description: "Maximize your real estate on the SERP. We craft persuasive descriptions that improve CTR by 20%+ while naturally integrating on-page SEO variants.",
             color: "#3B82F6",
         },
         {
             icon: ImageIcon,
-            title: "Performance-First Image Optimization",
+            title: <Link href="/services/web-design-development" className="hover:underline">Performance-First Image Optimization</Link>,
             description: "Speed is a ranking factor. Our On-page SEO image optimization services include WebP conversion, lazy loading, and accessibility-rich alt text for visual search dominance.",
             color: "#F59E0B",
         },
         {
             icon: Link2,
-            title: "Advanced Internal Linking Strategy",
+            title: <Link href="/services/seo-services/link-building" className="hover:underline">Advanced Internal Linking Strategy</Link>,
             description: "Build a topic cluster that search engines love. We use semantic silos to distribute link equity, ensuring your priority pages rank faster.",
             color: "#8B5CF6",
         },
         {
             icon: Gauge,
-            title: "Core Web Vitals & Page Speed",
+            title: <Link href="/services/web-design-development" className="hover:underline">Core Web Vitals & Page Speed</Link>,
             description: "2026 updates demand speed. We optimize LCP, FID, and CLS, ensuring a seamless user experience SEO that keeps visitors engaged.",
             color: "#EC4899",
         },
         {
             icon: Code,
-            title: "High-E-E-A-T Schema Markup Implementation",
+            title: <Link href="/services/seo-services" className="hover:underline">High-E-E-A-T Schema Markup Implementation</Link>,
             description: "Speak Google's language. We implement custom on-page SEO schema markup implementation (JSON-LD) for rich snippets, FAQs, and organization authority.",
             color: "#06B6D4",
         },
@@ -102,7 +103,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Generic SEO is dead. Our framework focuses on deep <strong>on-page SEO technical audits and implementation</strong> to ensure your site is crawlable, relevant, and authoritative.
+                        Generic SEO is dead. Our framework focuses on deep <strong><Link href="/services/seo-services/technical-seo-services" className="hover:underline">on-page SEO technical audits</Link> and implementation</strong> to ensure your site is crawlable, relevant, and authoritative.
                     </p>
                 </div>
 

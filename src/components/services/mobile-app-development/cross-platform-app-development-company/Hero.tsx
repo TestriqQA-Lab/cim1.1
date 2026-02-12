@@ -131,7 +131,7 @@ export default function Hero() {
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
                                 "Single Codebase Efficiency",
-                                "iOS & Android Native Feel",
+                                <><Link href="/services/mobile-app-development/ios-app-development-company" className="text-inherit hover:text-[#667eea] transition-colors">iOS</Link> & <Link href="/services/mobile-app-development/android-app-development-company" className="text-inherit hover:text-[#667eea] transition-colors">Android</Link> Native Feel</>,
                                 "Dual Store Deployment",
                                 "App Store & Play Store Ready",
                                 "Certified Cross-Platform Experts",

@@ -10,6 +10,7 @@ import {
     CheckCircle2,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [activeStep, setActiveStep] = useState<number | null>(null);
@@ -31,7 +32,7 @@ export default function Process() {
         {
             icon: Layers,
             title: "UI/UX Design",
-            description: "Design intuitive interfaces following HarmonyOS design guidelines with adaptive layouts for multi-device support.",
+            description: <><Link href="/services/brand-identity-design" className="text-[#C7000B] hover:underline">Design intuitive interfaces</Link> following HarmonyOS design guidelines with adaptive layouts for multi-device support.</>,
             details: [
                 "HarmonyOS design system",
                 "Multi-device layouts",
@@ -76,7 +77,7 @@ export default function Process() {
                 "ASO optimization",
                 "AppGallery submission",
                 "Launch monitoring",
-                "Post-launch support",
+                <Link href="/services/additional-support-services" className="text-[#C7000B] hover:underline">Post-launch support</Link>,
             ],
             duration: "1-2 Weeks",
         },

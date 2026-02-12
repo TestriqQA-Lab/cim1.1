@@ -40,7 +40,7 @@ export default function CTA() {
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-4" style={{ color: "var(--secondary-text)" }}>
-                        Don&apos;t leave sales on the table. Partner with an ecommerce SEO agency that delivers measurable ROI, not vanity metrics.
+                        Don&apos;t leave sales on the table. Partner with an <Link href="/about" className="hover:underline" style={{ color: commerceBlue }}>ecommerce SEO agency</Link> that delivers measurable ROI, not vanity metrics.
                     </p>
 
                     <p className="text-base md:text-lg max-w-2xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ArrowRight, Flame, Globe2, Target, Smartphone, Sparkles } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -10,14 +11,14 @@ export default function SolutionTypes() {
 
     const solutions = [
         {
-            title: "Launch & Connect",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--primary)] transition-colors">Launch & Connect</Link>,
             icon: Flame,
             frontDescription: "Create massive buzz for new product launches or major announcements.",
             backDescription: "Use Trend Takeovers and First View metrics to ensure your brand is the first thing users see. Perfect for maximizing Day 1 impact.",
             stats: "+40% Brand Recall",
         },
         {
-            title: "App Installs",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[var(--primary)] transition-colors">App Installs</Link>,
             icon: Smartphone,
             frontDescription: "Drive high-intent downloads with specialized App Cards.",
             backDescription: "Leverage X's mobile-first audience. App Cards feature an 'Install' button and rating preview to drive seamless conversions.",
@@ -31,7 +32,7 @@ export default function SolutionTypes() {
             stats: "Real-Time Engagement",
         },
         {
-            title: "Precision Targeting",
+            title: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Precision Targeting</Link>,
             icon: Target,
             frontDescription: "Target based on conversations, keywords, and followalike audiences.",
             backDescription: "Reach people who are talking about specific topics or are similar to followers of your competitors.",

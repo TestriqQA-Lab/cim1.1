@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Shield, Target, BarChart3, Users, CheckCircle, Award } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -21,7 +22,7 @@ export default function WhyChooseUs() {
             id: 2,
             icon: Target,
             title: "Niche Relevance",
-            description: "Every link we build is from a site relevant to your industry, maximizing SEO value.",
+            description: <>Every link we build is from a site relevant to your industry, maximizing <Link href="/services/seo-services" className="hover:underline" style={{ color: linkCyan }}>SEO value</Link>.</>,
             highlight: "Industry-Targeted",
         },
         {

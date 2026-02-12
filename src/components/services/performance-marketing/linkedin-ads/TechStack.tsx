@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("campaign");
@@ -15,23 +16,23 @@ export default function TechStack() {
         { id: "integration", label: "Integrations" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string | React.ReactNode; logo: string }[]> = {
         campaign: [
             { name: "LinkedIn Campaign Manager", description: "Ad Management", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
             { name: "LinkedIn Sales Navigator", description: "Prospecting", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "Canva", description: "Creative Design", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva", description: <Link href="/services/brand-identity-design" className="hover:text-[var(--primary)] transition-colors">Creative Design</Link>, logo: "/images/brand-identity-design-logos/canva-logo.png" },
             { name: "Figma", description: "Ad Design", logo: "/images/techstack_logos/figma-logo.svg" },
         ],
         analytics: [
             { name: "LinkedIn Insight Tag", description: "Conversion Tracking", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "Google Analytics", description: "Traffic Analysis", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Traffic Analysis</Link>, logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
             { name: "Google Looker Studio", description: "Reporting", logo: "/images/techstack_logos/Google-Looker-Studio-logo.svg" },
             { name: "Supermetrics", description: "Data Pipeline", logo: "/images/techstack_logos/Supermetrics-logo.jpg" },
         ],
         integration: [
-            { name: "HubSpot", description: "CRM Sync", logo: "/images/ai_automation_logos/hubspot-logo.png" },
+            { name: "HubSpot", description: <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--primary)] transition-colors">CRM Sync</Link>, logo: "/images/ai_automation_logos/hubspot-logo.png" },
             { name: "Salesforce", description: "Lead Routing", logo: "/images/techstack_logos/Salesforce-logo.png" },
-            { name: "Zapier", description: "Automation", logo: "/images/ai_automation_logos/zapier-logo.svg" },
+            { name: "Zapier", description: <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--primary)] transition-colors">Automation</Link>, logo: "/images/ai_automation_logos/zapier-logo.svg" },
             { name: "Mailchimp", description: "Email Marketing", logo: "/images/ai_automation_logos/mailchimp-logo.svg" },
         ],
     };

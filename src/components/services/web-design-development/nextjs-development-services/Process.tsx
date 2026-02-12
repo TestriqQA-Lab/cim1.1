@@ -72,7 +72,7 @@ export default function Process() {
                 "Custom component library",
                 "State management plan",
                 "Routing architecture",
-                "UI/UX system design",
+                <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-inherit">UI/UX system design</Link>,
             ],
             bgColor: "#00d4ff",
         },
@@ -129,7 +129,7 @@ export default function Process() {
             description:
                 "Implementing Next.js SEO audit recommendations and integrating comprehensive analytics.",
             deliverables: [
-                "SEO audit implementation",
+                <Link href="/services/seo-services" className="hover:text-inherit">SEO audit implementation</Link>,
                 "Analytics integration",
                 "Sitemap & robots.txt",
                 "Metadata optimization",

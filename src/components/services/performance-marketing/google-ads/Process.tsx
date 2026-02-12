@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, BarChart, Settings, Target, TrendingUp, Rocket, CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     // Google Ads brand colors
@@ -18,7 +19,7 @@ export default function Process() {
         {
             id: 2,
             icon: Target,
-            title: "Strategy Development",
+            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Strategy Development</Link>,
             description: "Custom campaign strategy aligned with your business goals and budget.",
             details: ["Keyword research", "Audience segmentation", "Budget allocation"],
         },
@@ -46,7 +47,7 @@ export default function Process() {
         {
             id: 6,
             icon: BarChart,
-            title: "Report & Iterate",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Report & Iterate</Link>,
             description: "Transparent reporting with actionable insights and strategic recommendations.",
             details: ["Weekly reports", "Monthly reviews", "Quarterly strategy"],
         },

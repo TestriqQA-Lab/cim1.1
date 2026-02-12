@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, MapPin, Search, Users, Phone, BarChart, Award } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
@@ -13,7 +14,7 @@ export default function WhyChooseUs() {
         {
             icon: MapPin,
             title: "Proximity & Relevance Mastery",
-            description: "We rank you for 'near me' searches in your exact target radius - By optimizing your GBP's service area boundaries and creating neighborhood-specific content clusters, we ensure your business appears for the highest-converting proximity searches within 1-5 miles.",
+            description: <><Link href="/services/seo-services/on-page-seo-services" className="hover:text-amber-500 transition-colors">By creating neighborhood-specific content clusters</Link>, we ensure your business appears for the highest-converting proximity searches within 1-5 miles.</>,
         },
         {
             icon: Search,
@@ -28,12 +29,12 @@ export default function WhyChooseUs() {
         {
             icon: Phone,
             title: "Full Call Tracking & Attribution",
-            description: "Know exactly which keywords generate paying customers - We implement dynamic number insertion (DNI) and call recording to track every phone lead back to its source. You'll see precisely which $500 monthly campaign drove $12,000 in revenue.",
+            description: <><Link href="/services/performance-marketing" className="hover:text-amber-500 transition-colors">Know exactly which keywords generate paying customers</Link> - We implement dynamic number insertion (DNI) and call recording to track every phone lead back to its source.</>,
         },
         {
             icon: BarChart,
             title: "Conversion Rate Optimization for GBP",
-            description: "Traffic means nothing without conversions - We A/B test GBP descriptions, service menu layouts, booking button placements, and photo sequences to maximize click-to-call rates. Our optimized profiles convert 3.2x higher than industry benchmarks.",
+            description: <><Link href="/services/performance-marketing" className="hover:underline">Traffic means nothing without conversions</Link> - We A/B test GBP descriptions, service menu layouts, booking button placements, and photo sequences to maximize click-to-call rates. Our optimized profiles convert 3.2x higher than industry benchmarks.</>,
         },
         {
             icon: Check,

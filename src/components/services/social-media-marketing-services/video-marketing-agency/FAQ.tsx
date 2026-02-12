@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { MessageSquare, ChevronDown } from 'lucide-react';
+import Link from "next/link";
 
 export default function FAQ() {
     const [faqOpen, setFaqOpen] = useState<number | null>(null);
@@ -9,15 +10,15 @@ export default function FAQ() {
     const faqs = [
         {
             q: "How much do professional YouTube marketing services cost in 2026?",
-            a: "YouTube marketing cost for small business starts at $1,500/month for basic management. Full-service YouTube ads management typically ranges from $5,000 to $25,000+ per month, depending on ad spend and content frequency. We offer tiered pricing to fit scalable growth.",
+            a: <><Link href="/services/social-media-marketing-services" className="hover:underline text-red-500">YouTube marketing cost</Link> for small business starts at $1,500/month for basic management. Full-service YouTube ads management typically ranges from $5,000 to $25,000+ per month, depending on ad spend and content frequency. We offer tiered pricing to fit scalable growth.</>,
         },
         {
             q: "How long does it take to see ROI from YouTube marketing?",
-            a: "While YouTube ads management can drive local leads in 2-4 weeks, organic YouTube SEO services typically take 3-6 months to build significant authority. However, once the \"algorithm flywheel\" starts, the ROI is compounding and long-term.",
+            a: <>While YouTube ads management can drive local leads in 2-4 weeks, organic <Link href="/services/seo-services" className="hover:underline text-red-500">YouTube SEO services</Link> typically take 3-6 months to build significant authority. However, once the "algorithm flywheel" starts, the ROI is compounding and long-term.</>,
         },
         {
             q: "What are the benefits of hiring a YouTube advertising agency?",
-            a: "A professional YouTube marketing agency provides expertise in creative testing, ad creative testing, and YouTube analytics and reporting that internal teams often lack. We ensure your budget isn't wasted on low-retention audiences, driving a 30% higher ROAS on average.",
+            a: <><Link href="/services/performance-marketing/youtube-ads" className="hover:underline text-red-500">YouTube advertising agency</Link> provides expertise in creative testing, ad creative testing, and YouTube analytics and reporting that internal teams often lack. We ensure your budget isn't wasted on low-retention audiences, driving a 30% higher ROAS on average.</>,
         },
         {
             q: "What is included in a full-service YouTube ads management package?",
@@ -25,7 +26,7 @@ export default function FAQ() {
         },
         {
             q: "How do I choose the best YouTube marketing service for my business?",
-            a: "Look for an agency with verified case studies, Google Ads certifications, and a deep understanding of the YouTube algorithm. At Cinute Infomedia, we provide a transparent audit BEFORE you sign, ensuring we are the right fit for your tech stack and goals.",
+            a: <>Look for an agency with verified case studies, <Link href="/services/performance-marketing/google-ads" className="hover:underline text-red-500">Google Ads</Link> certifications, and a deep understanding of the YouTube algorithm. At Cinute Infomedia, we provide a transparent audit BEFORE you sign, ensuring we are the right fit for your tech stack and goals.</>,
         },
         {
             q: "Can you help with YouTube shorts marketing strategy for brands?",

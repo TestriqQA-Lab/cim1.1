@@ -1,6 +1,7 @@
 "use client";
 
 import { Settings, Database, Layers, Users, TrendingUp, RefreshCw } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const highlights = [
@@ -11,7 +12,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Database,
-            title: "API-First Architecture",
+            title: <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[#9333ea] transition-colors">API-First Architecture</Link>,
             description: "Deliver content anywhere via REST or GraphQL APIs for true omnichannel experiences.",
         },
         {

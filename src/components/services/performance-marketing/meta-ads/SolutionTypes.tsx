@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ShoppingCart, Users, Download, Play, MessageSquare, Repeat, Target } from "lucide-react";
 
 export default function SolutionTypes() {
@@ -12,7 +13,7 @@ export default function SolutionTypes() {
     const objectives = [
         {
             icon: Users,
-            title: "Awareness",
+            title: <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--primary)] transition-colors">Awareness</Link>,
             description: "Build brand recognition and reach new audiences.",
             metrics: ["Reach", "Brand Lift", "Ad Recall", "Video Views"],
             color: "#1877f2",
@@ -33,14 +34,14 @@ export default function SolutionTypes() {
         },
         {
             icon: Download,
-            title: "App Promotion",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[var(--primary)] transition-colors">App Promotion</Link>,
             description: "Drive installs and engagement for your mobile app.",
             metrics: ["Installs", "App Events", "ROAS", "Retention"],
             color: "#6C5CE7",
         },
         {
             icon: Play,
-            title: "Video Marketing",
+            title: <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:text-[var(--primary)] transition-colors">Video Marketing</Link>,
             description: "Capture attention with immersive video content.",
             metrics: ["ThruPlays", "View Rate", "Watch Time", "Shares"],
             color: "#E4405F",

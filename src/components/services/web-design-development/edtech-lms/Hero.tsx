@@ -99,6 +99,42 @@ export default function Hero() {
                         <div className="flex flex-wrap gap-3">
                             {features.map((feature, idx) => {
                                 const Icon = feature.icon;
+                                if (feature.text === "Analytics") {
+                                    return (
+                                        <Link
+                                            key={idx}
+                                            href="/services/seo-services"
+                                            className="flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300 hover:scale-105"
+                                            style={{
+                                                backgroundColor: "var(--card-bg)",
+                                                borderColor: "var(--border-color)",
+                                            }}
+                                        >
+                                            <Icon className="w-4 h-4" style={{ color: "#a855f7" }} />
+                                            <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>
+                                                {feature.text}
+                                            </span>
+                                        </Link>
+                                    );
+                                }
+                                if (feature.text === "Video Streaming") {
+                                    return (
+                                        <Link
+                                            key={idx}
+                                            href="/services/social-media-marketing-services/video-marketing-agency"
+                                            className="flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300 hover:scale-105"
+                                            style={{
+                                                backgroundColor: "var(--card-bg)",
+                                                borderColor: "var(--border-color)",
+                                            }}
+                                        >
+                                            <Icon className="w-4 h-4" style={{ color: "#a855f7" }} />
+                                            <span className="text-sm font-medium" style={{ color: "var(--foreground)" }}>
+                                                {feature.text}
+                                            </span>
+                                        </Link>
+                                    );
+                                }
                                 return (
                                     <div
                                         key={idx}
@@ -184,7 +220,7 @@ export default function Hero() {
                             </div>
                             <div className="flex items-center gap-2 px-3 py-2 rounded-lg border backdrop-blur-sm" style={{ borderColor: "rgba(249, 115, 22, 0.3)", backgroundColor: "rgba(255, 255, 255, 0.5)" }}>
                                 <Sparkles className="w-4 h-4" style={{ color: "#f97316" }} />
-                                <span className="text-xs font-bold" style={{ color: "var(--foreground)" }}>AI-Powered</span>
+                                <Link href="/services/ai-chatbots-services" className="hover:underline text-xs font-bold" style={{ color: "var(--foreground)" }}>AI-Powered</Link>
                             </div>
                         </div>
 

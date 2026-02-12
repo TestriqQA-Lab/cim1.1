@@ -71,7 +71,7 @@ export default function Hero() {
                         >
                             <MonitorPlay className="w-4 h-4" style={{ color: youtubeRed }} />
                             <span className="text-sm font-semibold" style={{ color: youtubeRed }}>
-                                Video Marketing Experts
+                                <Link href="/services/social-media-marketing-services/video-marketing-agency" className="hover:underline">Video Marketing Experts</Link>
                             </span>
                         </div>
 

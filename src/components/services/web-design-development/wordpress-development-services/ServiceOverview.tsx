@@ -9,6 +9,7 @@ import {
     Gauge,
     ShieldCheck,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServiceOverview() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -24,7 +25,7 @@ export default function ServiceOverview() {
         {
             icon: ShoppingBag,
             title: "WooCommerce Development",
-            description: "Specialized WooCommerce development and customization services. High conversion flows, secure payments, and smart inventory management.",
+            description: <>Specialized <Link href="/services/web-design-development/ecommerce-development-company" className="text-[#0073AA] hover:underline">WooCommerce development</Link> and customization services. High conversion flows, secure payments, and smart inventory management.</>,
             gradient: "from-emerald-500 to-teal-500",
             shadowColor: "rgba(16, 185, 129, 0.4)",
         },
@@ -45,14 +46,14 @@ export default function ServiceOverview() {
         {
             icon: Gauge,
             title: "Performance & Speed",
-            description: "Elite WordPress speed optimization services. Better Core Web Vitals, 90+ PageSpeed scores, and advanced caching strategies.",
+            description: <>Elite <Link href="/blog/web-performance-optimization-speed" className="text-[#0073AA] hover:underline">WordPress speed optimization services</Link>. Better Core Web Vitals, 90+ PageSpeed scores, and advanced caching strategies.</>,
             gradient: "from-yellow-500 to-amber-500",
             shadowColor: "rgba(245, 158, 11, 0.4)",
         },
         {
             icon: ShieldCheck,
             title: "Security & Hardening",
-            description: "24/7 WordPress security audit and hardening services. Malware protection, SSL encryption, and robust firewall setup.",
+            description: <>24/7 <Link href="/blog/cybersecurity-small-businesses" className="text-[#0073AA] hover:underline">WordPress security audit</Link> and hardening services. Malware protection, SSL encryption, and robust firewall setup.</>,
             gradient: "from-indigo-500 to-violet-500",
             shadowColor: "rgba(99, 102, 241, 0.4)",
         },

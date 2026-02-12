@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Layers, Server, Code, Database, Cloud, Shield } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function TechStack() {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -42,8 +44,8 @@ export default function TechStack() {
             icon: Database,
             description: "Flexible content management solutions",
             technologies: [
-                { name: "Contentful", description: "Headless CMS", logo: "/images/techstack_logos/Contentful-logo.webp" },
-                { name: "Strapi", description: "Open-source headless CMS", logo: "/images/techstack_logos/Strapi-logo.png" },
+                { name: <Link href="/services/web-design-development/contentful-headless-cms" className="hover:underline">Contentful</Link>, description: "Headless CMS", logo: "/images/techstack_logos/Contentful-logo.webp" },
+                { name: <Link href="/services/web-design-development/strapi-headless-cms" className="hover:underline">Strapi</Link>, description: "Open-source headless CMS", logo: "/images/techstack_logos/Strapi-logo.png" },
                 { name: "Sanity", description: "Real-time content platform", logo: "/images/techstack_logos/Sanity-square-logo.png" },
                 { name: "Prismic", description: "Slice-based CMS", logo: "/images/techstack_logos/prismic-logo.webp" },
                 { name: "Directus", description: "Open data platform", logo: "/images/techstack_logos/Directus-logo.png" },
@@ -61,7 +63,7 @@ export default function TechStack() {
                 { name: "Segment", description: "Customer data platform", logo: "/images/techstack_logos/Segment-logo.png" },
                 { name: "Algolia", description: "Search & discovery", logo: "/images/techstack_logos/algolia-logo.webp" },
                 { name: "Recombee", description: "AI recommendations", logo: "/images/techstack_logos/Recombee-logo.png" },
-                { name: "OpenAI", description: "Content personalization", logo: "/images/techstack_logos/OpenAI-logo.png" },
+                { name: <Link href="/services/ai-chatbots-services" className="hover:underline">OpenAI</Link>, description: "Content personalization", logo: "/images/techstack_logos/OpenAI-logo.png" },
             ],
         },
         {
@@ -84,7 +86,7 @@ export default function TechStack() {
             icon: Server,
             description: "Scalable infrastructure and real-time features",
             technologies: [
-                { name: "Firebase", description: "Real-time database & auth", logo: "/images/techstack_logos/firebase-logo.svg" },
+                { name: <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">Firebase</Link>, description: "Real-time database & auth", logo: "/images/techstack_logos/firebase-logo.svg" },
                 { name: "Supabase", description: "Open-source Firebase", logo: "/images/techstack_logos/supabase-logo.webp" },
                 { name: "Socket.io", description: "Real-time communication", logo: "/images/techstack_logos/Socket-io-logo.png" },
                 { name: "Redis", description: "In-memory data store", logo: "/images/techstack_logos/redis-logo.svg" },
@@ -220,7 +222,7 @@ export default function TechStack() {
                                     {tech.logo ? (
                                         <Image
                                             src={tech.logo}
-                                            alt={tech.name}
+                                            alt={typeof tech.name === 'string' ? tech.name : "Technology"}
                                             width={40}
                                             height={40}
                                             className="object-contain"
@@ -230,7 +232,7 @@ export default function TechStack() {
                                             className="text-lg font-bold"
                                             style={{ color: "#8b5cf6" }}
                                         >
-                                            {tech.name.charAt(0)}
+                                            {typeof tech.name === 'string' ? tech.name.charAt(0) : "*"}
                                         </span>
                                     )}
                                 </div>

@@ -10,6 +10,7 @@ import {
     HeadphonesIcon,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -97,7 +98,7 @@ export default function WhyChooseUs() {
                         {
                             icon: Award,
                             title: "LinkedIn Certified Experts",
-                            description: "Our team holds the highest tier of LinkedIn Marketing certifications for B2B advertising.",
+                            description: <>Our team holds the highest tier of <Link href="/about" className="hover:underline text-blue-500">LinkedIn Marketing certifications</Link> for B2B advertising.</>,
                             color: "#0A66C2",
                         },
                         {
@@ -121,7 +122,7 @@ export default function WhyChooseUs() {
                         {
                             icon: Shield,
                             title: "Future-Proof SEO",
-                            description: "All content is optimized for AI Overviews and 2026 search intent signals.",
+                            description: <>All content is optimized for AI Overviews and 2026 search intent signals (<Link href="/services/seo-services" className="hover:underline text-blue-500">SEO</Link>).</>,
                             color: "#0077B5",
                         },
                         {

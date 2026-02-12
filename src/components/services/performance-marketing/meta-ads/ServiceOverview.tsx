@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Facebook, Instagram, MessageCircle, Globe, Smartphone, ShoppingBag } from "lucide-react";
 
 export default function ServiceOverview() {
@@ -14,7 +15,7 @@ export default function ServiceOverview() {
     const services = [
         {
             icon: Facebook,
-            title: "Facebook Ads",
+            title: <Link href="/services/social-media-marketing-services/facebook-marketing-services" className="hover:text-[var(--primary)] transition-colors">Facebook Ads</Link>,
             description: "Reach 2.9B monthly active users with precision-targeted campaigns.",
             features: ["News Feed Ads", "Stories", "Marketplace", "Video Ads"],
             color: metaBlue,
@@ -22,7 +23,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Instagram,
-            title: "Instagram Ads",
+            title: <Link href="/services/social-media-marketing-services/instagram-marketing-services" className="hover:text-[var(--primary)] transition-colors">Instagram Ads</Link>,
             description: "Engage visual-first audiences with stunning creative formats.",
             features: ["Reels Ads", "Stories", "Feed Posts", "Explore Ads"],
             color: "#E4405F",
@@ -46,7 +47,7 @@ export default function ServiceOverview() {
         },
         {
             icon: ShoppingBag,
-            title: "Advantage+ Shopping",
+            title: <Link href="/services/seo-services/ecommerce-seo-services" className="hover:text-[var(--primary)] transition-colors">Advantage+ Shopping</Link>,
             description: "AI-powered campaigns that automatically optimize for e-commerce sales.",
             features: ["Catalog Sales", "Dynamic Ads", "Collection Ads", "Shop Ads"],
             color: "#00B894",
@@ -54,7 +55,7 @@ export default function ServiceOverview() {
         },
         {
             icon: Smartphone,
-            title: "App Install Campaigns",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[var(--primary)] transition-colors">App Install Campaigns</Link>,
             description: "Drive quality app installs and in-app conversions at scale.",
             features: ["App Installs", "App Events", "Value Optimization", "Playable Ads"],
             color: "#6C5CE7",

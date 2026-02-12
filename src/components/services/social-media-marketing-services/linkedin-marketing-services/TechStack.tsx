@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("ads");
@@ -16,7 +17,7 @@ export default function TechStack() {
         { id: "automation", label: "Automation" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string; logo: string; link?: string }[]> = {
         ads: [
             { name: "LinkedIn Campaign Manager", description: "Advanced ad bidding and audience segmentation.", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
             { name: "LinkedIn Sales Navigator", description: "Hyper-targeted prospecting & outreach automation.", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
@@ -25,7 +26,7 @@ export default function TechStack() {
             { name: "Sales Navigator Integration", description: "Seamless CRM syncing for sales-ready leads.", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
         ],
         crm: [
-            { name: "HubSpot", description: "CRM & Marketing", logo: "/images/ai_automation_logos/hubspot-logo.png" },
+            { name: "HubSpot", description: "CRM & Marketing", logo: "/images/ai_automation_logos/hubspot-logo.png", link: "/services/ai-workflows-automations-services" },
             { name: "Salesforce", description: "Enterprise CRM", logo: "/images/ai_automation_logos/salesforce-logo.png" },
             { name: "Pipedrive", description: "Sales CRM", logo: "/images/techstack_logos/Pipedrive-logo.jpg" },
             { name: "Zoho CRM", description: "Business CRM", logo: "/images/techstack_logos/Zoho-CRM-logo.png" },
@@ -34,14 +35,14 @@ export default function TechStack() {
         ],
         analytics: [
             { name: "LinkedIn Analytics", description: "Native Insights", logo: "/images/performance-marketing-logos/linkedin-ads-logo.svg" },
-            { name: "Google Analytics", description: "Web Traffic", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp" },
+            { name: "Google Analytics", description: "Web Traffic", logo: "/images/organic_growth_and_seo/google-analytics-logo.webp", link: "/services/seo-services/technical-seo-services" },
             { name: "Google Looker", description: "Data Studio", logo: "/images/ai_automation_logos/looker-logo.svg" },
             { name: "Tableau", description: "Visualization", logo: "/images/ai_automation_logos/tableau-logo.svg" },
             { name: "Mixpanel", description: "Product Analytics", logo: "/images/techstack_logos/mixpanel-logo.png" },
             { name: "Hotjar", description: "Heatmaps", logo: "/images/techstack_logos/Hotjar-logo.png" },
         ],
         content: [
-            { name: "Canva", description: "Graphics Design", logo: "/images/brand-identity-design-logos/canva-logo.png" },
+            { name: "Canva", description: "Graphics Design", logo: "/images/brand-identity-design-logos/canva-logo.png", link: "/services/web-design-development/branding-services" },
             { name: "Adobe Creative", description: "Pro Design", logo: "/images/ai_automation_logos/adobe-logo.png" },
             { name: "Figma", description: "UI Design", logo: "/images/techstack_logos/figma-logo.svg" },
             { name: "Loom", description: "Video Recording", logo: "/images/techstack_logos/Loom-logo.png" },
@@ -49,7 +50,7 @@ export default function TechStack() {
             { name: "Notion", description: "Content Planning", logo: "/images/techstack_logos/Notion-logo.png" },
         ],
         automation: [
-            { name: "Zapier", description: "Workflow Automation", logo: "/images/ai_automation_logos/zapier-logo.svg" },
+            { name: "Zapier", description: "Workflow Automation", logo: "/images/ai_automation_logos/zapier-logo.svg", link: "/services/ai-workflows-automations-services" },
             { name: "Make", description: "Integrations", logo: "/images/ai_automation_logos/make-logo.png" },
             { name: "HubSpot Automation", description: "Marketing Automation", logo: "/images/ai_automation_logos/hubspot-logo.png" },
             { name: "Mailchimp", description: "Email Marketing", logo: "/images/ai_automation_logos/mailchimp-logo.svg" },
@@ -133,7 +134,13 @@ export default function TechStack() {
                                 {/* Info */}
                                 <div>
                                     <h4 className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                        {tech.name}
+                                        {tech.link ? (
+                                            <Link href={tech.link} className="hover:text-blue-600 transition-colors">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </h4>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                         {tech.description}

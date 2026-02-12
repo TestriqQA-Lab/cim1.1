@@ -88,7 +88,7 @@ export default function Hero() {
                         >
                             <Droplets className="w-4 h-4" style={{ color: "#29A8DF" }} />
                             <span className="text-sm font-medium" style={{ color: "#0678BE" }}>
-                                Enterprise-Grade Open Source CMS
+                                <Link href="/services/web-design-development/business-corporate" className="hover:underline">Enterprise-Grade Open Source CMS</Link>
                             </span>
                         </div>
 
@@ -128,7 +128,7 @@ export default function Hero() {
                             {[
                                 "Drupal 10/11",
                                 "Multisite",
-                                "Headless CMS",
+                                <Link href="/services/web-design-development/headless-traditional-cms" className="hover:text-[#29A8DF] transition-colors">Headless CMS</Link>,
                                 "100+ Languages",
                             ].map((feature, idx) => (
                                 <div

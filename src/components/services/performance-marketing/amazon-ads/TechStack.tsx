@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeTab, setActiveTab] = useState("platform");
@@ -15,19 +16,19 @@ export default function TechStack() {
         { id: "intelligence", label: "Data Intelligence" },
     ];
 
-    const technologies: Record<string, { name: string; description: string; logo: string }[]> = {
+    const technologies: Record<string, { name: string; description: string | React.ReactNode; logo: string }[]> = {
         platform: [
             { name: "Advertising Console", description: "Campaign Management", logo: "/images/performance-marketing-logos/Amazon-ads-logo.svg" },
             { name: "Seller Central", description: "Inventory & Sales", logo: "/images/performance-marketing-logos/Amazon-ads-logo.svg" },
             { name: "Amazon DSP", description: "Programmatic", logo: "/images/performance-marketing-logos/Amazon-ads-logo.svg" },
         ],
         optimization: [
-            { name: "Helium 10", description: "Keyword Research", logo: "/images/techstack_logos/Helium-10-logo.png" },
+            { name: "Helium 10", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">Keyword Research</Link>, logo: "/images/techstack_logos/Helium-10-logo.png" },
             { name: "Jungle Scout", description: "Product Research", logo: "/images/techstack_logos/Jungle-Scout-logo.png" },
             { name: "Pacvue", description: "Enterprise PPC", logo: "/images/techstack_logos/Pacvue-logo.png" },
         ],
         intelligence: [
-            { name: "DataHawk", description: "SEO & Analytics", logo: "/images/techstack_logos/DataHawk-logo.png" },
+            { name: "DataHawk", description: <Link href="/services/seo-services" className="hover:text-[var(--primary)] transition-colors">SEO & Analytics</Link>, logo: "/images/techstack_logos/DataHawk-logo.png" },
             { name: "Keepa", description: "Price Tracking", logo: "/images/techstack_logos/Keepa-logo.png" },
             { name: "Teikametrics", description: "AI Optimization", logo: "/images/techstack_logos/Teikametrics-logo.jpg" },
         ],

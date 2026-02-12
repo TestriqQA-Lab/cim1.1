@@ -102,9 +102,9 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Dominate Local Search & Attract{" "}
+                            Dominate <Link href="/services/seo-services" className="hover:text-amber-500 transition-colors">Local Search</Link> & Attract{" "}
                             <span className="relative inline-block" style={{ color: localAmber }}>
-                                High-Intent Customers
+                                <Link href="/services/performance-marketing" className="hover:underline text-inherit">High-Intent Customers</Link>
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-50"
                                     style={{ color: localAmber }}
@@ -129,8 +129,8 @@ export default function Hero() {
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
                                 "Google Business Profile",
-                                "Map Pack Rankings",
-                                "Citation Building",
+                                <Link href="/services/seo-services/technical-seo-services" className="hover:text-amber-500 transition-colors">Map Pack Rankings</Link>,
+                                <Link href="/services/seo-services/link-building" className="hover:text-amber-500 transition-colors">Citation Building</Link>,
                                 "Review Generation",
                             ].map((feature, idx) => (
                                 <div

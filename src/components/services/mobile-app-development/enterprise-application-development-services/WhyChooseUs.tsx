@@ -10,6 +10,7 @@ import {
     TrendingUp,
     Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -30,13 +31,13 @@ export default function WhyChooseUs() {
         {
             icon: Sparkles,
             title: "30+ Years of Collective Authority",
-            description: "Our strategists have seen the evolution of the web. We apply three decades of experience to ensure your Enterprise Software Development project avoids common pitfalls.",
+            description: <><span className="text-inherit">Our strategists have seen the evolution of the web. We apply three decades of experience to ensure your </span><Link href="/services/web-design-development" className="text-[#2563eb] hover:underline">Enterprise Software Development</Link> project avoids common pitfalls.</>,
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
             icon: Headphones,
             title: "24/7 Enterprise Support",
-            description: "Dedicated support team with guaranteed SLAs, proactive monitoring, and rapid incident response backed by strict uptime guarantees.",
+            description: <><span className="text-inherit">Dedicated </span><Link href="/services/additional-support-services" className="text-[#2563eb] hover:underline">support</Link> team with guaranteed SLAs, proactive monitoring, and rapid incident response backed by strict uptime guarantees.</>,
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
@@ -48,7 +49,7 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Global Multi-Platform Reach",
-            description: "Target users across the globe with Multi-platform enterprise app development (iOS/Android/Web). We ensure your apps are localization-ready.",
+            description: <><span className="text-inherit">Target users across the globe with Multi-platform enterprise app development (</span><Link href="/services/mobile-app-development/ios-app-development-company" className="text-[#2563eb] hover:underline">iOS</Link>/<Link href="/services/mobile-app-development/android-app-development-company" className="text-[#2563eb] hover:underline">Android</Link>/<Link href="/services/web-design-development" className="text-[#2563eb] hover:underline">Web</Link>). We ensure your apps are localization-ready.</>,
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
     ];

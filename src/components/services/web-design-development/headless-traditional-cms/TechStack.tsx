@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Cloud, Globe, Code2, Database, Rocket, Layers } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TechStack() {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -42,12 +43,12 @@ export default function TechStack() {
             icon: Code2,
             description: "Modern frontend frameworks for CMS",
             technologies: [
-                { name: "Next.js", description: "React framework", logo: "/images/techstack_logos/nextjs-logo.svg" },
+                { name: "Next.js", link: "/services/web-design-development/nextjs-development-services", description: "React framework", logo: "/images/techstack_logos/nextjs-logo.svg" },
                 { name: "React", description: "UI library", logo: "/images/techstack_logos/react-logo.svg" },
                 { name: "Vue.js", description: "Progressive framework", logo: "/images/techstack_logos/vuejs-logo.svg" },
                 { name: "Nuxt", description: "Vue framework", logo: "/images/techstack_logos/nuxt-logo.png" },
                 { name: "Gatsby", description: "Static site generator", logo: "/images/techstack_logos/Gatsby-logo.png" },
-                { name: "Astro", description: "Content-focused framework", logo: "/images/techstack_logos/Astro-logo.svg" },
+                { name: "Astro", link: "/services/web-design-development/astro-framework-services", description: "Content-focused framework", logo: "/images/techstack_logos/Astro-logo.svg" },
             ],
         },
         {
@@ -59,7 +60,7 @@ export default function TechStack() {
                 { name: "GraphQL", description: "Query language", logo: "/images/techstack_logos/graphql-logo.svg" },
                 { name: "REST API", description: "Standard web APIs", logo: "/images/techstack_logos/REST-API-logo.png" },
                 { name: "Prisma", description: "Database ORM", logo: "/images/techstack_logos/prisma-logo.png" },
-                { name: "PostgreSQL", description: "Relational database", logo: "/images/techstack_logos/postgresql-logo.svg" },
+                { name: "PostgreSQL", link: "/services/web-design-development/nodejs-backend", description: "Relational database", logo: "/images/techstack_logos/postgresql-logo.svg" },
                 { name: "MongoDB", description: "NoSQL database", logo: "/images/techstack_logos/mongodb-logo.svg" },
                 { name: "Redis", description: "In-memory cache", logo: "/images/techstack_logos/redis-logo.svg" },
             ],
@@ -70,7 +71,7 @@ export default function TechStack() {
             icon: Rocket,
             description: "Deployment and content delivery",
             technologies: [
-                { name: "Vercel", description: "Frontend cloud", logo: "/images/techstack_logos/vercel-logo.webp" },
+                { name: "Vercel", link: "/services/web-design-development/nextjs-development-services", description: "Frontend cloud", logo: "/images/techstack_logos/vercel-logo.webp" },
                 { name: "Netlify", description: "Web hosting platform", logo: "/images/techstack_logos/netlify-logo.svg" },
                 { name: "AWS", description: "Cloud services", logo: "/images/techstack_logos/aws-logo.png" },
                 { name: "Cloudflare", description: "CDN & security", logo: "/images/techstack_logos/Cloudflare-logo.webp" },
@@ -228,7 +229,15 @@ export default function TechStack() {
                                         className="font-semibold truncate"
                                         style={{ color: "#9333ea" }}
                                     >
-                                        {tech.name}
+                                        {/* @ts-ignore */}
+                                        {tech.link ? (
+                                            /* @ts-ignore */
+                                            <Link href={tech.link} className="hover:underline transition-all">
+                                                {tech.name}
+                                            </Link>
+                                        ) : (
+                                            tech.name
+                                        )}
                                     </p>
                                     <p
                                         className="text-sm truncate"

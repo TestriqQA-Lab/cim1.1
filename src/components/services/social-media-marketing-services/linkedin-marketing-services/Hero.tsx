@@ -107,7 +107,7 @@ export default function Hero() {
                         >
                             LinkedIn Marketing Services for{" "}
                             <span className="relative inline-block" style={{ color: linkedinBlue }}>
-                                B2B Growth
+                                <Link href="/services/performance-marketing" className="hover:underline decoration-blue-500/30">B2B Growth</Link>
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: linkedinBlue }}
@@ -297,7 +297,13 @@ export default function Hero() {
                                             color: "var(--foreground)",
                                         }}
                                     >
-                                        {format}
+                                        {format === "Video Ads" ? (
+                                            <Link href="/services/performance-marketing/youtube-ads" className="hover:underline">
+                                                {format}
+                                            </Link>
+                                        ) : (
+                                            format
+                                        )}
                                     </span>
                                 ))}
                             </div>

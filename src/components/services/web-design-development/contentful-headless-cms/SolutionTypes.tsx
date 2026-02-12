@@ -11,6 +11,7 @@ import {
     ArrowRight,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -35,7 +36,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: ShoppingCart,
-            title: "E-commerce Experiences",
+            title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-[#0286FF] transition-colors">E-commerce Experiences</Link>,
             description: "Headless commerce with Contentful powering product content, marketing pages, and personalized shopping experiences.",
             features: [
                 "Product information management",
@@ -59,8 +60,8 @@ export default function SolutionTypes() {
         },
         {
             icon: Smartphone,
-            title: "Mobile Applications",
-            description: "Power iOS and Android apps with Contentful's APIs for real-time content updates without app store releases.",
+            title: <Link href="/services/mobile-app-development" className="hover:text-[#0286FF] transition-colors">Mobile Applications</Link>,
+            description: <><span className="text-inherit">Power </span><Link href="/services/mobile-app-development/ios-app-development-company" className="text-[#0286FF] hover:underline">iOS</Link> and <Link href="/services/mobile-app-development/android-app-development-company" className="text-[#0286FF] hover:underline">Android</Link> apps with Contentful&apos;s APIs for real-time content updates without app store releases.</>,
             features: [
                 "Over-the-air content",
                 "Push notification content",
@@ -71,7 +72,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Building2,
-            title: "Enterprise Portals",
+            title: <Link href="/services/web-design-development/business-corporate" className="hover:text-[#0059C8] transition-colors">Enterprise Portals</Link>,
             description: "Internal knowledge bases, documentation sites, and employee portals with role-based content access.",
             features: [
                 "Access control",
@@ -84,7 +85,7 @@ export default function SolutionTypes() {
         {
             icon: Briefcase,
             title: "Digital Products",
-            description: "SaaS applications with content-driven onboarding, help centers, and in-app messaging powered by Contentful.",
+            description: <><Link href="/services/web-design-development/saas-development-services" className="text-[#0286FF] hover:underline">SaaS applications</Link> with content-driven onboarding, help centers, and in-app messaging powered by Contentful.</>,
             features: [
                 "In-app messaging",
                 "Help documentation",
@@ -165,7 +166,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

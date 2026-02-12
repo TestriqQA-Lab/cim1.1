@@ -113,10 +113,10 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="text-lg md:text-xl mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.2s" }}>
-                            In the competitive landscape of 2026, a generic resume isn't enough. You need a powerful, automated 24/7 <span style={{ color: "#06b6d4", fontWeight: 700 }}>personal branding engine</span>.
+                            In the competitive landscape of 2026, a generic resume isn't enough. You need a powerful, automated 24/7 <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline text-[#06b6d4] font-bold">personal branding engine</Link>.
                         </p>
                         <p className="text-base md:text-lg mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.3s" }}>
-                            As a premier online reputation management agency and website design services provider, we specialize in crafting high-impact digital narratives for global leaders. We don't just build websites; we engineer Personal Branding Services that position you as an undisputed authority in your niche.
+                            As a premier <Link href="/services/seo-services" className="hover:underline text-[#06b6d4]">online reputation management</Link> agency and <Link href="/services/web-design-development" className="hover:underline text-[#06b6d4]">website design services</Link> provider, we specialize in crafting <Link href="/blog/future-web-development-nextjs" className="hover:underline text-[#06b6d4]">high-impact digital narratives</Link> for global leaders. We don't just build websites; we engineer Personal Branding Services that position you as an undisputed authority in your niche.
                         </p>
 
                         {/* Feature Highlights */}
@@ -154,7 +154,7 @@ export default function Hero() {
                                     Thought Leadership
                                 </span>
                             </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
+                            <Link href="/services/seo-services/technical-seo-services" className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, #06b6d4 8%, transparent)",
                                     animationDelay: "0.25s"
@@ -164,7 +164,7 @@ export default function Hero() {
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
                                     Entity SEO
                                 </span>
-                            </div>
+                            </Link>
                             <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, #06b6d4 8%, transparent)",
@@ -176,7 +176,7 @@ export default function Hero() {
                                     Transitive Trust
                                 </span>
                             </div>
-                            <div className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
+                            <Link href="/services/web-design-development/nextjs-development-services" className="flex items-center gap-3 p-3 rounded-xl transition-all duration-300 hover:scale-105 animate-slideUp"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, #06b6d4 8%, transparent)",
                                     animationDelay: "0.35s"
@@ -186,7 +186,7 @@ export default function Hero() {
                                 <span className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
                                     Next.js / React
                                 </span>
-                            </div>
+                            </Link>
                         </div>
 
                         {/* Stats Section */}
@@ -254,7 +254,7 @@ export default function Hero() {
                                 Control Your Narrative
                                 <ArrowRight className="w-5 h-5" />
                             </Link>
-                            <Link
+                            {/* <Link
                                 href="/contact"
                                 className="inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-2xl text-sm md:text-base font-semibold border transition-all duration-300 hover:bg-cyan-500/5"
                                 style={{
@@ -264,7 +264,7 @@ export default function Hero() {
                             >
                                 See Our Work
                                 <ArrowRight className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
 

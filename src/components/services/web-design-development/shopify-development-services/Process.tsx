@@ -10,6 +10,7 @@ import {
     Rocket,
     Check,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const [hoveredStep, setHoveredStep] = useState<number | null>(null);
@@ -32,11 +33,11 @@ export default function Process() {
             number: "02",
             icon: Palette,
             title: "Design & UX Prototyping",
-            description: "Creating interactive wireframes focusing on Ecommerce UX design to ensure an intuitive path to purchase.",
+            description: <span>Creating interactive wireframes focusing on <Link href="/services/web-design-development/web-design-company" className="text-[#96bf48] hover:underline">Ecommerce UX design</Link> to ensure an intuitive path to purchase.</span>,
             details: [
                 "Interactive wireframing",
                 "Brand-aligned UI/UX",
-                "Mobile-first architecture",
+                <Link key="mobile" href="/services/mobile-app-development" className="hover:text-[#96bf48] transition-colors">Mobile-first architecture</Link>,
                 "High-conversion mapping",
                 "User journey optimization",
             ],
@@ -84,7 +85,7 @@ export default function Process() {
             number: "06",
             icon: Rocket,
             title: "Launch & SEO Deployment",
-            description: "Technical go-live with full SEO implementation and real-time monitoring post-launch.",
+            description: <span>Technical go-live with full <Link href="/services/seo-services" className="text-[#96bf48] hover:underline">SEO implementation</Link> and real-time monitoring post-launch.</span>,
             details: [
                 "Technical launch support",
                 "Advanced SEO setup",

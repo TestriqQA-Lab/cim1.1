@@ -11,6 +11,7 @@ import {
     ArrowRight,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -48,7 +49,7 @@ export default function SolutionTypes() {
         {
             icon: Cloud,
             title: "SaaS Platforms",
-            description: "Multi-tenant software-as-a-service applications with subscription billing and user management.",
+            description: <>Multi-tenant <Link href="/services/web-design-development/saas-development-services" className="text-[#306998] hover:underline">software-as-a-service applications</Link> with subscription billing and user management.</>,
             features: [
                 "Multi-tenancy",
                 "Subscription billing",
@@ -72,7 +73,7 @@ export default function SolutionTypes() {
         {
             icon: FileText,
             title: "Content Management Systems",
-            description: "Flexible CMS solutions with Wagtail or custom Django admin for content teams.",
+            description: <>Flexible <Link href="/services/web-design-development/headless-traditional-cms" className="text-[#306998] hover:underline">CMS solutions</Link> with Wagtail or custom Django admin for content teams.</>,
             features: [
                 "Drag-and-drop editing",
                 "Workflow management",
@@ -84,7 +85,7 @@ export default function SolutionTypes() {
         {
             icon: Layers,
             title: "API-First Backends",
-            description: "Headless architectures and microservices with robust API layers.",
+            description: <>Headless architectures and <Link href="/services/mobile-app-development" className="text-[#306998] hover:underline">microservices</Link> with robust API layers.</>,
             features: [
                 "RESTful APIs",
                 "GraphQL support",
@@ -96,7 +97,7 @@ export default function SolutionTypes() {
         {
             icon: Brain,
             title: "AI/ML Integrations",
-            description: "Leverage Python's ML ecosystem to integrate intelligent features into your applications.",
+            description: <>Leverage Python&apos;s ML ecosystem to <Link href="/services/ai-workflows-automations-services" className="text-[#306998] hover:underline">integrate intelligent features</Link> into your applications.</>,
             features: [
                 "Model integration",
                 "Data pipelines",
@@ -179,7 +180,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

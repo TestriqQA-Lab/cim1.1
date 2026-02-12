@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Award, Shield, TrendingUp, Users, CheckCircle, BarChart3, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -49,7 +50,7 @@ export default function WhyChooseUs() {
         {
             id: 6,
             icon: BarChart3,
-            title: "Data-Driven Decisions",
+            title: <Link href="/blog/data-analytics-insights-action" className="hover:text-[var(--primary)] transition-colors">Data-Driven Decisions</Link>,
             description: "Every optimization backed by data, not guesswork. Weekly iteration cycles.",
             highlight: "Analytics First",
         },

@@ -11,6 +11,7 @@ import {
     ArrowRight,
     CheckCircle2,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SolutionTypes() {
     const [activeSolution, setActiveSolution] = useState<number | null>(null);
@@ -40,7 +41,7 @@ export default function SolutionTypes() {
             features: [
                 "Advanced editorial interfaces",
                 "WordPress SEO setup",
-                "Content marketing optimization",
+                <Link href="/services/seo-services/seo-content-writing-services" className="hover:text-[#0073AA] transition-colors">Content marketing optimization</Link>,
                 "Lightning-fast performance",
             ],
             gradient: "from-[#0073AA] to-[#005177]",
@@ -48,7 +49,7 @@ export default function SolutionTypes() {
         {
             icon: ShoppingCart,
             title: "WooCommerce E-commerce Stores",
-            description: "Scalable online shops designed for high-volume transactions. Custom checkout flows and seamless API integrations.",
+            description: <>Scalable <Link href="/services/web-design-development/ecommerce-development-company" className="text-[#0073AA] hover:underline">online shops</Link> designed for high-volume transactions. Custom checkout flows and seamless API integrations.</>,
             features: [
                 "High-volume transaction support",
                 "Custom checkout flows",
@@ -72,7 +73,7 @@ export default function SolutionTypes() {
         {
             icon: Building2,
             title: "Enterprise & Corporate Portals",
-            description: "Stable, secure, and accessible corporate solutions. Prioritizing WCAG 2.2 accessibility compliance for 100% reach.",
+            description: <>Stable, secure, and accessible <Link href="/services/web-design-development/business-corporate" className="text-[#0073AA] hover:underline">corporate solutions</Link>. Prioritizing WCAG 2.2 accessibility compliance for 100% reach.</>,
             features: [
                 "WCAG 2.2 accessibility compliance",
                 "Enterprise-grade security",
@@ -96,7 +97,7 @@ export default function SolutionTypes() {
         {
             icon: Zap,
             title: "Headless WordPress Solutions",
-            description: "Leverage React/Next.js for decoupling your frontend, delivering unmatched speed and enterprise security.",
+            description: <>Leverage <Link href="/services/web-design-development/nextjs-development-services" className="text-[#0073AA] hover:underline">React/Next.js</Link> for decoupling your frontend, delivering unmatched speed and enterprise security.</>,
             features: [
                 "Next.js / React integration",
                 "Decoupled architecture",
@@ -179,7 +180,7 @@ export default function SolutionTypes() {
                                 {/* Gradient Background on Hover */}
                                 <div
                                     className={`
-                                        absolute inset-0 opacity-0 transition-opacity duration-500
+                                        absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none
                                         ${isActive ? "opacity-5" : ""}
                                     `}
                                     style={{

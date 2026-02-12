@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, Palette, Code, TestTube, Rocket, Headphones } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     const steps = [
@@ -120,7 +121,21 @@ export default function Process() {
                                         {step.number}
                                     </div>
                                     <h3 className="text-xl font-bold" style={{ color: "var(--foreground)" }}>
-                                        {step.title}
+                                        {step.title === "Brand-Aligned Design" ? (
+                                            <Link href="/services/web-design-development/branding-services" className="hover:underline">
+                                                {step.title}
+                                            </Link>
+                                        ) : step.title === "Quality Assurance & Compliance" ? (
+                                            <Link href="/services/seo-services/technical-seo-services" className="hover:underline">
+                                                {step.title}
+                                            </Link>
+                                        ) : step.title === "Controlled Launch" ? (
+                                            <Link href="/services/seo-services" className="hover:underline">
+                                                {step.title}
+                                            </Link>
+                                        ) : (
+                                            step.title
+                                        )}
                                     </h3>
                                 </div>
 

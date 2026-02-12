@@ -7,9 +7,9 @@ export default function ServiceOverview() {
     const deliverables = [
         { icon: Heart, title: "Patient Portals", description: "Self-service portals for appointments, records, and billing" },
         { icon: Shield, title: "HIPAA Compliance", description: "End-to-end encryption and audit logging" },
-        { icon: Clock, title: "Telehealth Integration", description: "Secure video consultations and remote monitoring" },
+        { icon: Clock, title: <Link href="/services/mobile-app-development" className="hover:underline">Telehealth Integration</Link>, description: "Secure video consultations and remote monitoring" },
         { icon: Users, title: "Provider Dashboards", description: "Clinical workflows and patient management" },
-        { icon: FileText, title: "EHR/EMR Integration", description: "Seamless data exchange with existing systems" },
+        { icon: FileText, title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">EHR/EMR Integration</Link>, description: "Seamless data exchange with existing systems" },
         { icon: Activity, title: "Analytics & Reporting", description: "Population health and outcome tracking" },
     ];
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { Search, FileCode, Gauge, Shield, BarChart, RefreshCw } from "lucide-react";
+import Link from "next/link";
 
 export default function Process() {
     // Technical SEO Purple theme color
@@ -9,7 +10,7 @@ export default function Process() {
     const steps = [
         {
             icon: Search,
-            title: "Comprehensive Technical SEO Audit",
+            title: <Link href="/services/seo-services" className="hover:underline">Comprehensive Technical SEO Audit</Link>,
             description: "We check 200+ checkpoints, from 404 error and redirect audit to server response times.",
         },
         {
@@ -20,7 +21,7 @@ export default function Process() {
         {
             icon: Gauge,
             title: "Speed & Core Web Vitals Fixes",
-            description: "Implementing professional website speed optimization services to hit green scores across the board.",
+            description: <>Implementing <Link href="/blog/web-performance-optimization-speed" className="hover:text-purple-500 transition-colors">professional website speed optimization services</Link> to hit green scores across the board.</>,
         },
         {
             icon: Shield,
@@ -29,7 +30,7 @@ export default function Process() {
         },
         {
             icon: BarChart,
-            title: "Schema Markup Implementation Services",
+            title: <Link href="/blog/mastering-seo-organic-growth" className="hover:underline">Schema Markup Implementation Services</Link>,
             description: "Deploying Structured data and JSON-LD to secure rich snippets and AI Overview visibility.",
         },
         {

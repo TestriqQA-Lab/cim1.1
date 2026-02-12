@@ -73,7 +73,7 @@ export default function Hero() {
                         >
                             <Briefcase className="w-4 h-4" style={{ color: linkedInBlue }} />
                             <span className="text-sm font-semibold" style={{ color: linkedInBlue }}>
-                                LinkedIn Marketing Partner
+                                <Link href="/services/social-media-marketing-services/linkedin-marketing-services" className="hover:underline">LinkedIn Marketing Partner</Link>
                             </span>
                         </div>
 
@@ -92,7 +92,7 @@ export default function Hero() {
 
                         {/* Description */}
                         <p className="text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Target 900M+ professionals by job title, company, industry, and seniority. The ultimate B2B advertising platform.
+                            Target 900M+ professionals by job title, company, industry, and seniority. The ultimate <Link href="/services/performance-marketing" className="hover:text-[var(--primary)] transition-colors">B2B advertising</Link> platform.
                         </p>
 
                         {/* Feature Pills */}
