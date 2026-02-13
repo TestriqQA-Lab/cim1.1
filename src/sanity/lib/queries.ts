@@ -126,3 +126,15 @@ export const categoriesWithPostCountQuery = defineQuery(`
     "count": count(*[_type == "post" && references(^._id)])
   }
 `);
+
+export const jobsQuery = defineQuery(`
+  *[_type == "job"] | order(publishedAt desc) {
+    _id,
+    title,
+    department,
+    location,
+    type,
+    description,
+    requirements
+  }
+`);

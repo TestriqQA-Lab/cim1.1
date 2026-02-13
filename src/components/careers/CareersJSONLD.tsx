@@ -1,6 +1,6 @@
 "use client";
 
-import { Job } from "@/data/careers";
+import { Job } from "@/types/careers";
 
 interface CareersJSONLDProps {
     jobs: Job[];

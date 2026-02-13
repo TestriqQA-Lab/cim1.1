@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { X, MapPin, Clock, Briefcase, CheckCircle2, ArrowRight, ArrowLeft } from "lucide-react";
-import { Job } from "@/data/careers";
+import { Job } from "@/types/careers";
 import ApplicationForm from "./ApplicationForm";
 
 interface JobDrawerProps {

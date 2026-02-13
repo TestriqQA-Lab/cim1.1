@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, Users, ArrowRight } from "lucide-react";
+import { Sparkles, Users, ArrowRight, Home, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import CareersHeroAnimation from "./CareersHeroAnimation";
 
@@ -13,7 +13,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative min-h-[60vh] py-12 lg:py-20 overflow-hidden flex items-center justify-center">
+        <section className="relative min-h-[50vh] pt-6 lg:pt-8 pb-12 lg:pb-20 overflow-hidden">
             {/* Animated Background */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 {/* Grid pattern */}
@@ -44,6 +44,29 @@ export default function Hero() {
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                     {/* Left Column: Content */}
                     <div className="text-center lg:text-left pt-10 lg:pt-0">
+                        {/* Breadcrumbs */}
+                        <nav
+                            className="flex flex-wrap items-center gap-x-1 gap-y-1 text-sm mb-5 justify-center lg:justify-start"
+                            aria-label="Breadcrumb"
+                        >
+                            <Link
+                                href="/"
+                                className="flex items-center gap-1 hover:underline transition-colors p-2"
+                                style={{ color: "var(--secondary-text)" }}
+                            >
+                                <Home className="w-4 h-4" />
+                                Home
+                            </Link>
+
+                            <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
+
+                            <span
+                                className="font-semibold p-2"
+                                style={{ color: "var(--brand-blue)" }}
+                            >
+                                Careers
+                            </span>
+                        </nav>
                         {/* Badge */}
                         <div
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 border transition-colors mx-auto lg:mx-0"

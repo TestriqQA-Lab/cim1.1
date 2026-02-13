@@ -24,6 +24,7 @@ export default function Footer() {
     // Quick Links (matching reference image)
     const quickLinks = [
         { name: "About Us", href: "/about" },
+        { name: "Careers", href: "/careers" },
         { name: "Our Services", href: "/services" },
         { name: "Contact Us", href: "/contact" },
         { name: "Privacy Policy", href: "/privacy-policy" },

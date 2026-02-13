@@ -3,11 +3,17 @@
 
 
 import { useState } from "react";
-import { careerData, Job } from "@/data/careers";
+import { Job } from "@/types/careers";
 import { ArrowUpRight, MapPin, Clock, Briefcase } from "lucide-react";
 import JobDrawer from "./JobDrawer";
 
-export default function OpenPositions() {
+
+interface OpenPositionsProps {
+    jobs: Job[];
+}
+
+export default function OpenPositions({ jobs }: OpenPositionsProps) {
+
     const [selectedJob, setSelectedJob] = useState<Job | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -69,7 +75,7 @@ export default function OpenPositions() {
                 </div>
 
                 <ul className="grid gap-4">
-                    {careerData.map((job) => (
+                    {jobs.map((job) => (
                         <li
                             key={job.id}
                             onClick={() => handleJobClick(job)}

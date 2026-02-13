@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Culture() {
     return (
-        <section className="py-24 overflow-hidden relative">
+        <section className="py-20 overflow-hidden relative">
             <div className="mx-auto px-6 md:px-12 xl:px-16">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div className="relative">
