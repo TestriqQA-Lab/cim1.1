@@ -4,21 +4,34 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden py-24 lg:py-32">
-            {/* Background Gradients similar to About page */}
-            <div className="absolute inset-0 pointer-events-none">
+        <section className="relative min-h-[60vh] py-24 lg:py-32 overflow-hidden flex items-center justify-center">
+            {/* Animated Background */}
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                {/* Grid pattern */}
+                <div
+                    className="absolute inset-0 opacity-[0.03]"
+                    style={{
+                        backgroundImage: `linear-gradient(#008ac1 1px, transparent 1px), linear-gradient(90deg, #008ac1 1px, transparent 1px)`,
+                        backgroundSize: "60px 60px",
+                    }}
+                />
+                {/* Glow orbs */}
                 <div
                     className="absolute top-0 right-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
                     style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-purple) 12%, transparent)",
+                        backgroundColor: "color-mix(in srgb, var(--brand-purple) 15%, transparent)",
                     }}
                 />
                 <div
                     className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full blur-3xl animate-pulse"
                     style={{
-                        backgroundColor: "color-mix(in srgb, var(--brand-blue) 12%, transparent)",
+                        backgroundColor: "color-mix(in srgb, var(--brand-blue) 15%, transparent)",
                         animationDelay: "1s",
                     }}
+                />
+                <div
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl animate-pulse opacity-20"
+                    style={{ backgroundColor: "color-mix(in srgb, var(--brand-cyan) 10%, transparent)", animationDelay: "2s" }}
                 />
             </div>
 
@@ -27,14 +40,12 @@ export default function Hero() {
                 <div
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8 border transition-colors mx-auto"
                     style={{
-                        background:
-                            "linear-gradient(90deg, color-mix(in srgb, var(--brand-blue) 8%, transparent), color-mix(in srgb, var(--brand-teal) 8%, transparent))",
-                        borderColor: "color-mix(in srgb, var(--brand-blue) 20%, transparent)",
-                        color: "var(--brand-blue)",
+                        background: "linear-gradient(135deg, color-mix(in srgb, var(--brand-blue) 10%, transparent), color-mix(in srgb, var(--brand-cyan) 5%, transparent))",
+                        borderColor: "color-mix(in srgb, var(--brand-blue) 30%, transparent)",
                     }}
                 >
-                    <Users className="w-4 h-4" />
-                    <span className="text-sm font-semibold">Join Our Team</span>
+                    <Users className="w-4 h-4" style={{ color: "var(--brand-blue)" }} />
+                    <span className="text-sm font-semibold" style={{ color: "var(--brand-blue)" }}>Join Our Team</span>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 tracking-tight">

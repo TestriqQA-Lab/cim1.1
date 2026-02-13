@@ -14,7 +14,7 @@ const formSchema = z.object({
     phone: z.string().min(10, "Please enter a valid phone number"),
     linkedin: z.string().url("Please enter a valid LinkedIn URL").optional().or(z.literal("")),
     portfolio: z.string().url("Please enter a valid URL").optional().or(z.literal("")),
-    coverLetter: z.string().min(50, "Cover letter must be at least 50 characters"),
+    coverLetter: z.string().optional().or(z.literal("")),
     resume: z.any()
         .refine((files) => files?.length === 1, "Resume is required")
         .refine((files) => files?.[0]?.size <= 5000000, "Max file size is 5MB")
@@ -61,7 +61,7 @@ export default function ApplicationForm({ jobTitle, onSuccess, onCancel }: Appli
             formData.append("phone", data.phone);
             formData.append("linkedin", data.linkedin || "");
             formData.append("portfolio", data.portfolio || "");
-            formData.append("coverLetter", data.coverLetter);
+            formData.append("coverLetter", data.coverLetter || "");
             formData.append("jobTitle", jobTitle);
 
             if (data.resume && data.resume.length > 0) {
@@ -220,7 +220,7 @@ export default function ApplicationForm({ jobTitle, onSuccess, onCancel }: Appli
             {/* Cover Letter */}
             <div className="space-y-2">
                 <label htmlFor="coverLetter" className="text-sm font-medium" style={{ color: "var(--foreground)" }}>
-                    Cover Letter <span className="text-red-500">*</span>
+                    Cover Letter <span className="text-[var(--secondary-text)] font-normal">(Optional)</span>
                 </label>
                 <textarea
                     {...register("coverLetter")}
