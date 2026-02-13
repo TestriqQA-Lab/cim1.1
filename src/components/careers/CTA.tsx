@@ -7,7 +7,7 @@ export default function CTA() {
         <section className="py-20">
             <div className="mx-auto px-6 md:px-12 xl:px-16">
                 <div
-                    className="mx-auto max-w-5xl rounded-[2.5rem] p-12 md:p-20 relative overflow-hidden text-center"
+                    className="mx-auto w-full rounded-[2.5rem] p-12 md:p-20 relative overflow-hidden text-center"
                     style={{
                         background: "linear-gradient(135deg, color-mix(in srgb, var(--brand-blue) 10%, transparent), color-mix(in srgb, var(--brand-purple) 10%, transparent))",
                         border: "1px solid color-mix(in srgb, var(--brand-blue) 20%, transparent)"

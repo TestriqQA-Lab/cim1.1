@@ -22,7 +22,7 @@ export default function OpenPositions() {
     };
 
     return (
-        <section id="open-positions" className="py-20 relative overflow-hidden">
+        <section id="open-positions" data-scroll-target="open-positions" className="py-20 relative overflow-hidden">
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 {/* Grid pattern */}
                 <div
@@ -68,12 +68,20 @@ export default function OpenPositions() {
                     </p>
                 </div>
 
-                <div className="grid gap-4">
+                <ul className="grid gap-4">
                     {careerData.map((job) => (
-                        <div
+                        <li
                             key={job.id}
                             onClick={() => handleJobClick(job)}
-                            className="group relative overflow-hidden rounded-2xl border transition-all duration-300 hover:border-[var(--brand-blue)] hover:shadow-lg bg-[var(--card-bg)] cursor-pointer"
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    e.preventDefault();
+                                    handleJobClick(job);
+                                }
+                            }}
+                            tabIndex={0}
+                            role="button"
+                            className="group relative overflow-hidden rounded-2xl border transition-all duration-300 hover:border-[var(--brand-blue)] hover:shadow-lg bg-[var(--card-bg)] cursor-pointer focus:outline-none focus:ring-2 focus:ring-[var(--brand-blue)] focus:ring-offset-2 focus:ring-offset-[var(--background)]"
                             style={{ borderColor: "var(--border-color)" }}
                         >
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[var(--brand-blue)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -100,24 +108,24 @@ export default function OpenPositions() {
                                 </div>
 
                                 <div className="flex items-center gap-4">
-                                    <button
+                                    <div
                                         className="hidden md:flex items-center justify-center w-12 h-12 rounded-full border transition-all duration-300 group-hover:bg-[var(--brand-blue)] group-hover:border-[var(--brand-blue)] group-hover:text-white"
                                         style={{ borderColor: "var(--border-color)", color: "var(--foreground)" }}
                                     >
                                         <ArrowUpRight className="w-5 h-5 transition-transform group-hover:rotate-45" />
-                                    </button>
+                                    </div>
 
-                                    {/* Mobile Button */}
-                                    <button
+                                    {/* Mobile Button - changed to div to avoid nested interactive controls since parent is button-role */}
+                                    <div
                                         className="md:hidden w-full text-center py-3 rounded-xl font-semibold bg-[var(--brand-blue)] text-white hover:bg-[var(--brand-blue)]/90 transition-colors"
                                     >
                                         View Details
-                                    </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </div>
 
             {selectedJob && (

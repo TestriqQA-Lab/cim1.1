@@ -17,20 +17,27 @@ export default function JobDrawer({ job, isOpen, onClose }: JobDrawerProps) {
     const [isSuccess, setIsSuccess] = useState(false);
 
     useEffect(() => {
+        const handleEsc = (e: KeyboardEvent) => {
+            if (e.key === "Escape") onClose();
+        };
+
         if (isOpen) {
             setIsVisible(true);
             document.body.style.overflow = "hidden";
+            window.addEventListener("keydown", handleEsc);
             // Reset state when opening
             setShowForm(false);
             setIsSuccess(false);
         } else {
             setTimeout(() => setIsVisible(false), 300); // Wait for animation
             document.body.style.overflow = "unset";
+            window.removeEventListener("keydown", handleEsc);
         }
         return () => {
             document.body.style.overflow = "unset";
+            window.removeEventListener("keydown", handleEsc);
         };
-    }, [isOpen]);
+    }, [isOpen, onClose]);
 
     if (!isOpen && !isVisible) return null;
 
@@ -53,6 +60,9 @@ export default function JobDrawer({ job, isOpen, onClose }: JobDrawerProps) {
 
             {/* Drawer Container */}
             <div
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="drawer-title"
                 className={`fixed inset-y-0 right-0 z-[201] w-full max-w-2xl lg:max-w-4xl h-full shadow-2xl transition-transform duration-300 ease-in-out transform ${isOpen ? "translate-x-0" : "translate-x-full"}`}
                 style={{
                     backgroundColor: "var(--card-bg)",
@@ -125,7 +135,7 @@ export default function JobDrawer({ job, isOpen, onClose }: JobDrawerProps) {
                         <div className="space-y-8 animate-fadeIn">
                             {/* Title & Info */}
                             <div>
-                                <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
+                                <h2 id="drawer-title" className="text-3xl md:text-4xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
                                     {job.title}
                                 </h2>
                                 <div className="flex flex-wrap gap-4 text-sm md:text-base" style={{ color: "var(--secondary-text)" }}>
