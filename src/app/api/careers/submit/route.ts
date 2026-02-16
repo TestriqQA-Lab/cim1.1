@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
         // Correct Order: 
         // A: Date, B: Job Title, C: Name, D: Email, E: Phone, F: LinkedIn, G: Portfolio, H: Resume, I: Cover Letter
         const row = [
-            new Date().toISOString(), // A
+            new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }), // A
             jobTitle,                 // B
             fullName,                 // C
             email,                    // D
