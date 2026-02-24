@@ -1,4 +1,5 @@
 import { BlogPost, Author, ContentBlock } from '@/data/blog';
+import { Job } from '@/types/careers';
 import { urlFor } from './image';
 
 /**
@@ -53,6 +54,7 @@ export function mapSanityPostToBlogPost(sanityPost: any): BlogPost {
         publishedAt: sanityPost.publishedAt,
         readTime: sanityPost.readTime || 5,
         featured: sanityPost.featured || false,
+        seo: sanityPost.seo,
     };
 }
 
@@ -214,5 +216,18 @@ export function mapSanityBlocksToContentBlocks(sanityBlocks: any[]): ContentBloc
         contentBlocks.push(currentListBlock);
     }
 
+
     return contentBlocks.filter(Boolean) as ContentBlock[];
+}
+
+export function mapSanityJobToJob(sanityJob: any): Job {
+    return {
+        id: sanityJob._id,
+        title: sanityJob.title,
+        department: sanityJob.department,
+        location: sanityJob.location,
+        type: sanityJob.type,
+        description: sanityJob.description,
+        requirements: sanityJob.requirements || [],
+    };
 }

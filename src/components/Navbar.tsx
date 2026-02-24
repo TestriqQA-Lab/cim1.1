@@ -310,6 +310,15 @@ export default function Navbar() {
                 About
               </Link>
               <Link
+                href="/careers"
+                className="px-4 py-2 rounded-lg text-md font-medium transition-all"
+                style={getNavLinkStyle("/careers")}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/careers") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/careers") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
+              >
+                Careers
+              </Link>
+              <Link
                 href="/contact"
                 className="px-4 py-2 rounded-lg text-md font-medium transition-all"
                 style={getNavLinkStyle("/contact")}
@@ -542,6 +551,16 @@ export default function Navbar() {
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/about") ? "color-mix(in srgb, var(--brand-blue) 10%, transparent)" : "transparent")}
             >
               About
+            </Link>
+            <Link
+              href="/careers"
+              onClick={toggleMobileMenu}
+              className="block px-4 py-3 rounded-lg text-base font-medium transition-all"
+              style={getNavLinkStyle("/careers")}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/careers") ? "color-mix(in srgb, var(--brand-blue) 15%, transparent)" : "var(--hover-bg)")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/careers") ? "color-mix(in srgb, var(--brand-blue) 10%, transparent)" : "transparent")}
+            >
+              Careers
             </Link>
             <Link
               href="/contact"

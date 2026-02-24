@@ -111,6 +111,11 @@ export interface BlogPost {
   publishedAt: string;
   readTime: number;
   featured?: boolean;
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    canonicalUrl?: string;
+  };
 }
 
 // Category Details Interface

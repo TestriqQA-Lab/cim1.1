@@ -96,23 +96,33 @@ export function generateBlogPostMetadata(
   image: string,
   slug: string,
   publishedAt: string,
-  author: string
+  author: string,
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    canonicalUrl?: string;
+  }
 ): Metadata {
   const url = `/blog/${slug}`;
 
+  // Prioritize SEO fields
+  const metaTitle = seo?.metaTitle || `${title} | Cinute Infomedia`;
+  const metaDescription = seo?.metaDescription || excerpt;
+  const canonicalUrl = seo?.canonicalUrl || `${siteUrl}${url}`;
+
   return {
     ...defaultMetadata,
-    title: `${title} | Cinute Infomedia`,
-    description: excerpt,
+    title: metaTitle,
+    description: metaDescription,
     keywords: ["blog", "article", "insights", ...excerpt.split(" ").slice(0, 5)],
     authors: [{ name: author }],
     alternates: {
-      canonical: `${siteUrl}${url}`,
+      canonical: canonicalUrl,
     },
     openGraph: {
       ...defaultMetadata.openGraph,
-      title: `${title} | Cinute Infomedia`,
-      description: excerpt,
+      title: metaTitle,
+      description: metaDescription,
       type: "article",
       url: `${siteUrl}${url}`,
       images: [
@@ -128,8 +138,8 @@ export function generateBlogPostMetadata(
     },
     twitter: {
       ...defaultMetadata.twitter,
-      title: `${title} | Cinute Infomedia`,
-      description: excerpt,
+      title: metaTitle,
+      description: metaDescription,
       images: [image],
     },
   };
