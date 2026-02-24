@@ -15,7 +15,7 @@ export const metadata = getPageMetadata({
 
 export default function LinkBuildingPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#06b6d4" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

@@ -100,7 +100,7 @@ const faqJsonLd = {
 
 export default function FacebookMarketingPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#1877F2" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

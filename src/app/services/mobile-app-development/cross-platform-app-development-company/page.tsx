@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function CrossPlatformAppDevelopmentPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#667eea" } as React.CSSProperties}>
             <Script
                 id="cross-platform-schema"
                 type="application/ld+json"

@@ -176,7 +176,7 @@ export default function LocalSEOPage() {
                     })
                 }}
             />
-            <main>
+            <main style={{ "--page-selection-bg": "#F59E0B" } as React.CSSProperties}>
                 <Hero />
                 <ServiceOverview />
                 <SolutionTypes />

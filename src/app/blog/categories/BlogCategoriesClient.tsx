@@ -387,7 +387,7 @@ function CategoriesContent({ categories, posts, sidebarCategories, popularPosts,
 
                                                     {/* Featured Tags */}
                                                     <div className="flex flex-wrap gap-2">
-                                                        {category.featuredTags.slice(0, 3).map((tag) => (
+                                                        {(category.featuredTags ?? []).slice(0, 3).map((tag) => (
                                                             <span
                                                                 key={tag}
                                                                 className="text-xs px-2.5 py-1 rounded-full font-medium"
@@ -399,7 +399,7 @@ function CategoriesContent({ categories, posts, sidebarCategories, popularPosts,
                                                                 {tag}
                                                             </span>
                                                         ))}
-                                                        {category.featuredTags.length > 3 && (
+                                                        {(category.featuredTags ?? []).length > 3 && (
                                                             <span
                                                                 className="text-xs px-2.5 py-1 rounded-full font-medium"
                                                                 style={{

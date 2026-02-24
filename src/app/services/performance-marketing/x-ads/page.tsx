@@ -15,7 +15,7 @@ export const metadata = getPageMetadata({
 
 export default function XAdsPage() {
     return (
-        <main className="min-h-screen bg-black">
+        <main className="min-h-screen bg-black" style={{ "--page-selection-bg": "#1D9BF0" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

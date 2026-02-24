@@ -15,7 +15,7 @@ export const metadata = getPageMetadata({
 
 export default function LinkedInAdsPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#0a66c2" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

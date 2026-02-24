@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function PythonDjangoPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#306998" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

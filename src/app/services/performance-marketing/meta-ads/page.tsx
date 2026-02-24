@@ -15,7 +15,7 @@ export const metadata = getPageMetadata({
 
 export default function MetaAdsPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#1877f2" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

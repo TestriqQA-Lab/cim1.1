@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function HarmonyOSAppDevelopmentPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#C7000B" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

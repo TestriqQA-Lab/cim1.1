@@ -91,7 +91,7 @@ export default function HybridAppDevelopmentPage() {
     };
 
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#00b4d8" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

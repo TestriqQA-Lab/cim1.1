@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function InstagramMarketingPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#E1306C" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{

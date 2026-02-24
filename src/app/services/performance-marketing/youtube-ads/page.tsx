@@ -15,7 +15,7 @@ export const metadata = getPageMetadata({
 
 export default function YouTubeAdsPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#FF0000" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

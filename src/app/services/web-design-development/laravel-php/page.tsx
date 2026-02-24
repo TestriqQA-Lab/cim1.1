@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function LaravelPhpPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#FF2D20" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

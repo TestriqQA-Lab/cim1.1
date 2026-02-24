@@ -114,7 +114,7 @@ export default function NextjsReactPage() {
     };
 
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#61dafb" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

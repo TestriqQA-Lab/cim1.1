@@ -15,7 +15,7 @@ export const metadata = getPageMetadata({
 
 export default function GoogleAdsPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#4285f4" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

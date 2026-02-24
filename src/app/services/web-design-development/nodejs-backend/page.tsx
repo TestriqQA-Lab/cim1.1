@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function NodejsBackendPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#339933" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

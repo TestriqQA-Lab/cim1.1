@@ -110,7 +110,7 @@ export default function XMarketingPage() {
     };
 
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#1D9BF0" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

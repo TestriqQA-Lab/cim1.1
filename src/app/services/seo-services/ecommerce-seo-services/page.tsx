@@ -169,7 +169,7 @@ export default function EcommerceSEOPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-            <main>
+            <main style={{ "--page-selection-bg": "#0EA5E9" } as React.CSSProperties}>
                 <Hero />
                 <ServiceOverview />
                 <SolutionTypes />

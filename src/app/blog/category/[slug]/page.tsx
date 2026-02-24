@@ -43,6 +43,13 @@ export default async function CategoryPage({ params }: Props) {
     notFound();
   }
 
+  // Normalize nullable Sanity array fields — some categories may not have these filled yet
+  const normalizedCategoryInfo = {
+    ...categoryInfo,
+    relatedTopics: categoryInfo.relatedTopics ?? [],
+    featuredTags: categoryInfo.featuredTags ?? [],
+  };
+
   const sanityPosts = await client.fetch(categoryPostsQuery, { slug });
   const posts = sanityPosts.map(mapSanityPostToBlogPost);
 
@@ -71,8 +78,8 @@ export default async function CategoryPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <CategoryClient
-        categoryName={categoryInfo.name}
-        categoryInfo={categoryInfo}
+        categoryName={normalizedCategoryInfo.name}
+        categoryInfo={normalizedCategoryInfo}
         posts={posts}
         categories={categories}
         popularPosts={popularPosts}

@@ -74,7 +74,7 @@ const jsonLd = {
 
 export default function LinkedInMarketingPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#0A66C2" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -42,7 +42,7 @@ export const metadata = getPageMetadata({
 
 export default function AIPoweredChatbotsPage() {
     return (
-        <main className="bg-white dark:bg-black" style={{ scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
+        <main data-page-theme="chatbot" className="bg-white dark:bg-black" style={{ scrollPaddingTop: "5rem", scrollMarginTop: "5rem" }}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{

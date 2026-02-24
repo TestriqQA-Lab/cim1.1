@@ -99,7 +99,7 @@ export default function ShopifyEcommercePage() {
     };
 
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#96bf48" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

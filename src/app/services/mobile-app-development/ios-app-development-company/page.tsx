@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function iOSAppDevelopmentPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#007AFF" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{

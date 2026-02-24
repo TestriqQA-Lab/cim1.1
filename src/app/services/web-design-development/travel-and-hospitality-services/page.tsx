@@ -154,7 +154,7 @@ const jsonLd = {
 
 export default function TravelHospitalityPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#0d9488" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

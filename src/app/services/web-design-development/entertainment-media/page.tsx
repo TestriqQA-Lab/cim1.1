@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function EntertainmentMediaPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#8b5cf6" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

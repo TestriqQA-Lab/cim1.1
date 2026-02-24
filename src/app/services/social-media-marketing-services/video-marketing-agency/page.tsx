@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function YouTubeMarketingPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#FF0000" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{

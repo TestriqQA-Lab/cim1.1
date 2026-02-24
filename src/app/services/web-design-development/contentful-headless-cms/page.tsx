@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function ContentfulHeadlessCMSPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#0286FF" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

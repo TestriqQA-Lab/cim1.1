@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function PinterestMarketingPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#E60023" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

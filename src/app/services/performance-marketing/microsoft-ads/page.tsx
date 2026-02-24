@@ -15,7 +15,7 @@ export const metadata = getPageMetadata({
 
 export default function MicrosoftAdsPage() {
     return (
-        <main className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background" style={{ "--page-selection-bg": "#0078D4" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function DrupalCMSPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#0678BE" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

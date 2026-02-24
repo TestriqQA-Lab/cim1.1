@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function JavaSpringBootPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#6DB33F" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

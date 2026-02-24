@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function StrapiHeadlessCMSPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen" style={{ "--page-selection-bg": "#4945FF" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

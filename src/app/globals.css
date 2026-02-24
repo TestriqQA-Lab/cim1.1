@@ -14,6 +14,9 @@
     --brand-chatbot: #4e51d2;
     --brand-seo: #6db75c;
 
+    /* Selection highlight color (overridden per page via data-page-theme) */
+    --page-selection-bg: var(--brand-purple);
+
     /* Light Mode Colors */
     --background: #f0f0f0;
     --foreground: #000000;
@@ -70,10 +73,36 @@
     cursor: pointer;
   }
 
-  /* Brand Gradient Selection */
+  /* Brand Gradient Selection — default purple, overridden per page */
   ::selection {
     color: #ffffff;
-    background: #BC3FEB;
+    background: var(--page-selection-bg);
+  }
+
+  /* Per-page theme overrides via data-page-theme on <main> */
+  [data-page-theme="seo"] ::selection {
+    background: var(--brand-seo);
+  }
+
+  [data-page-theme="orange"] ::selection {
+    background: var(--brand-orange);
+  }
+
+  [data-page-theme="teal"] ::selection {
+    background: var(--brand-teal);
+  }
+
+  [data-page-theme="chatbot"] ::selection {
+    background: var(--brand-chatbot);
+  }
+
+  [data-page-theme="blue"] ::selection {
+    background: var(--brand-blue);
+  }
+
+  [data-page-theme="yellow"] ::selection {
+    background: var(--brand-yellow);
+    color: #000000;
   }
 }
 

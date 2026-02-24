@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function HeadlessTraditionalCMSPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#9333ea" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

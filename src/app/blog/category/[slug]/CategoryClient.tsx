@@ -161,7 +161,7 @@ export default function CategoryClient({
                                             Related Topics
                                         </h3>
                                         <div className="flex flex-wrap gap-2">
-                                            {categoryInfo.relatedTopics.map((topic) => (
+                                            {(categoryInfo.relatedTopics ?? []).map((topic) => (
                                                 <span key={topic} className="px-3 py-1.5 rounded-lg text-sm font-medium" style={{ backgroundColor: "var(--hover-bg)" }}>
                                                     {topic}
                                                 </span>

@@ -103,7 +103,7 @@ const jsonLd = {
 
 export default function TechnicalSEOPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#8B5CF6" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

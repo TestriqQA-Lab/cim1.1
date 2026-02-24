@@ -15,7 +15,7 @@ export const metadata = getPageMetadata({
 
 export default function TikTokAdsPage() {
     return (
-        <main>
+        <main style={{ "--page-selection-bg": "#ff0050" } as React.CSSProperties}>
             <Hero />
             <ServiceOverview />
             <SolutionTypes />
