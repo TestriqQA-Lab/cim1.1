@@ -19,7 +19,7 @@ export default function Process() {
         {
             id: 2,
             icon: Target,
-            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Strategy Development</Link>,
+            title: <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="hover:text-[var(--primary)] transition-colors">Strategy Development</Link>,
             description: "Custom campaign strategy aligned with your business goals and budget.",
             details: ["Keyword research", "Audience segmentation", "Budget allocation"],
         },

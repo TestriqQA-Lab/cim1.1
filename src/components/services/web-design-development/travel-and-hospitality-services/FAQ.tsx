@@ -10,7 +10,7 @@ export default function FAQ() {
     const faqs = [
         {
             question: "What are travel and hospitality services in the context of digital development?",
-            answer: <span>Travel and hospitality services encompass the strategic design, development, and marketing of digital solutions for the tourism industry. This includes building <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">custom booking engines</Link>, <Link href="/services/saas-development-company" className="hover:underline">hotel management software</Link>, OTA platforms, and implementing Travel Technology Solutions that streamline operations and enhance the guest experience.</span>
+            answer: <span>Travel and hospitality services encompass the strategic design, development, and marketing of digital solutions for the tourism industry. This includes building <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline">custom booking engines</Link>, <Link href="/services/web-design-development/saas-development-services" className="hover:underline">hotel management software</Link>, OTA platforms, and implementing Travel Technology Solutions that streamline operations and enhance the guest experience.</span>
         },
         {
             question: "How can technology improve hospitality services for hotels and agencies?",
@@ -22,7 +22,7 @@ export default function FAQ() {
         },
         {
             question: "Why is custom Travel Software Development Services better than off-the-shelf solutions?",
-            answer: <span><Link href="/services/saas-development-company" className="hover:underline">Custom Travel Software Development Services</Link> offer flexibility and scalability that off-the-shelf products cannot match. A custom solution is tailored to your specific business workflows, brands, and customer needs, allowing for unique features like specialized Travel API integration services and proprietary Hospitality Revenue Management algorithms that provide a competitive edge.</span>
+            answer: <span><Link href="/services/web-design-development/saas-development-services" className="hover:underline">Custom Travel Software Development Services</Link> offer flexibility and scalability that off-the-shelf products cannot match. A custom solution is tailored to your specific business workflows, brands, and customer needs, allowing for unique features like specialized Travel API integration services and proprietary Hospitality Revenue Management algorithms that provide a competitive edge.</span>
         },
         {
             question: "What are the key Hospitality Technology Trends for 2026?",

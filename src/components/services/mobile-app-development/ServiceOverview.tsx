@@ -27,7 +27,7 @@ export default function ServiceOverview() {
         {
             icon: Palette,
             title: "User-Centric Design",
-            description: <span>Create conversion-optimized interfaces with 35% higher engagement. <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-purple)]">WCAG 2.2 AA compliant designs</Link> backed by 10,000+ hours of user research and A/B testing data.</span>,
+            description: <span>Create conversion-optimized interfaces with 35% higher engagement. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)]">WCAG 2.2 AA compliant designs</Link> backed by 10,000+ hours of user research and A/B testing data.</span>,
             gradient: "from-[#43e97b] to-[#38f9d7]"
         },
         {
@@ -154,7 +154,7 @@ export default function ServiceOverview() {
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Discover the latest trends shaping mobile development</p>
                             </div>
                         </Link>
-                        <Link href="/blog/stunning-ui-ux-design-principles" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                        <Link href="/blog/ui-ux-design-principles-best-practices" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">🎨</span>
                             <div>
                                 <h4 className="font-semibold group-hover:text-[var(--brand-purple)] transition-colors">Mobile UX Design Principles</h4>

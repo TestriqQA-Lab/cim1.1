@@ -28,7 +28,7 @@ export default function TypesOfAutomations() {
         {
             icon: BarChart3,
             title: "Data & Reporting Automation",
-            description: <span>Stop copy-pasting Excel sheets. We create pipelines that pull from 50+ sources to build live, self-updating <Link href="/blog/ai-workflows-automating-business" className="hover:text-emerald-500 underline decoration-dotted transition-colors">BI dashboards</Link>.</span>,
+            description: <span>Stop copy-pasting Excel sheets. We create pipelines that pull from 50+ sources to build live, self-updating <Link href="/blog/ai-workflows-automating-business-processes" className="hover:text-emerald-500 underline decoration-dotted transition-colors">BI dashboards</Link>.</span>,
             features: ["Data Extraction", "Real-time Dashboards", "Scheduled Reports", "Data Validation"],
             gradient: "from-emerald-600 to-teal-500",
             iconBg: "bg-emerald-500/10",

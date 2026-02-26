@@ -142,7 +142,7 @@ export default function Hero() {
                                     <item.icon className="w-4 h-4 flex-shrink-0 text-[var(--brand-blue)]" />
                                     <span className="text-xs font-bold text-[var(--foreground)]">
                                         {item.text === "Responsive Design" ? (
-                                            <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
+                                            <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">
                                                 {item.text}
                                             </Link>
                                         ) : item.text === "Global SEO" ? (

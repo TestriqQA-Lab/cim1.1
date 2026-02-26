@@ -15,7 +15,7 @@ export default function Process() {
         {
             id: 1,
             icon: Lightbulb,
-            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Discovery & Strategy</Link>,
+            title: <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="hover:text-[var(--primary)] transition-colors">Discovery & Strategy</Link>,
             description: "Deep-dive into your business, audience, and goals to craft a winning Meta Ads strategy.",
             deliverables: ["Audience research", "Competitor analysis", "Campaign roadmap"],
         },

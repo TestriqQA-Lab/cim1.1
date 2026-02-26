@@ -113,7 +113,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="text-lg md:text-xl mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.2s" }}>
-                            In the competitive landscape of 2026, a generic resume isn't enough. You need a powerful, automated 24/7 <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline text-[#06b6d4] font-bold">personal branding engine</Link>.
+                            In the competitive landscape of 2026, a generic resume isn't enough. You need a powerful, automated 24/7 <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:underline text-[#06b6d4] font-bold">personal branding engine</Link>.
                         </p>
                         <p className="text-base md:text-lg mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.3s" }}>
                             As a premier <Link href="/services/seo-services" className="hover:underline text-[#06b6d4]">online reputation management</Link> agency and <Link href="/services/web-design-development" className="hover:underline text-[#06b6d4]">website design services</Link> provider, we specialize in crafting <Link href="/blog/future-web-development-nextjs" className="hover:underline text-[#06b6d4]">high-impact digital narratives</Link> for global leaders. We don't just build websites; we engineer Personal Branding Services that position you as an undisputed authority in your niche.

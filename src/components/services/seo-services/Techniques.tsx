@@ -117,7 +117,7 @@ export default function Techniques() {
                         Types of <span style={{ color: "var(--brand-seo)" }}>SEO Techniques</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We offer a holistic suite of solutions tailored to your specific needs, from <Link href="/services/web-design-development/saas-application-development" className="hover:text-[var(--brand-seo)] transition-colors">Organic SEO for SaaS companies</Link> to <Link href="/services/seo-services/local-seo-services" className="hover:text-[var(--brand-seo)] transition-colors">local brick-and-mortar growth</Link>.
+                        We offer a holistic suite of solutions tailored to your specific needs, from <Link href="/services/web-design-development/saas-development-services" className="hover:text-[var(--brand-seo)] transition-colors">Organic SEO for SaaS companies</Link> to <Link href="/services/seo-services/local-seo-services" className="hover:text-[var(--brand-seo)] transition-colors">local brick-and-mortar growth</Link>.
                     </p>
                 </div>
 

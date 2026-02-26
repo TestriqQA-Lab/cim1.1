@@ -31,7 +31,7 @@ export default function Process() {
         {
             number: "02",
             icon: Palette,
-            title: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">UX Design & Prototyping</Link>,
+            title: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:underline">UX Design & Prototyping</Link>,
             description: "Design patient-centered interfaces that are accessible, intuitive, and optimized for clinical workflows with empathy-driven user experience.",
             deliverables: [
                 { icon: Users, text: "User research" },

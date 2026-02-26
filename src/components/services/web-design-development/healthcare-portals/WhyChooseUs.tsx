@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Heart,
-            title: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">Patient-Centered Design</Link>,
+            title: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:underline">Patient-Centered Design</Link>,
             description: "Accessible, intuitive interfaces designed for patients of all ages and abilities with empathy-driven UX.",
             highlights: [
                 { icon: Eye, text: "Accessibility" },

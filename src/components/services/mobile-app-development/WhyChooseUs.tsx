@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
         {
             icon: Palette,
             title: "35% Higher User Engagement",
-            description: <span>Conversion-optimized UX backed by 10,000+ hours of A/B testing. <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn by 40%.</span>
+            description: <span>Conversion-optimized UX backed by 10,000+ hours of A/B testing. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn by 40%.</span>
         },
         {
             icon: Gauge,

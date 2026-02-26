@@ -19,7 +19,7 @@ export default function Hero() {
 
     const stats = [
         { value: "<100ms", label: "Load Time" },
-        { value: "100", label: <Link href="/blog/lazy-loading-image-optimization-boost-lighthouse-scores" className="hover:text-[#61dafb] transition-colors">Lighthouse Score</Link> },
+        { value: "100", label: <Link href="/blog/lazy-loading-image-optimization-core-web-vitals" className="hover:text-[#61dafb] transition-colors">Lighthouse Score</Link> },
         { value: "-70%", label: "Bundle Size" },
     ];
 

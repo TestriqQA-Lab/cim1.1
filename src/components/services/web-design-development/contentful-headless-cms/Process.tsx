@@ -19,7 +19,7 @@ export default function Process() {
             number: "01",
             icon: Search,
             title: "Discovery & Strategy",
-            description: <><span className="text-inherit">Understanding your </span><Link href="/services/branding-services" className="text-[#0286FF] hover:underline">content strategy</Link>, channel requirements, and integration landscape.</>,
+            description: <><span className="text-inherit">Understanding your </span><Link href="/services/brand-identity-design" className="text-[#0286FF] hover:underline">content strategy</Link>, channel requirements, and integration landscape.</>,
             details: [
                 "Content audit & strategy",
                 "Channel mapping",

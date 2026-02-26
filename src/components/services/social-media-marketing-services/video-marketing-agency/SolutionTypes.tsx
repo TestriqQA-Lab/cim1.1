@@ -57,7 +57,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Monitor,
-            title: <Link href="/services/web-design-development/saas-application-development" className="hover:underline">B2B Tech & SaaS</Link>,
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">B2B Tech & SaaS</Link>,
             description: "Deep-dive demos and founder-led thought leadership. Teams that understand technical product-market fit.",
             features: [
                 "Software demos",

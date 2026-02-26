@@ -72,7 +72,7 @@ export default function Process() {
                 "Custom component library",
                 "State management plan",
                 "Routing architecture",
-                <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-inherit">UI/UX system design</Link>,
+                <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-inherit">UI/UX system design</Link>,
             ],
             bgColor: "#00d4ff",
         },

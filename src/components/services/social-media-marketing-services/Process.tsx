@@ -9,7 +9,7 @@ export default function Process() {
             number: "01",
             icon: Search,
             title: "Strategy & Research",
-            description: <>Deep dive into your brand, audience <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">customer avatar & persona research</Link>, competitors, and industry trends to define clear, measurable goals.</>,
+            description: <>Deep dive into your brand, audience <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">customer avatar & persona research</Link>, competitors, and industry trends to define clear, measurable goals.</>,
         },
         {
             number: "02",

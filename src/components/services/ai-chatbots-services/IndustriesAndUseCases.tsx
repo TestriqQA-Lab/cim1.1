@@ -35,7 +35,7 @@ export default function IndustriesAndUseCases() {
         {
             icon: Zap,
             title: "SaaS",
-            description: <span>Reduced churn by 15% via <Link href="/services/web-design-development/saas-application-development" className="hover:text-[#4ECDC4] transition-colors">guided tours</Link>. Automate customer onboarding and support.</span>,
+            description: <span>Reduced churn by 15% via <Link href="/services/web-design-development/saas-development-services" className="hover:text-[#4ECDC4] transition-colors">guided tours</Link>. Automate customer onboarding and support.</span>,
             benefits: ["Reduced churn", "Guided tours", "Automated onboarding"],
             accentColor: "#4ECDC4",
             secondaryIcon: Star,
@@ -51,7 +51,7 @@ export default function IndustriesAndUseCases() {
         {
             icon: ShoppingBag,
             title: "Retail",
-            description: <span>30% increase in average order value. Deliver real-time <Link href="/services/web-design-development/shopify-development" className="hover:text-[#A78BFA] transition-colors">personalized shopping</Link> experiences.</span>,
+            description: <span>30% increase in average order value. Deliver real-time <Link href="/services/web-design-development/shopify-development-services" className="hover:text-[#A78BFA] transition-colors">personalized shopping</Link> experiences.</span>,
             benefits: ["Increased AOV", "Personalized shopping", "Inventory checks"],
             accentColor: "#A78BFA",
             secondaryIcon: ShoppingCart,

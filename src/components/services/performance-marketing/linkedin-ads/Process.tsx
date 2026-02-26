@@ -22,7 +22,7 @@ export default function Process() {
         {
             id: 2,
             icon: Target,
-            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Targeting Strategy</Link>,
+            title: <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="hover:text-[var(--primary)] transition-colors">Targeting Strategy</Link>,
             description: "Build precision audiences using LinkedIn's professional data.",
             deliverables: ["ICP development", "Audience segments", "ABM lists"],
         },

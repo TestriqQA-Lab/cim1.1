@@ -126,7 +126,7 @@ export default function Hero() {
                                 <Link href="/services/seo-services" className="hover:text-emerald-500 transition-colors">Keyword Research</Link>,
                                 <Link href="/services/seo-services/on-page-seo-services" className="hover:text-emerald-500 transition-colors">Topic Clusters</Link>,
                                 "Blog Writing",
-                                <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-emerald-500 transition-colors">Content Strategy</Link>,
+                                <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="hover:text-emerald-500 transition-colors">Content Strategy</Link>,
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}

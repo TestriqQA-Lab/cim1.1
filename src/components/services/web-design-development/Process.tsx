@@ -16,7 +16,7 @@ export default function Process() {
             icon: Palette,
             number: "02",
             title: "Strategic Architecture",
-            description: <>Planning for Core Web Vitals and global accessibility. We design high-fidelity <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">UI/UX</Link> that reflects brand authority.</>,
+            description: <>Planning for Core Web Vitals and global accessibility. We design high-fidelity <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">UI/UX</Link> that reflects brand authority.</>,
             color: "from-[#bc3feb] to-[#fab900]",
         },
         {

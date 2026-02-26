@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
         {
             icon: Accessibility,
             title: "ROI-Driven UX Design",
-            description: <>Data-backed <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">UI/UX</Link> focused on business value. Our sites have increased <Link href="/services/performance-marketing" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">online leads</Link> by up to 425% for our clients.</>,
+            description: <>Data-backed <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">UI/UX</Link> focused on business value. Our sites have increased <Link href="/services/performance-marketing" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">online leads</Link> by up to 425% for our clients.</>,
             color: "from-[#00efd6] to-[#bc3feb]",
         },
     ];

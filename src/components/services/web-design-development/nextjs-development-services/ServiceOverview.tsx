@@ -28,7 +28,7 @@ export default function ServiceOverview() {
         {
             icon: Layers,
             title: "Tailwind CSS & UI/UX",
-            description: <>Beautiful, responsive interfaces that convert visitors into loyal customers with <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[#61dafb] transition-colors">modern design</Link>.</>,
+            description: <>Beautiful, responsive interfaces that convert visitors into loyal customers with <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[#61dafb] transition-colors">modern design</Link>.</>,
         },
         {
             icon: Rocket,
@@ -88,7 +88,7 @@ export default function ServiceOverview() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        In the post-December 2025 Google update landscape, speed and user experience are non-negotiable. As a global React JS development company, we focus on Next.js speed optimization and <Link href="/blog/lazy-loading-image-optimization-boost-lighthouse-scores" className="hover:text-[#61dafb] transition-colors">Core Web Vitals</Link> to ensure your site stays at the top of Google&apos;s AI Overviews.
+                        In the post-December 2025 Google update landscape, speed and user experience are non-negotiable. As a global React JS development company, we focus on Next.js speed optimization and <Link href="/blog/lazy-loading-image-optimization-core-web-vitals" className="hover:text-[#61dafb] transition-colors">Core Web Vitals</Link> to ensure your site stays at the top of Google&apos;s AI Overviews.
                     </p>
                 </div>
 

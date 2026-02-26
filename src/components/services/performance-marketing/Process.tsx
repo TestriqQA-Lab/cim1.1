@@ -18,7 +18,7 @@ export default function Process() {
         {
             icon: Search,
             title: "Strategy & Media Planning",
-            description: <span>We craft a tailored <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--brand-orange)]">performance marketing strategy</Link>. We identify the 'low-hanging fruit' for quick wins while building a long-term roadmap.</span>,
+            description: <span>We craft a tailored <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="hover:text-[var(--brand-orange)]">performance marketing strategy</Link>. We identify the 'low-hanging fruit' for quick wins while building a long-term roadmap.</span>,
             details: ["Channel Mix", "Budget Allocation", "Quick Wins", "Long-term Roadmap"],
         },
         {

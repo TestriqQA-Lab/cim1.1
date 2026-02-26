@@ -10,7 +10,7 @@ export default function FAQ() {
     const faqs = [
         {
             q: "What are the benefits of AI workflow automation for businesses?",
-            a: <span><Link href="/blog/ai-workflows-automating-business" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">AI workflow automation</Link> drastically reduces operational costs, minimizes human error, and accelerates process execution. It allows your team to focus on high-value strategic work rather than repetitive data entry.</span>,
+            a: <span><Link href="/blog/ai-workflows-automating-business-processes" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">AI workflow automation</Link> drastically reduces operational costs, minimizes human error, and accelerates process execution. It allows your team to focus on high-value strategic work rather than repetitive data entry.</span>,
         },
         {
             q: "How do I implement AI into my existing business workflows?",

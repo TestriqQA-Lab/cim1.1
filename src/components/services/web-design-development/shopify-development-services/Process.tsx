@@ -33,7 +33,7 @@ export default function Process() {
             number: "02",
             icon: Palette,
             title: "Design & UX Prototyping",
-            description: <span>Creating interactive wireframes focusing on <Link href="/services/web-design-development/web-design-company" className="text-[#96bf48] hover:underline">Ecommerce UX design</Link> to ensure an intuitive path to purchase.</span>,
+            description: <span>Creating interactive wireframes focusing on <Link href="/services/web-design-development" className="text-[#96bf48] hover:underline">Ecommerce UX design</Link> to ensure an intuitive path to purchase.</span>,
             details: [
                 "Interactive wireframing",
                 "Brand-aligned UI/UX",

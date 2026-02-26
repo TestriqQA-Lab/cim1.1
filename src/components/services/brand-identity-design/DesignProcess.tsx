@@ -11,7 +11,7 @@ export default function DesignProcess() {
         {
             icon: Search,
             title: "Discovery & Brand Audit",
-            description: <span>We begin with a deep dive into your market. We analyze competitors, interview stakeholders, and audit existing assets to define your <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--brand-yellow)]">Brand Strategy</Link>.</span>,
+            description: <span>We begin with a deep dive into your market. We analyze competitors, interview stakeholders, and audit existing assets to define your <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="hover:text-[var(--brand-yellow)]">Brand Strategy</Link>.</span>,
             details: ["Brand audit", "Competitor analysis", "Stakeholder interviews", "Positioning"],
         },
         {

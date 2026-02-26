@@ -112,7 +112,7 @@ export default function ServiceOverview() {
                                 <div className="p-3 rounded-lg bg-orange-50">
                                     <Target className="w-6 h-6 text-orange-600" />
                                 </div>
-                                <Link href="/blog/digital-marketing-strategy-planning-execution" className="text-sm font-bold text-center hover:underline" style={{ color: "var(--foreground)" }}>Strategic Positioning</Link>
+                                <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="text-sm font-bold text-center hover:underline" style={{ color: "var(--foreground)" }}>Strategic Positioning</Link>
                             </div>
                         </div>
 

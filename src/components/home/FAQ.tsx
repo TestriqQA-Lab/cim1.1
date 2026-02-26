@@ -38,7 +38,7 @@ export default function FAQ() {
         },
         {
             q: "Can you integrate AI and automation into my website?",
-            a: <>Yes! We&apos;re pioneers in <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">AI-driven web solutions</Link> including <Link href="/services/ai-chatbots-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">AI-powered chatbots</Link> for customer support, <Link href="/blog/ai-workflows-automating-business" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">workflow automation</Link> (CRM, email, reporting), personalized user experiences with machine learning, intelligent search and recommendation engines, and predictive analytics dashboards.</>,
+            a: <>Yes! We&apos;re pioneers in <Link href="/services/ai-workflows-automations-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">AI-driven web solutions</Link> including <Link href="/services/ai-chatbots-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">AI-powered chatbots</Link> for customer support, <Link href="/blog/ai-workflows-automating-business-processes" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">workflow automation</Link> (CRM, email, reporting), personalized user experiences with machine learning, intelligent search and recommendation engines, and predictive analytics dashboards.</>,
         },
     ];
 

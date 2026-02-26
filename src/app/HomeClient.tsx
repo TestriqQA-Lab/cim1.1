@@ -93,9 +93,7 @@ export default function HomeClient({ latestPosts }: HomeClientProps) {
       <Process />
       <CaseStudies />
       <Industries />
-      <Industries />
       <BlogInsights posts={latestPosts} />
-      <Testimonials />
       <Testimonials />
       <FAQ />
       <CTA />

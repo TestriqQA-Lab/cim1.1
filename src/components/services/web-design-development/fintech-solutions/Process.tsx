@@ -21,7 +21,7 @@ export default function Process() {
             deliverables: [
                 { icon: ShieldCheck, text: "Compliance roadmap" },
                 { icon: Lock, text: "Security audit" },
-                { icon: Users, text: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">User personas</Link> },
+                { icon: Users, text: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:underline">User personas</Link> },
                 { icon: Target, text: "Risk assessment" }
             ],
             color: "#0ea5e9", // Sky blue

@@ -199,7 +199,7 @@ export default function Process() {
                                 "AI bidding management",
                                 "Dynamic ad iterations",
                                 "Real-time adjustments",
-                                <Link key="conv-opt" href="/services/seo-services/conversion-rate-optimization-services" className="hover:text-blue-500 transition-colors">Conversion optimization</Link>,
+                                <Link key="conv-opt" href="/services/performance-marketing" className="hover:text-blue-500 transition-colors">Conversion optimization</Link>,
                                 "Lead quality filtering",
                             ],
                             duration: "Ongoing",

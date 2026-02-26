@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
         {
             icon: Users,
             title: "Engaging User Experience",
-            description: <>Intuitive interfaces that keep learners motivated with <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline text-[#f97316]">gamification</Link>, progress tracking, and social features.</>,
+            description: <>Intuitive interfaces that keep learners motivated with <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:underline text-[#f97316]">gamification</Link>, progress tracking, and social features.</>,
             highlights: [
                 { icon: Sparkles, text: "Gamification" },
                 { icon: TrendingUp, text: "Progress tracking" },

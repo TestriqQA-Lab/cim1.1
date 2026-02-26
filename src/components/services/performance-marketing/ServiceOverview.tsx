@@ -177,7 +177,7 @@ export default function ServiceOverview() {
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Why combining organic and paid converts 2x better</p>
                             </div>
                         </Link>
-                        <Link href="/blog/digital-marketing-strategy-planning-execution" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
+                        <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">📊</span>
                             <div>
                                 <h4 className="font-semibold group-hover:text-[var(--brand-orange)] transition-colors">Maximizing ROI with Performance Marketing</h4>

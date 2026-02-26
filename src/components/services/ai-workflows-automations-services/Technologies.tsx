@@ -300,7 +300,7 @@ export default function Technologies() {
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold transition-colors duration-300 " style={{ color: "var(--foreground)" }}>
-                                        <Link href="/blog/ai-workflows-automating-business" className="hover:text-green-500 transition-colors">Security & Compliance</Link>
+                                        <Link href="/blog/ai-workflows-automating-business-processes" className="hover:text-green-500 transition-colors">Security & Compliance</Link>
                                     </h3>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Enterprise-grade protection</p>
                                 </div>

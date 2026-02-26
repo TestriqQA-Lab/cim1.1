@@ -9,7 +9,7 @@ export default function TypesOfChatbots() {
         {
             icon: ShoppingCart,
             title: "AI Chatbot for Ecommerce Sales and Support",
-            description: <span>Rocket your conversion rates with a <Link href="/services/web-design-development/shopify-development" className="hover:text-blue-500 transition-colors">Shopify-integrated AI chatbot</Link>. Automatically recommend products, recover abandoned carts, and track orders 24/7.</span>,
+            description: <span>Rocket your conversion rates with a <Link href="/services/web-design-development/shopify-development-services" className="hover:text-blue-500 transition-colors">Shopify-integrated AI chatbot</Link>. Automatically recommend products, recover abandoned carts, and track orders 24/7.</span>,
             features: ["Visual product search", "Personalized upsells", "Order tracking", "Cart recovery"],
             gradient: "from-blue-600 to-cyan-500",
             iconBg: "bg-blue-500/10",

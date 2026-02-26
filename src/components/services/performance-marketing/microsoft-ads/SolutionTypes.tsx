@@ -36,7 +36,7 @@ export default function SolutionTypes() {
             color: "#FFB900", // Yellow
         },
         {
-            title: <Link href="/blog/digital-marketing-strategy-planning-execution" className="hover:text-[var(--primary)] transition-colors">Cross-Channel</Link>,
+            title: <Link href="/blog/digital-marketing-strategy-planning-to-execution" className="hover:text-[var(--primary)] transition-colors">Cross-Channel</Link>,
             icon: BarChart2,
             frontDescription: "Unified reporting across Search and Native.",
             backDescription: "Manage and optimize your campaigns holistically to drive efficiency and incrementally across channels.",

@@ -49,7 +49,7 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span>, we provide full-spectrum digital engineering. Our <Link href="/blog/stunning-ui-ux-design-principles" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">professional web design agency</Link> combines <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">creative excellence</Link> with technical precision.
+                            As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span>, we provide full-spectrum digital engineering. Our <Link href="/blog/ui-ux-design-principles-best-practices" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">professional web design agency</Link> combines <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">creative excellence</Link> with technical precision.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
@@ -57,7 +57,7 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            We don&apos;t just build websites; we engineer digital growth engines. Whether you need <Link href="/services/web-design-development/ecommerce-website-development-services" style={{ color: "var(--brand-blue)" }}>ecommerce development</Link> or <Link href="/services/web-design-development/nodejs-backend" style={{ color: "var(--brand-blue)" }}>custom web apps</Link>, our solutions are designed to outperform competition, achieving an average 300% organic traffic growth. Every site is optimized with <Link href="/services/seo-services/technical-seo-services" style={{ color: "var(--brand-blue)" }}>technical SEO best practices</Link>.
+                            We don&apos;t just build websites; we engineer digital growth engines. Whether you need <Link href="/services/web-design-development/ecommerce-development-company" style={{ color: "var(--brand-blue)" }}>ecommerce development</Link> or <Link href="/services/web-design-development/nodejs-backend" style={{ color: "var(--brand-blue)" }}>custom web apps</Link>, our solutions are designed to outperform competition, achieving an average 300% organic traffic growth. Every site is optimized with <Link href="/services/seo-services/technical-seo-services" style={{ color: "var(--brand-blue)" }}>technical SEO best practices</Link>.
                         </p>
 
                         <div className="pt-4">

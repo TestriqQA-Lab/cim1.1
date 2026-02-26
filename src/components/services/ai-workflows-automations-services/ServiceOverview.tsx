@@ -51,7 +51,7 @@ export default function ServiceOverview() {
                         What Are <span style={{ color: "var(--brand-orange)" }}>AI Workflows & Automations?</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        <Link href="/blog/ai-workflows-automating-business" className="hover:text-[var(--brand-orange)] transition-colors">AI Workflows & Automations</Link> represent the intersection of intelligent technology and business optimization. By combining artificial intelligence with workflow automation, we help organizations transform their operations into intelligent, self-optimizing systems that work smarter, not harder.
+                        <Link href="/blog/ai-workflows-automating-business-processes" className="hover:text-[var(--brand-orange)] transition-colors">AI Workflows & Automations</Link> represent the intersection of intelligent technology and business optimization. By combining artificial intelligence with workflow automation, we help organizations transform their operations into intelligent, self-optimizing systems that work smarter, not harder.
                     </p>
                 </div>
 

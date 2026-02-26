@@ -14,7 +14,7 @@ export default function Process() {
         },
         {
             icon: Pencil,
-            title: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-purple)] transition-colors">UI/UX Design (Week 3-5)</Link>,
+            title: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">UI/UX Design (Week 3-5)</Link>,
             description: "Low to high-fidelity wireframing, interactive prototypes in Figma/Adobe XD, user flow mapping, and accessibility audit. 35% higher engagement through conversion-focused design backed by 10,000+ hours A/B testing.",
             details: ["Wireframing", "Interactive Prototypes", "Design System", "WCAG 2.2 AA Compliance", "Usability Testing (5+ users)"]
         },

@@ -14,7 +14,7 @@ export default function FAQ() {
         },
         {
             q: "What should I look for in a web design and development agency?",
-            a: <>Key evaluation criteria include Technical Capabilities (modern framework expertise, full-stack skills, <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">cloud deployment</Link>), Design Excellence (UI/UX portfolio, <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">accessibility compliance</Link>), Business Understanding (industry experience, ROI-focused approach), and Project Management (Agile methodology, budget transparency).</>,
+            a: <>Key evaluation criteria include Technical Capabilities (modern framework expertise, full-stack skills, <Link href="/services/web-design-development/nodejs-backend" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">cloud deployment</Link>), Design Excellence (UI/UX portfolio, <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">accessibility compliance</Link>), Business Understanding (industry experience, ROI-focused approach), and Project Management (Agile methodology, budget transparency).</>,
         },
         {
             q: "How to evaluate a professional web design agency?",

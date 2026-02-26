@@ -21,7 +21,7 @@ export default function SolutionTypes() {
     const solutions = [
         {
             icon: Cpu,
-            title: <Link href="/services/web-design-development/saas-application-development" className="hover:underline">Technology & SaaS</Link>,
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">Technology & SaaS</Link>,
             description: "LinkedIn ads management for SaaS tailored to reach CTOs and IT decision-makers.",
             features: [
                 "IT decision-maker targeting",
@@ -69,7 +69,7 @@ export default function SolutionTypes() {
         },
         {
             icon: Briefcase,
-            title: <Link href="/services/web-design-development/portal-development" className="hover:underline">Recruiting & HR</Link>,
+            title: <Link href="/services/web-design-development/blog-design-services" className="hover:underline">Recruiting & HR</Link>,
             description: "Dominate LinkedIn recruitment advertising services to attract top-tier global talent.",
             features: [
                 "Employer branding",

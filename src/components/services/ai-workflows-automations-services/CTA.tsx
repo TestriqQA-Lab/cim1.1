@@ -35,7 +35,7 @@ export default function CTA() {
                             Ready to Transform Your <span style={{ color: "var(--brand-orange)" }}>Operations?</span>
                         </h2>
                         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Don't let manual work hold you back. Partner with a <Link href="/blog/ai-workflows-automating-business" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">Custom AI Automation Agency</Link> that understands the future of work.
+                            Don't let manual work hold you back. Partner with a <Link href="/blog/ai-workflows-automating-business-processes" className="underline decoration-dotted hover:text-[var(--brand-orange)] transition-colors">Custom AI Automation Agency</Link> that understands the future of work.
                         </p>
 
                         {/* CTA Buttons */}

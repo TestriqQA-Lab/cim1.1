@@ -34,7 +34,7 @@ export default function Process() {
             title: "UX Design & Prototyping",
             description: <>Create intuitive, engaging interfaces that make learning enjoyable. We design for accessibility, mobile-first, and optimal learning experiences.</>,
             deliverables: [
-                { icon: Palette, text: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">Interface design</Link> },
+                { icon: Palette, text: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:underline">Interface design</Link> },
                 { icon: Play, text: "Interactive mockups" },
                 { icon: Users, text: "User testing" },
                 { icon: Settings, text: <Link href="/services/mobile-app-development" className="hover:underline">Mobile optimization</Link> }

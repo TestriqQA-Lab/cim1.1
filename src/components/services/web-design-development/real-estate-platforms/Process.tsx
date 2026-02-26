@@ -32,7 +32,7 @@ export default function Process() {
         {
             number: "02",
             icon: Palette,
-            title: <><Link href="/blog/stunning-ui-ux-design-principles" className="hover:underline">UX Design</Link> & Property Presentation</>,
+            title: <><Link href="/blog/ui-ux-design-principles-best-practices" className="hover:underline">UX Design</Link> & Property Presentation</>,
             description: "Creating visually stunning property showcases with intuitive search, interactive maps, and mobile-first experiences that engage property seekers.",
             deliverables: [
                 { icon: FileText, text: "Listing page wireframes" },

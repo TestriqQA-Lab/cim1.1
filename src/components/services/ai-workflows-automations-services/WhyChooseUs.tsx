@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
         {
             icon: Link2,
             title: "Seamless Integrations (API-First)",
-            description: <span>No silos. We specialize in <Link href="/blog/ai-workflows-automating-business" className="hover:text-amber-500 underline decoration-dotted transition-colors">AI workflow integration</Link> for CRM and ERP systems (Salesforce, HubSpot, SAP), ensuring your Large Language Model (LLM) Integration speaks fluent data with your existing stack.</span>,
+            description: <span>No silos. We specialize in <Link href="/blog/ai-workflows-automating-business-processes" className="hover:text-amber-500 underline decoration-dotted transition-colors">AI workflow integration</Link> for CRM and ERP systems (Salesforce, HubSpot, SAP), ensuring your Large Language Model (LLM) Integration speaks fluent data with your existing stack.</span>,
             gradient: "from-amber-500 to-orange-500",
             iconBg: "bg-amber-500/10",
             iconColor: "text-amber-500",

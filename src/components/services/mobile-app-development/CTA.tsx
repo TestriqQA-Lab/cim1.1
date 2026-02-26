@@ -79,7 +79,7 @@ export default function CTA() {
                                 </div>
                                 <div className="flex items-start gap-2">
                                     <span style={{ color: "var(--brand-purple)" }}>✓</span>
-                                    <span>Free <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">UI/UX Consultation</Link> ($1,500 value)</span>
+                                    <span>Free <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">UI/UX Consultation</Link> ($1,500 value)</span>
                                 </div>
                             </div>
                         </div>

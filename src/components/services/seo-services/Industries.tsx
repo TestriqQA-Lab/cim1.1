@@ -17,7 +17,7 @@ export default function Industries() {
             decorIcon: BarChart3,
             accentIcon: Target,
             title: "Organic SEO for SaaS Companies",
-            description: <span>We understand B2B cycles. We reduce CAC and increase LTV by targeting decision-makers searching for <Link href="/services/web-design-development/saas-application-development" className="hover:text-white transition-colors">software solutions</Link>.</span>,
+            description: <span>We understand B2B cycles. We reduce CAC and increase LTV by targeting decision-makers searching for <Link href="/services/web-design-development/saas-development-services" className="hover:text-white transition-colors">software solutions</Link>.</span>,
             color: "#14b8a6",
             gradient: "from-emerald-500 to-teal-600",
             stats: "High LTV",

@@ -16,7 +16,7 @@ export default function Process() {
         },
         {
             number: "02",
-            title: <Link href="/blog/stunning-ui-ux-design-principles" className="hover:text-purple-500 transition-colors">Workflow Design</Link>,
+            title: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-purple-500 transition-colors">Workflow Design</Link>,
             description: "Our architects draft the blueprint, selecting the best-fit Machine Learning Model Deployment strategies and defining human touchpoints.",
             icon: Pencil,
             color: "from-purple-500 to-pink-500",
@@ -44,7 +44,7 @@ export default function Process() {
         {
             number: "05",
             title: "Testing & Optimization",
-            description: <span>We stress-test with <Link href="/blog/ai-workflows-automating-business" className="hover:text-green-500 underline decoration-dotted transition-colors">Real-time AI workflow monitoring</Link>. We run thousands of scenarios using <Link href="/blog/web-performance-optimization-speed" className="hover:text-green-500 underline decoration-dotted transition-colors">Testing & Optimization</Link> to ensure your Agentic AI Frameworks don't hallucinate.</span>,
+            description: <span>We stress-test with <Link href="/blog/ai-workflows-automating-business-processes" className="hover:text-green-500 underline decoration-dotted transition-colors">Real-time AI workflow monitoring</Link>. We run thousands of scenarios using <Link href="/blog/web-performance-optimization-speed" className="hover:text-green-500 underline decoration-dotted transition-colors">Testing & Optimization</Link> to ensure your Agentic AI Frameworks don't hallucinate.</span>,
             icon: TestTube,
             color: "from-green-500 to-emerald-500",
             iconBg: "bg-green-500/10",

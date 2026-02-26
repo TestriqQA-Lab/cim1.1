@@ -26,7 +26,7 @@ export default function SolutionTypes() {
         },
         {
             id: "saas",
-            title: <Link href="/services/web-design-development/saas-application-development" className="hover:underline">Tech & SaaS Startups</Link>,
+            title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">Tech & SaaS Startups</Link>,
             description: "Ranked as the best X agency for tech startups, we help generate B2B leads through strategic threads and targeted X Campaign Manager tactics.",
             icon: Laptop,
             color: "#00E676", // Tech Green
