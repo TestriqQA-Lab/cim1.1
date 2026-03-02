@@ -65,7 +65,7 @@ export default function Hero() {
         {
             icon: Mail,
             title: "Email Us",
-            info: "contact@cinuteinfomedia.com",
+            info: "",
             description: "24-hour response guaranteed",
             colorStartVar: "--brand-blue",
             colorEndVar: "--brand-teal",

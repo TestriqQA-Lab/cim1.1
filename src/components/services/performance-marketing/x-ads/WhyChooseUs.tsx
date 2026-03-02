@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
                             </span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-8" style={{ color: "var(--foreground)" }}>
                             The X Factor
                         </h2>
                         <div className="space-y-8">

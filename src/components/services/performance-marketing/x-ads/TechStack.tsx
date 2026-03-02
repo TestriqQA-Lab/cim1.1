@@ -40,7 +40,7 @@ export default function TechStack() {
         >
             <div className="mx-auto px-6 md:px-12 xl:px-20 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: "var(--foreground)" }}>
                         Tech Infrastructure
                     </h2>
                     <p className="text-lg mx-auto max-w-lg" style={{ color: "var(--secondary-text)" }}>
