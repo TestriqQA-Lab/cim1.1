@@ -17,7 +17,10 @@ export function generateGraphSchema(...schemas: Record<string, unknown>[]) {
 // CORE SCHEMAS — Organization, WebSite (site-wide identity)
 // ============================================================
 
-export function generateOrganizationSchema() {
+export function generateOrganizationSchema(overrides?: {
+  description?: string;
+  slogan?: string;
+}) {
   return {
     "@type": "Organization",
     "@id": `${siteUrl}/#organization`,
@@ -27,8 +30,8 @@ export function generateOrganizationSchema() {
     "logo": {
       "@type": "ImageObject",
       "@id": `${siteUrl}/#logo`,
-      "url": `${siteUrl}/logo.png`,
-      "contentUrl": `${siteUrl}/logo.png`,
+      "url": `${siteUrl}/images/CIM_Brand_Logo.png`,
+      "contentUrl": `${siteUrl}/images/CIM_Brand_Logo.png`,
       "caption": "Cinute InfoMedia Logo",
       "inLanguage": "en-US",
     },
@@ -36,8 +39,10 @@ export function generateOrganizationSchema() {
       "@id": `${siteUrl}/#logo`,
     },
     "description":
+      overrides?.description ||
       "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. 320% ROI proven. 300+ global projects.",
-    "foundingDate": "2014",
+    "foundingDate": "2025",
+    ...(overrides?.slogan && { "slogan": overrides.slogan }),
     "address": {
       "@type": "PostalAddress",
       "streetAddress":
@@ -146,6 +151,37 @@ export function generateWebPageSchema(params: {
   };
 }
 
+export function generateAboutPageSchema(params: {
+  name: string;
+  description: string;
+  urlPath: string;
+  datePublished?: string;
+  dateModified?: string;
+}) {
+  return {
+    "@type": "AboutPage",
+    "@id": `${siteUrl}${params.urlPath}/#webpage`,
+    "url": `${siteUrl}${params.urlPath}`,
+    "name": params.name,
+    "description": params.description,
+    "isPartOf": {
+      "@id": `${siteUrl}/#website`,
+    },
+    "about": {
+      "@id": `${siteUrl}/#organization`,
+    },
+    "mainEntity": {
+      "@id": `${siteUrl}/#organization`,
+    },
+    "publisher": {
+      "@id": `${siteUrl}/#organization`,
+    },
+    "inLanguage": "en-US",
+    ...(params.datePublished && { "datePublished": params.datePublished }),
+    ...(params.dateModified && { "dateModified": params.dateModified }),
+  };
+}
+
 export function generateFAQSchema(
   faqs: Array<{ question: string; answer: string }>,
   id?: string
@@ -165,10 +201,12 @@ export function generateFAQSchema(
 }
 
 export function generateBreadcrumbSchema(
-  items: Array<{ name: string; url: string }>
+  items: Array<{ name: string; url: string }>,
+  id?: string
 ) {
   return {
     "@type": "BreadcrumbList",
+    "@id": id || `${siteUrl}/#breadcrumb`,
     "itemListElement": items.map((item, index) => ({
       "@type": "ListItem",
       "position": index + 1,
@@ -200,29 +238,26 @@ export function generateServiceSchema(params: {
   };
 }
 
-export function generateServiceListSchema(
-  services: Array<{
+export function generateItemListSchema(params: {
+  id: string;
+  name: string;
+  description: string;
+  items: Array<{
     name: string;
     url: string;
-    description: string;
-  }>
-) {
+  }>;
+}) {
   return {
     "@type": "ItemList",
-    "@id": `${siteUrl}/#services-list`,
-    "name":
-      "Comprehensive Web Development Services & Digital Marketing Solutions",
-    "description":
-      "From corporate website development to enterprise mobile apps and AI-driven marketing, our professional web development company offers full-spectrum services designed to accelerate your digital transformation.",
-    "numberOfItems": services.length,
-    "itemListElement": services.map((service, index) => ({
+    "@id": `${siteUrl}${params.id}`,
+    "name": params.name,
+    "description": params.description,
+    "numberOfItems": params.items.length,
+    "itemListElement": params.items.map((item, index) => ({
       "@type": "ListItem",
       "position": index + 1,
-      "name": service.name,
-      "url": service.url.startsWith("http")
-        ? service.url
-        : `${siteUrl}${service.url}`,
-      "description": service.description,
+      "name": item.name,
+      "url": item.url.startsWith("http") ? item.url : `${siteUrl}${item.url}`,
     })),
   };
 }

@@ -8,7 +8,7 @@ import {
   generateWebPageSchema,
   generateBreadcrumbSchema,
   generateFAQSchema,
-  generateServiceListSchema,
+  generateItemListSchema,
   generateReviewSchema,
   generateHowToSchema,
   generateNavigationSchema,
@@ -97,48 +97,45 @@ export default async function Home() {
       },
     ]),
 
-    generateServiceListSchema([
-      {
-        name: "Web Design & Development",
-        url: "/services/web-design-development",
-        description: "Business & corporate websites, web applications & SaaS platforms, e-commerce ecosystems. Key Results: Sub-2s load times, 300% organic growth.",
-      },
-      {
-        name: "Mobile App Development",
-        url: "/services/mobile-app-development",
-        description: "Native iOS & Android app development, cross-platform (React Native, Flutter), enterprise mobile applications. Key Results: 40% faster time-to-market, 98.7% bug-free.",
-      },
-      {
-        name: "Social Media Marketing",
-        url: "/services/social-media-marketing-services",
-        description: "Platform-specific strategies for Facebook, Instagram, LinkedIn. Paid social media advertising and influencer marketing campaigns. Key Results: 300% ROI on paid campaigns, 10x engagement.",
-      },
-      {
-        name: "AI Workflows & Automations",
-        url: "/services/ai-workflows-automations-services",
-        description: "Business process automation, document processing & OCR, CRM/ERP integrations (Salesforce, HubSpot). Key Results: 200+ hours saved monthly, 60% cost reduction.",
-      },
-      {
-        name: "AI-Powered Chatbots",
-        url: "/services/ai-chatbots-services",
-        description: "Custom AI chatbot development, e-commerce sales & support bots, WhatsApp & social media automation. Key Results: 300% ROI, 70% reduction in support costs.",
-      },
-      {
-        name: "Organic Growth & SEO",
-        url: "/services/seo-services",
-        description: "Technical SEO & site audits, on-page & off-page optimization, content strategy & marketing. Key Results: 3x organic traffic in 6 months, #1 rankings.",
-      },
-      {
-        name: "Performance Marketing",
-        url: "/services/performance-marketing",
-        description: "Google Ads & PPC management, paid social campaigns (Meta, LinkedIn, TikTok), retargeting & remarketing strategies. Key Results: 10x ROAS, precision targeting.",
-      },
-      {
-        name: "Brand Identity Design",
-        url: "/services/brand-identity-design",
-        description: "Strategic logo design, brand style guide development, complete visual identity systems. Key Results: 95% client retention, award-winning designs.",
-      },
-    ]),
+    generateItemListSchema({
+      id: "/#services-list",
+      name: "Comprehensive Web Development Services & Digital Marketing Solutions",
+      description: "From corporate website development to enterprise mobile apps and AI-driven marketing, our professional web development company offers full-spectrum services designed to accelerate your digital transformation.",
+      items: [
+        {
+          name: "Web Design & Development",
+          url: "/services/web-design-development",
+        },
+        {
+          name: "Mobile App Development",
+          url: "/services/mobile-app-development",
+        },
+        {
+          name: "Social Media Marketing",
+          url: "/services/social-media-marketing-services",
+        },
+        {
+          name: "AI Workflows & Automations",
+          url: "/services/ai-workflows-automations-services",
+        },
+        {
+          name: "AI-Powered Chatbots",
+          url: "/services/ai-chatbots-services",
+        },
+        {
+          name: "Organic Growth & SEO",
+          url: "/services/seo-services",
+        },
+        {
+          name: "Performance Marketing",
+          url: "/services/performance-marketing",
+        },
+        {
+          name: "Brand Identity Design",
+          url: "/services/brand-identity-design",
+        },
+      ],
+    }),
 
     generateReviewSchema({
       reviewBody: "The AI chatbot they built has transformed our customer support. We're saving 200+ hours monthly while providing better, faster service to our students.",
