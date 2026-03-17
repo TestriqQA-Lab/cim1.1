@@ -21,6 +21,7 @@ export function generateOrganizationSchema(overrides?: {
   description?: string;
   slogan?: string;
   locationId?: string;
+  hasOfferCatalogId?: string;
 }) {
   return {
     "@type": "Organization",
@@ -44,6 +45,9 @@ export function generateOrganizationSchema(overrides?: {
       "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. 320% ROI proven. 300+ global projects.",
     "foundingDate": "2025",
     ...(overrides?.slogan && { "slogan": overrides.slogan }),
+    ...(overrides?.hasOfferCatalogId && {
+      "hasOfferCatalog": { "@id": overrides.hasOfferCatalogId },
+    }),
     "address": {
       "@type": "PostalAddress",
       "streetAddress":
@@ -346,6 +350,29 @@ export function generateItemListSchema(params: {
       "position": index + 1,
       "name": item.name,
       "url": item.url.startsWith("http") ? item.url : `${siteUrl}${item.url}`,
+    })),
+  };
+}
+
+export function generateOfferCatalogSchema(params: {
+  id: string;
+  name: string;
+  offers: Array<{
+    name: string;
+    description: string;
+  }>;
+}) {
+  return {
+    "@type": "OfferCatalog",
+    "@id": `${siteUrl}${params.id}`,
+    "name": params.name,
+    "itemListElement": params.offers.map((offer) => ({
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": offer.name,
+        "description": offer.description,
+      },
     })),
   };
 }
