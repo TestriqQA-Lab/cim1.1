@@ -20,6 +20,7 @@ export function generateGraphSchema(...schemas: Record<string, unknown>[]) {
 export function generateOrganizationSchema(overrides?: {
   description?: string;
   slogan?: string;
+  locationId?: string;
 }) {
   return {
     "@type": "Organization",
@@ -52,14 +53,16 @@ export function generateOrganizationSchema(overrides?: {
       "postalCode": "401107",
       "addressCountry": "IN",
     },
-    "location": {
-      "@type": "Place",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "19.2812",
-        "longitude": "72.8685",
-      },
-    },
+    "location": overrides?.locationId
+      ? { "@id": overrides.locationId }
+      : {
+          "@type": "Place",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "19.2812",
+            "longitude": "72.8685",
+          },
+        },
     "telephone": "+919004988859",
     "email": "contact@cinuteinfomedia.com",
     "contactPoint": {
@@ -179,6 +182,91 @@ export function generateAboutPageSchema(params: {
     "inLanguage": "en-US",
     ...(params.datePublished && { "datePublished": params.datePublished }),
     ...(params.dateModified && { "dateModified": params.dateModified }),
+  };
+}
+
+export function generateContactPageSchema(params: {
+  name: string;
+  description: string;
+  urlPath: string;
+}) {
+  return {
+    "@type": "ContactPage",
+    "@id": `${siteUrl}${params.urlPath}/#webpage`,
+    "url": `${siteUrl}${params.urlPath}`,
+    "name": params.name,
+    "description": params.description,
+    "isPartOf": {
+      "@id": `${siteUrl}/#website`,
+    },
+    "about": {
+      "@id": `${siteUrl}/#organization`,
+    },
+    "mainEntity": {
+      "@id": `${siteUrl}${params.urlPath}/#professional-service`,
+    },
+    "publisher": {
+      "@id": `${siteUrl}/#organization`,
+    },
+    "inLanguage": "en-US",
+    "breadcrumb": {
+      "@id": `${siteUrl}${params.urlPath}/#breadcrumb`,
+    },
+  };
+}
+
+export function generateProfessionalServiceSchema(params: {
+  name: string;
+  urlPath: string;
+  image?: string;
+  priceRange?: string;
+  telephone: string;
+  hasMap?: string;
+}) {
+  return {
+    "@type": "ProfessionalService",
+    "@id": `${siteUrl}${params.urlPath}/#professional-service`,
+    "name": params.name,
+    "image": params.image || `${siteUrl}/images/CIM_Brand_Logo.png`,
+    "url": `${siteUrl}${params.urlPath}`,
+    "telephone": params.telephone,
+    "priceRange": params.priceRange || "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress":
+        "Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park",
+      "addressLocality": "Mira Road, Mira Bhayandar",
+      "addressRegion": "Maharashtra",
+      "postalCode": "401107",
+      "addressCountry": "IN",
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "19.2812",
+      "longitude": "72.8685",
+    },
+    ...(params.hasMap && { "hasMap": params.hasMap }),
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        "opens": "10:00",
+        "closes": "20:00",
+      },
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": params.telephone,
+      "contactType": "expert consultation",
+      "availableLanguage": ["English", "Hindi"],
+    },
   };
 }
 
