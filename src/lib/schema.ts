@@ -136,6 +136,9 @@ export function generateWebPageSchema(params: {
   urlPath: string;
   datePublished?: string;
   dateModified?: string;
+  aboutId?: string;
+  mainEntityId?: string;
+  breadcrumbId?: string;
 }) {
   return {
     "@type": "WebPage",
@@ -147,8 +150,14 @@ export function generateWebPageSchema(params: {
       "@id": `${siteUrl}/#website`,
     },
     "about": {
-      "@id": `${siteUrl}/#organization`,
+      "@id": params.aboutId || `${siteUrl}/#organization`,
     },
+    ...(params.mainEntityId && {
+      "mainEntity": { "@id": params.mainEntityId },
+    }),
+    ...(params.breadcrumbId && {
+      "breadcrumb": { "@id": params.breadcrumbId },
+    }),
     "publisher": {
       "@id": `${siteUrl}/#organization`,
     },
@@ -316,17 +325,43 @@ export function generateServiceSchema(params: {
   name: string;
   description: string;
   urlPath: string;
+  serviceType?: string;
   image?: string;
+  areaServed?: string[];
+  offer?: {
+    url: string;
+    priceCurrency?: string;
+    availability?: string;
+    validFrom?: string;
+    description?: string;
+  };
 }) {
   return {
     "@type": "Service",
+    "@id": `${siteUrl}${params.urlPath}/#service`,
     "name": params.name,
     "description": params.description,
+    "url": `${siteUrl}${params.urlPath}`,
+    ...(params.serviceType && { "serviceType": params.serviceType }),
     "provider": {
       "@id": `${siteUrl}/#organization`,
     },
-    "url": `${siteUrl}${params.urlPath}`,
-    "image": params.image || `${siteUrl}/images/service-placeholder.png`,
+    ...(params.areaServed && { "areaServed": params.areaServed }),
+    ...(params.offer && {
+      "offers": {
+        "@type": "Offer",
+        "@id": `${siteUrl}${params.urlPath}/#offer`,
+        "url": params.offer.url.startsWith("http") ? params.offer.url : `${siteUrl}${params.offer.url}`,
+        "priceCurrency": params.offer.priceCurrency || "USD",
+        "availability": params.offer.availability || "https://schema.org/InStock",
+        ...(params.offer.validFrom && { "validFrom": params.offer.validFrom }),
+        ...(params.offer.description && { "description": params.offer.description }),
+        "seller": {
+          "@id": `${siteUrl}/#organization`,
+        },
+      },
+    }),
+    ...(params.image && { "image": params.image }),
   };
 }
 
