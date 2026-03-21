@@ -371,7 +371,8 @@ export function generateItemListSchema(params: {
   description: string;
   items: Array<{
     name: string;
-    url: string;
+    url?: string;
+    description?: string;
   }>;
 }) {
   return {
@@ -384,7 +385,8 @@ export function generateItemListSchema(params: {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "url": item.url.startsWith("http") ? item.url : `${siteUrl}${item.url}`,
+      ...(item.url && { "url": item.url.startsWith("http") ? item.url : `${siteUrl}${item.url}` }),
+      ...(item.description && { "description": item.description }),
     })),
   };
 }
