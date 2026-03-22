@@ -56,38 +56,46 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     crawlServices(servicesPath, '');
 
-    // Fetch data from Sanity
-    const [posts, categories, authors] = await Promise.all([
-        client.fetch(allPostsQuery),
-        client.fetch(categoriesQuery),
-        client.fetch(authorsQuery),
-    ]);
+    // Fetch data from Sanity (with error handling for build resilience)
+    let blogPostRoutes: MetadataRoute.Sitemap = [];
+    let blogCategoryRoutes: MetadataRoute.Sitemap = [];
+    let blogAuthorRoutes: MetadataRoute.Sitemap = [];
 
-    // 3. Dynamic Blog Routes
-    const blogPostRoutes: MetadataRoute.Sitemap = posts.map((post: any) => ({
-        url: `${baseUrl}/blog/${post.slug}`,
-        lastModified: new Date(post.publishedAt).toISOString(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7,
-    }));
+    try {
+        const [posts, categories, authors] = await Promise.all([
+            client.fetch(allPostsQuery),
+            client.fetch(categoriesQuery),
+            client.fetch(authorsQuery),
+        ]);
 
-    // 4. Dynamic Category Routes
-    const blogCategoryRoutes: MetadataRoute.Sitemap = categories.map((cat: any) => ({
-        url: `${baseUrl}/blog/category/${cat.slug}`,
-        lastModified: new Date().toISOString(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.6,
-    }));
-
-    // 5. Dynamic Author Routes
-    const blogAuthorRoutes: MetadataRoute.Sitemap = authors.map((author: any) => {
-        return {
-            url: `${baseUrl}/blog/author/${author.slug}`,
-            lastModified: new Date().toISOString(),
+        // 3. Dynamic Blog Routes
+        blogPostRoutes = posts.map((post: any) => ({
+            url: `${baseUrl}/blog/${post.slug}`,
+            lastModified: new Date(post.publishedAt).toISOString(),
             changeFrequency: 'monthly' as const,
-            priority: 0.5,
-        };
-    });
+            priority: 0.7,
+        }));
+
+        // 4. Dynamic Category Routes
+        blogCategoryRoutes = categories.map((cat: any) => ({
+            url: `${baseUrl}/blog/category/${cat.slug}`,
+            lastModified: new Date().toISOString(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        }));
+
+        // 5. Dynamic Author Routes
+        blogAuthorRoutes = authors.map((author: any) => {
+            return {
+                url: `${baseUrl}/blog/author/${author.slug}`,
+                lastModified: new Date().toISOString(),
+                changeFrequency: 'monthly' as const,
+                priority: 0.5,
+            };
+        });
+    } catch (error) {
+        console.warn('Warning: Failed to fetch Sanity data for sitemap. Blog routes will be excluded.', error);
+    }
 
     return [
         ...staticRoutes,
