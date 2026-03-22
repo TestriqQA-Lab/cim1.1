@@ -331,6 +331,7 @@ export function generateServiceSchema(params: {
   offer?: {
     url: string;
     priceCurrency?: string;
+    price?: string;
     availability?: string;
     validFrom?: string;
     description?: string;
@@ -353,6 +354,7 @@ export function generateServiceSchema(params: {
         "@id": `${siteUrl}${params.urlPath}/#offer`,
         "url": params.offer.url.startsWith("http") ? params.offer.url : `${siteUrl}${params.offer.url}`,
         "priceCurrency": params.offer.priceCurrency || "USD",
+        ...(params.offer.price && { "price": params.offer.price }),
         "availability": params.offer.availability || "https://schema.org/InStock",
         ...(params.offer.validFrom && { "validFrom": params.offer.validFrom }),
         ...(params.offer.description && { "description": params.offer.description }),
