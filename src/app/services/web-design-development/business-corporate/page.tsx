@@ -46,6 +46,7 @@ export const metadata = getPageMetadata({
         'Professional Website Development',
         'Corporate Web Design',
     ],
+    image: '/og-images/Business.webp',
 });
 
 export default function BusinessCorporatePage() {

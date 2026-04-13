@@ -38,6 +38,7 @@ export const metadata = getPageMetadata({
         'Organic Traffic Growth',
         'SEO Agency',
     ],
+    image: '/og-images/organic_growth_seo.webp',
 });
 
 export default function OrganicGrowthSEOPage() {

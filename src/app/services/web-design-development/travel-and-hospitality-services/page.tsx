@@ -37,6 +37,7 @@ export const metadata = getPageMetadata({
         'hotel property management system integration',
         'travel and tourism market research',
     ],
+    image: '/og-images/travel-and-hospitality.jpeg',
 });
 
 export default function TravelHospitalityPage() {

@@ -36,6 +36,7 @@ export const metadata = getPageMetadata({
         'Lead Generation Pages',
         'PPC Landing Pages',
     ],
+    image: '/og-images/Landing.webp',
 });
 
 export default function LandingPagesPage() {

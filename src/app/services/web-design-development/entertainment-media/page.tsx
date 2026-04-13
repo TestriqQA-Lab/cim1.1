@@ -33,6 +33,7 @@ export const metadata = getPageMetadata({
         'live streaming website',
         'media content management',
     ],
+    image: '/og-images/entertainment.jpeg',
 });
 
 export default function EntertainmentMediaPage() {

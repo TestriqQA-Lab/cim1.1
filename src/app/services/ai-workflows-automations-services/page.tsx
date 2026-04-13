@@ -40,6 +40,7 @@ export const metadata = getPageMetadata({
         'Agentic AI Agency',
         'Custom AI Workflows'
     ],
+    image: '/og-images/ai_workflow.webp',
 });
 
 export default function AIWorkflowsAutomationsPage() {

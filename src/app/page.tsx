@@ -26,6 +26,7 @@ export const metadata: Metadata = {
       "web design and development company",
       "professional website development"
     ],
+    image: "/og-images/home_page.png",
   }),
   other: {
     "geo.region": "IN-MH",

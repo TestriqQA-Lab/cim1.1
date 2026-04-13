@@ -41,6 +41,7 @@ export const metadata = getPageMetadata({
         'Paid Social Media Advertising',
         'Social Media Content Strategy',
     ],
+    image: '/og-images/social_marketing.webp',
 });
 
 export default function SocialMediaMarketingPage() {

@@ -50,6 +50,7 @@ export const metadata = getPageMetadata({
         'WooCommerce Development',
         'E-commerce Website Design',
     ],
+    image: '/og-images/E-commerce.webp',
 });
 
 export default function EcommerceStoresPage() {

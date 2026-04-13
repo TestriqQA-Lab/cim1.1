@@ -53,6 +53,7 @@ export const metadata = getPageMetadata({
         'Personal Brand Audit',
         'Next.js Portfolio'
     ],
+    image: '/og-images/portfolio_sites.jpeg',
 });
 
 export default function PortfolioPersonalPage() {

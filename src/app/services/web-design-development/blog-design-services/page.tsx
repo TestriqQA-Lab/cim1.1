@@ -50,6 +50,7 @@ export const metadata = getPageMetadata({
         'Website Management Services',
         'Blog writing services'
     ],
+    image: '/og-images/blog_and_portals.png',
 });
 
 export default function BlogsNewsPortalsPage() {

@@ -43,6 +43,7 @@ export const metadata = getPageMetadata({
         'Blockchain Solutions',
         'Secure Banking Apps',
     ],
+    image: '/og-images/fintech.jpeg',
 });
 
 export default function FinTechSolutionsPage() {

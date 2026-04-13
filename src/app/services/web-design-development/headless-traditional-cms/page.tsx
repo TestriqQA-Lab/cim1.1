@@ -33,6 +33,7 @@ export const metadata = getPageMetadata({
         'cms integration',
         'content management system',
     ],
+    image: '/og-images/Headless.webp',
 });
 
 export default function HeadlessTraditionalCMSPage() {

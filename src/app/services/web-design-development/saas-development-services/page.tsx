@@ -51,6 +51,7 @@ export const metadata = getPageMetadata({
         'Multi-Tenant Architecture',
         'MVP Development Services',
     ],
+    image: '/og-images/Saas.webp',
 });
 
 export default function WebApplicationsSaaSPage() {

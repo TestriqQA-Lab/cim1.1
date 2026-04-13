@@ -19,6 +19,20 @@ export const metadata: Metadata = {
         title: 'Contact Us | Cinute InfoMedia - Get in Touch',
         description: 'Get in touch with Cinute InfoMedia. We are ready to help you build your next digital success story. Reach out for consultations and quotes.',
         url: 'https://www.cinuteinfomedia.com/contact',
+        images: [
+            {
+                url: '/og-images/Contact.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Contact Cinute InfoMedia - Get in Touch',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Contact Us | Cinute InfoMedia - Get in Touch',
+        description: 'Get in touch with Cinute InfoMedia. We are ready to help you build your next digital success story. Reach out for consultations and quotes.',
+        images: ['/og-images/Contact.webp'],
     },
     alternates: {
         canonical: 'https://www.cinuteinfomedia.com/contact',

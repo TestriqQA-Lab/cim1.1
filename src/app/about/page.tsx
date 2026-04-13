@@ -26,6 +26,7 @@ export const metadata = getPageMetadata({
     title: 'About Us | Cinute InfoMedia - Digital Growth Agency',
     description: 'Learn about Cinute InfoMedia (CIM), a leading digital growth agency helping businesses build, market, and scale with creativity, data, and technology. 300+ global projects. 95% client retention.',
     url: '/about',
+    image: '/og-images/About.webp',
 });
 
 export default function AboutPage() {

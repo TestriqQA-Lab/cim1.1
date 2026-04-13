@@ -42,6 +42,7 @@ export const metadata = getPageMetadata({
         'Rebranding Services',
         'Corporate Identity',
     ],
+    image: '/og-images/brand_identity_design.webp',
 });
 
 export default function BrandIdentityDesignPage() {

@@ -11,6 +11,7 @@ export const metadata = getPageMetadata({
     title: "Meta Ads Agency | Facebook & Instagram Advertising",
     description: "Scale your brand with high-converting Facebook and Instagram ads. Our Meta Ads agency delivers creative strategies for maximum engagement.",
     url: "/services/performance-marketing/meta-ads",
+    image: "/og-images/meta_ads.webp",
 });
 
 export default function MetaAdsPage() {

@@ -6,6 +6,7 @@ export const metadata = getPageMetadata({
     title: "Privacy Policy | Cinute InfoMedia",
     description: "Our commitment to protecting your privacy. Understand how we collect, use, and safeguard your data at Cinute InfoMedia.",
     url: "/privacy-policy",
+    image: "/og-images/Privacy.webp",
 });
 
 export default function PrivacyPolicyPage() {

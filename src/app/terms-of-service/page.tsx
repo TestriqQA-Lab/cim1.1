@@ -6,6 +6,7 @@ export const metadata = getPageMetadata({
     title: "Terms of Service | Cinute InfoMedia",
     description: "Understand the terms and conditions for using Cinute InfoMedia's services, tools, and digital solutions. Quality and transparency in every project.",
     url: "/terms-of-service",
+    image: "/og-images/Terms-Services.webp",
 });
 
 export default function TermsOfServicePage() {

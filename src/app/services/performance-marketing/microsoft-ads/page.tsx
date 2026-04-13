@@ -11,6 +11,7 @@ export const metadata = getPageMetadata({
     title: "Microsoft Ads Agency | Bing Advertising Services",
     description: "Reach high-value audiences on Bing, Yahoo, and AOL with our expert Microsoft Ads management services. Maximize ROI with targeted campaigns.",
     url: "/services/performance-marketing/microsoft-ads",
+    image: "/og-images/microsoft_ads.webp",
 });
 
 export default function MicrosoftAdsPage() {

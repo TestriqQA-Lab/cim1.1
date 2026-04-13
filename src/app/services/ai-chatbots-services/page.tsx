@@ -38,6 +38,7 @@ export const metadata = getPageMetadata({
         'AI Service Chatbot',
         'AI Chatbot Agency',
     ],
+    image: '/og-images/ai_powered_chatbots.webp',
 });
 
 export default function AIPoweredChatbotsPage() {

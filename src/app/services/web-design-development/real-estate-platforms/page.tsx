@@ -46,6 +46,7 @@ export const metadata = getPageMetadata({
         'MLS Integration',
         'Real Estate Portal Development',
     ],
+    image: '/og-images/real-estate.jpeg',
 });
 
 export default function RealEstatePlatformsPage() {

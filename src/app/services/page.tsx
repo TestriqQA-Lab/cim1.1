@@ -21,6 +21,7 @@ export const metadata = getPageMetadata({
     description: 'Explore our comprehensive digital services including web development, mobile apps, SEO, social media marketing, AI automation, and more. Transform your business with CIM.',
     url: '/services',
     keywords: ['web development services', 'mobile app solutions', 'SEO agency', 'AI automation consultants'],
+    image: '/og-images/Services.webp',
 });
 
 export default function ServicesPage() {

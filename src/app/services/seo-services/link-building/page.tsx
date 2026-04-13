@@ -11,6 +11,7 @@ export const metadata = getPageMetadata({
     title: "Link Building Services | High Quality Backlink Agency",
     description: "Boost your domain authority and search rankings with our ethical white-hat link building services. High-quality backlinks that drive results.",
     url: "/services/seo-services/link-building",
+    image: "/og-images/link_building.webp",
 });
 
 export default function LinkBuildingPage() {

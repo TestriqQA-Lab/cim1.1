@@ -11,6 +11,7 @@ export const metadata = getPageMetadata({
     title: "Amazon Ads Agency | Amazon PPC Management Services",
     description: "Boost your sales on Amazon with data-driven PPC campaigns. Our Amazon Ads agency helps you dominate search results and increase ROAS.",
     url: "/services/performance-marketing/amazon-ads",
+    image: "/og-images/amazon_ads.webp",
 });
 
 export default function AmazonAdsPage() {

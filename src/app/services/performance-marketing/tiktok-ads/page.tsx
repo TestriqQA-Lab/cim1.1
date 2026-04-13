@@ -11,6 +11,7 @@ export const metadata = getPageMetadata({
     title: "TikTok Ads Agency | TikTok Advertising Services",
     description: "Go viral and reach Gen Z audiences with creative TikTok advertising campaigns. Our agency helps you leverage the power of short-form video.",
     url: "/services/performance-marketing/tiktok-ads",
+    image: "/og-images/tiktok_ads.webp",
 });
 
 export default function TikTokAdsPage() {

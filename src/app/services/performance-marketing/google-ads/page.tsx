@@ -11,6 +11,7 @@ export const metadata = getPageMetadata({
     title: "Google Ads Agency | Google PPC Management Services",
     description: "Drive instant traffic and leads with our expert Google Ads management. specialized in Search, Display, Shopping, and Video campaigns.",
     url: "/services/performance-marketing/google-ads",
+    image: "/og-images/google_ads.webp",
 });
 
 export default function GoogleAdsPage() {

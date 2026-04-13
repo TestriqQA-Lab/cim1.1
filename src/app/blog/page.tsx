@@ -14,6 +14,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.cinuteinfomedia.com/blog",
   },
+  openGraph: {
+    title: "Blog & Insights | CIM - Digital Marketing & Web Development",
+    description: "Explore expert insights on web development, digital marketing, SEO strategies, and business growth.",
+    url: "https://www.cinuteinfomedia.com/blog",
+    siteName: "Cinute Infomedia",
+    images: [
+      {
+        url: "/og-images/Blog.webp",
+        width: 1200,
+        height: 630,
+        alt: "CIM Blog - Digital Marketing & Web Development Insights",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog & Insights | CIM - Digital Marketing & Web Development",
+    description: "Explore expert insights on web development, digital marketing, SEO strategies, and business growth.",
+    images: ["/og-images/Blog.webp"],
+  },
 };
 
 export const revalidate = 60; // Revalidate every minute

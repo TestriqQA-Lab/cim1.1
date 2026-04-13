@@ -41,6 +41,7 @@ export const metadata = getPageMetadata({
         'Flutter Development',
         'React Native Development',
     ],
+    image: '/og-images/mobile_app_development.webp',
 });
 
 export default function MobileAppDevelopmentPage() {
