@@ -19,6 +19,28 @@ export const metadata: Metadata = {
         "Enterprise Mobile App Development",
         "Enterprise Web Applications",
     ],
+    openGraph: {
+        title: "Enterprise App Development Services | Secure & Scalable",
+        description:
+            "Empower your business with Enterprise Application Development services. Custom, secure, & scalable enterprise software development for global ROI. Get a quote today! 💼",
+        url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/enterprise-application-development.webp",
+                width: 1200,
+                height: 630,
+                alt: "Enterprise App Development Services by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Enterprise App Development Services | Secure & Scalable",
+        description:
+            "Empower your business with Enterprise Application Development services. Custom, secure, & scalable enterprise software development for global ROI. Get a quote today! 💼",
+        images: ["/og-images/enterprise-application-development.webp"],
+    },
     alternates: {
         canonical: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services",
     },

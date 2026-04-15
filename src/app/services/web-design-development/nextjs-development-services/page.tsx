@@ -37,6 +37,7 @@ export const metadata = getPageMetadata({
         'react development agency',
         'next.js server-side rendering',
     ],
+    image: '/og-images/nextjs-development-services.webp',
 });
 
 export default function NextjsReactPage() {

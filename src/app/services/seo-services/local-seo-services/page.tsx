@@ -33,6 +33,29 @@ export const metadata: Metadata = {
         "Google Maps ranking",
         "local business SEO",
     ],
+    openGraph: {
+        title: "Local SEO Services , Google Maps Marketing Agency 2026",
+        description: "Expert Local SEO Services to rank higher on Google Maps & search. Drive local traffic, calls, and store visits with our proven GMB optimization.",
+        url: "https://www.cinuteinfomedia.com/services/seo-services/local-seo-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/local-seo-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "Local SEO Services , Google Maps Marketing Agency 2026 by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Local SEO Services , Google Maps Marketing Agency 2026",
+        description: "Expert Local SEO Services to rank higher on Google Maps & search. Drive local traffic, calls, and store visits with our proven GMB optimization.",
+        images: ["/og-images/local-seo-services.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/local-seo-services",
+    },
 };
 
 export default function LocalSEOPage() {

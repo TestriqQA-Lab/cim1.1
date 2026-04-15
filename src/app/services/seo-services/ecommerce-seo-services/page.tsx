@@ -26,6 +26,29 @@ export const metadata: Metadata = {
         "BigCommerce SEO",
         "ecommerce conversion rate optimization",
     ],
+    openGraph: {
+        title: "Ecommerce SEO Services | Shopify, Magento & WooCommerce 2026",
+        description: "Expert Ecommerce SEO Services to boost sales and rankings. Optimize your Shopify, Magento, or WooCommerce store for maximum visibility.",
+        url: "https://www.cinuteinfomedia.com/services/seo-services/ecommerce-seo-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/ecommerce-seo-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "Ecommerce SEO Services | Shopify, Magento & WooCommerce 2026 by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Ecommerce SEO Services | Shopify, Magento & WooCommerce 2026",
+        description: "Expert Ecommerce SEO Services to boost sales and rankings. Optimize your Shopify, Magento, or WooCommerce store for maximum visibility.",
+        images: ["/og-images/ecommerce-seo-services.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/ecommerce-seo-services",
+    },
 };
 
 export default function EcommerceSEOPage() {

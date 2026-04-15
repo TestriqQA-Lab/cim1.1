@@ -23,6 +23,29 @@ export const metadata: Metadata = {
         "iOS app security",
         "App Store Optimization"
     ],
+    openGraph: {
+        title: "iOS App Development Services | Custom iPhone & iPad Apps for Global Brands",
+        description: "Premier iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
+        url: "https://www.cinuteinfomedia.com/services/mobile-app-development/ios-app-development-company",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/ios-app-development-company.webp",
+                width: 1200,
+                height: 630,
+                alt: "iOS App Development Services | Custom iPhone & iPad Apps for Global Brands by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "iOS App Development Services | Custom iPhone & iPad Apps for Global Brands",
+        description: "Premier iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
+        images: ["/og-images/ios-app-development-company.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/mobile-app-development/ios-app-development-company",
+    },
 };
 
 export default function iOSAppDevelopmentPage() {

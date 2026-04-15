@@ -23,6 +23,28 @@ export const metadata: Metadata = {
         "HiCar development",
         "Huawei smart TV apps",
     ],
+    openGraph: {
+        title: "HarmonyOS App Development Services | Huawei AppGallery | TestrIQ",
+        description:
+            "Expert HarmonyOS app development services. Build distributed apps for Huawei smartphones, tablets, wearables, and IoT devices. HMS Core integration, ArkTS & ArkUI development, AppGallery submission.",
+        url: "https://www.cinuteinfomedia.com/services/mobile-app-development/harmony-OS-app-development-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/harmony-OS-app-development-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "HarmonyOS App Development Services by TestrIQ",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "HarmonyOS App Development Services | Huawei AppGallery | TestrIQ",
+        description:
+            "Expert HarmonyOS app development services. Build distributed apps for Huawei smartphones, tablets, wearables, and IoT devices. HMS Core integration, ArkTS & ArkUI development, AppGallery submission.",
+        images: ["/og-images/harmony-OS-app-development-services.webp"],
+    },
     alternates: {
         canonical: "/services/mobile-app-development/harmony-OS-app-development-services",
     },

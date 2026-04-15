@@ -19,6 +19,7 @@ export const metadata = getPageMetadata({
     title: 'Business Support Services | Outsourced Administrative & IT Support 24/7',
     description: 'Scale faster with our varied Business Support Services. From Outsourced Administrative tasks to IT Business Support & Virtual Assistants. Get a Quick Quote! 🚀',
     url: '/services/additional-support-services',
+    image: "/og-images/additional-support-services.webp",
     keywords: [
         'Business Support Services',
         'Outsourced Administrative',

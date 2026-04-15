@@ -23,6 +23,29 @@ export const metadata: Metadata = {
         "idea pins",
         "Pinterest strategy",
     ],
+    openGraph: {
+        title: "Pinterest Marketing Agency | Visual Discovery & Shopping Ads",
+        description: "Drive traffic and sales with Pinterest marketing. Shoppable pins, promoted content, and visual discovery strategies for e-commerce and lifestyle brands.",
+        url: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/pinterest-marketing",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/pinterest-marketing.webp",
+                width: 1200,
+                height: 630,
+                alt: "Pinterest Marketing Agency | Visual Discovery & Shopping Ads by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Pinterest Marketing Agency | Visual Discovery & Shopping Ads",
+        description: "Drive traffic and sales with Pinterest marketing. Shoppable pins, promoted content, and visual discovery strategies for e-commerce and lifestyle brands.",
+        images: ["/og-images/pinterest-marketing.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/pinterest-marketing",
+    },
 };
 
 export default function PinterestMarketingPage() {

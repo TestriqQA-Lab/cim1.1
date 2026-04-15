@@ -153,6 +153,7 @@ export function generateCategoryMetadata(category: string, postCount: number, sl
     description: `Explore ${postCount} articles about ${category}. Learn from our experts on the latest trends and best practices.`,
     url: url,
     keywords: [category, "blog", "articles"],
+    image: "/og-images/blogcategories.webp"
   });
 }
 

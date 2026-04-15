@@ -52,6 +52,7 @@ export const metadata = getPageMetadata({
         'Custom Web Development Agency',
         'Affordable Website Development',
     ],
+    image: '/og-images/web-design-development.webp',
 });
 
 export default function WebDesignDevelopmentPage() {

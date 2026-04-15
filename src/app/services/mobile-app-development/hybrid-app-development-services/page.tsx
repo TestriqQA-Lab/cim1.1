@@ -23,6 +23,29 @@ export const metadata: Metadata = {
         "healthcare hybrid applications",
         "IoT hybrid app development",
     ],
+    openGraph: {
+        title: "Hybrid App Development Services | Top Cross-Platform Agency 2026 \uD83D\uDE80",
+        description: "Leading hybrid mobile app development company. Build high-performance, single codebase apps for iOS & Android with Ionic & Capacitor. 20%+ CTR boost!",
+        url: "https://www.cinuteinfomedia.com/services/mobile-app-development/hybrid-app-development-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/hybrid-app-development-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "Hybrid App Development Services | Top Cross-Platform Agency 2026 🚀 by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Hybrid App Development Services | Top Cross-Platform Agency 2026 \uD83D\uDE80",
+        description: "Leading hybrid mobile app development company. Build high-performance, single codebase apps for iOS & Android with Ionic & Capacitor. 20%+ CTR boost!",
+        images: ["/og-images/hybrid-app-development-services.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/mobile-app-development/hybrid-app-development-services",
+    },
 };
 
 export default function HybridAppDevelopmentPage() {

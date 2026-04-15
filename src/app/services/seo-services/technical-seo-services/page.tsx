@@ -45,6 +45,29 @@ export const metadata: Metadata = {
         "hire a technical SEO expert",
         "technical SEO checklist for developers",
     ],
+    openGraph: {
+        title: "Professional Technical SEO Services 2026 | Technical SEO Agency",
+        description: "Boost crawlability & speed with our expert Technical SEO company. Optimize Core Web Vitals, Schema, and site architecture for global rankings. Get a free audit today!",
+        url: "https://www.cinuteinfomedia.com/services/seo-services/technical-seo-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/technical-seo-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "Professional Technical SEO Services 2026 | Technical SEO Agency by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Professional Technical SEO Services 2026 | Technical SEO Agency",
+        description: "Boost crawlability & speed with our expert Technical SEO company. Optimize Core Web Vitals, Schema, and site architecture for global rankings. Get a free audit today!",
+        images: ["/og-images/technical-seo-services.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/technical-seo-services",
+    },
 };
 
 const jsonLd = {

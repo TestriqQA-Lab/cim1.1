@@ -6,7 +6,8 @@ import { generateBlogCollectionSchema, generateBreadcrumbSchema } from "@/lib/sc
 export const metadata: Metadata = getPageMetadata({
   title: "Blog Categories | Cinute Infomedia",
   description: "Explore our blog articles organized by category. From web development to digital marketing, find the insights you need.",
-  url: "/blog/categories"
+  url: "/blog/categories",
+  image: "/og-images/blogcategories.webp"
 });
 
 import { client } from "@/sanity/lib/client";

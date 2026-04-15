@@ -27,6 +27,29 @@ export const metadata: Metadata = {
         "schema markup",
         "core web vitals",
     ],
+    openGraph: {
+        title: "Hire Expert On-Page SEO Services | Boost Organic Traffic 2026",
+        description: "Scaling ROI with data-backed On-page SEO optimization. Rank #1, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
+        url: "https://www.cinuteinfomedia.com/services/seo-services/on-page-seo-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/on-page-seo-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "Hire Expert On-Page SEO Services | Boost Organic Traffic 2026 by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Hire Expert On-Page SEO Services | Boost Organic Traffic 2026",
+        description: "Scaling ROI with data-backed On-page SEO optimization. Rank #1, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
+        images: ["/og-images/on-page-seo-services.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/on-page-seo-services",
+    },
 };
 
 const jsonLd = {

@@ -41,6 +41,7 @@ export const metadata = getPageMetadata({
         'B2B Lead Generation',
         'Digital Marketing ROI'
     ],
+    image: '/og-images/performance-marketing.webp',
 });
 
 export default function PerformanceMarketingPage() {

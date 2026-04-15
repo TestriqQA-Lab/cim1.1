@@ -21,6 +21,30 @@ export const metadata: Metadata = {
         "static site generation",
         "islands architecture"
     ]
+,
+    openGraph: {
+        title: "Expert Astro Framework Services | 100% PageSpeed 🚀 2026",
+        description: "Top Astro development agency delivering lightning-fast sites with Islands Architecture. Custom Astro JS services for content-rich sites. Free audit today!",
+        url: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/astro-framework-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "Expert Astro Framework Services | 100% PageSpeed 🚀 2026 by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Expert Astro Framework Services | 100% PageSpeed 🚀 2026",
+        description: "Top Astro development agency delivering lightning-fast sites with Islands Architecture. Custom Astro JS services for content-rich sites. Free audit today!",
+        images: ["/og-images/astro-framework-services.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services",
+    },
 };
 
 const jsonLd = {

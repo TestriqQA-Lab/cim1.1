@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Cinute Infomedia",
     images: [
       {
-        url: "/og-images/Blog.webp",
+        url: "/og-images/cim_blog.webp",
         width: 1200,
         height: 630,
         alt: "CIM Blog - Digital Marketing & Web Development Insights",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog & Insights | CIM - Digital Marketing & Web Development",
     description: "Explore expert insights on web development, digital marketing, SEO strategies, and business growth.",
-    images: ["/og-images/Blog.webp"],
+    images: ["/og-images/cim_blog.webp"],
   },
 };
 

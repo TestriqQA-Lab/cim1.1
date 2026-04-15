@@ -12,6 +12,19 @@ export const metadata: Metadata = {
     title: "Android App Development Services | Top Company",
     description:
         "Leading Android app development company crafting custom, high-performance apps. 300+ successful launches. Get high ROI & free audit today!",
+    openGraph: {
+        images: [
+            {
+                url: "/og-images/android-app-development-company.webp",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        images: ["/og-images/android-app-development-company.webp"],
+    },
     keywords: [
         "Android App Development Services",
         "custom Android app development",

@@ -25,6 +25,29 @@ export const metadata: Metadata = {
         "EEAT content strategy",
         "semantic content writing",
     ],
+    openGraph: {
+        title: "SEO Content Services | Content SEO Agency & Writing 2026 | +200% ROI",
+        description: "Drive traffic and engagement with our SEO content writing services. High-E-E-A-T articles, blogs, and landing pages that rank #1 on Google. Get a free quote!",
+        url: "https://www.cinuteinfomedia.com/services/seo-services/seo-content-writing-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/seo-content-writing-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "SEO Content Services | Content SEO Agency & Writing 2026 | +200% ROI by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "SEO Content Services | Content SEO Agency & Writing 2026 | +200% ROI",
+        description: "Drive traffic and engagement with our SEO content writing services. High-E-E-A-T articles, blogs, and landing pages that rank #1 on Google. Get a free quote!",
+        images: ["/og-images/seo-content-writing-services.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/seo-content-writing-services",
+    },
 };
 
 const jsonLd = {
