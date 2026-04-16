@@ -239,7 +239,7 @@ export async function GET() {
                 seo: {
                     metaTitle: post.title,
                     metaDescription: post.excerpt,
-                    canonicalUrl: `https://cinutedigital.com/blog/${post.slug}`
+                    canonicalUrl: `https://www.cinuteinfomedia.com/blog/${post.slug}`
                 },
                 content: mainContent,
                 markdownContent: post.content,

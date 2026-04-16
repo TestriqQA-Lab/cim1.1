@@ -2,6 +2,7 @@ import Hero from '@/components/contact/Hero';
 // import ContactInfo from '@/components/contact/ContactInfo';
 import Location from '@/components/contact/Location';
 import { Metadata } from 'next';
+import { getPageMetadata } from '@/lib/metadata';
 import {
     generateGraphSchema,
     generateOrganizationSchema,
@@ -12,18 +13,12 @@ import {
     generateNavigationSchema,
 } from "@/lib/schema";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = getPageMetadata({
     title: 'Contact Us | Cinute InfoMedia - Get in Touch',
     description: 'Get in touch with Cinute InfoMedia. We are ready to help you build your next digital success story. Reach out for consultations and quotes.',
-    openGraph: {
-        title: 'Contact Us | Cinute InfoMedia - Get in Touch',
-        description: 'Get in touch with Cinute InfoMedia. We are ready to help you build your next digital success story. Reach out for consultations and quotes.',
-        url: 'https://www.cinuteinfomedia.com/contact',
-    },
-    alternates: {
-        canonical: 'https://www.cinuteinfomedia.com/contact',
-    },
-};
+    url: '/contact',
+    keywords: ['contact cinute infomedia', 'digital agency contact', 'web development consultation', 'free consultation'],
+});
 
 export default function ContactPage() {
     const contactSchema = generateGraphSchema(

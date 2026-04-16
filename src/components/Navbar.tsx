@@ -133,7 +133,7 @@ export default function Navbar() {
     setIsMobileServicesOpen(!isMobileServicesOpen);
   };
 
-  // Placeholder to avoid hydration mismatch
+  // SSR-safe placeholder — includes navigation links for Googlebot crawlability
   if (!mounted) {
     return (
       <nav className="fixed top-0 w-full z-[150] backdrop-blur-sm border-b shadow-sm">
@@ -146,9 +146,25 @@ export default function Navbar() {
                 </div>
               </Link>
             </div>
-            <div />
+            {/* SSR nav links — visible to Googlebot's HTML crawl */}
+            <div className="hidden lg:flex items-center space-x-3">
+              <Link href="/" className="px-4 py-2 rounded-lg text-md font-medium">Home</Link>
+              <Link href="/services" className="px-4 py-2 rounded-lg text-md font-medium">Services</Link>
+              <Link href="/blog" className="px-4 py-2 rounded-lg text-md font-medium">Blog</Link>
+              <Link href="/about" className="px-4 py-2 rounded-lg text-md font-medium">About</Link>
+              <Link href="/careers" className="px-4 py-2 rounded-lg text-md font-medium">Careers</Link>
+              <Link href="/contact" className="px-4 py-2 rounded-lg text-md font-medium">Contact</Link>
+            </div>
           </div>
         </div>
+        {/* Crawlable service sub-page links — always in SSR HTML for Googlebot */}
+        <nav aria-label="Service pages" className="sr-only">
+          {services.map((service, i) => (
+            <Link key={i} href={`/services/${getServiceSlug(service.title)}`}>
+              {service.title}
+            </Link>
+          ))}
+        </nav>
       </nav>
     );
   }
@@ -578,6 +594,14 @@ export default function Navbar() {
           </div>
         </div>
       )}
+      {/* Crawlable service sub-page links — always in DOM for Googlebot (hidden from users) */}
+      <nav aria-label="All service pages" className="sr-only">
+        {services.map((service, i) => (
+          <Link key={i} href={`/services/${getServiceSlug(service.title)}`}>
+            {service.title}
+          </Link>
+        ))}
+      </nav>
     </nav>
   );
 }
