@@ -9,12 +9,14 @@ const postFields = /* groq */ `
   "slug": slug.current,
   excerpt,
   mainImage,
-  "author": author->{name, image, slug, bio, title},
+  "author": author->{name, image, slug, bio, title, email, social, seo},
   "category": category->{name, slug, color},
   publishedAt,
   readTime,
   featured,
-  tags
+  tags,
+  seo,
+  schema
 `;
 
 export const heroQuery = defineQuery(`
@@ -75,7 +77,8 @@ export const categoryQuery = defineQuery(`
     icon,
     color,
     relatedTopics,
-    featuredTags
+    featuredTags,
+    seo
   }
 `);
 
@@ -108,7 +111,8 @@ export const authorQuery = defineQuery(`
     title,
     social,
     postsCount,
-    email
+    email,
+    seo
   }
 `);
 

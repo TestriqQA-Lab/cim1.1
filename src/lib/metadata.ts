@@ -145,14 +145,19 @@ export function generateBlogPostMetadata(
   };
 }
 
-export function generateCategoryMetadata(category: string, postCount: number, slug: string): Metadata {
+export function generateCategoryMetadata(
+  category: string,
+  postCount: number,
+  slug: string,
+  seo?: { metaTitle?: string; metaDescription?: string; keywords?: string[] }
+): Metadata {
   const url = `/blog/category/${slug}`;
 
   return getPageMetadata({
-    title: `${category} Articles | Cinute Infomedia Blog`,
-    description: `Explore ${postCount} articles about ${category}. Learn from our experts on the latest trends and best practices.`,
+    title: seo?.metaTitle || `${category} Articles | Cinute Infomedia Blog`,
+    description: seo?.metaDescription || `Explore ${postCount} articles about ${category}. Learn from our experts on the latest trends and best practices.`,
     url: url,
-    keywords: [category, "blog", "articles"],
+    keywords: seo?.keywords || [category, "blog", "articles"],
   });
 }
 
@@ -160,13 +165,14 @@ export function generateAuthorMetadata(
   name: string,
   bio: string,
   image: string,
-  postCount: number
+  postCount: number,
+  seo?: { metaTitle?: string; metaDescription?: string }
 ): Metadata {
   const url = `/blog/author/${name.toLowerCase().replace(/\s+/g, "-")}`;
 
   return getPageMetadata({
-    title: `${name} | Author at Cinute Infomedia`,
-    description: bio,
+    title: seo?.metaTitle || `${name} | Author at Cinute Infomedia`,
+    description: seo?.metaDescription || bio,
     url: url,
     image: image,
     keywords: [name, "author", "blog"],

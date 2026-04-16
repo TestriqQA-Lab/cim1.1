@@ -55,6 +55,7 @@ export function mapSanityPostToBlogPost(sanityPost: any): BlogPost {
         readTime: sanityPost.readTime || 5,
         featured: sanityPost.featured || false,
         seo: sanityPost.seo,
+        schema: sanityPost.schema,
     };
 }
 
@@ -77,6 +78,7 @@ export function mapSanityAuthorToAuthor(sanityAuthor: any): Author {
         image: sanityAuthor.image ? urlFor(sanityAuthor.image).url() : '',
         email: sanityAuthor.email || '',
         social: sanityAuthor.social,
+        seo: sanityAuthor.seo,
         postsCount: sanityAuthor.postsCount,
     };
 }

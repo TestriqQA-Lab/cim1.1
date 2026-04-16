@@ -507,52 +507,233 @@ export function generateNavigationSchema(
 }
 
 // ============================================================
-// BLOG SCHEMAS (existing — preserved)
+// BLOG SCHEMAS — Unified @graph (auto-generate + override)
 // ============================================================
 
-export function generateBlogPostSchema(post: BlogPost) {
-  return {
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.excerpt,
-    "image": post.image,
-    "datePublished": post.publishedAt,
-    "author": {
-      "@type": "Person",
-      "name": post.author.name,
-      "image": post.author.image,
-      "url": `${siteUrl}/blog/author/${post.author.name
-        .toLowerCase()
-        .replace(/\s+/g, "-")}`,
-    },
-    "publisher": {
-      "@id": `${siteUrl}/#organization`,
-    },
-    "mainEntityOfPage": {
+/**
+ * Blog Post Page — unified @graph
+ * Entities: Organization, WebSite, WebPage, BreadcrumbList, BlogPosting, SiteNavigationElement
+ */
+export function generateBlogPostGraphSchema(post: BlogPost) {
+  const postUrl = `${siteUrl}/blog/${post.slug}`;
+  const categorySlug = post.category?.toLowerCase().replace(/\s+/g, "-") || "uncategorized";
+  const authorSlug = post.author.name.toLowerCase().replace(/\s+/g, "-");
+
+  return generateGraphSchema(
+    generateOrganizationSchema({
+      description: "Cinute InfoMedia (CIM) is a digital growth agency helping businesses build, market, and scale through creativity, data, and technology.",
+      slogan: "Build. Market. Scale.",
+    }),
+
+    generateWebSiteSchema(),
+
+    {
       "@type": "WebPage",
-      "@id": `${siteUrl}/blog/${post.slug}`,
+      "@id": `${postUrl}/#webpage`,
+      "url": postUrl,
+      "name": post.seo?.metaTitle || post.title,
+      "description": post.seo?.metaDescription || post.excerpt,
+      "isPartOf": { "@id": `${siteUrl}/#website` },
+      "about": { "@id": `${postUrl}/#article` },
+      "mainEntity": { "@id": `${postUrl}/#article` },
+      "breadcrumb": { "@id": `${postUrl}/#breadcrumb` },
+      "inLanguage": "en-US",
+      "datePublished": post.publishedAt,
+      "dateModified": post.schema?.dateModified || post.publishedAt,
     },
-    "articleBody": post.content,
-    "keywords": post.tags.join(", "),
-  };
+
+    generateBreadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Blog", url: "/blog" },
+      { name: post.category, url: `/blog/category/${categorySlug}` },
+      { name: post.title, url: `/blog/${post.slug}` },
+    ], `${postUrl}/#breadcrumb`),
+
+    {
+      "@type": post.schema?.articleType || "BlogPosting",
+      "@id": `${postUrl}/#article`,
+      "headline": post.seo?.metaTitle || post.title,
+      "description": post.seo?.metaDescription || post.excerpt,
+      "image": post.image,
+      "datePublished": post.publishedAt,
+      "dateModified": post.schema?.dateModified || post.publishedAt,
+      ...(post.schema?.wordCount && { "wordCount": post.schema.wordCount }),
+      "keywords": (post.schema?.keywords && post.schema.keywords.length > 0)
+        ? post.schema.keywords.join(", ")
+        : post.tags.join(", "),
+      "articleSection": post.category,
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Person",
+        "@id": `${siteUrl}/blog/author/${authorSlug}/#person`,
+        "name": post.author.name,
+        "image": post.author.image,
+        "url": `${siteUrl}/blog/author/${authorSlug}`,
+        ...(post.author.seo?.jobTitle || post.author.title
+          ? { "jobTitle": post.author.seo?.jobTitle || post.author.title }
+          : {}),
+        "sameAs": post.author.social
+          ? [post.author.social.twitter, post.author.social.linkedin, post.author.social.github].filter(Boolean)
+          : [],
+      },
+      "publisher": { "@id": `${siteUrl}/#organization` },
+      "mainEntityOfPage": { "@id": `${postUrl}/#webpage` },
+    },
+
+    generateNavigationSchema([
+      { name: "Home", url: "/" },
+      { name: "Services", url: "/services" },
+      { name: "Blog", url: "/blog" },
+      { name: "About", url: "/about" },
+      { name: "Careers", url: "/careers" },
+      { name: "Contact", url: "/contact" },
+    ])
+  );
 }
 
-export function generateBlogCollectionSchema(
-  title: string,
-  description: string,
-  urlPath: string
-) {
-  return {
-    "@type": "CollectionPage",
-    "name": title,
-    "description": description,
-    "url": `${siteUrl}${urlPath}`,
-    "publisher": {
-      "@id": `${siteUrl}/#organization`,
-    },
+/**
+ * Category Page — unified @graph
+ * Entities: Organization, WebSite, CollectionPage, BreadcrumbList, ItemList (posts), SiteNavigationElement
+ */
+export function generateCategoryPageGraphSchema(params: {
+  categoryName: string;
+  categorySlug: string;
+  description: string;
+  posts: BlogPost[];
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
   };
+}) {
+  const pageUrl = `${siteUrl}/blog/category/${params.categorySlug}`;
+  const title = params.seo?.metaTitle || `${params.categoryName} Articles | Cinute InfoMedia Blog`;
+  const description = params.seo?.metaDescription || params.description || `Explore articles about ${params.categoryName}.`;
+
+  return generateGraphSchema(
+    generateOrganizationSchema({
+      description: "Cinute InfoMedia (CIM) is a digital growth agency helping businesses build, market, and scale through creativity, data, and technology.",
+      slogan: "Build. Market. Scale.",
+    }),
+
+    generateWebSiteSchema(),
+
+    {
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}/#collectionpage`,
+      "url": pageUrl,
+      "name": title,
+      "description": description,
+      "isPartOf": { "@id": `${siteUrl}/#website` },
+      "about": { "@id": `${siteUrl}/#organization` },
+      "breadcrumb": { "@id": `${pageUrl}/#breadcrumb` },
+      "mainEntity": { "@id": `${pageUrl}/#postsList` },
+      "inLanguage": "en-US",
+    },
+
+    generateBreadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Blog", url: "/blog" },
+      { name: params.categoryName, url: `/blog/category/${params.categorySlug}` },
+    ], `${pageUrl}/#breadcrumb`),
+
+    generateItemListSchema({
+      id: `/blog/category/${params.categorySlug}/#postsList`,
+      name: `${params.categoryName} Articles`,
+      description: `Latest articles in ${params.categoryName}`,
+      items: params.posts.slice(0, 10).map((post) => ({
+        name: post.title,
+        url: `/blog/${post.slug}`,
+        description: post.excerpt,
+      })),
+    }),
+
+    generateNavigationSchema([
+      { name: "Home", url: "/" },
+      { name: "Services", url: "/services" },
+      { name: "Blog", url: "/blog" },
+      { name: "About", url: "/about" },
+      { name: "Careers", url: "/careers" },
+      { name: "Contact", url: "/contact" },
+    ])
+  );
 }
 
+/**
+ * Author Page — unified @graph
+ * Entities: Organization, WebSite, ProfilePage, BreadcrumbList, Person, SiteNavigationElement
+ */
+export function generateAuthorPageGraphSchema(params: {
+  author: Author;
+  posts: BlogPost[];
+}) {
+  const authorSlug = params.author.name.toLowerCase().replace(/\s+/g, "-");
+  const pageUrl = `${siteUrl}/blog/author/${authorSlug}`;
+
+  return generateGraphSchema(
+    generateOrganizationSchema({
+      description: "Cinute InfoMedia (CIM) is a digital growth agency helping businesses build, market, and scale through creativity, data, and technology.",
+      slogan: "Build. Market. Scale.",
+    }),
+
+    generateWebSiteSchema(),
+
+    {
+      "@type": "ProfilePage",
+      "@id": `${pageUrl}/#profilepage`,
+      "url": pageUrl,
+      "name": params.author.seo?.metaTitle || `${params.author.name} | Author at Cinute InfoMedia`,
+      "description": params.author.seo?.metaDescription || params.author.bio,
+      "isPartOf": { "@id": `${siteUrl}/#website` },
+      "about": { "@id": `${pageUrl}/#person` },
+      "mainEntity": { "@id": `${pageUrl}/#person` },
+      "breadcrumb": { "@id": `${pageUrl}/#breadcrumb` },
+      "inLanguage": "en-US",
+    },
+
+    generateBreadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Blog", url: "/blog" },
+      { name: params.author.name, url: `/blog/author/${authorSlug}` },
+    ], `${pageUrl}/#breadcrumb`),
+
+    {
+      "@type": "Person",
+      "@id": `${pageUrl}/#person`,
+      "name": params.author.name,
+      "description": params.author.bio,
+      "image": params.author.image,
+      "email": params.author.email,
+      "url": pageUrl,
+      "jobTitle": params.author.seo?.jobTitle || params.author.title,
+      ...(params.author.seo?.knowsAbout && params.author.seo.knowsAbout.length > 0
+        ? { "knowsAbout": params.author.seo.knowsAbout }
+        : {}),
+      "sameAs": params.author.social
+        ? [params.author.social.twitter, params.author.social.linkedin, params.author.social.github].filter(Boolean)
+        : [],
+      "worksFor": { "@id": `${siteUrl}/#organization` },
+    },
+
+    generateNavigationSchema([
+      { name: "Home", url: "/" },
+      { name: "Services", url: "/services" },
+      { name: "Blog", url: "/blog" },
+      { name: "About", url: "/about" },
+      { name: "Careers", url: "/careers" },
+      { name: "Contact", url: "/contact" },
+    ])
+  );
+}
+
+// Legacy aliases (kept for backward compatibility if used elsewhere)
+export const generateBlogPostSchema = generateBlogPostGraphSchema;
+export const generateBlogCollectionSchema = (title: string, description: string, urlPath: string) => ({
+  "@type": "CollectionPage",
+  "name": title,
+  "description": description,
+  "url": `${siteUrl}${urlPath}`,
+  "publisher": { "@id": `${siteUrl}/#organization` },
+});
 export function generateAuthorSchema(author: Author) {
   return {
     "@type": "Person",
@@ -560,10 +741,8 @@ export function generateAuthorSchema(author: Author) {
     "description": author.bio,
     "image": author.image,
     "email": author.email,
-    "url": `${siteUrl}/blog/author/${author.name
-      .toLowerCase()
-      .replace(/\s+/g, "-")}`,
-    "jobTitle": author.title,
+    "url": `${siteUrl}/blog/author/${author.name.toLowerCase().replace(/\s+/g, "-")}`,
+    "jobTitle": author.seo?.jobTitle || author.title,
     "sameAs": author.social
       ? [author.social.twitter, author.social.linkedin, author.social.github].filter(Boolean)
       : [],
