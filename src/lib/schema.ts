@@ -80,7 +80,7 @@ export function generateOrganizationSchema(overrides?: {
     "sameAs": [
       "https://www.linkedin.com/company/cinute-infomedia/",
       "https://www.instagram.com/cinuteinfomedia/",
-      "https://x.com/cinute_infomedia",
+      "https://x.com/cinuteinfomedia",
       "https://www.facebook.com/cinuteinfomedia/",
     ],
     "areaServed": ["US", "GB", "IN", "AU", "AE"],

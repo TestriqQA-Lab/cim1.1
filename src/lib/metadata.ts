@@ -37,7 +37,7 @@ const defaultMetadata: Partial<Metadata> = {
     title: "Cinute InfoMedia | Web Development Company & Digital Marketing Agency",
     description: "Transform your digital presence with our web development services, mobile apps, AI automation & marketing solutions. 95% client retention.",
     images: ["/og-image.jpg"],
-    creator: "@cinute_infomedia",
+    creator: "@cinuteinfomedia",
   },
   robots: {
     index: true,

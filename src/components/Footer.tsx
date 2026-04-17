@@ -227,7 +227,7 @@ export default function Footer() {
                                 <Link href="https://www.instagram.com/cinuteinfomedia/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-[var(--hover-bg)] hover:!bg-[#E1306C] group">
                                     <Instagram className="h-6 w-6 group-hover:text-white transition-colors" style={{ color: "var(--foreground)" }} />
                                 </Link>
-                                <Link href="https://x.com/cinute_infomedia" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-[var(--hover-bg)] hover:!bg-[#1DA1F2] group">
+                                <Link href="https://x.com/cinuteinfomedia" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-[var(--hover-bg)] hover:!bg-[#1DA1F2] group">
                                     <TwitterX className="h-6 w-6 group-hover:text-white transition-colors" style={{ color: "var(--foreground)" }} />
                                 </Link>
                                 <Link href="https://www.facebook.com/cinuteinfomedia/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-[var(--hover-bg)] hover:!bg-[#1877F2] group">

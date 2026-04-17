@@ -40,7 +40,7 @@ import {
 } from '@/lib/schema';
 
 export const metadata = getPageMetadata({
-    title: 'AI Chatbot Services | Custom AI Chatbot Development Agency | Cinute InfoMedia',
+    title: 'Custom AI Chatbot Development Agency | Cinute InfoMedia',
     description: 'Transform customer support with our Enterprise AI Chatbot Platform. Custom AI chatbots for eCommerce, SaaS & Healthcare. 10M+ conversations handled, 98% satisfaction rate, 50+ industries served, 80% automation, <1s response time, 300% ROI.',
     url: '/services/ai-chatbots-services',
     keywords: [
@@ -64,7 +64,7 @@ export default function AIPoweredChatbotsPage() {
         generateWebSiteSchema(),
 
         generateWebPageSchema({
-            name: "AI Chatbot Services | Custom AI Chatbot Development Agency (2026)",
+            name: "Custom AI Chatbot Development Agency | Cinute InfoMedia",
             description: "Transform customer support with our Enterprise AI Chatbot Platform. Custom AI chatbots for eCommerce, SaaS & Healthcare. 10M+ conversations handled, 98% satisfaction rate, 50+ industries served, 80% automation, <1s response time, 300% ROI.",
             urlPath: "/services/ai-chatbots-services",
             datePublished: "2025-01-01",
