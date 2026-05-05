@@ -94,6 +94,12 @@ export interface Author {
     linkedin?: string;
     github?: string;
   };
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    jobTitle?: string;
+    knowsAbout?: string[];
+  };
   postsCount?: number;
 }
 
@@ -115,6 +121,12 @@ export interface BlogPost {
     metaTitle?: string;
     metaDescription?: string;
     canonicalUrl?: string;
+  };
+  schema?: {
+    articleType?: string;
+    keywords?: string[];
+    dateModified?: string;
+    wordCount?: number;
   };
 }
 
