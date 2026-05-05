@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'YouTube Marketing Services | Top Agency for ROI & Growth',
     description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive 20%+ CTR lifts & high-intent leads. Book free audit!',
     alternates: {
-        canonical: "/services/social-media-marketing-services/video-marketing-agency",
+        canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/video-marketing-agency",
     },
     openGraph: {
         title: 'YouTube Marketing Services | Top Agency for ROI & Growth',
@@ -35,9 +35,7 @@ export const metadata: Metadata = {
         description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive 20%+ CTR lifts & high-intent leads. Book free audit!',
         images: ["/og-images/video-marketing-agency.webp"],
     },
-    alternates: {
-        canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/video-marketing-agency",
-    },
+
 };
 
 export default function YouTubeMarketingPage() {

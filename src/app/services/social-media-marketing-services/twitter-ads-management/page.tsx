@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'X Marketing Services | Best Twitter Marketing Agency for 20% CTR',
     description: 'Scaling your X business? Our Twitter marketing company delivers 300% ROI via expert Twitter ads management & real-time trend hijacking. Get a free quote!',
     alternates: {
-        canonical: "/services/social-media-marketing-services/twitter-ads-management",
+        canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/twitter-ads-management",
     },
     openGraph: {
         title: 'X Marketing Services | Best Twitter Marketing Agency for 20% CTR',
@@ -35,9 +35,7 @@ export const metadata: Metadata = {
         description: 'Scaling your X business? Our Twitter marketing company delivers 300% ROI via expert Twitter ads management & real-time trend hijacking. Get a free quote!',
         images: ["/og-images/twitter-ads-management.webp"],
     },
-    alternates: {
-        canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/twitter-ads-management",
-    },
+
 };
 
 export default function XMarketingPage() {

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "SEO Content Services | Content SEO Agency & Writing 2026 | +200% ROI",
     description: "Drive traffic and engagement with our SEO content writing services. High-E-E-A-T articles, blogs, and landing pages that rank #1 on Google. Get a free quote!",
     alternates: {
-        canonical: "/services/seo-services/seo-content-writing-services",
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/seo-content-writing-services",
     },
     keywords: [
         "content SEO",
@@ -45,9 +45,7 @@ export const metadata: Metadata = {
         description: "Drive traffic and engagement with our SEO content writing services. High-E-E-A-T articles, blogs, and landing pages that rank #1 on Google. Get a free quote!",
         images: ["/og-images/seo-content-writing-services.webp"],
     },
-    alternates: {
-        canonical: "https://www.cinuteinfomedia.com/services/seo-services/seo-content-writing-services",
-    },
+
 };
 
 const jsonLd = {

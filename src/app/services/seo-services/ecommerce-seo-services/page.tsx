@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Ecommerce SEO Services | Shopify, Magento & WooCommerce 2026",
     description: "Expert Ecommerce SEO Services to boost sales and rankings. Optimize your Shopify, Magento, or WooCommerce store for maximum visibility.",
     alternates: {
-        canonical: "/services/seo-services/ecommerce-seo-services",
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/ecommerce-seo-services",
     },
     keywords: [
         "ecommerce SEO services",
@@ -46,9 +46,7 @@ export const metadata: Metadata = {
         description: "Expert Ecommerce SEO Services to boost sales and rankings. Optimize your Shopify, Magento, or WooCommerce store for maximum visibility.",
         images: ["/og-images/ecommerce-seo-services.webp"],
     },
-    alternates: {
-        canonical: "https://www.cinuteinfomedia.com/services/seo-services/ecommerce-seo-services",
-    },
+
 };
 
 export default function EcommerceSEOPage() {

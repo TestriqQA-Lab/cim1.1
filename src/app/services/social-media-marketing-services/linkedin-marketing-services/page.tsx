@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         "LinkedIn strategy",
     ],
     alternates: {
-        canonical: "/services/social-media-marketing-services/linkedin-marketing-services",
+        canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/linkedin-marketing-services",
     },
     openGraph: {
         title: "LinkedIn Marketing Services | #1 B2B Lead Generation Agency 2026",
@@ -47,9 +47,7 @@ export const metadata: Metadata = {
         description: "Scale your B2B growth with expert LinkedIn ads management & lead generation services. 300% ROI boost via AI-driven ABM & thought leadership. Book your free LinkedIn audit!",
         images: ["/og-images/linkedin-marketing-services.webp"],
     },
-    alternates: {
-        canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/linkedin-marketing-services",
-    },
+
 };
 
 const jsonLd = {

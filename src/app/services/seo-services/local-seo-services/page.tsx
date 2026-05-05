@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
         "Expert Local SEO Services to rank higher on Google Maps & search. Drive local traffic, calls, and store visits with our proven GMB optimization.",
     alternates: {
-        canonical: "/services/seo-services/local-seo-services",
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/local-seo-services",
     },
     keywords: [
         "local SEO services",
@@ -53,9 +53,7 @@ export const metadata: Metadata = {
         description: "Expert Local SEO Services to rank higher on Google Maps & search. Drive local traffic, calls, and store visits with our proven GMB optimization.",
         images: ["/og-images/local-seo-services.webp"],
     },
-    alternates: {
-        canonical: "https://www.cinuteinfomedia.com/services/seo-services/local-seo-services",
-    },
+
 };
 
 export default function LocalSEOPage() {

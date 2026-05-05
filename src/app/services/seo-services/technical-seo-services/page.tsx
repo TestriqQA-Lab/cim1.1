@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
         "Boost crawlability & speed with our expert Technical SEO company. Optimize Core Web Vitals, Schema, and site architecture for global rankings. Get a free audit today!",
     alternates: {
-        canonical: "/services/seo-services/technical-seo-services",
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/technical-seo-services",
     },
     keywords: [
         "technical SEO",
@@ -65,9 +65,7 @@ export const metadata: Metadata = {
         description: "Boost crawlability & speed with our expert Technical SEO company. Optimize Core Web Vitals, Schema, and site architecture for global rankings. Get a free audit today!",
         images: ["/og-images/technical-seo-services.webp"],
     },
-    alternates: {
-        canonical: "https://www.cinuteinfomedia.com/services/seo-services/technical-seo-services",
-    },
+
 };
 
 const jsonLd = {

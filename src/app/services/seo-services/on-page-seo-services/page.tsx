@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
         "Scaling ROI with data-backed On-page SEO optimization. Rank #1, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
     alternates: {
-        canonical: "/services/seo-services/on-page-seo-services",
+        canonical: "https://www.cinuteinfomedia.com/services/seo-services/on-page-seo-services",
     },
     keywords: [
         "on-page SEO",
@@ -47,9 +47,7 @@ export const metadata: Metadata = {
         description: "Scaling ROI with data-backed On-page SEO optimization. Rank #1, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
         images: ["/og-images/on-page-seo-services.webp"],
     },
-    alternates: {
-        canonical: "https://www.cinuteinfomedia.com/services/seo-services/on-page-seo-services",
-    },
+
 };
 
 const jsonLd = {
