@@ -21,6 +21,7 @@ import {
   Moon,
   Sun,
   Monitor,
+  Box,
 } from "lucide-react";
 
 const services = [
@@ -150,6 +151,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center space-x-3">
               <Link href="/" className="px-4 py-2 rounded-lg text-md font-medium">Home</Link>
               <Link href="/services" className="px-4 py-2 rounded-lg text-md font-medium">Services</Link>
+              <Link href="/products" className="px-4 py-2 rounded-lg text-md font-medium">Products</Link>
               <Link href="/blog" className="px-4 py-2 rounded-lg text-md font-medium">Blog</Link>
               <Link href="/about" className="px-4 py-2 rounded-lg text-md font-medium">About</Link>
               <Link href="/careers" className="px-4 py-2 rounded-lg text-md font-medium">Careers</Link>
@@ -307,6 +309,15 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
+              <Link
+                href="/products"
+                className="px-4 py-2 rounded-lg text-md font-medium transition-all"
+                style={getNavLinkStyle("/products")}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
+              >
+                Products
+              </Link>
               <Link
                 href="/blog"
                 className="px-4 py-2 rounded-lg text-md font-medium transition-all"
@@ -546,6 +557,17 @@ export default function Navbar() {
                 </div>
               )}
             </div>
+
+            <Link
+              href="/products"
+              onClick={toggleMobileMenu}
+              className="block px-4 py-3 rounded-lg text-base font-medium transition-all"
+              style={getNavLinkStyle("/products")}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
+            >
+              Products
+            </Link>
 
             <Link
               href="/blog"

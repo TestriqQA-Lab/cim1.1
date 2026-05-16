@@ -26,6 +26,7 @@ export default function Footer() {
         { name: "About Us", href: "/about" },
         { name: "Careers", href: "/careers" },
         { name: "Our Services", href: "/services" },
+        { name: "Products", href: "/products" },
         { name: "Contact Us", href: "/contact" },
         { name: "Privacy Policy", href: "/privacy-policy" },
         { name: "Terms of Service", href: "/terms-of-service" },
