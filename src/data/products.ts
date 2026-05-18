@@ -36,6 +36,7 @@ export interface Product {
   stats: { label: string; value: string }[];
   supportUrl: string;
   privacyUrl: string;
+  demoVideoUrl?: string; // Optional URL for product video demo
 }
 
 // ============================================================================

@@ -4,7 +4,7 @@ import { products, getProductBySlug, getAllProductSlugs } from "@/data/products"
 import ProductHero from "@/components/products/detail/ProductHero";
 import Features from "@/components/products/detail/Features";
 import HowItWorks from "@/components/products/detail/HowItWorks";
-import TechStack from "@/components/products/detail/TechStack";
+import ProductDemo from "@/components/products/detail/ProductDemo";
 import FAQ from "@/components/products/detail/FAQ";
 import ProductCTA from "@/components/products/detail/ProductCTA";
 import ProductLinks from "@/components/products/detail/ProductLinks";
@@ -174,7 +174,7 @@ export default async function ProductPage({
             <ProductHero product={product} />
             <Features product={product} />
             <HowItWorks product={product} />
-            <TechStack product={product} />
+            <ProductDemo product={product} />
             <FAQ product={product} />
             <ProductCTA product={product} />
             <ProductLinks product={product} />
