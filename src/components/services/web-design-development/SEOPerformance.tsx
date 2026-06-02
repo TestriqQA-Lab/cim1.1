@@ -14,15 +14,15 @@ export default function SEOPerformance() {
         },
         {
             icon: Eye,
-            title: "300% Organic Growth",
-            description: "Our technical SEO foundation has delivered 300% organic traffic growth for enterprise clients in competitive global markets.",
+            title: "Sustained Organic Growth",
+            description: "Our technical SEO foundation has delivered sustained organic traffic growth for enterprise clients in competitive global markets.",
             items: ["Semantic hierarchy", "Schema.org graph", "Keyword authority", "Global indexing"],
             color: "from-[#008ac1] to-[#bc3feb]",
         },
         {
             icon: Smartphone,
             title: "Responsive Web Design",
-            description: "Mobile-first approach ensuring flawless display on all devices. Average 20% conversion rate improvement post-launch.",
+            description: "Mobile-first approach ensuring flawless display on all devices. Average conversion rate improvement post-launch.",
             items: ["Fluid grid system", "Cross-device QA", "Touch-optimized UI", "Adaptive images"],
             color: "from-[#00efd6] to-[#00b5ca]",
         },

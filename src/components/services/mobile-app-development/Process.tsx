@@ -15,7 +15,7 @@ export default function Process() {
         {
             icon: Pencil,
             title: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">UI/UX Design (Week 3-5)</Link>,
-            description: "Low to high-fidelity wireframing, interactive prototypes in Figma/Adobe XD, user flow mapping, and accessibility audit. 35% higher engagement through conversion-focused design backed by 10,000+ hours A/B testing.",
+            description: "Low to high-fidelity wireframing, interactive prototypes in Figma/Adobe XD, user flow mapping, and accessibility audit. higher engagement through conversion-focused design backed by 10,000+ hours A/B testing.",
             details: ["Wireframing", "Interactive Prototypes", "Design System", "WCAG 2.2 AA Compliance", "Usability Testing (5+ users)"]
         },
         {
@@ -33,7 +33,7 @@ export default function Process() {
         {
             icon: Rocket,
             title: "Deployment & Launch (Week 20-21)",
-            description: <span>App Store and Play Store submission with compliance docs, beta testing via TestFlight/Internal Track, and <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">App Store Optimization</Link>. Average 40% increase in organic downloads with top 10 keyword rankings within 90 days.</span>,
+            description: <span>App Store and Play Store submission with compliance docs, beta testing via TestFlight/Internal Track, and <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">App Store Optimization</Link>. Average increase in organic downloads with top 10 keyword rankings within 90 days.</span>,
             details: ["App Store Submission", "ASO (Keyword Research)", "Beta Testing", "Screenshot Optimization", "Pre-Launch Marketing"]
         },
         {

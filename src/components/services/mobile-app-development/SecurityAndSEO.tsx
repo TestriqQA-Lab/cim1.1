@@ -34,8 +34,8 @@ export default function SecurityAndSEO() {
     const appStoreOptimization = [
         {
             icon: Search,
-            title: <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">ASO (120% Organic Increase)</Link>,
-            description: <span>Keyword research, competitor analysis, search volume data, and A/B tested descriptions. Average 120% increase in <Link href="/blog/mastering-seo-organic-growth" className="hover:text-[var(--brand-purple)] transition-colors">organic installs</Link> with top 10 rankings in 90 days.</span>,
+            title: <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">ASO (Strong Organic Growth)</Link>,
+            description: <span>Keyword research, competitor analysis, search volume data, and A/B tested descriptions. Average increase in <Link href="/blog/mastering-seo-organic-growth" className="hover:text-[var(--brand-purple)] transition-colors">organic installs</Link> with top 10 rankings in 90 days.</span>,
             gradient: "from-[#fa709a] to-[#fee140]"
         },
         {
@@ -47,7 +47,7 @@ export default function SecurityAndSEO() {
         {
             icon: Store,
             title: "Store Listing (40% Higher CVR)",
-            description: "High-quality screenshots (5-8 optimized images), demo video (30-60 sec), compelling descriptions, and localization (10+ languages). 40% higher conversion rate.",
+            description: "High-quality screenshots (5-8 optimized images), demo video (30-60 sec), compelling descriptions, and localization (10+ languages). higher conversion rate.",
             gradient: "from-[#43e97b] to-[#38f9d7]"
         },
         {
@@ -81,7 +81,7 @@ export default function SecurityAndSEO() {
                         <span style={{ color: "var(--brand-purple)" }}>Security, Performance</span> & App Store Optimization
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Enterprise-grade security. Extensively tested apps optimized for maximum app store visibility and 120% organic growth.
+                        Enterprise-grade security. Extensively tested apps optimized for maximum app store visibility and strong organic growth.
                     </p>
                 </div>
 

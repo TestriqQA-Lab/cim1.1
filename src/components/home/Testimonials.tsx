@@ -12,7 +12,7 @@ export default function Testimonials() {
             industry: "QA & Testing Solutions",
             quote:
                 "Cinute InfoMedia transformed our outdated website into a lead-generation powerhouse. The custom web development solution they delivered exceeded our expectations, and the ongoing SEO support has tripled our organic traffic.",
-            result: "3x Organic Traffic",
+            result: "Strong Organic Traffic",
             avatar: "T",
         },
         {

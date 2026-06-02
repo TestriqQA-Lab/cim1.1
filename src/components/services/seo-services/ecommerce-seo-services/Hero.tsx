@@ -112,7 +112,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Drive qualified buyers to your product pages with data-driven ecommerce SEO optimization delivering 200% average ROI. $50M+ revenue driven through strategic product page SEO, technical fixes, and conversion-focused strategies.
+                            Drive qualified buyers to your product pages with data-driven ecommerce SEO optimization delivering a strong average ROI. $50M+ revenue driven through strategic product page SEO, technical fixes, and conversion-focused strategies.
                         </p>
 
                         <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100 mt-4" style={{ color: "var(--secondary-text)" }}>
@@ -170,7 +170,7 @@ export default function Hero() {
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: commerceBlue }}>200%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: commerceBlue }}>Strong</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. ROI</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />

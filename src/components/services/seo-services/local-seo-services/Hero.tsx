@@ -122,7 +122,7 @@ export default function Hero() {
                         </p>
 
                         <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Trusted by 500+ businesses across 15+ industries. We deliver 247% increase in local search visibility and 178% boost in direction requests within 90 days.
+                            Trusted by 500+ businesses across 15+ industries. We deliver a measurable increase in local search visibility and a boost in direction requests within 90 days.
                         </p>
 
                         {/* Feature Pills */}
@@ -175,10 +175,10 @@ export default function Hero() {
                             <div className="text-center lg:text-left">
                                 <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>#1</h4>
                                 <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Map Pack Spot</p>
-                                <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>87% in top 3</p>
+                                <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>Most in top 3</p>
                             </div>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>3x</h4>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>More</h4>
                                 <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Local Calls</p>
                                 <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>Avg increase</p>
                             </div>
@@ -188,12 +188,12 @@ export default function Hero() {
                                 <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>15+ industries</p>
                             </div>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>340%</h4>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>Strong</h4>
                                 <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Review Growth</p>
                                 <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>5-star increase</p>
                             </div>
                             <div className="text-center lg:text-left col-span-2 sm:col-span-1">
-                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>92%</h4>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>High</h4>
                                 <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Retention</p>
                                 <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>Community-focused</p>
                             </div>

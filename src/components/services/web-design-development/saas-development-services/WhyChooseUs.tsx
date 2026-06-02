@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
         {
             icon: Layers,
             title: "Scalable Architecture for Cloud-Based SaaS Development",
-            description: "Microservices architecture, serverless functions, or modular monolith - we select the optimal pattern for your current scale and future growth trajectory. Our scalable SaaS app development company approach ensures your infrastructure handles 10x user growth without rewrites. Horizontal scaling with Kubernetes orchestration, database sharding for multi-tenant isolation, CDN edge caching for global performance, and event-driven architecture for decoupled services.",
+            description: "Microservices architecture, serverless functions, or modular monolith - we select the optimal pattern for your current scale and future growth trajectory. Our scalable SaaS app development company approach ensures your infrastructure handles significant user growth without rewrites. Horizontal scaling with Kubernetes orchestration, database sharding for multi-tenant isolation, CDN edge caching for global performance, and event-driven architecture for decoupled services.",
             color: "from-[#fab900] to-[#ee6500]",
         },
         {

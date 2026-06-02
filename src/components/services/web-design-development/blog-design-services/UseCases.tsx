@@ -25,7 +25,7 @@ export default function UseCases() {
             icon: Laptop,
             title: "Independent Creators",
             description: "Subscription-Based Magazines with built-in paywalls and newsletters.",
-            metrics: ["2x Revenue via Paywalls", "Member management", "Exclusive content"],
+            metrics: ["Higher Revenue via Paywalls", "Member management", "Exclusive content"],
             bgColor: "#ec4899",
         },
         {

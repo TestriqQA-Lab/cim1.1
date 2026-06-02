@@ -39,7 +39,7 @@ export default function SolutionTypes() {
                 "High-performance storefronts with Shopify or BigCommerce integration. Boost your sales with blazing-fast shopping experiences.",
             features: [
                 <Link href="/services/web-design-development/shopify-development-services" className="hover:text-[#00d4ff] transition-colors">Shopify & BigCommerce</Link>,
-                "20%+ CTR Boost",
+                "Measurable CTR Boost",
                 "Lower Bounce Rates",
                 "Optimized Checkout",
             ],

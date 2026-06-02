@@ -21,13 +21,13 @@ export default function SolutionTypes() {
             icon: Users,
             title: <Link href="/services/web-design-development/landing-pages" className="hover:text-[var(--primary)] transition-colors">Lead Generation</Link>,
             description: "Capture leads directly from video ads with custom forms.",
-            metric: "2x Leads",
+            metric: "More Leads",
         },
         {
             icon: ShoppingBag,
             title: <Link href="/services/seo-services/ecommerce-seo-services" className="hover:text-[var(--primary)] transition-colors">E-commerce Sales</Link>,
             description: "Drive purchases with shoppable video ads and product feeds.",
-            metric: "3.5x ROAS",
+            metric: "Strong ROAS",
         },
         {
             icon: Smartphone,
@@ -39,7 +39,7 @@ export default function SolutionTypes() {
             icon: TrendingUp,
             title: "Website Traffic",
             description: "Drive qualified traffic to your landing pages.",
-            metric: "+50% CTR",
+            metric: "Higher CTR",
         },
         {
             icon: Megaphone,

@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
                             Global Technical Expertise. <span style={{ color: techPurple }}>Measurable ROI.</span>
                         </h2>
                         <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Why hire a <Link href="/about" className="hover:text-purple-500 transition-colors">technical SEO expert</Link> from our team? Because we've delivered 300% traffic growth for clients by fixing the issues others miss.
+                            Why hire a <Link href="/about" className="hover:text-purple-500 transition-colors">technical SEO expert</Link> from our team? Because we've delivered sustained traffic growth for clients by fixing the issues others miss.
                         </p>
 
                         {/* Stats */}
@@ -86,7 +86,7 @@ export default function WhyChooseUs() {
                                 className="p-6 rounded-2xl border"
                                 style={{ borderColor: "var(--border-color)", backgroundColor: "var(--card-bg)" }}
                             >
-                                <h4 className="text-3xl font-bold mb-2" style={{ color: techPurple }}>60%</h4>
+                                <h4 className="text-3xl font-bold mb-2" style={{ color: techPurple }}>Faster</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. Speed Boost</p>
                             </div>
                         </div>

@@ -57,7 +57,7 @@ export default function ServiceOverview() {
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>
-                            We don&apos;t just build websites; we engineer digital growth engines. Whether you need <Link href="/services/web-design-development/ecommerce-development-company" style={{ color: "var(--brand-blue)" }}>ecommerce development</Link> or <Link href="/services/web-design-development/nodejs-backend" style={{ color: "var(--brand-blue)" }}>custom web apps</Link>, our solutions are designed to outperform competition, achieving an average 300% organic traffic growth. Every site is optimized with <Link href="/services/seo-services/technical-seo-services" style={{ color: "var(--brand-blue)" }}>technical SEO best practices</Link>.
+                            We don&apos;t just build websites; we engineer digital growth engines. Whether you need <Link href="/services/web-design-development/ecommerce-development-company" style={{ color: "var(--brand-blue)" }}>ecommerce development</Link> or <Link href="/services/web-design-development/nodejs-backend" style={{ color: "var(--brand-blue)" }}>custom web apps</Link>, our solutions are designed to outperform competition, achieving an average sustained organic traffic growth. Every site is optimized with <Link href="/services/seo-services/technical-seo-services" style={{ color: "var(--brand-blue)" }}>technical SEO best practices</Link>.
                         </p>
 
                         <div className="pt-4">
@@ -68,7 +68,7 @@ export default function ServiceOverview() {
                                 {[
                                     <span key="1">Global reach with <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[var(--brand-blue)]">performance-first architecture</Link></span>,
                                     <span key="2">rigorously tested delivery on first deployment</span>,
-                                    <span key="3">Built-in SEO that delivers <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)]">300% traffic growth</Link></span>,
+                                    <span key="3">Built-in SEO that delivers <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)]">sustained traffic growth</Link></span>,
                                     <span key="4">24/7 technical support across timezones</span>,
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3">

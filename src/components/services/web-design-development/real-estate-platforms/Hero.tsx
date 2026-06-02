@@ -290,7 +290,7 @@ export default function Hero() {
                             <p className="text-xs font-bold uppercase tracking-wider mb-4 opacity-70" style={{ color: "var(--foreground)" }}>Platform Performance</p>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(13, 148, 136, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#0d9488" }}>+85%</span>
+                                    <span className="text-xl font-bold" style={{ color: "#0d9488" }}>Strong</span>
                                     <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Lead Capture</span>
                                 </div>
                                 <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(13, 148, 136, 0.1)" }}>
@@ -298,7 +298,7 @@ export default function Hero() {
                                     <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Search Speed</span>
                                 </div>
                                 <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(13, 148, 136, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#0d9488" }}>+120%</span>
+                                    <span className="text-xl font-bold" style={{ color: "#0d9488" }}>Strong</span>
                                     <span className="text-xs" style={{ color: "var(--secondary-text)" }}>User Engagement</span>
                                 </div>
                                 <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(13, 148, 136, 0.1)" }}>

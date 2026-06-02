@@ -119,7 +119,7 @@ export default function ServiceOverview() {
                             </div>
                             <div>
                                 <h4 className="font-semibold mb-1">Agile & Transparent Process</h4>
-                                <p style={{ color: "var(--secondary-text)" }}>2-week sprints, daily standups, and real-time progress tracking. 40% faster time-to-market with flexible development approach.</p>
+                                <p style={{ color: "var(--secondary-text)" }}>2-week sprints, daily standups, and real-time progress tracking. faster time-to-market with flexible development approach.</p>
                             </div>
                         </div>
                         <div className="flex gap-4">

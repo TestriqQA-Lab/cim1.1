@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
         {
             icon: Trophy,
             title: "Verified Expertise",
-            description: <>500+ successful projects delivered globally, including retail sites seeing <Link href="/services/seo-services" className="text-[#f59e0b] hover:underline">300% traffic growth</Link>.</>,
+            description: <>500+ successful projects delivered globally, including retail sites seeing <Link href="/services/seo-services" className="text-[#f59e0b] hover:underline">sustained traffic growth</Link>.</>,
             gradient: "from-amber-500 via-yellow-500 to-orange-500",
             bgColor: "rgba(251, 191, 36, 0.15)",
             iconColor: "#f59e0b",

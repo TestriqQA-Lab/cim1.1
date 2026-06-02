@@ -192,7 +192,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    300%
+                                    Higher
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Efficiency Gains
@@ -206,7 +206,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    10x
+                                    Faster
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Faster Execution

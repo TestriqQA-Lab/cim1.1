@@ -175,7 +175,7 @@ export default function Hero() {
                                     <div>
 
                                         <p className="font-bold text-lg" style={{ color: "var(--foreground)" }}>
-                                            10x ROAS
+                                            Strong ROAS
                                         </p>
                                         <p className="text-xs" style={{ color: "var(--secondary-text)" }}>
                                             Average Return

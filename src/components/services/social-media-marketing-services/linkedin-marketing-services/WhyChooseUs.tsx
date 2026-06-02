@@ -110,7 +110,7 @@ export default function WhyChooseUs() {
                         {
                             icon: TrendingUp,
                             title: "Data-Driven ROI",
-                            description: "We've delivered 300% traffic growth and 20% CTR lifts for tech startups and enterprises alike.",
+                            description: "We've delivered sustained traffic growth and measurable CTR lifts for tech startups and enterprises alike.",
                             color: "#004182",
                         },
                         {

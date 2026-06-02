@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: TrendingUp,
-            title: "300% Traffic Growth",
+            title: "Sustained Traffic Growth",
             description: <>Proven results using the latest <Link href="/services/seo-services" className="hover:underline text-red-500">video SEO</Link> techniques. We use data to drive real scale.</>,
             color: "#FF0000",
         },

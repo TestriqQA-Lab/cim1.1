@@ -13,14 +13,14 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Measurable ROI & Transparent Reporting",
-            description: "Every project comes with clear KPIs and real-time analytics dashboards. We track what matters: conversion rates, page performance, organic visibility, lead quality, and revenue impact - not vanity metrics. Our clients see an average 300% organic traffic growth and consistently measurable business outcomes.",
+            description: "Every project comes with clear KPIs and real-time analytics dashboards. We track what matters: conversion rates, page performance, organic visibility, lead quality, and revenue impact - not vanity metrics. Our clients see an average sustained organic traffic growth and consistently measurable business outcomes.",
             colorFrom: "var(--brand-purple)",
             colorTo: "var(--brand-yellow)",
         },
         {
             icon: Users,
             title: "Partner-Centric Approach & Long-Term Success",
-            description: "We're not a transactional agency - we're your growth co-pilot. With a 95% client retention rate, our clients stay because we treat their business goals as our own. We build long-term partnerships focused on sustainable growth, continuous optimization, and mutual success.",
+            description: "We're not a transactional agency - we're your growth co-pilot. With strong client retention, our clients stay because we treat their business goals as our own. We build long-term partnerships focused on sustainable growth, continuous optimization, and mutual success.",
             colorFrom: "var(--brand-cyan)",
             colorTo: "var(--brand-teal)",
         },

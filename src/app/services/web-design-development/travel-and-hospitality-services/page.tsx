@@ -69,7 +69,7 @@ export default function TravelHospitalityPage() {
 
         generateServiceSchema({
             name: "Travel & Hospitality Technology Services",
-            description: "Premier Travel and Hospitality Services designed for the 2026 digital ecosystem. As a leading Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that drive 40% more bookings.",
+            description: "Premier Travel and Hospitality Services designed for the 2026 digital ecosystem. As a leading Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that drive more bookings.",
             urlPath: "/services/web-design-development/travel-and-hospitality-services",
             serviceType: "Travel & Hospitality Technology Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],
@@ -106,7 +106,7 @@ export default function TravelHospitalityPage() {
 
         generateHowToSchema({
             name: "Our Travel Tech Development Journey",
-            description: "A proven 7-step methodology for building travel technology platforms that deliver 300% traffic growth and 40% more bookings.",
+            description: "A proven 7-step methodology for building travel technology platforms that deliver sustained traffic growth and more bookings.",
             steps: [
                 { name: "Discovery & Strategy", text: "Market research, competitor audit, and digital transformation roadmap for your travel or hospitality business.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-discovery" },
                 { name: "UX/UI Design", text: "Intuitive mobile-first prototypes aligned with hospitality brand identity and guest experience principles.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-design" },

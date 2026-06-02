@@ -168,11 +168,11 @@ export default function Hero() {
 
                                 <div className="grid grid-cols-2 gap-4 mb-4">
                                     <div className="p-3 rounded-xl" style={{ backgroundColor: "var(--background)", border: "1px solid var(--border-color)" }}>
-                                        <div className="text-2xl font-black" style={{ background: "linear-gradient(90deg, var(--brand-purple), var(--brand-cyan))", WebkitBackgroundClip: "text", color: "transparent" }}>+180%</div>
+                                        <div className="text-2xl font-black" style={{ background: "linear-gradient(90deg, var(--brand-purple), var(--brand-cyan))", WebkitBackgroundClip: "text", color: "transparent" }}>Strong</div>
                                         <div className="text-xs" style={{ color: "var(--secondary-text)" }}>Lead Generation</div>
                                     </div>
                                     <div className="p-3 rounded-xl" style={{ backgroundColor: "var(--background)", border: "1px solid var(--border-color)" }}>
-                                        <div className="text-2xl font-black" style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-cyan))", WebkitBackgroundClip: "text", color: "transparent" }}>3x</div>
+                                        <div className="text-2xl font-black" style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-cyan))", WebkitBackgroundClip: "text", color: "transparent" }}>Strong</div>
                                         <div className="text-xs" style={{ color: "var(--secondary-text)" }}>Website Traffic</div>
                                     </div>
                                 </div>
@@ -215,11 +215,11 @@ export default function Hero() {
 
                                 <div className="grid grid-cols-2 gap-4 mb-4">
                                     <div className="p-3 rounded-xl" style={{ backgroundColor: "var(--background)", border: "1px solid var(--border-color)" }}>
-                                        <div className="text-2xl font-black" style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-teal))", WebkitBackgroundClip: "text", color: "transparent" }}>+250%</div>
+                                        <div className="text-2xl font-black" style={{ background: "linear-gradient(90deg, var(--brand-blue), var(--brand-teal))", WebkitBackgroundClip: "text", color: "transparent" }}>Strong</div>
                                         <div className="text-xs" style={{ color: "var(--secondary-text)" }}>Online Inquiries</div>
                                     </div>
                                     <div className="p-3 rounded-xl" style={{ backgroundColor: "var(--background)", border: "1px solid var(--border-color)" }}>
-                                        <div className="text-2xl font-black" style={{ background: "linear-gradient(90deg, var(--brand-orange), var(--brand-yellow))", WebkitBackgroundClip: "text", color: "transparent" }}>45%</div>
+                                        <div className="text-2xl font-black" style={{ background: "linear-gradient(90deg, var(--brand-orange), var(--brand-yellow))", WebkitBackgroundClip: "text", color: "transparent" }}>Lower</div>
                                         <div className="text-xs" style={{ color: "var(--secondary-text)" }}>Cost Reduction</div>
                                     </div>
                                 </div>
@@ -232,7 +232,7 @@ export default function Hero() {
                                     <div className="text-xs" style={{ color: "var(--secondary-text)" }}>Projects</div>
                                 </div>
                                 <div className="flex-1 p-4 rounded-2xl" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>
-                                    <div className="text-2xl font-black" style={{ color: "var(--foreground)" }}>98%</div>
+                                    <div className="text-2xl font-black" style={{ color: "var(--foreground)" }}>High</div>
                                     <div className="text-xs" style={{ color: "var(--secondary-text)" }}>Satisfaction</div>
                                 </div>
                                 <div className="flex-1 p-4 rounded-2xl" style={{ backgroundColor: "var(--card-bg)", border: "1px solid var(--border-color)" }}>

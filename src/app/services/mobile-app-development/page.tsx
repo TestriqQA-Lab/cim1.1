@@ -124,7 +124,7 @@ export default function MobileAppDevelopmentPage() {
 
         generateHowToSchema({
             name: "Our 6-Phase Agile Development Process",
-            description: "A proven 6-phase agile methodology for building mobile apps that has delivered 300+ successful projects with a rigorous QA process and 40% faster time-to-market.",
+            description: "A proven 6-phase agile methodology for building mobile apps that has delivered 300+ successful projects with a rigorous QA process and faster time-to-market.",
             steps: [
                 { name: "Discovery & Strategy", text: "Stakeholder interviews, MoSCoW feature prioritization, competitive analysis, and technical roadmap creation. Timeline: Week 1-2.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/#step-discovery" },
                 { name: "UI/UX Design", text: "Figma wireframes, interactive prototyping, usability testing, and design system creation. Timeline: Week 3-5.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/#step-design" },

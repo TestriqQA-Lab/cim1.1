@@ -11,13 +11,13 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'YouTube Marketing Services | Top Agency for ROI & Growth',
-    description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive 20%+ CTR lifts & high-intent leads. Book free audit!',
+    description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive measurable CTR lifts & high-intent leads. Book free audit!',
     alternates: {
         canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/video-marketing-agency",
     },
     openGraph: {
         title: 'YouTube Marketing Services | Top Agency for ROI & Growth',
-        description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive 20%+ CTR lifts & high-intent leads. Book free audit!',
+        description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive measurable CTR lifts & high-intent leads. Book free audit!',
         url: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/video-marketing-agency",
         type: "website",
         images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: 'YouTube Marketing Services | Top Agency for ROI & Growth',
-        description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive 20%+ CTR lifts & high-intent leads. Book free audit!',
+        description: 'Scale with the best YouTube marketing agency. From YouTube ads management to video SEO services, we drive measurable CTR lifts & high-intent leads. Book free audit!',
         images: ["/og-images/video-marketing-agency.webp"],
     },
 
@@ -105,7 +105,7 @@ export default function YouTubeMarketingPage() {
                                         "name": "What are the benefits of hiring a YouTube advertising agency?",
                                         "acceptedAnswer": {
                                             "@type": "Answer",
-                                            "text": "Hiring an agency ensures expertise in algorithm optimization, creative A/B testing, and ROI tracking, typically resulting in a 30% higher ROAS compared to in-house management."
+                                            "text": "Hiring an agency ensures expertise in algorithm optimization, creative A/B testing, and ROI tracking, typically resulting in a higher ROAS compared to in-house management."
                                         }
                                     },
                                     {

@@ -11,7 +11,7 @@ import CTA from "@/components/services/social-media-marketing-services/instagram
 export const metadata: Metadata = {
     title: "Best Instagram Marketing Agency | #1 Instagram Growth & Ads 2026",
     description:
-        "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a 20% CTR boost!",
+        "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a higher CTR!",
     keywords: [
         "Instagram Marketing Services",
         "Instagram Marketing Agency",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: "Best Instagram Marketing Agency | #1 Instagram Growth & Ads 2026",
-        description: "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a 20% CTR boost!",
+        description: "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a higher CTR!",
         url: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/instagram-marketing-services",
         type: "website",
         images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Best Instagram Marketing Agency | #1 Instagram Growth & Ads 2026",
-        description: "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a 20% CTR boost!",
+        description: "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a higher CTR!",
         images: ["/og-images/instagram-marketing-services.webp"],
     },
     alternates: {

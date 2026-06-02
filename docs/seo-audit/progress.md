@@ -6,7 +6,7 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 |---|---|---|---|
 | 0 | Deep-dive analysis & discovery | ✅ done | 2026-06-01 |
 | 1 | GSC non-indexing diagnosis + technical fixes | 🔵 in progress | — |
-| 2 | Non-defensible claims cleanup (code + Sanity) | ⏳ pending | — |
+| 2 | Non-defensible claims cleanup (code + Sanity) | 🔵 in progress | — |
 | 3 | Technical SEO audit + fix | ⏳ pending | — |
 | 4 | On-page / content SEO + dedup | ⏳ pending | — |
 | 5 | Ranking action plan (off-page) | ⏳ pending | — |

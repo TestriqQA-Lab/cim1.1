@@ -68,7 +68,7 @@ export const products: Product[] = [
       { step: 1, title: "Install the Extension", description: "Add ChimeGenius AI Pro to your browser from the Chrome Web Store or Edge Add-ons. One-click installation, zero configuration needed." },
       { step: 2, title: "Click Any Comment Box", description: "Navigate to any social media post and click on the comment or reply box. The ChimeGenius toolbar appears automatically, ready to assist." },
       { step: 3, title: "Choose Your Tone & Generate", description: "Select your preferred tone — Professional, Funny, Bold, Supportive, or Custom. Hit generate and the AI crafts a context-aware comment instantly." },
-      { step: 4, title: "Edit & Post", description: "Review the AI-generated comment, make any edits you like, add your personal touch, and post. Engage authentically at 10x the speed." },
+      { step: 4, title: "Edit & Post", description: "Review the AI-generated comment, make any edits you like, add your personal touch, and post. Engage authentically at greater speed." },
     ],
     faqs: [
       { question: "Which social media platforms does ChimeGenius AI Pro support?", answer: "ChimeGenius AI Pro works on LinkedIn, Instagram, Facebook, X (Twitter), YouTube, Reddit, and is continuously expanding. The browser extension integrates directly into the native comment boxes of each platform." },
@@ -159,7 +159,7 @@ export const products: Product[] = [
     ],
     faqs: [
       { question: "Do I need coding skills to use CIM ChatBot?", answer: "Not at all! CIM ChatBot is a completely no-code platform. Build, train, and deploy chatbots using our visual drag-and-drop interface." },
-      { question: "How accurate are the AI responses?", answer: "Using RAG technology, our chatbots achieve 95%+ accuracy by grounding responses in your actual business data rather than generic AI hallucinations." },
+      { question: "How accurate are the AI responses?", answer: "Using RAG technology, our chatbots achieve high accuracy by grounding responses in your actual business data rather than generic AI hallucinations." },
       { question: "Can the chatbot hand off to a human agent?", answer: "Yes! You can configure automatic handoff rules based on sentiment, topic complexity, or customer request. Seamless transition to live agents." },
       { question: "What channels does CIM ChatBot support?", answer: "Website widget, WhatsApp Business, Facebook Messenger, Instagram DMs, Slack, Telegram, SMS, and custom API integration." },
       { question: "How long does setup take?", answer: "Most businesses are up and running within 30 minutes. Upload your content, customize the look, and deploy — it's that simple." },
@@ -310,7 +310,7 @@ export const products: Product[] = [
     description:
       "Schedule, publish, and analyze your social media content across all platforms from one dashboard. AI-powered content suggestions and optimal posting times.",
     longDescription:
-      "CIM SocialHub is a comprehensive social media management platform designed for brands and agencies. Manage all your social accounts — Instagram, Facebook, LinkedIn, Twitter, TikTok, Pinterest, and YouTube — from a single unified dashboard. With AI-powered content creation, smart scheduling, team collaboration, and in-depth analytics, SocialHub helps you grow your social presence 3x faster.",
+      "CIM SocialHub is a comprehensive social media management platform designed for brands and agencies. Manage all your social accounts — Instagram, Facebook, LinkedIn, Twitter, TikTok, Pinterest, and YouTube — from a single unified dashboard. With AI-powered content creation, smart scheduling, team collaboration, and in-depth analytics, SocialHub helps you grow your social presence faster.",
     icon: "Share2",
     color: "bg-gradient-to-br from-[#00b5ca] to-[#00efd6]",
     accentColor: "#00b5ca",

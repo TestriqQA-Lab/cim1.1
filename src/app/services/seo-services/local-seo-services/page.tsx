@@ -185,7 +185,7 @@ export default function LocalSEOPage() {
                                 "name": "How long does it take to see results from local SEO?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "Local SEO results timeline: 30 days (increased GBP impressions), 60 days (Map Pack rankings improve 3-8 positions, 40-80% more calls), 90 days (top 5 Map Pack for primary keywords - 87% of clients, 2-3x phone calls), 6 months (dominant #1-#3 positions, 300%+ review growth)."
+                                    "text": "Local SEO results timeline: 30 days (increased GBP impressions), 60 days (Map Pack rankings improve, more calls), 90 days (top 5 Map Pack for primary keywords - most clients, more phone calls), 6 months (dominant #1-#3 positions, strong review growth)."
                                 }
                             }
                         ]

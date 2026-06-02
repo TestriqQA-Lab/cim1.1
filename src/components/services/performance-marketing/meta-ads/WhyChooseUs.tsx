@@ -23,8 +23,8 @@ export default function WhyChooseUs() {
             id: 2,
             icon: TrendingUp,
             title: "Proven Results",
-            description: "Average 400% ROAS across 300+ e-commerce and lead gen campaigns.",
-            stat: "400% ROAS",
+            description: "Average strong ROAS across 300+ e-commerce and lead gen campaigns.",
+            stat: "Strong ROAS",
         },
         {
             id: 3,

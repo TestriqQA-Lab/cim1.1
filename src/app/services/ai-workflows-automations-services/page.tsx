@@ -41,7 +41,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'AI Workflow Automation Services | Agentic AI Agency',
-    description: 'Transform fragmented operations into an intelligent engine. Custom AI Automation Agency building sophisticated Agentic Workflow Automations that think, adapt, and execute. 300% efficiency gains, 10x faster execution, 60% cost savings, 95% error reduction, 1000+ workflows deployed, $10M+ client savings.',
+    description: 'Transform fragmented operations into an intelligent engine. Custom AI Automation Agency building sophisticated Agentic Workflow Automations that think, adapt, and execute. significant efficiency gains, faster execution, significant cost savings, fewer errors, 1000+ workflows deployed, $10M+ client savings.',
     url: '/services/ai-workflows-automations-services',
     keywords: [
         'AI Workflow Automation',
@@ -66,7 +66,7 @@ export default function AIWorkflowsAutomationsPage() {
 
         generateWebPageSchema({
             name: "AI Workflow Automation Services | Agentic AI Agency",
-            description: "Transform fragmented operations into an intelligent engine. Custom AI Automation Agency building sophisticated Agentic Workflow Automations that think, adapt, and execute. 300% efficiency gains, 10x faster execution, 60% cost savings, 95% error reduction, 1000+ workflows deployed, $10M+ client savings.",
+            description: "Transform fragmented operations into an intelligent engine. Custom AI Automation Agency building sophisticated Agentic Workflow Automations that think, adapt, and execute. significant efficiency gains, faster execution, significant cost savings, fewer errors, 1000+ workflows deployed, $10M+ client savings.",
             urlPath: "/services/ai-workflows-automations-services",
             datePublished: "2025-01-01",
             dateModified: "2026-04-10",
@@ -83,7 +83,7 @@ export default function AIWorkflowsAutomationsPage() {
 
         generateServiceSchema({
             name: "AI Workflow Automation Services",
-            description: "Transform your fragmented operations into an intelligent engine. As a premier Custom AI Automation Agency, we don't just connect tools — we build sophisticated Agentic Workflow Automations that think, adapt, and execute. 300% efficiency gains, 10x faster execution, 60% cost savings, 95% error reduction, 50+ industries served, 1000+ workflows deployed, $10M+ client savings.",
+            description: "Transform your fragmented operations into an intelligent engine. As a premier Custom AI Automation Agency, we don't just connect tools — we build sophisticated Agentic Workflow Automations that think, adapt, and execute. significant efficiency gains, faster execution, significant cost savings, fewer errors, 50+ industries served, 1000+ workflows deployed, $10M+ client savings.",
             urlPath: "/services/ai-workflows-automations-services",
             serviceType: "AI Workflow Automation & Agentic AI Solutions",
             areaServed: ["IN", "US", "GB", "AU", "AE"],
@@ -104,7 +104,7 @@ export default function AIWorkflowsAutomationsPage() {
                 { name: "AI-Powered Chatbots & Assistants", description: "Context-aware AI agents resolving 80% of customer queries autonomously with natural language understanding." },
                 { name: "Data & Reporting Automation", description: "Automated BI dashboards aggregating data from 50+ sources for real-time business intelligence." },
                 { name: "Content & Marketing Automation", description: "AI-powered content repurposing transforming webinars into blog posts, social media, and email campaigns." },
-                { name: "Document Processing & OCR", description: "Topical authority and entity extraction with 99% accuracy using intelligent document processing." },
+                { name: "Document Processing & OCR", description: "Topical authority and entity extraction with high accuracy using intelligent document processing." },
                 { name: "Custom AI Workflow Solutions", description: "Bespoke custom AI agents designed for unique business operations and complex workflow requirements." },
             ],
         }),
@@ -119,7 +119,7 @@ export default function AIWorkflowsAutomationsPage() {
 
         generateHowToSchema({
             name: "Our 6-Phase AI Automation Process",
-            description: "A proven 6-phase methodology for building sophisticated AI workflow automations that deliver 300% efficiency gains, 60% cost savings, and 95% error reduction.",
+            description: "A proven 6-phase methodology for building sophisticated AI workflow automations that deliver significant efficiency gains, significant cost savings, and fewer errors.",
             steps: [
                 { name: "Process Analysis", text: "Deep-dive audit, process maps, and API-first strategy to identify automation opportunities. Timeline: 1-2 weeks.", url: "https://www.cinuteinfomedia.com/services/ai-workflows-automations-services/#step-analysis" },
                 { name: "Workflow Design", text: "Blueprinting, ML model strategies, and architecture design for the automated workflow. Timeline: 2-3 weeks.", url: "https://www.cinuteinfomedia.com/services/ai-workflows-automations-services/#step-design" },

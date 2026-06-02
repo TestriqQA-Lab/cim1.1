@@ -158,12 +158,12 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>98%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>High</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. Core Web Vitals</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>4.5x</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>Strong</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Traffic Growth</p>
                             </div>
                         </div>

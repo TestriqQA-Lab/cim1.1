@@ -288,7 +288,7 @@ export default function Hero() {
                             <p className="text-xs font-bold uppercase tracking-wider mb-4 opacity-70" style={{ color: "var(--foreground)" }}>E-commerce Performance</p>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(0, 181, 202, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>-45%</span>
+                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>Lower</span>
                                     <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Cart Abandonment</span>
                                 </div>
                                 <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(0, 181, 202, 0.1)" }}>
@@ -296,11 +296,11 @@ export default function Hero() {
                                     <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Page Load</span>
                                 </div>
                                 <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(0, 181, 202, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>+68%</span>
+                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>Higher</span>
                                     <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Mobile Conversion</span>
                                 </div>
                                 <div className="flex flex-col items-center px-4 py-2 rounded-lg" style={{ backgroundColor: "rgba(0, 181, 202, 0.1)" }}>
-                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>85%</span>
+                                    <span className="text-xl font-bold" style={{ color: "#00b5ca" }}>High</span>
                                     <span className="text-xs" style={{ color: "var(--secondary-text)" }}>Customer Retention</span>
                                 </div>
                             </div>

@@ -120,7 +120,7 @@ export default function Hero() {
                                 As a premier <Link href="/services/web-design-development" className="text-[var(--brand-blue)] font-bold hover:underline transition-colors">web development company</Link> with 15+ years of proven expertise, we deliver <Link href="/services/web-design-development/business-corporate" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">custom website development</Link> solutions that drive measurable ROI.
                             </p>
                             <p className="text-base md:text-lg">
-                                Our <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">professional web design agency</Link> has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue)] font-bold">300% traffic growth</span> and 20% conversion rate improvements.
+                                Our <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">professional web design agency</Link> has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue)] font-bold">sustained traffic growth</span> and conversion rate improvements.
                             </p>
                         </div>
 

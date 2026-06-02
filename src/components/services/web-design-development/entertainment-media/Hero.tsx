@@ -237,7 +237,7 @@ export default function Hero() {
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            3x User Engagement
+                                            Higher User Engagement
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                             Personalized content

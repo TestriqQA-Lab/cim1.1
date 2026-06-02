@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Rocket,
-            title: "40% Faster Time-to-Market",
+            title: "Faster Time-to-Market",
             description: "Agile 2-week sprints and efficient development processes. 95% projects delivered on-time and within budget using proven methodologies."
         },
         {

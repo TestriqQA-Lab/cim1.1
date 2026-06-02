@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   ...getPageMetadata({
     title: "Web Development Company | AI-Powered Digital Solutions | Cinute InfoMedia",
-    description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. 320% ROI proven. 300+ global projects. Free audit today! ✨",
+    description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today! ✨",
     url: "/",
     keywords: [
       "web development company",
@@ -52,7 +52,7 @@ export default async function Home() {
 
     generateWebPageSchema({
       name: "Web Development Company | AI-Powered Digital Solutions",
-      description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. 320% ROI proven. 300+ global projects. Free audit today!",
+      description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today!",
       urlPath: "",
       datePublished: "2014-01-01",
       dateModified: "2026-03-02",
@@ -65,7 +65,7 @@ export default async function Home() {
     generateFAQSchema([
       {
         question: "What makes Cinute InfoMedia different from other web development companies?",
-        answer: "We combine technical excellence with business strategy. Unlike typical web development agencies that just code to specs, we act as your growth partner - providing strategic guidance, data-driven recommendations, and continuous optimization. Our 95% client retention rate and 300+ successful projects speak to our partnership approach.",
+        answer: "We combine technical excellence with business strategy. Unlike typical web development agencies that just code to specs, we act as your growth partner - providing strategic guidance, data-driven recommendations, and continuous optimization. Our strong client retention and 300+ successful projects speak to our partnership approach.",
       },
       {
         question: "What web development services do you offer?",
