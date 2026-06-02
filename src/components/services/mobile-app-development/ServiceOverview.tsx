@@ -21,7 +21,7 @@ export default function ServiceOverview() {
         {
             icon: Zap,
             title: "Performance Optimization",
-            description: "Achieve <2s launch time, 60 FPS animations, and 99.9% crash-free rate. Expert optimization with efficient databases, advanced caching, code splitting, and CDN integration.",
+            description: "Achieve <2s launch time, 60 FPS animations, and extensive stability testing. Expert optimization with efficient databases, advanced caching, code splitting, and CDN integration.",
             gradient: "from-[#4facfe] to-[#00f2fe]"
         },
         {
@@ -137,7 +137,7 @@ export default function ServiceOverview() {
                             </div>
                             <div>
                                 <h4 className="font-semibold mb-1">Quality-First Engineering</h4>
-                                <p style={{ color: "var(--secondary-text)" }}>98.7% bug-free delivery with 80%+ test coverage, rigorous QA across 100+ devices, and 99.9% crash-free sessions.</p>
+                                <p style={{ color: "var(--secondary-text)" }}>Rigorous QA with 80%+ test coverage across 100+ devices.</p>
                             </div>
                         </div>
                     </div>

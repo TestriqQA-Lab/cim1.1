@@ -41,7 +41,7 @@ export default function SecurityAndSEO() {
         {
             icon: Gauge,
             title: "Performance (<2s, 60 FPS, 99.9%)",
-            description: "<2s app launch time, 60 FPS animations, <50 MB optimized app size, 99.9% crash-free rate. Image optimization (WebP), code splitting, CDN integration.",
+            description: "<2s app launch time, 60 FPS animations, <50 MB optimized app size, extensive stability testing. Image optimization (WebP), code splitting, CDN integration.",
             gradient: "from-[#30cfd0] to-[#330867]"
         },
         {
@@ -81,7 +81,7 @@ export default function SecurityAndSEO() {
                         <span style={{ color: "var(--brand-purple)" }}>Security, Performance</span> & App Store Optimization
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Enterprise-grade security. 99.9% crash-free apps optimized for maximum app store visibility and 120% organic growth.
+                        Enterprise-grade security. Extensively tested apps optimized for maximum app store visibility and 120% organic growth.
                     </p>
                 </div>
 

@@ -103,7 +103,7 @@ export default function ShopifyEcommercePage() {
 
         generateHowToSchema({
             name: "Our Shopify Development Process",
-            description: "A proven 6-step methodology for building Shopify stores that have processed $10M+ in sales with 99.9% uptime and 99.9% bug-free deployment.",
+            description: "A proven 6-step methodology for building Shopify stores that have processed $10M+ in sales with 99.9% uptime and thoroughly tested deployment.",
             steps: [
                 { name: "Discovery & Strategic Audit", text: "Analysis of current performance, competitor benchmarking, conversion bottleneck identification, and strategic roadmap creation.", url: "https://www.cinuteinfomedia.com/services/web-design-development/shopify-development-services/#step-discovery" },
                 { name: "Design & UX Prototyping", text: "Mobile-first designs focused on user psychology, brand storytelling, and conversion-optimized layouts.", url: "https://www.cinuteinfomedia.com/services/web-design-development/shopify-development-services/#step-design" },

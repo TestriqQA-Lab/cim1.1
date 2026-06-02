@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: ShieldCheck,
             title: "Security Hardening",
-            description: "Hardening fintech platforms with 95% bug-free deployment and military-grade encryption.",
+            description: "Hardening fintech platforms with rigorously tested deployment and military-grade encryption.",
             gradient: "from-red-500 via-orange-500 to-amber-500",
             bgColor: "rgba(239, 68, 68, 0.15)",
             iconColor: "#ef4444",

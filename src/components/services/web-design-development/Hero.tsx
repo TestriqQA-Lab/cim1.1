@@ -132,7 +132,7 @@ export default function Hero() {
                                 { icon: Smartphone, text: "Responsive Design" },
                                 { icon: TrendingUp, text: "Global SEO" },
                                 { icon: ShieldCheck, text: "Enterprise Security" },
-                                { icon: Code, text: "Bug-Free Code" },
+                                { icon: Code, text: "Clean, Tested Code" },
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-center gap-2.5 p-2.5 rounded-xl transition-all duration-300 hover:scale-105 border border-transparent hover:border-[var(--brand-blue)]"
                                     style={{
@@ -182,7 +182,7 @@ export default function Hero() {
                                     95%
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
-                                    Bug-Free Delivery
+                                    Quality-Assured Delivery
                                 </div>
                             </div>
                             <div className="text-center">

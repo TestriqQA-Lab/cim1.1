@@ -18,8 +18,8 @@ export default function WhyChooseUs() {
         },
         {
             icon: TrendingUp,
-            title: "95% Bug-Free Implementation",
-            description: "Our team delivered 95% bug-free apps for 50+ fintech clients using React/Next.js.",
+            title: "Rigorously Tested Implementation",
+            description: "Our team delivered rigorously tested apps for 50+ fintech clients using React/Next.js.",
         },
         {
             icon: Target,

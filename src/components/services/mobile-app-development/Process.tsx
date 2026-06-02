@@ -27,7 +27,7 @@ export default function Process() {
         {
             icon: TestTube,
             title: "Testing & QA (Week 17-19)",
-            description: "Comprehensive testing: 80%+ unit coverage, integration testing for all APIs, UI automation of critical flows, manual testing across 100+ devices. 98.7% bug-free delivery rate with 99.9% crash-free sessions.",
+            description: "Comprehensive testing: 80%+ unit coverage, integration testing for all APIs, UI automation of critical flows, manual testing across 100+ devices. a rigorous QA process.",
             details: ["Unit Testing (Jest/XCTest/JUnit)", "Integration Testing", "UI Automation (Appium/Detox)", "Performance Testing (Load/Stress)", "Security Testing (OWASP Top 10)"]
         },
         {
@@ -81,7 +81,7 @@ export default function Process() {
                         <span style={{ color: "var(--foreground)" }}>6-Phase Agile Methodology</span> <span style={{ color: "var(--brand-purple)" }}>(Proven Across 300+ Projects)</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Our battle-tested development process ensures 95% on-time delivery with 98.7% bug-free rate. Transparent, structured approach delivering measurable results.
+                        Our battle-tested development process ensures 95% on-time delivery. Transparent, structured approach delivering measurable results.
                     </p>
                 </div>
 

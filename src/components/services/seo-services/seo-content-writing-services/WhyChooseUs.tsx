@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
         {
             icon: Sparkles,
             title: "Proven EEAT Portfolio",
-            description: <>Managed 50+ enterprise-scale projects with 95% bug-free delivery on <Link href="/services/seo-services/technical-seo-services" className="hover:text-emerald-500 transition-colors">technical content</Link>.</>,
+            description: <>Managed 50+ enterprise-scale projects with rigorously tested delivery on <Link href="/services/seo-services/technical-seo-services" className="hover:text-emerald-500 transition-colors">technical content</Link>.</>,
         },
         {
             icon: Globe,

@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Zap,
-            title: "99.9% Bug-Free Deployment",
+            title: "Thoroughly Tested Deployment",
             description:
                 "Rigorous QA involving automated load testing and manual checks to ensure stable launches and maintain customer trust.",
             gradient: "from-[#5c8a1e] to-[#96bf48]",

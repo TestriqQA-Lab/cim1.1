@@ -136,12 +136,12 @@ export default function WebDesignDevelopmentPage() {
 
         generateHowToSchema({
             name: "Our Professional Web Development Process",
-            description: "Our proven 6-step methodology ensures every web development project delivers measurable results with 95% bug-free delivery.",
+            description: "Our proven 6-step methodology ensures every web development project delivers measurable results with rigorously tested delivery.",
             totalTime: "PT12W",
             steps: [
                 { name: "Expert Audit & Discovery", text: "Deep analysis of your competition and global market trends. We define technical requirements for enterprise scalability.", url: "https://www.cinuteinfomedia.com/services/web-design-development/#step-audit" },
                 { name: "Strategic Architecture", text: "Planning for Core Web Vitals and global accessibility. We design high-fidelity UI/UX that reflects brand authority.", url: "https://www.cinuteinfomedia.com/services/web-design-development/#step-architecture" },
-                { name: "Agile Engineering", text: "95% bug-free delivery using modern, secure tech stacks (Next.js, TypeScript). Clean, modular code for future growth.", url: "https://www.cinuteinfomedia.com/services/web-design-development/#step-engineering" },
+                { name: "Agile Engineering", text: "rigorously tested delivery using modern, secure tech stacks (Next.js, TypeScript). Clean, modular code for future growth.", url: "https://www.cinuteinfomedia.com/services/web-design-development/#step-engineering" },
                 { name: "Global SEO & Performance", text: "Rigorous QA with built-in technical SEO that has delivered 300% organic traffic growth for global clients.", url: "https://www.cinuteinfomedia.com/services/web-design-development/#step-seo" },
                 { name: "Seamless Deployment", text: "Zero-downtime launch with AWS/Vercel integration and final cross-region performance monitoring.", url: "https://www.cinuteinfomedia.com/services/web-design-development/#step-deployment" },
                 { name: "Continuous Optimization", text: "24/7 technical support and performance tuning based on real-time data to maintain your competitive edge.", url: "https://www.cinuteinfomedia.com/services/web-design-development/#step-optimization" },

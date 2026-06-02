@@ -23,7 +23,7 @@ export default function Process() {
             icon: Code,
             number: "03",
             title: "Agile Engineering",
-            description: <>95% bug-free delivery using modern, secure tech stacks (<Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Next.js</Link>, <Link href="/blog/future-web-development-nextjs" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">TypeScript</Link>). Clean, modular code for future growth.</>,
+            description: <>rigorously tested delivery using modern, secure tech stacks (<Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Next.js</Link>, <Link href="/blog/future-web-development-nextjs" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">TypeScript</Link>). Clean, modular code for future growth.</>,
             color: "from-[#fab900] to-[#ee6500]",
         },
         {

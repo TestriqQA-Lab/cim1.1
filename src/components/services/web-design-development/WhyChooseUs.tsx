@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
         {
             icon: Lock,
             title: "Enterprise-Grade Security",
-            description: <>Advanced protocols and AWS-secured architecture. <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Enterprise-Grade Security</Link> ensuring 95% bug-free delivery on first deployment for peace of mind.</>,
+            description: <>Advanced protocols and AWS-secured architecture. <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Enterprise-Grade Security</Link> ensuring rigorously tested delivery on first deployment for peace of mind.</>,
             color: "from-[#bc3feb] to-[#fab900]",
         },
         {

@@ -30,8 +30,8 @@ export default function WhyChooseUs() {
         },
         {
             icon: Gauge,
-            title: "98.7% Bug-Free Delivery",
-            description: "Rigorous QA with 80%+ test coverage across 100+ devices. 99.9% crash-free sessions with <2s app launch time and 60 FPS performance."
+            title: "Rigorous QA Process",
+            description: "Rigorous QA with 80%+ test coverage across 100+ devices. Extensive stability testing with <2s app launch time and 60 FPS performance."
         },
         {
             icon: Smartphone,

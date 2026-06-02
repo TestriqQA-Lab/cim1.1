@@ -103,7 +103,7 @@ export default function WhyChooseUs() {
                         },
                         {
                             icon: Zap,
-                            title: "95% Bug-Free Implementations",
+                            title: "Rigorously Tested Implementations",
                             description: "Flawless tracking setup (Insight Tags, API integrations) for 100+ global clients.",
                             color: "#0077B5",
                         },

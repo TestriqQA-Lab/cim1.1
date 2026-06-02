@@ -67,7 +67,7 @@ export default function ServiceOverview() {
                             <ul className="grid sm:grid-cols-2 gap-4">
                                 {[
                                     <span key="1">Global reach with <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-[var(--brand-blue)]">performance-first architecture</Link></span>,
-                                    <span key="2">95% bug-free delivery on first deployment</span>,
+                                    <span key="2">rigorously tested delivery on first deployment</span>,
                                     <span key="3">Built-in SEO that delivers <Link href="/services/seo-services" className="hover:text-[var(--brand-blue)]">300% traffic growth</Link></span>,
                                     <span key="4">24/7 technical support across timezones</span>,
                                 ].map((item, idx) => (

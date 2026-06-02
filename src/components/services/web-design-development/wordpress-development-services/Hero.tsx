@@ -184,7 +184,7 @@ export default function Hero() {
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#0073AA" }}>95%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Bug-free Deployment</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Stable Deployment</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">

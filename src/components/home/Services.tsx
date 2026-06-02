@@ -28,7 +28,7 @@ export default function Services() {
                 <>Native <Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">iOS</Link> & <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">Android app development</Link></>,
                 <>Cross-platform (<Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">React Native</Link>, <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">Flutter</Link>)</>,
                 <><Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)] hover:underline transition-colors">Enterprise mobile applications</Link></>,
-                "Key Results: 40% faster time-to-market, 98.7% bug-free",
+                "Key Results: 40% faster time-to-market",
             ],
             gradientStyle: { background: "linear-gradient(90deg, var(--brand-purple), var(--brand-cyan))" },
         },

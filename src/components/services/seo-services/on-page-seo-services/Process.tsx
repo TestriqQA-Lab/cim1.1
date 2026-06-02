@@ -52,7 +52,7 @@ export default function Process() {
                         6 Steps to <span style={{ color: seoGreen }}>On-Page SEO Dominance</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Our systematic approach ensures no element is left unoptimized, delivering 95% bug-free implementations.
+                        Our systematic approach ensures no element is left unoptimized, delivering rigorously tested implementations.
                     </p>
                 </div>
 

@@ -102,7 +102,7 @@ export default function Hero() {
                         </p>
 
                         <p className="mt-4 text-sm md:text-base max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Join 50+ global <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[#fab900] transition-colors">fintech</Link> and <Link href="/services/web-design-development/business-corporate" className="hover:text-[#fab900] transition-colors">enterprise</Link> clients who trust us for 95% bug-free technical maintenance and 300% operational efficiency improvements.
+                            Join 50+ global <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[#fab900] transition-colors">fintech</Link> and <Link href="/services/web-design-development/business-corporate" className="hover:text-[#fab900] transition-colors">enterprise</Link> clients who trust us for rigorously tested technical maintenance and 300% operational efficiency improvements.
                         </p>
 
                         {/* Feature Pills */}

@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
 
     const stats = [
         { value: "300%", label: "Traffic Growth" },
-        { value: "95%", label: "Bug-Free Delivery" },
+        { value: "80%+", label: "Test Coverage" },
         { value: "50+", label: "Global Partners" },
         { value: "24/7", label: "Monitoring" },
     ];

@@ -285,7 +285,7 @@ export default function Hero() {
                                 Why 2,500+ Businesses Trust Us
                             </h2>
                             <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
-                                98.7% bug-free delivery rate • 40% faster time-to-market • 24/7 global support • Enterprise-grade security (GDPR, HIPAA, SOC 2 compliant)
+                                a rigorous QA process • 40% faster time-to-market • 24/7 global support • Enterprise-grade security (GDPR, HIPAA, SOC 2 compliant)
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 <span

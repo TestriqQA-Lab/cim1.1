@@ -75,7 +75,7 @@ export default function Process() {
             number: "05",
             icon: TestTube,
             title: "Testing & Quality Assurance",
-            description: "Rigorous testing for bugs, Ecommerce ADA compliance and accessibility, and security vulnerabilities, ensuring 95% bug-free launches.",
+            description: "Rigorous testing for bugs, Ecommerce ADA compliance and accessibility, and security vulnerabilities, ensuring rigorously tested launches.",
             deliverables: [
                 { icon: ShoppingCart, text: "Checkout testing" },
                 { icon: CheckCircle2, text: "Payment validation" },

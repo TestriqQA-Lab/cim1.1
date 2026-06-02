@@ -124,7 +124,7 @@ export default function Hero() {
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "95% Bug-Free Codebase",
+                                "Rigorously Tested Codebase",
                                 "40% Faster Delivery",
                                 "300% Traffic Growth",
                                 "Enterprise-Grade Security",
@@ -170,7 +170,7 @@ export default function Hero() {
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>99.9%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Crash-Free Impact</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Stability Focus</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
