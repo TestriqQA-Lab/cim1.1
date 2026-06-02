@@ -9,7 +9,6 @@ import {
   generateBreadcrumbSchema,
   generateFAQSchema,
   generateItemListSchema,
-  generateReviewSchema,
   generateHowToSchema,
   generateNavigationSchema,
 } from "@/lib/schema";
@@ -138,12 +137,6 @@ export default async function Home() {
       ],
     }),
 
-    generateReviewSchema({
-      reviewBody: "The AI chatbot they built has transformed our customer support. We're saving 200+ hours monthly while providing better, faster service to our students.",
-      authorName: "CDPL Institute",
-      authorType: "Organization",
-      ratingValue: "5",
-    }),
 
     generateHowToSchema({
       name: "Your 4-Step Digital Audit & Growth Roadmap",

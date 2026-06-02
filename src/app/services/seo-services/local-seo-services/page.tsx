@@ -81,11 +81,6 @@ export default function LocalSEOPage() {
                                 "telephone": "+1-555-123-4567",
                                 "contactType": "Customer Service",
                                 "availableLanguage": ["English", "Spanish"]
-                            },
-                            "aggregateRating": {
-                                "@type": "AggregateRating",
-                                "ratingValue": "4.9",
-                                "reviewCount": "247"
                             }
                         },
                         "areaServed": ["United States", "India", "United Kingdom", "Australia"],

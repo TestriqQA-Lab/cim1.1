@@ -69,11 +69,6 @@ export default function EcommerceSEOPage() {
                 "telephone": "+91-9004988859",
                 "contactType": "Sales",
                 "availableLanguage": ["English", "Hindi"]
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "312"
             }
         },
         "areaServed": ["United States", "India", "United Kingdom", "Australia", "Europe", "Asia Pacific"],
