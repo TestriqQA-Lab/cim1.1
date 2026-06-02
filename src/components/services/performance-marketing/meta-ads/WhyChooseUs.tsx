@@ -143,7 +143,7 @@ export default function WhyChooseUs() {
                             <div className="mt-4 flex items-center gap-2">
                                 <CheckCircle className="w-4 h-4" style={{ color: metaPurple }} />
                                 <span className="text-xs font-medium" style={{ color: metaPurple }}>
-                                    Guaranteed
+                                    Included
                                 </span>
                             </div>
 

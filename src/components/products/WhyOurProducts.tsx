@@ -11,7 +11,7 @@ export default function WhyOurProducts() {
         { icon: Cpu, title: "Agency-Grade Engineering", description: "Built by developers who've delivered 300+ client projects. Real-world problem-solving, not theoretical features." },
         { icon: Shield, title: "Enterprise-Ready Security", description: "SOC 2 compliant infrastructure, AES-256 encryption, and GDPR-ready data processing built into every product." },
         { icon: Zap, title: "AI-Powered Intelligence", description: "Cutting-edge AI — from ML automation to NLP and predictive analytics powering every product." },
-        { icon: Globe, title: "Global Scale Architecture", description: "Cloud-native, edge-deployed architecture handling millions of requests with 99.99% uptime guarantee." },
+        { icon: Globe, title: "Global Scale Architecture", description: "Cloud-native, edge-deployed architecture handling millions of requests with high availability." },
         { icon: Headphones, title: "Dedicated 24/7 Support", description: "Priority Slack channels, dedicated account managers, and comprehensive documentation for every product." },
         { icon: Award, title: "Proven Battle-Tested Results", description: "30K+ businesses trust our products. Transparent metrics and verifiable case studies back every claim." },
     ];

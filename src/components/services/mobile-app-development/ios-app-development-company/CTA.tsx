@@ -7,7 +7,7 @@ export default function CTA() {
     const benefits = [
         "Free project consultation",
         "Detailed proposal & timeline",
-        "Fixed price guarantee",
+        "Transparent fixed pricing",
         "Post-launch support included",
     ];
 

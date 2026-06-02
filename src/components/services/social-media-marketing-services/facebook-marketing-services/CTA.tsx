@@ -8,7 +8,7 @@ export default function CTA() {
         "Free account audit",
         "Custom strategy",
         "No long-term contracts",
-        "Performance guarantee",
+        "Performance-focused",
     ];
 
     const fbBlue = "#1877F2";

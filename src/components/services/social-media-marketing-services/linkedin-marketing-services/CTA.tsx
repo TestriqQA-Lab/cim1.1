@@ -11,7 +11,7 @@ export default function CTA() {
         "Free LinkedIn audit",
         "Custom B2B strategy",
         "No long-term contracts",
-        "ROI guarantee",
+        "ROI-focused",
     ];
 
     return (

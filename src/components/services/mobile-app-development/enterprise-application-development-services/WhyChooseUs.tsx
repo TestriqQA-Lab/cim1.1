@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
         {
             icon: Headphones,
             title: "24/7 Enterprise Support",
-            description: <><span className="text-inherit">Dedicated </span><Link href="/services/additional-support-services" className="text-[#2563eb] hover:underline">support</Link> team with guaranteed SLAs, proactive monitoring, and rapid incident response backed by strict uptime guarantees.</>,
+            description: <><span className="text-inherit">Dedicated </span><Link href="/services/additional-support-services" className="text-[#2563eb] hover:underline">support</Link> team with clear SLAs, proactive monitoring, and rapid incident response.</>,
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {

@@ -103,7 +103,7 @@ export default function CTA() {
                         },
                         {
                             number: "99.9%",
-                            label: "Uptime Guarantee",
+                            label: "High Availability",
                         },
                         {
                             number: "Enterprise",

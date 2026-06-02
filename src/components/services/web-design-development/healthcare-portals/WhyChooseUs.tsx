@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Proven Track Record",
-            description: "Trusted by healthcare organizations to build secure, reliable patient platforms with 99.9% uptime guarantee.",
+            description: "Trusted by healthcare organizations to build secure, reliable patient platforms with high availability.",
             highlights: [
                 { icon: Star, text: "Award-winning" },
                 { icon: UserCheck, text: "Trusted partner" },

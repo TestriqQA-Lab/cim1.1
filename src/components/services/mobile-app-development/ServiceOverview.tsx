@@ -136,7 +136,7 @@ export default function ServiceOverview() {
                                 <span className="text-white text-sm font-bold">✓</span>
                             </div>
                             <div>
-                                <h4 className="font-semibold mb-1">Quality Guaranteed</h4>
+                                <h4 className="font-semibold mb-1">Quality-First Engineering</h4>
                                 <p style={{ color: "var(--secondary-text)" }}>98.7% bug-free delivery with 80%+ test coverage, rigorous QA across 100+ devices, and 99.9% crash-free sessions.</p>
                             </div>
                         </div>

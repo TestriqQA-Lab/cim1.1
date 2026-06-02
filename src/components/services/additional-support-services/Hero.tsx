@@ -17,7 +17,7 @@ export default function Hero() {
     const stats = [
         { value: "24/7", label: "Support Available" },
         { value: "<2hr", label: "Response Time" },
-        { value: "99.9%", label: "Uptime Guarantee" },
+        { value: "24/7", label: "Monitoring" },
     ];
 
     useEffect(() => {

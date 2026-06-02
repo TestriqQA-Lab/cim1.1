@@ -67,7 +67,7 @@ export default function CTA() {
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8 text-sm md:text-base font-medium" style={{ color: "var(--foreground)" }}>
-                        <span>✓ 100% Performance Guarantee</span>
+                        <span>✓ Performance-Optimized</span>
                         <span>✓ Expert Migration Support</span>
                         <span>✓ Headless CMS Integration</span>
                     </div>

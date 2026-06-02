@@ -176,7 +176,7 @@ export default function WhyChooseUs() {
                 {/* Stats Section */}
                 <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
                     {[
-                        { value: "99.9%", label: "Uptime Guarantee" },
+                        { value: "24/7", label: "Monitoring" },
                         { value: "< 2s", label: "Load Time" },
                         { value: "100%", label: "Mobile Optimized" },
                         { value: "24/7", label: "Support" },
