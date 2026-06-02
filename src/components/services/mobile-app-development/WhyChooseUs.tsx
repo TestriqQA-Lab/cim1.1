@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
         {
             icon: Lock,
             title: <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)] transition-colors">Enterprise-Grade Security</Link>,
-            description: "Zero security breaches since 2014. AES-256 encryption, OAuth 2.0, OWASP compliance. GDPR, HIPAA, PCI-DSS, SOC 2 certified solutions."
+            description: "AES-256 encryption, OAuth 2.0, OWASP compliance. GDPR, HIPAA, PCI-DSS, SOC 2 certified solutions."
         },
         {
             icon: Palette,

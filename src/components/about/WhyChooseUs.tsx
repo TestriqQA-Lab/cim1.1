@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
         { value: "2,500+", label: "Businesses trust our solutions globally" },
         { value: "95%", label: "Client retention rate" },
         { value: "98.7%", label: "Bug-free delivery in mobile apps" },
-        { value: "Zero", label: "Security breaches since 2014" },
+        { value: "AES-256", label: "Encryption standard" },
         { value: "Sub-2s", label: "Core Web Vitals performance" },
     ];
 

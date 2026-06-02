@@ -25,7 +25,7 @@ export default function SecurityAndSEO() {
         },
         {
             icon: UserCheck,
-            title: "Zero Breaches Since 2014",
+            title: "Security-First Engineering",
             description: "Regular penetration testing, security audits, vulnerability assessments, and 24/7 monitoring. GDPR, HIPAA, PCI-DSS, SOC 2 compliant.",
             gradient: "from-[#43e97b] to-[#38f9d7]"
         }
@@ -81,7 +81,7 @@ export default function SecurityAndSEO() {
                         <span style={{ color: "var(--brand-purple)" }}>Security, Performance</span> & App Store Optimization
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Enterprise-grade security with zero breaches since 2014. 99.9% crash-free apps optimized for maximum app store visibility and 120% organic growth.
+                        Enterprise-grade security. 99.9% crash-free apps optimized for maximum app store visibility and 120% organic growth.
                     </p>
                 </div>
 
@@ -91,7 +91,7 @@ export default function SecurityAndSEO() {
                     <div>
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                             <Lock className="w-8 h-8" style={{ color: "var(--brand-purple)" }} />
-                            <span style={{ color: "var(--foreground)" }}>Security Best Practices (Zero Breaches Since 2014)</span>
+                            <span style={{ color: "var(--foreground)" }}>Security Best Practices</span>
                         </h3>
 
                         <div className="space-y-6">
