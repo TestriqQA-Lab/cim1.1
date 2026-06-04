@@ -43,7 +43,7 @@ export default function SEOPerformance() {
         {
             icon: Lock,
             title: "Enterprise Security",
-            description: "Advanced protocols and AWS-secured architecture ensuring 99.9% uptime and data protection for global operations.",
+            description: "Advanced protocols and AWS-secured architecture ensuring high availability and data protection for global operations.",
             items: ["SSL/TLS encryption", "Security headers", "Real-time monitoring", "DDoS protection"],
             color: "from-[#008ac1] to-[#00b5ca]",
         },

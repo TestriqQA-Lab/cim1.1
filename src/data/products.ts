@@ -82,7 +82,7 @@ export const products: Product[] = [
       { label: "Comments Generated", value: "5M+" },
       { label: "Active Users", value: "50K+" },
       { label: "Platforms Supported", value: "7+" },
-      { label: "Avg Time Saved", value: "90%" },
+      { label: "Avg Time Saved", value: "Significant" },
     ],
     supportUrl: "/products/chimegenius-ai-pro/support",
     privacyUrl: "/products/chimegenius-ai-pro/privacy-policy",
@@ -124,7 +124,7 @@ export const products: Product[] = [
     stats: [
       { label: "Test Cases Generated", value: "2M+" },
       { label: "Bugs Detected", value: "500K+" },
-      { label: "Time Saved", value: "85%" },
+      { label: "Time Saved", value: "Significant" },
       { label: "Teams Using", value: "1,200+" },
     ],
     supportUrl: "/products/testriq-qa/support",
@@ -166,7 +166,7 @@ export const products: Product[] = [
     ],
     stats: [
       { label: "Messages Handled", value: "10M+" },
-      { label: "Resolution Rate", value: "92%" },
+      { label: "Resolution Rate", value: "High" },
       { label: "Languages", value: "50+" },
       { label: "Active Bots", value: "3,500+" },
     ],
@@ -339,7 +339,7 @@ export const products: Product[] = [
     stats: [
       { label: "Posts Scheduled", value: "25M+" },
       { label: "Accounts Managed", value: "15K+" },
-      { label: "Engagement Boost", value: "3x" },
+      { label: "Engagement Boost", value: "Strong" },
       { label: "Platforms", value: "7+" },
     ],
     supportUrl: "/products/cim-socialhub/support",

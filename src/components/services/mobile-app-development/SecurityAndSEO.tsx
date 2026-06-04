@@ -40,7 +40,7 @@ export default function SecurityAndSEO() {
         },
         {
             icon: Gauge,
-            title: "Performance (<2s, 60 FPS, 99.9%)",
+            title: "Performance (<2s, 60 FPS)",
             description: "<2s app launch time, 60 FPS animations, <50 MB optimized app size, extensive stability testing. Image optimization (WebP), code splitting, CDN integration.",
             gradient: "from-[#30cfd0] to-[#330867]"
         },
@@ -217,7 +217,7 @@ export default function SecurityAndSEO() {
                 <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
                     {[
                         { metric: "< 2s", label: "App Launch Time", gradient: "from-[#667eea] to-[#764ba2]" },
-                        { metric: "99.9%", label: "Uptime SLA", gradient: "from-[#f093fb] to-[#f5576c]" },
+                        { metric: "High", label: "Uptime SLA", gradient: "from-[#f093fb] to-[#f5576c]" },
                         { metric: "< 50MB", label: "Typical App Size", gradient: "from-[#4facfe] to-[#00f2fe]" },
                         { metric: "A+", label: "Security Rating", gradient: "from-[#43e97b] to-[#38f9d7]" }
                     ].map((item, index) => (

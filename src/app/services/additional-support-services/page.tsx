@@ -127,7 +127,7 @@ export default function AdditionalSupportServicesPage() {
             name: "Core Business Support Services",
             description: "Five core business support categories: IT Support, Administrative & Virtual Assistants, Data Management & Back-Office, Specialized Industry Support, and Customer Support & Lead Generation.",
             items: [
-                { name: "IT Business Support Services", description: "Regular updates and patch management, 99.9% uptime monitoring, and additional technical support for seamless operations." },
+                { name: "IT Business Support Services", description: "Regular updates and patch management, uptime monitoring, and additional technical support for seamless operations." },
                 { name: "Outsourced Administrative & Virtual Assistants", description: "On-demand administrative assistance, outsourced HR support, and additional legal administrative support." },
                 { name: "Data Management & Back-Office", description: "Outsourced data management, order processing, and supplementary financial support for streamlined operations." },
                 { name: "Specialized Industry Support", description: "Healthcare admin assistance, real estate listing management, and additional marketing support for industry-specific needs." },

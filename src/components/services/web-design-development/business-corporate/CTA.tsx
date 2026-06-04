@@ -102,7 +102,7 @@ export default function CTA() {
                             label: "Corporate Sites Delivered",
                         },
                         {
-                            number: "99.9%",
+                            number: "High",
                             label: "High Availability",
                         },
                         {

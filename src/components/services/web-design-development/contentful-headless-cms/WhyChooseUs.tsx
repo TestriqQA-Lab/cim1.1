@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
         },
         {
             icon: Zap,
-            title: "99.99% Uptime SLA",
+            title: "High Availability",
             description: "Enterprise-grade reliability with global CDN, automatic failover, and high availability.",
             gradient: "from-cyan-500 via-blue-500 to-indigo-500",
             bgColor: "rgba(0, 89, 200, 0.15)",

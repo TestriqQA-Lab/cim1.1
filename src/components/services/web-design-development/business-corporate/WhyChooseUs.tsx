@@ -45,10 +45,10 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Performance Excellence",
-            description: "Sub-second load times and 99.99% uptime SLAs ensure your corporate presence is always available and lightning fast.",
+            description: "Sub-second load times and high availability ensure your corporate presence is always available and lightning fast.",
             color: "from-[#00efd6] to-[#00b5ca]",
             accentColor: "#00efd6",
-            features: ["<1s Load Time", "99.99% Uptime", "CDN Optimized"]
+            features: ["<1s Load Time", "High Availability", "CDN Optimized"]
         },
         {
             icon: Clock,
@@ -142,7 +142,7 @@ export default function WhyChooseUs() {
                         { value: "500+", label: "Projects Delivered", icon: FileCheck },
                         { value: "98%", label: "Client Satisfaction", icon: Users },
                         { value: "15+", label: "Years Experience", icon: Award },
-                        { value: "99.99%", label: "Uptime SLA", icon: TrendingUp },
+                        { value: "High", label: "Uptime SLA", icon: TrendingUp },
                     ].map((stat, idx) => {
                         const StatIcon = stat.icon;
                         return (

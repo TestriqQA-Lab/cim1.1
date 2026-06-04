@@ -78,7 +78,7 @@ export default function BusinessCorporatePage() {
 
         generateServiceSchema({
             name: "Business & Corporate Website Development",
-            description: "Build a professional corporate website that communicates trust, credibility, and brand excellence to stakeholders, investors, and clients. Enterprise-grade web solutions with 99.99% uptime SLA.",
+            description: "Build a professional corporate website that communicates trust, credibility, and brand excellence to stakeholders, investors, and clients. Enterprise-grade web solutions with high availability.",
             urlPath: "/services/web-design-development/business-corporate",
             serviceType: "Corporate Website Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],

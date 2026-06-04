@@ -123,7 +123,7 @@ export default function CTA() {
                             label: "Traffic Growth",
                         },
                         {
-                            number: "99.9%",
+                            number: "High",
                             label: "Uptime SLA",
                         },
                     ].map((indicator, idx) => (

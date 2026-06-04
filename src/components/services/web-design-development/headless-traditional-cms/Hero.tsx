@@ -19,7 +19,7 @@ export default function Hero() {
 
     const stats = [
         { value: "50+", label: "CMS Projects" },
-        { value: "99.9%", label: "Uptime" },
+        { value: "High", label: "Uptime" },
         { value: "-60%", label: "Content Time" },
     ];
 

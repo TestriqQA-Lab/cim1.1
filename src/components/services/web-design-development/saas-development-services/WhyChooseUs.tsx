@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
         {
             icon: RefreshCw,
             title: "DevOps & CI/CD for Reliable SaaS Delivery",
-            description: "Automated testing pipelines, infrastructure-as-code with Terraform, and zero-downtime deployments ensure your users experience 99.9% uptime. Continuous integration via GitHub Actions, monitoring with Datadog/Sentry, and rollback capabilities protect your MRR growth.",
+            description: "Automated testing pipelines, infrastructure-as-code with Terraform, and zero-downtime deployments ensure your users experience high availability. Continuous integration via GitHub Actions, monitoring with Datadog/Sentry, and rollback capabilities protect your MRR growth.",
             color: "from-[#ee6500] to-[#fab900]",
         },
     ];

@@ -64,7 +64,7 @@ export default function ShopifyEcommercePage() {
 
         generateServiceSchema({
             name: "Shopify Development Services & Shopify Marketing Agency",
-            description: "Professional Shopify development services for high-growth global brands. From high-converting store setup to enterprise-grade Shopify Plus solutions, we deliver precision-engineered experiences that dominate search rankings and drive sustainable ROI. 100+ stores built, $10M+ sales processed, 99.9% uptime.",
+            description: "Professional Shopify development services for high-growth global brands. From high-converting store setup to enterprise-grade Shopify Plus solutions, we deliver precision-engineered experiences that dominate search rankings and drive sustainable ROI. 100+ stores built, $10M+ sales processed, high availability.",
             urlPath: "/services/web-design-development/shopify-development-services",
             serviceType: "Shopify Development & E-commerce",
             areaServed: ["IN", "US", "GB", "AU", "AE"],
@@ -92,7 +92,7 @@ export default function ShopifyEcommercePage() {
         }),
 
         generateFAQSchema([
-            { question: "What are the benefits of Shopify for e-commerce in 2026?", answer: "Shopify offers unparalleled reliability, security, and a massive app ecosystem in 2026. It provides enterprise-grade infrastructure with 99.9% uptime, built-in payment processing, and a thriving developer community." },
+            { question: "What are the benefits of Shopify for e-commerce in 2026?", answer: "Shopify offers unparalleled reliability, security, and a massive app ecosystem in 2026. It provides enterprise-grade infrastructure with high availability, built-in payment processing, and a thriving developer community." },
             { question: "How much does Shopify development cost?", answer: "Shopify development costs vary by business size: Startups typically range from $5,000 to $15,000, while mid-market and enterprise solutions range from $25,000 to $100,000+ depending on complexity and customization needs." },
             { question: "How to choose the right Shopify development agency?", answer: "Look for certified Shopify Partners who prioritize performance, speed optimization, and SEO best practices. Verify their portfolio, client testimonials, and expertise with Shopify Plus and headless commerce." },
             { question: "What does a Shopify marketing package include?", answer: "Our Shopify marketing package includes comprehensive Shopify SEO, PPC advertising, Klaviyo email automation, and Conversion Rate Optimization (CRO) strategies tailored for e-commerce growth." },
@@ -103,7 +103,7 @@ export default function ShopifyEcommercePage() {
 
         generateHowToSchema({
             name: "Our Shopify Development Process",
-            description: "A proven 6-step methodology for building Shopify stores that have processed $10M+ in sales with 99.9% uptime and thoroughly tested deployment.",
+            description: "A proven 6-step methodology for building Shopify stores that have processed $10M+ in sales with high availability and thoroughly tested deployment.",
             steps: [
                 { name: "Discovery & Strategic Audit", text: "Analysis of current performance, competitor benchmarking, conversion bottleneck identification, and strategic roadmap creation.", url: "https://www.cinuteinfomedia.com/services/web-design-development/shopify-development-services/#step-discovery" },
                 { name: "Design & UX Prototyping", text: "Mobile-first designs focused on user psychology, brand storytelling, and conversion-optimized layouts.", url: "https://www.cinuteinfomedia.com/services/web-design-development/shopify-development-services/#step-design" },

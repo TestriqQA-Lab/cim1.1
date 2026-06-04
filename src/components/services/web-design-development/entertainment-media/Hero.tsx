@@ -20,7 +20,7 @@ export default function Hero() {
     const stats = [
         { value: "10M+", label: "Users Engaged" },
         { value: "50K+", label: "Content Hours" },
-        { value: "99.9%", label: "Uptime SLA" },
+        { value: "High", label: "Uptime SLA" },
     ];
 
     return (

@@ -129,7 +129,7 @@ export default function Hero() {
                             {[
                                 "100% Mobile-First",
                                 "<2s Load Time",
-                                "99.9% Uptime",
+                                "High Availability",
                                 "All Green Core Web Vitals",
                             ].map((feature, idx) => (
                                 <div
@@ -182,7 +182,7 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: techPurple }}>99.9%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: techPurple }}>High</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Server Uptime & SSL</p>
                             </div>
                         </div>
@@ -265,7 +265,7 @@ export default function Hero() {
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            99.9%
+                                            High
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                             Server Uptime
