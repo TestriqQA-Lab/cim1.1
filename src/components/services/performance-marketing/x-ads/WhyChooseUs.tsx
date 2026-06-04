@@ -95,7 +95,7 @@ export default function WhyChooseUs() {
                                 <div>
                                     <div className="flex justify-between mb-2">
                                         <span className="font-semibold" style={{ color: "var(--secondary-text)" }}>Brand Follower Growth</span>
-                                        <span className="font-bold" style={{ color: "var(--foreground)" }}>+28%</span>
+                                        <span className="font-bold" style={{ color: "var(--foreground)" }}>Higher</span>
                                     </div>
                                     <div className="h-2 rounded-full overflow-hidden" style={{ backgroundColor: "var(--muted-bg)" }}>
                                         <div className="h-full rounded-full w-[28%]" style={{ backgroundColor: "var(--foreground)" }} />
@@ -106,7 +106,7 @@ export default function WhyChooseUs() {
                                 <div>
                                     <div className="flex justify-between mb-2">
                                         <span className="font-semibold" style={{ color: "var(--secondary-text)" }}>Launch Awareness</span>
-                                        <span className="font-bold" style={{ color: "var(--foreground)" }}>+45%</span>
+                                        <span className="font-bold" style={{ color: "var(--foreground)" }}>Higher</span>
                                     </div>
                                     <div className="h-2 rounded-full overflow-hidden" style={{ backgroundColor: "var(--muted-bg)" }}>
                                         <div className="h-full rounded-full w-[45%] bg-blue-500" />
@@ -117,7 +117,7 @@ export default function WhyChooseUs() {
                                 <div>
                                     <div className="flex justify-between mb-2">
                                         <span className="font-semibold" style={{ color: "var(--secondary-text)" }}>Video Completion Rate</span>
-                                        <span className="font-bold" style={{ color: "var(--foreground)" }}>90%</span>
+                                        <span className="font-bold" style={{ color: "var(--foreground)" }}>High</span>
                                     </div>
                                     <div className="h-2 rounded-full overflow-hidden" style={{ backgroundColor: "var(--muted-bg)" }}>
                                         <div className="h-full rounded-full w-[90%] bg-gray-400" />

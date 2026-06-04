@@ -164,7 +164,6 @@ export default function Hero() {
                                 Explore Our Writing Framework
                             </Link>
                         </div>
-                        electoral
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
