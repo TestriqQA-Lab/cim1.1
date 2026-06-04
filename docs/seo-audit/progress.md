@@ -9,7 +9,7 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 | 2 | Non-defensible claims cleanup (code + Sanity) | ✅ done (code + CMS) | 2026-06-04 |
 | 3 | Technical SEO audit + fix | 🔵 fixes done; owner 404s pending | 2026-06-04 |
 | 4 | On-page / content SEO + dedup | 🔵 analysis done; content writing = team | 2026-06-04 |
-| 5 | Ranking action plan (off-page) | ⏳ pending | — |
+| 5 | Ranking action plan (off-page) | ✅ plan delivered (owner executes) | 2026-06-04 |
 | 6 | Conversion + analytics + security | ⏳ pending | — |
 | 7 | Final report + KPIs + monitoring | ⏳ pending | — |
 
