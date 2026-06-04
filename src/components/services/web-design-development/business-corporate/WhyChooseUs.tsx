@@ -141,7 +141,7 @@ export default function WhyChooseUs() {
                     {[
                         { value: "500+", label: "Projects Delivered", icon: FileCheck },
                         { value: "98%", label: "Client Satisfaction", icon: Users },
-                        { value: "15+", label: "Years Experience", icon: Award },
+                        { value: "12+", label: "Years Experience", icon: Award },
                         { value: "High", label: "Uptime SLA", icon: TrendingUp },
                     ].map((stat, idx) => {
                         const StatIcon = stat.icon;

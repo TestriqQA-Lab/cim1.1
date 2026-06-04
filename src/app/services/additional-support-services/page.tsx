@@ -28,7 +28,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Business Support Services | Outsourced Administrative & IT Support 24/7',
-    description: 'Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs. 500+ happy clients, 15+ years experience, 50+ support staff, rigorously tested maintenance, 300% operational efficiency improvements.',
+    description: 'Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs. 500+ happy clients, 12+ years experience, 50+ support staff, rigorously tested maintenance, significant operational efficiency improvements.',
     url: '/services/additional-support-services',
     image: "/og-images/additional-support-services.webp",
     keywords: [
@@ -56,7 +56,7 @@ export default function AdditionalSupportServicesPage() {
 
         generateWebPageSchema({
             name: "Business Support Services | Outsourced Administrative & IT Support 24/7",
-            description: "Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs. 500+ happy clients, 15+ years experience, 50+ support staff, rigorously tested maintenance, 300% operational efficiency improvements.",
+            description: "Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs. 500+ happy clients, 12+ years experience, 50+ support staff, rigorously tested maintenance, significant operational efficiency improvements.",
             urlPath: "/services/additional-support-services",
             datePublished: "2025-01-01",
             dateModified: "2026-04-10",
@@ -75,7 +75,7 @@ export default function AdditionalSupportServicesPage() {
             "@type": "Service",
             "@id": "https://www.cinuteinfomedia.com/services/additional-support-services/#service",
             "name": "Business Support Services",
-            "description": "Ongoing Support. Lasting Success. Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs to thrive. 500+ happy clients, 15+ years experience, 50+ dedicated support staff, rigorously tested technical maintenance, 300% operational efficiency improvements. a meaningful reduction in overhead costs. Seamless integration with client tools like Jira and Slack. Serving global markets: US, EU, India, and APAC with 24/7 coverage.",
+            "description": "Ongoing Support. Lasting Success. Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs to thrive. 500+ happy clients, 12+ years experience, 50+ dedicated support staff, rigorously tested technical maintenance, significant operational efficiency improvements. a meaningful reduction in overhead costs. Seamless integration with client tools like Jira and Slack. Serving global markets: US, EU, India, and APAC with 24/7 coverage.",
             "url": "https://www.cinuteinfomedia.com/services/additional-support-services",
             "serviceType": "Outsourced Business & IT Support Services",
             "provider": {

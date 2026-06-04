@@ -27,7 +27,7 @@ export default function ServiceOverview() {
         {
             icon: Palette,
             title: "User-Centric Design",
-            description: <span>Create conversion-optimized interfaces with 35% higher engagement. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)]">WCAG 2.2 AA compliant designs</Link> backed by 10,000+ hours of user research and A/B testing data.</span>,
+            description: <span>Create conversion-optimized interfaces with higher engagement. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)]">WCAG 2.2 AA compliant designs</Link> backed by 10,000+ hours of user research and A/B testing data.</span>,
             gradient: "from-[#43e97b] to-[#38f9d7]"
         },
         {
@@ -110,7 +110,7 @@ export default function ServiceOverview() {
                             </div>
                             <div>
                                 <h4 className="font-semibold mb-1">12+ Years of Excellence</h4>
-                                <p style={{ color: "var(--secondary-text)" }}>Proven expertise delivering 300+ mobile apps across 45+ industries with 99.2% client retention rate and 95% on-time delivery.</p>
+                                <p style={{ color: "var(--secondary-text)" }}>Proven expertise delivering mobile apps across diverse industries with strong client retention and reliable on-time delivery.</p>
                             </div>
                         </div>
                         <div className="flex gap-4">

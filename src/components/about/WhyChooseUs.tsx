@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
 
     const stats = [
         { value: "300+", label: "Successful projects delivered" },
-        { value: "2,500+", label: "Businesses trust our solutions globally" },
+        { value: "Trusted", label: "Businesses trust our solutions globally" },
         { value: "95%", label: "Client retention rate" },
         { value: "80%+", label: "Test coverage in mobile apps" },
         { value: "AES-256", label: "Encryption standard" },

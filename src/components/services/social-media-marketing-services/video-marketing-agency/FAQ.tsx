@@ -18,7 +18,7 @@ export default function FAQ() {
         },
         {
             q: "What are the benefits of hiring a YouTube advertising agency?",
-            a: <><Link href="/services/performance-marketing/youtube-ads" className="hover:underline text-red-500">YouTube advertising agency</Link> provides expertise in creative testing, ad creative testing, and YouTube analytics and reporting that internal teams often lack. We ensure your budget isn't wasted on low-retention audiences, driving a 30% higher ROAS on average.</>,
+            a: <><Link href="/services/performance-marketing/youtube-ads" className="hover:underline text-red-500">YouTube advertising agency</Link> provides expertise in creative testing, ad creative testing, and YouTube analytics and reporting that internal teams often lack. We ensure your budget isn't wasted on low-retention audiences, driving a higher ROAS on average.</>,
         },
         {
             q: "What is included in a full-service YouTube ads management package?",

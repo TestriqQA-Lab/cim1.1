@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "ROI-First Mindset",
-            description: <>Clients see an average 30% lift in <Link href="/services/performance-marketing" className="hover:text-emerald-500 transition-colors">MQLs</Link> within 6 months of execution.</>,
+            description: <>Clients see an average lift in <Link href="/services/performance-marketing" className="hover:text-emerald-500 transition-colors">MQLs</Link> within 6 months of execution.</>,
         },
         {
             icon: Database,

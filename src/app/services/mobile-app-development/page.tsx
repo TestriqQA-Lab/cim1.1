@@ -82,7 +82,7 @@ export default function MobileAppDevelopmentPage() {
 
         generateServiceSchema({
             name: "Mobile App Development Services",
-            description: "Transform your vision into high-performance mobile apps that drive business growth. As a premier mobile app development company with 12+ years of expertise, we craft custom iOS, Android, and cross-platform solutions globally. 300+ apps delivered, 50M+ active users, 99.2% client retention, a rigorous QA process.",
+            description: "Transform your vision into high-performance mobile apps that drive business growth. As a premier mobile app development company with 12+ years of expertise, we craft custom iOS, Android, and cross-platform solutions globally. apps delivered globally, applications used at scale, strong client retention, a rigorous QA process.",
             urlPath: "/services/mobile-app-development",
             serviceType: "Mobile App Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],

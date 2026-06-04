@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
         {
             icon: Layers,
             title: <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-purple-500 transition-colors">Scalable Workflows</Link>,
-            description: "Grow without the growing pains. Our architectures are designed for infinite scale, handling everything from AI-powered email triage and response automation for startups to complex ERP synchronizations for Fortune 500s.",
+            description: "Grow without the growing pains. Our architectures are designed for infinite scale, handling everything from AI-powered email triage and response automation for startups to complex ERP synchronizations for large enterprises.",
             gradient: "from-purple-500 to-indigo-500",
             iconBg: "bg-purple-500/10",
             iconColor: "text-purple-500",

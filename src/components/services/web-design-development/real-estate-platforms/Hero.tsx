@@ -203,7 +203,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    2,500+
+                                    Growing
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
                                     Agents Served

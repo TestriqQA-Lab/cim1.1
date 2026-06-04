@@ -227,7 +227,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    99.2%
+                                    Strong
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
                                     Client Retention
@@ -282,7 +282,7 @@ export default function Hero() {
                             }}
                         >
                             <h2 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>
-                                Why 2,500+ Businesses Trust Us
+                                Why Businesses Trust Us
                             </h2>
                             <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
                                 a rigorous QA process • faster time-to-market • 24/7 global support • Enterprise-grade security (GDPR, HIPAA, SOC 2 compliant)

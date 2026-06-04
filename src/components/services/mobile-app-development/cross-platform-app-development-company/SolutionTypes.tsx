@@ -140,7 +140,7 @@ export default function SolutionTypes() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        From disruptive startups to Fortune 500 enterprises, we engineer scalable multi-platform apps that drive digital transformation across sectors.
+                        From disruptive startups to large enterprises, we engineer scalable multi-platform apps that drive digital transformation across sectors.
                     </p>
                 </div>
 

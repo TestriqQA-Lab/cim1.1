@@ -490,7 +490,7 @@ export default function Hero() {
                                         ✓
                                     </span>
                                     <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
-                                        <strong style={{ color: "var(--foreground)" }}>Trusted Partner</strong> - 2,500+ businesses trust us globally.
+                                        <strong style={{ color: "var(--foreground)" }}>Trusted Partner</strong> - businesses across the globe trust us.
                                     </p>
                                 </li>
                             </ul>

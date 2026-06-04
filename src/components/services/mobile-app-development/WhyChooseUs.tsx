@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Proven Track Record",
-            description: "300+ mobile apps delivered across 45+ industries. 50M+ active users powered by our applications. 99.2% client retention rate with 15+ industry awards since 2014."
+            description: "Mobile apps delivered across diverse industries, powering applications at scale. Strong client retention with industry awards since 2014."
         },
         {
             icon: Rocket,
@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
         {
             icon: Palette,
             title: "35% Higher User Engagement",
-            description: <span>Conversion-optimized UX backed by 10,000+ hours of A/B testing. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn by 40%.</span>
+            description: <span>Conversion-optimized UX backed by 10,000+ hours of A/B testing. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn.</span>
         },
         {
             icon: Gauge,

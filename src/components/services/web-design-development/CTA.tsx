@@ -115,7 +115,7 @@ export default function CTA() {
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {[
                         {
-                            number: "15+ Years",
+                            number: "12+ Years",
                             label: "Expertise",
                         },
                         {

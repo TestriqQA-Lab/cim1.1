@@ -7,7 +7,7 @@ export default function CTA() {
     const stats = [
         { value: "500+", label: "Brands Created" },
         { value: "98%", label: "Client Satisfaction" },
-        { value: "15+", label: "Years Experience" },
+        { value: "12+", label: "Years Experience" },
     ];
 
     return (
