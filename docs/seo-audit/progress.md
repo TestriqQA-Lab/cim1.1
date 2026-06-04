@@ -5,7 +5,7 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 | Phase | Title | Status | Date |
 |---|---|---|---|
 | 0 | Deep-dive analysis & discovery | ✅ done | 2026-06-01 |
-| 1 | GSC non-indexing diagnosis + technical fixes | 🔵 in progress | — |
+| 1 | GSC non-indexing diagnosis + technical fixes | ✅ technical done (owner redirected 404s) | 2026-06-04 |
 | 2 | Non-defensible claims cleanup (code + Sanity) | ✅ done (code + CMS) | 2026-06-04 |
 | 3 | Technical SEO audit + fix | 🔵 fixes done; owner 404s pending | 2026-06-04 |
 | 4 | On-page / content SEO + dedup | ⏳ pending | — |
