@@ -23,7 +23,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Travel & Hospitality Services | Custom Tech Solutions',
-    description: 'Scale with premier Travel and Hospitality Services. We build custom travel technology solutions and ROI-driven marketing campaigns.',
+    description: 'Scale with expert Travel and Hospitality Services. We build custom travel technology solutions and ROI-driven marketing campaigns.',
     url: '/services/web-design-development/travel-and-hospitality-services',
     keywords: [
         'travel and hospitality services',
@@ -51,7 +51,7 @@ export default function TravelHospitalityPage() {
 
         generateWebPageSchema({
             name: "Travel & Hospitality Services | Custom Tech Solutions",
-            description: "Scale with premier Travel and Hospitality Services. We build custom travel technology solutions and ROI-driven marketing campaigns.",
+            description: "Scale with expert Travel and Hospitality Services. We build custom travel technology solutions and ROI-driven marketing campaigns.",
             urlPath: "/services/web-design-development/travel-and-hospitality-services",
             datePublished: "2025-01-01",
             dateModified: "2026-03-17",
@@ -69,7 +69,7 @@ export default function TravelHospitalityPage() {
 
         generateServiceSchema({
             name: "Travel & Hospitality Technology Services",
-            description: "Premier Travel and Hospitality Services designed for the 2026 digital ecosystem. As a leading Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that drive more bookings.",
+            description: "Expert Travel and Hospitality Services designed for the 2026 digital ecosystem. As an expert Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that drive more bookings.",
             urlPath: "/services/web-design-development/travel-and-hospitality-services",
             serviceType: "Travel & Hospitality Technology Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],

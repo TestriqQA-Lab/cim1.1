@@ -33,7 +33,7 @@ export default function ServiceOverview() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Leading <span style={{ color: "var(--brand-blue)" }}>Web Development Company</span> with a Global Perspective
+                        Expert <span style={{ color: "var(--brand-blue)" }}>Web Development Company</span> with a Global Perspective
                     </h2>
 
                     <div
@@ -49,7 +49,7 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            As a premier <span className="text-[var(--brand-blue)] font-bold">web development company</span>, we provide full-spectrum digital engineering. Our <Link href="/blog/ui-ux-design-principles-best-practices" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">professional web design agency</Link> combines <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">creative excellence</Link> with technical precision.
+                            As an expert <span className="text-[var(--brand-blue)] font-bold">web development company</span>, we provide full-spectrum digital engineering. Our <Link href="/blog/ui-ux-design-principles-best-practices" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">professional web design agency</Link> combines <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">creative excellence</Link> with technical precision.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>

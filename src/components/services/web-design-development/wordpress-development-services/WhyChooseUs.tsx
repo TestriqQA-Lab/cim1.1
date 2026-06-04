@@ -112,7 +112,7 @@ export default function WhyChooseUs() {
                         </span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-                        <span style={{ color: "var(--foreground)" }}>Why We’re the #1 WordPress Agency for </span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Why We’re a Trusted WordPress Agency for </span>{" "}
                         <span
                             className="inline-block"
                             style={{

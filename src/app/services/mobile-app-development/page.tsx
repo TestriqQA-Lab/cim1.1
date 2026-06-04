@@ -37,7 +37,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Top Mobile App Development Company | Custom Apps 2026',
-    description: 'Leading mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!',
+    description: 'Expert mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!',
     url: '/services/mobile-app-development',
     keywords: [
         'Mobile App Development Company',
@@ -65,7 +65,7 @@ export default function MobileAppDevelopmentPage() {
 
         generateWebPageSchema({
             name: "Top Mobile App Development Company | Custom Apps 2026",
-            description: "Leading mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!",
+            description: "Expert mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!",
             urlPath: "/services/mobile-app-development",
             datePublished: "2025-01-01",
             dateModified: "2026-04-10",
@@ -82,7 +82,7 @@ export default function MobileAppDevelopmentPage() {
 
         generateServiceSchema({
             name: "Mobile App Development Services",
-            description: "Transform your vision into high-performance mobile apps that drive business growth. As a premier mobile app development company with 12+ years of expertise, we craft custom iOS, Android, and cross-platform solutions globally. apps delivered globally, applications used at scale, strong client retention, a rigorous QA process.",
+            description: "Transform your vision into high-performance mobile apps that drive business growth. As an expert mobile app development company with 12+ years of expertise, we craft custom iOS, Android, and cross-platform solutions globally. apps delivered globally, applications used at scale, strong client retention, a rigorous QA process.",
             urlPath: "/services/mobile-app-development",
             serviceType: "Mobile App Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],

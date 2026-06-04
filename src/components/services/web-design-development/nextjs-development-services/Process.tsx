@@ -97,7 +97,7 @@ export default function Process() {
             title: "Performance Optimization",
             subtitle: "Speed & Vitals",
             description:
-                "Focusing on Next.js speed optimization and Core Web Vitals to ensure top-tier performance.",
+                "Focusing on Next.js speed optimization and Core Web Vitals to ensure strong performance.",
             deliverables: [
                 "Core Web Vitals audit",
                 "Image & code optimization",

@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
         },
         {
             title: "Brand Safety",
-            description: "Industry-leading controls to ensure your ads appear in safe contexts.",
+            description: "Advanced controls to ensure your ads appear in safe contexts.",
             icon: ShieldCheck,
         },
         {

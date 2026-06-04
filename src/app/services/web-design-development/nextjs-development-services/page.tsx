@@ -23,7 +23,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Next.js Development Agency | Expert React JS Development Company 2026',
-    description: 'Premier Next.js development services for high-performance apps. Hire React developers for Enterprise, SaaS & E-commerce.',
+    description: 'Expert Next.js development services for high-performance apps. Hire React developers for Enterprise, SaaS & E-commerce.',
     url: '/services/web-design-development/nextjs-development-services',
     keywords: [
         'next.js development agency',
@@ -51,7 +51,7 @@ export default function NextjsReactPage() {
 
         generateWebPageSchema({
             name: "Next.js Development Agency | Expert React JS Development Company 2026",
-            description: "Premier Next.js development services for high-performance apps. Hire React developers for Enterprise, SaaS & E-commerce.",
+            description: "Expert Next.js development services for high-performance apps. Hire React developers for Enterprise, SaaS & E-commerce.",
             urlPath: "/services/web-design-development/nextjs-development-services",
             datePublished: "2025-01-01",
             dateModified: "2026-03-17",
@@ -69,7 +69,7 @@ export default function NextjsReactPage() {
 
         generateServiceSchema({
             name: "Next.js Development Services & React JS Development Company",
-            description: "Premier Next.js development agency and React JS development company building lightning-fast, SEO-optimized, and highly scalable web applications. Expert React development services delivering seamless user experiences with React 19 and Next.js 16.",
+            description: "Expert Next.js development agency and React JS development company building lightning-fast, SEO-optimized, and highly scalable web applications. Expert React development services delivering seamless user experiences with React 19 and Next.js 16.",
             urlPath: "/services/web-design-development/nextjs-development-services",
             serviceType: "Next.js & React Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],

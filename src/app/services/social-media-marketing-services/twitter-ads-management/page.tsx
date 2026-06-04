@@ -10,13 +10,13 @@ import CTA from "@/components/services/social-media-marketing-services/twitter-a
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'X Marketing Services | Best Twitter Marketing Agency for Higher CTR',
+    title: 'X Marketing Services | Expert Twitter Marketing Agency for Higher CTR',
     description: 'Scaling your X business? Our Twitter marketing company delivers strong ROI via expert Twitter ads management & real-time trend hijacking. Get a free quote!',
     alternates: {
         canonical: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/twitter-ads-management",
     },
     openGraph: {
-        title: 'X Marketing Services | Best Twitter Marketing Agency for Higher CTR',
+        title: 'X Marketing Services | Expert Twitter Marketing Agency for Higher CTR',
         description: 'Scaling your X business? Our Twitter marketing company delivers strong ROI via expert Twitter ads management & real-time trend hijacking. Get a free quote!',
         url: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/twitter-ads-management",
         type: "website",
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
                 url: "/og-images/twitter-ads-management.webp",
                 width: 1200,
                 height: 630,
-                alt: "X Marketing Services | Best Twitter Marketing Agency for Higher CTR by Cinute Infomedia",
+                alt: "X Marketing Services | Expert Twitter Marketing Agency for Higher CTR by Cinute Infomedia",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: 'X Marketing Services | Best Twitter Marketing Agency for Higher CTR',
+        title: 'X Marketing Services | Expert Twitter Marketing Agency for Higher CTR',
         description: 'Scaling your X business? Our Twitter marketing company delivers strong ROI via expert Twitter ads management & real-time trend hijacking. Get a free quote!',
         images: ["/og-images/twitter-ads-management.webp"],
     },

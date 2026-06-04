@@ -22,14 +22,14 @@ export default function SolutionTypes() {
         {
             id: "hospitality",
             title: <Link href="/services/web-design-development/business-corporate" className="hover:underline">Hospitality</Link>,
-            description: "Rank #1 for 'best restaurants near me' - We optimize menus, hours, and booking integrations. Implemented reservation schema drives more table bookings.",
+            description: "Rank for 'best restaurants near me' - We optimize menus, hours, and booking integrations. Implemented reservation schema drives more table bookings.",
             icon: Utensils,
             color: localAmber,
         },
         {
             id: "medical",
             title: <Link href="/services/web-design-development/healthcare-portals" className="hover:text-red-500 transition-colors">Medical & Dental</Link>,
-            description: "#1 for 'doctor near me' - HIPAA-compliant review strategies, patient testimonial optimization, and medical schema markup help clinics rank for high-intent queries.",
+            description: "Rank for 'doctor near me' - HIPAA-compliant review strategies, patient testimonial optimization, and medical schema markup help clinics rank for high-intent queries.",
             icon: Stethoscope,
             color: "#EF4444",
         },

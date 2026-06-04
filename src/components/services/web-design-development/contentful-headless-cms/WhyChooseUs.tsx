@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Developer Experience",
-            description: "Best-in-class APIs, comprehensive SDKs, and extensive documentation for rapid development.",
+            description: "Robust APIs, comprehensive SDKs, and extensive documentation for rapid development.",
             gradient: "from-blue-500 via-sky-500 to-cyan-500",
             bgColor: "rgba(14, 165, 233, 0.15)",
             iconColor: "#0ea5e9",

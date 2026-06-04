@@ -180,7 +180,7 @@ export default function Technologies() {
                             },
                             {
                                 title: "Security",
-                                description: "We implement industry-leading security practices and use battle-tested frameworks."
+                                description: "We implement robust security practices and use battle-tested frameworks."
                             },
                             {
                                 title: "Maintainability",

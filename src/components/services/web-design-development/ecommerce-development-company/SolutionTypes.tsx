@@ -11,7 +11,7 @@ export default function SolutionTypes() {
         {
             icon: ShoppingBag,
             title: "B2C Online Stores",
-            description: "Capture the consumer market with visually stunning, high-converting storefronts. As a leading Ecommerce website design company, we craft immersive brand experiences with Ecommerce product page optimization that showcases your catalog in its best light.",
+            description: "Capture the consumer market with visually stunning, high-converting storefronts. As an expert Ecommerce website design company, we craft immersive brand experiences with Ecommerce product page optimization that showcases your catalog in its best light.",
             features: [
                 { icon: Package, text: "Product galleries" },
                 { icon: ShoppingCart, text: "Wishlist & favorites" },

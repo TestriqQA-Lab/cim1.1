@@ -40,7 +40,7 @@ import {
 } from '@/lib/schema';
 
 export const metadata = getPageMetadata({
-    title: 'SEO Services | Best SEO Agency for Organic Growth & Rankings 2026',
+    title: 'SEO Services | Expert SEO Agency for Organic Growth & Rankings 2026',
     description: 'Results-driven SEO services to dominate search rankings. Expert technical SEO, content strategy, link building, and AI-search optimization. sustained organic traffic growth, 500+ keywords ranked on page 1, strong ROI, strong client retention.',
     url: '/services/seo-services',
     keywords: [
@@ -66,7 +66,7 @@ export default function OrganicGrowthSEOPage() {
         generateWebSiteSchema(),
 
         generateWebPageSchema({
-            name: "SEO Services | Best SEO Agency for Organic Growth & Rankings 2026",
+            name: "SEO Services | Expert SEO Agency for Organic Growth & Rankings 2026",
             description: "Results-driven SEO services to dominate search rankings. Expert technical SEO, content strategy, link building, and AI-search optimization. sustained organic traffic growth, 500+ keywords ranked on page 1, strong ROI, strong client retention.",
             urlPath: "/services/seo-services",
             datePublished: "2025-01-01",

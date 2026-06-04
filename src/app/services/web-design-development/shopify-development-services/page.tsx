@@ -21,7 +21,7 @@ import {
 } from '@/lib/schema';
 
 export const metadata = getPageMetadata({
-    title: 'Best Shopify Development Services | Top Shopify Marketing Agency 2026',
+    title: 'Expert Shopify Development Services | Shopify Marketing Agency 2026',
     description: 'Scale your brand with expert Shopify development services. From custom theme design to Shopify Plus migration & SEO optimization.',
     url: '/services/web-design-development/shopify-development-services',
     keywords: [
@@ -45,7 +45,7 @@ export default function ShopifyEcommercePage() {
         generateWebSiteSchema(),
 
         generateWebPageSchema({
-            name: "Best Shopify Development Services | Top Shopify Marketing Agency 2026",
+            name: "Expert Shopify Development Services | Shopify Marketing Agency 2026",
             description: "Scale your brand with expert Shopify development services. From custom theme design to Shopify Plus migration & SEO optimization.",
             urlPath: "/services/web-design-development/shopify-development-services",
             datePublished: "2025-01-01",

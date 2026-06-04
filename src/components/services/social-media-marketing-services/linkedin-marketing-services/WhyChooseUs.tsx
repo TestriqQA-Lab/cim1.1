@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Proven B2B Results",
-            description: "We've generated thousands of qualified B2B leads with industry-leading conversion rates.",
+            description: "We've generated thousands of qualified B2B leads with strong conversion rates.",
             color: "#0077B5",
         },
         {

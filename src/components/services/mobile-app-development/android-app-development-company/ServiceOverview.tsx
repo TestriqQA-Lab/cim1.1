@@ -53,7 +53,7 @@ export default function ServiceOverview() {
         {
             icon: Sparkles,
             title: <Link href="/services/seo-services" className="hover:text-[#3DDC84] transition-colors">App Store Optimization (ASO)</Link>,
-            description: "Our data-driven ASO services ensure your app ranks #1 for high-intent keywords. We optimize titles, descriptions, and visuals significantly improving organic downloads.",
+            description: "Our data-driven ASO services ensure your app ranks higher for high-intent keywords. We optimize titles, descriptions, and visuals significantly improving organic downloads.",
             gradient: "from-[#073042] to-[#78C257]",
             shadowColor: "rgba(7, 48, 66, 0.4)",
         },

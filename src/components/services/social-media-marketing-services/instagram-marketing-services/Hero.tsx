@@ -134,7 +134,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Dominate the world's most visual stage. With over 2+ billion monthly active users, Instagram is no longer just a photo-sharing app - it’s a global marketplace. As a premier <Link href="/services/social-media-marketing-services" className="text-pink-500 hover:text-pink-600 transition-colors">Instagram Marketing Company</Link>, we help brands transition from "just posting" to high-impact ROI systems. Our data-driven Instagram Marketing Services leverage the latest 2026 algorithm updates to ensure your content doesn’t just look good - it converts.
+                            Dominate the world's most visual stage. With over 2+ billion monthly active users, Instagram is no longer just a photo-sharing app - it’s a global marketplace. As an expert <Link href="/services/social-media-marketing-services" className="text-pink-500 hover:text-pink-600 transition-colors">Instagram Marketing Company</Link>, we help brands transition from "just posting" to high-impact ROI systems. Our data-driven Instagram Marketing Services leverage the latest 2026 algorithm updates to ensure your content doesn’t just look good - it converts.
                         </p>
 
                         {/* Feature Pills */}

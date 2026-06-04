@@ -48,7 +48,7 @@ export default function TechStack() {
                         Content <span style={{ color: contentEmerald }}>Tech Stack</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        The tools we use to craft, optimize, and manage world-class content.
+                        The tools we use to craft, optimize, and manage high-quality content.
                     </p>
                 </div>
 

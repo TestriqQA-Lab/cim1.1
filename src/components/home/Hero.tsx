@@ -65,7 +65,7 @@ export default function Hero() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-                            Leading Web Development Company
+                            Expert Web Development Company
                             <br />
                             <span
                                 className="bg-clip-text text-transparent"

@@ -43,7 +43,7 @@ export default function ServiceOverview() {
                             More Than Just a Logo-We Build Scalable Brand Ecosystems
                         </p>
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            In today's digital-first economy, your brand is your most valuable asset. As a premier <span style={{ color: "var(--brand-yellow)", fontWeight: 700 }}>Brand Identity Design Agency</span>, we don't just create visuals; we engineer comprehensive brand experiences that drive recognition, trust, and revenue. Our custom brand design frameworks are built on 2026 EEAT principles, ensuring your business signals authority and expertise to both users and search engines.
+                            In today's digital-first economy, your brand is your most valuable asset. As an expert <span style={{ color: "var(--brand-yellow)", fontWeight: 700 }}>Brand Identity Design Agency</span>, we don't just create visuals; we engineer comprehensive brand experiences that drive recognition, trust, and revenue. Our custom brand design frameworks are built on 2026 EEAT principles, ensuring your business signals authority and expertise to both users and search engines.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>

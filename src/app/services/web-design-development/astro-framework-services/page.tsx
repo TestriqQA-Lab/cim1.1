@@ -60,7 +60,7 @@ const jsonLd = {
                 "width": 250,
                 "height": 60
             },
-            "description": "Leading Astro development agency delivering lightning-fast websites with 100% PageSpeed scores and exceptional SEO performance.",
+            "description": "Expert Astro development agency delivering lightning-fast websites with 100% PageSpeed scores and exceptional SEO performance.",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "123 Web Dev Street",

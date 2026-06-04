@@ -225,7 +225,7 @@ export default function Process() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        A proven methodology for building world-class entertainment platforms.
+                        A proven methodology for building high-quality entertainment platforms.
                     </p>
                     <div
                         className="w-24 h-1.5 mx-auto mt-8 rounded-full"

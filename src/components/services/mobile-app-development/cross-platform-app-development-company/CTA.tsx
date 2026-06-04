@@ -64,7 +64,7 @@ export default function CTA() {
                             </h2>
 
                             <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl mx-auto lg:mx-0">
-                                Partner with a top-rated Cross-Platform App Development Agency. Let's build a secure, scalable, and high-performing app that your users will love.
+                                Partner with an expert Cross-Platform App Development Agency. Let's build a secure, scalable, and high-performing app that your users will love.
                             </p>
 
                             {/* Benefits */}

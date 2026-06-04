@@ -41,7 +41,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Web Development Company | Custom Website Development 2026',
-    description: 'Leading Web Development Agency delivering custom web design services, responsive websites & scalable solutions. 95% client satisfaction. Get free audit today!',
+    description: 'Expert Web Development Agency delivering custom web design services, responsive websites & scalable solutions. strong client satisfaction. Get free audit today!',
     url: '/services/web-design-development',
     keywords: [
         'Web Development Company',
@@ -66,7 +66,7 @@ export default function WebDesignDevelopmentPage() {
 
         generateWebPageSchema({
             name: "Web Development Company | Custom Website Development 2026",
-            description: "Leading Web Development Agency delivering custom web design services, responsive websites & scalable solutions. 95% client satisfaction. Get free audit today!",
+            description: "Expert Web Development Agency delivering custom web design services, responsive websites & scalable solutions. strong client satisfaction. Get free audit today!",
             urlPath: "/services/web-design-development",
             datePublished: "2025-01-01",
             dateModified: "2026-03-17",

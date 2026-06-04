@@ -42,7 +42,7 @@ export default function ServiceOverview() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <p className="text-lg" style={{ color: "var(--foreground)", fontWeight: 500 }}>
-                            In today’s hyper-competitive digital landscape, your online store is more than just a shop window - it’s the engine of your business growth. As a premier E-commerce development company, we specialize in building robust, high-performance storefronts that turn visitors into loyal customers. Our E-commerce Website Development Services are designed to solve complex scalability challenges for B2B, B2C, and D2C brands across the US, EU, and APAC regions.
+                            In today’s hyper-competitive digital landscape, your online store is more than just a shop window - it’s the engine of your business growth. As an expert E-commerce development company, we specialize in building robust, high-performance storefronts that turn visitors into loyal customers. Our E-commerce Website Development Services are designed to solve complex scalability challenges for B2B, B2C, and D2C brands across the US, EU, and APAC regions.
                         </p>
 
                         <p style={{ color: "var(--secondary-text)", fontSize: "1.1rem", lineHeight: "1.8" }}>

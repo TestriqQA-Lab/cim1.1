@@ -116,7 +116,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Unlock scalable growth with precision-engineered content that ranks #1 globally,
+                            Unlock scalable growth with precision-engineered content that ranks higher globally,
                             satisfies 2026 Google EEAT signals, and converts high-intent traffic into loyal customers.
                         </p>
 
@@ -260,7 +260,7 @@ export default function Hero() {
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            #1 Ranking
+                                            Top Ranking
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                             Target Keywords

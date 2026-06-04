@@ -110,7 +110,7 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Premier Hybrid App Development Services
+                                Expert Hybrid App Development Services
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: "#0077b6" }}

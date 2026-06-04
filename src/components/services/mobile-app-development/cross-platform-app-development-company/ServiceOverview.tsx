@@ -25,7 +25,7 @@ export default function ServiceOverview() {
         {
             icon: Layers,
             title: "Flutter and React Native Development Agency",
-            description: "As a premier Flutter and React Native Development Agency, we leverage the power of Google's Flutter and Meta's React Native to build high-performance, visually stunning apps. Whether you need the widget-rich environment of Flutter or the native component mapping of React Native, we have the expertise.",
+            description: "As an expert Flutter and React Native Development Agency, we leverage the power of Google's Flutter and Meta's React Native to build high-performance, visually stunning apps. Whether you need the widget-rich environment of Flutter or the native component mapping of React Native, we have the expertise.",
             gradient: "from-[#02569B] to-[#13B9FD]",
             shadowColor: "rgba(2, 86, 155, 0.4)",
         },

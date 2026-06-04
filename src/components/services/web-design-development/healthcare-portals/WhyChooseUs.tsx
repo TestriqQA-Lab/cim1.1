@@ -72,7 +72,7 @@ export default function WhyChooseUs() {
             title: "Proven Track Record",
             description: "Trusted by healthcare organizations to build secure, reliable patient platforms with high availability.",
             highlights: [
-                { icon: Star, text: "Award-winning" },
+                { icon: Star, text: "Proven expertise" },
                 { icon: UserCheck, text: "Trusted partner" },
                 { icon: TrendingUp, text: "high availability" }
             ],

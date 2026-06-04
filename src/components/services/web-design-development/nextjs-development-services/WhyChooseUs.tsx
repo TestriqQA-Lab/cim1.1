@@ -300,7 +300,7 @@ export default function WhyChooseUs() {
                             </div>
                             <div className="text-left">
                                 <p className="font-bold" style={{ color: "var(--foreground)" }}>Testriq QA Lab</p>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Leading Software Testing Provider</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Trusted Software Testing Provider</p>
                             </div>
                         </div>
                     </div>

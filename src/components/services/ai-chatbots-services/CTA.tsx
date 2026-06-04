@@ -37,7 +37,7 @@ export default function CTA() {
 
                         {/* Subheading */}
                         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                            Don't let your competition beat you to the future. Partner with a top-tier AI Chatbot Agency today.
+                            Don't let your competition beat you to the future. Partner with an expert AI Chatbot Agency today.
                         </p>
 
                         {/* CTA Buttons */}

@@ -27,7 +27,7 @@ export default function FAQ() {
         },
         {
             q: "How long does it take to see ROI from X marketing?",
-            a: "While real-time engagement provides instant visibility, significant ROI from Twitter marketing services usually takes 3 to 6 months. This allows for audience building, X algorithm seasoning, and refinement of Twitter conversion tracking. However, X trend hijacking can deliver viral wins much faster when executed by a top-tier Twitter marketing company.",
+            a: "While real-time engagement provides instant visibility, significant ROI from Twitter marketing services usually takes 3 to 6 months. This allows for audience building, X algorithm seasoning, and refinement of Twitter conversion tracking. However, X trend hijacking can deliver viral wins much faster when executed by a experienced Twitter marketing company.",
         },
     ];
 

@@ -118,7 +118,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Rank in the top 3 Google Map Pack results and become visible to 83% of consumers searching for local businesses. Our local SEO services optimize your Google Business Profile, NAP consistency, and secure the #1 Map Pack spot.
+                            Rank in the top 3 Google Map Pack results and become visible to 83% of consumers searching for local businesses. Our local SEO services optimize your Google Business Profile, NAP consistency, and secure a top Map Pack spot.
                         </p>
 
                         <p className="text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
@@ -173,7 +173,7 @@ export default function Hero() {
                         {/* Stats */}
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>#1</h4>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: localAmber }}>Top</h4>
                                 <p className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>Map Pack Spot</p>
                                 <p className="text-xs mt-1" style={{ color: "var(--secondary-text)", opacity: 0.7 }}>Most in top 3</p>
                             </div>

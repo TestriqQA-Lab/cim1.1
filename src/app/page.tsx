@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   ...getPageMetadata({
     title: "Web Development Company | AI-Powered Digital Solutions | Cinute InfoMedia",
-    description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today! ✨",
+    description: "Expert web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today! ✨",
     url: "/",
     keywords: [
       "web development company",
@@ -52,7 +52,7 @@ export default async function Home() {
 
     generateWebPageSchema({
       name: "Web Development Company | AI-Powered Digital Solutions",
-      description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today!",
+      description: "Expert web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today!",
       urlPath: "",
       datePublished: "2014-01-01",
       dateModified: "2026-03-02",
