@@ -59,19 +59,22 @@ export function getPageMetadata(params: {
   keywords?: string[];
   image?: string;
 }): Metadata {
+  // Guard against canonical-doubling: if a full URL is passed (e.g. a Sanity
+  // editor entered an absolute canonicalUrl), use it as-is instead of prepending siteUrl.
+  const absoluteUrl = /^https?:\/\//i.test(params.url) ? params.url : `${siteUrl}${params.url}`;
   return {
     ...defaultMetadata,
     title: params.title,
     description: params.description,
     keywords: [...(defaultMetadata.keywords as string[]), ...(params.keywords || [])],
     alternates: {
-      canonical: `${siteUrl}${params.url}`,
+      canonical: absoluteUrl,
     },
     openGraph: {
       ...defaultMetadata.openGraph,
       title: params.title,
       description: params.description,
-      url: `${siteUrl}${params.url}`,
+      url: absoluteUrl,
       images: params.image ? [{ url: params.image }] : defaultMetadata.openGraph?.images,
     },
     twitter: {
@@ -185,11 +188,16 @@ export function generateAuthorMetadata(
   const metaTitle = seo?.metaTitle || `${name} | Author at Cinute Infomedia`;
   const metaDescription = seo?.metaDescription || bio;
 
-  return getPageMetadata({
-    title: metaTitle,
-    description: metaDescription,
-    url: seo?.canonicalUrl || url,
-    image: image,
-    keywords: [name, "author", "blog"],
-  });
+  return {
+    ...getPageMetadata({
+      title: metaTitle,
+      description: metaDescription,
+      url: seo?.canonicalUrl || url,
+      image: image,
+      keywords: [name, "author", "blog"],
+    }),
+    // I-3: thin author archives -> noindex (keep follow) to save crawl budget.
+    // Author E-E-A-T still conveyed via per-article author bios. Also excluded from sitemap.
+    robots: { index: false, follow: true },
+  };
 }
