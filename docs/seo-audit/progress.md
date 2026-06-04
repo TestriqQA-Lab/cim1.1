@@ -7,7 +7,7 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 | 0 | Deep-dive analysis & discovery | ✅ done | 2026-06-01 |
 | 1 | GSC non-indexing diagnosis + technical fixes | 🔵 in progress | — |
 | 2 | Non-defensible claims cleanup (code + Sanity) | ✅ done (code + CMS) | 2026-06-04 |
-| 3 | Technical SEO audit + fix | ⏳ pending | — |
+| 3 | Technical SEO audit + fix | 🔵 fixes done; owner 404s pending | 2026-06-04 |
 | 4 | On-page / content SEO + dedup | ⏳ pending | — |
 | 5 | Ranking action plan (off-page) | ⏳ pending | — |
 | 6 | Conversion + analytics + security | ⏳ pending | — |
@@ -27,6 +27,14 @@ diffs line-balanced, no encoding corruption):
 - **C-4f COUNT** (inflated counts softened, founding-year normalized) · **C-4g SUPER** (superlatives)
 
 **Phase 2 COMPLETE** — CMS-1 done: 8 self-referential claims in 7 Sanity blog posts patched via mutate API (project `mi5m5dun`/`production`) and verified live (no fabricated claims remain).
+
+## Phase 3 progress (2026-06-04)
+Technical-SEO fixes done (all tsc-clean, committed): C-5 (real CIM NAP in astro/local-seo JSON-LD),
+I-2 (sitemap depth-tiered priorities), M-1 (canonical-doubling guard), I-3 (author archives noindex,follow
++ removed from sitemap), T-1 (301 lowercase→mixed-case slug variants), I-4 (fixed pre-existing
+redirect-to-404 on /social-media[-services]). Foundation verified strong in Phase 0 (robots/sitemap/
+per-page canonical+metadata+JSON-LD all good). **Remaining:** the 4 GSC "Not found (404)" URLs (need
+owner to pull from GSC) for Phase 1 A1; plus owner-verify flags C-7/TEST-1/C-9.
 **Owner-verification flags:** C-7 (cert claims), C-5 (placeholder NAP in JSON-LD → Phase 3), TEST-1
 (testimonial authenticity), C-9 (financial claims). Phase 1 still needs the 4 GSC 404 URLs.
 
