@@ -8,7 +8,7 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 | 1 | GSC non-indexing diagnosis + technical fixes | ✅ technical done (owner redirected 404s) | 2026-06-04 |
 | 2 | Non-defensible claims cleanup (code + Sanity) | ✅ done (code + CMS) | 2026-06-04 |
 | 3 | Technical SEO audit + fix | 🔵 fixes done; owner 404s pending | 2026-06-04 |
-| 4 | On-page / content SEO + dedup | ⏳ pending | — |
+| 4 | On-page / content SEO + dedup | 🔵 analysis done; content writing = team | 2026-06-04 |
 | 5 | Ranking action plan (off-page) | ⏳ pending | — |
 | 6 | Conversion + analytics + security | ⏳ pending | — |
 | 7 | Final report + KPIs + monitoring | ⏳ pending | — |
@@ -35,6 +35,14 @@ I-2 (sitemap depth-tiered priorities), M-1 (canonical-doubling guard), I-3 (auth
 redirect-to-404 on /social-media[-services]). Foundation verified strong in Phase 0 (robots/sitemap/
 per-page canonical+metadata+JSON-LD all good). **Remaining:** the 4 GSC "Not found (404)" URLs (need
 owner to pull from GSC) for Phase 1 A1; plus owner-verify flags C-7/TEST-1/C-9.
+
+## Phase 4 analysis (2026-06-04) — see `phase4-content-plan.md`
+Data-driven audit of all 60 service pages: meta descriptions **all unique** (no templating), `<title>`
+**60/60 unique**, structure page-specific (no literal dup), heavy internal linking. **No mechanical
+on-page fix needed.** Real gap = **content depth** on the ~12 thinnest pages (perf-marketing ad-platform
+sub-pages thinnest at ~660–830 words incl. baseline). Differentiation = content-team task (no fabricated
+stats). Biggest indexing ROI remains **Phase 5 off-page authority**. Full plan + thin-page priority list
+in `phase4-content-plan.md`.
 **Owner-verification flags:** C-7 (cert claims), C-5 (placeholder NAP in JSON-LD → Phase 3), TEST-1
 (testimonial authenticity), C-9 (financial claims). Phase 1 still needs the 4 GSC 404 URLs.
 
