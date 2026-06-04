@@ -6,7 +6,7 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 |---|---|---|---|
 | 0 | Deep-dive analysis & discovery | ✅ done | 2026-06-01 |
 | 1 | GSC non-indexing diagnosis + technical fixes | 🔵 in progress | — |
-| 2 | Non-defensible claims cleanup (code + Sanity) | 🔵 code done; CMS pending | 2026-06-04 |
+| 2 | Non-defensible claims cleanup (code + Sanity) | ✅ done (code + CMS) | 2026-06-04 |
 | 3 | Technical SEO audit + fix | ⏳ pending | — |
 | 4 | On-page / content SEO + dedup | ⏳ pending | — |
 | 5 | Ranking action plan (off-page) | ⏳ pending | — |
@@ -26,7 +26,7 @@ diffs line-balanced, no encoding corruption):
 - **STAT-CS/PB, C-8, BUG-1** (animated case studies, progress bars, app-store ratings, stray text)
 - **C-4f COUNT** (inflated counts softened, founding-year normalized) · **C-4g SUPER** (superlatives)
 
-**Remaining for Phase 2:** CMS-1 (Sanity blog/product content audit — needs dataset access).
+**Phase 2 COMPLETE** — CMS-1 done: 8 self-referential claims in 7 Sanity blog posts patched via mutate API (project `mi5m5dun`/`production`) and verified live (no fabricated claims remain).
 **Owner-verification flags:** C-7 (cert claims), C-5 (placeholder NAP in JSON-LD → Phase 3), TEST-1
 (testimonial authenticity), C-9 (financial claims). Phase 1 still needs the 4 GSC 404 URLs.
 
