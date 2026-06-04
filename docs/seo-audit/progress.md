@@ -6,7 +6,7 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 |---|---|---|---|
 | 0 | Deep-dive analysis & discovery | ✅ done | 2026-06-01 |
 | 1 | GSC non-indexing diagnosis + technical fixes | 🔵 in progress | — |
-| 2 | Non-defensible claims cleanup (code + Sanity) | 🔵 in progress | — |
+| 2 | Non-defensible claims cleanup (code + Sanity) | 🔵 code done; CMS pending | 2026-06-04 |
 | 3 | Technical SEO audit + fix | ⏳ pending | — |
 | 4 | On-page / content SEO + dedup | ⏳ pending | — |
 | 5 | Ranking action plan (off-page) | ⏳ pending | — |
@@ -17,5 +17,17 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 - GSC: **Indexed 14 / Not indexed 169** (Discovered-not-indexed 138, Crawled-not-indexed 24,
   404×4, redirect×1, alt-canonical×2).
 - Verdict: technical foundation strong; not-indexing driven by authority/crawl-budget + content quality.
+
+## Phase 2 progress (2026-06-04)
+All code-side non-defensible claims cleaned across the repo (7 batches, ~700 edits, all tsc-clean,
+diffs line-balanced, no encoding corruption):
+- C-1 fake review schema · C-2 global retention · C-4a guarantees · C-4b zero-breach · C-4c bug-free
+- **C-4d STAT-1** (246 fabricated % + multipliers) · **C-4e STAT-2** (uptime/stability + product stats)
+- **STAT-CS/PB, C-8, BUG-1** (animated case studies, progress bars, app-store ratings, stray text)
+- **C-4f COUNT** (inflated counts softened, founding-year normalized) · **C-4g SUPER** (superlatives)
+
+**Remaining for Phase 2:** CMS-1 (Sanity blog/product content audit — needs dataset access).
+**Owner-verification flags:** C-7 (cert claims), C-5 (placeholder NAP in JSON-LD → Phase 3), TEST-1
+(testimonial authenticity), C-9 (financial claims). Phase 1 still needs the 4 GSC 404 URLs.
 
 See `MASTER-PROMPT.md` (plan), `deep-dive.md` (Phase 0 findings), `fix-backlog.md` (issue log).
