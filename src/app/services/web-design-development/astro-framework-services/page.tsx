@@ -63,23 +63,24 @@ const jsonLd = {
             "description": "Expert Astro development agency delivering lightning-fast websites with 100% PageSpeed scores and exceptional SEO performance.",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "123 Web Dev Street",
-                "addressLocality": "San Francisco",
-                "addressRegion": "CA",
-                "postalCode": "94105",
-                "addressCountry": "US"
+                "streetAddress": "Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park",
+                "addressLocality": "Mira Road, Mira Bhayandar",
+                "addressRegion": "Maharashtra",
+                "postalCode": "401107",
+                "addressCountry": "IN"
             },
             "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1-555-123-4567",
+                "telephone": "+919004988859",
                 "contactType": "Sales",
-                "email": "astro@yourcompany.com",
-                "availableLanguage": ["English", "Spanish", "French"]
+                "email": "contact@cinuteinfomedia.com",
+                "availableLanguage": ["English", "Hindi"]
             },
             "sameAs": [
-                "https://twitter.com/yourcompany",
-                "https://linkedin.com/company/yourcompany",
-                "https://github.com/yourcompany"
+                "https://www.linkedin.com/company/cinute-infomedia/",
+                "https://www.instagram.com/cinuteinfomedia/",
+                "https://x.com/cinuteinfomedia",
+                "https://www.facebook.com/cinuteinfomedia/"
             ]
         },
         {

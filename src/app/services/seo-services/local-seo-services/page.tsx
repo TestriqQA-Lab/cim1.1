@@ -74,13 +74,17 @@ export default function LocalSEOPage() {
                             "description": "Global Web Design, Development & Digital Marketing Agency specializing in local SEO services",
                             "address": {
                                 "@type": "PostalAddress",
-                                "addressCountry": "US"
+                                "streetAddress": "Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park",
+                                "addressLocality": "Mira Road, Mira Bhayandar",
+                                "addressRegion": "Maharashtra",
+                                "postalCode": "401107",
+                                "addressCountry": "IN"
                             },
                             "contactPoint": {
                                 "@type": "ContactPoint",
-                                "telephone": "+1-555-123-4567",
+                                "telephone": "+919004988859",
                                 "contactType": "Customer Service",
-                                "availableLanguage": ["English", "Spanish"]
+                                "availableLanguage": ["English", "Hindi"]
                             }
                         },
                         "areaServed": ["United States", "India", "United Kingdom", "Australia"],
