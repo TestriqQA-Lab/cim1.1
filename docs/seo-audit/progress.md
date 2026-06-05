@@ -46,4 +46,13 @@ in `phase4-content-plan.md`.
 **Owner-verification flags:** C-7 (cert claims), C-5 (placeholder NAP in JSON-LD → Phase 3), TEST-1
 (testimonial authenticity), C-9 (financial claims). Phase 1 still needs the 4 GSC 404 URLs.
 
-See `MASTER-PROMPT.md` (plan), `deep-dive.md` (Phase 0 findings), `fix-backlog.md` (issue log).
+## Post-merge DEEP-AUDIT (2026-06-04) — all clean ✅
+After `main` merge + production deploy, full re-verification:
+- Claims: fabricated %/counts/superlatives/NAP-placeholders = **0** in code (survived merge, no regressions, no conflict markers); **tsc exit 0**.
+- Technical fixes intact: sitemap tiers (I-2), author noindex (I-3, live sitemap has 0 author URLs), canonical guard (M-1), slug 301s (T-1), real NAP (C-5).
+- Security: `api/setup-sanity` **live returns 403** without secret (API-1 fix deployed & working).
+- Sanity: all **8 blog posts still clean** (substring-verified; GROQ `match` gives false positives — ignore).
+- Live: robots/sitemap 200; homepage shows "Expert Web Development" (cleaned).
+- **NEW finding API-3:** merged Gemini proxy (`ai-commentor/api/generate`) is a public unauthenticated LLM proxy → cost-abuse risk (no auth/rate-limit). Flagged for owner (needs extension-side change).
+
+See `MASTER-PROMPT.md` (plan), `deep-dive.md` (Phase 0 findings), `fix-backlog.md` (issue log), `FINAL-REPORT.md`.
