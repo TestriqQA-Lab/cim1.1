@@ -20,6 +20,7 @@ domain enough to spend crawl resources indexing 150+ pages. The fix is **off-pag
 | Internal linking | hub → **24** sub-page links; homepage → **67** internal links (deep pages discoverable, not orphaned) | ✅ |
 | Redirects | 4 GSC 404s now 308→200; no chains/loops | ✅ |
 | Fabricated claims | removed (code + Sanity) — quality/trust improved | ✅ |
+| Structured data (JSON-LD) | every page type has **valid** rich schema (Organization, WebSite, WebPage, Breadcrumb, Service, FAQPage, BlogPosting, SoftwareApplication, ItemList, AboutPage); product pages use SoftwareApplication; **no fake aggregateRating** (C-1 holds). FAQ/HowTo markup valid but Google deprecated those rich-results in 2023 (harmless). | ✅ |
 
 ➡️ **There is no hidden noindex, no robots block, no canonical mistake, no JS-only shell, no orphan pages.**
 A site this technically clean that still won't index points to **one cause: authority/trust.**
