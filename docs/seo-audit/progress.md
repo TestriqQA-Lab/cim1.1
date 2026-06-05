@@ -10,8 +10,8 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 | 3 | Technical SEO audit + fix | 🔵 fixes done; owner 404s pending | 2026-06-04 |
 | 4 | On-page / content SEO + dedup | 🔵 analysis done; content writing = team | 2026-06-04 |
 | 5 | Ranking action plan (off-page) | ✅ plan delivered (owner executes) | 2026-06-04 |
-| 6 | Conversion + analytics + security | ⏳ pending | — |
-| 7 | Final report + KPIs + monitoring | ⏳ pending | — |
+| 6 | Conversion + analytics + security | ✅ audited (API-1 fixed; enhancements flagged) | 2026-06-04 |
+| 7 | Final report + KPIs + monitoring | ✅ done (`FINAL-REPORT.md`) | 2026-06-04 |
 
 ## Key baseline (2026-06-01)
 - GSC: **Indexed 14 / Not indexed 169** (Discovered-not-indexed 138, Crawled-not-indexed 24,
