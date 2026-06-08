@@ -246,7 +246,7 @@ export default function Hero() {
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            100/100
+                                            98-100
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                             Core Web Vitals

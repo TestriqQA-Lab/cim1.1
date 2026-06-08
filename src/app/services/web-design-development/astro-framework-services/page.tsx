@@ -9,7 +9,7 @@ import FAQ from "@/components/services/web-design-development/astro-framework-se
 import CTA from "@/components/services/web-design-development/astro-framework-services/CTA";
 
 export const metadata: Metadata = {
-    title: "Expert Astro Framework Services | 100% PageSpeed 🚀 2026",
+    title: "Expert Astro Framework Services | near-perfect PageSpeed 🚀 2026",
     description:
         "Top Astro development agency delivering lightning-fast sites with Islands Architecture. Custom Astro JS services for content-rich sites. Free audit today!",
     keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     ]
 ,
     openGraph: {
-        title: "Expert Astro Framework Services | 100% PageSpeed 🚀 2026",
+        title: "Expert Astro Framework Services | near-perfect PageSpeed 🚀 2026",
         description: "Top Astro development agency delivering lightning-fast sites with Islands Architecture. Custom Astro JS services for content-rich sites. Free audit today!",
         url: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services",
         type: "website",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
                 url: "/og-images/astro-framework-services.webp",
                 width: 1200,
                 height: 630,
-                alt: "Expert Astro Framework Services | 100% PageSpeed 🚀 2026 by Cinute Infomedia",
+                alt: "Expert Astro Framework Services | near-perfect PageSpeed 🚀 2026 by Cinute Infomedia",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Expert Astro Framework Services | 100% PageSpeed 🚀 2026",
+        title: "Expert Astro Framework Services | near-perfect PageSpeed 🚀 2026",
         description: "Top Astro development agency delivering lightning-fast sites with Islands Architecture. Custom Astro JS services for content-rich sites. Free audit today!",
         images: ["/og-images/astro-framework-services.webp"],
     },
@@ -60,7 +60,7 @@ const jsonLd = {
                 "width": 250,
                 "height": 60
             },
-            "description": "Expert Astro development agency delivering lightning-fast websites with 100% PageSpeed scores and exceptional SEO performance.",
+            "description": "Expert Astro development agency delivering lightning-fast websites with near-perfect PageSpeed scores and exceptional SEO performance.",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park",

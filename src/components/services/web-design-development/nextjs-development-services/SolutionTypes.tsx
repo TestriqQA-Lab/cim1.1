@@ -88,7 +88,7 @@ export default function SolutionTypes() {
             icon: Server,
             title: "Next.js Migration Services",
             description:
-                "Seamless transition from legacy React, Vue, or Angular. Modernize your tech stack with zero downtime.",
+                "Seamless transition from legacy React, Vue, or Angular. Modernize your tech stack with minimal downtime.",
             features: [
                 "Legacy Migration",
                 "Zero Downtime",

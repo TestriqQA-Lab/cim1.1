@@ -92,7 +92,7 @@ export default function NextjsReactPage() {
                 { name: "SaaS Product Development", description: "Specialized agency services for building SaaS products and dashboards with subscription management and analytics." },
                 { name: "Next.js Headless CMS", description: "Integration with Contentful, Strapi, or Sanity for dynamic content management with blazing-fast frontend delivery." },
                 { name: "React Native Mobile Apps", description: "Cross-platform mobile solutions with shared logic for iOS and Android using React Native framework." },
-                { name: "Next.js Migration Services", description: "Seamless transition from legacy React, Vue, or Angular applications to Next.js with zero downtime." },
+                { name: "Next.js Migration Services", description: "Seamless transition from legacy React, Vue, or Angular applications to Next.js with minimal downtime." },
             ],
         }),
 
@@ -106,12 +106,12 @@ export default function NextjsReactPage() {
 
         generateHowToSchema({
             name: "Our Next.js Development Process",
-            description: "A proven 6-step methodology for building high-performance Next.js applications that achieve <100ms load times and 100 Lighthouse scores.",
+            description: "A proven 6-step methodology for building high-performance Next.js applications that achieve ultra-fast load times and near-perfect Lighthouse scores.",
             steps: [
                 { name: "Strategic Discovery", text: "Analyzing business goals and technical requirements. Creating roadmaps, defining success metrics, and planning the project architecture.", url: "https://www.cinuteinfomedia.com/services/web-design-development/nextjs-development-services/#step-discovery" },
                 { name: "Architecture Design", text: "Designing component libraries, state management patterns, routing architecture, and system planning for scalable applications.", url: "https://www.cinuteinfomedia.com/services/web-design-development/nextjs-development-services/#step-architecture" },
                 { name: "Agile Development", text: "Sprint-based iterative development focused on feature implementation, API integrations, and React component development.", url: "https://www.cinuteinfomedia.com/services/web-design-development/nextjs-development-services/#step-development" },
-                { name: "Performance Optimization", text: "Optimizing Core Web Vitals, bundle size reduction, speed tuning, and achieving perfect Lighthouse scores.", url: "https://www.cinuteinfomedia.com/services/web-design-development/nextjs-development-services/#step-optimization" },
+                { name: "Performance Optimization", text: "Optimizing Core Web Vitals, bundle size reduction, speed tuning, and achieving near-perfect Lighthouse scores.", url: "https://www.cinuteinfomedia.com/services/web-design-development/nextjs-development-services/#step-optimization" },
                 { name: "Deployment & Hosting", text: "Zero-downtime launches with CI/CD pipelines on Vercel, GitHub Actions, and cloud infrastructure setup.", url: "https://www.cinuteinfomedia.com/services/web-design-development/nextjs-development-services/#step-deployment" },
                 { name: "SEO & Integration", text: "Implementing SEO audits, analytics integration, metadata optimization, and market visibility strategies.", url: "https://www.cinuteinfomedia.com/services/web-design-development/nextjs-development-services/#step-seo" },
             ],

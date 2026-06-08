@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
             icon: TrendingUp,
             title: "Performance Obsessed",
             description:
-                "Our implementations consistently achieve 100 Lighthouse scores, focusing on Next.js speed optimization and Core Web Vitals.",
+                "Our implementations consistently achieve near-perfect Lighthouse scores, focusing on Next.js speed optimization and Core Web Vitals.",
             gradient: "from-[#61dafb] to-[#00d4ff]",
         },
         {
