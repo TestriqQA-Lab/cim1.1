@@ -83,7 +83,7 @@ export default function FinTechSolutionsPage() {
                 url: "/contact",
                 priceCurrency: "USD",
                 validFrom: "2025-01-01",
-                description: "Start your FinTech project or book a demo. PCI-DSS Level 1 compliant financial technology development with SOC 2 certified security.",
+                description: "Start your FinTech project or book a demo. PCI-DSS Level 1-aligned financial technology development with SOC 2-aligned security.",
             },
         }),
 
@@ -103,7 +103,7 @@ export default function FinTechSolutionsPage() {
 
         generateHowToSchema({
             name: "Our Secured FinTech Development Process",
-            description: "A security-first 6-step methodology for building financial platforms that have processed $10B+ with high availability and <100ms transaction speed.",
+            description: "A security-first 6-step methodology for building financial platforms that have processed high transaction volume with high availability and <100ms transaction speed.",
             steps: [
                 { name: "Security & Compliance Analysis", text: "Mapping regulatory requirements including GDPR, PCI-DSS, and KYC/AML. Includes compliance roadmap, security audit, user personas, and risk assessment.", url: "https://www.cinuteinfomedia.com/services/web-design-development/fintech-solutions/#step-compliance" },
                 { name: "Architecture & UX Design", text: "Designing high-concurrency systems and secure user journeys with system architecture, API specifications, UX/UI prototypes, and data flow diagrams.", url: "https://www.cinuteinfomedia.com/services/web-design-development/fintech-solutions/#step-architecture" },

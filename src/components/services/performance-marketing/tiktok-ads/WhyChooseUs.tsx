@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
             icon: TrendingUp,
             title: "Viral Expertise",
             description: "We know what makes content pop on TikTok's algorithm.",
-            stat: "50M+ Views",
+            stat: "High View Volume",
             color: tiktokCyan,
         },
         {
@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
             icon: Zap,
             title: "Creative First",
             description: "In-house creative team producing scroll-stopping content.",
-            stat: "500+ Videos",
+            stat: "High Output",
             color: tiktokCyan,
         },
         {

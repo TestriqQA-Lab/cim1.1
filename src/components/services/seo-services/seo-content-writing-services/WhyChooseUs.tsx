@@ -86,7 +86,7 @@ export default function WhyChooseUs() {
                                 className="p-6 rounded-2xl border"
                                 style={{ borderColor: "var(--border-color)", backgroundColor: "var(--card-bg)" }}
                             >
-                                <h4 className="text-3xl font-bold mb-2" style={{ color: contentEmerald }}>$10M+</h4>
+                                <h4 className="text-3xl font-bold mb-2" style={{ color: contentEmerald }}>Significant</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Revenue Driven</p>
                             </div>
                         </div>

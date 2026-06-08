@@ -81,11 +81,11 @@ export default function CTA() {
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {[
                         {
-                            number: "$50M+",
+                            number: "Significant",
                             label: "Revenue Generated",
                         },
                         {
-                            number: "35%",
+                            number: "Higher",
                             label: "Avg. Conversion Lift",
                         },
                         {

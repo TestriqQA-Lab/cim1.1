@@ -190,7 +190,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    $50M+
+                                    Significant
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
                                     Revenue Generated

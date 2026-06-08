@@ -18,7 +18,7 @@ export default function Hero() {
     ];
 
     const stats = [
-        { value: "$10B+", label: "Transaction Volume" },
+        { value: "High-Volume", label: "Transaction Volume" },
         { value: "High", label: "System Uptime" },
         { value: "PCI-DSS", label: "Compliant" },
     ];

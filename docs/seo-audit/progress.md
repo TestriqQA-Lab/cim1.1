@@ -59,4 +59,13 @@ After `main` merge + production deploy, full re-verification:
 ## Session 2026-06-09 — remaining code items cleared
 C-3 (perfect-score claims → near-perfect), API-3 (Gemini proxy optional secret), ANALYTICS-1 (GA4 generate_lead events on all 3 forms), API-2 (honeypot on all 3 forms + route silent-drop). All tsc-clean, committed on `main`. **Only OWNER-VERIFY items remain:** C-7 (certs), TEST-1 (testimonials), C-9 ($ figures) — need owner confirmation, not code. ⚠️ Forms touched — owner should test contact/get-in-touch/careers submit after deploy.
 
+## Session 2026-06-09 (cont.) — OWNER-VERIFY items resolved (owner delegated decision → reframe)
+Owner delegated the factual call; applied the conservative/defensible default (unverifiable → soften). One batch, 24 files, diff 43/43 line-balanced, residual-grep 0, no U+FFFD, **tsc exit 0**, committed on `main`.
+- **C-7 ✅** — "GDPR/HIPAA/PCI-DSS/SOC 2 certified/compliant" → "-aligned practices" in mobile `WhyChooseUs.tsx`, mobile `Hero.tsx`, **+ `fintech-solutions/page.tsx:86`** (3rd spot caught by residual-grep). Kept deliverable-capability/standards-mapping copy.
+- **TEST-1 ✅** — home `Testimonials.tsx`: hard numbers/badges softened ("tripled"→"significantly grew", "10,000+ concurrent users"→"high concurrent traffic", "10K+ Concurrent Users"→"High Concurrency", "200+ hours"→"significant hours", "200+ Hours Saved"→"Significant Hours Saved"). Company names kept; **owner action:** CloudScale.io looks like a placeholder — replace with real anonymized client or remove.
+- **C-9 ✅** — all "$50M+/$10M+/$10B+/$2.3M+" + tiktok "50M+ views/500+ videos" → qualitative across ~14 files (stat-cards + metas/JSON-LD + hero copy).
+- **Bonus residuals cleaned** (same batch): perf-marketing `WhyChooseUs` "$50M / ROAS 500%"→"Significant…strong average ROAS", "$50M+ Revenue"→"Significant Revenue"; mobile `WhyChooseUs` "95% projects on-time"→"high rate", "35% Higher User Engagement"→"Higher User Engagement", "10,000+ hours A/B"→"extensive A/B testing"; ecommerce `CTA` "35% Avg. Conversion Lift" value→"Higher".
+
+**ALL OWNER-VERIFY items now closed.** No code claim-items remain open. Optional code follow-ups still available: API-3 activation (needs Chrome-extension repo update in tandem) + server-side zod validation on 3 API routes. Owner actions unchanged (deploy, test forms, GSC Request-Indexing, ranking-action-plan).
+
 See `MASTER-PROMPT.md` (plan), `deep-dive.md` (Phase 0 findings), `fix-backlog.md` (issue log), `FINAL-REPORT.md`.

@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
         {
             icon: Code,
             title: "Clean, Maintainable Code",
-            description: "SOLID principles, comprehensive unit and integration testing, and thorough documentation enable your engineering team to iterate, extend, and scale your custom SaaS platform development long-term. We follow industry-proven patterns that reduce technical debt and accelerate feature velocity. Real-world expertise: Our React & Next.js architecture reduced code complexity by 40% for a fintech SaaS client managing $10M+ monthly transactions.",
+            description: "SOLID principles, comprehensive unit and integration testing, and thorough documentation enable your engineering team to iterate, extend, and scale your custom SaaS platform development long-term. We follow industry-proven patterns that reduce technical debt and accelerate feature velocity. Real-world expertise: Our React & Next.js architecture reduced code complexity by 40% for a fintech SaaS client managing high-volume monthly transactions.",
             color: "from-[#008ac1] to-[#00b5ca]",
         },
         {

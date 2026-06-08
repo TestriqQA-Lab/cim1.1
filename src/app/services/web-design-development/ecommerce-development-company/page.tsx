@@ -119,7 +119,7 @@ export default function EcommerceStoresPage() {
 
         generateHowToSchema({
             name: "Our E-commerce Development Process",
-            description: "A proven 7-step methodology for building high-converting e-commerce stores that have generated $50M+ in revenue for our clients.",
+            description: "A proven 7-step methodology for building high-converting e-commerce stores that have generated significant revenue for our clients.",
             steps: [
                 { name: "Commerce Strategy & Discovery", text: "Define business goals, competitor audit, persona mapping, and technology stack selection for your e-commerce project.", url: "https://www.cinuteinfomedia.com/services/web-design-development/ecommerce-development-company/#step-strategy" },
                 { name: "UX Design & Product Merchandising", text: "Revenue-focused UX design, mobile-first layouts, and conversion triggers to maximize sales.", url: "https://www.cinuteinfomedia.com/services/web-design-development/ecommerce-development-company/#step-design" },

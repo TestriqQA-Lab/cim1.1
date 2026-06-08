@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
 
     const stats = [
         { value: "50+", label: "FinTech Products" },
-        { value: "$10B+", label: "Processed Volume" },
+        { value: "High-Volume", label: "Processed Volume" },
         { value: "100%", label: "Security Record" },
         { value: "24/7", label: "Critical Support" },
     ];

@@ -16,17 +16,17 @@ export default function WhyChooseUs() {
         {
             icon: Rocket,
             title: "Faster Time-to-Market",
-            description: "Agile 2-week sprints and efficient development processes. 95% projects delivered on-time and within budget using proven methodologies."
+            description: "Agile 2-week sprints and efficient development processes. a high rate of projects delivered on-time and within budget using proven methodologies."
         },
         {
             icon: Lock,
             title: <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)] transition-colors">Enterprise-Grade Security</Link>,
-            description: "AES-256 encryption, OAuth 2.0, OWASP compliance. GDPR, HIPAA, PCI-DSS, SOC 2 certified solutions."
+            description: "AES-256 encryption, OAuth 2.0, OWASP compliance. GDPR, HIPAA, PCI-DSS, and SOC 2-aligned security practices."
         },
         {
             icon: Palette,
-            title: "35% Higher User Engagement",
-            description: <span>Conversion-optimized UX backed by 10,000+ hours of A/B testing. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn.</span>
+            title: "Higher User Engagement",
+            description: <span>Conversion-optimized UX backed by extensive A/B testing. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn.</span>
         },
         {
             icon: Gauge,
