@@ -10,7 +10,7 @@ _Branch: `seo/cim-audit-fixes` (off `main`). User owns merge._
 | 3 | Technical SEO audit + fix | 🔵 fixes done; owner 404s pending | 2026-06-04 |
 | 4 | On-page / content SEO + dedup | 🔵 analysis done; content writing = team | 2026-06-04 |
 | 5 | Ranking action plan (off-page) | ✅ plan delivered (owner executes) | 2026-06-04 |
-| 6 | Conversion + analytics + security | ✅ audited (API-1 fixed; enhancements flagged) | 2026-06-04 |
+| 6 | Conversion + analytics + security | ✅ done (API-1 secured, C-3, API-3, honeypot, GA4 events) | 2026-06-09 |
 | 7 | Final report + KPIs + monitoring | ✅ done (`FINAL-REPORT.md`) | 2026-06-04 |
 
 ## Key baseline (2026-06-01)
@@ -54,5 +54,9 @@ After `main` merge + production deploy, full re-verification:
 - Sanity: all **8 blog posts still clean** (substring-verified; GROQ `match` gives false positives — ignore).
 - Live: robots/sitemap 200; homepage shows "Expert Web Development" (cleaned).
 - **NEW finding API-3:** merged Gemini proxy (`ai-commentor/api/generate`) is a public unauthenticated LLM proxy → cost-abuse risk (no auth/rate-limit). Flagged for owner (needs extension-side change).
+
+
+## Session 2026-06-09 — remaining code items cleared
+C-3 (perfect-score claims → near-perfect), API-3 (Gemini proxy optional secret), ANALYTICS-1 (GA4 generate_lead events on all 3 forms), API-2 (honeypot on all 3 forms + route silent-drop). All tsc-clean, committed on `main`. **Only OWNER-VERIFY items remain:** C-7 (certs), TEST-1 (testimonials), C-9 ($ figures) — need owner confirmation, not code. ⚠️ Forms touched — owner should test contact/get-in-touch/careers submit after deploy.
 
 See `MASTER-PROMPT.md` (plan), `deep-dive.md` (Phase 0 findings), `fix-backlog.md` (issue log), `FINAL-REPORT.md`.
