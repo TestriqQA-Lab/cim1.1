@@ -48,7 +48,7 @@ function corsHeaders(extra: Record<string, string> = {}): Record<string, string>
     return {
         "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
         "Access-Control-Allow-Methods": "POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Proxy-Secret",
         Vary: "Origin",
         ...extra,
     };
@@ -69,6 +69,15 @@ export async function POST(req: Request): Promise<Response> {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
         return jsonError(500, "Proxy misconfigured: GEMINI_API_KEY not set");
+    }
+
+    // Optional shared-secret gate against cost-abuse (anyone can otherwise curl this
+    // public proxy and burn the Gemini key/quota). BACKWARD-COMPATIBLE: only enforced
+    // when GEMINI_PROXY_SECRET is set on the server — then the extension must send a
+    // matching `X-Proxy-Secret` header. Unset = current open behavior (no breakage).
+    const proxySecret = process.env.GEMINI_PROXY_SECRET;
+    if (proxySecret && req.headers.get("x-proxy-secret") !== proxySecret) {
+        return jsonError(403, "Forbidden");
     }
 
     // ---- 1. Parse + validate input ----
