@@ -143,6 +143,7 @@ export default function Hero() {
     const [messageError, setMessageError] = useState<string | null>(null);
     const [consentError, setConsentError] = useState<string | null>(null);
 
+    const hpRef = useRef<HTMLInputElement>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [charCount, setCharCount] = useState(0);
@@ -267,7 +268,7 @@ export default function Hero() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(form),
+                body: JSON.stringify({ ...form, hp_field: hpRef.current?.value || "" }),
             });
 
             if (!response.ok) {
@@ -276,6 +277,7 @@ export default function Hero() {
             }
 
             setIsSuccess(true);
+            try { (window as any).gtag?.("event", "generate_lead", { form_id: "contact" }); } catch { /* analytics best-effort */ }
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } catch (error: any) {
             console.error('Error submitting form:', error);
@@ -544,6 +546,7 @@ export default function Hero() {
                                         </div>
 
                                         <form onSubmit={submitForm} className="space-y-6" id="contact-form" noValidate>
+                                            <input ref={hpRef} type="text" name="hp_field" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }} />
                                             {/* row 1 */}
                                             <div className="grid grid-cols-1 gap-6">
                                                 <div>

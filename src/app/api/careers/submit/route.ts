@@ -6,6 +6,7 @@ import nodemailer from "nodemailer";
 export async function POST(req: NextRequest) {
     try {
         const formData = await req.formData();
+        if (formData.get("hp_field")) return NextResponse.json({ success: true }); // honeypot
 
         const fullName = formData.get("fullName") as string;
         const email = formData.get("email") as string;

@@ -78,6 +78,7 @@ export default function ApplicationForm({ jobTitle, onSuccess, onCancel }: Appli
 
             console.log("Application Submitted Successfully");
             onSuccess();
+            try { (window as any).gtag?.("event", "generate_lead", { form_id: "careers" }); } catch { /* analytics best-effort */ }
         } catch (error) {
             console.error(error);
             alert("Something went wrong. Please try again.");

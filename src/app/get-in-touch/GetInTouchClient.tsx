@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, Check, Loader2 } from "lucide-react";
 
@@ -37,6 +37,7 @@ const BRAND = {
 };
 
 export default function GetInTouchClient() {
+    const hpRef = useRef<HTMLInputElement>(null);
     const [currentStep, setCurrentStep] = useState<number>(1);
     const [formData, setFormData] = useState<FormData>({
         name: "",
@@ -155,7 +156,7 @@ export default function GetInTouchClient() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({ ...formData, hp_field: hpRef.current?.value || "" }),
             });
 
             if (!response.ok) {
@@ -164,6 +165,7 @@ export default function GetInTouchClient() {
             }
 
             setShowSuccess(true);
+            try { (window as any).gtag?.("event", "generate_lead", { form_id: "get-in-touch" }); } catch { /* analytics best-effort */ }
             setTimeout(() => {
                 window.location.href = "https://www.cinuteinfomedia.com/";
             }, 2000);
@@ -283,6 +285,7 @@ export default function GetInTouchClient() {
                             </div>
 
                             <div className="space-y-6">
+                                <input ref={hpRef} type="text" name="hp_field" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }} />
                                 <div>
                                     <label className="block text-sm font-semibold mb-2" style={{ color: "var(--foreground)" }}>
                                         We love knowing who we&apos;re speaking to! <span style={{ color: BRAND.accent }}>*</span>
