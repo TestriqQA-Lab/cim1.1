@@ -15,6 +15,7 @@
     "@sanity/image-url": "^2.0.3",
     "@sanity/table": "^2.0.1",
     "@sanity/vision": "^5.7.0",
+    "@vercel/kv": "^3.0.0",
     "critters": "^0.0.23",
     "framer-motion": "^12.26.2",
     "googleapis": "^171.4.0",
