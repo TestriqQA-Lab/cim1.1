@@ -11,7 +11,7 @@ import CTA from "@/components/services/seo-services/on-page-seo-services/CTA";
 export const metadata: Metadata = {
     title: "Hire Expert On-Page SEO Services | Boost Organic Traffic 2026",
     description:
-        "Scaling ROI with data-backed On-page SEO optimization. Rank #1, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
+        "Scaling ROI with data-backed On-page SEO optimization. Rank higher, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
     alternates: {
         canonical: "https://www.cinuteinfomedia.com/services/seo-services/on-page-seo-services",
     },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: "Hire Expert On-Page SEO Services | Boost Organic Traffic 2026",
-        description: "Scaling ROI with data-backed On-page SEO optimization. Rank #1, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
+        description: "Scaling ROI with data-backed On-page SEO optimization. Rank higher, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
         url: "https://www.cinuteinfomedia.com/services/seo-services/on-page-seo-services",
         type: "website",
         images: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Hire Expert On-Page SEO Services | Boost Organic Traffic 2026",
-        description: "Scaling ROI with data-backed On-page SEO optimization. Rank #1, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
+        description: "Scaling ROI with data-backed On-page SEO optimization. Rank higher, fix Core Web Vitals, and dominate SERPs with high-E-E-A-T technical audits. Get a free audit today!",
         images: ["/og-images/on-page-seo-services.webp"],
     },
 

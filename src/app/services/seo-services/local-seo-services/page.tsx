@@ -74,18 +74,17 @@ export default function LocalSEOPage() {
                             "description": "Global Web Design, Development & Digital Marketing Agency specializing in local SEO services",
                             "address": {
                                 "@type": "PostalAddress",
-                                "addressCountry": "US"
+                                "streetAddress": "Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park",
+                                "addressLocality": "Mira Road, Mira Bhayandar",
+                                "addressRegion": "Maharashtra",
+                                "postalCode": "401107",
+                                "addressCountry": "IN"
                             },
                             "contactPoint": {
                                 "@type": "ContactPoint",
-                                "telephone": "+1-555-123-4567",
+                                "telephone": "+919004988859",
                                 "contactType": "Customer Service",
-                                "availableLanguage": ["English", "Spanish"]
-                            },
-                            "aggregateRating": {
-                                "@type": "AggregateRating",
-                                "ratingValue": "4.9",
-                                "reviewCount": "247"
+                                "availableLanguage": ["English", "Hindi"]
                             }
                         },
                         "areaServed": ["United States", "India", "United Kingdom", "Australia"],
@@ -190,7 +189,7 @@ export default function LocalSEOPage() {
                                 "name": "How long does it take to see results from local SEO?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "Local SEO results timeline: 30 days (increased GBP impressions), 60 days (Map Pack rankings improve 3-8 positions, 40-80% more calls), 90 days (top 5 Map Pack for primary keywords - 87% of clients, 2-3x phone calls), 6 months (dominant #1-#3 positions, 300%+ review growth). We guarantee top 5 rankings within 90 days or continue working for free."
+                                    "text": "Local SEO results timeline: 30 days (increased GBP impressions), 60 days (Map Pack rankings improve, more calls), 90 days (top 5 Map Pack for primary keywords - most clients, more phone calls), 6 months (dominant #1-#3 positions, strong review growth)."
                                 }
                             }
                         ]

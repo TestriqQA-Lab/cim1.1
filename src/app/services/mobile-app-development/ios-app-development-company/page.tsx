@@ -10,7 +10,7 @@ import CTA from "@/components/services/mobile-app-development/ios-app-developmen
 export const metadata: Metadata = {
     title: "iOS App Development Services | Custom iPhone & iPad Apps for Global Brands",
     description:
-        "Premier iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
+        "Expert iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
     keywords: [
         "iOS App Development Services",
         "iOS App Development Company",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: "iOS App Development Services | Custom iPhone & iPad Apps for Global Brands",
-        description: "Premier iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
+        description: "Expert iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
         url: "https://www.cinuteinfomedia.com/services/mobile-app-development/ios-app-development-company",
         type: "website",
         images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "iOS App Development Services | Custom iPhone & iPad Apps for Global Brands",
-        description: "Premier iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
+        description: "Expert iOS App Development Company & Agency. We build high-performance, secure, and scalable Custom iPhone & iPad apps using Swift/SwiftUI. Get a free quote today!",
         images: ["/og-images/ios-app-development-company.webp"],
     },
     alternates: {

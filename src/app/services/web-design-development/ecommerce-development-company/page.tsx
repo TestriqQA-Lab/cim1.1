@@ -41,7 +41,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'E-commerce Website Development Services | Top Custom Store Agency',
-    description: 'Scale your brand with our expert E-commerce Website Development Services. 15+ years building high-ROI Magento, Shopify, & custom stores. Get a fast quote!',
+    description: 'Scale your brand with our expert E-commerce Website Development Services. 12+ years building high-ROI Magento, Shopify, & custom stores. Get a fast quote!',
     url: '/services/web-design-development/ecommerce-development-company',
     keywords: [
         'E-commerce Development',
@@ -64,7 +64,7 @@ export default function EcommerceStoresPage() {
 
         generateWebPageSchema({
             name: "E-commerce Website Development Services | Top Custom Store Agency",
-            description: "Scale your brand with our expert E-commerce Website Development Services. 15+ years building high-ROI Magento, Shopify, & custom stores. Get a fast quote!",
+            description: "Scale your brand with our expert E-commerce Website Development Services. 12+ years building high-ROI Magento, Shopify, & custom stores. Get a fast quote!",
             urlPath: "/services/web-design-development/ecommerce-development-company",
             datePublished: "2025-01-01",
             dateModified: "2026-03-17",
@@ -113,13 +113,13 @@ export default function EcommerceStoresPage() {
             { question: "How can I improve my ecommerce store's conversion rate?", answer: "Start with speed and trust. Our e-commerce conversion rate optimization (CRO) audits often reveal that speeding up page loads and adding clear trust signals like security badges and reviews are the quickest wins for improving conversions." },
             { question: "How long does it take to launch a custom ecommerce store?", answer: "A template-based store can go live in 2-4 weeks. A fully custom e-commerce website design project typically takes 8-12 weeks, depending on the number of custom API integrations and unique design requirements." },
             { question: "Do you offer post-launch support and maintenance?", answer: "Yes! We provide ongoing e-commerce management services, including security patches, feature updates, and performance monitoring to ensure your store remains competitive and up-to-date." },
-            { question: "Can you help migrate my store from Magento to Shopify?", answer: "Absolutely. Our Magento to Shopify migration services ensure that your product data, customer history, and SEO rankings are preserved during the transition, with zero downtime." },
+            { question: "Can you help migrate my store from Magento to Shopify?", answer: "Absolutely. Our Magento to Shopify migration services ensure that your product data, customer history, and SEO rankings are preserved during the transition, with minimal downtime." },
             { question: "Is my e-commerce store ADA compliant?", answer: "We prioritize e-commerce accessibility during the design and development phase. Every custom e-commerce developer at Cinute InfoMedia follows WCAG 2.1 guidelines to ensure your store is usable by everyone and protected from legal risks." },
         ], "https://www.cinuteinfomedia.com/services/web-design-development/ecommerce-development-company/#faq"),
 
         generateHowToSchema({
             name: "Our E-commerce Development Process",
-            description: "A proven 7-step methodology for building high-converting e-commerce stores that have generated $50M+ in revenue for our clients.",
+            description: "A proven 7-step methodology for building high-converting e-commerce stores that have generated significant revenue for our clients.",
             steps: [
                 { name: "Commerce Strategy & Discovery", text: "Define business goals, competitor audit, persona mapping, and technology stack selection for your e-commerce project.", url: "https://www.cinuteinfomedia.com/services/web-design-development/ecommerce-development-company/#step-strategy" },
                 { name: "UX Design & Product Merchandising", text: "Revenue-focused UX design, mobile-first layouts, and conversion triggers to maximize sales.", url: "https://www.cinuteinfomedia.com/services/web-design-development/ecommerce-development-company/#step-design" },

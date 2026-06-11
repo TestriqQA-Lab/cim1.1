@@ -42,7 +42,7 @@ export function generateOrganizationSchema(overrides?: {
     },
     "description":
       overrides?.description ||
-      "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. 320% ROI proven. 300+ global projects.",
+      "Expert web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects.",
     "foundingDate": "2025",
     ...(overrides?.slogan && { "slogan": overrides.slogan }),
     ...(overrides?.hasOfferCatalogId && {

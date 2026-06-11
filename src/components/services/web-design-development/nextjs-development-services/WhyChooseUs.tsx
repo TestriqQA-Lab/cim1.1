@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
             icon: TrendingUp,
             title: "Performance Obsessed",
             description:
-                "Our implementations consistently achieve 100 Lighthouse scores, focusing on Next.js speed optimization and Core Web Vitals.",
+                "Our implementations consistently achieve near-perfect Lighthouse scores, focusing on Next.js speed optimization and Core Web Vitals.",
             gradient: "from-[#61dafb] to-[#00d4ff]",
         },
         {
@@ -147,7 +147,7 @@ export default function WhyChooseUs() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Our Next.js development services leverage the latest JavaScript framework expertise to solve complex needs for disruptive startups and established brands. We maintain a track record of delivering 95% bug-free applications globally.
+                        Our Next.js development services leverage the latest JavaScript framework expertise to solve complex needs for disruptive startups and established brands. We maintain a track record of delivering rigorously tested applications globally.
                     </p>
                 </div>
 
@@ -300,7 +300,7 @@ export default function WhyChooseUs() {
                             </div>
                             <div className="text-left">
                                 <p className="font-bold" style={{ color: "var(--foreground)" }}>Testriq QA Lab</p>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Leading Software Testing Provider</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Trusted Software Testing Provider</p>
                             </div>
                         </div>
                     </div>

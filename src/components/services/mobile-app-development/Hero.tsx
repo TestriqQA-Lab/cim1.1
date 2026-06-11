@@ -116,7 +116,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
-                            As a <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>premier mobile app development company</span> with <span style={{ color: "var(--foreground)", fontWeight: 700 }}>12+ years of proven expertise</span>, we craft <span style={{ color: "var(--foreground)" }}>custom mobile app development solutions</span> that transform businesses globally. Our award-winning team has delivered <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>300+ high-performance mobile applications</span> across <Link href="/services/mobile-app-development/ios-app-development-company" className="hover:underline transition-colors">iOS</Link>, <Link href="/services/mobile-app-development/android-app-development-company" className="hover:underline transition-colors">Android</Link>, and <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:underline transition-colors">cross-platform</Link> ecosystems.
+                            As a <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>expert mobile app development company</span> with <span style={{ color: "var(--foreground)", fontWeight: 700 }}>12+ years of proven expertise</span>, we craft <span style={{ color: "var(--foreground)" }}>custom mobile app development solutions</span> that transform businesses globally. Our experienced team has delivered <span style={{ color: "var(--brand-purple)", fontWeight: 700 }}>300+ high-performance mobile applications</span> across <Link href="/services/mobile-app-development/ios-app-development-company" className="hover:underline transition-colors">iOS</Link>, <Link href="/services/mobile-app-development/android-app-development-company" className="hover:underline transition-colors">Android</Link>, and <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:underline transition-colors">cross-platform</Link> ecosystems.
                         </p>
 
                         {/* Feature Highlights */}
@@ -227,7 +227,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    99.2%
+                                    Strong
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
                                     Client Retention
@@ -282,10 +282,10 @@ export default function Hero() {
                             }}
                         >
                             <h2 className="text-xl font-bold mb-3" style={{ color: "var(--foreground)" }}>
-                                Why 2,500+ Businesses Trust Us
+                                Why Businesses Trust Us
                             </h2>
                             <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
-                                98.7% bug-free delivery rate • 40% faster time-to-market • 24/7 global support • Enterprise-grade security (GDPR, HIPAA, SOC 2 compliant)
+                                a rigorous QA process • faster time-to-market • 24/7 global support • Enterprise-grade security (GDPR, HIPAA, SOC 2-aligned practices)
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 <span

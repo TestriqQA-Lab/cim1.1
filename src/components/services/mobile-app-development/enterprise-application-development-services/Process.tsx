@@ -70,12 +70,12 @@ export default function Process() {
         {
             icon: Rocket,
             title: "Deployment & 24/7 Enterprise Support",
-            description: "Our commitment doesn't end at launch. We provide Enterprise app maintenance and continuous delivery, backed by 24/7 proactive monitoring and strict SLA guarantees.",
+            description: "Our commitment doesn't end at launch. We provide Enterprise app maintenance and continuous delivery, backed by 24/7 proactive monitoring and clear SLAs.",
             details: [
                 "Staged enterprise rollout",
                 "Maintenance & delivery",
                 "24/7 proactive monitoring",
-                "Strict SLA guarantees",
+                "Clear SLAs",
                 "Ongoing support",
             ],
             duration: "Ongoing",

@@ -177,12 +177,12 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>85%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>Higher</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Higher B2B Lead Quality</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>300%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: linkedinBlue }}>Strong</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>ROI Growth (Tech/SaaS)</p>
                             </div>
                         </div>

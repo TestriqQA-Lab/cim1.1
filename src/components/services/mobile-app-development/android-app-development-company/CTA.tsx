@@ -8,7 +8,7 @@ export default function CTA() {
     const benefits = [
         "Free project consultation",
         "Detailed proposal & timeline",
-        "Fixed price guarantee",
+        "Transparent fixed pricing",
         "Post-launch support included",
     ];
 
@@ -97,12 +97,12 @@ export default function CTA() {
                                 <div className="text-xs sm:text-sm text-white/70">Android Apps Delivered</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">4.7★</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">High</div>
                                 <div className="text-xs sm:text-sm text-white/70">Play Store Rating</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">99.9%</div>
-                                <div className="text-xs sm:text-sm text-white/70">Crash-Free Impact</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">High</div>
+                                <div className="text-xs sm:text-sm text-white/70">Stability Focus</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
                                 <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">50+</div>

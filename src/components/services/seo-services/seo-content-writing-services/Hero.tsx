@@ -116,7 +116,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Unlock scalable growth with precision-engineered content that ranks #1 globally,
+                            Unlock scalable growth with precision-engineered content that ranks higher globally,
                             satisfies 2026 Google EEAT signals, and converts high-intent traffic into loyal customers.
                         </p>
 
@@ -164,11 +164,10 @@ export default function Hero() {
                                 Explore Our Writing Framework
                             </Link>
                         </div>
-                        electoral
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: contentEmerald }}>10x</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: contentEmerald }}>Strong</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Content Traffic Growth</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
@@ -178,7 +177,7 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: contentEmerald }}>200%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: contentEmerald }}>Higher</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Engagement Rate Lift</p>
                             </div>
                         </div>
@@ -261,7 +260,7 @@ export default function Hero() {
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            #1 Ranking
+                                            Top Ranking
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                             Target Keywords

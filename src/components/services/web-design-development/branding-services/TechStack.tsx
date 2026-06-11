@@ -169,7 +169,7 @@ export default function TechStack() {
                     {[
                         { label: "Page Speed", value: "98+" },
                         { label: "Mobile Score", value: "100" },
-                        { label: "Uptime", value: "99.9%" },
+                        { label: "Uptime", value: "High" },
                         { label: "SEO Ready", value: "✓" },
                     ].map((stat, idx) => (
                         <div

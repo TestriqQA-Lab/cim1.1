@@ -11,7 +11,7 @@ import FAQ from "@/components/services/mobile-app-development/android-app-develo
 export const metadata: Metadata = {
     title: "Android App Development Services | Top Company",
     description:
-        "Leading Android app development company crafting custom, high-performance apps. 300+ successful launches. Get high ROI & free audit today!",
+        "Expert Android app development company crafting custom, high-performance apps. 300+ successful launches. Get high ROI & free audit today!",
     openGraph: {
         images: [
             {
@@ -62,7 +62,7 @@ export default function AndroidAppDevelopmentPage() {
                             serviceType: "Mobile App Development",
                             areaServed: "Global",
                             description:
-                                "Premier Android App Development Company offering custom native and cross-platform solutions. Expert Kotlin and Java developers delivering high-performance apps.",
+                                "Android App Development Company offering custom native and cross-platform solutions. Expert Kotlin and Java developers delivering high-performance apps.",
                             offers: {
                                 "@type": "Offer",
                                 priceCurrency: "USD",

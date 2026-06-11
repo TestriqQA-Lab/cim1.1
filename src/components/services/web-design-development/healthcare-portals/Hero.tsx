@@ -19,7 +19,7 @@ export default function Hero() {
 
     const stats = [
         { value: "50K+", label: "Patients Served" },
-        { value: "99.9%", label: "Uptime" },
+        { value: "High", label: "Uptime" },
         { value: "HIPAA", label: "Certified" },
     ];
 
@@ -193,7 +193,7 @@ export default function Hero() {
                                 { label: "Data Encryption", value: "256-bit" },
                                 { label: "Response Time", value: "<100ms" },
                                 { label: "Patient Satisfaction", value: "98%" },
-                                { label: "System Uptime", value: "99.99%" },
+                                { label: "System Uptime", value: "High" },
                             ].map((metric, idx) => (
                                 <div
                                     key={idx}

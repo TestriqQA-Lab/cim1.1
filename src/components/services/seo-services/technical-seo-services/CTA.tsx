@@ -36,7 +36,7 @@ export default function CTA() {
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
-                        Is your website ready for the 2026 search algorithm? Our <Link href="/about" className="hover:text-purple-500 transition-colors">Technical SEO agency</Link> will uncover hidden bugs and provide a clear roadmap to #1 rankings.
+                        Is your website ready for the 2026 search algorithm? Our <Link href="/about" className="hover:text-purple-500 transition-colors">Technical SEO agency</Link> will uncover hidden bugs and provide a clear roadmap to top rankings.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">

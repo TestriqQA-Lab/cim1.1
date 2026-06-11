@@ -22,7 +22,7 @@ export default function SupportServices() {
             icon: Wrench,
             title: "IT Business Support Services",
             description: <span>Keep your <Link href="/services/web-design-development" className="hover:text-[var(--foreground)] font-medium">digital assets</Link> secure and optimized.</span>,
-            features: ["Regular updates & Patch Management", "99.9% Uptime Monitoring", "Additional technical support"],
+            features: ["Regular updates & Patch Management", "Uptime Monitoring", "Additional technical support"],
         },
         {
             icon: Users,

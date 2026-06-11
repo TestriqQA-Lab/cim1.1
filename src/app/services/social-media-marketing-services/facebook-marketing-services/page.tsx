@@ -10,7 +10,7 @@ import CTA from "@/components/services/social-media-marketing-services/facebook-
 export const metadata: Metadata = {
     title: "Facebook Marketing Services | Lead Gen & Ads Management Agency",
     description:
-        "Scale your brand with top-tier Facebook marketing services. Expert Meta ads management delivered by a global agency. 10x ROAS focus. Get a FREE audit today!",
+        "Scale your brand with expert Facebook marketing services. Expert Meta ads management delivered by a global agency. strong ROAS focus. Get a FREE audit today!",
     keywords: [
         "Facebook marketing services",
         "Facebook marketing agency",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         title: "Facebook Marketing Services | Lead Gen & Ads Management Agency",
-        description: "Scale your brand with top-tier Facebook marketing services. Expert Meta ads management delivered by a global agency. 10x ROAS focus. Get a FREE audit today!",
+        description: "Scale your brand with expert Facebook marketing services. Expert Meta ads management delivered by a global agency. strong ROAS focus. Get a FREE audit today!",
         url: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/facebook-marketing-services",
         type: "website",
         images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Facebook Marketing Services | Lead Gen & Ads Management Agency",
-        description: "Scale your brand with top-tier Facebook marketing services. Expert Meta ads management delivered by a global agency. 10x ROAS focus. Get a FREE audit today!",
+        description: "Scale your brand with expert Facebook marketing services. Expert Meta ads management delivered by a global agency. strong ROAS focus. Get a FREE audit today!",
         images: ["/og-images/facebook-marketing-services.webp"],
     },
     alternates: {

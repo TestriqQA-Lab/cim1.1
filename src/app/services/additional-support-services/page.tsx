@@ -28,7 +28,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Business Support Services | Outsourced Administrative & IT Support 24/7',
-    description: 'Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs. 500+ happy clients, 15+ years experience, 50+ support staff, 95% bug-free maintenance, 300% operational efficiency improvements.',
+    description: 'Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs. 500+ happy clients, 12+ years experience, 50+ support staff, rigorously tested maintenance, significant operational efficiency improvements.',
     url: '/services/additional-support-services',
     image: "/og-images/additional-support-services.webp",
     keywords: [
@@ -56,7 +56,7 @@ export default function AdditionalSupportServicesPage() {
 
         generateWebPageSchema({
             name: "Business Support Services | Outsourced Administrative & IT Support 24/7",
-            description: "Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs. 500+ happy clients, 15+ years experience, 50+ support staff, 95% bug-free maintenance, 300% operational efficiency improvements.",
+            description: "Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs. 500+ happy clients, 12+ years experience, 50+ support staff, rigorously tested maintenance, significant operational efficiency improvements.",
             urlPath: "/services/additional-support-services",
             datePublished: "2025-01-01",
             dateModified: "2026-04-10",
@@ -75,7 +75,7 @@ export default function AdditionalSupportServicesPage() {
             "@type": "Service",
             "@id": "https://www.cinuteinfomedia.com/services/additional-support-services/#service",
             "name": "Business Support Services",
-            "description": "Ongoing Support. Lasting Success. Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs to thrive. 500+ happy clients, 15+ years experience, 50+ dedicated support staff, 95% bug-free technical maintenance, 300% operational efficiency improvements. 20-30% reduction in overhead costs. Seamless integration with client tools like Jira and Slack. Serving global markets: US, EU, India, and APAC with 24/7 coverage.",
+            "description": "Ongoing Support. Lasting Success. Optimize your operations with premium Business Support Services designed for global scalability. From technical maintenance to administrative efficiency, we provide the backbone your business needs to thrive. 500+ happy clients, 12+ years experience, 50+ dedicated support staff, rigorously tested technical maintenance, significant operational efficiency improvements. a meaningful reduction in overhead costs. Seamless integration with client tools like Jira and Slack. Serving global markets: US, EU, India, and APAC with 24/7 coverage.",
             "url": "https://www.cinuteinfomedia.com/services/additional-support-services",
             "serviceType": "Outsourced Business & IT Support Services",
             "provider": {
@@ -127,7 +127,7 @@ export default function AdditionalSupportServicesPage() {
             name: "Core Business Support Services",
             description: "Five core business support categories: IT Support, Administrative & Virtual Assistants, Data Management & Back-Office, Specialized Industry Support, and Customer Support & Lead Generation.",
             items: [
-                { name: "IT Business Support Services", description: "Regular updates and patch management, 99.9% uptime monitoring, and additional technical support for seamless operations." },
+                { name: "IT Business Support Services", description: "Regular updates and patch management, uptime monitoring, and additional technical support for seamless operations." },
                 { name: "Outsourced Administrative & Virtual Assistants", description: "On-demand administrative assistance, outsourced HR support, and additional legal administrative support." },
                 { name: "Data Management & Back-Office", description: "Outsourced data management, order processing, and supplementary financial support for streamlined operations." },
                 { name: "Specialized Industry Support", description: "Healthcare admin assistance, real estate listing management, and additional marketing support for industry-specific needs." },
@@ -149,7 +149,7 @@ export default function AdditionalSupportServicesPage() {
         generateFAQSchema([
             { question: "What are additional support services in business?", answer: "Additional support services encompass external assistance for non-core business activities, including IT business support, outsourced administrative tasks, data management, and customer service. These services allow your core team to focus on strategic growth while we handle the operational details." },
             { question: "Why should businesses outsource their support services?", answer: "Outsourcing offers Cost-Effective Solutions and instant Scalability. By leveraging our Managed Support services, you gain access to expert talent and advanced technology without the overhead of hiring full-time staff, ensuring Resource Optimization and 24/7 coverage." },
-            { question: "What are the benefits of supplementary business support?", answer: "Benefits include increased Operational Efficiency, access to Core Competencies not available in-house, Workflow Automation, and reduced operational risks. Our clients often see a 20-30% reduction in overhead costs." },
+            { question: "What are the benefits of supplementary business support?", answer: "Benefits include increased Operational Efficiency, access to Core Competencies not available in-house, Workflow Automation, and reduced operational risks. Our clients often see a a meaningful reduction in overhead costs." },
             { question: "How do I choose the right business support service provider?", answer: "Look for E-E-A-T signals: proven experience (case studies), technical expertise (modern tech stack), and clear communication. We offer transparent Service Level Agreements (SLAs) and have a track record of serving global clients in the US, EU, and APAC." },
             { question: "What is included in a business support services package?", answer: "Our packages are flexible. A standard package might include Professional virtual assistant support, basic IT monitoring, and Outsourced back-office support solutions. Enterprise packages add dedicated project management, advanced security, and Supplementary project management support." },
         ], "https://www.cinuteinfomedia.com/services/additional-support-services/#faq"),

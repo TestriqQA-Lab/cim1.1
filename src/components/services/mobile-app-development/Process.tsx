@@ -15,7 +15,7 @@ export default function Process() {
         {
             icon: Pencil,
             title: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">UI/UX Design (Week 3-5)</Link>,
-            description: "Low to high-fidelity wireframing, interactive prototypes in Figma/Adobe XD, user flow mapping, and accessibility audit. 35% higher engagement through conversion-focused design backed by 10,000+ hours A/B testing.",
+            description: "Low to high-fidelity wireframing, interactive prototypes in Figma/Adobe XD, user flow mapping, and accessibility audit. higher engagement through conversion-focused design backed by 10,000+ hours A/B testing.",
             details: ["Wireframing", "Interactive Prototypes", "Design System", "WCAG 2.2 AA Compliance", "Usability Testing (5+ users)"]
         },
         {
@@ -27,13 +27,13 @@ export default function Process() {
         {
             icon: TestTube,
             title: "Testing & QA (Week 17-19)",
-            description: "Comprehensive testing: 80%+ unit coverage, integration testing for all APIs, UI automation of critical flows, manual testing across 100+ devices. 98.7% bug-free delivery rate with 99.9% crash-free sessions.",
+            description: "Comprehensive testing: 80%+ unit coverage, integration testing for all APIs, UI automation of critical flows, manual testing across 100+ devices. a rigorous QA process.",
             details: ["Unit Testing (Jest/XCTest/JUnit)", "Integration Testing", "UI Automation (Appium/Detox)", "Performance Testing (Load/Stress)", "Security Testing (OWASP Top 10)"]
         },
         {
             icon: Rocket,
             title: "Deployment & Launch (Week 20-21)",
-            description: <span>App Store and Play Store submission with compliance docs, beta testing via TestFlight/Internal Track, and <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">App Store Optimization</Link>. Average 40% increase in organic downloads with top 10 keyword rankings within 90 days.</span>,
+            description: <span>App Store and Play Store submission with compliance docs, beta testing via TestFlight/Internal Track, and <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">App Store Optimization</Link>. Average increase in organic downloads with top 10 keyword rankings within 90 days.</span>,
             details: ["App Store Submission", "ASO (Keyword Research)", "Beta Testing", "Screenshot Optimization", "Pre-Launch Marketing"]
         },
         {
@@ -81,7 +81,7 @@ export default function Process() {
                         <span style={{ color: "var(--foreground)" }}>6-Phase Agile Methodology</span> <span style={{ color: "var(--brand-purple)" }}>(Proven Across 300+ Projects)</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Our battle-tested development process ensures 95% on-time delivery with 98.7% bug-free rate. Transparent, structured approach delivering measurable results.
+                        Our battle-tested development process ensures reliable on-time delivery. Transparent, structured approach delivering measurable results.
                     </p>
                 </div>
 

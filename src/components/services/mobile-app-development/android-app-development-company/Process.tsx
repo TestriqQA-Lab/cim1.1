@@ -32,7 +32,7 @@ export default function Process() {
         {
             icon: Palette,
             title: <Link href="/services/web-design-development/branding-services" className="hover:text-[#3DDC84]">UI/UX Design</Link>,
-            description: <><span className="text-inherit">Award-winning designs following Material Design 3 principles. We create intuitive wireframes and </span><Link href="/services/brand-identity-design" className="text-[#3DDC84] hover:underline">interactive prototypes</Link>.</>,
+            description: <><span className="text-inherit">Distinctive designs following Material Design 3 principles. We create intuitive wireframes and </span><Link href="/services/brand-identity-design" className="text-[#3DDC84] hover:underline">interactive prototypes</Link>.</>,
             details: [
                 "Material Design 3 compliance",
                 "Interactive prototypes",

@@ -9,9 +9,9 @@ import FAQ from "@/components/services/social-media-marketing-services/instagram
 import CTA from "@/components/services/social-media-marketing-services/instagram-marketing-services/CTA";
 
 export const metadata: Metadata = {
-    title: "Best Instagram Marketing Agency | #1 Instagram Growth & Ads 2026",
+    title: "Instagram Marketing Agency | Instagram Growth & Ads 2026",
     description:
-        "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a 20% CTR boost!",
+        "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a higher CTR!",
     keywords: [
         "Instagram Marketing Services",
         "Instagram Marketing Agency",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
         "Instagram Management Services",
     ],
     openGraph: {
-        title: "Best Instagram Marketing Agency | #1 Instagram Growth & Ads 2026",
-        description: "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a 20% CTR boost!",
+        title: "Instagram Marketing Agency | Instagram Growth & Ads 2026",
+        description: "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a higher CTR!",
         url: "https://www.cinuteinfomedia.com/services/social-media-marketing-services/instagram-marketing-services",
         type: "website",
         images: [
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
                 url: "/og-images/instagram-marketing-services.webp",
                 width: 1200,
                 height: 630,
-                alt: "Best Instagram Marketing Agency | #1 Instagram Growth & Ads 2026 by Cinute Infomedia",
+                alt: "Instagram Marketing Agency | Instagram Growth & Ads 2026 by Cinute Infomedia",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Best Instagram Marketing Agency | #1 Instagram Growth & Ads 2026",
-        description: "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a 20% CTR boost!",
+        title: "Instagram Marketing Agency | Instagram Growth & Ads 2026",
+        description: "Supercharge your brand with the top Instagram Marketing Company. Expert Reels, Influencer Marketing, and Instagram Advertising Services. Get a higher CTR!",
         images: ["/og-images/instagram-marketing-services.webp"],
     },
     alternates: {

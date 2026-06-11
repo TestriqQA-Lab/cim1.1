@@ -140,7 +140,7 @@ export default function TechStack() {
                                 WebkitTextFillColor: "transparent",
                             }}
                         >
-                            Best-in-Class
+                            Modern
                         </span>{" "}
                         Tools
                     </h2>
@@ -148,7 +148,7 @@ export default function TechStack() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        We use industry-leading technologies to build robust,
+                        We use modern technologies to build robust,
                         scalable, and maintainable React applications.
                     </p>
                 </div>

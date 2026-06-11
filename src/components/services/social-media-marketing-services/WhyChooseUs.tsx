@@ -86,7 +86,7 @@ export default function WhyChooseUs() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "var(--brand-teal)" }}>The Advantage</span> of Partnering with a Premier Social Media Management Company
+                        <span style={{ color: "var(--brand-teal)" }}>The Advantage</span> of Partnering with an Expert Social Media Management Company
                     </h2>
 
                     <div

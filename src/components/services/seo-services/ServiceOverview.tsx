@@ -18,7 +18,7 @@ export default function ServiceOverview() {
         {
             icon: Globe,
             title: "Brand Authority",
-            description: <span>Ranking #1 signals trust. We use E-E-A-T principles to position your brand as the industry leader, critical for <Link href="/services/seo-services/on-page-seo-services" className="hover:text-[var(--brand-seo)]">on-page authority</Link> and trust.</span>,
+            description: <span>Ranking highly signals trust. We use E-E-A-T principles to position your brand as the industry leader, critical for <Link href="/services/seo-services/on-page-seo-services" className="hover:text-[var(--brand-seo)]">on-page authority</Link> and trust.</span>,
         },
         {
             icon: Eye,

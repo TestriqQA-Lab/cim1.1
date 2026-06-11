@@ -12,7 +12,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
     title: "Cross-Platform App Development Services | React Native & Flutter",
     description:
-        "🚀 Award-winning Cross-Platform App Development Services. We build high-performance, native-like iOS & Android apps with a single codebase. 70% faster delivery. 40% cost savings. Start your project today! 📱",
+        "🚀 Cross-Platform App Development Services. We build high-performance, native-like iOS & Android apps with a single codebase. faster delivery. lower costs. Start your project today! 📱",
     keywords: [
         "cross platform app development",
         "React Native development",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Cross-Platform App Development Services | React Native & Flutter",
         description:
-            "🚀 Award-winning Cross-Platform App Development Services. We build high-performance, native-like iOS & Android apps with a single codebase. 70% faster delivery. 40% cost savings. Start your project today! 📱",
+            "🚀 Cross-Platform App Development Services. We build high-performance, native-like iOS & Android apps with a single codebase. faster delivery. lower costs. Start your project today! 📱",
         url: "https://www.cinuteinfomedia.com/services/mobile-app-development/cross-platform-app-development-company",
         type: "website",
         images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Cross-Platform App Development Services | React Native & Flutter",
         description:
-            "🚀 Award-winning Cross-Platform App Development Services. We build high-performance, native-like iOS & Android apps with a single codebase. 70% faster delivery. 40% cost savings. Start your project today! 📱",
+            "🚀 Cross-Platform App Development Services. We build high-performance, native-like iOS & Android apps with a single codebase. faster delivery. lower costs. Start your project today! 📱",
         images: ["/og-images/cross-platform-app-development.webp"],
     },
     alternates: {

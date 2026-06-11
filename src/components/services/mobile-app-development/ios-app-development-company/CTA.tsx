@@ -7,7 +7,7 @@ export default function CTA() {
     const benefits = [
         "Free project consultation",
         "Detailed proposal & timeline",
-        "Fixed price guarantee",
+        "Transparent fixed pricing",
         "Post-launch support included",
     ];
 
@@ -96,11 +96,11 @@ export default function CTA() {
                                 <div className="text-sm text-white/70">iOS Apps Delivered</div>
                             </div>
                             <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-4xl font-bold text-white mb-2">4.8★</div>
+                                <div className="text-4xl font-bold text-white mb-2">High</div>
                                 <div className="text-sm text-white/70">App Store Rating</div>
                             </div>
                             <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-4xl font-bold text-white mb-2">98%</div>
+                                <div className="text-4xl font-bold text-white mb-2">High</div>
                                 <div className="text-sm text-white/70">First Submit Approval</div>
                             </div>
                             <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">

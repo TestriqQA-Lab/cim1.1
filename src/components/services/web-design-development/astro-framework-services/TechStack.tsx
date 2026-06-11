@@ -12,9 +12,9 @@ export default function TechStack() {
             id: "core",
             title: "Core Technologies",
             icon: Rocket,
-            description: "Astro ecosystem fundamentals for 100% PageSpeed",
+            description: "Astro ecosystem fundamentals for near-perfect PageSpeed",
             technologies: [
-                { name: "Astro", description: "Zero JS by default, Islands Architecture, 100% PageSpeed", logo: "/images/techstack_logos/Astro-logo.svg" },
+                { name: "Astro", description: "Zero JS by default, Islands Architecture, near-perfect PageSpeed", logo: "/images/techstack_logos/Astro-logo.svg" },
                 { name: "TypeScript", description: "Type safety, better IDE support, enterprise-ready", logo: "/images/techstack_logos/typescript-logo.svg" },
                 { name: "JavaScript", description: "Universal language, ecosystem compatibility", logo: "/images/techstack_logos/javascript-logo.svg" },
                 { name: "HTML5", description: "SEO excellence, accessibility, web standards", logo: "/images/techstack_logos/html5-logo.svg" },

@@ -20,7 +20,7 @@ export default function Hero() {
     const stats = [
         { value: "10M+", label: "Users Engaged" },
         { value: "50K+", label: "Content Hours" },
-        { value: "99.9%", label: "Uptime SLA" },
+        { value: "High", label: "Uptime SLA" },
     ];
 
     return (
@@ -237,7 +237,7 @@ export default function Hero() {
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            3x User Engagement
+                                            Higher User Engagement
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                             Personalized content

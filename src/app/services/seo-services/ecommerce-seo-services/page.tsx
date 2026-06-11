@@ -69,11 +69,6 @@ export default function EcommerceSEOPage() {
                 "telephone": "+91-9004988859",
                 "contactType": "Sales",
                 "availableLanguage": ["English", "Hindi"]
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "312"
             }
         },
         "areaServed": ["United States", "India", "United Kingdom", "Australia", "Europe", "Asia Pacific"],
@@ -150,7 +145,7 @@ export default function EcommerceSEOPage() {
                 "name": "How much do ecommerce SEO services cost?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ecommerce SEO cost in 2026: Small stores (100-500 products) $1,500-$3,000/month, Mid-size (500-5,000 products) $3,000-$7,000/month, Enterprise (5,000+ products) $7,000-$15,000/month. Most clients see 3-5x ROI within 6-9 months."
+                    "text": "Ecommerce SEO cost in 2026: Small stores (100-500 products) $1,500-$3,000/month, Mid-size (500-5,000 products) $3,000-$7,000/month, Enterprise (5,000+ products) $7,000-$15,000/month. Most clients see a strong ROI within 6-9 months."
                 }
             },
             {
@@ -174,7 +169,7 @@ export default function EcommerceSEOPage() {
                 "name": "How long does it take to see results from ecommerce SEO?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ecommerce SEO timeline: 30-60 days (technical fixes, low-competition rankings), 60-90 days (25-50% traffic increase), 90-120 days (50-100% traffic increase), 6 months (150-300% traffic, measurable revenue), 12 months (300-500% traffic, market dominance). Results vary by competition and starting authority."
+                    "text": "Ecommerce SEO timeline: 30-60 days (technical fixes, low-competition rankings), 60-90 days (growing organic traffic), 90-120 days (continued traffic growth), 6 months (significant traffic, measurable revenue), 12 months (sustained traffic, market dominance). Results vary by competition and starting authority."
                 }
             }
         ]

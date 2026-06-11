@@ -11,27 +11,27 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Proven Track Record",
-            description: "300+ mobile apps delivered across 45+ industries. 50M+ active users powered by our applications. 99.2% client retention rate with 15+ industry awards since 2014."
+            description: "Mobile apps delivered across diverse industries, powering applications at scale. Strong client retention with industry awards since 2014."
         },
         {
             icon: Rocket,
-            title: "40% Faster Time-to-Market",
-            description: "Agile 2-week sprints and efficient development processes. 95% projects delivered on-time and within budget using proven methodologies."
+            title: "Faster Time-to-Market",
+            description: "Agile 2-week sprints and efficient development processes. a high rate of projects delivered on-time and within budget using proven methodologies."
         },
         {
             icon: Lock,
             title: <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)] transition-colors">Enterprise-Grade Security</Link>,
-            description: "Zero security breaches since 2014. AES-256 encryption, OAuth 2.0, OWASP compliance. GDPR, HIPAA, PCI-DSS, SOC 2 certified solutions."
+            description: "AES-256 encryption, OAuth 2.0, OWASP compliance. GDPR, HIPAA, PCI-DSS, and SOC 2-aligned security practices."
         },
         {
             icon: Palette,
-            title: "35% Higher User Engagement",
-            description: <span>Conversion-optimized UX backed by 10,000+ hours of A/B testing. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn by 40%.</span>
+            title: "Higher User Engagement",
+            description: <span>Conversion-optimized UX backed by extensive A/B testing. <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:text-[var(--brand-purple)] transition-colors">WCAG 2.2 AA compliant designs</Link> that reduce churn.</span>
         },
         {
             icon: Gauge,
-            title: "98.7% Bug-Free Delivery",
-            description: "Rigorous QA with 80%+ test coverage across 100+ devices. 99.9% crash-free sessions with <2s app launch time and 60 FPS performance."
+            title: "Rigorous QA Process",
+            description: "Rigorous QA with 80%+ test coverage across 100+ devices. Extensive stability testing with <2s app launch time and 60 FPS performance."
         },
         {
             icon: Smartphone,

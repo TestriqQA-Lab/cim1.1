@@ -18,7 +18,7 @@ export default function FAQ() {
         },
         {
             question: "What are the benefits of supplementary business support?",
-            answer: <span>Benefits include increased Operational Efficiency, access to Core Competencies not available in-house, <Link href="/services/ai-workflows-automations-services" className="hover:text-[#97288e]">Workflow Automation</Link>, and reduced operational risks. Our clients often see a 20-30% reduction in overhead costs.</span>
+            answer: <span>Benefits include increased Operational Efficiency, access to Core Competencies not available in-house, <Link href="/services/ai-workflows-automations-services" className="hover:text-[#97288e]">Workflow Automation</Link>, and reduced operational risks. Our clients often see a meaningful reduction in overhead costs.</span>
         },
         {
             question: "How do I choose the right business support service provider?",

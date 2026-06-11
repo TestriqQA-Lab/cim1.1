@@ -23,19 +23,19 @@ export default function Process() {
         {
             icon: FileCode,
             title: "On-Page Localization & Schema Implementation",
-            description: <><Link href="/services/seo-services/technical-seo-services" className="hover:text-emerald-500 transition-colors">Technical on-site work</Link>: Install LocalBusiness schema with exact coordinates, create <Link href="/services/web-design-development/landing-pages" className="hover:text-purple-500 transition-colors">location-specific landing pages</Link>, optimize title tags with city + service keywords. SEO Impact: 40-60% increase in geo-modified keyword rankings within 30 days.</>,
+            description: <><Link href="/services/seo-services/technical-seo-services" className="hover:text-emerald-500 transition-colors">Technical on-site work</Link>: Install LocalBusiness schema with exact coordinates, create <Link href="/services/web-design-development/landing-pages" className="hover:text-purple-500 transition-colors">location-specific landing pages</Link>, optimize title tags with city + service keywords. SEO Impact: a measurable increase in geo-modified keyword rankings within 30 days.</>,
             animation: "fade-up"
         },
         {
             icon: Share2,
             title: "Citation Building & Data Cleanup",
-            description: <><Link href="/services/seo-services/link-building" className="hover:text-blue-500 transition-colors">Building your digital footprint</Link>: Submit to 50+ high-authority directories, fix existing NAP inconsistencies, remove duplicate listings causing rank suppression. Result: Consistent NAP across 95%+ of citation sources within 45 days.</>,
+            description: <><Link href="/services/seo-services/link-building" className="hover:text-blue-500 transition-colors">Building your digital footprint</Link>: Submit to 50+ high-authority directories, fix existing NAP inconsistencies, remove duplicate listings causing rank suppression. Result: Consistent NAP across your citation sources within 45 days.</>,
             animation: "scale"
         },
         {
             icon: Star,
             title: "Reputation Strategy & Review Generation",
-            description: "Systematic 5-star growth: Set up automated post-service review requests (SMS/email), create branded review landing pages, respond to 100% of reviews within 24 hours. Average Outcome: 10-15 new Google reviews per month (5x industry average).",
+            description: "Systematic 5-star growth: Set up automated post-service review requests (SMS/email), create branded review landing pages, respond to 100% of reviews within 24 hours. Average Outcome: 10-15 new Google reviews per month (above the industry average).",
             animation: "rotate"
         },
         {

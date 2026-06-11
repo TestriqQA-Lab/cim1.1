@@ -184,7 +184,7 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: pinterestRed }}>2x</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: pinterestRed }}>Strong</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Higher ROAS</p>
                             </div>
                         </div>

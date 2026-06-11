@@ -48,7 +48,7 @@ export default function TypesOfAutomations() {
         {
             icon: FileText,
             title: <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-orange)] transition-colors">Document Processing & OCR</Link>,
-            description: "Unlock trapped data. Our Topical Authority & Entity Extraction systems read invoices, contracts, and IDs with 99% accuracy.",
+            description: "Unlock trapped data. Our Topical Authority & Entity Extraction systems read invoices, contracts, and IDs with high accuracy.",
             features: ["OCR Technology", "Document Classification", "Data Extraction", "Compliance Validation"],
             gradient: "from-indigo-600 to-blue-500",
             iconBg: "bg-indigo-500/10",

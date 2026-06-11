@@ -12,13 +12,13 @@ export default function WhyChooseUs() {
         },
         {
             icon: Zap,
-            title: "300% Traffic Growth",
+            title: "Sustained Traffic Growth",
             description: <>We've consistently delivered 300% <Link href="/services/seo-services" className="hover:underline text-blue-500">traffic growth</Link> for tech and SaaS clients, helping them dominate through aggressive X business strategies.</>,
         },
         {
             icon: ShieldCheck,
             title: "95% Precision Targeting",
-            description: "Using proprietary data layers and audience segments, we achieve 95% accuracy in reaching decision-makers, skyrocketing conversion success.",
+            description: "Using proprietary data layers and audience segments, we achieve high accuracy in reaching decision-makers, skyrocketing conversion success.",
         },
         {
             icon: Users,

@@ -4,7 +4,7 @@ export default function Impact() {
     const stats = [
         { value: '100%', label: 'Client Satisfaction', icon: Star },
         { value: '5/5', label: 'Client Ratings', icon: Award },
-        { value: '1,500+', label: 'Leads Generated Monthly', icon: TrendingUp },
+        { value: 'Consistent', label: 'Leads Generated Monthly', icon: TrendingUp },
         { value: '4×', label: 'Average ROI Increase', icon: Target }
     ];
 

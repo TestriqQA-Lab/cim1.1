@@ -30,7 +30,7 @@ export default function FAQ() {
         },
         {
             question: "Can you help migrate my store from Magento to Shopify?",
-            answer: <>Absolutely. Our <Link href="/services/web-design-development/shopify-development-services" className="hover:underline text-[#00b5ca]">Magento to Shopify migration services</Link> ensure that your product data, customer history, and SEO rankings are preserved during the transition, with zero downtime.</>
+            answer: <>Absolutely. Our <Link href="/services/web-design-development/shopify-development-services" className="hover:underline text-[#00b5ca]">Magento to Shopify migration services</Link> ensure that your product data, customer history, and SEO rankings are preserved during the transition, with minimal downtime.</>
         },
         {
             question: "Is my e-commerce store ADA compliant?",

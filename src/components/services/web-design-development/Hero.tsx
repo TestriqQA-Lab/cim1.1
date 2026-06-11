@@ -117,10 +117,10 @@ export default function Hero() {
                         {/* Tagline */}
                         <div className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
                             <p>
-                                As a premier <Link href="/services/web-design-development" className="text-[var(--brand-blue)] font-bold hover:underline transition-colors">web development company</Link> with 15+ years of proven expertise, we deliver <Link href="/services/web-design-development/business-corporate" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">custom website development</Link> solutions that drive measurable ROI.
+                                As an expert <Link href="/services/web-design-development" className="text-[var(--brand-blue)] font-bold hover:underline transition-colors">web development company</Link> with 12+ years of proven expertise, we deliver <Link href="/services/web-design-development/business-corporate" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">custom website development</Link> solutions that drive measurable ROI.
                             </p>
                             <p className="text-base md:text-lg">
-                                Our <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">professional web design agency</Link> has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue)] font-bold">300% traffic growth</span> and 20% conversion rate improvements.
+                                Our <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">professional web design agency</Link> has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue)] font-bold">sustained traffic growth</span> and conversion rate improvements.
                             </p>
                         </div>
 
@@ -132,7 +132,7 @@ export default function Hero() {
                                 { icon: Smartphone, text: "Responsive Design" },
                                 { icon: TrendingUp, text: "Global SEO" },
                                 { icon: ShieldCheck, text: "Enterprise Security" },
-                                { icon: Code, text: "Bug-Free Code" },
+                                { icon: Code, text: "Clean, Tested Code" },
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-center gap-2.5 p-2.5 rounded-xl transition-all duration-300 hover:scale-105 border border-transparent hover:border-[var(--brand-blue)]"
                                     style={{
@@ -182,7 +182,7 @@ export default function Hero() {
                                     95%
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">
-                                    Bug-Free Delivery
+                                    Quality-Assured Delivery
                                 </div>
                             </div>
                             <div className="text-center">

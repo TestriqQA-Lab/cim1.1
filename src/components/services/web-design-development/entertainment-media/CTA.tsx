@@ -156,7 +156,7 @@ export default function CTA() {
                                         WebkitTextFillColor: "transparent",
                                     }}
                                 >
-                                    99.9%
+                                    High
                                 </div>
                                 <div className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                     Uptime SLA

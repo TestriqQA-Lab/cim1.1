@@ -181,7 +181,7 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#6DB33F" }}>99.9%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#6DB33F" }}>High</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Uptime SLA</p>
                             </div>
                         </div>

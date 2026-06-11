@@ -46,6 +46,7 @@ const timelineLabels: Record<string, string> = {
 export async function POST(request: Request) {
     try {
         const body: GetInTouchFormData = await request.json();
+        if ((body as { hp_field?: string }).hp_field) return NextResponse.json({ success: true }); // honeypot
         const { name, website, email, phone, referral, services, goal, budget, timeline } = body;
 
         // Validation

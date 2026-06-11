@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
             highlights: [
                 { icon: Zap, text: "<100ms Latency" },
                 { icon: BarChart3, text: "High Throughput" },
-                { icon: Users, text: "99.999% Uptime" }
+                { icon: Users, text: "High Availability" }
             ],
             color: "#0ea5e9",
             gradient: "from-[#0ea5e9] to-[#38bdf8]",
@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
 
     const stats = [
         { value: "50+", label: "FinTech Products" },
-        { value: "$10B+", label: "Processed Volume" },
+        { value: "High-Volume", label: "Processed Volume" },
         { value: "100%", label: "Security Record" },
         { value: "24/7", label: "Critical Support" },
     ];

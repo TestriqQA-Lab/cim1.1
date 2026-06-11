@@ -41,7 +41,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Global Brand Identity Design Services | Award-Winning Agency (2026)',
-    description: 'Transform your business with world-class brand identity design services. We craft custom logos, visual systems, and strategies for startups and enterprises. 500+ successful brand launches, 300% average ROI, 95% client retention. More than just a logo — we build scalable brand ecosystems using 2026 EEAT principles.',
+    description: 'Transform your business with expert brand identity design services. We craft custom logos, visual systems, and strategies for startups and enterprises. 500+ successful brand launches, strong average ROI, strong client retention. More than just a logo — we build scalable brand ecosystems using 2026 EEAT principles.',
     url: '/services/brand-identity-design',
     keywords: [
         'brand identity design',
@@ -69,7 +69,7 @@ export default function BrandIdentityDesignPage() {
 
         generateWebPageSchema({
             name: "Global Brand Identity Design Services | Award-Winning Agency (2026)",
-            description: "Transform your business with world-class brand identity design services. We craft custom logos, visual systems, and strategies for startups and enterprises. 500+ successful brand launches, 300% average ROI, 95% client retention. More than just a logo — we build scalable brand ecosystems using 2026 EEAT principles.",
+            description: "Transform your business with expert brand identity design services. We craft custom logos, visual systems, and strategies for startups and enterprises. 500+ successful brand launches, strong average ROI, strong client retention. More than just a logo — we build scalable brand ecosystems using 2026 EEAT principles.",
             urlPath: "/services/brand-identity-design",
             datePublished: "2025-01-01",
             dateModified: "2026-04-10",
@@ -88,7 +88,7 @@ export default function BrandIdentityDesignPage() {
             "@type": "Service",
             "@id": "https://www.cinuteinfomedia.com/services/brand-identity-design/#service",
             "name": "Brand Identity Design Services",
-            "description": "More than just a logo — we build scalable brand ecosystems. As a premier Brand Identity Design Agency, we engineer comprehensive brand experiences that drive recognition, trust, and revenue. Custom brand design frameworks built on 2026 EEAT principles. 500+ successful brand launches, 300% average traffic growth, 95% client retention. Specialized in brand identity design for SaaS products, ecommerce platforms, and luxury brands delivering pixel-perfect assets across web, mobile, and print. WCAG 2.1 compliant typography, SEO-first design optimized for Core Web Vitals.",
+            "description": "More than just a logo — we build scalable brand ecosystems. As a Brand Identity Design Agency, we engineer comprehensive brand experiences that drive recognition, trust, and revenue. Custom brand design frameworks built on 2026 EEAT principles. 500+ successful brand launches, sustained traffic growth, strong client retention. Specialized in brand identity design for SaaS products, ecommerce platforms, and luxury brands delivering pixel-perfect assets across web, mobile, and print. WCAG 2.1 compliant typography, SEO-first design optimized for Core Web Vitals.",
             "url": "https://www.cinuteinfomedia.com/services/brand-identity-design",
             "serviceType": "Brand Identity Design & Visual Branding",
             "provider": {

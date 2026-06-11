@@ -63,11 +63,11 @@ export default function CTA() {
                         className="text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        Ready to create a website that loads instantly and ranks higher? Our Astro development agency delivers 100% PageSpeed scores, SEO-first architecture, and 24/7 technical support.
+                        Ready to create a website that loads instantly and ranks higher? Our Astro development agency delivers near-perfect PageSpeed scores, SEO-first architecture, and 24/7 technical support.
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8 text-sm md:text-base font-medium" style={{ color: "var(--foreground)" }}>
-                        <span>✓ 100% Performance Guarantee</span>
+                        <span>✓ Performance-Optimized</span>
                         <span>✓ Expert Migration Support</span>
                         <span>✓ Headless CMS Integration</span>
                     </div>

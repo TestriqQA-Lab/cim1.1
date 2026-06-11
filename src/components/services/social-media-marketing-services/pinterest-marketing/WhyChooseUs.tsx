@@ -80,14 +80,14 @@ export default function WhyChooseUs() {
                                 className="p-6 rounded-2xl border"
                                 style={{ borderColor: "var(--border-color)", backgroundColor: "var(--card-bg)" }}
                             >
-                                <h4 className="text-3xl font-bold mb-2" style={{ color: pinterestRed }}>85%</h4>
+                                <h4 className="text-3xl font-bold mb-2" style={{ color: pinterestRed }}>Higher</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Users say Pinterest helps them start new projects</p>
                             </div>
                             <div
                                 className="p-6 rounded-2xl border"
                                 style={{ borderColor: "var(--border-color)", backgroundColor: "var(--card-bg)" }}
                             >
-                                <h4 className="text-3xl font-bold mb-2" style={{ color: pinterestRed }}>3x</h4>
+                                <h4 className="text-3xl font-bold mb-2" style={{ color: pinterestRed }}>Strong</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Higher conversion rate vs. other platforms</p>
                             </div>
                         </div>

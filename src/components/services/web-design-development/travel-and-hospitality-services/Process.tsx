@@ -116,7 +116,7 @@ export default function Process() {
             title: "Quality Assurance",
             subtitle: "Connection Hub",
             description:
-                "Rigorous automated and manual testing to ensure 95% bug-free delivery across all devices and global networks.",
+                "Rigorous automated and manual testing to ensure rigorously tested delivery across all devices and global networks.",
             deliverables: [
                 "Automated/Manual testing",
                 "Security validation",

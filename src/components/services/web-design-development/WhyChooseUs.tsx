@@ -20,13 +20,13 @@ export default function WhyChooseUs() {
         {
             icon: Smartphone,
             title: "Responsive Web Design",
-            description: <>Mobile-first approach ensuring flawless display on all devices. Average <Link href="/services/performance-marketing" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">20% conversion rate</Link> improvement post-launch by using <Link href="/services/web-design-development" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Responsive Web Design</Link>.</>,
+            description: <>Mobile-first approach ensuring flawless display on all devices. Average <Link href="/services/performance-marketing" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">conversion rate</Link> improvement post-launch by using <Link href="/services/web-design-development" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Responsive Web Design</Link>.</>,
             color: "from-[#00efd6] to-[#00b5ca]",
         },
         {
             icon: Lock,
             title: "Enterprise-Grade Security",
-            description: <>Advanced protocols and AWS-secured architecture. <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Enterprise-Grade Security</Link> ensuring 95% bug-free delivery on first deployment for peace of mind.</>,
+            description: <>Advanced protocols and AWS-secured architecture. <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">Enterprise-Grade Security</Link> ensuring rigorously tested delivery on first deployment for peace of mind.</>,
             color: "from-[#bc3feb] to-[#fab900]",
         },
         {
@@ -176,7 +176,7 @@ export default function WhyChooseUs() {
                 {/* Stats Section */}
                 <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
                     {[
-                        { value: "99.9%", label: "Uptime Guarantee" },
+                        { value: "24/7", label: "Monitoring" },
                         { value: "< 2s", label: "Load Time" },
                         { value: "100%", label: "Mobile Optimized" },
                         { value: "24/7", label: "Support" },

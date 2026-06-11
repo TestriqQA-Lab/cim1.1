@@ -93,7 +93,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            In today's hyper-competitive digital landscape, your brand needs more than just "likes"-it needs a strategic engine that drives real business results. As a premier Social Media Marketing Agency, we don't just post content; we engineer comprehensive social media marketing ecosystems designed to dominate your niche.
+                            In today's hyper-competitive digital landscape, your brand needs more than just "likes"-it needs a strategic engine that drives real business results. As an expert Social Media Marketing Agency, we don't just post content; we engineer comprehensive social media marketing ecosystems designed to dominate your niche.
                         </p>
 
                         {/* Feature Highlights */}

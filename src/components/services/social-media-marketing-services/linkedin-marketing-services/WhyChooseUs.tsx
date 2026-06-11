@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Proven B2B Results",
-            description: "We've generated thousands of qualified B2B leads with industry-leading conversion rates.",
+            description: "We've generated thousands of qualified B2B leads with strong conversion rates.",
             color: "#0077B5",
         },
         {
@@ -103,14 +103,14 @@ export default function WhyChooseUs() {
                         },
                         {
                             icon: Zap,
-                            title: "95% Bug-Free Implementations",
+                            title: "Rigorously Tested Implementations",
                             description: "Flawless tracking setup (Insight Tags, API integrations) for 100+ global clients.",
                             color: "#0077B5",
                         },
                         {
                             icon: TrendingUp,
                             title: "Data-Driven ROI",
-                            description: "We've delivered 300% traffic growth and 20% CTR lifts for tech startups and enterprises alike.",
+                            description: "We've delivered sustained traffic growth and measurable CTR lifts for tech startups and enterprises alike.",
                             color: "#004182",
                         },
                         {

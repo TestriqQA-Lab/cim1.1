@@ -248,7 +248,7 @@ export default function IndustriesAndUseCases() {
                             },
                             {
                                 icon: Users,
-                                metric: "$10M+",
+                                metric: "Significant",
                                 label: "Client Savings Generated",
                                 gradient: "from-green-500 to-emerald-500",
                                 delay: "1.4s",

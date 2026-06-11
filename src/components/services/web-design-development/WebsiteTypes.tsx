@@ -198,7 +198,7 @@ export default function WebsiteTypes() {
             icon: Layers,
             title: "Contentful Headless CMS Development",
             description: "Enterprise composable content platform for omnichannel experiences with GraphQL and REST.",
-            features: ["Composable", "Enterprise SaaS", "99.99% Uptime", "Global CDN"],
+            features: ["Composable", "Enterprise SaaS", "High Availability", "Global CDN"],
             color: "from-[#0286FF] to-[#4DA3FF]",
             href: "/services/web-design-development/contentful-headless-cms",
         },

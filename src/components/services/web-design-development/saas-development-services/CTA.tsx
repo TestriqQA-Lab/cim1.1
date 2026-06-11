@@ -95,7 +95,7 @@ export default function CTA() {
                             label: "End Users Served",
                         },
                         {
-                            number: "99.9%",
+                            number: "High",
                             label: "Uptime SLA",
                         },
                     ].map((indicator, idx) => (

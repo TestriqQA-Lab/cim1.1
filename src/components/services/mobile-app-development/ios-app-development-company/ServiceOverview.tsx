@@ -18,7 +18,7 @@ export default function ServiceOverview() {
         {
             icon: Smartphone,
             title: "iPhone App Development",
-            description: "We engineer Custom iPhone app development for startups and Fortune 500s alike. Our apps harness the latest iOS features, ensuring compatibility across all devices.",
+            description: "We engineer Custom iPhone app development for startups and large enterprises alike. Our apps harness the latest iOS features, ensuring compatibility across all devices.",
             gradient: "from-[#007AFF] to-[#5AC8FA]",
             shadowColor: "rgba(0, 122, 255, 0.4)",
         },

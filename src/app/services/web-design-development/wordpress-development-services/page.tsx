@@ -10,10 +10,10 @@ import CTA from "@/components/services/web-design-development/wordpress-developm
 
 export const metadata: Metadata = {
     title: "WordPress Development Services | Custom & Enterprise WP Agency",
-    description: "Scale your business with #1 WordPress development services. Custom themes, WooCommerce & 2026-ready SEO optimization. Get a bug-free, high-ROI site today!",
+    description: "Scale your business with expert WordPress development services. Custom themes, WooCommerce & 2026-ready SEO optimization. Get a reliable, high-ROI site today!",
     openGraph: {
         title: "WordPress Development Services | Custom & Enterprise WP Agency",
-        description: "Scale your business with #1 WordPress development services. Custom themes, WooCommerce & 2026-ready SEO optimization. Get a bug-free, high-ROI site today!",
+        description: "Scale your business with expert WordPress development services. Custom themes, WooCommerce & 2026-ready SEO optimization. Get a reliable, high-ROI site today!",
         url: "https://www.cinuteinfomedia.com/services/web-design-development/wordpress-development-services",
         type: "website",
         images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "WordPress Development Services | Custom & Enterprise WP Agency",
-        description: "Scale your business with #1 WordPress development services. Custom themes, WooCommerce & 2026-ready SEO optimization. Get a bug-free, high-ROI site today!",
+        description: "Scale your business with expert WordPress development services. Custom themes, WooCommerce & 2026-ready SEO optimization. Get a reliable, high-ROI site today!",
         images: ["/og-images/wordpress-development-services.webp"],
     },
     alternates: {

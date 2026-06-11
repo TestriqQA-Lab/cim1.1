@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
         {
             icon: Palette,
             title: "Design Excellence",
-            description: "We don't use cookie-cutter templates. Our interactive portfolio features are bespoke, award-winning creations. We focus on \"wow\" moments - micro-interactions, smooth scroll effects, and unique layouts - that keep users engaged and impressed."
+            description: "We don't use cookie-cutter templates. Our interactive portfolio features are bespoke, distinctive creations. We focus on \"wow\" moments - micro-interactions, smooth scroll effects, and unique layouts - that keep users engaged and impressed."
         },
         {
             icon: Eye,

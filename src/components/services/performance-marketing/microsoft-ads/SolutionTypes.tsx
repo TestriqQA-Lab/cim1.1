@@ -16,7 +16,7 @@ export default function SolutionTypes() {
             icon: Briefcase,
             frontDescription: "Reach decision-makers via LinkedIn profile targeting on search.",
             backDescription: "Target by Company, Job Function, and Industry directly within your search campaigns to capture high-value B2B leads.",
-            stats: "2x Higher Conv. Rate via LinkedIn Data",
+            stats: "Higher Conv. Rate via LinkedIn Data",
             color: "#0077B5", // LinkedIn Blue
         },
         {

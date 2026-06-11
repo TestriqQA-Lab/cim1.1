@@ -5,6 +5,7 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
     try {
         const body = await request.json();
+        if (body.hp_field) return NextResponse.json({ success: true }); // honeypot: bots fill hidden field
         const { name, email, phone, subject, message, budget, timeframe, fileName } = body;
 
         // Simple validation

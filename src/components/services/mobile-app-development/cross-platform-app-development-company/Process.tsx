@@ -55,11 +55,11 @@ export default function Process() {
         {
             icon: TestTube2,
             title: "Testing & QA",
-            description: "We don't compromise on quality. Our cross-platform app testing and quality assurance includes automated and manual testing on huge device farms to ensure bug-free apps and native-like performance.",
+            description: "We don't compromise on quality. Our cross-platform app testing and quality assurance includes automated and manual testing on huge device farms to ensure stable apps and native-like performance.",
             details: [
                 "Automated & manual testing",
                 "Device farm testing",
-                "Bug-free assurance",
+                "Quality assurance",
                 "Native-like performance",
             ],
             duration: "2-3 Weeks",

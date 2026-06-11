@@ -70,7 +70,7 @@ export default function Process() {
                         Our Proven <span style={{ color: "var(--brand-seo)" }}>SEO Process</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        A clear roadmap to #1. Here is how we deliver Enterprise organic growth SEO solutions:
+                        A clear roadmap to the top. Here is how we deliver Enterprise organic growth SEO solutions:
                     </p>
                 </div>
 

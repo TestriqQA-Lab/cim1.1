@@ -185,12 +185,12 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>70%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>Faster</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Faster Development Time</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>40%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>Greater</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cost Efficiency</p>
                             </div>
                         </div>

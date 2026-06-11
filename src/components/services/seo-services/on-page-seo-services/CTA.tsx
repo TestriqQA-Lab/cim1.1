@@ -38,7 +38,7 @@ export default function CTA() {
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
-                        Is your website ready for the 2026 search landscape? Get a detailed breakdown of your site's health and a roadmap to #1 rankings.
+                        Is your website ready for the 2026 search landscape? Get a detailed breakdown of your site's health and a roadmap to top rankings.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">

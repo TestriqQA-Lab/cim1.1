@@ -64,7 +64,7 @@ export default function Process() {
                 "Quality assurance",
                 "TestFlight Beta",
                 "Real-world feedback",
-                "Bug-free releases",
+                "Stable releases",
             ],
             duration: "2-3 Weeks",
         },

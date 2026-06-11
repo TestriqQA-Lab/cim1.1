@@ -37,7 +37,7 @@ export default function Process() {
             number: "04",
             icon: TestTube2,
             title: "Testing & QA",
-            description: "Rigorous testing to ensure bug-free and secure deliverables.",
+            description: "Rigorous testing to ensure stable and secure deliverables.",
             details: ["Unit testing (Pest/PHPUnit)", "Integration testing", "Browser testing (Dusk)", "Security scanning"],
         },
         {

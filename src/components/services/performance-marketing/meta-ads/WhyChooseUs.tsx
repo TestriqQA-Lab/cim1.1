@@ -23,8 +23,8 @@ export default function WhyChooseUs() {
             id: 2,
             icon: TrendingUp,
             title: "Proven Results",
-            description: "Average 400% ROAS across 300+ e-commerce and lead gen campaigns.",
-            stat: "400% ROAS",
+            description: "Average strong ROAS across 300+ e-commerce and lead gen campaigns.",
+            stat: "Strong ROAS",
         },
         {
             id: 3,
@@ -143,7 +143,7 @@ export default function WhyChooseUs() {
                             <div className="mt-4 flex items-center gap-2">
                                 <CheckCircle className="w-4 h-4" style={{ color: metaPurple }} />
                                 <span className="text-xs font-medium" style={{ color: metaPurple }}>
-                                    Guaranteed
+                                    Included
                                 </span>
                             </div>
 

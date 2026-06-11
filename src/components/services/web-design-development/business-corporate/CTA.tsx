@@ -102,8 +102,8 @@ export default function CTA() {
                             label: "Corporate Sites Delivered",
                         },
                         {
-                            number: "99.9%",
-                            label: "Uptime Guarantee",
+                            number: "High",
+                            label: "High Availability",
                         },
                         {
                             number: "Enterprise",

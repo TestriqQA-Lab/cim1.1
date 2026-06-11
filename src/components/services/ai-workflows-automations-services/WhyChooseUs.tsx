@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
         {
             icon: Clock,
             title: "Faster Execution & ROI",
-            description: <span>Accelerate delivery times by 10x. Our AI automation for <Link href="/services/performance-marketing/google-ads" className="hover:text-blue-500 underline decoration-dotted transition-colors">lead generation</Link> and sales ensures you never miss an opportunity, instantly qualifying and routing prospects while your team sleeps. Achieve faster <Link href="/services/performance-marketing" className="hover:text-blue-500 underline decoration-dotted transition-colors">ROI</Link> with precision targeting.</span>,
+            description: <span>Accelerate delivery times significantly. Our AI automation for <Link href="/services/performance-marketing/google-ads" className="hover:text-blue-500 underline decoration-dotted transition-colors">lead generation</Link> and sales ensures you never miss an opportunity, instantly qualifying and routing prospects while your team sleeps. Achieve faster <Link href="/services/performance-marketing" className="hover:text-blue-500 underline decoration-dotted transition-colors">ROI</Link> with precision targeting.</span>,
             gradient: "from-blue-500 to-cyan-500",
             iconBg: "bg-blue-500/10",
             iconColor: "text-blue-500",
@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
         {
             icon: Layers,
             title: <Link href="/services/web-design-development/nextjs-development-services" className="hover:text-purple-500 transition-colors">Scalable Workflows</Link>,
-            description: "Grow without the growing pains. Our architectures are designed for infinite scale, handling everything from AI-powered email triage and response automation for startups to complex ERP synchronizations for Fortune 500s.",
+            description: "Grow without the growing pains. Our architectures are designed for infinite scale, handling everything from AI-powered email triage and response automation for startups to complex ERP synchronizations for large enterprises.",
             gradient: "from-purple-500 to-indigo-500",
             iconBg: "bg-purple-500/10",
             iconColor: "text-purple-500",

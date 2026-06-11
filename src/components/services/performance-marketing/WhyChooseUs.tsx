@@ -37,8 +37,8 @@ export default function WhyChooseUs() {
             icon: Award,
             decorIcon: Shield,
             title: "Proven Track Record",
-            description: "Over $50M in client revenue generated with an average ROAS of 500%. We audit and fix inefficient accounts.",
-            highlight: "$50M+ Revenue",
+            description: "Significant client revenue generated with a strong average ROAS. We audit and fix inefficient accounts.",
+            highlight: "Significant Revenue",
             color: "#ea4335",
         },
     ];
