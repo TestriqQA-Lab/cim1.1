@@ -88,6 +88,57 @@ export default function InstagramMarketingPage() {
                     })
                 }}
             />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "What are Instagram marketing services?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Instagram marketing services encompass a wide range of activities designed to grow a brand's presence on the platform. This includes Instagram management, content creation, Instagram advertising, influencer outreach, and community engagement to drive brand awareness and sales."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How much do Instagram marketing services cost?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "The cost varies based on the scope of work, such as the number of Reels, ad spend management, or full-service management. Contact us for a custom quote tailored to your business needs."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What should an Instagram marketing strategy include?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "A robust strategy includes visual brand guidelines, a content calendar covering Reels, Stories, and Posts, a targeted hashtag strategy, Instagram ad campaign management, and a plan for community engagement and influencer partnerships."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Why should businesses use Instagram marketing services?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "With the platform's shift toward social commerce and Reels, professional management ensures you stay ahead of algorithm changes, maintain high-quality aesthetics, and achieve stronger click-through performance than in-house management often yields."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How do I choose the best Instagram marketing agency?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Look for an agency with a proven track record and demonstrated experience, industry-specific expertise, transparency in reporting, and a focus on return on investment rather than just follower counts."
+                                }
+                            }
+                        ]
+                    })
+                }}
+            />
             <Hero />
             <ServiceOverview />
             <SolutionTypes />

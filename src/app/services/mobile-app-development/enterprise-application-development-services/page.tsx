@@ -59,7 +59,61 @@ const jsonLd = {
                 "url": "https://www.cinuteinfomedia.com/"
             },
             "serviceType": "Enterprise App Development",
-            "areaServed": ["US", "EU", "India", "APAC"]
+            "areaServed": ["US", "EU", "India", "APAC"],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Enterprise Application Development Services",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Manufacturing Enterprise Apps",
+                            "description": "Business process automation with production monitoring, quality control, and legacy system integration for the shop floor."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Healthcare Enterprise Apps",
+                            "description": "HIPAA and GDPR compliant software for patient engagement, clinical workflows, and secure health record administration."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Financial Services Applications",
+                            "description": "Custom fintech and banking applications with bank-level encryption and regulatory compliance for secure transactions."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Logistics & Supply Chain Apps",
+                            "description": "Supply chain management apps with route optimization and real-time shipment tracking across global markets."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Retail Enterprise Solutions",
+                            "description": "Omnichannel solutions with automated inventory management and employee apps for global retail chains."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Government & Public Sector Apps",
+                            "description": "Secure, compliant citizen portals and internal operations apps with FedRAMP-ready field inspection and case management."
+                        }
+                    }
+                ]
+            }
         },
         {
             "@type": "FAQPage",

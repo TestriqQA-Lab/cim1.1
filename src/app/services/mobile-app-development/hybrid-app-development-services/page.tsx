@@ -64,6 +64,60 @@ export default function HybridAppDevelopmentPage() {
                     "High-performance hybrid mobile app development services using Ionic and Capacitor. Single codebase solutions for iOS and Android.",
                 "areaServed": "Global",
                 "serviceType": "Mobile App Development",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Hybrid App Development Services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Custom Hybrid App Development for Startups (MVPs)",
+                                "description": "Cost-effective, feature-rich MVPs that launch on iOS and Android simultaneously to validate a business model quickly.",
+                            },
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Ecommerce and Retail Hybrid App Solutions",
+                                "description": "Mobile shopping apps with secure payment gateways and AR-driven product previews built on modern web view architecture.",
+                            },
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "B2B Hybrid Apps for Internal Operations",
+                                "description": "Secure internal business apps featuring robust data encryption and seamless ERP and CRM integration.",
+                            },
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Healthcare and HIPAA-Compliant Hybrid Apps",
+                                "description": "Healthcare applications that follow HIPAA guidelines, ensuring patient data privacy and secure telehealth capabilities.",
+                            },
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Wearable and IoT Hybrid App Development",
+                                "description": "Hybrid solutions that sync with smartwatches and IoT devices and provide real-time data visualization.",
+                            },
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Content, Media & EdTech Solutions",
+                                "description": "News portals and learning platforms supporting offline reading, video streaming, and real-time progress tracking.",
+                            },
+                        },
+                    ],
+                },
             },
             {
                 "@type": "FAQPage",
