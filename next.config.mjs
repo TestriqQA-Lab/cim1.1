@@ -31,19 +31,11 @@ const nextConfig = {
                 destination: '/services/social-media-marketing-services',
                 permanent: true,
             },
-            // T-1: case-sensitive routing — 301 lowercase variants to the actual (mixed-case)
-            // URLs so external lowercase links/typos don't 404. (Owner may later lowercase the
-            // Sanity slug 'organic-growth-seo-Guide' in Studio and flip this redirect.)
-            {
-                source: '/blog/organic-growth-seo-guide',
-                destination: '/blog/organic-growth-seo-Guide',
-                permanent: true,
-            },
-            {
-                source: '/services/mobile-app-development/harmony-os-app-development-services',
-                destination: '/services/mobile-app-development/harmony-OS-app-development-services',
-                permanent: true,
-            },
+            // NOTE: case-only redirects (lowercase -> mixed-case) were removed — Next/Vercel
+            // matches `source` case-insensitively, so the mixed-case canonical URL also matched
+            // its own lowercase source and 308-looped infinitely (harmony-OS service page +
+            // organic-growth-seo-Guide blog were dead in prod). Canonical pages now serve 200;
+            // lowercase variants 404 (acceptable — not in sitemap). Ideal long-term: lowercase slugs.
             {
                 source: '/services/web-design-development/portfolio-personal',
                 destination: '/services/web-design-development/branding-services',

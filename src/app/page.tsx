@@ -134,6 +134,10 @@ export default async function Home() {
           name: "Brand Identity Design",
           url: "/services/brand-identity-design",
         },
+        {
+          name: "Additional Support Services",
+          url: "/services/additional-support-services",
+        },
       ],
     }),
 
