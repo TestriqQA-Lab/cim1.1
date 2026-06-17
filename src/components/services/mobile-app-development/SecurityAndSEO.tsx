@@ -26,7 +26,7 @@ export default function SecurityAndSEO() {
         {
             icon: UserCheck,
             title: "Security-First Engineering",
-            description: "Regular penetration testing, security audits, vulnerability assessments, and 24/7 monitoring. GDPR, HIPAA, PCI-DSS, SOC 2 compliant.",
+            description: "Regular penetration testing, security audits, vulnerability assessments, and 24/7 monitoring. GDPR, HIPAA, PCI-DSS, and SOC 2-aligned security practices.",
             gradient: "from-[#43e97b] to-[#38f9d7]"
         }
     ];

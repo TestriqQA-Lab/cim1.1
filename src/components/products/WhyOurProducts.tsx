@@ -9,7 +9,7 @@ export default function WhyOurProducts() {
 
     const benefits = [
         { icon: Cpu, title: "Agency-Grade Engineering", description: "Built by developers who've delivered 300+ client projects. Real-world problem-solving, not theoretical features." },
-        { icon: Shield, title: "Enterprise-Ready Security", description: "SOC 2 compliant infrastructure, AES-256 encryption, and GDPR-ready data processing built into every product." },
+        { icon: Shield, title: "Enterprise-Ready Security", description: "SOC 2-aligned infrastructure, AES-256 encryption, and GDPR-ready data processing built into every product." },
         { icon: Zap, title: "AI-Powered Intelligence", description: "Cutting-edge AI — from ML automation to NLP and predictive analytics powering every product." },
         { icon: Globe, title: "Global Scale Architecture", description: "Cloud-native, edge-deployed architecture handling millions of requests with high availability." },
         { icon: Headphones, title: "Dedicated 24/7 Support", description: "Priority Slack channels, dedicated account managers, and comprehensive documentation for every product." },

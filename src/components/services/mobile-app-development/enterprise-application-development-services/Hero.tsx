@@ -127,9 +127,9 @@ export default function Hero() {
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
                                 "85+ Global clients",
-                                "500K+ Active Users",
+                                "Users at Scale",
                                 "High Availability",
-                                "SOC 2, GDPR Compliant",
+                                "SOC 2, GDPR-aligned",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
