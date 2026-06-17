@@ -39,7 +39,7 @@ export default function ServiceOverview() {
         {
             icon: Shield,
             title: "Enterprise Security",
-            description: <span>Implement AES-256 encryption, OAuth 2.0 authentication, and OWASP Mobile Top 10 compliance. GDPR, HIPAA, PCI-DSS, and <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)]">SOC 2 certified solutions</Link> with zero breaches since 2014.</span>,
+            description: <span>Implement AES-256 encryption, OAuth 2.0 authentication, and OWASP Mobile Top 10 compliance. GDPR, HIPAA, PCI-DSS, and <Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-purple)]">SOC 2-aligned practices</Link> with a strong security track record.</span>,
             gradient: "from-[#30cfd0] to-[#330867]"
         }
     ];
@@ -109,7 +109,7 @@ export default function ServiceOverview() {
                                 <span className="text-white text-sm font-bold">✓</span>
                             </div>
                             <div>
-                                <h4 className="font-semibold mb-1">12+ Years of Excellence</h4>
+                                <h4 className="font-semibold mb-1">Proven Excellence</h4>
                                 <p style={{ color: "var(--secondary-text)" }}>Proven expertise delivering mobile apps across diverse industries with strong client retention and reliable on-time delivery.</p>
                             </div>
                         </div>

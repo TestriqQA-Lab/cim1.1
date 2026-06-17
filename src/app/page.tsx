@@ -54,7 +54,7 @@ export default async function Home() {
       name: "Web Development Company | AI-Powered Digital Solutions",
       description: "Expert web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today!",
       urlPath: "",
-      datePublished: "2014-01-01",
+      datePublished: "2025-01-01",
       dateModified: "2026-03-02",
     }),
 

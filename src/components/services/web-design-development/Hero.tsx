@@ -117,7 +117,7 @@ export default function Hero() {
                         {/* Tagline */}
                         <div className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
                             <p>
-                                As an expert <Link href="/services/web-design-development" className="text-[var(--brand-blue)] font-bold hover:underline transition-colors">web development company</Link> with 12+ years of proven expertise, we deliver <Link href="/services/web-design-development/business-corporate" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">custom website development</Link> solutions that drive measurable ROI.
+                                As an expert <Link href="/services/web-design-development" className="text-[var(--brand-blue)] font-bold hover:underline transition-colors">web development company</Link> with proven, deep expertise, we deliver <Link href="/services/web-design-development/business-corporate" className="text-[var(--brand-teal)] font-bold hover:underline transition-colors">custom website development</Link> solutions that drive measurable ROI.
                             </p>
                             <p className="text-base md:text-lg">
                                 Our <Link href="/services/web-design-development/branding-services" className="hover:text-[var(--brand-blue)] hover:underline transition-colors">professional web design agency</Link> has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue)] font-bold">sustained traffic growth</span> and conversion rate improvements.

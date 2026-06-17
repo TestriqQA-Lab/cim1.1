@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
         {
             icon: Search,
             title: "Certified Technical Team",
-            description: "Google-certified developers and AWS Solutions Architects with 15+ years of combined expertise in complex web solutions.",
+            description: "Google-certified developers and AWS Solutions Architects with deep combined expertise in complex web solutions.",
             color: "from-[#008ac1] to-[#00b5ca]",
         },
         {

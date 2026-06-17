@@ -22,8 +22,8 @@ export default function WhyChooseUs() {
             id: 2,
             icon: TrendingUp,
             title: "B2B Specialists",
-            description: "10+ years focused exclusively on B2B LinkedIn advertising.",
-            stat: "10+ Years",
+            description: "Focused exclusively on B2B LinkedIn advertising.",
+            stat: "B2B Focus",
         },
         {
             id: 3,

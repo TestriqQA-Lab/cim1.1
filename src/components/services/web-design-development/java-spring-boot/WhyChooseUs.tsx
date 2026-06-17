@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: Users,
             title: "Expert Java Team",
-            description: "Certified Spring professionals with 10+ years of enterprise Java experience.",
+            description: "Certified Spring professionals with deep enterprise Java experience.",
             gradient: "from-emerald-500 via-green-500 to-lime-500",
             bgColor: "rgba(90, 154, 50, 0.15)",
             iconColor: "#5A9A32",

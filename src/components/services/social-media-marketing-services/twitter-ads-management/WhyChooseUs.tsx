@@ -7,8 +7,8 @@ export default function WhyChooseUs() {
     const benefits = [
         {
             icon: Trophy,
-            title: "30+ Years Leadership",
-            description: "As a global agency, we bring three decades of marketing excellence, navigating every shift from microblogging to the current X ecosystem.",
+            title: "Proven Leadership",
+            description: "As a global agency, we bring deep marketing excellence, navigating every shift from microblogging to the current X ecosystem.",
         },
         {
             icon: Zap,

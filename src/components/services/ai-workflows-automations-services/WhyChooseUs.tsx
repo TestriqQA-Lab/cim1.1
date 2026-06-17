@@ -218,7 +218,7 @@ export default function WhyChooseUs() {
                             </div>
                             <ul className="space-y-4">
                                 {[
-                                    "Top 1% Talent: Architects with 10+ years in Robotic Process Automation (RPA) vs. AI.",
+                                    "Top 1% Talent: Seasoned architects in Robotic Process Automation (RPA) vs. AI.",
                                     "Full-Stack Expertise: From Agentic AI Frameworks (LangChain, AutoGPT) to custom Python scripting.",
                                     "Metric-Obsessed: We don't just ship; we optimize for Real-time AI workflow monitoring and optimization.",
                                     "Global Reach: Serving the US, EU, India, and APAC with 24/7 support.",

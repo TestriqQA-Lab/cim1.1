@@ -17,9 +17,9 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Zap,
-            title: "30+ Years Experience",
+            title: "Deep Experience",
             description:
-                <>Our team brings 30+ years of combined expertise in <Link href="/services/web-design-development" className="hover:text-[#61dafb] transition-colors">web design and development</Link>, ensuring enterprise-grade solutions for every project.</>,
+                <>Our team brings deep combined expertise in <Link href="/services/web-design-development" className="hover:text-[#61dafb] transition-colors">web design and development</Link>, ensuring enterprise-grade solutions for every project.</>,
             gradient: "from-[#61dafb] to-[#00d4ff]",
         },
         {

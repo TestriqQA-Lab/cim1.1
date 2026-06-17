@@ -117,7 +117,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            As an expert <strong>Android app development company</strong> with over a decade of mastery in the <Link href="/services/mobile-app-development" className="text-[#3DDC84] hover:underline">mobile ecosystem</Link>, we engineer scalable, high-performance solutions that redefine digital experiences.
+                            As an expert <strong>Android app development company</strong> with deep mastery in the <Link href="/services/mobile-app-development" className="text-[#3DDC84] hover:underline">mobile ecosystem</Link>, we engineer scalable, high-performance solutions that redefine digital experiences.
                             Our iOS App Development Services empower startups and <Link href="/services/mobile-app-development/enterprise-application-development-services" className="text-[#3DDC84] hover:underline">enterprises</Link> to dominate the Apple ecosystem.
                         </p>
 

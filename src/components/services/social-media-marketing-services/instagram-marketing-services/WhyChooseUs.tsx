@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Experience (E)",
-            description: "30+ years in the digital space. We’ve seen the evolution from the first filter to the AI-driven 2026 algorithm.",
+            description: "Deep expertise in the digital space. We’ve seen the evolution from the first filter to the AI-driven 2026 algorithm.",
             color: "#E1306C",
         },
         {

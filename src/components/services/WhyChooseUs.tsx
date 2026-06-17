@@ -8,7 +8,7 @@ const reasons = [
     {
         icon: Shield,
         title: "Trusted Expertise",
-        description: <span>Years of experience delivering successful <Link href="/services/web-design-development" className="hover:text-[var(--brand-purple)] transition-colors">digital solutions</Link> across industries.</span>,
+        description: <span>Proven experience delivering successful <Link href="/services/web-design-development" className="hover:text-[var(--brand-purple)] transition-colors">digital solutions</Link> across industries.</span>,
         gradient: "linear-gradient(135deg, var(--brand-purple), var(--brand-blue))",
     },
     {
@@ -110,7 +110,7 @@ export default function WhyChooseUs() {
                             {[
                                 { value: "50+", label: "Projects" },
                                 { value: "98%", label: "Satisfaction" },
-                                { value: "5+", label: "Years" },
+                                { value: "Strong", label: "Track Record" },
                             ].map((stat, index) => (
                                 <div key={index} className="text-center">
                                     <div

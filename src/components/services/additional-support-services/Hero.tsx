@@ -98,7 +98,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Optimize your operations with our premium Business Support Services designed for global scalability. Whether you need Outsourced Administrative assistance, <Link href="/services/web-design-development" className="hover:text-[#fab900] transition-colors">IT Business Support Services</Link>, or Managed Support Services, our team ensures your business runs flawlessly 24/7. We combine 30+ years of digital expertise with cutting-edge technology to deliver Business Assistance Services that drive efficiency and growth.
+                            Optimize your operations with our premium Business Support Services designed for global scalability. Whether you need Outsourced Administrative assistance, <Link href="/services/web-design-development" className="hover:text-[#fab900] transition-colors">IT Business Support Services</Link>, or Managed Support Services, our team ensures your business runs flawlessly 24/7. We combine deep digital expertise with cutting-edge technology to deliver Business Assistance Services that drive efficiency and growth.
                         </p>
 
                         <p className="mt-4 text-sm md:text-base max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>

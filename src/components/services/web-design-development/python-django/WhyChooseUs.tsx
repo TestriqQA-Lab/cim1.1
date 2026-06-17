@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
         {
             icon: Trophy,
             title: "Python Expertise",
-            description: "8+ years of dedicated Python development across diverse industries and applications.",
+            description: "Deep, dedicated Python development across diverse industries and applications.",
             gradient: "from-amber-500 via-yellow-500 to-orange-500",
             bgColor: "rgba(251, 191, 36, 0.15)",
             iconColor: "#f59e0b",

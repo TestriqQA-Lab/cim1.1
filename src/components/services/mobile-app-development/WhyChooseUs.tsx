@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Proven Track Record",
-            description: "Mobile apps delivered across diverse industries, powering applications at scale. Strong client retention with industry awards since 2014."
+            description: "Mobile apps delivered across diverse industries, powering applications at scale. Strong client retention with industry awards."
         },
         {
             icon: Rocket,

@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: Users,
             title: "Certified Drupal Experts",
-            description: "Acquia-certified developers with 10+ years of enterprise Drupal experience.",
+            description: "Acquia-certified developers with deep enterprise Drupal experience.",
             gradient: "from-indigo-500 via-purple-500 to-violet-500",
             bgColor: "rgba(99, 102, 241, 0.15)",
             iconColor: "#6366f1",

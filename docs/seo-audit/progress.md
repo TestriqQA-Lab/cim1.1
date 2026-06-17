@@ -68,4 +68,12 @@ Owner delegated the factual call; applied the conservative/defensible default (u
 
 **ALL OWNER-VERIFY items now closed.** No code claim-items remain open. Optional code follow-ups still available: API-3 activation (needs Chrome-extension repo update in tandem) + server-side zod validation on 3 API routes. Owner actions unchanged (deploy, test forms, GSC Request-Indexing, ranking-action-plan).
 
+## Session 2026-06-17 — external schema audit reviewed + founding-year cleanup (C-10, SCHEMA-1)
+Owner shared "CIM Structure Schema Audit (12-06-2026)" xlsx + confirmed **founding year = 2025**.
+- **Audit verdict:** valid & useful (caught a real live bug) but a few wrong fix-recs (foundingDate→2026 wrong; ios/android "404" mislabeled — pages fine, schema link wrong; "thane→mumbai" not in code).
+- **SCHEMA-1 P0 fixed:** mobile hub `page.tsx` JSON-LD ItemList linked to `-services` slugs (live 404) → corrected to `-company` (real pages; live-verified 404→200). foundingDate already 2025 (no change). homepage datePublished 2014→2025.
+- **C-10 (big):** founding/experience age claims everywhere contradicted 2025 founding — reframed ~40 spots across 34 files: "12+/10+/15+/30+/8+/5+ years", "since 2014/2015/2010", "three decades/over a decade/decade-long", "Years in Business/Established 2014" → qualitative ("deep/proven/seasoned/combined expertise", "Founded 2025", "Strong/Track Record"). Group A (company-age) + Group B (team/individual-experience) both done. Bonus: residual C-7 "SOC 2 certified solutions"→"-aligned" + C-4b "zero breaches since 2014"→"strong security track record" caught in mobile ServiceOverview.
+- Verified: residual sweep 0, no U+FFFD, diff 49/49 line-balanced, **tsc exit 0**, committed on `main`.
+- **STILL OPEN (next schema batch):** add JSON-LD to pinterest-marketing + link-building (currently empty); enrich "incomplete" deep sub-pages; fix ItemList/FAQ mismatches (home additional-support, SEO AI-Search/CGE, SMM fb/insta, branding CTA/4-FAQ); career duplicate joblists; harmony-OS 308→200.
+
 See `MASTER-PROMPT.md` (plan), `deep-dive.md` (Phase 0 findings), `fix-backlog.md` (issue log), `FINAL-REPORT.md`.

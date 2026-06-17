@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         {
             icon: UserCheck,
             title: "Subject Matter Experts",
-            description: <>We match you with <Link href="/about" className="hover:text-emerald-500 transition-colors">industry-specific SMEs</Link> ensuring decade-long authority.</>,
+            description: <>We match you with <Link href="/about" className="hover:text-emerald-500 transition-colors">industry-specific SMEs</Link> ensuring lasting authority.</>,
         },
         {
             icon: Search,

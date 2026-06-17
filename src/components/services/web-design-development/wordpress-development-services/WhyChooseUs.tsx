@@ -126,7 +126,7 @@ export default function WhyChooseUs() {
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
                         In an era where digital first impressions are everything, generic templates no longer cut it.
-                        We combine 10+ years of technical mastery with ROI-driven marketing strategies to help you dominate search results.
+                        We combine deep technical mastery with ROI-driven marketing strategies to help you dominate search results.
                     </p>
                 </div>
 

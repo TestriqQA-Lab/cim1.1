@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
     const benefits = [
         {
             icon: CheckCircle,
-            title: "30+ Years Global Expertise",
+            title: "Deep Global Expertise",
             description: "Our strategists have hands-on experience with every major algorithm shift since the 90s.",
         },
         {

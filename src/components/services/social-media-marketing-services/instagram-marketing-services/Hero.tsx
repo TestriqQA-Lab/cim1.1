@@ -142,7 +142,7 @@ export default function Hero() {
                             {[
                                 <span key="1">95% Success Rate for <Link href="/services/web-design-development/ecommerce-development-company" className="hover:text-pink-500 transition-colors">High-Growth E-commerce Brands</Link></span>,
                                 "300% Average Increases in Organic Reach & Engagement",
-                                "30+ Years of Combined Digital Marketing & Creative Expertise",
+                                "Deep Combined Digital Marketing & Creative Expertise",
                                 "Direct-to-Consumer (D2C) & B2B Strategic Specialists",
                             ].map((feature, idx) => (
                                 <div

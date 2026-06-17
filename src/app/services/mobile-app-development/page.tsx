@@ -82,7 +82,7 @@ export default function MobileAppDevelopmentPage() {
 
         generateServiceSchema({
             name: "Mobile App Development Services",
-            description: "Transform your vision into high-performance mobile apps that drive business growth. As an expert mobile app development company with 12+ years of expertise, we craft custom iOS, Android, and cross-platform solutions globally. apps delivered globally, applications used at scale, strong client retention, a rigorous QA process.",
+            description: "Transform your vision into high-performance mobile apps that drive business growth. As an expert mobile app development company with deep expertise, we craft custom iOS, Android, and cross-platform solutions globally. apps delivered globally, applications used at scale, strong client retention, a rigorous QA process.",
             urlPath: "/services/mobile-app-development",
             serviceType: "Mobile App Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],
@@ -113,9 +113,9 @@ export default function MobileAppDevelopmentPage() {
             name: "Mobile App Development Platforms",
             description: "Platform-specific mobile app development services for iOS, Android, cross-platform, hybrid, enterprise, and HarmonyOS.",
             items: [
-                { name: "iOS App Development", description: "Swift, SwiftUI, App Store Optimization, and iCloud integration for premium Apple ecosystem experiences.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/ios-app-development-services" },
-                { name: "Android App Development", description: "Kotlin, Jetpack Compose, Firebase, and Material Design for powerful Android applications.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/android-app-development-services" },
-                { name: "Cross-Platform App Development", description: "React Native and Flutter development with 90%+ code reusability across iOS and Android.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/cross-platform-app-development-services" },
+                { name: "iOS App Development", description: "Swift, SwiftUI, App Store Optimization, and iCloud integration for premium Apple ecosystem experiences.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/ios-app-development-company" },
+                { name: "Android App Development", description: "Kotlin, Jetpack Compose, Firebase, and Material Design for powerful Android applications.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/android-app-development-company" },
+                { name: "Cross-Platform App Development", description: "React Native and Flutter development with 90%+ code reusability across iOS and Android.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/cross-platform-app-development-company" },
                 { name: "Hybrid App Development", description: "Ionic and Cordova for quick-to-market web-based mobile applications.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/hybrid-app-development-services" },
                 { name: "Enterprise Application Development", description: "Legacy integration, high security, and scalability for enterprise mobile solutions.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services" },
                 { name: "HarmonyOS App Development", description: "Huawei HarmonyOS SDK, distributed architecture, and IoT-focused mobile applications.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/harmony-OS-app-development-services" },

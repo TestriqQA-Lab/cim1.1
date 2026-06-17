@@ -145,7 +145,7 @@ export default function CTA() {
                                         WebkitTextFillColor: "transparent",
                                     }}
                                 >
-                                    5+ Years
+                                    Expert
                                 </div>
                                 <div className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                     Next.js Experience
