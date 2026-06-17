@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { z } from 'zod';
 
 interface GetInTouchFormData {
     name: string;
@@ -47,15 +48,25 @@ export async function POST(request: Request) {
     try {
         const body: GetInTouchFormData = await request.json();
         if ((body as { hp_field?: string }).hp_field) return NextResponse.json({ success: true }); // honeypot
-        const { name, website, email, phone, referral, services, goal, budget, timeline } = body;
-
-        // Validation
-        if (!name || !email || !phone || !services?.length || !goal || !budget || !timeline) {
+        const GetInTouchSchema = z.object({
+            name: z.string().trim().min(1).max(100),
+            email: z.string().trim().email().max(150),
+            phone: z.string().trim().min(1).max(30),
+            services: z.array(z.string()).min(1),
+            goal: z.string().trim().min(1).max(2000),
+            budget: z.string().trim().min(1).max(100),
+            timeline: z.string().trim().min(1).max(100),
+            website: z.string().trim().max(200).default(''),
+            referral: z.string().trim().max(200).default(''),
+        });
+        const parsed = GetInTouchSchema.safeParse(body);
+        if (!parsed.success) {
             return NextResponse.json(
-                { error: 'Missing required fields' },
+                { error: 'Invalid input', details: parsed.error.issues.map((i) => i.path.join('.') + ': ' + i.message) },
                 { status: 400 }
             );
         }
+        const { name, website, email, phone, referral, services, goal, budget, timeline } = parsed.data;
 
         // Configuration validation
         const missingVars = [];

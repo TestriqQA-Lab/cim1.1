@@ -1,20 +1,30 @@
 
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { z } from 'zod';
 
 export async function POST(request: Request) {
     try {
         const body = await request.json();
         if (body.hp_field) return NextResponse.json({ success: true }); // honeypot: bots fill hidden field
-        const { name, email, phone, subject, message, budget, timeframe, fileName } = body;
-
-        // Simple validation
-        if (!name || !email || !subject || !message) {
+        const ContactSchema = z.object({
+            name: z.string().trim().min(1).max(100),
+            email: z.string().trim().email().max(150),
+            subject: z.string().trim().min(1).max(150),
+            message: z.string().trim().min(1).max(5000),
+            phone: z.string().trim().max(30).optional(),
+            budget: z.string().trim().max(100).optional(),
+            timeframe: z.string().trim().max(100).optional(),
+            fileName: z.string().trim().max(255).optional(),
+        });
+        const parsed = ContactSchema.safeParse(body);
+        if (!parsed.success) {
             return NextResponse.json(
-                { error: 'Missing required fields' },
+                { error: 'Invalid input', details: parsed.error.issues.map((i) => i.path.join('.') + ': ' + i.message) },
                 { status: 400 }
             );
         }
+        const { name, email, phone, subject, message, budget, timeframe, fileName } = parsed.data;
 
         // Configuration validation
         const missingVars = [];

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
 import { Readable } from "stream";
 import nodemailer from "nodemailer";
+import { z } from "zod";
 
 export async function POST(req: NextRequest) {
     try {
@@ -16,6 +17,26 @@ export async function POST(req: NextRequest) {
         const jobTitle = formData.get("jobTitle") as string;
         const coverLetter = formData.get("coverLetter") as string;
         const resumeFile = formData.get("resume") as File | null;
+
+        const CareersSchema = z.object({
+            fullName: z.string().trim().min(1).max(100),
+            email: z.string().trim().email().max(150),
+            phone: z.string().trim().min(1).max(30),
+            jobTitle: z.string().trim().min(1).max(150),
+            linkedin: z.string().trim().max(300).nullish(),
+            portfolio: z.string().trim().max(300).nullish(),
+            coverLetter: z.string().trim().max(10000).nullish(),
+        });
+        const parsed = CareersSchema.safeParse({ fullName, email, phone, jobTitle, linkedin, portfolio, coverLetter });
+        if (!parsed.success) {
+            return NextResponse.json(
+                { error: 'Invalid input', details: parsed.error.issues.map((i) => i.path.join('.') + ': ' + i.message) },
+                { status: 400 }
+            );
+        }
+        if (resumeFile && resumeFile.size > 5 * 1024 * 1024) {
+            return NextResponse.json({ error: 'Resume exceeds 5MB limit' }, { status: 400 });
+        }
 
         // 1. Google Sheets & Drive Authentication
         const auth = new google.auth.GoogleAuth({
