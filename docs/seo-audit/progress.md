@@ -76,4 +76,12 @@ Owner shared "CIM Structure Schema Audit (12-06-2026)" xlsx + confirmed **foundi
 - Verified: residual sweep 0, no U+FFFD, diff 49/49 line-balanced, **tsc exit 0**, committed on `main`.
 - **STILL OPEN (next schema batch):** add JSON-LD to pinterest-marketing + link-building (currently empty); enrich "incomplete" deep sub-pages; fix ItemList/FAQ mismatches (home additional-support, SEO AI-Search/CGE, SMM fb/insta, branding CTA/4-FAQ); career duplicate joblists; harmony-OS 308→200.
 
+## Session 2026-06-17 (cont.) — completeness gap-check vs master plan → 4 gaps closed
+Re-ran the full Phase 0→5 plan as a gap-check (audit ~95% already done). Found 4 sub-areas that were **never systematically done** and closed them on branch `seo/cim-audit-fixes` (user merges):
+- **SEO-H1 (Phase 2.5 heading hierarchy):** `BlogContentRenderer` emitted `<h1>` for body `# ` → blog detail had 2 h1s. Demoted body headings one level (#→h2…); now 1 h1/page site-wide. ✅
+- **SEO-IMG (Phase 2.6 images):** audited — CLEAN. 0 raw `<img>`, 141/141 alt present, decorative `alt=""` correct, hero LCP `priority` correct. No fix needed. ✅
+- **CWV-1 (Phase 2.8):** reviewed — fonts optimal, 0 above-fold framer-motion; **524/525 components `"use client"`** = recommendation (server-component refactor, out of scope; live PageSpeed 98-100 so measured CWV fine). 🔵 rec
+- **VALIDATION-1 (Phase 5.2):** added zod `safeParse` server-side validation to contact/get-in-touch/careers routes + 5MB resume cap. ✅
+Commits: 8a3c625 (h1), 6da0d71 (zod), d1117b0 (docs). tsc clean (only the 5 known pre-existing ai-commentor errors from Jayesh's merged code). **Branch `seo/cim-audit-fixes` now 3 commits ahead of main — user to merge + deploy.**
+
 See `MASTER-PROMPT.md` (plan), `deep-dive.md` (Phase 0 findings), `fix-backlog.md` (issue log), `FINAL-REPORT.md`.
