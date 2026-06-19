@@ -7,6 +7,10 @@ import { products } from "@/data/products";
 import { productPrivacyPolicies } from "@/data/productPrivacy";
 import { productSupportData } from "@/data/productSupport";
 
+// ISR: regenerate the sitemap periodically so newly-published Sanity blog posts
+// appear without a full redeploy. Uses the public read client (no token).
+export const revalidate = 3600; // hourly
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://www.cinuteinfomedia.com';
 
