@@ -10,7 +10,7 @@
  * Phase 2 changes vs. Phase 1:
  *   - Accepts { licenseKey, deviceId } in the request body.
  *   - Resolves plan (free|pro) by validating the license against KV.
- *   - Restricts models by plan (free → 2.0-flash only, pro → all three).
+ *   - Restricts models by plan (free → 2.5-flash-lite only, pro → all three).
  *   - Server-authoritative daily rate limit via Vercel KV INCR/DECR.
  *   - Returns X-CIM-Plan / X-CIM-Quota-* headers so the extension can
  *     refresh its local cache after every generation.
@@ -31,12 +31,20 @@ import { normalizeLicenseKey } from "@/lib/cim/kv";
 export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
-const FREE_MODELS = new Set(["gemini-2.0-flash"]);
+const FREE_MODELS = new Set(["gemini-2.5-flash-lite"]);
 const PRO_MODELS = new Set([
-    "gemini-2.0-flash",
+    "gemini-2.5-flash-lite",
     "gemini-2.5-flash",
     "gemini-2.5-pro",
 ]);
+
+/** Google shut down 2.0 Flash on 2026-06-01; remap old clients automatically. */
+const DEPRECATED_MODEL_ALIASES: Record<string, string> = {
+    "gemini-2.0-flash": "gemini-2.5-flash-lite",
+    "gemini-2.0-flash-001": "gemini-2.5-flash-lite",
+    "gemini-2.0-flash-lite": "gemini-2.5-flash-lite",
+    "gemini-2.0-flash-lite-001": "gemini-2.5-flash-lite",
+};
 
 const UPGRADE_URL =
     "https://www.cinuteinfomedia.com/ai-commenter/upgrade";
@@ -93,8 +101,11 @@ export async function POST(req: Request): Promise<Response> {
         return jsonError(400, "Prompt missing or too large (1..32000 chars)");
     }
 
-    const requestedModel =
-        typeof body.model === "string" ? body.model : "gemini-2.0-flash";
+    let requestedModel =
+        typeof body.model === "string" ? body.model : "gemini-2.5-flash-lite";
+    if (DEPRECATED_MODEL_ALIASES[requestedModel]) {
+        requestedModel = DEPRECATED_MODEL_ALIASES[requestedModel];
+    }
     const temperature = clamp(Number(body.temperature ?? 0.9), 0.1, 1.5);
     const maxTokens = clamp(
         Math.round(Number(body.maxTokens ?? 1500)),
