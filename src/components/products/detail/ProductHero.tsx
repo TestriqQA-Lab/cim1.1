@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import { ChevronRight, ArrowRight, ShieldCheck, MessageSquare, Workflow, BarChart3, Monitor, Share2 } from "lucide-react";
+import { ChevronRight, ArrowRight, ShieldCheck, MessageSquare, Workflow, BarChart3, Monitor, Share2, Chrome } from "lucide-react";
 import type { Product } from "@/data/products";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
@@ -60,9 +60,22 @@ export default function ProductHero({ product }: { product: Product }) {
                         </p>
 
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-slideUp delay-300">
-                            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg" style={{ backgroundColor: color }}>
-                                Get Started <ArrowRight className="w-5 h-5 ml-2" />
-                            </Link>
+                            {product.extensionUrl ? (
+                                <a
+                                    href={product.extensionUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                                    style={{ backgroundColor: color }}
+                                >
+                                    <Chrome className="w-5 h-5 mr-2" />
+                                    Add to Chrome
+                                </a>
+                            ) : (
+                                <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg" style={{ backgroundColor: color }}>
+                                    Get Started <ArrowRight className="w-5 h-5 ml-2" />
+                                </Link>
+                            )}
                             <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border transition-all hover:bg-accent" style={{ borderColor: "var(--border-color)", color: "var(--foreground)" }}>
                                 Schedule Demo
                             </Link>

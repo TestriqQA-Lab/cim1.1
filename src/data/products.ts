@@ -37,6 +37,7 @@ export interface Product {
   supportUrl: string;
   privacyUrl: string;
   demoVideoUrl?: string; // Optional URL for product video demo
+  extensionUrl?: string; // Optional Chrome Web Store / Edge Add-ons URL for browser-extension products
 }
 
 // ============================================================================
@@ -87,6 +88,7 @@ export const products: Product[] = [
     ],
     supportUrl: "/products/chimegenius-ai-pro/support",
     privacyUrl: "/products/chimegenius-ai-pro/privacy-policy",
+    extensionUrl: "https://chromewebstore.google.com/detail/pnolpjljedjpmbjimpkhhimapgffidbk?utm_source=item-share-cb",
   },
   {
     id: "testriq-qa",
