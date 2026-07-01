@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
 import { Readable } from "stream";
-import nodemailer from "nodemailer";
 import { z } from "zod";
+import { createMailTransport, getMissingSmtpConfig } from "@/lib/cim/mail";
 
 export async function POST(req: NextRequest) {
     try {
@@ -81,9 +81,9 @@ export async function POST(req: NextRequest) {
 
                 resumeUrl = driveResponse.data.webViewLink || "Upload Failed";
 
-            } catch (driveError: any) {
+            } catch (driveError) {
                 console.error("Drive Upload Error:", driveError);
-                resumeUrl = "Upload Failed: " + (driveError.message || "Unknown Error");
+                resumeUrl = "Upload Failed: " + (driveError instanceof Error ? driveError.message : "Unknown Error");
             }
         }
 
@@ -113,16 +113,17 @@ export async function POST(req: NextRequest) {
         });
 
         // 5. Send Email Notifications (New Step)
+        // Email is best-effort: the application is already persisted to
+        // Sheets/Drive above, so a mail failure must NOT fail the request.
+        // We surface it via `emailSent` in the response instead of a 500.
+        let emailSent = false;
         try {
-            const transporter = nodemailer.createTransport({
-                host: process.env.SMTP_HOST,
-                port: Number(process.env.SMTP_PORT),
-                secure: true, // true for 465, false for other ports
-                auth: {
-                    user: process.env.SMTP_USER,
-                    pass: process.env.SMTP_PASSWORD,
-                },
-            });
+            const missingVars = getMissingSmtpConfig();
+            if (missingVars.length > 0) {
+                throw new Error(`Missing SMTP configuration: ${missingVars.join(", ")}`);
+            }
+            const transporter = createMailTransport();
+            await transporter.verify();
 
             // --- HTML Templates ---
             const BRAND_BLUE = "#008ac1";
@@ -228,12 +229,13 @@ export async function POST(req: NextRequest) {
                 `,
             });
 
+            emailSent = true;
         } catch (emailError) {
             console.error("Email Sending Error:", emailError);
             // We don't fail the request if email fails, but we log it.
         }
 
-        return NextResponse.json({ success: true });
+        return NextResponse.json({ success: true, emailSent });
 
     } catch (error) {
         console.error("Handler Error:", error);

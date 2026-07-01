@@ -1,7 +1,7 @@
 
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
 import { z } from 'zod';
+import { createMailTransport, getMissingSmtpConfig } from '@/lib/cim/mail';
 
 export async function POST(request: Request) {
     try {
@@ -27,41 +27,16 @@ export async function POST(request: Request) {
         const { name, email, phone, subject, message, budget, timeframe, fileName } = parsed.data;
 
         // Configuration validation
-        const missingVars = [];
-        if (!process.env.SMTP_HOST) missingVars.push('SMTP_HOST');
-        if (!process.env.SMTP_USER) missingVars.push('SMTP_USER');
-        if (!process.env.SMTP_PASSWORD) missingVars.push('SMTP_PASSWORD');
-
+        const missingVars = getMissingSmtpConfig();
         if (missingVars.length > 0) {
             console.error('Missing SMTP configuration variables:', missingVars.join(', '));
-            console.error('Current Env Keys (Generic):', Object.keys(process.env).filter(k => k.includes('SMTP') || k.includes('SMPT')));
             return NextResponse.json(
-                { error: `Server configuration error: Missing vars: ${missingVars.join(', ')}. Did you restart the server?` },
+                { error: `Server configuration error. Please try again later.` },
                 { status: 500 }
             );
         }
 
-        const smtpHost = process.env.SMTP_HOST;
-        // Auto-detect port if not specified (default to 587)
-        const smtpPort = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : 587;
-
-        // Auto-determine secure setting:
-        // Force secure: true if port is 465 (Zoho/Gmail SSL)
-        const isSecure = process.env.SMTP_SECURE === 'true' || smtpPort === 465;
-
-        const transporter = nodemailer.createTransport({
-            host: smtpHost,
-            port: smtpPort,
-            secure: isSecure, // true for 465, false for other ports
-            auth: {
-                user: process.env.SMTP_USER,
-                pass: process.env.SMTP_PASSWORD,
-            },
-            tls: {
-                // Do not fail on invalid certs
-                rejectUnauthorized: process.env.NODE_ENV === 'production'
-            }
-        });
+        const transporter = createMailTransport();
 
         // Verify connection configuration
         try {
@@ -69,7 +44,7 @@ export async function POST(request: Request) {
         } catch (verifyError) {
             console.error('SMTP Connection verification failed:', verifyError);
             return NextResponse.json(
-                { error: `SMTP Connection failed: ${(verifyError as Error).message}` },
+                { error: `Email service temporarily unavailable. Please try again later.` },
                 { status: 500 }
             );
         }

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
 import { z } from 'zod';
+import { createMailTransport, getMissingSmtpConfig } from '@/lib/cim/mail';
 
 interface GetInTouchFormData {
     name: string;
@@ -69,11 +69,7 @@ export async function POST(request: Request) {
         const { name, website, email, phone, referral, services, goal, budget, timeline } = parsed.data;
 
         // Configuration validation
-        const missingVars = [];
-        if (!process.env.SMTP_HOST) missingVars.push('SMTP_HOST');
-        if (!process.env.SMTP_USER) missingVars.push('SMTP_USER');
-        if (!process.env.SMTP_PASSWORD) missingVars.push('SMTP_PASSWORD');
-
+        const missingVars = getMissingSmtpConfig();
         if (missingVars.length > 0) {
             console.error('Missing SMTP configuration variables:', missingVars.join(', '));
             return NextResponse.json(
@@ -82,22 +78,7 @@ export async function POST(request: Request) {
             );
         }
 
-        const smtpHost = process.env.SMTP_HOST;
-        const smtpPort = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : 587;
-        const isSecure = process.env.SMTP_SECURE === 'true' || smtpPort === 465;
-
-        const transporter = nodemailer.createTransport({
-            host: smtpHost,
-            port: smtpPort,
-            secure: isSecure,
-            auth: {
-                user: process.env.SMTP_USER,
-                pass: process.env.SMTP_PASSWORD,
-            },
-            tls: {
-                rejectUnauthorized: process.env.NODE_ENV === 'production'
-            }
-        });
+        const transporter = createMailTransport();
 
         // Verify connection
         try {
