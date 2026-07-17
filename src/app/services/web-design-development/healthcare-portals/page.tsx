@@ -46,6 +46,7 @@ export const metadata = getPageMetadata({
         'Telehealth Platform',
         'Healthcare Web Development',
     ],
+    image: '/og-images/healthcare.jpeg',
 });
 
 export default function HealthcarePortalsPage() {

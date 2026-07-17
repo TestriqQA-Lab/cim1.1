@@ -124,7 +124,7 @@ export default function Hero() {
                             {[
                                 "Content Graph",
                                 "GraphQL & REST",
-                                "99.99% Uptime",
+                                "High Availability",
                                 <Link href="/services/web-design-development/saas-development-services" className="hover:underline text-inherit">Enterprise SaaS</Link>,
                             ].map((feature, idx) => (
                                 <div
@@ -176,7 +176,7 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#0286FF" }}>99.99%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#0286FF" }}>High</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Uptime SLA</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />

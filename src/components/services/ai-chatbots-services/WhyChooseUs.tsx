@@ -8,12 +8,12 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Proven Track Record",
-            description: <span>300% Traffic Growth via <Link href="/services/seo-services" className="hover:text-violet-500 transition-colors">SEO-optimized</Link> conversational flows. 95% Bug-Free Apps delivered for 50+ Fintech & Healthcare clients.</span>,
+            description: <span>Sustained Traffic Growth via <Link href="/services/seo-services" className="hover:text-violet-500 transition-colors">SEO-optimized</Link> conversational flows. Rigorously tested apps delivered for 50+ Fintech & Healthcare clients.</span>,
             gradient: "from-violet-500 via-purple-500 to-indigo-500",
             iconBg: "bg-violet-500/10",
             iconColor: "text-violet-500",
 
-            features: ["300% Traffic Growth", "95% Bug-Free Apps", "20%+ CTR Lifts"],
+            features: ["Sustained Traffic Growth", "Rigorously Tested Apps", "Measurable CTR Lifts"],
         },
         {
             icon: Shield,
@@ -116,7 +116,7 @@ export default function WhyChooseUs() {
                             Why Partner With Our <span style={{ color: "var(--brand-chatbot)" }}>AI Chatbot Agency</span>?
                         </h2>
                         <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            We don't just build bots; we build revenue engines. Our team of 50+ engineers has delivered Custom AI Chatbot Development projects for Fortune 500s and agile startups alike.
+                            We don't just build bots; we build revenue engines. Our team of 50+ engineers has delivered Custom AI Chatbot Development projects for enterprises and agile startups alike.
                         </p>
                     </div>
 

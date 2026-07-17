@@ -89,10 +89,10 @@ export default function DesignTools() {
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                        Industry-Leading <span style={{ color: "var(--brand-yellow)" }}>Design Tools</span>
+                        Professional <span style={{ color: "var(--brand-yellow)" }}>Design Tools</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        We use the best-in-class design software to bring your brand vision to life with precision and creativity.
+                        We use professional design software to bring your brand vision to life with precision and creativity.
                     </p>
                 </div>
 

@@ -41,7 +41,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Custom AI Chatbot Development Agency | Cinute InfoMedia',
-    description: 'Transform customer support with our Enterprise AI Chatbot Platform. Custom AI chatbots for eCommerce, SaaS & Healthcare. 10M+ conversations handled, 98% satisfaction rate, 50+ industries served, 80% automation, <1s response time, 300% ROI.',
+    description: 'Transform customer support with our Enterprise AI Chatbot Platform. Custom AI chatbots for eCommerce, SaaS & Healthcare. 10M+ conversations handled, high customer satisfaction, 50+ industries served, high automation, <1s response time, strong ROI.',
     url: '/services/ai-chatbots-services',
     keywords: [
         'AI Chatbot Services',
@@ -52,6 +52,7 @@ export const metadata = getPageMetadata({
         'eCommerce AI chatbot',
         'healthcare AI chatbot',
     ],
+    image: '/og-images/ai_powered_chatbots.webp',
 });
 
 export default function AIPoweredChatbotsPage() {
@@ -65,7 +66,7 @@ export default function AIPoweredChatbotsPage() {
 
         generateWebPageSchema({
             name: "Custom AI Chatbot Development Agency | Cinute InfoMedia",
-            description: "Transform customer support with our Enterprise AI Chatbot Platform. Custom AI chatbots for eCommerce, SaaS & Healthcare. 10M+ conversations handled, 98% satisfaction rate, 50+ industries served, 80% automation, <1s response time, 300% ROI.",
+            description: "Transform customer support with our Enterprise AI Chatbot Platform. Custom AI chatbots for eCommerce, SaaS & Healthcare. 10M+ conversations handled, high customer satisfaction, 50+ industries served, high automation, <1s response time, strong ROI.",
             urlPath: "/services/ai-chatbots-services",
             datePublished: "2025-01-01",
             dateModified: "2026-04-10",
@@ -82,7 +83,7 @@ export default function AIPoweredChatbotsPage() {
 
         generateServiceSchema({
             name: "AI Chatbot Services",
-            description: "Empower your business with intelligent, 24/7 conversations at scale. Custom AI Chatbot Development Agency building enterprise AI platforms with context understanding and sentiment analysis using LLMs and NLP. 10M+ conversations handled, 98% satisfaction rate, 50+ industries served, 80% Tier-1 query automation, 95% engagement, <1s response time, 98% accuracy.",
+            description: "Empower your business with intelligent, 24/7 conversations at scale. Custom AI Chatbot Development Agency building enterprise AI platforms with context understanding and sentiment analysis using LLMs and NLP. 10M+ conversations handled, high customer satisfaction, 50+ industries served, Tier-1 query automation, high engagement, <1s response time, high accuracy.",
             urlPath: "/services/ai-chatbots-services",
             serviceType: "Custom AI Chatbot Development & Enterprise Platforms",
             areaServed: ["IN", "US", "GB", "AU", "AE"],
@@ -112,7 +113,7 @@ export default function AIPoweredChatbotsPage() {
         }),
 
         generateFAQSchema([
-            { question: "What are the benefits of AI chatbots for businesses?", answer: "AI chatbots improve operational efficiency by automating 80% of routine queries, increase customer satisfaction with instant 24/7 responses, and deliver up to 300% ROI through reduced support costs." },
+            { question: "What are the benefits of AI chatbots for businesses?", answer: "AI chatbots improve operational efficiency by automating routine queries, increase customer satisfaction with instant 24/7 responses, and deliver a strong ROI through reduced support costs." },
             { question: "How can AI chatbots improve customer service?", answer: "AI chatbots provide instant responses with less than 1 second response time, handle multiple conversations simultaneously, and escalate complex queries to human agents seamlessly." },
             { question: "What is the difference between rule-based and AI chatbots?", answer: "Rule-based chatbots follow predefined scripts and decision trees. AI chatbots understand context and intent using NLP and LLMs like GPT-4o, enabling natural conversations and handling unstructured queries." },
             { question: "How much does it cost to build an AI chatbot?", answer: "Custom AI chatbot solutions start from $500 per month. Pricing varies based on complexity, integrations, conversation volume, and whether you need enterprise features like HIPAA compliance or SOC2 security." },
@@ -121,13 +122,13 @@ export default function AIPoweredChatbotsPage() {
 
         generateHowToSchema({
             name: "Our 6-Step AI Chatbot Development Process",
-            description: "A proven 6-step methodology for building enterprise AI chatbots that handle 10M+ conversations with 98% satisfaction and 80% Tier-1 automation.",
+            description: "A proven 6-step methodology for building enterprise AI chatbots that handle 10M+ conversations with high customer satisfaction and Tier-1 automation.",
             steps: [
                 { name: "Discovery & Strategy", text: "Understanding business goals, user journeys, integration requirements, and defining chatbot personality. Timeline: 1-2 weeks.", url: "https://www.cinuteinfomedia.com/services/ai-chatbots-services/#step-discovery" },
                 { name: "Conversation Design", text: "Mapping dialog flows, intent architecture, fallback strategies, and multi-turn conversation blueprints. Timeline: 2-3 weeks.", url: "https://www.cinuteinfomedia.com/services/ai-chatbots-services/#step-design" },
                 { name: "Development & Training", text: "Building the chatbot with GPT-4o/Claude 3.5, RAG architecture, vector databases, and custom NLP training. Timeline: 4-6 weeks.", url: "https://www.cinuteinfomedia.com/services/ai-chatbots-services/#step-development" },
                 { name: "Integration", text: "Connecting to CRM (Salesforce/HubSpot), helpdesk (Zendesk), eCommerce (Shopify), and omnichannel platforms. Timeline: 2-3 weeks.", url: "https://www.cinuteinfomedia.com/services/ai-chatbots-services/#step-integration" },
-                { name: "Testing & Optimization", text: "End-to-end conversation testing, accuracy validation, load testing, and performance tuning to 98% accuracy. Timeline: 1-2 weeks.", url: "https://www.cinuteinfomedia.com/services/ai-chatbots-services/#step-testing" },
+                { name: "Testing & Optimization", text: "End-to-end conversation testing, accuracy validation, load testing, and performance tuning to high accuracy. Timeline: 1-2 weeks.", url: "https://www.cinuteinfomedia.com/services/ai-chatbots-services/#step-testing" },
                 { name: "Launch & Evolve", text: "Go-live deployment, continuous learning from conversations, and iterative improvements based on analytics. Ongoing.", url: "https://www.cinuteinfomedia.com/services/ai-chatbots-services/#step-launch" },
             ],
         }),

@@ -181,16 +181,16 @@ export default function Hero() {
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
                                 <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>150+</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cross-Platform Apps Delivered Since 2015</p>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cross-Platform Apps Delivered at Scale</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>70%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>Faster</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Faster Development Time</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>40%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#667eea" }}>Greater</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Cost Efficiency</p>
                             </div>
                         </div>

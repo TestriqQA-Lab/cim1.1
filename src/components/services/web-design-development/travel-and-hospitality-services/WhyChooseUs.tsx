@@ -7,8 +7,8 @@ export default function WhyChooseUs() {
     const reasons = [
         {
             icon: Globe,
-            title: "Over 3 Decades of Expertise",
-            description: "Our expertise spans over three decades, delivering custom Travel Technology Solutions that solve complex challenges and drive growth.",
+            title: "Deep Expertise",
+            description: "Our deep expertise delivers custom Travel Technology Solutions that solve complex challenges and drive growth.",
             color: "#0d9488",
         },
         {
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
 
     const stats = [
         { value: "300%", label: "Traffic Growth" },
-        { value: "95%", label: "Bug-Free Delivery" },
+        { value: "80%+", label: "Test Coverage" },
         { value: "50+", label: "Global Partners" },
         { value: "24/7", label: "Monitoring" },
     ];

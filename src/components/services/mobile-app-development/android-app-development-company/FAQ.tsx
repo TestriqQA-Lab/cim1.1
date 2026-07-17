@@ -26,7 +26,7 @@ export default function FAQ() {
         },
         {
             question: "How do I publish my app on the Google Play Store?",
-            answer: <><span className="text-inherit">We handle the entire end-to-end publishing process. This includes creating your Developer Account, preparing high-res screenshots, writing </span><Link href="/services/seo-services" className="text-[#3DDC84] hover:underline">SEO-optimized</Link> descriptions, ensuring Google Play Protect compliance, and managing the review process for a guaranteed approval.</>,
+            answer: <><span className="text-inherit">We handle the entire end-to-end publishing process. This includes creating your Developer Account, preparing high-res screenshots, writing </span><Link href="/services/seo-services" className="text-[#3DDC84] hover:underline">SEO-optimized</Link> descriptions, ensuring Google Play Protect compliance, and managing the review process to maximize approval success.</>,
         },
         {
             question: "Do you offer Android app migration and legacy code modernization?",

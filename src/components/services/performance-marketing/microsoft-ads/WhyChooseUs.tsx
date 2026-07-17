@@ -112,7 +112,7 @@ export default function WhyChooseUs() {
                                 <div>
                                     <div className="flex justify-between mb-2">
                                         <span className="font-semibold" style={{ color: "var(--foreground)" }}>Avg. CPC Savings</span>
-                                        <span className="font-bold" style={{ color: "#107C10" }}>35%</span>
+                                        <span className="font-bold" style={{ color: "#107C10" }}>Lower</span>
                                     </div>
                                     <div className="h-3 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
                                         <div className="h-full rounded-full w-[35%]" style={{ backgroundColor: "#107C10" }} />

@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
         {
             icon: Trophy,
             title: "Verified Expertise",
-            description: <>500+ successful projects delivered globally, including retail sites seeing <Link href="/services/seo-services" className="text-[#f59e0b] hover:underline">300% traffic growth</Link>.</>,
+            description: <>500+ successful projects delivered globally, including retail sites seeing <Link href="/services/seo-services" className="text-[#f59e0b] hover:underline">sustained traffic growth</Link>.</>,
             gradient: "from-amber-500 via-yellow-500 to-orange-500",
             bgColor: "rgba(251, 191, 36, 0.15)",
             iconColor: "#f59e0b",
@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: ShieldCheck,
             title: "Security Hardening",
-            description: "Hardening fintech platforms with 95% bug-free deployment and military-grade encryption.",
+            description: "Hardening fintech platforms with rigorously tested deployment and military-grade encryption.",
             gradient: "from-red-500 via-orange-500 to-amber-500",
             bgColor: "rgba(239, 68, 68, 0.15)",
             iconColor: "#ef4444",
@@ -112,7 +112,7 @@ export default function WhyChooseUs() {
                         </span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-                        <span style={{ color: "var(--foreground)" }}>Why We’re the #1 WordPress Agency for </span>{" "}
+                        <span style={{ color: "var(--foreground)" }}>Why We’re a Trusted WordPress Agency for </span>{" "}
                         <span
                             className="inline-block"
                             style={{
@@ -126,7 +126,7 @@ export default function WhyChooseUs() {
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
                         In an era where digital first impressions are everything, generic templates no longer cut it.
-                        We combine 10+ years of technical mastery with ROI-driven marketing strategies to help you dominate search results.
+                        We combine deep technical mastery with ROI-driven marketing strategies to help you dominate search results.
                     </p>
                 </div>
 

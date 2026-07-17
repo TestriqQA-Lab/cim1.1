@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
             icon: Award,
             title: "Senior Engineers Only",
             description:
-                "Your project is handled by experienced backend engineers with 5+ years building production systems.",
+                "Your project is handled by experienced backend engineers building production systems.",
             gradient: "from-[#339933] to-[#215732]",
         },
         {

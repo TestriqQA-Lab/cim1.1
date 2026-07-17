@@ -30,14 +30,14 @@ export default function WhyChooseUs() {
         },
         {
             icon: Sparkles,
-            title: "30+ Years of Collective Authority",
-            description: <><span className="text-inherit">Our strategists have seen the evolution of the web. We apply three decades of experience to ensure your </span><Link href="/services/web-design-development" className="text-[#2563eb] hover:underline">Enterprise Software Development</Link> project avoids common pitfalls.</>,
+            title: "Deep Collective Authority",
+            description: <><span className="text-inherit">Our strategists have seen the evolution of the web. We apply deep, hard-won experience to ensure your </span><Link href="/services/web-design-development" className="text-[#2563eb] hover:underline">Enterprise Software Development</Link> project avoids common pitfalls.</>,
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
             icon: Headphones,
             title: "24/7 Enterprise Support",
-            description: <><span className="text-inherit">Dedicated </span><Link href="/services/additional-support-services" className="text-[#2563eb] hover:underline">support</Link> team with guaranteed SLAs, proactive monitoring, and rapid incident response backed by strict uptime guarantees.</>,
+            description: <><span className="text-inherit">Dedicated </span><Link href="/services/additional-support-services" className="text-[#2563eb] hover:underline">support</Link> team with clear SLAs, proactive monitoring, and rapid incident response.</>,
             shadowColor: "rgba(37, 99, 235, 0.3)",
         },
         {
@@ -95,7 +95,7 @@ export default function WhyChooseUs() {
                         </span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        The enterprise expertise, security, and 30+ years of collective authority your organization demands for massive ROI.
+                        The enterprise expertise, security, and deep collective authority your organization demands for massive ROI.
                     </p>
                 </div>
 

@@ -21,7 +21,7 @@ export default function FAQ() {
         },
         {
             question: "How much does it cost to build a hybrid mobile app in 2026?",
-            answer: "The cost typically ranges from $15,000 to $60,000+ depending on complexity. However, choosing hybrid development generally results in 50% cost savings compared to building two separate native applications for iOS and Android.",
+            answer: "The cost typically ranges from $15,000 to $60,000+ depending on complexity. However, choosing hybrid development generally results in significant cost savings compared to building two separate native applications for iOS and Android.",
         },
         {
             question: "Which frameworks are best for hybrid app development in 2026?",

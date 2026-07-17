@@ -66,7 +66,7 @@ export default function CTA() {
 
                     {/* Trust Badges */}
                     <div className="mt-10 flex flex-wrap justify-center gap-4">
-                        {["Google Premier Partner", "Certified Experts", "$10M+ Managed"].map((badge, idx) => (
+                        {["Google Premier Partner", "Certified Experts", "Scaled Ad Spend"].map((badge, idx) => (
                             <span
                                 key={idx}
                                 className="px-4 py-2 rounded-full text-sm font-medium border"

@@ -80,7 +80,7 @@ export default function CTA() {
                             <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>Pin Saves</p>
                         </div>
                         <div className="text-center">
-                            <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>2.5x</p>
+                            <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>Strong</p>
                             <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>Avg. ROAS</p>
                         </div>
                     </div>

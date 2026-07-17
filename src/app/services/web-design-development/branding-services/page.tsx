@@ -53,6 +53,7 @@ export const metadata = getPageMetadata({
         'Personal Brand Audit',
         'Next.js Portfolio'
     ],
+    image: '/og-images/portfolio_sites.jpeg',
 });
 
 export default function PortfolioPersonalPage() {
@@ -124,7 +125,7 @@ export default function PortfolioPersonalPage() {
 
         generateHowToSchema({
             name: "Our Creative Process for Personal Branding",
-            description: "A proven 6-step creative process for building powerful personal brands and portfolio websites that generate 3x more inquiries.",
+            description: "A proven 6-step creative process for building powerful personal brands and portfolio websites that generate more inquiries.",
             steps: [
                 { name: "Discovery Call", text: "A deep-dive interview to understand your unique value proposition, career goals, and target audience.", url: "https://www.cinuteinfomedia.com/services/web-design-development/branding-services/#step-discovery" },
                 { name: "Design Concepts", text: "Translating your personality into pixels via prototyping, mood boards, and visual identity exploration.", url: "https://www.cinuteinfomedia.com/services/web-design-development/branding-services/#step-design" },

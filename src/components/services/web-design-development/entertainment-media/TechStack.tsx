@@ -148,7 +148,7 @@ export default function TechStack() {
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
                         style={{ color: "var(--secondary-text)" }}
                     >
-                        We leverage industry-leading technologies to build scalable,
+                        We leverage modern technologies to build scalable,
                         high-performance entertainment platforms.
                     </p>
                 </div>

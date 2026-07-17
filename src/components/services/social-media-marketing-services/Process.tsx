@@ -65,7 +65,7 @@ export default function Process() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        <span style={{ color: "var(--brand-teal)" }}>A Proven 6-Step Process</span> for Guaranteed Social Success
+                        <span style={{ color: "var(--brand-teal)" }}>A Proven 6-Step Process</span> for Measurable Social Growth
                     </h2>
 
                     <div

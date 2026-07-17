@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
         {
             icon: Sparkles,
             title: "Proven EEAT Portfolio",
-            description: <>Managed 50+ enterprise-scale projects with 95% bug-free delivery on <Link href="/services/seo-services/technical-seo-services" className="hover:text-emerald-500 transition-colors">technical content</Link>.</>,
+            description: <>Managed 50+ enterprise-scale projects with rigorously tested delivery on <Link href="/services/seo-services/technical-seo-services" className="hover:text-emerald-500 transition-colors">technical content</Link>.</>,
         },
         {
             icon: Globe,
@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "ROI-First Mindset",
-            description: <>Clients see an average 30% lift in <Link href="/services/performance-marketing" className="hover:text-emerald-500 transition-colors">MQLs</Link> within 6 months of execution.</>,
+            description: <>Clients see an average lift in <Link href="/services/performance-marketing" className="hover:text-emerald-500 transition-colors">MQLs</Link> within 6 months of execution.</>,
         },
         {
             icon: Database,
@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         {
             icon: UserCheck,
             title: "Subject Matter Experts",
-            description: <>We match you with <Link href="/about" className="hover:text-emerald-500 transition-colors">industry-specific SMEs</Link> ensuring decade-long authority.</>,
+            description: <>We match you with <Link href="/about" className="hover:text-emerald-500 transition-colors">industry-specific SMEs</Link> ensuring lasting authority.</>,
         },
         {
             icon: Search,
@@ -86,7 +86,7 @@ export default function WhyChooseUs() {
                                 className="p-6 rounded-2xl border"
                                 style={{ borderColor: "var(--border-color)", backgroundColor: "var(--card-bg)" }}
                             >
-                                <h4 className="text-3xl font-bold mb-2" style={{ color: contentEmerald }}>$10M+</h4>
+                                <h4 className="text-3xl font-bold mb-2" style={{ color: contentEmerald }}>Significant</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Revenue Driven</p>
                             </div>
                         </div>

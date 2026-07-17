@@ -26,8 +26,8 @@ export default function WhyChooseUs() {
         },
         {
             icon: Zap,
-            title: "99.99% Uptime SLA",
-            description: "Enterprise-grade reliability with global CDN, automatic failover, and industry-leading uptime guarantees.",
+            title: "High Availability",
+            description: "Enterprise-grade reliability with global CDN, automatic failover, and high availability.",
             gradient: "from-cyan-500 via-blue-500 to-indigo-500",
             bgColor: "rgba(0, 89, 200, 0.15)",
             iconColor: "#0059C8",
@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Developer Experience",
-            description: "Best-in-class APIs, comprehensive SDKs, and extensive documentation for rapid development.",
+            description: "Robust APIs, comprehensive SDKs, and extensive documentation for rapid development.",
             gradient: "from-blue-500 via-sky-500 to-cyan-500",
             bgColor: "rgba(14, 165, 233, 0.15)",
             iconColor: "#0ea5e9",

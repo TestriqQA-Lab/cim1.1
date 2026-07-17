@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
         {
             icon: Users,
             title: "Certified Drupal Experts",
-            description: "Acquia-certified developers with 10+ years of enterprise Drupal experience.",
+            description: "Acquia-certified developers with deep enterprise Drupal experience.",
             gradient: "from-indigo-500 via-purple-500 to-violet-500",
             bgColor: "rgba(99, 102, 241, 0.15)",
             iconColor: "#6366f1",
@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
         {
             icon: Headphones,
             title: <Link href="/services/additional-support-services" className="hover:text-[#10b981] transition-colors">Ongoing Partnership</Link>,
-            description: "Long-term support agreements with SLA guarantees, training, and continuous improvement.",
+            description: "Long-term support agreements with clear SLAs, training, and continuous improvement.",
             gradient: "from-emerald-500 via-teal-500 to-cyan-500",
             bgColor: "rgba(16, 185, 129, 0.15)",
             iconColor: "#10b981",

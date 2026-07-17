@@ -27,7 +27,7 @@ export default function ServiceOverview() {
         {
             icon: PenTool,
             title: "SEO Content Writing Services",
-            description: "High-EEAT, long-form articles with data-driven insights driving 300%+ traffic growth.",
+            description: "High-EEAT, long-form articles with data-driven insights driving sustained traffic growth.",
             color: "#3B82F6",
         },
         {

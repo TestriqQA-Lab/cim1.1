@@ -22,7 +22,7 @@ export default function SolutionTypes() {
         {
             id: "b2b",
             title: <Link href="/services/web-design-development/saas-development-services" className="hover:underline">B2B Technology & SaaS</Link>,
-            description: <>High-convert SEO content for B2B lead generation and technical whitepapers. 95%+ accuracy for <Link href="/services/web-design-development/fintech-solutions" className="hover:text-emerald-500 transition-colors">fintech</Link>.</>,
+            description: <>High-convert SEO content for B2B lead generation and technical whitepapers. high accuracy for <Link href="/services/web-design-development/fintech-solutions" className="hover:text-emerald-500 transition-colors">fintech</Link>.</>,
             icon: Briefcase,
             color: contentEmerald,
         },

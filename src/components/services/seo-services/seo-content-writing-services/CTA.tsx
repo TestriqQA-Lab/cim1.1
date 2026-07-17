@@ -66,7 +66,7 @@ export default function CTA() {
                     {/* Stats strip */}
                     <div className="mt-16 pt-8 border-t flex flex-wrap justify-center gap-12 md:gap-24 opacity-70" style={{ borderColor: "var(--border-color)" }}>
                         <div className="text-center">
-                            <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>2x</p>
+                            <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>Strong</p>
                             <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>Content ROI in 12 Months</p>
                         </div>
                         <div className="text-center">

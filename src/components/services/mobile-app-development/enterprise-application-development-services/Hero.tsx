@@ -127,9 +127,9 @@ export default function Hero() {
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
                                 "85+ Global clients",
-                                "500K+ Active Users",
-                                "99.9% Uptime SLA",
-                                "SOC 2, GDPR Compliant",
+                                "Users at Scale",
+                                "High Availability",
+                                "SOC 2, GDPR-aligned",
                             ].map((feature, idx) => (
                                 <div
                                     key={idx}
@@ -175,8 +175,8 @@ export default function Hero() {
                         {/* Stats */}
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#2563eb" }}>95%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Bug-free applications</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#2563eb" }}>High</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Stable applications</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">

@@ -33,6 +33,7 @@ export const metadata = getPageMetadata({
         'cms integration',
         'content management system',
     ],
+    image: '/og-images/Headless.webp',
 });
 
 export default function HeadlessTraditionalCMSPage() {
@@ -72,7 +73,7 @@ export default function HeadlessTraditionalCMSPage() {
                 url: "/contact",
                 priceCurrency: "USD",
                 validFrom: "2025-01-01",
-                description: "Custom CMS development for headless and traditional platforms. 50+ projects completed with 60% reduction in content publishing time. Get in touch for a custom quote.",
+                description: "Custom CMS development for headless and traditional platforms. 50+ projects completed with significant reduction in content publishing time. Get in touch for a custom quote.",
             },
         }),
 
@@ -92,7 +93,7 @@ export default function HeadlessTraditionalCMSPage() {
 
         generateHowToSchema({
             name: "Our CMS Implementation Process",
-            description: "A structured 6-step methodology for CMS development that has delivered 50+ projects with 60% reduction in content publishing time.",
+            description: "A structured 6-step methodology for CMS development that has delivered 50+ projects with significant reduction in content publishing time.",
             steps: [
                 { name: "Discovery & Strategy", text: "Deep dive into content needs, workflow mapping, stakeholder interviews, and integration requirements analysis.", url: "https://www.cinuteinfomedia.com/services/web-design-development/headless-traditional-cms/#step-discovery" },
                 { name: "CMS Selection", text: "Optimal platform selection based on requirements, feature matching, scalability assessment, and cost analysis.", url: "https://www.cinuteinfomedia.com/services/web-design-development/headless-traditional-cms/#step-selection" },

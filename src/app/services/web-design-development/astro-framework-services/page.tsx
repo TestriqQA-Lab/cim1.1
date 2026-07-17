@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Hero from "@/components/services/web-design-development/astro-framework-services/Hero";
 import ServiceOverview from "@/components/services/web-design-development/astro-framework-services/ServiceOverview";
 import SolutionTypes from "@/components/services/web-design-development/astro-framework-services/SolutionTypes";
@@ -7,142 +8,276 @@ import WhyChooseUs from "@/components/services/web-design-development/astro-fram
 import FAQ from "@/components/services/web-design-development/astro-framework-services/FAQ";
 import CTA from "@/components/services/web-design-development/astro-framework-services/CTA";
 
-import { getPageMetadata } from '@/lib/metadata';
-import {
-    generateGraphSchema,
-    generateOrganizationSchema,
-    generateWebSiteSchema,
-    generateWebPageSchema,
-    generateBreadcrumbSchema,
-    generateServiceSchema,
-    generateItemListSchema,
-    generateFAQSchema,
-    generateHowToSchema,
-    generateNavigationSchema,
-} from '@/lib/schema';
-
-export const metadata = getPageMetadata({
-    title: 'Expert Astro Framework Services | 100% PageSpeed 🚀 2026',
-    description: 'Build blazing-fast content sites, marketing pages, and modern web applications with our expert Astro framework services. 100% PageSpeed scores guaranteed.',
-    url: '/services/web-design-development/astro-framework-services',
+export const metadata: Metadata = {
+    title: "Expert Astro Framework Services | near-perfect PageSpeed 🚀 2026",
+    description:
+        "Top Astro development agency delivering lightning-fast sites with Islands Architecture. Custom Astro JS services for content-rich sites. Free audit today!",
     keywords: [
-        'Astro framework services',
-        'Astro JS development',
-        'Astro development agency',
-        'custom Astro website',
-        'Astro performance optimization',
-        'static site generation',
-        'islands architecture',
-    ],
-});
+        "Astro framework services",
+        "Astro JS development",
+        "Astro development agency",
+        "custom Astro website",
+        "Astro performance optimization",
+        "static site generation",
+        "islands architecture"
+    ]
+,
+    openGraph: {
+        title: "Expert Astro Framework Services | near-perfect PageSpeed 🚀 2026",
+        description: "Top Astro development agency delivering lightning-fast sites with Islands Architecture. Custom Astro JS services for content-rich sites. Free audit today!",
+        url: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/astro-framework-services.webp",
+                width: 1200,
+                height: 630,
+                alt: "Expert Astro Framework Services | near-perfect PageSpeed 🚀 2026 by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Expert Astro Framework Services | near-perfect PageSpeed 🚀 2026",
+        description: "Top Astro development agency delivering lightning-fast sites with Islands Architecture. Custom Astro JS services for content-rich sites. Free audit today!",
+        images: ["/og-images/astro-framework-services.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services",
+    },
+};
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "name": "Cinute Infomedia",
+            "url": "https://www.cinuteinfomedia.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.cinuteinfomedia.com/logo.png",
+                "width": 250,
+                "height": 60
+            },
+            "description": "Expert Astro development agency delivering lightning-fast websites with near-perfect PageSpeed scores and exceptional SEO performance.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Office #3, 2nd Floor, Ashley Tower, Kanakia Road, Vagad Nagar, Beverly Park",
+                "addressLocality": "Mira Road, Mira Bhayandar",
+                "addressRegion": "Maharashtra",
+                "postalCode": "401107",
+                "addressCountry": "IN"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+919004988859",
+                "contactType": "Sales",
+                "email": "contact@cinuteinfomedia.com",
+                "availableLanguage": ["English", "Hindi"]
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/cinute-infomedia/",
+                "https://www.instagram.com/cinuteinfomedia/",
+                "https://x.com/cinuteinfomedia",
+                "https://www.facebook.com/cinuteinfomedia/"
+            ]
+        },
+        {
+            "@type": "Service",
+            "serviceType": "Astro Framework Development Services",
+            "provider": {
+                "@type": "Organization",
+                "name": "Cinute Infomedia"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Worldwide"
+            },
+            "description": "Expert Astro JS development services including custom website development, migration services, performance optimization, headless CMS integration, and ongoing maintenance for content-rich sites, ecommerce, and marketing pages.",
+            "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "USD",
+                "lowPrice": "3000",
+                "highPrice": "50000",
+                "offerCount": "6",
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "name": "Simple Marketing Site",
+                        "price": "5500",
+                        "priceCurrency": "USD",
+                        "description": "5-10 page marketing site with custom design"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Content-Rich Blog/Portfolio",
+                        "price": "11500",
+                        "priceCurrency": "USD",
+                        "description": "20-50 page content site with CMS integration"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "E-commerce Catalog",
+                        "price": "22500",
+                        "priceCurrency": "USD",
+                        "description": "100+ product catalog with headless CMS"
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Documentation Portal",
+                        "price": "30000",
+                        "priceCurrency": "USD",
+                        "description": "500+ page docs with search and versioning"
+                    }
+                ]
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Astro Development Services",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Custom Astro Website Development",
+                            "description": "Tailored Astro sites with custom design, component development, and CMS integration"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Astro Migration Services",
+                            "description": "Migrate from Next.js, Gatsby, WordPress to Astro for 70% performance improvement"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Astro Performance Optimization",
+                            "description": "Core Web Vitals tuning, PageSpeed optimization, bundle analysis"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Astro Headless CMS Integration",
+                            "description": "Connect Strapi, Contentful, Sanity, WordPress with Astro"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Astro Maintenance & Support",
+                            "description": "24/7 support, bug fixes, content updates, security patches"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What are the benefits of using Astro.js for business?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Astro.js delivers exceptional performance with zero JavaScript by default, resulting in 98-100 PageSpeed scores, sub-1-second load times, and superior SEO rankings. Businesses benefit from higher conversion rates, lower hosting costs, better SEO rankings, faster development, and flexibility to mix React, Vue, Svelte components."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much does it cost to build a custom Astro.js website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Astro website costs vary by scope: Simple Marketing Site (5-10 pages) costs $3,000-$8,000 taking 2-3 weeks; Content-Rich Blog/Portfolio (20-50 pages) costs $8,000-$15,000 taking 3-5 weeks; E-commerce Catalog (100+ products) costs $15,000-$30,000 taking 5-8 weeks; Documentation Portal (500+ pages) costs $20,000-$40,000 taking 6-10 weeks; Enterprise Multi-Site Platforms start at $40,000+ taking 10-16 weeks."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I choose the best Astro development agency?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Choose an Astro development agency based on: 1) Proven track record with 5+ live Astro projects and PageSpeed reports, 2) Technical expertise with team certifications and framework proficiency, 3) Performance portfolio with Core Web Vitals data, 4) Industry experience in your domain, 5) Process transparency with clear communication and code reviews, 6) Support SLA with maintenance and ongoing support availability."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the difference between Astro.js and Next.js?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Astro.js outputs static HTML with zero JavaScript by default, achieving 98-100 PageSpeed scores and <1s load times, ideal for content sites, blogs, and marketing pages. Next.js is JavaScript-heavy with React runtime, achieving 85-95 PageSpeed and 1-3s load times, best for dynamic apps and SaaS. Astro bundles are 10-50 KB vs Next.js 200-500 KB, resulting in lower hosting costs and better SEO."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long does it take to develop an Astro.js web application?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Development timelines vary by complexity: Small projects (5-10 pages) take 3-4 weeks, Medium projects (20-50 pages) take 6-8 weeks, Large projects (100+ pages) take 12-14 weeks, Enterprise projects (multi-site platforms) take 16-20 weeks. Most Astro projects launch faster than React/Next.js equivalents due to simplified build processes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can Astro handle e-commerce and dynamic content?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes! Astro supports e-commerce with product catalogs via headless CMS integration, shopping carts via Shopify Buy SDK or custom islands, checkout integration with Stripe/PayPal, inventory sync via APIs, and search/filtering. Dynamic content is handled through user authentication with islands (React/Vue), forms with validation, real-time data via server endpoints, and personalized content."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you offer ongoing Astro maintenance and support?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes! We offer Standard Support ($500/month) with content updates, 48-hour bug fixes, CMS training, monthly reports, and security updates; Premium Support ($1,200/month) with 24/7 emergency support, 15 hours development time, A/B testing, and quarterly audits; Enterprise Support (custom pricing) with dedicated account manager, 1-hour SLA, unlimited updates, and multi-site management."
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.cinuteinfomedia.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://www.cinuteinfomedia.com/services"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Web Design & Development",
+                    "item": "https://www.cinuteinfomedia.com/services/web-design-development"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Astro Framework",
+                    "item": "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services"
+                }
+            ]
+        }
+    ]
+};
 
 export default function AstroFrameworkPage() {
-    const astroSchema = generateGraphSchema(
-        generateOrganizationSchema({
-            description: "Cinute InfoMedia (CIM) is a digital growth agency helping businesses build, market, and scale through creativity, data, and technology.",
-            slogan: "Build. Market. Scale.",
-        }),
-
-        generateWebSiteSchema(),
-
-        generateWebPageSchema({
-            name: "Expert Astro Framework Services | 100% PageSpeed 🚀 2026",
-            description: "Build blazing-fast content sites, marketing pages, and modern web applications with our expert Astro framework services. 100% PageSpeed scores guaranteed.",
-            urlPath: "/services/web-design-development/astro-framework-services",
-            datePublished: "2025-01-01",
-            dateModified: "2026-04-10",
-            aboutId: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#service",
-            mainEntityId: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#service",
-            breadcrumbId: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#breadcrumb",
-        }),
-
-        generateBreadcrumbSchema([
-            { name: "Home", url: "/" },
-            { name: "Services", url: "/services" },
-            { name: "Web Design & Development", url: "/services/web-design-development" },
-            { name: "Astro Framework Services", url: "/services/web-design-development/astro-framework-services" },
-        ], "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#breadcrumb"),
-
-        generateServiceSchema({
-            name: "Astro Framework Development Services",
-            description: "Lightning-fast sites with Astro Framework Services. As a leading Astro development agency, we harness Astro's revolutionary Islands Architecture and zero JavaScript by default to deliver custom Astro website development that achieves 100% PageSpeed scores and sub-1-second load times. 100+ sites delivered.",
-            urlPath: "/services/web-design-development/astro-framework-services",
-            serviceType: "Astro Framework Web Development",
-            areaServed: ["IN", "US", "GB", "AU", "AE"],
-            offer: {
-                url: "/contact",
-                priceCurrency: "USD",
-                price: "3000",
-                validFrom: "2025-01-01",
-                description: "Astro framework development starting from $3,000 for simple sites up to $40,000+ for enterprise documentation portals. Free Astro consultation available.",
-            },
-        }),
-
-        generateItemListSchema({
-            id: "/services/web-design-development/astro-framework-services/#servicesList",
-            name: "What We Build with Astro",
-            description: "Comprehensive Astro framework services from marketing pages to multi-framework migrations.",
-            items: [
-                { name: "Marketing & Landing Pages", description: "High-converting Astro development for marketing landing pages that load instantly and rank higher in search results." },
-                { name: "Content-Driven Websites", description: "High-performance blogs, portfolios, and publishing platforms with built-in MDX support and optimized content delivery." },
-                { name: "E-commerce Storefronts", description: "Product catalogs and storefronts that convert, integrated with Shopify or headless CMS platforms." },
-                { name: "Documentation Sites", description: "SaaS documentation sites, developer portals, and knowledge bases built with Astro's content collections." },
-                { name: "Multi-Framework Projects", description: "React and Vue components in a single project using Astro's islands architecture for selective hydration." },
-                { name: "Migration to Astro", description: "Migration services from Next.js or Gatsby to Astro, reducing bundle sizes by up to 90%." },
-            ],
-        }),
-
-        generateItemListSchema({
-            id: "/services/web-design-development/astro-framework-services/#solutionsList",
-            name: "Astro Solutions We Deliver",
-            description: "Industry-specific Astro solutions from marketing websites to e-commerce catalogs and blog platforms.",
-            items: [
-                { name: "Marketing Websites", description: "High-converting marketing websites with 100% PageSpeed scores and instant loading." },
-                { name: "Corporate Sites", description: "Professional corporate websites with modern design and enterprise-grade performance." },
-                { name: "Portfolio & Personal", description: "Stunning portfolio and personal websites showcasing work with minimal JavaScript overhead." },
-                { name: "Documentation Portals", description: "Developer documentation and knowledge bases with fast search and organized content." },
-                { name: "E-commerce Catalogs", description: "Product catalog storefronts integrated with headless commerce platforms." },
-                { name: "Blog Platforms", description: "Content-first blog platforms with MDX support, RSS feeds, and SEO optimization." },
-            ],
-        }),
-
-        generateFAQSchema([
-            { question: "What are the benefits of Astro framework for my business?", answer: "Astro delivers 98-100 PageSpeed scores, sub-1-second load times, 25-40% better conversion rates, 30-50% lower hosting costs, and 40% faster development time compared to traditional frameworks." },
-            { question: "How much does Astro framework development cost?", answer: "Costs vary by project scope: Simple sites ($3,000-$8,000, 2-3 weeks), Blog platforms ($8,000-$15,000, 3-5 weeks), E-commerce ($15,000-$30,000, 5-8 weeks), Documentation portals ($20,000-$40,000, 6-10 weeks), and Enterprise ($40,000+, 10-16 weeks)." },
-            { question: "How to choose the right Astro development agency?", answer: "Look for agencies with 5+ live Astro projects, technical certifications, a portfolio showcasing performance metrics, and dedicated support SLAs for ongoing maintenance." },
-            { question: "What is the difference between Astro and Next.js?", answer: "Astro is static-first with zero JavaScript by default, producing 10-50 KB bundles ideal for content sites. Next.js is JavaScript-heavy with 200-500 KB bundles, better suited for highly dynamic web applications." },
-            { question: "How long does Astro development take?", answer: "Timelines depend on complexity: Small projects take 3-4 weeks, Medium projects 6-8 weeks, Large projects 12-14 weeks, and Enterprise projects 16-20 weeks." },
-            { question: "Can Astro handle e-commerce and dynamic content?", answer: "Yes, Astro fully supports e-commerce and dynamic content via headless CMS integrations, Shopify SDK, Stripe payment integration, and interactive 'islands' for selective client-side hydration." },
-            { question: "What post-launch support and maintenance do you provide?", answer: "We offer three tiers: Standard ($500/month), Premium ($1,200/month), and Enterprise (custom pricing). All plans include performance monitoring, security updates, and content deployment support." },
-        ], "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#faq"),
-
-        generateHowToSchema({
-            name: "Our Astro Development Process",
-            description: "A proven 5-step methodology for building Astro framework websites that achieve 100% PageSpeed scores and sub-1-second load times.",
-            steps: [
-                { name: "Discovery & Content Strategy", text: "Content analysis, audience mapping, and defining optimal architecture for your Astro-powered site.", url: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#step-discovery" },
-                { name: "Design & Component Planning", text: "Visual design system creation and islands architecture planning for selective hydration and maximum performance.", url: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#step-design" },
-                { name: "Development & Integration", text: "Content-driven application development with CMS integration, component building, and API connections. Timeline: 15-25 days.", url: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#step-development" },
-                { name: "Performance Optimization", text: "Fine-tuning for Core Web Vitals excellence, image optimization, CSS purging, and zero-JS validation.", url: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#step-optimization" },
-                { name: "Deployment & Analytics", text: "Edge deployment on Vercel or Netlify, analytics setup, and ongoing support configuration. Timeline: 3-5 days.", url: "https://www.cinuteinfomedia.com/services/web-design-development/astro-framework-services/#step-deployment" },
-            ],
-        }),
-
-        generateNavigationSchema([
-            { name: "Home", url: "/" },
-            { name: "Services", url: "/services" },
-            { name: "Blog", url: "/blog" },
-            { name: "About", url: "/about" },
-            { name: "Careers", url: "/careers" },
-            { name: "Contact", url: "/contact" },
-        ])
-    );
-
     return (
         <main className="min-h-screen" style={{ "--page-selection-bg": "#7C3AED" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(astroSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <Hero />
             <ServiceOverview />

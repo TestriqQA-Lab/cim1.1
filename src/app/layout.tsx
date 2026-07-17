@@ -9,6 +9,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.cinuteinfomedia.com"),
   title: "CIM - Digital Solutions",
   description:
     "Web Design, Mobile App Development, UI/UX Branding, and Digital Marketing Services",

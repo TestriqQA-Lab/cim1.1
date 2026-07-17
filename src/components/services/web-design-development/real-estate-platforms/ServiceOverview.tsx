@@ -118,7 +118,7 @@ export default function ServiceOverview() {
                             }}
                         >
                             <p className="text-sm" style={{ color: "#0d9488", fontWeight: 600 }}>
-                                💡 Pro Tip: Platforms with virtual tours see 40% higher engagement and faster sales cycles.
+                                💡 Pro Tip: Platforms with virtual tours see higher engagement and faster sales cycles.
                             </p>
                         </div>
                     </div>

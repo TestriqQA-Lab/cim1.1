@@ -110,7 +110,7 @@ export default function Hero() {
                                 className="relative inline-block"
                                 style={{ color: "#1877F2" }}
                             >
-                                Premier Facebook Marketing Services
+                                Expert Facebook Marketing Services
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: "#1877F2" }}
@@ -123,7 +123,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Master your presence on the world's largest social network with a Facebook marketing agency that prioritizes ROI over vanity metrics. In the competitive <Link href="/blog/category/digital-marketing" className="hover:underline text-blue-500">digital landscape</Link> of 2026, simply "posting" isn't enough. You need an award-winning Facebook marketing company that leverages the latest Meta AI algorithms and <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-blue-500">high-E-E-A-T content</Link> principles to drive measurable growth.
+                            Master your presence on the world's largest social network with a Facebook marketing agency that prioritizes ROI over vanity metrics. In the competitive <Link href="/blog/category/digital-marketing" className="hover:underline text-blue-500">digital landscape</Link> of 2026, simply "posting" isn't enough. You need an expert Facebook marketing company that leverages the latest Meta AI algorithms and <Link href="/services/seo-services/seo-content-writing-services" className="hover:underline text-blue-500">high-E-E-A-T content</Link> principles to drive measurable growth.
                         </p>
 
                         {/* Feature Pills */}
@@ -183,12 +183,12 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>8.5x</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>Strong</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. ROAS</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>45%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#1877F2" }}>Significant</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Lower CPA</p>
                             </div>
                         </div>

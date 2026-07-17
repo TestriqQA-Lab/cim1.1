@@ -19,7 +19,7 @@ export default function FAQ() {
         },
         {
             q: "How do I choose the best X marketing service for my business?",
-            a: <>Choose an agency with a proven track record (EEAT), deep industry knowledge, and a focus on data. The best X marketing agency for tech startups or financial services should demonstrate technical expertise in <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-blue-500">X analytics</Link> and performance metrics. Always look for case studies showing at least a 20% CTR lift and clear communication on X algorithm visibility optimization.</>,
+            a: <>Choose an agency with a proven track record (EEAT), deep industry knowledge, and a focus on data. The best X marketing agency for tech startups or financial services should demonstrate technical expertise in <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-blue-500">X analytics</Link> and performance metrics. Always look for case studies showing a measurable CTR lift and clear communication on X algorithm visibility optimization.</>,
         },
         {
             q: "What is included in a full-service X ads management package?",
@@ -27,7 +27,7 @@ export default function FAQ() {
         },
         {
             q: "How long does it take to see ROI from X marketing?",
-            a: "While real-time engagement provides instant visibility, significant ROI from Twitter marketing services usually takes 3 to 6 months. This allows for audience building, X algorithm seasoning, and refinement of Twitter conversion tracking. However, X trend hijacking can deliver viral wins much faster when executed by a top-tier Twitter marketing company.",
+            a: "While real-time engagement provides instant visibility, significant ROI from Twitter marketing services usually takes 3 to 6 months. This allows for audience building, X algorithm seasoning, and refinement of Twitter conversion tracking. However, X trend hijacking can deliver viral wins much faster when executed by a experienced Twitter marketing company.",
         },
     ];
 

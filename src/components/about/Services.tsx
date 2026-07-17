@@ -65,8 +65,8 @@ export default function Services() {
             details: [
                 <span><Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">iOS</Link>, <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">Android</Link> & <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">Cross-Platform Development</Link></span>,
                 <span><Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-teal)] transition-colors">Enterprise Mobile Applications</Link></span>,
-                "40% Faster Time-to-Market",
-                "98.7% Bug-Free Delivery Rate",
+                "Faster Time-to-Market",
+                "Rigorous QA Process",
                 "App Store Optimization",
                 "Scalable Backend Architecture"
             ]

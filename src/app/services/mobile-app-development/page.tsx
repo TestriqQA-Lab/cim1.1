@@ -37,7 +37,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Top Mobile App Development Company | Custom Apps 2026',
-    description: 'Leading mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!',
+    description: 'Expert mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!',
     url: '/services/mobile-app-development',
     keywords: [
         'Mobile App Development Company',
@@ -51,6 +51,7 @@ export const metadata = getPageMetadata({
         'Flutter Development',
         'React Native Development',
     ],
+    image: '/og-images/mobile_app_development.webp',
 });
 
 export default function MobileAppDevelopmentPage() {
@@ -64,7 +65,7 @@ export default function MobileAppDevelopmentPage() {
 
         generateWebPageSchema({
             name: "Top Mobile App Development Company | Custom Apps 2026",
-            description: "Leading mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!",
+            description: "Expert mobile app development company delivering custom iOS, Android & cross-platform apps. 300+ successful projects. Get free consultation today!",
             urlPath: "/services/mobile-app-development",
             datePublished: "2025-01-01",
             dateModified: "2026-04-10",
@@ -81,7 +82,7 @@ export default function MobileAppDevelopmentPage() {
 
         generateServiceSchema({
             name: "Mobile App Development Services",
-            description: "Transform your vision into high-performance mobile apps that drive business growth. As a premier mobile app development company with 12+ years of expertise, we craft custom iOS, Android, and cross-platform solutions globally. 300+ apps delivered, 50M+ active users, 99.2% client retention, 98.7% bug-free delivery rate.",
+            description: "Transform your vision into high-performance mobile apps that drive business growth. As an expert mobile app development company with deep expertise, we craft custom iOS, Android, and cross-platform solutions globally. apps delivered globally, applications used at scale, strong client retention, a rigorous QA process.",
             urlPath: "/services/mobile-app-development",
             serviceType: "Mobile App Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],
@@ -112,9 +113,9 @@ export default function MobileAppDevelopmentPage() {
             name: "Mobile App Development Platforms",
             description: "Platform-specific mobile app development services for iOS, Android, cross-platform, hybrid, enterprise, and HarmonyOS.",
             items: [
-                { name: "iOS App Development", description: "Swift, SwiftUI, App Store Optimization, and iCloud integration for premium Apple ecosystem experiences.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/ios-app-development-services" },
-                { name: "Android App Development", description: "Kotlin, Jetpack Compose, Firebase, and Material Design for powerful Android applications.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/android-app-development-services" },
-                { name: "Cross-Platform App Development", description: "React Native and Flutter development with 90%+ code reusability across iOS and Android.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/cross-platform-app-development-services" },
+                { name: "iOS App Development", description: "Swift, SwiftUI, App Store Optimization, and iCloud integration for premium Apple ecosystem experiences.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/ios-app-development-company" },
+                { name: "Android App Development", description: "Kotlin, Jetpack Compose, Firebase, and Material Design for powerful Android applications.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/android-app-development-company" },
+                { name: "Cross-Platform App Development", description: "React Native and Flutter development with 90%+ code reusability across iOS and Android.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/cross-platform-app-development-company" },
                 { name: "Hybrid App Development", description: "Ionic and Cordova for quick-to-market web-based mobile applications.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/hybrid-app-development-services" },
                 { name: "Enterprise Application Development", description: "Legacy integration, high security, and scalability for enterprise mobile solutions.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services" },
                 { name: "HarmonyOS App Development", description: "Huawei HarmonyOS SDK, distributed architecture, and IoT-focused mobile applications.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/harmony-OS-app-development-services" },
@@ -123,7 +124,7 @@ export default function MobileAppDevelopmentPage() {
 
         generateHowToSchema({
             name: "Our 6-Phase Agile Development Process",
-            description: "A proven 6-phase agile methodology for building mobile apps that has delivered 300+ successful projects with 98.7% bug-free delivery and 40% faster time-to-market.",
+            description: "A proven 6-phase agile methodology for building mobile apps that has delivered 300+ successful projects with a rigorous QA process and faster time-to-market.",
             steps: [
                 { name: "Discovery & Strategy", text: "Stakeholder interviews, MoSCoW feature prioritization, competitive analysis, and technical roadmap creation. Timeline: Week 1-2.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/#step-discovery" },
                 { name: "UI/UX Design", text: "Figma wireframes, interactive prototyping, usability testing, and design system creation. Timeline: Week 3-5.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/#step-design" },

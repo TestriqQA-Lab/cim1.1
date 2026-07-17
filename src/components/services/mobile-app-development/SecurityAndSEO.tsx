@@ -25,8 +25,8 @@ export default function SecurityAndSEO() {
         },
         {
             icon: UserCheck,
-            title: "Zero Breaches Since 2014",
-            description: "Regular penetration testing, security audits, vulnerability assessments, and 24/7 monitoring. GDPR, HIPAA, PCI-DSS, SOC 2 compliant.",
+            title: "Security-First Engineering",
+            description: "Regular penetration testing, security audits, vulnerability assessments, and 24/7 monitoring. GDPR, HIPAA, PCI-DSS, and SOC 2-aligned security practices.",
             gradient: "from-[#43e97b] to-[#38f9d7]"
         }
     ];
@@ -34,20 +34,20 @@ export default function SecurityAndSEO() {
     const appStoreOptimization = [
         {
             icon: Search,
-            title: <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">ASO (120% Organic Increase)</Link>,
-            description: <span>Keyword research, competitor analysis, search volume data, and A/B tested descriptions. Average 120% increase in <Link href="/blog/mastering-seo-organic-growth" className="hover:text-[var(--brand-purple)] transition-colors">organic installs</Link> with top 10 rankings in 90 days.</span>,
+            title: <Link href="/services/seo-services" className="hover:text-[var(--brand-purple)] transition-colors">ASO (Strong Organic Growth)</Link>,
+            description: <span>Keyword research, competitor analysis, search volume data, and A/B tested descriptions. Average increase in <Link href="/blog/mastering-seo-organic-growth" className="hover:text-[var(--brand-purple)] transition-colors">organic installs</Link> with top 10 rankings in 90 days.</span>,
             gradient: "from-[#fa709a] to-[#fee140]"
         },
         {
             icon: Gauge,
-            title: "Performance (<2s, 60 FPS, 99.9%)",
-            description: "<2s app launch time, 60 FPS animations, <50 MB optimized app size, 99.9% crash-free rate. Image optimization (WebP), code splitting, CDN integration.",
+            title: "Performance (<2s, 60 FPS)",
+            description: "<2s app launch time, 60 FPS animations, <50 MB optimized app size, extensive stability testing. Image optimization (WebP), code splitting, CDN integration.",
             gradient: "from-[#30cfd0] to-[#330867]"
         },
         {
             icon: Store,
             title: "Store Listing (40% Higher CVR)",
-            description: "High-quality screenshots (5-8 optimized images), demo video (30-60 sec), compelling descriptions, and localization (10+ languages). 40% higher conversion rate.",
+            description: "High-quality screenshots (5-8 optimized images), demo video (30-60 sec), compelling descriptions, and localization (10+ languages). higher conversion rate.",
             gradient: "from-[#43e97b] to-[#38f9d7]"
         },
         {
@@ -81,7 +81,7 @@ export default function SecurityAndSEO() {
                         <span style={{ color: "var(--brand-purple)" }}>Security, Performance</span> & App Store Optimization
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Enterprise-grade security with zero breaches since 2014. 99.9% crash-free apps optimized for maximum app store visibility and 120% organic growth.
+                        Enterprise-grade security. Extensively tested apps optimized for maximum app store visibility and strong organic growth.
                     </p>
                 </div>
 
@@ -91,7 +91,7 @@ export default function SecurityAndSEO() {
                     <div>
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                             <Lock className="w-8 h-8" style={{ color: "var(--brand-purple)" }} />
-                            <span style={{ color: "var(--foreground)" }}>Security Best Practices (Zero Breaches Since 2014)</span>
+                            <span style={{ color: "var(--foreground)" }}>Security Best Practices</span>
                         </h3>
 
                         <div className="space-y-6">
@@ -217,7 +217,7 @@ export default function SecurityAndSEO() {
                 <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
                     {[
                         { metric: "< 2s", label: "App Launch Time", gradient: "from-[#667eea] to-[#764ba2]" },
-                        { metric: "99.9%", label: "Uptime SLA", gradient: "from-[#f093fb] to-[#f5576c]" },
+                        { metric: "High", label: "Uptime SLA", gradient: "from-[#f093fb] to-[#f5576c]" },
                         { metric: "< 50MB", label: "Typical App Size", gradient: "from-[#4facfe] to-[#00f2fe]" },
                         { metric: "A+", label: "Security Rating", gradient: "from-[#43e97b] to-[#38f9d7]" }
                     ].map((item, index) => (

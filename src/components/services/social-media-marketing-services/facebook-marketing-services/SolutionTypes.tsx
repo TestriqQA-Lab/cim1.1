@@ -23,7 +23,7 @@ export default function SolutionTypes() {
             title: <Link href="/services/web-design-development/ecommerce-development-company" className="hover:underline text-inherit">E-commerce Brands</Link>,
             description: <>Dynamic Catalog Ads + <Link href="/services/web-design-development/shopify-development-services" className="hover:underline text-blue-500">Shopify</Link> Integration. Scale your online store with Facebook ads management for ecommerce.</>,
             features: [
-                "12x ROAS Growth",
+                "Strong ROAS Growth",
                 "Product catalog sync",
                 "Dynamic retargeting",
                 "Conversion tracking",

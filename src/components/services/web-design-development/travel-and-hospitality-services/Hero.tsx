@@ -19,7 +19,7 @@ export default function Hero() {
 
     const stats = [
         { value: "300%", label: "Traffic Growth" },
-        { value: "95%", label: "Bug-Free Deliveries" },
+        { value: "80%+", label: "Test Coverage" },
         { value: "50+", label: "Global Partners" },
     ];
 
@@ -89,7 +89,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            At Cinute Infomedia, we provide premier Travel and Hospitality Services designed for the 2026 digital ecosystem. As a leading Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that empower global travel brands and luxury resorts to scale effortlessly.
+                            At Cinute Infomedia, we provide expert Travel and Hospitality Services designed for the 2026 digital ecosystem. As an expert Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that empower global travel brands and luxury resorts to scale effortlessly.
                         </p>
 
                         {/* Feature Pills */}

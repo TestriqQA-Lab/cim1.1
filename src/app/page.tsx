@@ -9,7 +9,6 @@ import {
   generateBreadcrumbSchema,
   generateFAQSchema,
   generateItemListSchema,
-  generateReviewSchema,
   generateHowToSchema,
   generateNavigationSchema,
 } from "@/lib/schema";
@@ -17,7 +16,7 @@ import {
 export const metadata: Metadata = {
   ...getPageMetadata({
     title: "Web Development Company | AI-Powered Digital Solutions | Cinute InfoMedia",
-    description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. 320% ROI proven. 300+ global projects. Free audit today! ✨",
+    description: "Expert web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today! ✨",
     url: "/",
     keywords: [
       "web development company",
@@ -26,6 +25,7 @@ export const metadata: Metadata = {
       "web design and development company",
       "professional website development"
     ],
+    image: "/og-images/home_page.png",
   }),
   other: {
     "geo.region": "IN-MH",
@@ -52,9 +52,9 @@ export default async function Home() {
 
     generateWebPageSchema({
       name: "Web Development Company | AI-Powered Digital Solutions",
-      description: "Leading web development company delivering custom websites, mobile apps & AI-driven marketing. 320% ROI proven. 300+ global projects. Free audit today!",
+      description: "Expert web development company delivering custom websites, mobile apps & AI-driven marketing. proven, measurable ROI. 300+ global projects. Free audit today!",
       urlPath: "",
-      datePublished: "2014-01-01",
+      datePublished: "2025-01-01",
       dateModified: "2026-03-02",
     }),
 
@@ -65,7 +65,7 @@ export default async function Home() {
     generateFAQSchema([
       {
         question: "What makes Cinute InfoMedia different from other web development companies?",
-        answer: "We combine technical excellence with business strategy. Unlike typical web development agencies that just code to specs, we act as your growth partner - providing strategic guidance, data-driven recommendations, and continuous optimization. Our 95% client retention rate and 300+ successful projects speak to our partnership approach.",
+        answer: "We combine technical excellence with business strategy. Unlike typical web development agencies that just code to specs, we act as your growth partner - providing strategic guidance, data-driven recommendations, and continuous optimization. Our strong client retention and 300+ successful projects speak to our partnership approach.",
       },
       {
         question: "What web development services do you offer?",
@@ -134,15 +134,13 @@ export default async function Home() {
           name: "Brand Identity Design",
           url: "/services/brand-identity-design",
         },
+        {
+          name: "Additional Support Services",
+          url: "/services/additional-support-services",
+        },
       ],
     }),
 
-    generateReviewSchema({
-      reviewBody: "The AI chatbot they built has transformed our customer support. We're saving 200+ hours monthly while providing better, faster service to our students.",
-      authorName: "CDPL Institute",
-      authorType: "Organization",
-      ratingValue: "5",
-    }),
 
     generateHowToSchema({
       name: "Your 4-Step Digital Audit & Growth Roadmap",

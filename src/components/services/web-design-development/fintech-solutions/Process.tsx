@@ -59,7 +59,7 @@ export default function Process() {
             number: "04",
             icon: Lock,
             title: "Penetration Testing & QA",
-            description: "Rigorous testing protocols including penetration testing, load testing, and smart contract audits to ensure zero vulnerabilities before launch.",
+            description: "Rigorous testing protocols including penetration testing, load testing, and smart contract audits to minimize vulnerabilities before launch.",
             deliverables: [
                 { icon: ShieldCheck, text: "Penetration testing" },
                 { icon: CheckCircle2, text: "Smart contract audit" },

@@ -110,14 +110,14 @@ export default function CaseStudies() {
                     >
                         <Sparkles className="w-4 h-4" style={{ color: "var(--brand-orange)" }} />
                         <span className="text-sm font-bold tracking-wide" style={{ color: "var(--brand-orange)" }}>
-                            PROVEN RESULTS
+                            ILLUSTRATIVE SCENARIOS
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                        Real Results, <span style={{ color: "var(--brand-orange)" }}>Real Growth</span>
+                        Performance We <span style={{ color: "var(--brand-orange)" }}>Engineer Toward</span>
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        See how we've transformed advertising performance for businesses across industries.
+                        Illustrative performance scenarios showing the metrics we optimize toward across industries.
                     </p>
                 </div>
 

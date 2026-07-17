@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
             icon: TrendingUp,
             title: "Viral Expertise",
             description: "We know what makes content pop on TikTok's algorithm.",
-            stat: "50M+ Views",
+            stat: "High View Volume",
             color: tiktokCyan,
         },
         {
@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
             icon: Zap,
             title: "Creative First",
             description: "In-house creative team producing scroll-stopping content.",
-            stat: "500+ Videos",
+            stat: "High Output",
             color: tiktokCyan,
         },
         {
@@ -154,7 +154,7 @@ export default function WhyChooseUs() {
                             <div className="mt-4 flex items-center gap-2 relative z-10">
                                 <CheckCircle className="w-4 h-4" style={{ color: benefit.color }} />
                                 <span className="text-xs font-medium" style={{ color: benefit.color }}>
-                                    Guaranteed
+                                    Included
                                 </span>
                             </div>
 

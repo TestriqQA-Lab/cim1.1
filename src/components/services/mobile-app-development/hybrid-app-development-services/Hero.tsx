@@ -110,7 +110,7 @@ export default function Hero() {
                                     WebkitTextFillColor: "transparent",
                                 }}
                             >
-                                Premier Hybrid App Development Services
+                                Expert Hybrid App Development Services
                                 <svg
                                     className="absolute w-full h-3 -bottom-2 left-0 opacity-30"
                                     style={{ color: "#0077b6" }}
@@ -185,14 +185,14 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#00b4d8" }}>60%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: "#00b4d8" }}>Faster</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Faster Cycles</p>
                             </div>
 
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#00b4d8" }}>95%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Bug-Free Deployment</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#00b4d8" }}>High</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Stable Deployment</p>
                             </div>
                         </div>
                     </div>

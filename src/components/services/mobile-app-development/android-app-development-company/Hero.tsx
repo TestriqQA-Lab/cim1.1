@@ -94,7 +94,7 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Premier{" "}
+                            Expert{" "}
                             <span
                                 className="relative inline-block"
                                 style={{
@@ -117,16 +117,16 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            As a world-class <strong>Android app development company</strong> with over a decade of mastery in the <Link href="/services/mobile-app-development" className="text-[#3DDC84] hover:underline">mobile ecosystem</Link>, we engineer scalable, high-performance solutions that redefine digital experiences.
+                            As an expert <strong>Android app development company</strong> with deep mastery in the <Link href="/services/mobile-app-development" className="text-[#3DDC84] hover:underline">mobile ecosystem</Link>, we engineer scalable, high-performance solutions that redefine digital experiences.
                             Our iOS App Development Services empower startups and <Link href="/services/mobile-app-development/enterprise-application-development-services" className="text-[#3DDC84] hover:underline">enterprises</Link> to dominate the Apple ecosystem.
                         </p>
 
                         {/* Feature Pills */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3 animate-slideUp delay-200">
                             {[
-                                "95% Bug-Free Codebase",
-                                "40% Faster Delivery",
-                                "300% Traffic Growth",
+                                "Rigorously Tested Codebase",
+                                "Faster Delivery",
+                                "Sustained Traffic Growth",
                                 "Enterprise-Grade Security",
                                 "24/7 Global Support",
                             ].map((feature, idx) => (
@@ -169,8 +169,8 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>99.9%</h4>
-                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Crash-Free Impact</p>
+                                <h4 className="text-3xl font-bold" style={{ color: "#3DDC84" }}>High</h4>
+                                <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Stability Focus</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">

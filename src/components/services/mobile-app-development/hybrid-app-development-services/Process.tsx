@@ -58,11 +58,11 @@ export default function Process() {
         {
             icon: TestTube2,
             title: "Hybrid App Testing & Quality Assurance",
-            description: "Rigorous testing on real devices ensures 99.9% crash-free sessions and hybrid app security.",
+            description: "Rigorous testing on real devices ensures extensively tested for stability and hybrid app security.",
             details: [
                 "Real device verification",
                 "Security auditing",
-                "Crash-free profiling",
+                "Stability profiling",
                 "UX validation",
                 "Regression testing",
             ],

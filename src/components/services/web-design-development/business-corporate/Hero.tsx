@@ -220,7 +220,7 @@ export default function Hero() {
                                     99%
                                 </div>
                                 <div className="text-xs md:text-sm" style={{ color: "var(--secondary-text)" }}>
-                                    Uptime Guaranteed
+                                    High Availability
                                 </div>
                             </div>
                         </div>

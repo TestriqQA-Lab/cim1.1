@@ -73,7 +73,7 @@ export default function WhyChooseUs() {
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        Experience 99.9% Uptime & 300% Growth with Proven Experts
+                        Experience High Availability & Sustained Growth with Proven Experts
                     </p>
 
                     <div

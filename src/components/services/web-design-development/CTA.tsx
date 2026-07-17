@@ -115,7 +115,7 @@ export default function CTA() {
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {[
                         {
-                            number: "15+ Years",
+                            number: "Expert",
                             label: "Expertise",
                         },
                         {
@@ -123,7 +123,7 @@ export default function CTA() {
                             label: "Traffic Growth",
                         },
                         {
-                            number: "99.9%",
+                            number: "High",
                             label: "Uptime SLA",
                         },
                     ].map((indicator, idx) => (

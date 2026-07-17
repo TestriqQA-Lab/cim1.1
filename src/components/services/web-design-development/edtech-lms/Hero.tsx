@@ -228,7 +228,7 @@ export default function Hero() {
                         <div className="grid grid-cols-2 gap-4 mt-6 w-full z-10 relative">
                             {[
                                 { label: "Video Quality", value: "4K Ready" },
-                                { label: "Uptime", value: "99.99%" },
+                                { label: "Uptime", value: "High" },
                                 { label: "Mobile Ready", value: "100%" },
                                 { label: "Load Time", value: "<2s" },
                             ].map((metric, idx) => (

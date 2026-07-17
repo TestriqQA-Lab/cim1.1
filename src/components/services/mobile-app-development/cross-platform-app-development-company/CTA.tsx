@@ -64,7 +64,7 @@ export default function CTA() {
                             </h2>
 
                             <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl mx-auto lg:mx-0">
-                                Partner with a top-rated Cross-Platform App Development Agency. Let's build a secure, scalable, and high-performing app that your users will love.
+                                Partner with an expert Cross-Platform App Development Agency. Let's build a secure, scalable, and high-performing app that your users will love.
                             </p>
 
                             {/* Benefits */}
@@ -110,15 +110,15 @@ export default function CTA() {
                                 <div className="text-xs sm:text-sm text-white/70">Cross-Platform Apps</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">70%</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">Faster</div>
                                 <div className="text-xs sm:text-sm text-white/70">Faster Delivery</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">40%</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">Lower</div>
                                 <div className="text-xs sm:text-sm text-white/70">Cost Savings</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">2x</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">Wider</div>
                                 <div className="text-xs sm:text-sm text-white/70">Platform Reach</div>
                             </div>
                         </div>

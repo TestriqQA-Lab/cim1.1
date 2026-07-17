@@ -55,7 +55,7 @@ export default function UseCases() {
             example: "Reduced query response time by 65%",
             gradient: "from-amber-600 via-orange-600 to-red-600",
             bgColor: "#d97706",
-            stats: "65% Faster",
+            stats: "Faster",
             tags: ["Portals", "Automation", "Secure"],
             link: "/services/web-design-development/business-corporate",
         },
@@ -84,7 +84,7 @@ export default function UseCases() {
         {
             icon: Cog,
             title: "Workflow & Automation Tools",
-            description: "Business process automation, project management software, and operational tools that replace spreadsheets and fragmented systems - unlocking 10x productivity gains.",
+            description: "Business process automation, project management software, and operational tools that replace spreadsheets and fragmented systems - unlocking significant productivity gains.",
             example: "Consolidated 15 tools into one dashboard",
             gradient: "from-orange-600 via-red-600 to-pink-600",
             bgColor: "#ea580c",

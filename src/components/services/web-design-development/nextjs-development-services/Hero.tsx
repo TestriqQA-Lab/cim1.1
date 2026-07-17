@@ -87,7 +87,7 @@ export default function Hero() {
                             className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight"
                             style={{ color: "var(--foreground)" }}
                         >
-                            Premier{" "}
+                            Expert{" "}
                             <span
                                 style={{
                                     background: "linear-gradient(135deg, #61dafb, #00d4ff)",
@@ -102,7 +102,7 @@ export default function Hero() {
 
                         <div className="space-y-4">
                             <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                As a premier Next.js development agency and React JS development company, we build lightning-fast, SEO-optimized, and highly scalable web applications. Our expert React development services deliver seamless user experiences that dominate search rankings and maximize ROI for global brands.
+                                As an expert Next.js development agency and React JS development company, we build lightning-fast, SEO-optimized, and highly scalable web applications. Our expert React development services deliver seamless user experiences that dominate search rankings and maximize ROI for global brands.
                             </p>
                         </div>
 

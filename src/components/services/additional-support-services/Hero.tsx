@@ -17,7 +17,7 @@ export default function Hero() {
     const stats = [
         { value: "24/7", label: "Support Available" },
         { value: "<2hr", label: "Response Time" },
-        { value: "99.9%", label: "Uptime Guarantee" },
+        { value: "24/7", label: "Monitoring" },
     ];
 
     useEffect(() => {
@@ -98,11 +98,11 @@ export default function Hero() {
                         </h1>
 
                         <p className="mt-6 text-lg md:text-xl max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Optimize your operations with our premium Business Support Services designed for global scalability. Whether you need Outsourced Administrative assistance, <Link href="/services/web-design-development" className="hover:text-[#fab900] transition-colors">IT Business Support Services</Link>, or Managed Support Services, our team ensures your business runs flawlessly 24/7. We combine 30+ years of digital expertise with cutting-edge technology to deliver Business Assistance Services that drive efficiency and growth.
+                            Optimize your operations with our premium Business Support Services designed for global scalability. Whether you need Outsourced Administrative assistance, <Link href="/services/web-design-development" className="hover:text-[#fab900] transition-colors">IT Business Support Services</Link>, or Managed Support Services, our team ensures your business runs flawlessly 24/7. We combine deep digital expertise with cutting-edge technology to deliver Business Assistance Services that drive efficiency and growth.
                         </p>
 
                         <p className="mt-4 text-sm md:text-base max-w-xl mx-auto lg:mx-0" style={{ color: "var(--secondary-text)" }}>
-                            Join 50+ global <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[#fab900] transition-colors">fintech</Link> and <Link href="/services/web-design-development/business-corporate" className="hover:text-[#fab900] transition-colors">enterprise</Link> clients who trust us for 95% bug-free technical maintenance and 300% operational efficiency improvements.
+                            Join 50+ global <Link href="/services/web-design-development/fintech-solutions" className="hover:text-[#fab900] transition-colors">fintech</Link> and <Link href="/services/web-design-development/business-corporate" className="hover:text-[#fab900] transition-colors">enterprise</Link> clients who trust us for rigorously tested technical maintenance and significant operational efficiency improvements.
                         </p>
 
                         {/* Feature Pills */}
@@ -202,7 +202,7 @@ export default function Hero() {
                             <div className="grid grid-cols-3 gap-4 mt-8 pt-6 border-t" style={{ borderColor: "var(--border-color)" }}>
                                 {[
                                     { value: "500+", label: "Happy Clients" },
-                                    { value: "15+", label: "Years Exp." },
+                                    { value: "12+", label: "Years Exp." },
                                     { value: "50+", label: "Support Staff" },
                                 ].map((stat, index) => (
                                     <div key={index} className="text-center">

@@ -13,8 +13,8 @@ export default function WhyChooseUs() {
     const benefits = [
         {
             icon: CheckCircle,
-            title: "30+ Years Combined Experience",
-            description: "Our strategists have survived every major Google algorithm update since 2010.",
+            title: "Deep Combined Experience",
+            description: "Our strategists have survived every major Google algorithm update.",
         },
         {
             icon: TrendingUp,

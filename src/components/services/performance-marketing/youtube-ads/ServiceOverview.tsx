@@ -40,7 +40,7 @@ export default function ServiceOverview() {
             icon: Video,
             title: "Non-Skippable Ads",
             description: "15-20 second ads that viewers must watch before their video.",
-            features: ["Guaranteed view", "Complete message", "Premium placement", "Brand lift"],
+            features: ["High visibility", "Complete message", "Premium placement", "Brand lift"],
         },
         {
             icon: BarChart,

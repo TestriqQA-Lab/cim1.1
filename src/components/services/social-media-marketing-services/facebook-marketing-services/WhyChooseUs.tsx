@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Proven ROAS Results",
-            description: <>Our clients average a 5-10x <Link href="/services/performance-marketing" className="hover:underline text-blue-500">Return on Ad Spend</Link>, verified via third-party audits. We focus on profit, not just impressions.</>,
+            description: <>Our clients average a strong <Link href="/services/performance-marketing" className="hover:underline text-blue-500">Return on Ad Spend</Link>, verified via third-party audits. We focus on profit, not just impressions.</>,
             shadowColor: "rgba(24, 119, 242, 0.3)",
         },
         {

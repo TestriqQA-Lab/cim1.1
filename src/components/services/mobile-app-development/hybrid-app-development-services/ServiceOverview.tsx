@@ -18,7 +18,7 @@ export default function ServiceOverview() {
         {
             icon: Globe,
             title: "Ionic Framework App Development Services",
-            description: <><span className="text-inherit">As a premier Ionic framework app development agency, we build lightning-fast apps using Angular, React, or Vue. Our performance optimization ensures your Ionic apps feel as smooth as </span><Link href="/services/mobile-app-development" className="text-[#00b4d8] hover:underline">native apps</Link>.</>,
+            description: <><span className="text-inherit">As an expert Ionic framework app development agency, we build lightning-fast apps using Angular, React, or Vue. Our performance optimization ensures your Ionic apps feel as smooth as </span><Link href="/services/mobile-app-development" className="text-[#00b4d8] hover:underline">native apps</Link>.</>,
             gradient: "from-[#00b4d8] to-[#0077b6]",
             shadowColor: "rgba(0, 180, 216, 0.4)",
         },

@@ -10,7 +10,7 @@ export default function FAQ() {
     const faqs = [
         {
             question: "What are the benefits of using Astro.js for business?",
-            answer: "Astro.js delivers exceptional performance with zero JavaScript by default, resulting in 98-100 PageSpeed scores, sub-1-second load times, and superior SEO rankings. Businesses benefit from higher conversion rates (25-40% better), lower costs (30-50% reduction in hosting), better SEO rankings, 40% faster development, and flexibility to mix React, Vue, Svelte components."
+            answer: "Astro.js delivers exceptional performance with zero JavaScript by default, resulting in 98-100 PageSpeed scores, sub-1-second load times, and superior SEO rankings. Businesses benefit from higher conversion rates, lower hosting costs, better SEO rankings, faster development, and flexibility to mix React, Vue, Svelte components."
         },
         {
             question: "How much does it cost to build a custom Astro.js website?",
@@ -26,7 +26,7 @@ export default function FAQ() {
         },
         {
             question: "How long does it take to develop an Astro.js web application?",
-            answer: "Development timelines vary by complexity: Small projects (5-10 pages) take 3-4 weeks, Medium projects (20-50 pages) take 6-8 weeks, Large projects (100+ pages) take 12-14 weeks, Enterprise projects (multi-site platforms) take 16-20 weeks. Most Astro projects launch 30% faster than React/Next.js equivalents due to simplified build processes."
+            answer: "Development timelines vary by complexity: Small projects (5-10 pages) take 3-4 weeks, Medium projects (20-50 pages) take 6-8 weeks, Large projects (100+ pages) take 12-14 weeks, Enterprise projects (multi-site platforms) take 16-20 weeks. Most Astro projects launch faster than React/Next.js equivalents due to simplified build processes."
         },
         {
             question: "Can Astro handle e-commerce and dynamic content?",

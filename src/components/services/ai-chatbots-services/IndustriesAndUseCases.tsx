@@ -51,7 +51,7 @@ export default function IndustriesAndUseCases() {
         {
             icon: ShoppingBag,
             title: "Retail",
-            description: <span>30% increase in average order value. Deliver real-time <Link href="/services/web-design-development/shopify-development-services" className="hover:text-[#A78BFA] transition-colors">personalized shopping</Link> experiences.</span>,
+            description: <span>Increase in average order value. Deliver real-time <Link href="/services/web-design-development/shopify-development-services" className="hover:text-[#A78BFA] transition-colors">personalized shopping</Link> experiences.</span>,
             benefits: ["Increased AOV", "Personalized shopping", "Inventory checks"],
             accentColor: "#A78BFA",
             secondaryIcon: ShoppingCart,
@@ -59,7 +59,7 @@ export default function IndustriesAndUseCases() {
         {
             icon: BookOpen,
             title: "Education",
-            description: "50% reduction in admin workload. Automate student support and enrollment queries.",
+            description: "Reduction in admin workload. Automate student support and enrollment queries.",
             benefits: ["Reduced workload", "Enrollment support", "Student FAQs"],
             accentColor: "#F59E0B",
             secondaryIcon: Users,

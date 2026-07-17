@@ -18,8 +18,8 @@ export default function Hero() {
     ];
 
     const stats = [
-        { value: "$10B+", label: "Transaction Volume" },
-        { value: "99.99%", label: "System Uptime" },
+        { value: "High-Volume", label: "Transaction Volume" },
+        { value: "High", label: "System Uptime" },
         { value: "PCI-DSS", label: "Compliant" },
     ];
 
@@ -188,7 +188,7 @@ export default function Hero() {
                         <div className="grid grid-cols-2 gap-4 mt-6 w-full z-10 relative">
                             {[
                                 { label: "Transaction Speed", value: "<100ms" },
-                                { label: "Availability", value: "99.999%" },
+                                { label: "Availability", value: "High" },
                                 { label: "Security Score", value: "A+" },
                                 { label: "API Latency", value: "Low" },
                             ].map((metric, idx) => (

@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
         {
             icon: Zap,
             title: "Performance Obsessed",
-            description: <>We guarantee News portal performance and speed optimization. Passing <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-[#a855f7]">Core Web Vitals</Link> is our baseline, not a goal.</>
+            description: <>We prioritize News portal performance and speed optimization. Passing <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-[#a855f7]">Core Web Vitals</Link> is our baseline, not a goal.</>
         },
         {
             icon: Award,
@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
         {
             icon: TrendingUp,
             title: "Proven ROI",
-            description: <>Our clients see an average of 300% traffic growth within 12 months via our integrated <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-[#a855f7]">technical SEO</Link>.</>
+            description: <>Our clients see an average of sustained traffic growth within 12 months via our integrated <Link href="/services/seo-services/technical-seo-services" className="hover:underline text-[#a855f7]">technical SEO</Link>.</>
         }
     ];
 

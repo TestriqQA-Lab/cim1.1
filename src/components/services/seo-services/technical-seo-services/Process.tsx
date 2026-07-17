@@ -52,7 +52,7 @@ export default function Process() {
                         6 Steps to Flawless <span style={{ color: techPurple }}>Technical Performance</span>
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--secondary-text)" }}>
-                        Our systematic approach ensures every technical bottleneck is identified and resolved, delivering 95% bug-free implementations for our clients.
+                        Our systematic approach ensures every technical bottleneck is identified and resolved, delivering rigorously tested implementations for our clients.
                     </p>
                 </div>
 

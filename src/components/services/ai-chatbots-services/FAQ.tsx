@@ -10,7 +10,7 @@ export default function FAQ() {
     const faqs = [
         {
             q: "What are the benefits of using AI chatbots for business?",
-            a: <span>AI Chatbot Services maximize efficiency by handling high volumes of queries 24/7 without human fatigue. Key benefits include a 40-60% reduction in <Link href="/services/additional-support-services" className="hover:text-[var(--brand-chatbot)] transition-colors">customer support costs</Link>, increased lead conversion through instant engagement, and scalable multilingual support. An ROI-driven AI chatbot implementation typically pays for itself within 6 months.</span>,
+            a: <span>AI Chatbot Services maximize efficiency by handling high volumes of queries 24/7 without human fatigue. Key benefits include a significant reduction in <Link href="/services/additional-support-services" className="hover:text-[var(--brand-chatbot)] transition-colors">customer support costs</Link>, increased lead conversion through instant engagement, and scalable multilingual support. An ROI-driven AI chatbot implementation typically pays for itself within 6 months.</span>,
         },
         {
             q: "How do AI-powered chatbots improve customer service?",

@@ -19,8 +19,8 @@ export default function Hero() {
 
     const stats = [
         { value: "100+", label: "Stores Built" },
-        { value: "$10M+", label: "Sales Processed" },
-        { value: "99.9%", label: "Uptime" },
+        { value: "High-Volume", label: "Sales Processed" },
+        { value: "High", label: "Uptime" },
     ];
 
     return (
@@ -102,7 +102,7 @@ export default function Hero() {
 
                         <div className="space-y-4">
                             <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                Partner with a leading Shopify marketing agency to scale your brand with expert Shopify development services built for the 2026 digital landscape. From high-converting store setup to enterprise-grade Shopify Plus solutions, we deliver precision-engineered experiences that dominate search rankings and drive sustainable ROI across global markets.
+                                Partner with an expert Shopify marketing agency to scale your brand with expert Shopify development services built for the 2026 digital landscape. From high-converting store setup to enterprise-grade Shopify Plus solutions, we deliver precision-engineered experiences that dominate search rankings and drive sustainable ROI across global markets.
                             </p>
                         </div>
 

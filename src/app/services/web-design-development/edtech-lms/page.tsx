@@ -46,6 +46,7 @@ export const metadata = getPageMetadata({
         'E-Learning Development',
         'Educational App Development',
     ],
+    image: '/og-images/edtech.jpeg',
 });
 
 export default function EdTechLMSPage() {

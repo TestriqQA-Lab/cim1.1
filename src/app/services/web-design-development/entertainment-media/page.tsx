@@ -33,6 +33,7 @@ export const metadata = getPageMetadata({
         'live streaming website',
         'media content management',
     ],
+    image: '/og-images/entertainment.jpeg',
 });
 
 export default function EntertainmentMediaPage() {
@@ -64,7 +65,7 @@ export default function EntertainmentMediaPage() {
 
         generateServiceSchema({
             name: "Entertainment & Media Website Development",
-            description: "Build powerful streaming platforms, content management systems, and engaging entertainment experiences that captivate audiences and drive subscriber growth. 4K streaming ready with adaptive bitrate delivery and 3x user engagement.",
+            description: "Build powerful streaming platforms, content management systems, and engaging entertainment experiences that captivate audiences and drive subscriber growth. 4K streaming ready with adaptive bitrate delivery and higher user engagement.",
             urlPath: "/services/web-design-development/entertainment-media",
             serviceType: "Entertainment & Media Platform Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],

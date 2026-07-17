@@ -35,9 +35,9 @@ const defaultMetadata: Partial<Metadata> = {
   twitter: {
     card: "summary_large_image",
     title: "Cinute InfoMedia | Web Development Company & Digital Marketing Agency",
-    description: "Transform your digital presence with our web development services, mobile apps, AI automation & marketing solutions. 95% client retention.",
+    description: "Transform your digital presence with our web development services, mobile apps, AI automation & marketing solutions.",
     images: ["/og-image.jpg"],
-    creator: "@cinuteinfomedia",
+    creator: "@cinute_infomedia",
   },
   robots: {
     index: true,
@@ -59,19 +59,22 @@ export function getPageMetadata(params: {
   keywords?: string[];
   image?: string;
 }): Metadata {
+  // Guard against canonical-doubling: if a full URL is passed (e.g. a Sanity
+  // editor entered an absolute canonicalUrl), use it as-is instead of prepending siteUrl.
+  const absoluteUrl = /^https?:\/\//i.test(params.url) ? params.url : `${siteUrl}${params.url}`;
   return {
     ...defaultMetadata,
     title: params.title,
     description: params.description,
     keywords: [...(defaultMetadata.keywords as string[]), ...(params.keywords || [])],
     alternates: {
-      canonical: `${siteUrl}${params.url}`,
+      canonical: absoluteUrl,
     },
     openGraph: {
       ...defaultMetadata.openGraph,
       title: params.title,
       description: params.description,
-      url: `${siteUrl}${params.url}`,
+      url: absoluteUrl,
       images: params.image ? [{ url: params.image }] : defaultMetadata.openGraph?.images,
     },
     twitter: {
@@ -149,15 +152,23 @@ export function generateCategoryMetadata(
   category: string,
   postCount: number,
   slug: string,
-  seo?: { metaTitle?: string; metaDescription?: string; keywords?: string[] }
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    canonicalUrl?: string;
+  }
 ): Metadata {
   const url = `/blog/category/${slug}`;
 
+  const metaTitle = seo?.metaTitle || `${category} Articles | Cinute Infomedia Blog`;
+  const metaDescription = seo?.metaDescription || `Explore ${postCount} articles about ${category}. Learn from our experts on the latest trends and best practices.`;
+
   return getPageMetadata({
-    title: seo?.metaTitle || `${category} Articles | Cinute Infomedia Blog`,
-    description: seo?.metaDescription || `Explore ${postCount} articles about ${category}. Learn from our experts on the latest trends and best practices.`,
-    url: url,
-    keywords: seo?.keywords || [category, "blog", "articles"],
+    title: metaTitle,
+    description: metaDescription,
+    url: seo?.canonicalUrl || url,
+    keywords: [category, "blog", "articles"],
+    image: "/og-images/blogcategories.webp"
   });
 }
 
@@ -166,15 +177,27 @@ export function generateAuthorMetadata(
   bio: string,
   image: string,
   postCount: number,
-  seo?: { metaTitle?: string; metaDescription?: string }
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+    canonicalUrl?: string;
+  }
 ): Metadata {
   const url = `/blog/author/${name.toLowerCase().replace(/\s+/g, "-")}`;
 
-  return getPageMetadata({
-    title: seo?.metaTitle || `${name} | Author at Cinute Infomedia`,
-    description: seo?.metaDescription || bio,
-    url: url,
-    image: image,
-    keywords: [name, "author", "blog"],
-  });
+  const metaTitle = seo?.metaTitle || `${name} | Author at Cinute Infomedia`;
+  const metaDescription = seo?.metaDescription || bio;
+
+  return {
+    ...getPageMetadata({
+      title: metaTitle,
+      description: metaDescription,
+      url: seo?.canonicalUrl || url,
+      image: image,
+      keywords: [name, "author", "blog"],
+    }),
+    // I-3: thin author archives -> noindex (keep follow) to save crawl budget.
+    // Author E-E-A-T still conveyed via per-article author bios. Also excluded from sitemap.
+    robots: { index: false, follow: true },
+  };
 }

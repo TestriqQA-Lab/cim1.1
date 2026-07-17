@@ -70,7 +70,7 @@ export default function SolutionTypes() {
         {
             icon: Briefcase,
             title: <Link href="/services/web-design-development/blog-design-services" className="hover:underline">Recruiting & HR</Link>,
-            description: "Dominate LinkedIn recruitment advertising services to attract top-tier global talent.",
+            description: "Dominate LinkedIn recruitment advertising services to attract top global talent.",
             features: [
                 "Employer branding",
                 "Job promotion",

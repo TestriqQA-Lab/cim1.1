@@ -19,7 +19,7 @@ export default function Hero() {
 
     const stats = [
         { value: "500+", label: "APIs Built" },
-        { value: "99.9%", label: "Uptime" },
+        { value: "High", label: "Uptime" },
         { value: "10M+", label: "Requests/day" },
     ];
 

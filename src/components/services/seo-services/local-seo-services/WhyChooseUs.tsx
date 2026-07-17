@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         {
             icon: BarChart,
             title: "Conversion Rate Optimization for GBP",
-            description: <><Link href="/services/performance-marketing" className="hover:underline">Traffic means nothing without conversions</Link> - We A/B test GBP descriptions, service menu layouts, booking button placements, and photo sequences to maximize click-to-call rates. Our optimized profiles convert 3.2x higher than industry benchmarks.</>,
+            description: <><Link href="/services/performance-marketing" className="hover:underline">Traffic means nothing without conversions</Link> - We A/B test GBP descriptions, service menu layouts, booking button placements, and photo sequences to maximize click-to-call rates. Our optimized profiles convert higher than industry benchmarks.</>,
         },
         {
             icon: Check,
@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                                 Why Trust Us With Your <span style={{ color: localAmber }}>Local Market?</span>
                             </h2>
                             <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                                We're a global local SEO company serving hospitality, medical, legal, home services, retail, and real estate sectors. Our proprietary geo-targeting strategies combined with Google's 2026 local search algorithms transform your Google Business Profile into a lead-generating powerhouse that drives 3x more phone calls and foot traffic.
+                                We're a global local SEO company serving hospitality, medical, legal, home services, retail, and real estate sectors. Our proprietary geo-targeting strategies combined with Google's 2026 local search algorithms transform your Google Business Profile into a lead-generating powerhouse that drives more phone calls and foot traffic.
                             </p>
 
                             <div
@@ -81,7 +81,7 @@ export default function WhyChooseUs() {
                                     backgroundColor: `${localAmber}05`
                                 }}
                             >
-                                <div className="text-4xl font-bold mb-2" style={{ color: localAmber }}>92%</div>
+                                <div className="text-4xl font-bold mb-2" style={{ color: localAmber }}>High</div>
                                 <p style={{ color: "var(--secondary-text)" }}>Of clients stay with us for more than 12 months because our strategies deliver consistent, measurable results.</p>
                             </div>
                         </div>

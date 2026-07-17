@@ -75,7 +75,7 @@ export default function TechStack() {
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-8" style={{ color: "var(--secondary-text)" }}>
-                        We leverage industry-leading technologies to build powerful, scalable real estate platforms.
+                        We leverage modern technologies to build powerful, scalable real estate platforms.
                     </p>
 
                     <div

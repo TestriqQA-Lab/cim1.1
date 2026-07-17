@@ -160,7 +160,7 @@ export default function Hero() {
                         {/* Stats */}
                         <div className="mt-12 grid grid-cols-3 gap-8 border-t pt-8" style={{ borderColor: "var(--border-color)" }}>
                             <div>
-                                <div className="text-3xl font-bold mb-1" style={{ color: "#10b981" }}>3x</div>
+                                <div className="text-3xl font-bold mb-1" style={{ color: "#10b981" }}>Strong</div>
                                 <div className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. ROI Increase</div>
                             </div>
                             <div>

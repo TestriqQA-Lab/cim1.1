@@ -182,7 +182,7 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: "#007AFF" }}>4.8★</h4>
+                                <h4 className="text-2xl md:text-3xl font-bold" style={{ color: "#007AFF" }}>High</h4>
                                 <p className="text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>Avg. App Store Rating</p>
                             </div>
                             <div className="w-px h-10 bg-border hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />

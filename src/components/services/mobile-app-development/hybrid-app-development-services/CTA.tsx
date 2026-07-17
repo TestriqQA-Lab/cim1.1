@@ -97,15 +97,15 @@ export default function CTA() {
                                 <div className="text-xs sm:text-sm text-white/70">Hybrid Apps Built</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">60%</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">Faster</div>
                                 <div className="text-xs sm:text-sm text-white/70">Faster Delivery</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">50%</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">Lower</div>
                                 <div className="text-xs sm:text-sm text-white/70">Cost Reduction</div>
                             </div>
                             <div className="p-4 sm:p-6 rounded-2xl bg-white/10 backdrop-blur-sm text-center">
-                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">3x</div>
+                                <div className="text-2xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">Faster</div>
                                 <div className="text-xs sm:text-sm text-white/70">Faster Updates</div>
                             </div>
                         </div>

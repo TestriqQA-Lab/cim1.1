@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Hero from "@/components/services/mobile-app-development/enterprise-application-development-services/Hero";
 import ServiceOverview from "@/components/services/mobile-app-development/enterprise-application-development-services/ServiceOverview";
 import SolutionTypes from "@/components/services/mobile-app-development/enterprise-application-development-services/SolutionTypes";
@@ -7,138 +8,143 @@ import WhyChooseUs from "@/components/services/mobile-app-development/enterprise
 import CTA from "@/components/services/mobile-app-development/enterprise-application-development-services/CTA";
 import FAQ from "@/components/services/mobile-app-development/enterprise-application-development-services/FAQ";
 
-import { getPageMetadata } from '@/lib/metadata';
-import {
-    generateGraphSchema,
-    generateOrganizationSchema,
-    generateWebSiteSchema,
-    generateWebPageSchema,
-    generateBreadcrumbSchema,
-    generateServiceSchema,
-    generateItemListSchema,
-    generateFAQSchema,
-    generateHowToSchema,
-    generateNavigationSchema,
-} from '@/lib/schema';
-
-export const metadata = getPageMetadata({
-    title: 'Enterprise App Development Services | Secure & Scalable',
-    description: 'Expert Enterprise application development services. We build secure, scalable custom mobile and web apps for global enterprises like Manufacturing, Healthcare, and Finance. 95% bug-free, 85+ global clients, 500K+ daily active users, SOC 2/HIPAA/GDPR compliant.',
-    url: '/services/mobile-app-development/enterprise-application-development-services',
+export const metadata: Metadata = {
+    title: "Enterprise App Development Services | Secure & Scalable",
+    description:
+        "Empower your business with Enterprise Application Development services. Custom, secure, & scalable enterprise software development for global ROI. Get a quote today! 💼",
     keywords: [
-        'Enterprise Application Development services',
-        'Enterprise Software Development',
-        'Enterprise App Development company',
-        'Enterprise Mobile App Development',
-        'Enterprise Web Applications',
-        'SOC 2 compliant app development',
-        'HIPAA compliant enterprise apps',
+        "Enterprise Application Development services",
+        "Enterprise Software Development",
+        "Enterprise App Development company",
+        "Enterprise Mobile App Development",
+        "Enterprise Web Applications",
     ],
-});
+    openGraph: {
+        title: "Enterprise App Development Services | Secure & Scalable",
+        description:
+            "Empower your business with Enterprise Application Development services. Custom, secure, & scalable enterprise software development for global ROI. Get a quote today! 💼",
+        url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services",
+        type: "website",
+        images: [
+            {
+                url: "/og-images/enterprise-application-development.webp",
+                width: 1200,
+                height: 630,
+                alt: "Enterprise App Development Services by Cinute Infomedia",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Enterprise App Development Services | Secure & Scalable",
+        description:
+            "Empower your business with Enterprise Application Development services. Custom, secure, & scalable enterprise software development for global ROI. Get a quote today! 💼",
+        images: ["/og-images/enterprise-application-development.webp"],
+    },
+    alternates: {
+        canonical: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services",
+    },
+};
+
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Service",
+            "name": "Enterprise Application Development Services",
+            "description": "Custom enterprise software development services for global organizations.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Cinute Infomedia",
+                "url": "https://www.cinuteinfomedia.com/"
+            },
+            "serviceType": "Enterprise App Development",
+            "areaServed": ["US", "EU", "India", "APAC"],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Enterprise Application Development Services",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Manufacturing Enterprise Apps",
+                            "description": "Business process automation with production monitoring, quality control, and legacy system integration for the shop floor."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Healthcare Enterprise Apps",
+                            "description": "HIPAA and GDPR compliant software for patient engagement, clinical workflows, and secure health record administration."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Financial Services Applications",
+                            "description": "Custom fintech and banking applications with bank-level encryption and regulatory compliance for secure transactions."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Logistics & Supply Chain Apps",
+                            "description": "Supply chain management apps with route optimization and real-time shipment tracking across global markets."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Retail Enterprise Solutions",
+                            "description": "Omnichannel solutions with automated inventory management and employee apps for global retail chains."
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Government & Public Sector Apps",
+                            "description": "Secure, compliant citizen portals and internal operations apps with FedRAMP-ready field inspection and case management."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is enterprise application development?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Enterprise application development is the process of building complex, scalable, and secure software solutions designed to support the mission-critical operations of large organizations."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much does enterprise app development cost?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The cost of Enterprise Application Development services typically ranges from $50,000 to $500,000+, depending on complexity and integration needs."
+                    }
+                }
+            ]
+        }
+    ]
+};
 
 export default function EnterpriseAppDevelopmentPage() {
-    const enterpriseSchema = generateGraphSchema(
-        generateOrganizationSchema({
-            description: "Cinute InfoMedia (CIM) is a digital growth agency helping businesses build, market, and scale through creativity, data, and technology.",
-            slogan: "Build. Market. Scale.",
-        }),
-
-        generateWebSiteSchema(),
-
-        generateWebPageSchema({
-            name: "Enterprise App Development Services | Secure & Scalable",
-            description: "Expert Enterprise application development services. We build secure, scalable custom mobile and web apps for global enterprises like Manufacturing, Healthcare, and Finance. 95% bug-free, 85+ global clients, 500K+ daily active users, SOC 2/HIPAA/GDPR compliant.",
-            urlPath: "/services/mobile-app-development/enterprise-application-development-services",
-            datePublished: "2025-01-01",
-            dateModified: "2026-04-10",
-            aboutId: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#service",
-            mainEntityId: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#service",
-            breadcrumbId: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#breadcrumb",
-        }),
-
-        generateBreadcrumbSchema([
-            { name: "Home", url: "/" },
-            { name: "Services", url: "/services" },
-            { name: "Mobile App Development", url: "/services/mobile-app-development" },
-            { name: "Enterprise Application Development Services", url: "/services/mobile-app-development/enterprise-application-development-services" },
-        ], "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#breadcrumb"),
-
-        generateServiceSchema({
-            name: "Enterprise Application Development Services",
-            description: "Custom enterprise software development for scalable growth. Driving global innovation in 2026 with secure, scalable custom mobile and web apps for enterprises. 95% bug-free applications, 85+ global enterprise clients, 500K+ daily active users. SOC 2, HIPAA, and GDPR compliant.",
-            urlPath: "/services/mobile-app-development/enterprise-application-development-services",
-            serviceType: "Enterprise Application Development",
-            areaServed: ["IN", "US", "GB", "AU", "AE"],
-            offer: {
-                url: "/contact",
-                priceCurrency: "USD",
-                validFrom: "2025-01-01",
-                description: "Custom enterprise application quotes based on requirements. Includes consulting and roadmap planning, security architecture, agile development, legacy integration, and 24/7 enterprise support.",
-            },
-        }),
-
-        generateItemListSchema({
-            id: "/services/mobile-app-development/enterprise-application-development-services/#solutionsList",
-            name: "Enterprise Application Solutions",
-            description: "Comprehensive enterprise solutions from employee mobile apps to executive dashboards and secure communications.",
-            items: [
-                { name: "Employee Mobile Apps", description: "Streamline internal communications, HR workflows, and employee self-service portals." },
-                { name: "Field Service Applications", description: "Provide real-time data access, work order management, and GPS tracking for field agents." },
-                { name: "CRM & Sales Apps", description: "Enhance customer relationships, sales pipeline tracking, and revenue analytics." },
-                { name: "Workflow & Approval Apps", description: "Automate multi-level business approval processes with audit trails and notifications." },
-                { name: "Secure Communications", description: "Encrypted messaging, file sharing, and video conferencing for enterprise teams." },
-                { name: "Executive Dashboards", description: "Real-time business intelligence and KPI visualization for data-driven decisions." },
-            ],
-        }),
-
-        generateItemListSchema({
-            id: "/services/mobile-app-development/enterprise-application-development-services/#industryList",
-            name: "Enterprise Industry Expertise",
-            description: "Industry-specific enterprise application solutions for manufacturing, healthcare, finance, logistics, retail, and government sectors.",
-            items: [
-                { name: "Manufacturing", description: "IoT-integrated shop floor management, supply chain optimization, and quality control systems." },
-                { name: "Healthcare (HIPAA Compliant)", description: "HIPAA-compliant patient portals, EHR integrations, and telemedicine platforms." },
-                { name: "Financial Services", description: "Bank-grade trading platforms, risk management systems, and regulatory compliance tools." },
-                { name: "Logistics & Supply Chain", description: "Fleet management, warehouse automation, and real-time shipment tracking solutions." },
-                { name: "Retail Enterprise", description: "Omnichannel retail management, inventory optimization, and customer analytics systems." },
-                { name: "Government & Public Sector", description: "Secure citizen services, e-governance portals, and compliance-driven public sector applications." },
-            ],
-        }),
-
-        generateFAQSchema([
-            { question: "What is enterprise application development?", answer: "It is the process of building complex, secure, and scalable software solutions designed specifically for large organizations to improve internal workflows and productivity." },
-            { question: "What are the benefits of custom enterprise software?", answer: "It provides a competitive edge by automating unique business processes, improving operational efficiency, and ensuring technology evolves with business goals." },
-            { question: "How long does it take to build an enterprise-grade app?", answer: "A typical project takes between 4 to 9 months, depending on complexity, integrations, and regulatory requirements like SOC 2 or HIPAA." },
-            { question: "What is the difference between enterprise and regular app development?", answer: "The primary differences lie in strict security requirements, massive scalability, deep integration with legacy systems (ERP, CRM), and rigorous compliance standards." },
-        ]),
-
-        generateHowToSchema({
-            name: "Our Security-First Enterprise Development Lifecycle",
-            description: "A proven 5-phase security-first development process for building enterprise applications with 95% bug-free delivery, SOC 2/HIPAA/GDPR compliance, and 24/7 enterprise support.",
-            steps: [
-                { name: "Enterprise Consulting & Roadmap Planning", text: "Strategy alignment, stakeholder interviews, business process assessment, and enterprise technology roadmap creation. Timeline: 2-3 weeks.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#step-consulting" },
-                { name: "Security Architecture & Design", text: "Threat modeling, data encryption planning (AES-256), role-based access design, and compliance architecture (SOC 2, HIPAA, GDPR). Timeline: 2-4 weeks.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#step-security" },
-                { name: "Development & Continuous QA", text: "Agile development with automated testing, CI/CD pipelines, and continuous quality assurance throughout the build. Timeline: 12-20 weeks.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#step-development" },
-                { name: "Integration & Middleware Services", text: "Connecting to ERP (SAP), CRM (Salesforce), ServiceNow, and legacy systems with custom middleware. Timeline: 4-6 weeks.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#step-integration" },
-                { name: "Deployment & 24/7 Enterprise Support", text: "Production deployment on AWS/Azure/GCP with proactive monitoring, guaranteed SLAs, and ongoing 24/7 enterprise support. Ongoing.", url: "https://www.cinuteinfomedia.com/services/mobile-app-development/enterprise-application-development-services/#step-deployment" },
-            ],
-        }),
-
-        generateNavigationSchema([
-            { name: "Home", url: "/" },
-            { name: "Services", url: "/services" },
-            { name: "Blog", url: "/blog" },
-            { name: "About", url: "/about" },
-            { name: "Careers", url: "/careers" },
-            { name: "Contact", url: "/contact" },
-        ])
-    );
-
     return (
         <main className="min-h-screen" style={{ "--page-selection-bg": "#2563eb" } as React.CSSProperties}>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(enterpriseSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <Hero />
             <ServiceOverview />

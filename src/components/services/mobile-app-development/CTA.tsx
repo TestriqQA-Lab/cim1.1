@@ -161,7 +161,7 @@ export default function CTA() {
                     </div>
                     <div className="text-center">
                         <div className="text-4xl font-bold mb-2" style={{ color: "var(--brand-blue)" }}>
-                            99.2%
+                            Strong
                         </div>
                         <p style={{ color: "var(--secondary-text)" }}>
                             Client retention rate

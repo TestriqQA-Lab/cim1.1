@@ -23,7 +23,7 @@ import {
 
 export const metadata = getPageMetadata({
     title: 'Travel & Hospitality Services | Custom Tech Solutions',
-    description: 'Scale with premier Travel and Hospitality Services. We build custom travel technology solutions and ROI-driven marketing campaigns.',
+    description: 'Scale with expert Travel and Hospitality Services. We build custom travel technology solutions and ROI-driven marketing campaigns.',
     url: '/services/web-design-development/travel-and-hospitality-services',
     keywords: [
         'travel and hospitality services',
@@ -37,6 +37,7 @@ export const metadata = getPageMetadata({
         'hotel property management system integration',
         'travel and tourism market research',
     ],
+    image: '/og-images/travel-and-hospitality.jpeg',
 });
 
 export default function TravelHospitalityPage() {
@@ -50,7 +51,7 @@ export default function TravelHospitalityPage() {
 
         generateWebPageSchema({
             name: "Travel & Hospitality Services | Custom Tech Solutions",
-            description: "Scale with premier Travel and Hospitality Services. We build custom travel technology solutions and ROI-driven marketing campaigns.",
+            description: "Scale with expert Travel and Hospitality Services. We build custom travel technology solutions and ROI-driven marketing campaigns.",
             urlPath: "/services/web-design-development/travel-and-hospitality-services",
             datePublished: "2025-01-01",
             dateModified: "2026-03-17",
@@ -68,7 +69,7 @@ export default function TravelHospitalityPage() {
 
         generateServiceSchema({
             name: "Travel & Hospitality Technology Services",
-            description: "Premier Travel and Hospitality Services designed for the 2026 digital ecosystem. As a leading Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that drive 40% more bookings.",
+            description: "Expert Travel and Hospitality Services designed for the 2026 digital ecosystem. As an expert Travel Software Development Services provider and Hospitality Marketing Agency, we build intelligent, ROI-driven Travel Technology Solutions that drive more bookings.",
             urlPath: "/services/web-design-development/travel-and-hospitality-services",
             serviceType: "Travel & Hospitality Technology Development",
             areaServed: ["IN", "US", "GB", "AU", "AE"],
@@ -105,13 +106,13 @@ export default function TravelHospitalityPage() {
 
         generateHowToSchema({
             name: "Our Travel Tech Development Journey",
-            description: "A proven 7-step methodology for building travel technology platforms that deliver 300% traffic growth and 40% more bookings.",
+            description: "A proven 7-step methodology for building travel technology platforms that deliver sustained traffic growth and more bookings.",
             steps: [
                 { name: "Discovery & Strategy", text: "Market research, competitor audit, and digital transformation roadmap for your travel or hospitality business.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-discovery" },
                 { name: "UX/UI Design", text: "Intuitive mobile-first prototypes aligned with hospitality brand identity and guest experience principles.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-design" },
                 { name: "Agile Development", text: "Sprint-based iterations using clean, scalable code and security best practices for travel platforms.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-development" },
                 { name: "Integration Excellence", text: "Connecting GDS/OTA APIs, PMS systems, payment gateways, and third-party services for a unified ecosystem.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-integration" },
-                { name: "Quality Assurance", text: "Rigorous automated and manual testing for 95% bug-free delivery across all devices and platforms.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-qa" },
+                { name: "Quality Assurance", text: "Rigorous automated and manual testing for rigorously tested delivery across all devices and platforms.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-qa" },
                 { name: "Launch & Training", text: "Production deployment plus comprehensive staff training and documentation for smooth operations.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-launch" },
                 { name: "Growth & Optimization", text: "2026 trend updates, SEO refinement, continuous monitoring, and data-driven feature enhancements.", url: "https://www.cinuteinfomedia.com/services/web-design-development/travel-and-hospitality-services/#step-growth" },
             ],

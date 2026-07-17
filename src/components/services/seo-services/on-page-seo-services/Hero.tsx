@@ -120,7 +120,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            Stop losing customers to the competition. Our <strong><Link href="/services/seo-services" className="hover:underline">On-page SEO optimization</Link></strong> bridge the gap between "good content" and "Google's #1 spot." By integrating 2026 EEAT signals and advanced <strong><Link href="/services/seo-services/technical-seo-services" className="hover:underline">on-site SEO services</Link></strong>, we turn your website into a high-performance lead generation engine.
+                            Stop losing customers to the competition. Our <strong><Link href="/services/seo-services" className="hover:underline">On-page SEO optimization</Link></strong> bridge the gap between "good content" and "Google's top spot." By integrating 2026 EEAT signals and advanced <strong><Link href="/services/seo-services/technical-seo-services" className="hover:underline">on-site SEO services</Link></strong>, we turn your website into a high-performance lead generation engine.
                         </p>
 
                         <p className="text-base md:text-lg animate-slideUp delay-200" style={{ color: "var(--secondary-text)" }}>
@@ -158,12 +158,12 @@ export default function Hero() {
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>98%</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>High</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Avg. Core Web Vitals</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>4.5x</h4>
+                                <h4 className="text-3xl font-bold" style={{ color: seoGreen }}>Strong</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Traffic Growth</p>
                             </div>
                         </div>
@@ -246,7 +246,7 @@ export default function Hero() {
                                     </div>
                                     <div>
                                         <p className="font-semibold" style={{ color: "var(--foreground)" }}>
-                                            100/100
+                                            98-100
                                         </p>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>
                                             Core Web Vitals

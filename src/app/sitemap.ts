@@ -2,7 +2,14 @@ import { MetadataRoute } from 'next';
 import fs from 'fs';
 import path from 'path';
 import { client } from "@/sanity/lib/client";
-import { allPostsQuery, categoriesQuery, authorsQuery } from "@/sanity/lib/queries";
+import { allPostsQuery, categoriesQuery } from "@/sanity/lib/queries";
+import { products } from "@/data/products";
+import { productPrivacyPolicies } from "@/data/productPrivacy";
+import { productSupportData } from "@/data/productSupport";
+
+// ISR: regenerate the sitemap periodically so newly-published Sanity blog posts
+// appear without a full redeploy. Uses the public read client (no token).
+export const revalidate = 3600; // hourly
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://www.cinuteinfomedia.com';
@@ -19,6 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         { route: '/blog', priority: 0.9, changeFrequency: 'daily' as const },
         { route: '/blog/categories', priority: 0.6, changeFrequency: 'weekly' as const },
         { route: '/services', priority: 0.9, changeFrequency: 'monthly' as const },
+        { route: '/products', priority: 0.8, changeFrequency: 'monthly' as const },
         { route: '/careers', priority: 0.7, changeFrequency: 'weekly' as const },
         { route: '/privacy-policy', priority: 0.3, changeFrequency: 'yearly' as const },
         { route: '/terms-of-service', priority: 0.3, changeFrequency: 'yearly' as const },
@@ -48,11 +56,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
                 if (fs.existsSync(pagePath)) {
                     // Use actual file modification time for reliable lastmod
                     const stat = fs.statSync(pagePath);
+                    // Tiered priority by depth: hub (0.9) > sub-service (0.8) > deeper (0.7)
+                    const depth = relativeRoute.split('/').length;
+                    const servicePriority = depth <= 1 ? 0.9 : depth === 2 ? 0.8 : 0.7;
                     serviceRoutes.push({
                         url: `${baseUrl}/services/${relativeRoute}`,
                         lastModified: stat.mtime.toISOString(),
                         changeFrequency: 'weekly' as const,
-                        priority: 0.9,
+                        priority: servicePriority,
                     });
                 }
                 // Recurse into subdirectories
@@ -66,13 +77,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Fetch data from Sanity (with error handling for build resilience)
     let blogPostRoutes: MetadataRoute.Sitemap = [];
     let blogCategoryRoutes: MetadataRoute.Sitemap = [];
-    let blogAuthorRoutes: MetadataRoute.Sitemap = [];
+    // I-3: author archives are noindex,follow -> intentionally excluded from sitemap.
 
     try {
-        const [posts, categories, authors] = await Promise.all([
+        const [posts, categories] = await Promise.all([
             client.fetch(allPostsQuery),
             client.fetch(categoriesQuery),
-            client.fetch(authorsQuery),
         ]);
 
         // 3. Dynamic Blog Routes (using actual publishedAt dates)
@@ -91,24 +101,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             priority: 0.6,
         }));
 
-        // 5. Dynamic Author Routes
-        blogAuthorRoutes = authors.map((author: any) => {
-            return {
-                url: `${baseUrl}/blog/author/${author.slug}`,
-                lastModified: staticLastModified,
-                changeFrequency: 'monthly' as const,
-                priority: 0.5,
-            };
-        });
+        // 5. Author routes intentionally omitted (noindex,follow — see I-3).
     } catch (error) {
         console.warn('Warning: Failed to fetch Sanity data for sitemap. Blog routes will be excluded.', error);
     }
 
+    // 6. Product Routes
+    const productRoutes: MetadataRoute.Sitemap = products.map((product) => ({
+        url: `${baseUrl}/products/${product.slug}`,
+        lastModified: staticLastModified,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
+    // 7. Product Privacy Policy Routes
+    const productPrivacyRoutes: MetadataRoute.Sitemap = productPrivacyPolicies.map((policy) => ({
+        url: `${baseUrl}/products/${policy.slug}/privacy-policy`,
+        lastModified: staticLastModified,
+        changeFrequency: 'yearly' as const,
+        priority: 0.3,
+    }));
+
+    // 8. Product Support Routes
+    const productSupportRoutes: MetadataRoute.Sitemap = productSupportData.map((support) => ({
+        url: `${baseUrl}/products/${support.slug}/support`,
+        lastModified: staticLastModified,
+        changeFrequency: 'monthly' as const,
+        priority: 0.5,
+    }));
+
     return [
         ...staticRoutes,
         ...serviceRoutes,
+        ...productRoutes,
+        ...productPrivacyRoutes,
+        ...productSupportRoutes,
         ...blogPostRoutes,
         ...blogCategoryRoutes,
-        ...blogAuthorRoutes,
     ];
 }

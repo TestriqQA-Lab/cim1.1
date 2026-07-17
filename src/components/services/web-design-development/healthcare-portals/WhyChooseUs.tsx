@@ -70,11 +70,11 @@ export default function WhyChooseUs() {
         {
             icon: Award,
             title: "Proven Track Record",
-            description: "Trusted by healthcare organizations to build secure, reliable patient platforms with 99.9% uptime guarantee.",
+            description: "Trusted by healthcare organizations to build secure, reliable patient platforms with high availability.",
             highlights: [
-                { icon: Star, text: "Award-winning" },
+                { icon: Star, text: "Proven expertise" },
                 { icon: UserCheck, text: "Trusted partner" },
-                { icon: TrendingUp, text: "99.9% uptime" }
+                { icon: TrendingUp, text: "high availability" }
             ],
             color: "#6366f1",
             gradient: "from-[#6366f1] to-[#3b82f6]",
@@ -471,7 +471,7 @@ export default function WhyChooseUs() {
                         { Icon: Hospital, number: "200+", label: "Healthcare Clients", color: "#3b82f6" },
                         { Icon: Users, number: "1M+", label: "Patients Served", color: "#6366f1" },
                         { Icon: Shield, number: "100%", label: "HIPAA Compliant", color: "#8b5cf6" },
-                        { Icon: Star, number: "99.9%", label: "System Uptime", color: "#a78bfa" },
+                        { Icon: Star, number: "High", label: "System Uptime", color: "#a78bfa" },
                     ].map((stat, idx) => (
                         <div
                             key={idx}

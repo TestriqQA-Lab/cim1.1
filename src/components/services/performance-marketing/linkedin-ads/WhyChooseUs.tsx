@@ -22,14 +22,14 @@ export default function WhyChooseUs() {
             id: 2,
             icon: TrendingUp,
             title: "B2B Specialists",
-            description: "10+ years focused exclusively on B2B LinkedIn advertising.",
-            stat: "10+ Years",
+            description: "Focused exclusively on B2B LinkedIn advertising.",
+            stat: "B2B Focus",
         },
         {
             id: 3,
             icon: Shield,
             title: "Enterprise Experience",
-            description: "Managed campaigns for Fortune 500 and high-growth startups.",
+            description: "Managed campaigns for large enterprises and high-growth startups.",
             stat: "100+ Clients",
         },
         {
@@ -148,7 +148,7 @@ export default function WhyChooseUs() {
                             <div className="mt-4 flex items-center gap-2 relative z-10">
                                 <CheckCircle className="w-4 h-4" style={{ color: linkedInBlue }} />
                                 <span className="text-xs font-medium" style={{ color: linkedInBlue }}>
-                                    Guaranteed
+                                    Included
                                 </span>
                             </div>
                         </div>

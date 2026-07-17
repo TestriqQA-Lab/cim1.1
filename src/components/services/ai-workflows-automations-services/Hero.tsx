@@ -109,7 +109,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Transform your fragmented operations into a unified, intelligent engine. As a premier <Link href="/blog/ai-workflows-automating-business-processes" className="hover:text-[var(--brand-orange)] transition-colors underline decoration-dotted"><span style={{ color: "var(--brand-orange)", fontWeight: 700 }}>Custom AI Automation Agency</span></Link>, we don&apos;t just connect tools - we build sophisticated, <span style={{ color: "var(--brand-orange)", fontWeight: 700 }}>Agentic Workflow Automations</span> that think, adapt, and execute. From Enterprise AI Automation Solutions to Low-code AI automation for <Link href="/blog/cybersecurity-small-businesses" className="hover:text-[var(--brand-orange)] transition-colors underline decoration-dotted">small businesses</Link>, our architect-led team empowers you to reclaim thousands of hours and drive double-digit <Link href="/blog/seo-ppc-hybrid-full-stack-funnels-convert-2x-better-2026" className="hover:text-[var(--brand-orange)] transition-colors underline decoration-dotted">ROI</Link>.
+                            Transform your fragmented operations into a unified, intelligent engine. As an expert <Link href="/blog/ai-workflows-automating-business-processes" className="hover:text-[var(--brand-orange)] transition-colors underline decoration-dotted"><span style={{ color: "var(--brand-orange)", fontWeight: 700 }}>Custom AI Automation Agency</span></Link>, we don&apos;t just connect tools - we build sophisticated, <span style={{ color: "var(--brand-orange)", fontWeight: 700 }}>Agentic Workflow Automations</span> that think, adapt, and execute. From Enterprise AI Automation Solutions to Low-code AI automation for <Link href="/blog/cybersecurity-small-businesses" className="hover:text-[var(--brand-orange)] transition-colors underline decoration-dotted">small businesses</Link>, our architect-led team empowers you to reclaim thousands of hours and drive double-digit <Link href="/blog/seo-ppc-hybrid-full-stack-funnels-convert-2x-better-2026" className="hover:text-[var(--brand-orange)] transition-colors underline decoration-dotted">ROI</Link>.
                         </p>
 
                         {/* Feature Highlights */}
@@ -192,7 +192,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    300%
+                                    Higher
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Efficiency Gains
@@ -206,7 +206,7 @@ export default function Hero() {
                                         color: "transparent",
                                     }}
                                 >
-                                    10x
+                                    Faster
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider" style={{ color: "var(--secondary-text)" }}>
                                     Faster Execution
