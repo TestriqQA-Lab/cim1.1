@@ -89,7 +89,7 @@ export default function Process() {
             number: "06",
             icon: Rocket,
             title: "Launch & Optimization",
-            description: <>Smooth go-live support followed by immediate monitoring and <Link href="/services/seo-services/ecommerce-seo-services" className="hover:underline text-[#00efd6]">Ecommerce SEO</Link> and <Link href="/services/performance-marketing" className="hover:underline text-[#00efd6]">digital marketing services</Link>.</>,
+            description: <>Smooth go-live support followed by immediate monitoring and <Link href="/services/seo-services/ecommerce-seo-services" className="underline underline-offset-2 hover:underline text-[#00efd6]">Ecommerce SEO</Link> and <Link href="/services/performance-marketing" className="underline underline-offset-2 hover:underline text-[#00efd6]">digital marketing services</Link>.</>,
             deliverables: [
                 { icon: Globe, text: "SEO setup" },
                 { icon: LineChart, text: "Analytics config" },

@@ -1,5 +1,3 @@
-"use client";
-
 import { ShoppingBag, Sparkles, Apple, Home, Dumbbell, Gift } from "lucide-react";
 
 export default function UseCases() {

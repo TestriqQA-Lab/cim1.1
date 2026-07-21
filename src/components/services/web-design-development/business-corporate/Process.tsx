@@ -1,5 +1,3 @@
-"use client";
-
 import { Search, Palette, Code, TestTube, Rocket, Headphones } from "lucide-react";
 import Link from "next/link";
 

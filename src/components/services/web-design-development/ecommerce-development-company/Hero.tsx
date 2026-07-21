@@ -1,5 +1,3 @@
-"use client";
-
 import { Sparkles, ArrowRight, Home, ChevronRight, ShoppingCart, TrendingUp, CreditCard, Package, BarChart3, Shield } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";

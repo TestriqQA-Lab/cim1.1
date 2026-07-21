@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { ShoppingCart, CreditCard, Package, BarChart3, Mail, Search } from "lucide-react";
 import Image from "next/image";

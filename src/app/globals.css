@@ -21,6 +21,12 @@
     --brand-blue-text: #006d97;
     --brand-purple-text: #a21caf;
 
+    /* Accessible SOLID-button backgrounds — white text hits >=4.5:1.
+       Theme-independent (a button's bg vs its own white text doesn't change
+       with page theme), so intentionally not overridden in dark mode. */
+    --brand-blue-btn: #006d97;
+    --brand-purple-btn: #9333ea;
+
     /* Selection highlight color (overridden per page via data-page-theme) */
     --page-selection-bg: var(--brand-purple);
 

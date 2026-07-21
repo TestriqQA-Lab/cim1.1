@@ -124,7 +124,7 @@ export default function UseCases() {
                             background:
                                 "linear-gradient(90deg, color-mix(in srgb, #008ac1 8%, transparent), color-mix(in srgb, #bc3feb 8%, transparent))",
                             borderColor: "color-mix(in srgb, #008ac1 20%, transparent)",
-                            color: "#008ac1",
+                            color: "var(--brand-blue-text)",
                         }}
                     >
                         <Users className="w-4 h-4" />
@@ -199,7 +199,7 @@ export default function UseCases() {
                                                 className="px-3 py-1.5 rounded-full border bg-white/5 backdrop-blur-sm"
                                                 style={{ borderColor: "rgba(0, 138, 193, 0.2)" }}
                                             >
-                                                <p className="text-xs font-bold" style={{ color: "#008ac1" }}>
+                                                <p className="text-xs font-bold" style={{ color: "var(--brand-blue-text)" }}>
                                                     {industry.stats}
                                                 </p>
                                             </div>
@@ -370,7 +370,7 @@ export default function UseCases() {
                                 border: "1px solid var(--border-color)",
                             }}>
                                 <DollarSign className="w-5 h-5" style={{ color: "#008ac1" }} />
-                                <span className="text-sm font-bold" style={{ color: "#008ac1" }}>
+                                <span className="text-sm font-bold" style={{ color: "var(--brand-blue-text)" }}>
                                     ROI-FOCUSED DEVELOPMENT
                                 </span>
                             </div>

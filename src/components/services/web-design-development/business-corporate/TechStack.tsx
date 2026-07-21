@@ -1,5 +1,3 @@
-"use client";
-
 import { Database, Globe, Search, Shield, Settings, Zap } from "lucide-react";
 import Link from "next/link";
 
