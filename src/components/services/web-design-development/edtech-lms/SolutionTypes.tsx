@@ -15,21 +15,21 @@ export default function SolutionTypes() {
         {
             icon: BookOpen,
             title: "Online Course Platforms",
-            description: <>Create and sell <Link href="/services/web-design-development/edtech-lms" className="hover:underline text-[#a855f7]">online courses</Link> with video lessons, quizzes, assignments, and progress tracking like Udemy or Skillshare.</>,
+            description: <>Create and sell <Link href="/services/web-design-development/edtech-lms" className="underline underline-offset-2 hover:underline text-[var(--brand-purple-text)]">online courses</Link> with video lessons, quizzes, assignments, and progress tracking like Udemy or Skillshare.</>,
             features: [
                 { icon: Video, text: "Video Lessons" },
                 { icon: FileText, text: "Downloadable Resources" },
                 { icon: Award, text: "Course Certificates" },
                 { icon: BarChart3, text: "Student Analytics" }
             ],
-            color: "#a855f7",
+            color: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#c084fc]",
             accentColor: "#c084fc",
         },
         {
             icon: Building2,
             title: "Corporate LMS",
-            description: <>Enterprise <Link href="/services/web-design-development/business-corporate" className="hover:underline text-[#ec4899]">learning management</Link> for employee training, onboarding, compliance, and skill development.</>,
+            description: <>Enterprise <Link href="/services/web-design-development/business-corporate" className="underline underline-offset-2 hover:underline text-[#ec4899]">learning management</Link> for employee training, onboarding, compliance, and skill development.</>,
             features: [
                 { icon: Users, text: "Team Management" },
                 { icon: Target, text: "Skill Tracking" },
@@ -57,14 +57,14 @@ export default function SolutionTypes() {
         {
             icon: Video,
             title: "Live Learning Platforms",
-            description: <>Real-time <Link href="/services/web-design-development/entertainment-media" className="hover:underline text-[#a855f7]">virtual classrooms</Link> with video conferencing, screen sharing, and interactive whiteboards.</>,
+            description: <>Real-time <Link href="/services/web-design-development/entertainment-media" className="underline underline-offset-2 hover:underline text-[var(--brand-purple-text)]">virtual classrooms</Link> with video conferencing, screen sharing, and interactive whiteboards.</>,
             features: [
                 { icon: Video, text: "Live Video Classes" },
                 { icon: MessageSquare, text: "Real-time Chat" },
                 { icon: Play, text: "Recording & Replay" },
                 { icon: Users, text: "Breakout Rooms" }
             ],
-            color: "#a855f7",
+            color: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#ec4899]",
             accentColor: "#ec4899",
         },
@@ -114,15 +114,15 @@ export default function SolutionTypes() {
                 <div className="text-center mb-16">
                     <div className="inline-block mb-4">
                         <div className="flex items-center gap-2 px-4 py-2 rounded-full" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)", border: "1px solid" }}>
-                            <GraduationCap className="w-4 h-4" style={{ color: "#a855f7" }} />
-                            <span className="text-sm font-semibold" style={{ color: "#a855f7" }}>
+                            <GraduationCap className="w-4 h-4" style={{ color: "var(--brand-purple-text)" }} />
+                            <span className="text-sm font-semibold" style={{ color: "var(--brand-purple-text)" }}>
                                 Learning Solutions
                             </span>
                         </div>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        EdTech <span style={{ color: "#a855f7" }}>Solutions</span> We Build
+                        EdTech <span style={{ color: "var(--brand-purple-text)" }}>Solutions</span> We Build
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
                         Comprehensive learning platforms designed for modern education and training needs.

@@ -35,7 +35,7 @@ export default function SolutionTypes() {
         {
             icon: Briefcase,
             title: "Freelancer Portfolio",
-            description: <>Your 24/7 sales rep. Sites that highlight offerings and packages, integrated with <Link href="/services/seo-services" className="hover:underline text-inherit">digital footprint cleanup</Link> services.</>,
+            description: <>Your 24/7 sales rep. Sites that highlight offerings and packages, integrated with <Link href="/services/seo-services" className="underline underline-offset-2 hover:underline text-inherit">digital footprint cleanup</Link> services.</>,
             features: ["Service offerings", "Package highlights", "Polished image", "High-value contracts"],
             accentColor: "#0d9488",
         },

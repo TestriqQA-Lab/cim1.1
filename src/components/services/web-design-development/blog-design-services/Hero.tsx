@@ -64,7 +64,7 @@ export default function Hero() {
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--secondary-text)" }} />
                     <span
                         className="font-semibold p-2"
-                        style={{ color: "#a855f7" }}
+                        style={{ color: "var(--brand-purple-text)" }}
                     >
                         Blogs & News Portals
                     </span>
@@ -80,7 +80,7 @@ export default function Hero() {
                                 background:
                                     "linear-gradient(90deg, color-mix(in srgb, #a855f7 8%, transparent), color-mix(in srgb, #ec4899 8%, transparent))",
                                 borderColor: "color-mix(in srgb, #a855f7 20%, transparent)",
-                                color: "#a855f7",
+                                color: "var(--brand-purple-text)",
                             }}
                         >
                             <Newspaper className="w-4 h-4" style={{ color: "#a855f7" }} />
@@ -113,7 +113,7 @@ export default function Hero() {
 
                         {/* Tagline */}
                         <p className="text-lg md:text-xl mb-8 animate-fadeIn leading-relaxed" style={{ color: "var(--secondary-text)", animationDelay: "0.2s" }}>
-                            Empower your editorial team and <span style={{ color: "#a855f7", fontWeight: 700 }}>engage millions of readers</span> with our high-performance <Link href="/services/web-design-development" className="hover:underline" style={{ color: "#a855f7" }}>Web Portal development Services</Link>. We build scalable, secure, and SEO-dominant digital publishing platforms.
+                            Empower your editorial team and <span style={{ color: "var(--brand-purple-text)", fontWeight: 700 }}>engage millions of readers</span> with our high-performance <Link href="/services/web-design-development" className="underline underline-offset-2 hover:underline" style={{ color: "var(--brand-purple-text)" }}>Web Portal development Services</Link>. We build scalable, secure, and SEO-dominant digital publishing platforms.
                         </p>
 
                         {/* Feature Highlights */}
@@ -315,7 +315,7 @@ export default function Hero() {
                                     <div key={i} className="text-center flex-1">
                                         <div
                                             className="text-xl font-bold mb-1"
-                                            style={{ color: "#a855f7" }}
+                                            style={{ color: "var(--brand-purple-text)" }}
                                         >
                                             {metric.value}
                                         </div>

@@ -25,7 +25,7 @@ export default function Process() {
                 { icon: BookOpen, text: "Content strategy" },
                 { icon: BarChart3, text: "Success metrics" }
             ],
-            color: "#a855f7",
+            color: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#c084fc]",
         },
         {
@@ -34,10 +34,10 @@ export default function Process() {
             title: "UX Design & Prototyping",
             description: <>Create intuitive, engaging interfaces that make learning enjoyable. We design for accessibility, mobile-first, and optimal learning experiences.</>,
             deliverables: [
-                { icon: Palette, text: <Link href="/blog/ui-ux-design-principles-best-practices" className="hover:underline">Interface design</Link> },
+                { icon: Palette, text: <Link href="/blog/ui-ux-design-principles-best-practices" className="underline underline-offset-2 hover:underline">Interface design</Link> },
                 { icon: Play, text: "Interactive mockups" },
                 { icon: Users, text: "User testing" },
-                { icon: Settings, text: <Link href="/services/mobile-app-development" className="hover:underline">Mobile optimization</Link> }
+                { icon: Settings, text: <Link href="/services/mobile-app-development" className="underline underline-offset-2 hover:underline">Mobile optimization</Link> }
             ],
             color: "#ec4899",
             gradient: "from-[#ec4899] to-[#f472b6]",
@@ -49,7 +49,7 @@ export default function Process() {
             description: "Build your LMS with course management, video streaming, quizzes, progress tracking, and all the features needed for effective online learning.",
             deliverables: [
                 { icon: BookOpen, text: "Course builder" },
-                { icon: Video, text: <Link href="/services/web-design-development/entertainment-media" className="hover:underline">Video streaming</Link> },
+                { icon: Video, text: <Link href="/services/web-design-development/entertainment-media" className="underline underline-offset-2 hover:underline">Video streaming</Link> },
                 { icon: Award, text: "Certification engine" },
                 { icon: Zap, text: "Quiz system" }
             ],
@@ -67,7 +67,7 @@ export default function Process() {
                 { icon: TrendingUp, text: "Performance testing" },
                 { icon: Settings, text: "Cross-device QA" }
             ],
-            color: "#a855f7",
+            color: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#ec4899]",
         },
         {
@@ -119,15 +119,15 @@ export default function Process() {
                 <div className="text-center mb-20">
                     <div className="inline-block mb-4">
                         <div className="flex items-center gap-2 px-4 py-2 rounded-full" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)", border: "1px solid" }}>
-                            <GraduationCap className="w-4 h-4" style={{ color: "#a855f7" }} />
-                            <span className="text-sm font-semibold" style={{ color: "#a855f7" }}>
+                            <GraduationCap className="w-4 h-4" style={{ color: "var(--brand-purple-text)" }} />
+                            <span className="text-sm font-semibold" style={{ color: "var(--brand-purple-text)" }}>
                                 Our Process
                             </span>
                         </div>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Our <span style={{ color: "#a855f7" }}>EdTech Development</span> Process
+                        Our <span style={{ color: "var(--brand-purple-text)" }}>EdTech Development</span> Process
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
