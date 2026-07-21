@@ -37,7 +37,7 @@ export default function Hero() {
             {/* Animated Background (uses brand colors) */}
             <div className="absolute inset-0 overflow-hidden">
                 <div
-                    className="absolute w-[800px] h-[800px] rounded-full mix-blend-multiply filter blur-3xl opacity-16 transition-all duration-500 ease-out"
+                    className="hidden md:block absolute w-[800px] h-[800px] rounded-full mix-blend-multiply filter blur-3xl opacity-16 transition-all duration-500 ease-out"
                     style={{
                         background: `radial-gradient(circle, var(--brand-purple) 0%, transparent 70%)`,
                         transform: `translate(${mousePosition.x - 400}px, ${mousePosition.y - 400}px)`,

@@ -152,7 +152,7 @@ export default function Services() {
                                 <div style={{ display: "flex", justifyContent: "space-between", paddingTop: 12, borderTop: "1px solid var(--border-color)" }}>
                                     <Link
                                         href={`/services/${service.slug}`}
-                                        style={{ color: "var(--brand-blue)", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 8 }}
+                                        style={{ color: "var(--brand-blue-text)", fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 8 }}
                                         className="p-2 -ml-2 rounded-lg hover:bg-[rgba(var(--brand-blue-rgb),0.1)] transition-colors"
                                     >
                                         Learn more <span className="sr-only">about {service.title}</span> <ArrowRight className="w-4 h-4" />

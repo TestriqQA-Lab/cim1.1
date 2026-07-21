@@ -14,6 +14,13 @@
     --brand-chatbot: #4e51d2;
     --brand-seo: #6db75c;
 
+    /* Accessible text-on-surface variants (WCAG AA >=4.5:1). The vivid brand
+       colors above stay for backgrounds/fills (with white text); these darker
+       variants are for colored TEXT sitting on light surfaces. Dark-mode values
+       are overridden in [data-theme="dark"] below. */
+    --brand-blue-text: #006d97;
+    --brand-purple-text: #a21caf;
+
     /* Selection highlight color (overridden per page via data-page-theme) */
     --page-selection-bg: var(--brand-purple);
 
@@ -35,6 +42,9 @@
     --border-color: #2d2d2d;
     --hover-bg: #262626;
     --secondary-text: #9ca3af;
+    /* Lighter brand text variants for dark surfaces (WCAG AA >=4.5:1) */
+    --brand-blue-text: #38bdf8;
+    --brand-purple-text: #cd7ff5;
   }
 
   body {
@@ -245,4 +255,43 @@ body,
 
 .animate-pulse-scale {
   animation: pulse-scale 6s ease-in-out infinite;
+}
+
+/* Home hero decorative animations — migrated out of HomeClient's styled-jsx
+   <style jsx global> so the home composition can be a Server Component.
+   (`@keyframes blob`, `.animate-blob`, and `@keyframes fadeIn` already exist
+   above; these add the delays, fade-in, and slow-spin the Hero relies on.
+   The unused `grow`/`scroll`/`gradient` keyframes were intentionally dropped.) */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation: blob 7s infinite 4s;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
 }

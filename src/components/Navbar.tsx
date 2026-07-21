@@ -75,7 +75,7 @@ export default function Navbar() {
 
   // Active link styles
   const getNavLinkStyle = (path: string) => ({
-    color: isActive(path) ? "var(--brand-purple)" : "var(--foreground)",
+    color: isActive(path) ? "var(--brand-purple-text)" : "var(--foreground)",
     backgroundColor: isActive(path) ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent",
   });
 
@@ -137,7 +137,7 @@ export default function Navbar() {
   // SSR-safe placeholder — includes navigation links for Googlebot crawlability
   if (!mounted) {
     return (
-      <nav className="fixed top-0 w-full z-[150] backdrop-blur-sm border-b shadow-sm">
+      <nav className="sticky top-0 w-full z-[150] backdrop-blur-sm border-b shadow-sm" style={{ backgroundColor: "var(--card-bg)", borderColor: "var(--border-color)" }}>
         <div className="mx-auto px-6 md:px-12 xl:px-16">
           <div className="flex justify-between items-center h-16 lg:h-20">
             <div className="flex-shrink-0">
@@ -216,7 +216,7 @@ export default function Navbar() {
                 <button
                   className="flex items-center space-x-1 px-4 py-2 rounded-lg text-md font-medium transition-all"
                   style={{
-                    color: isActive("/services") ? "var(--brand-purple)" : "var(--foreground)",
+                    color: isActive("/services") ? "var(--brand-purple-text)" : "var(--foreground)",
                     backgroundColor: isServicesOpen
                       ? "var(--hover-bg)"
                       : isActive("/services")
