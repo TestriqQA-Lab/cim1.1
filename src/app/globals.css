@@ -26,6 +26,24 @@
        with page theme), so intentionally not overridden in dark mode. */
     --brand-blue-btn: #006d97;
     --brand-purple-btn: #9333ea;
+    --accent-teal-btn: #0f766e;
+
+    /* Accessible per-hue TEXT tokens for the service pages' theme accents
+       (teal/violet/indigo). Light values pass on white; dark values below
+       pass on the dark card/background. */
+    --accent-teal-text: #115e59;
+    --accent-violet-text: #6d28d9;
+    --accent-indigo-text: #4338ca;
+    /* Batch 4 service-page accents: cyan (React), lime (Shopify), green (Node) */
+    --accent-cyan-text: #155e75;
+    --accent-lime-text: #3f6212;
+    --accent-green-text: #166534;
+    /* Batch 3 Process-card + fintech accents */
+    --accent-sky-text: #0369a1;
+    --accent-pink-text: #be185d;
+    --accent-orange-text: #9a3412;
+    --accent-amber-text: #b45309;
+    --accent-red-text: #b91c1c;
 
     /* Selection highlight color (overridden per page via data-page-theme) */
     --page-selection-bg: var(--brand-purple);
@@ -51,6 +69,18 @@
     /* Lighter brand text variants for dark surfaces (WCAG AA >=4.5:1) */
     --brand-blue-text: #38bdf8;
     --brand-purple-text: #cd7ff5;
+    /* Lighter accent text variants for dark surfaces */
+    --accent-teal-text: #5eead4;
+    --accent-violet-text: #c4b5fd;
+    --accent-indigo-text: #a5b4fc;
+    --accent-cyan-text: #67e8f9;
+    --accent-lime-text: #a3e635;
+    --accent-green-text: #4ade80;
+    --accent-sky-text: #7dd3fc;
+    --accent-pink-text: #f9a8d4;
+    --accent-orange-text: #fdba74;
+    --accent-amber-text: #fcd34d;
+    --accent-red-text: #f87171;
   }
 
   body {
