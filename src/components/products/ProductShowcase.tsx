@@ -17,6 +17,18 @@ export default function ProductShowcase() {
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
     const purple = "#bc3feb";
 
+    // Vivid accents stay for backgrounds/borders/gradients; TEXT uses the
+    // theme-aware AA tokens so the same hue passes in light and dark.
+    const textAccent = (c: string) => ({
+        "#008ac1": "var(--brand-blue-text)",
+        "#00b5ca": "var(--accent-teal-text)",
+        "#4e51d2": "var(--accent-indigo-text)",
+        "#6db75c": "var(--accent-green-text)",
+        "#f72585": "var(--accent-pink-text)",
+        "#bc3feb": "var(--brand-purple-text)",
+        "#ee6500": "var(--accent-orange-text)",
+    }[c?.toLowerCase()] ?? c);
+
     return (
         <section
             id="products"
@@ -42,9 +54,9 @@ export default function ProductShowcase() {
                         <span
                             className="px-4 py-2 rounded-full text-sm font-semibold tracking-wide uppercase border"
                             style={{
-                                backgroundColor: `${purple}10`,
+                                backgroundColor: "var(--card-bg)",
                                 borderColor: `${purple}30`,
-                                color: purple,
+                                color: "var(--brand-purple-text)",
                             }}
                         >
                             Our Products
@@ -122,7 +134,7 @@ export default function ProductShowcase() {
                                     <h3 className="text-xl font-bold mb-2 transition-colors duration-300" style={{ color: "var(--foreground)" }}>
                                         {product.name}
                                     </h3>
-                                    <p className="text-sm font-semibold mb-3" style={{ color: product.accentColor }}>
+                                    <p className="text-sm font-semibold mb-3" style={{ color: textAccent(product.accentColor) }}>
                                         {product.tagline}
                                     </p>
                                     <p className="leading-relaxed text-sm mb-6" style={{ color: "var(--secondary-text)" }}>
@@ -133,14 +145,14 @@ export default function ProductShowcase() {
                                     <div className="grid grid-cols-2 gap-3 mb-6 pt-4 border-t" style={{ borderColor: "var(--border-color)" }}>
                                         {product.stats.slice(0, 2).map((stat, i) => (
                                             <div key={i}>
-                                                <p className="text-lg font-bold" style={{ color: product.accentColor }}>{stat.value}</p>
+                                                <p className="text-lg font-bold" style={{ color: textAccent(product.accentColor) }}>{stat.value}</p>
                                                 <p className="text-xs" style={{ color: "var(--secondary-text)" }}>{stat.label}</p>
                                             </div>
                                         ))}
                                     </div>
 
                                     {/* CTA */}
-                                    <div className="flex items-center gap-2 text-sm font-semibold transition-all" style={{ color: product.accentColor }}>
+                                    <div className="flex items-center gap-2 text-sm font-semibold transition-all" style={{ color: textAccent(product.accentColor) }}>
                                         Learn More
                                         <ArrowRight className={`w-4 h-4 transition-transform duration-300 ${isHovered ? "translate-x-2" : ""}`} />
                                     </div>

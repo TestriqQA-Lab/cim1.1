@@ -13,6 +13,32 @@ export default function ProductHero({ product }: { product: Product }) {
     const Icon = iconMap[product.icon] || ShieldCheck;
     const color = product.accentColor;
 
+    // Vivid accents stay for backgrounds/borders/gradients; TEXT uses the
+    // theme-aware AA tokens so the same hue passes in light and dark.
+    const textAccent = (c: string) => ({
+        "#008ac1": "var(--brand-blue-text)",
+        "#00b5ca": "var(--accent-teal-text)",
+        "#4e51d2": "var(--accent-indigo-text)",
+        "#6db75c": "var(--accent-green-text)",
+        "#f72585": "var(--accent-pink-text)",
+        "#bc3feb": "var(--brand-purple-text)",
+        "#ee6500": "var(--accent-orange-text)",
+    }[c?.toLowerCase()] ?? c);
+    const textColor = textAccent(color);
+
+    // Darker shade for SOLID fills that carry a white label — the vivid accents
+    // are too light for white (e.g. #6db75c gives 2.45:1).
+    const solidAccent = (c: string) => ({
+        "#008ac1": "#006d97",
+        "#00b5ca": "#115e59",
+        "#4e51d2": "#4338ca",
+        "#6db75c": "#166534",
+        "#f72585": "#be185d",
+        "#bc3feb": "#a21caf",
+        "#ee6500": "#c2410c",
+    }[c?.toLowerCase()] ?? c);
+    const solidColor = solidAccent(color);
+
     return (
         <section className="relative min-h-screen pt-14 pb-16 transition-colors duration-300 overflow-hidden" style={{ backgroundColor: "var(--background)" }}>
             <div className="absolute inset-0 z-0" style={{ backgroundImage: `radial-gradient(circle at 15% 50%, ${color}14, transparent 25%), radial-gradient(circle at 85% 30%, ${color}0a, transparent 25%), radial-gradient(circle at 50% 80%, ${color}08, transparent 25%)` }}>
@@ -38,16 +64,16 @@ export default function ProductHero({ product }: { product: Product }) {
                             <ChevronRight className="w-4 h-4" />
                             <Link href="/products" className="hover:underline">Products</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <span style={{ color }}>{product.name}</span>
+                            <span style={{ color: textColor }}>{product.name}</span>
                         </nav>
 
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm animate-fadeIn" style={{ backgroundColor: `${color}10`, borderColor: `${color}30` }}>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm animate-fadeIn" style={{ backgroundColor: "var(--card-bg)", borderColor: `${color}30` }}>
                             <Icon className="w-4 h-4" style={{ color }} />
-                            <span className="text-sm font-medium" style={{ color }}>{product.tagline}</span>
+                            <span className="text-sm font-medium" style={{ color: textColor }}>{product.tagline}</span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp" style={{ color: "var(--foreground)" }}>
-                            <span className="relative inline-block" style={{ color }}>
+                            <span className="relative inline-block" style={{ color: textColor }}>
                                 {product.name}
                                 <svg className="absolute w-full h-3 -bottom-2 left-0 opacity-50" style={{ color }} viewBox="0 0 100 10" preserveAspectRatio="none">
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
@@ -66,13 +92,13 @@ export default function ProductHero({ product }: { product: Product }) {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
-                                    style={{ backgroundColor: color }}
+                                    style={{ backgroundColor: solidColor }}
                                 >
                                     <Chrome className="w-5 h-5 mr-2" />
                                     Add to Chrome
                                 </a>
                             ) : (
-                                <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg" style={{ backgroundColor: color }}>
+                                <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg" style={{ backgroundColor: solidColor }}>
                                     Get Started <ArrowRight className="w-5 h-5 ml-2" />
                                 </Link>
                             )}
@@ -86,7 +112,7 @@ export default function ProductHero({ product }: { product: Product }) {
                                 <React.Fragment key={i}>
                                     {i > 0 && <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />}
                                     <div className="text-center lg:text-left">
-                                        <h4 className="text-3xl font-bold" style={{ color }}>{stat.value}</h4>
+                                        <h2 className="text-3xl font-bold" style={{ color: textColor }}>{stat.value}</h2>
                                         <p className="text-sm" style={{ color: "var(--secondary-text)" }}>{stat.label}</p>
                                     </div>
                                 </React.Fragment>
@@ -106,7 +132,7 @@ export default function ProductHero({ product }: { product: Product }) {
                                     <div className="grid grid-cols-2 gap-3 w-full mt-4">
                                         {product.stats.slice(0, 4).map((s, i) => (
                                             <div key={i} className="p-3 rounded-xl border text-center" style={{ borderColor: `${color}20`, backgroundColor: `${color}08` }}>
-                                                <p className="text-lg font-bold" style={{ color }}>{s.value}</p>
+                                                <p className="text-lg font-bold" style={{ color: textColor }}>{s.value}</p>
                                                 <p className="text-xs" style={{ color: "var(--secondary-text)" }}>{s.label}</p>
                                             </div>
                                         ))}

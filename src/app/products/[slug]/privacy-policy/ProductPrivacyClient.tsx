@@ -36,7 +36,7 @@ const ProductPrivacyClient: React.FC<ProductPrivacyClientProps> = ({ policy, slu
                     <Link
                         href={`/products/${slug}`}
                         className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:underline"
-                        style={{ color: "var(--brand-cyan)" }}
+                        style={{ color: "var(--accent-teal-text)" }}
                     >
                         <ArrowLeft className="w-4 h-4" />
                         Back to {policy.productName}
@@ -109,7 +109,7 @@ const ProductPrivacyClient: React.FC<ProductPrivacyClientProps> = ({ policy, slu
                                         {item.subtitle && (
                                             <h3
                                                 className="text-lg font-semibold mb-2"
-                                                style={{ color: "var(--brand-yellow)" }}
+                                                style={{ color: "var(--accent-amber-text)" }}
                                             >
                                                 {item.subtitle}
                                             </h3>

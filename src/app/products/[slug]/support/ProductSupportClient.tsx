@@ -67,7 +67,7 @@ const ProductSupportClient: React.FC<ProductSupportClientProps> = ({ support, sl
                     <Link
                         href={`/products/${slug}`}
                         className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:underline"
-                        style={{ color: "var(--brand-cyan)" }}
+                        style={{ color: "var(--accent-teal-text)" }}
                     >
                         <ArrowLeft className="w-4 h-4" />
                         Back to {support.productName}
@@ -133,7 +133,7 @@ const ProductSupportClient: React.FC<ProductSupportClientProps> = ({ support, sl
                 <div
                     className={`flex items-center justify-center gap-2 mb-12 transition-all duration-700 delay-200 ${isVisible ? "opacity-100" : "opacity-0"}`}
                 >
-                    <Clock className="w-4 h-4" style={{ color: "var(--brand-teal)" }} />
+                    <Clock className="w-4 h-4" style={{ color: "var(--accent-teal-text)" }} />
                     <span className="text-sm font-medium" style={{ color: "var(--secondary-text)" }}>
                         Average Response Time: <strong style={{ color: "var(--foreground)" }}>{support.responseTime}</strong>
                     </span>
@@ -185,7 +185,7 @@ const ProductSupportClient: React.FC<ProductSupportClientProps> = ({ support, sl
                                         <a
                                             href={channel.href}
                                             className="inline-flex items-center gap-1.5 text-sm font-semibold transition-colors hover:underline"
-                                            style={{ color: "var(--brand-cyan)" }}
+                                            style={{ color: "var(--accent-teal-text)" }}
                                         >
                                             {channel.action}
                                             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -238,7 +238,7 @@ const ProductSupportClient: React.FC<ProductSupportClientProps> = ({ support, sl
                                     <span className="text-base font-semibold pr-4">{issue.question}</span>
                                     <ChevronDown
                                         className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${openFaq === index ? "rotate-180" : ""}`}
-                                        style={{ color: "var(--brand-cyan)" }}
+                                        style={{ color: "var(--accent-teal-text)" }}
                                     />
                                 </button>
                                 <div
@@ -307,11 +307,11 @@ const ProductSupportClient: React.FC<ProductSupportClientProps> = ({ support, sl
 
                     <div className="mt-6 flex items-center justify-center gap-6 text-xs" style={{ color: "var(--secondary-text)" }}>
                         <span className="flex items-center gap-1.5">
-                            <Mail className="w-3.5 h-3.5" style={{ color: "var(--brand-cyan)" }} />
+                            <Mail className="w-3.5 h-3.5" style={{ color: "var(--accent-teal-text)" }} />
                             {support.supportEmail}
                         </span>
                         <span className="flex items-center gap-1.5">
-                            <Phone className="w-3.5 h-3.5" style={{ color: "var(--brand-teal)" }} />
+                            <Phone className="w-3.5 h-3.5" style={{ color: "var(--accent-teal-text)" }} />
                             {support.supportPhone}
                         </span>
                     </div>

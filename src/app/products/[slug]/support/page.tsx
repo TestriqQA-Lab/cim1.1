@@ -108,7 +108,9 @@ export default async function ProductSupportPage({
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(supportSchema) }}
             />
-            <ProductSupportClient support={support} slug={slug} />
+            <main>
+                <ProductSupportClient support={support} slug={slug} />
+            </main>
         </>
     );
 }

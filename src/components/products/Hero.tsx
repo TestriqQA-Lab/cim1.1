@@ -68,19 +68,19 @@ export default function Hero() {
                         <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-2 gap-y-1 text-sm" style={{ color: "var(--secondary-text)" }}>
                             <Link href="/" className="hover:underline">Home</Link>
                             <ChevronRight className="w-4 h-4" />
-                            <span style={{ color: purple }}>Products</span>
+                            <span style={{ color: "var(--brand-purple-text)" }}>Products</span>
                         </nav>
 
                         {/* Badge */}
                         <div
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm animate-fadeIn"
                             style={{
-                                backgroundColor: `${purple}10`,
+                                backgroundColor: "var(--card-bg)",
                                 borderColor: `${purple}30`,
                             }}
                         >
                             <Box className="w-4 h-4" style={{ color: purple }} />
-                            <span className="text-sm font-medium" style={{ color: purple }}>Built by Cinute InfoMedia</span>
+                            <span className="text-sm font-medium" style={{ color: "var(--brand-purple-text)" }}>Built by Cinute InfoMedia</span>
                         </div>
 
                         {/* Title */}
@@ -116,7 +116,7 @@ export default function Hero() {
                             <Link
                                 href="#products"
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
-                                style={{ backgroundColor: purple }}
+                                style={{ backgroundColor: "#a21caf" }}
                             >
                                 Explore Products
                                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -137,17 +137,17 @@ export default function Hero() {
                         {/* Stats */}
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6 border-t animate-slideUp delay-400" style={{ borderColor: "var(--border-color)" }}>
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: purple }}>6</h4>
+                                <h2 className="text-3xl font-bold" style={{ color: purple }}>6</h2>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Products</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: purple }}>30K+</h4>
+                                <h2 className="text-3xl font-bold" style={{ color: purple }}>30K+</h2>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Businesses Served</p>
                             </div>
                             <div className="w-px h-10 hidden sm:block" style={{ backgroundColor: "var(--border-color)" }} />
                             <div className="text-center lg:text-left">
-                                <h4 className="text-3xl font-bold" style={{ color: purple }}>99.99%</h4>
+                                <h2 className="text-3xl font-bold" style={{ color: purple }}>99.99%</h2>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Uptime</p>
                             </div>
                         </div>

@@ -108,7 +108,9 @@ export default async function ProductPrivacyPage({
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(privacySchema) }}
             />
-            <ProductPrivacyClient policy={policy} slug={slug} />
+            <main>
+                <ProductPrivacyClient policy={policy} slug={slug} />
+            </main>
         </>
     );
 }
