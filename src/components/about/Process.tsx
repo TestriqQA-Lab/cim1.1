@@ -88,8 +88,8 @@ export default function Process() {
                             background: "linear-gradient(90deg, color-mix(in srgb,var(--brand-cyan) 8%,transparent), color-mix(in srgb,var(--brand-teal) 8%,transparent))",
                         }}
                     >
-                        <Rocket className="w-4 h-4 text-[var(--brand-teal)]" />
-                        <span className="text-sm font-semibold text-[var(--brand-teal)]">Our Process</span>
+                        <Rocket className="w-4 h-4 text-[var(--accent-teal-text)]" />
+                        <span className="text-sm font-semibold text-[var(--accent-teal-text)]">Our Process</span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[var(--foreground)]">
@@ -159,7 +159,7 @@ export default function Process() {
 
                                                     <h3
                                                         id={`process-${idx}`}
-                                                        className="text-2xl font-bold mb-4 text-[var(--foreground)] transition-colors duration-300 group-hover:text-[var(--brand-blue)] dark:group-hover:text-[var(--brand-teal)]"
+                                                        className="text-2xl font-bold mb-4 text-[var(--foreground)] transition-colors duration-300 group-hover:text-[var(--brand-blue)] dark:group-hover:text-[var(--accent-teal-text)]"
                                                     >
                                                         {step.title}
                                                     </h3>
@@ -265,7 +265,7 @@ export default function Process() {
 
                                                     <h3
                                                         id={`process-${idx}`}
-                                                        className="text-2xl font-bold mb-4 text-[var(--foreground)] transition-colors duration-300 group-hover:text-[var(--brand-blue)] dark:group-hover:text-[var(--brand-teal)]"
+                                                        className="text-2xl font-bold mb-4 text-[var(--foreground)] transition-colors duration-300 group-hover:text-[var(--brand-blue)] dark:group-hover:text-[var(--accent-teal-text)]"
                                                     >
                                                         {step.title}
                                                     </h3>

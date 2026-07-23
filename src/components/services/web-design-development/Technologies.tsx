@@ -251,7 +251,7 @@ export default function Technologies() {
                     </h3>
 
                     <p className="mb-8 max-w-2xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)", fontSize: "1.1rem" }}>
-                        Our <span className="text-[var(--brand-blue-text)] font-bold">web development agency</span> leverages this robust tech stack to deliver high availability and <span className="text-[var(--brand-teal)] font-bold">sub-2s load times</span> for enterprise clients worldwide.
+                        Our <span className="text-[var(--brand-blue-text)] font-bold">web development agency</span> leverages this robust tech stack to deliver high availability and <span className="text-[var(--accent-teal-text)] font-bold">sub-2s load times</span> for enterprise clients worldwide.
                     </p>
 
                     <Link

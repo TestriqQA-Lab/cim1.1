@@ -26,6 +26,7 @@ export default function Process() {
                 { icon: BarChart3, text: "Success metrics" }
             ],
             color: "var(--brand-purple-text)",
+            textColor: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#c084fc]",
         },
         {
@@ -40,6 +41,7 @@ export default function Process() {
                 { icon: Settings, text: <Link href="/services/mobile-app-development" className="underline underline-offset-2 hover:underline">Mobile optimization</Link> }
             ],
             color: "#ec4899",
+            textColor: "var(--accent-pink-text)",
             gradient: "from-[#ec4899] to-[#f472b6]",
         },
         {
@@ -54,6 +56,7 @@ export default function Process() {
                 { icon: Zap, text: "Quiz system" }
             ],
             color: "#f97316",
+            textColor: "var(--accent-orange-text)",
             gradient: "from-[#f97316] to-[#fb923c]",
         },
         {
@@ -68,6 +71,7 @@ export default function Process() {
                 { icon: Settings, text: "Cross-device QA" }
             ],
             color: "var(--brand-purple-text)",
+            textColor: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#ec4899]",
         },
         {
@@ -82,6 +86,7 @@ export default function Process() {
                 { icon: Play, text: "Go-live support" }
             ],
             color: "#ec4899",
+            textColor: "var(--accent-pink-text)",
             gradient: "from-[#ec4899] to-[#f97316]",
         },
         {
@@ -96,6 +101,7 @@ export default function Process() {
                 { icon: Zap, text: "Feature roadmap" }
             ],
             color: "#f97316",
+            textColor: "var(--accent-orange-text)",
             gradient: "from-[#f97316] to-[#a855f7]",
         },
     ];
@@ -199,7 +205,7 @@ export default function Process() {
 
                                             <h3
                                                 className="hidden lg:block text-2xl md:text-3xl font-bold mb-4 transition-colors duration-300"
-                                                style={{ color: isHovered ? step.color : "var(--foreground)" }}
+                                                style={{ color: isHovered ? step.textColor : "var(--foreground)" }}
                                             >
                                                 {step.title}
                                             </h3>
@@ -249,7 +255,7 @@ export default function Process() {
                                         <div className="lg:w-5/12 w-full">
                                             <h3
                                                 className="lg:hidden text-2xl font-bold mb-4 text-center transition-colors duration-300"
-                                                style={{ color: isHovered ? step.color : "var(--foreground)" }}
+                                                style={{ color: isHovered ? step.textColor : "var(--foreground)" }}
                                             >
                                                 {step.title}
                                             </h3>

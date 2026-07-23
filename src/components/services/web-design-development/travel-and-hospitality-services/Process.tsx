@@ -68,7 +68,7 @@ export default function Process() {
             title: "UX/UI Design",
             subtitle: "Route Planning",
             description:
-                <span>Focus on <Link href="/services/web-design-development/branding-services" className="hover:underline">UX/UI Design</Link> (UX) for Travel Websites. We create intuitive and visually stunning prototypes that align with your Hospitality Brand Identity.</span>,
+                <span>Focus on <Link href="/services/web-design-development/branding-services" className="underline underline-offset-2 hover:underline">UX/UI Design</Link> (UX) for Travel Websites. We create intuitive and visually stunning prototypes that align with your Hospitality Brand Identity.</span>,
             deliverables: [
                 "User journey mapping",
                 "Interactive prototypes",
@@ -100,7 +100,7 @@ export default function Process() {
             title: "Integration Excellence",
             subtitle: "Construction Phase",
             description:
-                <span>Expertly handle <Link href="/services/web-design-development/nodejs-backend" className="hover:underline">Travel API Integration Services</Link> (GDS/OTA) and Hotel Property Management System (PMS) Integration for unified operations.</span>,
+                <span>Expertly handle <Link href="/services/web-design-development/nodejs-backend" className="underline underline-offset-2 hover:underline">Travel API Integration Services</Link> (GDS/OTA) and Hotel Property Management System (PMS) Integration for unified operations.</span>,
             deliverables: [
                 "GDS & OTA connectivity",
                 "PMS system integration",
@@ -152,13 +152,26 @@ export default function Process() {
             deliverables: [
                 "Continuous monitoring",
                 "Trend-based updates",
-                <Link href="/services/seo-services" className="hover:underline">SEO refinement</Link>,
+                <Link href="/services/seo-services" className="underline underline-offset-2 hover:underline">SEO refinement</Link>,
                 "Performance reports",
             ],
             gradient: "from-green-500 to-teal-500",
             bgColor: "#10b981",
         },
     ];
+
+    const textAccent = (hex: string) =>
+        (
+            {
+                "#3b82f6": "var(--accent-sky-text)",
+                "#a855f7": "var(--brand-purple-text)",
+                "#ec4899": "var(--accent-pink-text)",
+                "#f97316": "var(--accent-orange-text)",
+                "#14b8a6": "var(--accent-teal-text)",
+                "#6366f1": "var(--accent-indigo-text)",
+                "#10b981": "var(--accent-green-text)",
+            } as Record<string, string>
+        )[hex] || hex;
 
     return (
         <section
@@ -201,7 +214,7 @@ export default function Process() {
                         }}
                     >
                         <Compass className="w-4 h-4" style={{ color: "#0d9488" }} />
-                        <span className="text-sm font-medium" style={{ color: "#0d9488" }}>
+                        <span className="text-sm font-medium" style={{ color: "var(--accent-teal-text)" }}>
                             Your Journey With Us
                         </span>
                     </div>
@@ -210,7 +223,7 @@ export default function Process() {
                         className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
                         style={{ color: "var(--foreground)" }}
                     >
-                        Our <span style={{ color: "#0d9488" }}>Development</span> Journey
+                        Our <span style={{ color: "var(--accent-teal-text)" }}>Development</span> Journey
                     </h2>
                     <p
                         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
@@ -340,7 +353,7 @@ export default function Process() {
                                                     transition-all duration-300
                                                 `}
                                                 style={{
-                                                    color: step.bgColor,
+                                                    color: textAccent(step.bgColor),
                                                 }}
                                             >
                                                 {step.number}
@@ -351,7 +364,7 @@ export default function Process() {
                                                     ${isActive ? "opacity-100 scale-100" : "opacity-60 scale-95"}
                                                 `}
                                                 style={{
-                                                    color: isActive ? step.bgColor : "var(--foreground)",
+                                                    color: isActive ? textAccent(step.bgColor) : "var(--foreground)",
                                                 }}
                                             >
                                                 {step.subtitle}
@@ -399,7 +412,7 @@ export default function Process() {
                                             </div>
                                             <div
                                                 className="text-5xl font-bold mb-2"
-                                                style={{ color: step.bgColor }}
+                                                style={{ color: textAccent(step.bgColor) }}
                                             >
                                                 {step.number}
                                             </div>
@@ -537,7 +550,7 @@ export default function Process() {
                                     <div className="flex-1">
                                         <div
                                             className="text-sm font-bold mb-1"
-                                            style={{ color: step.bgColor }}
+                                            style={{ color: textAccent(step.bgColor) }}
                                         >
                                             {step.number}
                                         </div>
@@ -549,7 +562,7 @@ export default function Process() {
                                         </h3>
                                         <p
                                             className="text-xs"
-                                            style={{ color: step.bgColor }}
+                                            style={{ color: textAccent(step.bgColor) }}
                                         >
                                             {step.subtitle}
                                         </p>
@@ -631,7 +644,7 @@ export default function Process() {
                         href="/contact"
                         className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
                         style={{
-                            backgroundColor: "#0d9488",
+                            backgroundColor: "var(--accent-teal-btn)",
                             boxShadow: "0 4px 20px #0d948840",
                         }}
                     >

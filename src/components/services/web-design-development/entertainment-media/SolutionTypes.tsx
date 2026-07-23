@@ -138,7 +138,7 @@ export default function SolutionTypes() {
                         }}
                     >
                         <Sparkles className="w-4 h-4" style={{ color: "#8b5cf6" }} />
-                        <span className="text-sm font-medium" style={{ color: "#8b5cf6" }}>
+                        <span className="text-sm font-medium" style={{ color: "var(--brand-purple-text)" }}>
                             Our Expertise
                         </span>
                     </div>

@@ -269,7 +269,7 @@ export default function Hero() {
                                 Why Choose Us?
                             </h2>
                             <p className="text-sm mb-4" style={{ color: "var(--secondary-text)" }}>
-                                We combine <Link href="/services/performance-marketing" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">data-driven strategies</Link> with creative storytelling to build meaningful connections and drive real business growth.
+                                We combine <Link href="/services/performance-marketing" className="hover:text-[var(--accent-teal-text)] hover:underline transition-colors">data-driven strategies</Link> with creative storytelling to build meaningful connections and drive real business growth.
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 <Link href="/blog/content-marketing-strategies-work"

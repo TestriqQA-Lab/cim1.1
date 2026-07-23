@@ -486,7 +486,7 @@ export default function WhyChooseUs() {
                             >
                                 <stat.Icon className="w-6 h-6 text-white" />
                             </div>
-                            <div className="text-3xl md:text-4xl font-bold mb-2" style={{ color: stat.color }}>
+                            <div className="text-3xl md:text-4xl font-bold mb-2" style={{ color: stat.color === "#a78bfa" ? "var(--accent-violet-text)" : stat.color }}>
                                 {stat.number}
                             </div>
                             <div className="text-sm" style={{ color: "var(--secondary-text)" }}>

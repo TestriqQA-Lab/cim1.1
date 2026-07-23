@@ -37,7 +37,7 @@ export default function Services() {
             title: "Social Media Marketing",
             slug: "social-media-marketing-services",
             bullets: [
-                <>Platform-specific strategies (<Link href="/services/social-media-marketing-services/facebook-marketing-services" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">Facebook</Link>, <Link href="/services/social-media-marketing-services/instagram-marketing-services" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">Instagram</Link>, <Link href="/services/social-media-marketing-services/linkedin-marketing-services" className="hover:text-[var(--brand-teal)] hover:underline transition-colors">LinkedIn</Link>)</>,
+                <>Platform-specific strategies (<Link href="/services/social-media-marketing-services/facebook-marketing-services" className="hover:text-[var(--accent-teal-text)] hover:underline transition-colors">Facebook</Link>, <Link href="/services/social-media-marketing-services/instagram-marketing-services" className="hover:text-[var(--accent-teal-text)] hover:underline transition-colors">Instagram</Link>, <Link href="/services/social-media-marketing-services/linkedin-marketing-services" className="hover:text-[var(--accent-teal-text)] hover:underline transition-colors">LinkedIn</Link>)</>,
                 "Paid social media advertising",
                 "Influencer marketing campaigns",
                 "Key Results: Strong ROI on paid campaigns, higher engagement",

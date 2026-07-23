@@ -23,13 +23,14 @@ export default function SolutionTypes() {
                 { icon: BarChart3, text: "Student Analytics" }
             ],
             color: "var(--brand-purple-text)",
+            textColor: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#c084fc]",
             accentColor: "#c084fc",
         },
         {
             icon: Building2,
             title: "Corporate LMS",
-            description: <>Enterprise <Link href="/services/web-design-development/business-corporate" className="underline underline-offset-2 hover:underline text-[#ec4899]">learning management</Link> for employee training, onboarding, compliance, and skill development.</>,
+            description: <>Enterprise <Link href="/services/web-design-development/business-corporate" className="underline underline-offset-2 hover:underline text-[var(--accent-pink-text)]">learning management</Link> for employee training, onboarding, compliance, and skill development.</>,
             features: [
                 { icon: Users, text: "Team Management" },
                 { icon: Target, text: "Skill Tracking" },
@@ -37,6 +38,7 @@ export default function SolutionTypes() {
                 { icon: BarChart3, text: "Performance Reports" }
             ],
             color: "#ec4899",
+            textColor: "var(--accent-pink-text)",
             gradient: "from-[#ec4899] to-[#f472b6]",
             accentColor: "#f472b6",
         },
@@ -51,6 +53,7 @@ export default function SolutionTypes() {
                 { icon: MessageSquare, text: "Discussion Forums" }
             ],
             color: "#f97316",
+            textColor: "var(--accent-orange-text)",
             gradient: "from-[#f97316] to-[#fb923c]",
             accentColor: "#fb923c",
         },
@@ -65,6 +68,7 @@ export default function SolutionTypes() {
                 { icon: Users, text: "Breakout Rooms" }
             ],
             color: "var(--brand-purple-text)",
+            textColor: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#ec4899]",
             accentColor: "#ec4899",
         },
@@ -79,6 +83,7 @@ export default function SolutionTypes() {
                 { icon: Award, text: "Instructor Verification" }
             ],
             color: "#ec4899",
+            textColor: "var(--accent-pink-text)",
             gradient: "from-[#ec4899] to-[#f97316]",
             accentColor: "#f97316",
         },
@@ -93,6 +98,7 @@ export default function SolutionTypes() {
                 { icon: MessageSquare, text: "Community Forums" }
             ],
             color: "#f97316",
+            textColor: "var(--accent-orange-text)",
             gradient: "from-[#f97316] to-[#a855f7]",
             accentColor: "#a855f7",
         },
@@ -195,7 +201,7 @@ export default function SolutionTypes() {
                                                     background: isHovered
                                                         ? `linear-gradient(135deg, ${solution.color}, ${solution.accentColor})`
                                                         : "var(--card-bg)",
-                                                    color: isHovered ? "white" : solution.color,
+                                                    color: isHovered ? "white" : solution.textColor,
                                                     borderColor: isHovered ? "transparent" : solution.color,
                                                     transform: isHovered ? "scale(1.2) rotate(360deg)" : "scale(1)",
                                                 }}
@@ -207,7 +213,7 @@ export default function SolutionTypes() {
                                         {/* Title */}
                                         <h3
                                             className="text-xl md:text-2xl font-bold mb-4 transition-all duration-300"
-                                            style={{ color: isHovered ? solution.color : "var(--foreground)" }}
+                                            style={{ color: isHovered ? solution.textColor : "var(--foreground)" }}
                                         >
                                             {solution.title}
                                         </h3>
@@ -241,7 +247,7 @@ export default function SolutionTypes() {
                                                         </div>
                                                         <span
                                                             className="text-sm font-medium transition-colors duration-300 flex-1"
-                                                            style={{ color: isHovered ? solution.color : "var(--secondary-text)" }}
+                                                            style={{ color: isHovered ? solution.textColor : "var(--secondary-text)" }}
                                                         >
                                                             {feature.text}
                                                         </span>

@@ -115,7 +115,7 @@ export default function Hero() {
                         {/* Tagline */}
                         <div className="space-y-4 mb-8 text-lg md:text-xl text-[var(--secondary-text)] leading-relaxed">
                             <p>
-                                As an expert <Link href="/services/web-design-development" className="text-[var(--brand-blue-text)] font-bold underline hover:underline transition-colors">web development company</Link> with proven, deep expertise, we deliver <Link href="/services/web-design-development/business-corporate" className="text-[var(--brand-teal)] font-bold underline underline-offset-2 hover:underline transition-colors">custom website development</Link> solutions that drive measurable ROI.
+                                As an expert <Link href="/services/web-design-development" className="text-[var(--brand-blue-text)] font-bold underline hover:underline transition-colors">web development company</Link> with proven, deep expertise, we deliver <Link href="/services/web-design-development/business-corporate" className="text-[var(--accent-teal-text)] font-bold underline underline-offset-2 hover:underline transition-colors">custom website development</Link> solutions that drive measurable ROI.
                             </p>
                             <p className="text-base md:text-lg">
                                 Our <Link href="/services/web-design-development/branding-services" className="underline underline-offset-2 hover:text-[var(--brand-blue)] hover:underline transition-colors">professional web design agency</Link> has launched 500+ high-performance websites for global clients across <span className="font-semibold text-[var(--foreground)]">US, EU, India, and APAC</span> markets-achieving average <span className="text-[var(--brand-blue-text)] font-bold">sustained traffic growth</span> and conversion rate improvements.
@@ -176,7 +176,7 @@ export default function Hero() {
                                 </div>
                             </div>
                             <div className="text-center border-x border-[var(--border-color)]">
-                                <div className="text-2xl md:text-3xl font-bold mb-1 text-[var(--brand-teal)]">
+                                <div className="text-2xl md:text-3xl font-bold mb-1 text-[var(--accent-teal-text)]">
                                     95%
                                 </div>
                                 <div className="text-[10px] md:text-xs font-medium uppercase tracking-wider text-[var(--secondary-text)]">

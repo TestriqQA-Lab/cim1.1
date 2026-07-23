@@ -30,7 +30,7 @@ const services = [
         title: "Mobile App Development",
         slug: "mobile-app-development",
         description: "Build native and cross-platform mobile apps that deliver exceptional user experiences.",
-        features: [<span><Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">iOS</Link> & <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">Android</Link></span>, "React Native", "Flutter"],
+        features: [<span><Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--accent-teal-text)] transition-colors">iOS</Link> & <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--accent-teal-text)] transition-colors">Android</Link></span>, "React Native", "Flutter"],
         gradient: "linear-gradient(135deg, var(--brand-purple), var(--brand-blue))",
     },
     {

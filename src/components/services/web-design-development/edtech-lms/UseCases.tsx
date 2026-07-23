@@ -16,7 +16,7 @@ export default function UseCases() {
         {
             icon: Briefcase,
             title: "Corporate Training",
-            description: <><Link href="/services/web-design-development/business-corporate" className="underline underline-offset-2 hover:underline text-[#ec4899]">Employee onboarding</Link>, compliance training, and skill development platforms.</>,
+            description: <><Link href="/services/web-design-development/business-corporate" className="underline underline-offset-2 hover:underline text-[var(--accent-pink-text)]">Employee onboarding</Link>, compliance training, and skill development platforms.</>,
         },
         {
             icon: Users,
@@ -26,7 +26,7 @@ export default function UseCases() {
         {
             icon: Globe,
             title: "Non-Profits & NGOs",
-            description: <><Link href="/services/web-design-development/landing-pages" className="underline underline-offset-2 hover:underline text-[#f97316]">Global education initiatives</Link> and community learning platforms.</>,
+            description: <><Link href="/services/web-design-development/landing-pages" className="underline underline-offset-2 hover:underline text-[var(--accent-orange-text)]">Global education initiatives</Link> and community learning platforms.</>,
         },
     ];
 

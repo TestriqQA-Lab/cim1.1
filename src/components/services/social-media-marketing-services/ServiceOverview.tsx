@@ -60,8 +60,8 @@ export default function ServiceOverview() {
                             </h3>
                             <ul className="space-y-3">
                                 {[
-                                    <span key="1">Data-driven strategies tailored to your <Link href="/services/social-media-marketing-services/instagram-marketing-services" className="hover:text-[var(--brand-teal)]">audience and goals</Link></span>,
-                                    <span key="2">Transparent reporting with clear <Link href="/services/performance-marketing" className="hover:text-[var(--brand-teal)]">ROI metrics</Link></span>,
+                                    <span key="1">Data-driven strategies tailored to your <Link href="/services/social-media-marketing-services/instagram-marketing-services" className="hover:text-[var(--accent-teal-text)]">audience and goals</Link></span>,
+                                    <span key="2">Transparent reporting with clear <Link href="/services/performance-marketing" className="hover:text-[var(--accent-teal-text)]">ROI metrics</Link></span>,
                                     <span key="3">Continuous optimization based on performance analytics</span>,
                                     <span key="4">Dedicated account management and ongoing support</span>,
                                 ].map((item, idx) => (
@@ -176,14 +176,14 @@ export default function ServiceOverview() {
                         <Link href="/blog/social-media-strategy-building-brand" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">📱</span>
                             <div>
-                                <h4 className="font-semibold group-hover:text-[var(--brand-teal)] transition-colors">Social Media Marketing Strategy Guide</h4>
+                                <h4 className="font-semibold group-hover:text-[var(--accent-teal-text)] transition-colors">Social Media Marketing Strategy Guide</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Build a winning social media strategy for your business</p>
                             </div>
                         </Link>
                         <Link href="/blog/content-marketing-strategies-work" className="group flex items-start gap-3 p-3 rounded-lg transition-all hover:bg-[var(--hover-bg)]">
                             <span className="text-2xl">🔥</span>
                             <div>
-                                <h4 className="font-semibold group-hover:text-[var(--brand-teal)] transition-colors">Social Media Trends in 2026</h4>
+                                <h4 className="font-semibold group-hover:text-[var(--accent-teal-text)] transition-colors">Social Media Trends in 2026</h4>
                                 <p className="text-sm" style={{ color: "var(--secondary-text)" }}>Latest trends shaping social media marketing</p>
                             </div>
                         </Link>

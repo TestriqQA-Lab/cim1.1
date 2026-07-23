@@ -72,13 +72,13 @@ export default function SolutionTypes() {
                         }}
                     >
                         <Camera className="w-4 h-4" style={{ color: "#06b6d4" }} />
-                        <span className="text-sm font-medium" style={{ color: "#06b6d4" }}>
+                        <span className="text-sm font-medium" style={{ color: "var(--accent-cyan-text)" }}>
                             Solution Types
                         </span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                        Portfolio <span style={{ color: "#06b6d4" }}>Solutions</span>
+                        Portfolio <span style={{ color: "var(--accent-cyan-text)" }}>Solutions</span>
                     </h2>
 
                     <p className="text-xl max-w-3xl mx-auto mb-6" style={{ color: "var(--secondary-text)" }}>

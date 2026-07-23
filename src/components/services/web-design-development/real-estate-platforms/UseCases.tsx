@@ -112,7 +112,7 @@ export default function UseCases() {
                     <div className="inline-block mb-4">
                         <div className="flex items-center gap-2 px-4 py-2 rounded-full" style={{ backgroundColor: "var(--background)", borderColor: "var(--border-color)", border: "1px solid" }}>
                             <Building2 className="w-4 h-4" style={{ color: "#0d9488" }} />
-                            <span className="text-sm font-semibold" style={{ color: "#0d9488" }}>
+                            <span className="text-sm font-semibold" style={{ color: "var(--accent-teal-text)" }}>
                                 Use Cases
                             </span>
                         </div>
@@ -238,7 +238,7 @@ export default function UseCases() {
                                                     background: isHovered
                                                         ? `linear-gradient(135deg, ${useCase.color}, ${useCase.accentColor})`
                                                         : `${useCase.color}30`,
-                                                    color: isHovered ? "white" : useCase.color,
+                                                    color: isHovered ? "white" : "var(--accent-teal-text)",
                                                     transform: isHovered ? "scale(1.2) rotate(-10deg)" : "scale(1) rotate(0deg)",
                                                 }}
                                             >

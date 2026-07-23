@@ -63,8 +63,8 @@ export default function Services() {
             brandText: "var(--brand-teal)",
             href: "/services/mobile-app-development",
             details: [
-                <span><Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">iOS</Link>, <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">Android</Link> & <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[var(--brand-teal)] transition-colors">Cross-Platform Development</Link></span>,
-                <span><Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--brand-teal)] transition-colors">Enterprise Mobile Applications</Link></span>,
+                <span><Link href="/services/mobile-app-development/ios-app-development-company" className="hover:text-[var(--accent-teal-text)] transition-colors">iOS</Link>, <Link href="/services/mobile-app-development/android-app-development-company" className="hover:text-[var(--accent-teal-text)] transition-colors">Android</Link> & <Link href="/services/mobile-app-development/cross-platform-app-development-company" className="hover:text-[var(--accent-teal-text)] transition-colors">Cross-Platform Development</Link></span>,
+                <span><Link href="/services/mobile-app-development/enterprise-application-development-services" className="hover:text-[var(--accent-teal-text)] transition-colors">Enterprise Mobile Applications</Link></span>,
                 "Faster Time-to-Market",
                 "Rigorous QA Process",
                 "App Store Optimization",

@@ -31,8 +31,8 @@ export default function CTA() {
                                 borderColor: "rgba(0, 115, 170, 0.2)",
                             }}
                         >
-                            <Globe className="w-4 h-4 text-[#0073AA]" />
-                            <span className="text-sm font-semibold text-[#0073AA]">
+                            <Globe className="w-4 h-4 text-[var(--brand-blue-text)]" />
+                            <span className="text-sm font-semibold text-[var(--brand-blue-text)]">
                                 Free WordPress Consultation
                             </span>
                         </div>

@@ -76,7 +76,7 @@ export default function CTA() {
 
                         {/* Description */}
                         <p className="text-base md:text-xl max-w-4xl mx-auto mb-12 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                            Partner with a professional <span className="font-bold text-[var(--brand-blue-text)]">web development agency</span> to build a high-performance, SEO-optimized website that delivers <span className="text-[var(--brand-teal)] font-bold">measurable ROI</span>. Get your free expert audit today.
+                            Partner with a professional <span className="font-bold text-[var(--brand-blue-text)]">web development agency</span> to build a high-performance, SEO-optimized website that delivers <span className="text-[var(--accent-teal-text)] font-bold">measurable ROI</span>. Get your free expert audit today.
                         </p>
 
                         {/* CTA Buttons */}

@@ -21,30 +21,33 @@ export default function WhyChooseUs() {
                 { icon: TrendingUp, text: "Student success" }
             ],
             color: "var(--brand-purple-text)",
+            textColor: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#c084fc]",
         },
         {
             icon: Video,
             title: "Video Streaming Mastery",
-            description: <>HD video delivery with adaptive bitrate streaming, DRM protection, and seamless playback across <Link href="/services/web-design-development/entertainment-media" className="underline underline-offset-2 hover:underline text-[#ec4899]">devices</Link>.</>,
+            description: <>HD video delivery with adaptive bitrate streaming, DRM protection, and seamless playback across <Link href="/services/web-design-development/entertainment-media" className="underline underline-offset-2 hover:underline text-[var(--accent-pink-text)]">devices</Link>.</>,
             highlights: [
                 { icon: Video, text: "4K streaming" },
                 { icon: Shield, text: "DRM protection" },
                 { icon: Zap, text: "Fast loading" }
             ],
             color: "#ec4899",
+            textColor: "var(--accent-pink-text)",
             gradient: "from-[#ec4899] to-[#f472b6]",
         },
         {
             icon: Users,
             title: "Engaging User Experience",
-            description: <>Intuitive interfaces that keep learners motivated with <Link href="/blog/ui-ux-design-principles-best-practices" className="underline underline-offset-2 hover:underline text-[#f97316]">gamification</Link>, progress tracking, and social features.</>,
+            description: <>Intuitive interfaces that keep learners motivated with <Link href="/blog/ui-ux-design-principles-best-practices" className="underline underline-offset-2 hover:underline text-[var(--accent-orange-text)]">gamification</Link>, progress tracking, and social features.</>,
             highlights: [
                 { icon: Sparkles, text: "Gamification" },
                 { icon: TrendingUp, text: "Progress tracking" },
                 { icon: Users, text: "Social learning" }
             ],
             color: "#f97316",
+            textColor: "var(--accent-orange-text)",
             gradient: "from-[#f97316] to-[#fb923c]",
         },
         {
@@ -57,6 +60,7 @@ export default function WhyChooseUs() {
                 { icon: TrendingUp, text: "Performance reports" }
             ],
             color: "var(--brand-purple-text)",
+            textColor: "var(--brand-purple-text)",
             gradient: "from-[#a855f7] to-[#ec4899]",
         },
     ];
@@ -156,7 +160,7 @@ export default function WhyChooseUs() {
                                         {/* Title */}
                                         <h3
                                             className="text-xl md:text-2xl font-bold mb-4 transition-colors duration-300"
-                                            style={{ color: isHovered ? reason.color : "var(--foreground)" }}
+                                            style={{ color: isHovered ? reason.textColor : "var(--foreground)" }}
                                         >
                                             {reason.title}
                                         </h3>
@@ -181,7 +185,7 @@ export default function WhyChooseUs() {
                                                         }}
                                                     >
                                                         <HighlightIcon className="w-4 h-4" style={{ color: reason.color }} />
-                                                        <span className="text-sm font-medium" style={{ color: reason.color }}>
+                                                        <span className="text-sm font-medium" style={{ color: reason.textColor }}>
                                                             {highlight.text}
                                                         </span>
                                                     </div>

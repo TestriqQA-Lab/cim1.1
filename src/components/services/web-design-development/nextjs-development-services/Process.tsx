@@ -177,8 +177,8 @@ export default function Process() {
                             borderColor: "var(--border-color)",
                         }}
                     >
-                        <Terminal className="w-4 h-4" style={{ color: "#61dafb" }} />
-                        <span className="text-sm font-medium" style={{ color: "#61dafb" }}>
+                        <Terminal className="w-4 h-4" style={{ color: "var(--accent-cyan-text)" }} />
+                        <span className="text-sm font-medium" style={{ color: "var(--accent-cyan-text)" }}>
                             Development Process
                         </span>
                     </div>
@@ -312,7 +312,7 @@ export default function Process() {
                                         <div className="mt-16 text-center whitespace-nowrap">
                                             <div
                                                 className="text-xs font-bold font-mono mb-1 transition-all duration-300"
-                                                style={{ color: step.bgColor }}
+                                                style={{ color: "var(--accent-cyan-text)" }}
                                             >
                                                 {step.number}
                                             </div>
@@ -322,7 +322,7 @@ export default function Process() {
                                                     ${isActive ? "opacity-100 scale-100" : "opacity-60 scale-95"}
                                                 `}
                                                 style={{
-                                                    color: isActive ? step.bgColor : "var(--foreground)",
+                                                    color: isActive ? "var(--accent-cyan-text)" : "var(--foreground)",
                                                 }}
                                             >
                                                 {step.subtitle}
@@ -369,7 +369,7 @@ export default function Process() {
                                             </div>
                                             <div
                                                 className="text-5xl font-bold font-mono mb-2"
-                                                style={{ color: step.bgColor }}
+                                                style={{ color: "var(--accent-cyan-text)" }}
                                             >
                                                 {step.number}
                                             </div>
@@ -425,7 +425,7 @@ export default function Process() {
                                                     `}
                                                     style={{
                                                         backgroundColor: activeStep === 0 ? "var(--border-color)" : `${steps[Math.max(0, activeStep - 1)].bgColor}20`,
-                                                        color: activeStep === 0 ? "var(--secondary-text)" : steps[Math.max(0, activeStep - 1)].bgColor,
+                                                        color: activeStep === 0 ? "var(--secondary-text)" : "var(--accent-cyan-text)",
                                                         border: `2px solid ${activeStep === 0 ? "var(--border-color)" : steps[Math.max(0, activeStep - 1)].bgColor}`,
                                                     }}
                                                 >
@@ -501,7 +501,7 @@ export default function Process() {
                                     <div className="flex-1">
                                         <div
                                             className="text-sm font-bold font-mono mb-1"
-                                            style={{ color: step.bgColor }}
+                                            style={{ color: "var(--accent-cyan-text)" }}
                                         >
                                             {step.number}
                                         </div>
@@ -511,7 +511,7 @@ export default function Process() {
                                         >
                                             {step.title}
                                         </h3>
-                                        <p className="text-xs" style={{ color: step.bgColor }}>
+                                        <p className="text-xs" style={{ color: "var(--accent-cyan-text)" }}>
                                             {step.subtitle}
                                         </p>
                                     </div>
@@ -565,7 +565,7 @@ export default function Process() {
                         background: `linear-gradient(135deg, var(--card-bg), rgba(97, 218, 251, 0.05))`,
                     }}
                 >
-                    <Terminal className="w-12 h-12 mx-auto mb-4" style={{ color: "#61dafb" }} />
+                    <Terminal className="w-12 h-12 mx-auto mb-4" style={{ color: "var(--accent-cyan-text)" }} />
                     <h3
                         className="text-2xl md:text-3xl font-bold mb-4"
                         style={{ color: "var(--foreground)" }}

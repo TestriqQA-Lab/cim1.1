@@ -304,7 +304,7 @@ export default function WebsiteTypes() {
                     </h2>
 
                     <p className="text-xl max-w-4xl mx-auto mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        As a professional <span className="text-[var(--brand-blue-text)] font-bold">web design agency</span>, we offer full-spectrum digital engineering. Our <span className="text-[var(--brand-teal)] font-bold">web development agency</span> delivers scalable, secure, and SEO-optimized platforms for global markets.
+                        As a professional <span className="text-[var(--brand-blue-text)] font-bold">web design agency</span>, we offer full-spectrum digital engineering. Our <span className="text-[var(--accent-teal-text)] font-bold">web development agency</span> delivers scalable, secure, and SEO-optimized platforms for global markets.
                     </p>
 
                     <div
