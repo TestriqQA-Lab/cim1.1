@@ -17,7 +17,7 @@ export default function TextBlock({ block }: TextBlockProps) {
     switch (block.variant) {
         case "h1":
             return (
-                <h1
+                <h2
                     id={id}
                     className="text-3xl font-bold mb-6 mt-8 scroll-mt-24"
                     style={{ color: "var(--foreground)" }}
@@ -56,7 +56,7 @@ export default function TextBlock({ block }: TextBlockProps) {
                             )
                             .replace(
                                 /\[([^\]]+)\]\(([^)]+)\)/g,
-                                "<a href='$2' class='text-[var(--brand-purple)] transition-colors'>$1</a>"
+                                "<a href='$2' class='text-[var(--brand-purple-text)] underline underline-offset-2 transition-colors'>$1</a>"
                             ),
                     }}
                 />

@@ -72,9 +72,9 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
             {latestPost && !hasActiveSearch && (
                 <section className="relative overflow-hidden">
                     <div
-                        className="absolute inset-0 opacity-5"
+                        className="absolute inset-0"
                         style={{
-                            background: "radial-gradient(ellipse at top, var(--brand-purple), transparent 70%)",
+                            background: "radial-gradient(ellipse at top, color-mix(in srgb, var(--brand-purple) 5%, transparent), transparent 70%)",
                         }}
                     />
                     <div className="relative px-6 md:px-12 xl:px-16 py-12">
@@ -100,7 +100,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
 
                                         <span
                                             className="font-semibold"
-                                            style={{ color: "var(--brand-purple)" }}
+                                            style={{ color: "var(--brand-purple-text)" }}
                                         >
                                             Blog
                                         </span>
@@ -110,14 +110,14 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
                                         style={{
                                             backgroundColor: "color-mix(in srgb, var(--brand-purple) 15%, transparent)",
-                                            color: "var(--brand-purple)",
+                                            color: "var(--brand-purple-text)",
                                         }}
                                     >
                                         <Sparkles className="w-4 h-4" />
                                         Insights & Resources
                                     </span>
                                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-                                        Blog & <span style={{ color: "var(--brand-purple)" }}>Insights</span>
+                                        Blog & <span style={{ color: "var(--brand-purple-text)" }}>Insights</span>
                                     </h1>
                                     <p
                                         className="text-base md:text-lg leading-relaxed mb-6"
@@ -135,7 +135,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                                 borderColor: "var(--border-color)",
                                             }}
                                         >
-                                            <div className="text-2xl lg:text-3xl font-bold" style={{ color: "var(--brand-purple)" }}>
+                                            <div className="text-2xl lg:text-3xl font-bold" style={{ color: "var(--brand-purple-text)" }}>
                                                 {initialPosts.length}+
                                             </div>
                                             <div className="text-xs font-medium" style={{ color: "var(--secondary-text)" }}>
@@ -149,7 +149,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                                 borderColor: "var(--border-color)",
                                             }}
                                         >
-                                            <div className="text-2xl lg:text-3xl font-bold" style={{ color: "var(--brand-cyan)" }}>
+                                            <div className="text-2xl lg:text-3xl font-bold" style={{ color: "var(--accent-cyan-text)" }}>
                                                 8
                                             </div>
                                             <div className="text-xs font-medium" style={{ color: "var(--secondary-text)" }}>
@@ -163,7 +163,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                                 borderColor: "var(--border-color)",
                                             }}
                                         >
-                                            <div className="text-2xl lg:text-3xl font-bold" style={{ color: "var(--brand-purple)" }}>
+                                            <div className="text-2xl lg:text-3xl font-bold" style={{ color: "var(--brand-purple-text)" }}>
                                                 Weekly
                                             </div>
                                             <div className="text-xs font-medium" style={{ color: "var(--secondary-text)" }}>
@@ -205,7 +205,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                             <Link
                                                 key={cat}
                                                 href={`/blog/category/${getCategorySlug(cat)}`}
-                                                className="px-4 py-2 rounded-xl text-sm font-semibold border transition-all duration-200 hover:border-[var(--brand-purple)] hover:text-[var(--brand-purple)] hover:bg-[color-mix(in_srgb,var(--brand-purple)_5%,transparent)]"
+                                                className="px-4 py-2 rounded-xl text-sm font-semibold border transition-all duration-200 hover:border-[var(--brand-purple)] hover:text-[var(--brand-purple-text)] hover:bg-[color-mix(in_srgb,var(--brand-purple)_5%,transparent)]"
                                                 style={{
                                                     borderColor: "var(--border-color)",
                                                     color: "var(--foreground)",
@@ -221,7 +221,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                         <Link
                                             href="#more-articles"
                                             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white text-sm transition-all duration-300 hover:shadow-lg hover:scale-105"
-                                            style={{ backgroundColor: "var(--brand-purple)" }}
+                                            style={{ backgroundColor: "var(--brand-purple-btn)" }}
                                         >
                                             Explore All Articles
                                             <ArrowRight className="w-4 h-4" />
@@ -238,7 +238,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                                 backgroundColor: "color-mix(in srgb, var(--brand-purple) 15%, transparent)",
                                             }}
                                         >
-                                            <Sparkles className="w-3.5 h-3.5" style={{ color: "var(--brand-purple)" }} />
+                                            <Sparkles className="w-3.5 h-3.5" style={{ color: "var(--brand-purple-text)" }} />
                                         </div>
                                         <h2 className="text-lg font-bold">Latest Article</h2>
                                     </div>
@@ -265,7 +265,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                                 <span
                                                     className="inline-flex px-3 py-1.5 rounded-full text-xs font-semibold"
                                                     style={{
-                                                        backgroundColor: "var(--brand-purple)",
+                                                        backgroundColor: "var(--brand-purple-btn)",
                                                         color: "white",
                                                     }}
                                                 >
@@ -276,7 +276,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
 
                                         {/* Content Section - Bottom Half */}
                                         <div className="p-6">
-                                            <h3 className="text-xl lg:text-2xl font-bold mb-3 group-hover:text-[var(--brand-purple)] transition-colors line-clamp-2">
+                                            <h3 className="text-xl lg:text-2xl font-bold mb-3 group-hover:text-[var(--brand-purple-text)] transition-colors line-clamp-2">
                                                 {latestPost.title}
                                             </h3>
                                             <p className="text-sm mb-5 line-clamp-2" style={{ color: "var(--secondary-text)" }}>
@@ -296,7 +296,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                                         <span className="text-xs" style={{ color: "var(--secondary-text)" }}>{latestPost.readTime} min read</span>
                                                     </div>
                                                 </div>
-                                                <span className="inline-flex items-center gap-1.5 text-sm font-semibold group-hover:gap-2.5 transition-all" style={{ color: "var(--brand-purple)" }}>
+                                                <span className="inline-flex items-center gap-1.5 text-sm font-semibold group-hover:gap-2.5 transition-all" style={{ color: "var(--brand-purple-text)" }}>
                                                     Read Article
                                                     <ArrowRight className="w-4 h-4" />
                                                 </span>
@@ -314,9 +314,9 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
             {hasActiveSearch && (
                 <section className="relative overflow-hidden">
                     <div
-                        className="absolute inset-0 opacity-5"
+                        className="absolute inset-0"
                         style={{
-                            background: "radial-gradient(ellipse at top, var(--brand-purple), transparent 70%)",
+                            background: "radial-gradient(ellipse at top, color-mix(in srgb, var(--brand-purple) 5%, transparent), transparent 70%)",
                         }}
                     />
                     <div className="relative px-6 md:px-12 xl:px-16 py-12 md:py-16">
@@ -325,14 +325,14 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, var(--brand-purple) 15%, transparent)",
-                                    color: "var(--brand-purple)",
+                                    color: "var(--brand-purple-text)",
                                 }}
                             >
                                 <Sparkles className="w-4 h-4" />
                                 Insights & Resources
                             </span>
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                                Blog & <span style={{ color: "var(--brand-purple)" }}>Insights</span>
+                                Blog & <span style={{ color: "var(--brand-purple-text)" }}>Insights</span>
                             </h1>
                             <p
                                 className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
@@ -353,7 +353,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                             Results for "{isTagSearch ? '#' : ''}{searchQuery}"
                         </h2>
                         <p style={{ color: "var(--secondary-text)" }}>
-                            Found <span className="font-semibold text-[var(--brand-purple)]">{filteredPosts.length}</span>{" "}
+                            Found <span className="font-semibold text-[var(--brand-purple-text)]">{filteredPosts.length}</span>{" "}
                             {filteredPosts.length === 1 ? "article" : "articles"}
                         </p>
                     </div>
@@ -391,7 +391,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                     <Link
                                         href="/blog"
                                         className="px-4 py-2 rounded-lg font-medium text-sm text-white transition-all inline-block"
-                                        style={{ backgroundColor: "var(--brand-purple)" }}
+                                        style={{ backgroundColor: "var(--brand-purple-btn)" }}
                                     >
                                         View All Posts
                                     </Link>
@@ -424,15 +424,15 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                         }}
                     >
                         <div
-                            className="absolute inset-0 opacity-10"
+                            className="absolute inset-0"
                             style={{
-                                background: "linear-gradient(135deg, var(--brand-purple), var(--brand-cyan))",
+                                background: "linear-gradient(135deg, color-mix(in srgb, var(--brand-purple) 10%, transparent), color-mix(in srgb, var(--brand-cyan) 10%, transparent))",
                             }}
                         />
                         <div
-                            className="absolute top-0 right-0 w-96 h-96 opacity-20 blur-3xl"
+                            className="absolute top-0 right-0 w-96 h-96 blur-3xl"
                             style={{
-                                background: "radial-gradient(circle, var(--brand-purple), transparent)",
+                                background: "radial-gradient(circle, color-mix(in srgb, var(--brand-purple) 20%, transparent), transparent)",
                             }}
                         />
 
@@ -441,7 +441,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6"
                                 style={{
                                     backgroundColor: "color-mix(in srgb, var(--brand-purple) 15%, transparent)",
-                                    color: "var(--brand-purple)",
+                                    color: "var(--brand-purple-text)",
                                 }}
                             >
                                 <Sparkles className="w-4 h-4" />
@@ -460,7 +460,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                 <Link
                                     href="/contact"
                                     className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/25 hover:scale-105"
-                                    style={{ backgroundColor: "var(--brand-purple)" }}
+                                    style={{ backgroundColor: "var(--brand-purple-btn)" }}
                                 >
                                     Get Started
                                     <ChevronRight className="w-5 h-5" />
