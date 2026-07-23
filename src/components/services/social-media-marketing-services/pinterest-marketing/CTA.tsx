@@ -36,7 +36,7 @@ export default function CTA() {
 
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
                         Ready to Get <br />
-                        <span style={{ color: pinterestRed }}>Discovered?</span>
+                        <span style={{ color: "var(--accent-red-text)" }}>Discovered?</span>
                     </h2>
 
                     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
@@ -70,7 +70,7 @@ export default function CTA() {
                     </div>
 
                     {/* Stats strip */}
-                    <div className="mt-16 pt-8 border-t flex flex-wrap justify-center gap-12 md:gap-24 opacity-70" style={{ borderColor: "var(--border-color)" }}>
+                    <div className="mt-16 pt-8 border-t flex flex-wrap justify-center gap-12 md:gap-24" style={{ borderColor: "var(--border-color)" }}>
                         <div className="text-center">
                             <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>10M+</p>
                             <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>Impressions</p>

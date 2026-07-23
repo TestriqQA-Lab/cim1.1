@@ -55,7 +55,7 @@ export default function CTA() {
                     </div>
 
                     {/* Stats strip */}
-                    <div className="mt-16 pt-8 border-t flex flex-wrap justify-center gap-12 md:gap-24 opacity-70" style={{ borderColor: "var(--border-color)" }}>
+                    <div className="mt-16 pt-8 border-t flex flex-wrap justify-center gap-12 md:gap-24" style={{ borderColor: "var(--border-color)" }}>
                         <div className="text-center">
                             <p className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>100k+</p>
                             <p className="text-sm uppercase tracking-widest" style={{ color: "var(--secondary-text)" }}>Followers Gained</p>
