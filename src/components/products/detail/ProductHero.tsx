@@ -73,17 +73,29 @@ export default function ProductHero({ product }: { product: Product }) {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp" style={{ color: "var(--foreground)" }}>
-                            <span className="relative inline-block" style={{ color: textColor }}>
-                                {product.name}
-                                <svg className="absolute w-full h-3 -bottom-2 left-0 opacity-50" style={{ color }} viewBox="0 0 100 10" preserveAspectRatio="none">
-                                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
-                                </svg>
-                            </span>
+                            {product.heroHeadline ? (
+                                product.heroHeadline
+                            ) : (
+                                <span className="relative inline-block" style={{ color: textColor }}>
+                                    {product.name}
+                                    <svg className="absolute w-full h-3 -bottom-2 left-0 opacity-50" style={{ color }} viewBox="0 0 100 10" preserveAspectRatio="none">
+                                        <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
+                                    </svg>
+                                </span>
+                            )}
                         </h1>
 
-                        <p className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
-                            {product.longDescription}
-                        </p>
+                        {product.heroSubheadline && (
+                            <p className="text-xl md:text-2xl font-semibold leading-snug max-w-xl mx-auto lg:mx-0 animate-slideUp" style={{ color: "var(--foreground)" }}>
+                                {product.heroSubheadline}
+                            </p>
+                        )}
+
+                        {(product.heroBody ?? [product.longDescription]).map((paragraph, i) => (
+                            <p key={i} className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 animate-slideUp delay-100" style={{ color: "var(--secondary-text)" }}>
+                                {paragraph}
+                            </p>
+                        ))}
 
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 animate-slideUp delay-300">
                             {product.extensionUrl ? (
@@ -95,15 +107,15 @@ export default function ProductHero({ product }: { product: Product }) {
                                     style={{ backgroundColor: solidColor }}
                                 >
                                     <Chrome className="w-5 h-5 mr-2" />
-                                    Add to Chrome
+                                    {product.ctaPrimaryLabel ?? "Add to Chrome"}
                                 </a>
                             ) : (
                                 <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg" style={{ backgroundColor: solidColor }}>
-                                    Get Started <ArrowRight className="w-5 h-5 ml-2" />
+                                    {product.ctaPrimaryLabel ?? "Get Started"} <ArrowRight className="w-5 h-5 ml-2" />
                                 </Link>
                             )}
                             <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold border transition-all hover:bg-accent" style={{ borderColor: "var(--border-color)", color: "var(--foreground)" }}>
-                                Schedule Demo
+                                {product.ctaSecondaryLabel ?? "Schedule Demo"}
                             </Link>
                         </div>
 

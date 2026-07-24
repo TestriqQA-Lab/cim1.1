@@ -31,7 +31,9 @@ export default function FAQ({ product }: { product: Product }) {
                             <span className="text-sm font-medium" style={{ color: textColor }}>FAQ</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "var(--foreground)" }}>
-                            Frequently Asked <span style={{ color: textColor }}>Questions</span>
+                            {product.faqHeading ?? (
+                                <>Frequently Asked <span style={{ color: textColor }}>Questions</span></>
+                            )}
                         </h2>
                         <p className="text-lg mb-8 leading-relaxed" style={{ color: "var(--secondary-text)" }}>
                             Everything you need to know about <strong>{product.name}</strong>. Can&apos;t find what you&apos;re looking for? Our support team is always ready to help.

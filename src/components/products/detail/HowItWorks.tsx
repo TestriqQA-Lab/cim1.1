@@ -41,7 +41,9 @@ export default function HowItWorks({ product }: { product: Product }) {
                         <span className="px-4 py-2 rounded-full text-sm font-semibold tracking-wide uppercase border" style={{ backgroundColor: "var(--card-bg)", borderColor: `${color}30`, color: textColor }}>Process</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{ color: "var(--foreground)" }}>
-                        How <span style={{ color: textColor }}>{product.name}</span> Works
+                        {product.howItWorksHeading ?? (
+                            <>How <span style={{ color: textColor }}>{product.name}</span> Works</>
+                        )}
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
                         Get up and running in minutes with our simple, streamlined process.

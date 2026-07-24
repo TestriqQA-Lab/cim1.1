@@ -38,10 +38,12 @@ export default function Features({ product }: { product: Product }) {
                         <span className="px-4 py-2 rounded-full text-sm font-semibold tracking-wide uppercase border" style={{ backgroundColor: "var(--card-bg)", borderColor: `${color}30`, color: textColor }}>Features</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{ color: "var(--foreground)" }}>
-                        Powerful Features for <span style={{ color: textColor }}>Maximum Impact</span>
+                        {product.featuresHeading ?? (
+                            <>Powerful Features for <span style={{ color: textColor }}>Maximum Impact</span></>
+                        )}
                     </h2>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: "var(--secondary-text)" }}>
-                        Everything you need to supercharge your workflow — built with cutting-edge technology and designed for simplicity.
+                        {product.featuresIntro ?? "Everything you need to supercharge your workflow — built with cutting-edge technology and designed for simplicity."}
                     </p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

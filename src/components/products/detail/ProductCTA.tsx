@@ -52,17 +52,21 @@ export default function ProductCTA({ product }: { product: Product }) {
                         <Icon className="w-32 h-32" style={{ color }} />
                     </div>
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight" style={{ color: "var(--foreground)" }}>
-                        Ready to Get Started with <br />
-                        <span style={{ color: textColor }}>
-                            <Link href="/contact" className="hover:underline">{product.name}?</Link>
-                        </span>
+                        {product.closingCtaHeading ?? (
+                            <>
+                                Ready to Get Started with <br />
+                                <span style={{ color: textColor }}>
+                                    <Link href="/contact" className="hover:underline">{product.name}?</Link>
+                                </span>
+                            </>
+                        )}
                     </h2>
                     <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10" style={{ color: "var(--secondary-text)" }}>
-                        Join thousands of businesses already using {product.name} to save time, reduce costs, and achieve better results.
+                        {product.closingCtaBody ?? `Join thousands of businesses already using ${product.name} to save time, reduce costs, and achieve better results.`}
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                         <Link href="/contact" className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg" style={{ backgroundColor: solidColor, boxShadow: `0 4px 20px ${color}40` }}>
-                            Get Started Free
+                            {product.closingCtaLabel ?? "Get Started Free"}
                             <ArrowRight className="w-4 h-4 md:w-6 md:h-6 ml-2 flex-shrink-0" />
                         </Link>
                     </div>

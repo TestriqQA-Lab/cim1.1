@@ -38,9 +38,14 @@ export async function generateMetadata({
 
     const url = `https://www.cinuteinfomedia.com/products/${product.slug}`;
 
+    // Products may supply explicit SEO copy; otherwise fall back to the derived defaults.
+    const metaTitle = product.seoTitle ?? `${product.name} — ${product.tagline} | Cinute InfoMedia`;
+    const socialTitle = product.seoTitle ?? `${product.name} — ${product.tagline}`;
+    const metaDescription = product.seoDescription ?? product.description;
+
     return {
-        title: `${product.name} — ${product.tagline} | Cinute InfoMedia`,
-        description: product.description,
+        title: metaTitle,
+        description: metaDescription,
         keywords: [
             product.name,
             product.tagline,
@@ -53,8 +58,8 @@ export async function generateMetadata({
             canonical: url,
         },
         openGraph: {
-            title: `${product.name} — ${product.tagline}`,
-            description: product.description,
+            title: socialTitle,
+            description: metaDescription,
             url,
             type: "website",
             images: [
@@ -68,8 +73,8 @@ export async function generateMetadata({
         },
         twitter: {
             card: "summary_large_image",
-            title: `${product.name} — ${product.tagline}`,
-            description: product.description,
+            title: socialTitle,
+            description: metaDescription,
             images: ["/og-images/Services.webp"],
         },
     };
@@ -100,8 +105,8 @@ export default async function ProductPage({
         generateWebSiteSchema(),
 
         generateWebPageSchema({
-            name: `${product.name} — ${product.tagline}`,
-            description: product.description,
+            name: product.seoTitle ?? `${product.name} — ${product.tagline}`,
+            description: product.seoDescription ?? product.description,
             urlPath: `/products/${product.slug}`,
             datePublished: "2025-01-01",
             dateModified: "2026-05-16",
@@ -123,13 +128,13 @@ export default async function ProductPage({
             name: product.name,
             description: product.longDescription,
             url: `${siteUrl}/products/${product.slug}`,
-            applicationCategory: "BusinessApplication",
-            operatingSystem: "Web",
+            applicationCategory: "BrowserApplication",
+            operatingSystem: product.extensionUrl ? "Chrome, Edge" : "Web",
             offers: {
                 "@type": "Offer",
                 price: "0",
                 priceCurrency: "USD",
-                description: "Free trial available. Contact for pricing.",
+                description: "Free plan with a daily generation limit. Pro and Business plans unlock unlimited generations, custom tones, and team features.",
                 url: `${siteUrl}/contact`,
             },
             provider: {
