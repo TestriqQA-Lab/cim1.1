@@ -20,7 +20,26 @@ const nextConfig = {
         ],
     },
     async redirects() {
+        // The 6 discontinued products (fake catalog entries) and the old /products
+        // listing hub all now resolve to the single live product. Sources are
+        // exact-match (no :path*), so the canonical /products/chimegenius-ai-pro
+        // target is never itself matched — avoids the case-insensitive 308 loop
+        // documented below.
+        const productTarget = '/products/chimegenius-ai-pro';
+        const removedProductSlugs = [
+            'testriq-qa', 'cim-chatbot', 'cim-autoflow',
+            'cim-analytics', 'cim-sitebuilder', 'cim-socialhub',
+        ];
+        const productRedirects = [
+            { source: '/products', destination: productTarget, permanent: true },
+            ...removedProductSlugs.flatMap((slug) => [
+                { source: `/products/${slug}`, destination: productTarget, permanent: true },
+                { source: `/products/${slug}/support`, destination: productTarget, permanent: true },
+                { source: `/products/${slug}/privacy-policy`, destination: productTarget, permanent: true },
+            ]),
+        ];
         return [
+            ...productRedirects,
             {
                 source: '/social-media-services',
                 destination: '/services/social-media-marketing-services',

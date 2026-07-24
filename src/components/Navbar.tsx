@@ -56,13 +56,26 @@ const getServiceSlug = (title: string) => {
   return title.toLowerCase().replace(/[&\s]+/g, "-");
 };
 
+// Products dropdown — one live product for now (mirrors the `services` structure).
+const products = [
+  {
+    title: "ChimeGenius AI Pro",
+    description: "Smart comment & reply generator",
+    slug: "chimegenius-ai-pro",
+    logo: "/images/chimegenius-ai-pro-logo.svg",
+  },
+];
+
 
 export default function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
   const [isThemeOpen, setIsThemeOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const productsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const themeDropdownRef = useRef<HTMLDivElement>(null);
   const mobileThemeRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
@@ -125,13 +138,29 @@ export default function Navbar() {
     }, 150);
   };
 
+  const handleProductsMouseEnter = () => {
+    if (productsTimeoutRef.current) clearTimeout(productsTimeoutRef.current);
+    setIsProductsOpen(true);
+  };
+
+  const handleProductsMouseLeave = () => {
+    productsTimeoutRef.current = setTimeout(() => {
+      setIsProductsOpen(false);
+    }, 150);
+  };
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
     setIsMobileServicesOpen(false);
+    setIsMobileProductsOpen(false);
   };
 
   const toggleMobileServices = () => {
     setIsMobileServicesOpen(!isMobileServicesOpen);
+  };
+
+  const toggleMobileProducts = () => {
+    setIsMobileProductsOpen(!isMobileProductsOpen);
   };
 
   // SSR-safe placeholder — includes navigation links for Googlebot crawlability
@@ -151,7 +180,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center space-x-3">
               <Link href="/" className="px-4 py-2 rounded-lg text-md font-medium">Home</Link>
               <Link href="/services" className="px-4 py-2 rounded-lg text-md font-medium">Services</Link>
-              <Link href="/products" className="px-4 py-2 rounded-lg text-md font-medium">Products</Link>
+              <Link href="/products/chimegenius-ai-pro" className="px-4 py-2 rounded-lg text-md font-medium">Products</Link>
               <Link href="/blog" className="px-4 py-2 rounded-lg text-md font-medium">Blog</Link>
               <Link href="/about" className="px-4 py-2 rounded-lg text-md font-medium">About</Link>
               <Link href="/careers" className="px-4 py-2 rounded-lg text-md font-medium">Careers</Link>
@@ -309,15 +338,77 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-              <Link
-                href="/products"
-                className="px-4 py-2 rounded-lg text-md font-medium transition-all"
-                style={getNavLinkStyle("/products")}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
-                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
-              >
-                Products
-              </Link>
+              {/* Products Dropdown */}
+              <div className="relative" onMouseEnter={handleProductsMouseEnter} onMouseLeave={handleProductsMouseLeave}>
+                <button
+                  className="flex items-center space-x-1 px-4 py-2 rounded-lg text-md font-medium transition-all"
+                  style={{
+                    color: isActive("/products") ? "var(--brand-purple-text)" : "var(--foreground)",
+                    backgroundColor: isProductsOpen
+                      ? "var(--hover-bg)"
+                      : isActive("/products")
+                        ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)"
+                        : "transparent",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
+                  onMouseLeave={(e) => {
+                    if (!isProductsOpen) e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent";
+                  }}
+                  aria-expanded={isProductsOpen}
+                  aria-haspopup="true"
+                  aria-label="Products Menu"
+                >
+                  <span>Products</span>
+                  <ChevronDown className={`w-4 h-4 transition-transform ${isProductsOpen ? "rotate-180" : ""}`} />
+                </button>
+
+                {isProductsOpen && (
+                  <div className="absolute left-0 mt-2 w-80 z-[300]">
+                    <div
+                      className="rounded-2xl shadow-2xl border p-3 overflow-hidden"
+                      style={{
+                        backgroundColor: "var(--card-bg)",
+                        borderColor: "var(--border-color)",
+                      }}
+                    >
+                      {products.map((product, index) => {
+                        return (
+                          <Link
+                            key={index}
+                            href={`/products/${product.slug}`}
+                            className="group flex items-start space-x-3 p-4 rounded-xl transition-all duration-200 border"
+                            style={{
+                              backgroundColor: "transparent",
+                              borderColor: "transparent",
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "var(--hover-bg)";
+                              e.currentTarget.style.borderColor = "var(--border-color)";
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent";
+                              e.currentTarget.style.borderColor = "transparent";
+                            }}
+                            onClick={() => setIsProductsOpen(false)}
+                          >
+                            <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden group-hover:scale-110 transition-transform shadow-lg">
+                              <Image src={product.logo} alt="" width={48} height={48} className="w-full h-full object-cover" unoptimized />
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <h3 className="text-sm font-semibold mb-1" style={{ color: "var(--foreground)" }}>
+                                {product.title}
+                              </h3>
+                              <p className="text-xs line-clamp-2" style={{ color: "var(--secondary-text)" }}>
+                                {product.description}
+                              </p>
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
               <Link
                 href="/blog"
                 className="px-4 py-2 rounded-lg text-md font-medium transition-all"
@@ -558,16 +649,35 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link
-              href="/products"
-              onClick={toggleMobileMenu}
-              className="block px-4 py-3 rounded-lg text-base font-medium transition-all"
-              style={getNavLinkStyle("/products")}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/products") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
-            >
-              Products
-            </Link>
+            {/* Mobile Products Accordion */}
+            <div>
+              <button onClick={toggleMobileProducts} className="flex items-center justify-between w-full px-4 py-3 rounded-lg text-base font-medium transition-all" style={{ color: "var(--foreground)" }} onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")} onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}>
+                <span>Products</span>
+                <ChevronDown className={`w-5 h-5 transition-transform ${isMobileProductsOpen ? "rotate-180" : ""}`} />
+              </button>
+
+              {isMobileProductsOpen && (
+                <div className="mt-2 grid grid-cols-1 gap-3 pl-2">
+                  {products.map((product, index) => {
+                    return (
+                      <Link key={index} href={`/products/${product.slug}`} onClick={toggleMobileMenu} className="flex items-center space-x-3 p-3 rounded-lg transition-all" onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")} onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}>
+                        <div className="flex-shrink-0 w-10 h-10 rounded-lg overflow-hidden shadow-md">
+                          <Image src={product.logo} alt="" width={40} height={40} className="w-full h-full object-cover" unoptimized />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
+                            {product.title}
+                          </h3>
+                          <p className="text-xs truncate" style={{ color: "var(--secondary-text)" }}>
+                            {product.description}
+                          </p>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
 
             <Link
               href="/blog"
@@ -621,6 +731,14 @@ export default function Navbar() {
         {services.map((service, i) => (
           <Link key={i} href={`/services/${getServiceSlug(service.title)}`}>
             {service.title}
+          </Link>
+        ))}
+      </nav>
+      {/* Crawlable product links — always in DOM for Googlebot (hidden from users) */}
+      <nav aria-label="All product pages" className="sr-only">
+        {products.map((product, i) => (
+          <Link key={i} href={`/products/${product.slug}`}>
+            {product.title}
           </Link>
         ))}
       </nav>
