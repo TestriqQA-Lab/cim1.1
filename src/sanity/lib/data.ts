@@ -1,6 +1,6 @@
 import { client } from "./client";
 import { categoriesQuery, moreStoriesQuery } from "./queries";
-import { mapSanityPostToBlogPost } from "./mapper";
+import { mapSanityPostToBlogPost, toListPost } from "./mapper";
 import { BlogPost } from "@/data/blog";
 
 export async function getSidebarData(): Promise<{
@@ -13,7 +13,8 @@ export async function getSidebarData(): Promise<{
         client.fetch(moreStoriesQuery, { limit: 5, skip: "" }), // Using recent posts as popular for now
     ]);
 
-    const popularPosts = popularPostsRaw.map(mapSanityPostToBlogPost);
+    // Sidebar cards render metadata only — see toListPost.
+    const popularPosts = popularPostsRaw.map(mapSanityPostToBlogPost).map(toListPost);
     // Get all tags from popular posts as a simplified "tags" list for now, 
     // or we could query all tags. 
     // Let's assume tags come from the posts we fetched to avoid over-fetching.

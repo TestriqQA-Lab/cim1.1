@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useMemo, useRef, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState, useMemo, useRef, useCallback, Suspense } from "react";
 import { BlogPost, getCategorySlug } from "@/data/blog";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
+import SearchParamSync from "./SearchParamSync";
 import { ChevronRight, Sparkles, ArrowRight, Home } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,16 +17,16 @@ interface BlogClientProps {
 }
 
 export default function BlogClient({ initialPosts, categories, popularPosts, tags }: BlogClientProps) {
-    const searchParams = useSearchParams();
     const [searchQuery, setSearchQuery] = useState("");
     const [isTagSearch, setIsTagSearch] = useState(false);
     const contentRef = useRef<HTMLDivElement>(null);
 
-    // Read search parameter from URL on mount and when it changes
-    useEffect(() => {
-        const searchFromUrl = searchParams.get("search");
-        if (searchFromUrl) {
-            setSearchQuery(searchFromUrl);
+    // Reflect the ?search= URL param into local state. The param is read in an
+    // isolated <Suspense> leaf (SearchParamSync) so this component can prerender
+    // its hero + grid as static HTML instead of waiting for hydration.
+    const handleSearchChange = useCallback((search: string) => {
+        if (search) {
+            setSearchQuery(search);
             setIsTagSearch(true);
             setTimeout(() => {
                 contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -35,7 +35,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
             setSearchQuery("");
             setIsTagSearch(false);
         }
-    }, [searchParams]);
+    }, []);
 
     // Filter posts based on search query
     const filteredPosts = useMemo(() => {
@@ -68,6 +68,10 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
             }}
             className="min-h-screen"
         >
+            <Suspense fallback={null}>
+                <SearchParamSync onSearchChange={handleSearchChange} />
+            </Suspense>
+
             {/* Hero + Latest Post Combined Section */}
             {latestPost && !hasActiveSearch && (
                 <section className="relative overflow-hidden">
@@ -257,6 +261,7 @@ export default function BlogClient({ initialPosts, categories, popularPosts, tag
                                                 src={latestPost.image}
                                                 alt={latestPost.title}
                                                 fill
+                                                priority
                                                 sizes="(max-width: 1024px) 100vw, 50vw"
                                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                                             />

@@ -2,6 +2,17 @@ import { BlogPost, Author, ContentBlock } from '@/data/blog';
 import { Job } from '@/types/careers';
 import { urlFor } from './image';
 
+// Sanity's CDN resizes and negotiates the format, so the originals (often
+// multi-megabyte PNGs) never reach the browser. `fit: max` only ever scales
+// down, so aspect ratios are untouched, and `auto: format` keeps serving the
+// original format to clients that don't advertise webp/avif — social crawlers
+// reading these same URLs from the OG tags still get something they can read.
+const postImageUrl = (source: any) =>
+    urlFor(source).width(1200).fit('max').auto('format').quality(75).url();
+
+const avatarUrl = (source: any) =>
+    urlFor(source).width(400).fit('max').auto('format').quality(75).url();
+
 /**
  * Serializes Sanity Portable Text block children with marks into HTML
  * Handles links, bold, italic, and other inline formatting
@@ -50,12 +61,40 @@ export function mapSanityPostToBlogPost(sanityPost: any): BlogPost {
         author: mapSanityAuthorToAuthor(sanityPost.author),
         category: sanityPost.category?.name || 'Uncategorized',
         tags: sanityPost.tags || [],
-        image: sanityPost.mainImage ? urlFor(sanityPost.mainImage).url() : '',
+        image: sanityPost.mainImage ? postImageUrl(sanityPost.mainImage) : '',
         publishedAt: sanityPost.publishedAt,
         readTime: sanityPost.readTime || 5,
         featured: sanityPost.featured || false,
         seo: sanityPost.seo,
         schema: sanityPost.schema,
+    };
+}
+
+/**
+ * Reduces a post to the fields its list views actually render (cards, search
+ * suggestions, sidebars): everything else still gets serialized into the RSC
+ * payload sent to the browser. postFields attaches each post's seo and schema
+ * objects plus the author's full record — bio, email, social links, their own
+ * seo — and the blog index ships 62 posts twice over, once for the grid and
+ * once for the navbar search. Cards only ever show an author's name and photo.
+ *
+ * Server-side consumers (metadata, JSON-LD) must keep using the untrimmed post.
+ */
+export function toListPost(post: BlogPost): BlogPost {
+    return {
+        ...post,
+        content: '',
+        contentBlocks: [],
+        seo: undefined,
+        schema: undefined,
+        author: {
+            id: post.author.id,
+            name: post.author.name,
+            image: post.author.image,
+            title: '',
+            bio: '',
+            email: '',
+        },
     };
 }
 
@@ -75,7 +114,7 @@ export function mapSanityAuthorToAuthor(sanityAuthor: any): Author {
         name: sanityAuthor.name,
         title: sanityAuthor.title || '',
         bio: sanityAuthor.bio || '',
-        image: sanityAuthor.image ? urlFor(sanityAuthor.image).url() : '',
+        image: sanityAuthor.image ? avatarUrl(sanityAuthor.image) : '',
         email: sanityAuthor.email || '',
         social: sanityAuthor.social,
         seo: sanityAuthor.seo,
@@ -145,7 +184,7 @@ export function mapSanityBlocksToContentBlocks(sanityBlocks: any[]): ContentBloc
                 contentBlocks.push({
                     id: block._key,
                     type: 'image',
-                    src: block.asset ? urlFor(block.asset).url() : '',
+                    src: block.asset ? postImageUrl(block.asset) : '',
                     alt: block.alt || '',
                     caption: block.caption
                 });
