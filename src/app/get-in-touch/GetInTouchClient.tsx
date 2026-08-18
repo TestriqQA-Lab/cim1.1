@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, Check, Loader2 } from "lucide-react";
+import { withRupeeSign } from "@/components/RupeeSign";
 
 // Phone input with country codes
 import PhoneInput from 'react-phone-number-input';
@@ -531,7 +532,7 @@ export default function GetInTouchClient() {
                                                     </div>
                                                     <div>
                                                         <div className="font-semibold" style={{ color: "var(--foreground)" }}>{option.title}</div>
-                                                        <div className="text-sm" style={{ color: "var(--secondary-text)" }}>{option.desc}</div>
+                                                        <div className="text-sm" style={{ color: "var(--secondary-text)" }}>{withRupeeSign(option.desc)}</div>
                                                     </div>
                                                 </div>
                                             </label>

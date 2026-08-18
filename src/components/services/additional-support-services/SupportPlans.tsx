@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Check, Zap, Star, Crown, ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { RupeeSign } from "@/components/RupeeSign";
 
 export default function SupportPlans() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -203,7 +204,7 @@ export default function SupportPlans() {
                                     {/* Price */}
                                     <div className="mb-3 sm:mb-4">
                                         <span className="text-2xl sm:text-3xl md:text-4xl font-black" style={{ color: textAccent(plan.color) }}>
-                                            ₹{price}
+                                            <RupeeSign />{price}
                                         </span>
                                         <span className="text-xs sm:text-sm" style={{ color: "var(--secondary-text)" }}>
                                             /{billingCycle === "yearly" ? "year" : "month"}
