@@ -173,6 +173,22 @@ export default function Process() {
             } as Record<string, string>
         )[hex] || hex;
 
+    // Solid-button backgrounds carrying WHITE label text. The raw step hues are
+    // too light for white (2.3-4.5:1), so button fills use these darkened
+    // tokens while gradients, borders and icons keep the vivid hue.
+    const btnAccent = (hex: string) =>
+        (
+            {
+                "#3b82f6": "var(--accent-sky-btn)",
+                "#a855f7": "var(--brand-purple-btn)",
+                "#ec4899": "var(--accent-pink-btn)",
+                "#f97316": "var(--accent-orange-btn)",
+                "#14b8a6": "var(--accent-teal-btn)",
+                "#6366f1": "var(--accent-indigo-btn)",
+                "#10b981": "var(--accent-green-btn)",
+            } as Record<string, string>
+        )[hex] || hex;
+
     return (
         <section
             id="process-section"
@@ -298,8 +314,9 @@ export default function Process() {
                                 ];
 
                                 return (
-                                    <div
+                                    <button
                                         key={idx}
+                                        type="button"
                                         className="absolute flex flex-col items-center cursor-pointer"
                                         style={{
                                             left: positions[idx].x,
@@ -308,6 +325,7 @@ export default function Process() {
                                         }}
                                         onClick={() => setActiveStep(idx)}
                                         onMouseEnter={() => setActiveStep(idx)}
+                                        aria-current={isActive ? "step" : undefined}
                                     >
                                         {/* Marker Dot */}
                                         <div
@@ -369,8 +387,14 @@ export default function Process() {
                                             >
                                                 {step.subtitle}
                                             </div>
+                                            {/* Keeps the visible label ("01 Starting
+                                                Point") at the start of the accessible
+                                                name while naming the actual step. */}
+                                            <span className="sr-only">
+                                                {` — ${step.title}`}
+                                            </span>
                                         </div>
-                                    </div>
+                                    </button>
                                 );
                             })}
                         </div>
@@ -462,8 +486,13 @@ export default function Process() {
                                             </div>
 
                                             {/* Navigation Buttons */}
-                                            <div className="flex items-center justify-between mt-8 pt-6 border-t" style={{ borderColor: "var(--border-color)" }}>
+                                            {/* Every step panel renders its own copy of
+                                                this row; only the active one is visible,
+                                                so the hidden copies are inert (out of the
+                                                tab order and the a11y tree). */}
+                                            <div className="flex items-center justify-between mt-8 pt-6 border-t" style={{ borderColor: "var(--border-color)" }} inert={!isActive}>
                                                 <button
+                                                    type="button"
                                                     onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
                                                     disabled={activeStep === 0}
                                                     className={`
@@ -473,7 +502,7 @@ export default function Process() {
                                                     `}
                                                     style={{
                                                         backgroundColor: activeStep === 0 ? "var(--border-color)" : `${steps[Math.max(0, activeStep - 1)].bgColor}20`,
-                                                        color: activeStep === 0 ? "var(--secondary-text)" : steps[Math.max(0, activeStep - 1)].bgColor,
+                                                        color: activeStep === 0 ? "var(--secondary-text)" : textAccent(steps[Math.max(0, activeStep - 1)].bgColor),
                                                         border: `2px solid ${activeStep === 0 ? "var(--border-color)" : steps[Math.max(0, activeStep - 1)].bgColor}`,
                                                     }}
                                                 >
@@ -482,22 +511,31 @@ export default function Process() {
                                                 </button>
 
                                                 <div className="flex items-center gap-2">
-                                                    {steps.map((_, dotIdx) => (
+                                                    {steps.map((dot, dotIdx) => (
                                                         <button
                                                             key={dotIdx}
+                                                            type="button"
                                                             onClick={() => setActiveStep(dotIdx)}
-                                                            className={`
-                                                                w-2.5 h-2.5 rounded-full transition-all duration-300
-                                                                ${activeStep === dotIdx ? "scale-125" : "hover:scale-110"}
-                                                            `}
-                                                            style={{
-                                                                backgroundColor: activeStep === dotIdx ? steps[dotIdx].bgColor : "var(--border-color)",
-                                                            }}
-                                                        />
+                                                            aria-label={`Show step ${dotIdx + 1}: ${dot.title}`}
+                                                            aria-current={activeStep === dotIdx ? "step" : undefined}
+                                                            /* 24x24 hit area around the 10px dot (WCAG 2.5.8) */
+                                                            className="group w-6 h-6 flex items-center justify-center rounded-full"
+                                                        >
+                                                            <span
+                                                                className={`
+                                                                    block w-2.5 h-2.5 rounded-full transition-all duration-300
+                                                                    ${activeStep === dotIdx ? "scale-125" : "group-hover:scale-110"}
+                                                                `}
+                                                                style={{
+                                                                    backgroundColor: activeStep === dotIdx ? dot.bgColor : "var(--border-color)",
+                                                                }}
+                                                            />
+                                                        </button>
                                                     ))}
                                                 </div>
 
                                                 <button
+                                                    type="button"
                                                     onClick={() => setActiveStep(Math.min(steps.length - 1, activeStep + 1))}
                                                     disabled={activeStep === steps.length - 1}
                                                     className={`
@@ -506,7 +544,7 @@ export default function Process() {
                                                         ${activeStep === steps.length - 1 ? "opacity-40 cursor-not-allowed" : "hover:scale-105"}
                                                     `}
                                                     style={{
-                                                        backgroundColor: activeStep === steps.length - 1 ? "var(--border-color)" : steps[Math.min(steps.length - 1, activeStep + 1)].bgColor,
+                                                        backgroundColor: activeStep === steps.length - 1 ? "var(--border-color)" : btnAccent(steps[Math.min(steps.length - 1, activeStep + 1)].bgColor),
                                                         color: activeStep === steps.length - 1 ? "var(--secondary-text)" : "#fff",
                                                         boxShadow: activeStep === steps.length - 1 ? "none" : `0 4px 16px ${steps[Math.min(steps.length - 1, activeStep + 1)].bgColor}40`,
                                                     }}

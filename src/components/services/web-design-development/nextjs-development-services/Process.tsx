@@ -264,8 +264,9 @@ export default function Process() {
                                 ];
 
                                 return (
-                                    <div
+                                    <button
                                         key={idx}
+                                        type="button"
                                         className="absolute flex flex-col items-center cursor-pointer"
                                         style={{
                                             left: positions[idx].x,
@@ -274,6 +275,7 @@ export default function Process() {
                                         }}
                                         onClick={() => setActiveStep(idx)}
                                         onMouseEnter={() => setActiveStep(idx)}
+                                        aria-current={isActive ? "step" : undefined}
                                     >
                                         <div
                                             className={`
@@ -327,8 +329,14 @@ export default function Process() {
                                             >
                                                 {step.subtitle}
                                             </div>
+                                            {/* Keeps the visible label ("01 Business
+                                                Goals") at the start of the accessible
+                                                name while naming the actual step. */}
+                                            <span className="sr-only">
+                                                {` — ${step.title}`}
+                                            </span>
                                         </div>
-                                    </div>
+                                    </button>
                                 );
                             })}
                         </div>
@@ -413,9 +421,13 @@ export default function Process() {
                                                 ))}
                                             </div>
 
-                                            {/* Navigation */}
-                                            <div className="flex items-center justify-between mt-8 pt-6 border-t" style={{ borderColor: "var(--border-color)" }}>
+                                            {/* Navigation — every step panel renders its
+                                                own copy of this row; only the active one
+                                                is visible, so the hidden copies are inert
+                                                (out of the tab order and the a11y tree). */}
+                                            <div className="flex items-center justify-between mt-8 pt-6 border-t" style={{ borderColor: "var(--border-color)" }} inert={!isActive}>
                                                 <button
+                                                    type="button"
                                                     onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
                                                     disabled={activeStep === 0}
                                                     className={`
@@ -434,22 +446,31 @@ export default function Process() {
                                                 </button>
 
                                                 <div className="flex items-center gap-2">
-                                                    {steps.map((_, dotIdx) => (
+                                                    {steps.map((dot, dotIdx) => (
                                                         <button
                                                             key={dotIdx}
+                                                            type="button"
                                                             onClick={() => setActiveStep(dotIdx)}
-                                                            className={`
-                                                                w-2.5 h-2.5 rounded-full transition-all duration-300
-                                                                ${activeStep === dotIdx ? "scale-125" : "hover:scale-110"}
-                                                            `}
-                                                            style={{
-                                                                backgroundColor: activeStep === dotIdx ? steps[dotIdx].bgColor : "var(--border-color)",
-                                                            }}
-                                                        />
+                                                            aria-label={`Show step ${dotIdx + 1}: ${dot.title}`}
+                                                            aria-current={activeStep === dotIdx ? "step" : undefined}
+                                                            /* 24x24 hit area around the 10px dot (WCAG 2.5.8) */
+                                                            className="group w-6 h-6 flex items-center justify-center rounded-full"
+                                                        >
+                                                            <span
+                                                                className={`
+                                                                    block w-2.5 h-2.5 rounded-full transition-all duration-300
+                                                                    ${activeStep === dotIdx ? "scale-125" : "group-hover:scale-110"}
+                                                                `}
+                                                                style={{
+                                                                    backgroundColor: activeStep === dotIdx ? dot.bgColor : "var(--border-color)",
+                                                                }}
+                                                            />
+                                                        </button>
                                                     ))}
                                                 </div>
 
                                                 <button
+                                                    type="button"
                                                     onClick={() => setActiveStep(Math.min(steps.length - 1, activeStep + 1))}
                                                     disabled={activeStep === steps.length - 1}
                                                     className={`
