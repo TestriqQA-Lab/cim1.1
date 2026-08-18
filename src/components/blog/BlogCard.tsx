@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BlogPost } from "@/data/blog";
+import { sanityImageLoader } from "@/sanity/lib/imageLoader";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 interface BlogCardProps {
@@ -34,7 +35,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
-            unoptimized
+            loader={sanityImageLoader}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           <div className="absolute bottom-4 left-4 right-4">
@@ -82,7 +83,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
                   height={32}
                   className="w-8 h-8 rounded-full object-cover"
                   aria-hidden="true"
-                  unoptimized
+                  loader={sanityImageLoader}
                 />
                 <span className="text-sm font-medium hover:text-[var(--brand-purple-text)] transition-colors">
                   {post.author.name}
@@ -113,7 +114,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
             fill
             sizes="80px"
             className="object-cover group-hover:scale-105 transition-transform duration-300"
-            unoptimized
+            loader={sanityImageLoader}
           />
         </div>
         <div className="flex-1 min-w-0">
@@ -147,7 +148,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover group-hover:scale-105 transition-transform duration-300"
-          unoptimized
+          loader={sanityImageLoader}
         />
       </div>
       <div className="p-5">
@@ -188,7 +189,7 @@ export default function BlogCard({ post, variant = "default" }: BlogCardProps) {
                 width={24}
                 height={24}
                 className="w-6 h-6 rounded-full object-cover"
-                unoptimized
+                loader={sanityImageLoader}
               />
               <span className="text-xs font-medium hover:text-[var(--brand-purple-text)] transition-colors">
                 {post.author.name}
