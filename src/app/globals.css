@@ -27,6 +27,14 @@
     --brand-blue-btn: #006d97;
     --brand-purple-btn: #9333ea;
     --accent-teal-btn: #0f766e;
+    /* Per-hue solid-button backgrounds for the service pages' step accents.
+       The vivid step hues (#3b82f6/#ec4899/#f97316/#6366f1/#10b981) only reach
+       2.3-4.5:1 against white label text; these darkened variants clear 4.5:1. */
+    --accent-sky-btn: #2563eb;
+    --accent-pink-btn: #be185d;
+    --accent-orange-btn: #c2410c;
+    --accent-indigo-btn: #4338ca;
+    --accent-green-btn: #047857;
 
     /* Accessible per-hue TEXT tokens for the service pages' theme accents
        (teal/violet/indigo). Light values pass on white; dark values below

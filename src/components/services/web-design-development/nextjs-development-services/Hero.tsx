@@ -1,5 +1,3 @@
-"use client";
-
 import {
     Code2, Zap, Server, Globe, Shield, Rocket,
     ChevronRight, ArrowRight, CheckCircle2, Sparkles, Terminal, Layers

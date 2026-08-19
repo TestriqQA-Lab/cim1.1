@@ -1,5 +1,3 @@
-"use client";
-
 import { Zap, Shield, Globe, Code2, Layers, Rocket } from "lucide-react";
 import Link from "next/link";
 
