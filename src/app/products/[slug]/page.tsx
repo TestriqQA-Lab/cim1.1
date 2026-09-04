@@ -130,6 +130,7 @@ export default async function ProductPage({
             url: `${siteUrl}/products/${product.slug}`,
             applicationCategory: "BrowserApplication",
             operatingSystem: product.extensionUrl ? "Chrome, Edge" : "Web",
+            ...(product.version && { softwareVersion: product.version }),
             offers: {
                 "@type": "Offer",
                 price: "0",

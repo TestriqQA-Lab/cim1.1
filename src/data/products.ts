@@ -38,6 +38,10 @@ export interface Product {
   privacyUrl: string;
   demoVideoUrl?: string; // Optional URL for product video demo
   extensionUrl?: string; // Optional Chrome Web Store / Edge Add-ons URL for browser-extension products
+  // Currently published release, e.g. "1.2.0". Rendered as a pill in the hero
+  // and emitted as `softwareVersion` in the SoftwareApplication JSON-LD, so both
+  // read from this single value. Omit for products that are not versioned.
+  version?: string;
 
   // --- Optional SEO / page-copy overrides -----------------------------------
   // When omitted, the page falls back to its derived defaults (meta title built
@@ -132,6 +136,7 @@ export const products: Product[] = [
     supportUrl: "/products/chimegenius-ai-pro/support",
     privacyUrl: "/products/chimegenius-ai-pro/privacy-policy",
     extensionUrl: "https://chromewebstore.google.com/detail/pnolpjljedjpmbjimpkhhimapgffidbk?utm_source=item-share-cb",
+    version: "1.2.0",
   },
 ];
 

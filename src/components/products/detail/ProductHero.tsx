@@ -67,9 +67,21 @@ export default function ProductHero({ product }: { product: Product }) {
                             <span style={{ color: textColor }}>{product.name}</span>
                         </nav>
 
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm animate-fadeIn" style={{ backgroundColor: "var(--card-bg)", borderColor: `${color}30` }}>
-                            <Icon className="w-4 h-4" style={{ color }} />
-                            <span className="text-sm font-medium" style={{ color: textColor }}>{product.tagline}</span>
+                        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 animate-fadeIn">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm" style={{ backgroundColor: "var(--card-bg)", borderColor: `${color}30` }}>
+                                <Icon className="w-4 h-4" style={{ color }} />
+                                <span className="text-sm font-medium" style={{ color: textColor }}>{product.tagline}</span>
+                            </div>
+
+                            {product.version && (
+                                <p className="inline-flex items-center gap-2 px-4 py-2 rounded-full border shadow-sm" style={{ backgroundColor: "var(--card-bg)", borderColor: `${color}30` }}>
+                                    <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: color }} aria-hidden="true" />
+                                    <span className="text-sm font-medium whitespace-nowrap" style={{ color: "var(--secondary-text)" }}>
+                                        Version{" "}
+                                        <span className="font-mono font-semibold" style={{ color: textColor }}>{product.version}</span>
+                                    </span>
+                                </p>
+                            )}
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight animate-slideUp" style={{ color: "var(--foreground)" }}>
