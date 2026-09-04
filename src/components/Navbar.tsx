@@ -177,14 +177,15 @@ export default function Navbar() {
               </Link>
             </div>
             {/* SSR nav links — visible to Googlebot's HTML crawl */}
-            <div className="hidden lg:flex items-center space-x-3">
-              <Link href="/" className="px-4 py-2 rounded-lg text-md font-medium">Home</Link>
-              <Link href="/services" className="px-4 py-2 rounded-lg text-md font-medium">Services</Link>
-              <Link href="/products/chimegenius-ai-pro" className="px-4 py-2 rounded-lg text-md font-medium">Products</Link>
-              <Link href="/blog" className="px-4 py-2 rounded-lg text-md font-medium">Blog</Link>
-              <Link href="/about" className="px-4 py-2 rounded-lg text-md font-medium">About</Link>
-              <Link href="/careers" className="px-4 py-2 rounded-lg text-md font-medium">Careers</Link>
-              <Link href="/contact" className="px-4 py-2 rounded-lg text-md font-medium">Contact</Link>
+            <div className="hidden lg:flex items-center space-x-1 2xl:space-x-2">
+              <Link href="/" className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium">Home</Link>
+              <Link href="/our-team" className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium">Our Team</Link>
+              <Link href="/services" className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium">Services</Link>
+              <Link href="/products/chimegenius-ai-pro" className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium">Products</Link>
+              <Link href="/blog" className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium">Blog</Link>
+              <Link href="/about" className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium">About</Link>
+              <Link href="/careers" className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium">Careers</Link>
+              <Link href="/contact" className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium">Contact</Link>
             </div>
           </div>
         </div>
@@ -214,7 +215,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-2 group">
-              <div className="h-20 w-[180px] flex items-center justify-center overflow-hidden rounded-lg transition-transform group-hover:scale-105">
+              <div className="h-20 w-[128px] 2xl:w-[180px] flex items-center justify-center overflow-hidden rounded-lg transition-transform group-hover:scale-105">
                 <Image
                   src={isDark ? "/images/CIM-LOGO-White.png" : "/images/CIM-LOGO-Black.png"}
                   alt="CIM Logo"
@@ -230,20 +231,29 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
-            <div className="ml-10 flex items-center space-x-3">
+            <div className="ml-3 2xl:ml-6 flex items-center space-x-1 2xl:space-x-2">
               <Link
                 href="/"
-                className="px-4 py-2 rounded-lg text-md font-medium transition-all"
+                className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium transition-all"
                 style={getNavLinkStyle("/")}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
               >
                 Home
               </Link>
+              <Link
+                href="/our-team"
+                className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium transition-all"
+                style={getNavLinkStyle("/our-team")}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/our-team") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/our-team") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
+              >
+                Our Team
+              </Link>
               {/* Services Mega Menu */}
               <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <button
-                  className="flex items-center space-x-1 px-4 py-2 rounded-lg text-md font-medium transition-all"
+                  className="flex items-center space-x-1 px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium transition-all"
                   style={{
                     color: isActive("/services") ? "var(--brand-purple-text)" : "var(--foreground)",
                     backgroundColor: isServicesOpen
@@ -341,7 +351,7 @@ export default function Navbar() {
               {/* Products Dropdown */}
               <div className="relative" onMouseEnter={handleProductsMouseEnter} onMouseLeave={handleProductsMouseLeave}>
                 <button
-                  className="flex items-center space-x-1 px-4 py-2 rounded-lg text-md font-medium transition-all"
+                  className="flex items-center space-x-1 px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium transition-all"
                   style={{
                     color: isActive("/products") ? "var(--brand-purple-text)" : "var(--foreground)",
                     backgroundColor: isProductsOpen
@@ -411,7 +421,7 @@ export default function Navbar() {
               </div>
               <Link
                 href="/blog"
-                className="px-4 py-2 rounded-lg text-md font-medium transition-all"
+                className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium transition-all"
                 style={getNavLinkStyle("/blog")}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/blog") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/blog") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
@@ -420,7 +430,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/about"
-                className="px-4 py-2 rounded-lg text-md font-medium transition-all"
+                className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium transition-all"
                 style={getNavLinkStyle("/about")}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/about") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/about") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
@@ -429,7 +439,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/careers"
-                className="px-4 py-2 rounded-lg text-md font-medium transition-all"
+                className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium transition-all"
                 style={getNavLinkStyle("/careers")}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/careers") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/careers") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
@@ -438,7 +448,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/contact"
-                className="px-4 py-2 rounded-lg text-md font-medium transition-all"
+                className="px-2 2xl:px-3 py-2 rounded-lg text-sm 2xl:text-base font-medium transition-all"
                 style={getNavLinkStyle("/contact")}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/contact") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/contact") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
@@ -451,7 +461,7 @@ export default function Navbar() {
               <div className="relative" ref={themeDropdownRef}>
                 <button
                   onClick={() => setIsThemeOpen(!isThemeOpen)}
-                  className="p-2.5 rounded-lg transition-all hover:scale-110"
+                  className="p-2 2xl:p-2.5 rounded-lg transition-all hover:scale-110"
                   style={{ color: "var(--foreground)" }}
                   onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--hover-bg)")}
                   onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "transparent")}
@@ -510,7 +520,7 @@ export default function Navbar() {
 
               </div>
 
-              <Link href="/contact" className="ml-2 bg-gradient-to-r from-[#008ac1] to-[#00b5ca] hover:from-[#008ac1] hover:to-[#008ac1] text-white px-6 py-2.5 rounded-full text-md font-medium transition-all shadow-lg shadow-[#008ac1]/30 hover:shadow-xl hover:shadow-[#008ac1]/40 hover:scale-105">
+              <Link href="/contact" className="ml-1 2xl:ml-2 bg-gradient-to-r from-[#008ac1] to-[#00b5ca] hover:from-[#008ac1] hover:to-[#008ac1] text-white px-4 2xl:px-5 py-2 2xl:py-2.5 rounded-full text-sm 2xl:text-base font-medium transition-all shadow-lg shadow-[#008ac1]/30 hover:shadow-xl hover:shadow-[#008ac1]/40 hover:scale-105">
                 Let’s Talk
               </Link>
             </div>
@@ -615,6 +625,16 @@ export default function Navbar() {
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
             >
               Home
+            </Link>
+            <Link
+              href="/our-team"
+              onClick={toggleMobileMenu}
+              className="block px-4 py-3 rounded-lg text-base font-medium transition-all"
+              style={getNavLinkStyle("/our-team")}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = isActive("/our-team") ? "color-mix(in srgb, var(--brand-purple) 15%, transparent)" : "var(--hover-bg)")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = isActive("/our-team") ? "color-mix(in srgb, var(--brand-purple) 10%, transparent)" : "transparent")}
+            >
+              Our Team
             </Link>
 
             {/* Mobile Services Accordion */}
