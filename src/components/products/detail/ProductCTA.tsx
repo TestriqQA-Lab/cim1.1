@@ -65,7 +65,7 @@ export default function ProductCTA({ product }: { product: Product }) {
                         {product.closingCtaBody ?? `Join thousands of businesses already using ${product.name} to save time, reduce costs, and achieve better results.`}
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <Link href="/contact" className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg" style={{ backgroundColor: solidColor, boxShadow: `0 4px 20px ${color}40` }}>
+                        <Link href={`${product.extensionUrl}`} className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-4 md:px-10 md:py-5 rounded-full font-bold text-sm sm:text-base md:text-lg text-white transition-all transform hover:scale-105 hover:shadow-lg" style={{ backgroundColor: solidColor, boxShadow: `0 4px 20px ${color}40` }}>
                             {product.closingCtaLabel ?? "Get Started Free"}
                             <ArrowRight className="w-4 h-4 md:w-6 md:h-6 ml-2 flex-shrink-0" />
                         </Link>
