@@ -24,6 +24,7 @@ export default function Footer() {
     // Quick Links (matching reference image)
     const quickLinks = [
         { name: "About Us", href: "/about" },
+        { name: "Our Team", href: "/our-team" },
         { name: "Careers", href: "/careers" },
         { name: "Our Services", href: "/services" },
         { name: "Products", href: "/products/chimegenius-ai-pro" },
